@@ -14,7 +14,6 @@ ROOT = Path(__file__).resolve().parents[1]
 # 저장소별 검색 위치입니다. 개별 스킬 이름을 고정하지 않습니다.
 DEFAULT_SEARCH_ROOTS = [
     ROOT / "vendor" / "anthropic-skills" / "skills",
-    ROOT / "vendor" / "deep-research",
     ROOT / "vendor" / "community-skills",
 ]
 

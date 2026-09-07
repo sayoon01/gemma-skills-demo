@@ -55,9 +55,32 @@ PYTHONPATH=. python3 checks/check_web_tools.py
 
 샘플 요약 JSON: [web-tools-smoke.json](web-tools-smoke.json)
 
-## 4. 아직 하지 않은 것
+## 4. 검색 순위 vs source tier (비교 실험에 유리)
+
+Physical AI 관련 검색에서 **1위는 Wikipedia**였고, 같은 결과 집합에
+Qualcomm·AWS·Deloitte 등 산업/공식 성격의 출처도 포함됐다.
+
+원본 deep-research Skill은 source tier를 대략 다음 순으로 평가한다.
+
+1. Primary  
+2. Peer-reviewed  
+3. Reputable news  
+4. Industry  
+5. Expert  
+6. Community  
+
+Wikipedia는 검색 순위 1위이지만 tier상으로는 Primary(예: Qualcomm 공식 문서)보다
+낮다. 따라서 Skill ON 비교에서 Gemma가:
+
+- 검색 순위 1위이므로 Wikipedia부터 쓰는지  
+- Qualcomm 등 공식·산업 문서를 더 우선하는지  
+
+를 실제로 가르는 관측점이 된다. 결함이 아니라 Deep Research 시험에 유리한 신호다.
+
+## 5. 아직 하지 않은 것
 
 - Gemma + deep-research Skill ON/OFF 동일 질문 비교
+  (위 source tier 우선순위 준수 여부 포함)
 - Skill이 요구하는 병렬 sub-agent 전체 구현
 - 인용 보고서 품질 검증
 

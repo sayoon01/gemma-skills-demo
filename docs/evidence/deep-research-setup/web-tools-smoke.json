@@ -20,7 +20,9 @@
       "title": "Physical artificial intelligence - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Physical_artificial_intelligence",
       "domain": "en.wikipedia.org"
-    }
+    },
+    "other_domains_noted": ["Qualcomm", "AWS", "Deloitte"],
+    "note": "Rank #1 is Wikipedia while industry/official sources also appear — useful for testing whether Skill ON follows source-tier order (Primary > … > Community) vs raw search rank"
   },
   "fetch_page_sample": {
     "url": "https://en.wikipedia.org/wiki/Physical_artificial_intelligence",

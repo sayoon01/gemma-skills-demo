@@ -35,7 +35,7 @@ class OllamaClient:
         response = requests.post(
             f"{self.base_url}/api/chat",
             json=payload,
-            timeout=(10, 300),
+            timeout=(10, 600),
         )
 
         if not response.ok:
