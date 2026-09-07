@@ -5,6 +5,8 @@ venv/
 .env
 .env.*
 !.env.example
+outputs/*
+!outputs/.gitkeep
 .vscode/
 .idea/
 .DS_Store

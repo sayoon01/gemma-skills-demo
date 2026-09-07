@@ -36,6 +36,17 @@ def set_text(cell, value):
     cell.data_type = "s"
 
 
+def is_whole_number(value):
+    return Decimal(str(value)) == Decimal(str(value)).to_integral_value()
+
+
+def number_format_for(*values):
+    """정수만이면 #,##0, 소수가 있으면 끝점 없이 필요한 자리만 표시한다."""
+    if all(is_whole_number(value) for value in values):
+        return "#,##0"
+    return "#,##0.##########"
+
+
 def validate_input(sheet_name, source_note, records):
     if (
         not isinstance(sheet_name, str)
@@ -142,11 +153,22 @@ def build_workbook(path, sheet_name, source_note, records):
                 cell.font = Font(name="Arial", size=11, color="0000FF")
                 cell.fill = PatternFill("solid", fgColor="FFF2CC")
 
-        for row in ws.iter_rows(
-            min_row=2, max_row=total_row, min_col=2, max_col=4
-        ):
-            for cell in row:
-                cell.number_format = "#,##0.##"
+        amount_format = number_format_for(
+            *(
+                value
+                for record in records
+                for value in (record["quantity"], record["unit_price"])
+            )
+        )
+        for row_number, record in enumerate(records, start=2):
+            ws.cell(row_number, 2).number_format = number_format_for(
+                record["quantity"]
+            )
+            ws.cell(row_number, 3).number_format = number_format_for(
+                record["unit_price"]
+            )
+            ws.cell(row_number, 4).number_format = amount_format
+        ws.cell(total_row, 4).number_format = amount_format
 
         for cell in ws[total_row]:
             cell.font = Font(name="Arial", size=11, bold=True)

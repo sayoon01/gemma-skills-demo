@@ -58,21 +58,18 @@ Claude Code 없이 Gemma와 Python 실행 프로그램을 이용하여
 - 최종 응답의 실제 생성 파일 경로 포함: 확인
 - 화면을 통한 시각 검토: 미실시
 
-## 6. 증빙 위치
+## 6. 공개 증빙
 
-프로젝트 루트 기준 상대경로이다.
+대표 성공 실행의 결과를 다음 폴더에 정리했다.
 
-- 입력 데이터: examples/sales-demo.json
-- 스킬 로더: src/skill_loader.py
-- 모델 클라이언트: src/ollama_client.py
-- 엑셀 작업 도구: src/tools/sales_workbook.py
-- 통합 실행 코드: checks/check_sales_agent.py
-- 상위 실행 기록: outputs/sales-agent/run-857eot_o/
-- 엑셀 도구 실행 기록: outputs/sales/run-cjh9s_u3/
-- 생성 파일: outputs/sales/run-cjh9s_u3/sales.xlsx
+- [증빙 요약](evidence/xlsx-demo/README.md)
+- [상위 실행 결과](evidence/xlsx-demo/agent-result.json)
+- [엑셀 상세 검증 결과](evidence/xlsx-demo/workbook-result.json)
+- [Gemma 최종 답변](evidence/xlsx-demo/answer.md)
+- [생성 엑셀](evidence/xlsx-demo/sales.xlsx)
+- [Excel 화면](evidence/xlsx-demo/screenshot.png)
 
-outputs의 원본 실행 기록은 로컬에 보관하며 기본 Git 추적 대상에서
-제외한다. 공개용 증빙은 별도로 검토하여 포함한다.
+전체 실행 로그와 중간 결과는 outputs/에 보관하며 Git 추적에서 제외한다.
 
 ## 7. 결론 및 검증 범위
 
