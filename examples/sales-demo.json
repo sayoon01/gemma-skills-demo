@@ -1,0 +1,9 @@
+{
+  "sheet_name": "월별매출",
+  "source_note": "실행 검증을 위해 작성한 합성 시험 데이터입니다. 실제 매출 자료가 아닙니다.",
+  "records": [
+    {"month": "1월", "quantity": 10, "unit_price": 1000},
+    {"month": "2월", "quantity": 20, "unit_price": 1500},
+    {"month": "3월", "quantity": 15, "unit_price": 2000}
+  ]
+}

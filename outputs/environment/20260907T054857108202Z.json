@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-09-07T05:48:57.108202+00:00",
+  "check_scope": [
+    "Python 패키지의 실제 import 및 버전 확인",
+    "LibreOffice 버전 명령 실행",
+    "스킬 정의 파일과 재계산 스크립트 존재 확인"
+  ],
+  "python": "3.14.2",
+  "os": "Linux",
+  "architecture": "aarch64",
+  "virtual_environment": false,
+  "packages": {
+    "requests": {
+      "ok": true,
+      "version": "2.33.0"
+    },
+    "yaml": {
+      "ok": true,
+      "version": "6.0.3"
+    },
+    "pandas": {
+      "ok": true,
+      "version": "2.3.3"
+    },
+    "openpyxl": {
+      "ok": true,
+      "version": "3.1.5"
+    },
+    "markitdown": {
+      "ok": true,
+      "version": "0.1.7"
+    }
+  },
+  "libreoffice": {
+    "ok": true,
+    "version": "LibreOffice 24.2.7.2 420(Build:2)",
+    "returncode": 0,
+    "stderr": ""
+  },
+  "skill_files": {
+    "xlsx": true,
+    "deep-research": true,
+    "xlsx_recalc": true
+  },
+  "status": "passed",
+  "not_verified_by_this_check": [
+    "Gemma API 연결 및 도구 호출",
+    "스킬 전체 규격 및 참조 파일 유효성",
+    "실제 엑셀 생성 및 수식 재계산",
+    "markitdown을 이용한 실제 파일 변환"
+  ]
+}
