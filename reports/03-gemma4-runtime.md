@@ -1,174 +1,219 @@
-# 3. Gemma4 적용 구조 (Runtime)
+# 03. Gemma4 Agent Skills 적용 Runtime
+
+> 실험 기준일: 2026-09-07  
+> 목적: Claude Code가 아닌 Ollama 기반 `gemma4:31b`에서 공개 Agent Skill을 사용할 수
+> 있도록 구성한 Runtime 구조와 구현 범위를 설명한다.
 
 상위 문서: [README.md](../README.md)
 
-관련 코드:
-
-- [src/skill_loader.py](../src/skill_loader.py)
-- [src/ollama_client.py](../src/ollama_client.py)
-- [run.py](../run.py)
-- [research_run.py](../research_run.py)
-- [src/web_tools.py](../src/web_tools.py)
+관련 코드: [src/skill_loader.py](../src/skill_loader.py) ·
+[src/ollama_client.py](../src/ollama_client.py) · [run.py](../run.py) ·
+[research_run.py](../research_run.py) · [src/web_tools.py](../src/web_tools.py)
 
 ---
 
-## 3.1 목적
+## 1. 목표
 
-Gemma4/Ollama에는 Claude Code와 동일한 Skill Runtime이 기본 제공되지 않는다.
-본 프로젝트에서는 Agent Skills의 핵심 실행 과정을 직접 구현하였다.
+핵심 질문: **공개 Agent Skill 파일을 다운로드하여 Claude Code가 아닌 Gemma4에서도
+사용할 수 있는가?**
+
+여기서 "사용한다"는 `SKILL.md`를 Prompt에 넣는 것만으로 정의하지 않았다.
+최소한 다음이 실제로 동작해야 한다.
+
+1. 공개 Skill 발견
+2. Skill Metadata 검사
+3. Skill 활성화
+4. Gemma4 Context에 Skill Instruction 전달
+5. Skill에 필요한 Tool 제공
+6. Gemma4가 Tool을 선택
+7. 실제 Tool 실행
+8. Tool Result를 다시 Gemma4에 전달
+9. 필요한 만큼 반복
+10. 최종 결과 생성
+
+즉 **Skill-driven Agent Runtime**을 구성하는 것이 목표이다.
+
+---
+
+## 2. 전체 구조
 
 ```text
 Public Skill Repository
-        │
-        ▼
-   Skill Loader
-        │
-        ├── Discovery
-        ├── Validation
-        └── Activation
-        │
-        ▼
-     SKILL.md
-        │
-        ▼
- Gemma4 System Context
-        │
-        ▼
-     Gemma4:31b
-        │
-        ▼
-   Tool Selection
-        │
-        ▼
-   Runtime Tool
-        │
-        ▼
-   Tool Result
-        │
-        └──────────────┐
-                       ▼
-                    Gemma4
-                       │
-                 반복 Agent Loop
-                       │
-                       ▼
-                  Final Answer
+          ↓
+      Skill Loader
+     Discovery / Validation / Activation
+          ↓
+     Full SKILL.md → Gemma4 System Context
+          ↓
+       gemma4:31b → Tool Calling
+          ↓
+   Tool Registry / Handler → Tool Result
+          ↓
+       Gemma4 (Agent Loop 반복) → Final Answer
 ```
 
 ---
 
-## 3.2 Skill Loader
-
-`src/skill_loader.py`가 공개 Skill directory를 탐색한다.
-
-현재 검색 위치:
-
-- `vendor/anthropic-skills/skills/`
-- `vendor/community-skills/`
-
-Loader는 `SKILL.md`를 발견한 후 YAML Frontmatter를 읽어 `name`, `description` 등
-기본 메타데이터를 검사한다.
-
-현재 구현에서 수행하는 작업:
-
-- Skill directory 검색
-- `SKILL.md` 확인
-- YAML parsing
-- name / description validation
-- 중복 Skill 검사
-- SHA-256 기록
-- Skill Activation
-
----
-
-## 3.3 Skill Activation
-
-사용자가 `--skill deep-research` 와 같이 Skill을 지정하면 해당 Skill의 전체
-`SKILL.md` Body를 읽는다. 이후 Gemma4의 System Prompt에 활성 Skill을 포함한다.
+## 3. 외부 Skill 관리
 
 ```text
-Available Skills
-      ↓
-Metadata Discovery
-      ↓
-deep-research 선택
-      ↓
-전체 SKILL.md Load
-      ↓
-Gemma4 Context에 추가
+vendor/
+├── anthropic-skills/skills/   # xlsx, pdf, pptx, ...
+└── community-skills/
+    └── deep-research/SKILL.md
 ```
 
-이는 Agent Skills Progressive Disclosure 중 Discovery → Activation 단계를
-자체 Runtime에서 재현한 것이다.
+```python
+DEFAULT_SEARCH_ROOTS = [
+    ROOT / "vendor" / "anthropic-skills" / "skills",
+    ROOT / "vendor" / "community-skills",
+]
+```
+
+개별 Skill 이름을 코드에 하드코딩하지 않는다. 올바른 형식의 Directory가 추가되면
+Loader가 자동 발견할 수 있도록 한다.
 
 ---
 
-## 3.4 Tool Binding
+## 4. Skill Discovery / Validation
 
-`SKILL.md`는 업무 방법을 설명하지만 실제 Tool 자체를 생성하지는 않는다.
+Loader는 `<root>/SKILL.md`, `<root>/*/SKILL.md`를 탐색하고 `name`, `description`,
+경로, Body, SHA-256을 얻는다.
 
-예를 들어 Deep Research Skill이 웹 검색 → 원문 확인 → 복수 출처 비교를 요구한다면
-Runtime에는 실제로 사용할 수 있는 `web_search`, `fetch_page` Tool이 있어야 한다.
+검사: `name` 형식·디렉터리 일치, `description` 비어 있지 않음(공개 Spec 기준 최대
+1024자), YAML Body 존재, 중복 name.
 
-본 프로젝트에서는 Ollama의 Tool Calling 형식으로 Tool Schema를 모델에 제공한다.
-Gemma4는 Skill 지침과 사용자 요청을 참고하여 필요한 Tool을 선택한다.
+선택 전 Metadata 중심, 활성화 시 전체 Body — Progressive Disclosure의 일부 재현.
 
-| 요소 | 의미 |
+참고: 공개 Spec을 엄격 적용하는 Loader와 실제 Repository 작성 관행 사이에 차이가
+생길 수 있다. 향후 Strict Validation + Compatibility Warning Mode 분리를 고려한다.
+
+---
+
+## 5. Skill Activation
+
+```bash
+python3 research_run.py \
+  --skill deep-research \
+  --request tasks/physical-ai-research.md
+```
+
+기록 예:
+
+- `skill`: deep-research
+- `skill_base_dir`: `vendor/community-skills/deep-research`
+- `skill_sha256`: `e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159`
+
+SHA-256으로 Skill 버전 추적·OFF/ON 재현성·소스 연결을 확보한다.
+
+B1에서는 원본 Skill이 병렬 Sub-agent를 요구하지만 Agent Spawn Tool이 없으므로
+Runtime 제약을 System Context에 명시하고, Gaps에 한계를 적도록 한다.
+
+---
+
+## 6. Tool Binding
+
+| 실험 | Generic Tool |
 |---|---|
-| `SKILL.md` | 무엇을 어떻게 해야 하는가 |
-| Tool | 실제로 무엇을 실행할 수 있는가 |
+| xlsx | `inspect_workbook`, `read_excel_range` 등 |
+| deep-research | `web_search`, `fetch_page` |
+
+원칙: Skill-specific Workflow를 Python에 하드코딩하지 않는다.
+
+- `SKILL.md` → 행동 지침
+- Generic Tool → 실행 Capability
+
+`deep_research()` 전용 Workflow로 결과를 흉내 내는 것이 아니라, Gemma4가
+`SKILL.md`를 읽고 Generic Tool을 선택하게 한다.
+
+### Web Tool 설계 요지
+
+- `web_search`: DDGS, title/url/snippet/domain, Raw HTML 미투입
+- `fetch_page`: HTTP 수집, script/style 제거, focus 기반 축소, 최대 문자 제한
+
+xlsx에서 대용량 Tool Result가 Context 문제를 일으킨 경험을 반영했다.
 
 ---
 
-## 3.5 Agent Loop
-
-실행기는 Gemma4 응답의 `tool_calls`를 확인한다.
+## 7. Agent Loop
 
 ```text
-User Request
-    ↓
-Gemma4
-    ↓
-tool_calls 존재?
-   ├── YES → Tool 실행 → 결과를 messages에 추가 → Gemma4 재호출
-   └── NO  → Final Answer
+messages → Gemma4 Chat
+  → tool_calls? YES → Tool 실행 → role=tool 추가 → 다음 Turn
+                 NO  → Final Answer
 ```
 
-Deep Research 실험에서는 실제로 다음과 같은 Loop가 수행되었다.
-
-```text
-Gemma4 → web_search → web_search → fetch_page → (추가 검색) → 최종 분석
-```
-
-성공 Run에서는 Turn별 모델 응답 시간도 `_runtime.model_elapsed_seconds` 및
-`metrics.json`의 `model_response_times_seconds` / `model_total_seconds`로 기록한다.
-
-Ollama HTTP read timeout은 `(10, 600)`으로 설정되어 있다
-([reports/ollama-timeout-and-prompt-growth.md](ollama-timeout-and-prompt-growth.md)).
+성공 Run에서는 Turn별 `model_elapsed_seconds`와 metrics의
+`model_response_times_seconds` / `model_total_seconds`를 기록한다.
 
 ---
 
-## 3.6 현재 구현 범위
+## 8. Ollama / Gemma4 설정
 
-| 기능 | 상태 |
+| 항목 | 값 |
 |---|---|
-| SKILL.md Discovery | O |
-| Skill Validation | O |
-| Skill Activation | O |
-| System Prompt Injection | O |
-| Ollama Tool Calling | O |
-| Tool Result Feedback | O |
-| Multi-turn Agent Loop | O |
-| Run Logging | O |
-| scripts/ 자동 실행 | X |
-| references/ On-demand Loader | X |
-| assets/ Resource Loader | X |
-| allowed-tools 자동 Binding | X |
-| Parallel Sub-agent | X |
-| Multi-wave Research | X |
-| Context Compaction | X |
+| Model | `gemma4:31b` |
+| Temperature | 0 |
+| `num_ctx` | 65,536 |
+| `num_predict` | 4,096 |
+| HTTP read timeout | **600초** |
 
-따라서 현재 구현은 Agent Skills **전체 Runtime 호환 구현이 아니라**,
-`SKILL.md` 중심의 **핵심 Compatibility 검증 Runtime**이다.
+초기 300초에서 Skill ON Synthesis(~383초)가 실패해 측정 근거로 600초로 확장했다.
+상세: [ollama-timeout-and-prompt-growth.md](ollama-timeout-and-prompt-growth.md)
+
+---
+
+## 9. Run Logging
+
+```text
+outputs/research-runs/run-xxxx/
+├── request.md, run-config.json
+├── response-*.json, messages.json, tool-calls.json
+├── metrics.json, result.json, answer.md
+```
+
+Skill 활성·경로·SHA-256·Model·Tool·Token·Turn별 모델 시간·전체 시간·최종 답변을 남긴다.
+
+---
+
+## 10. 현재 지원 범위
+
+| Capability | 상태 |
+|---|---|
+| Skill Discovery / Validation / Activation | O |
+| SKILL.md Body Load / Instruction Injection | O |
+| Ollama Tool Calling / Generic Binding | O |
+| Tool Result Feedback / Multi-turn Loop | O |
+| Run Logging / Turn별 Runtime 측정 | O |
+| `scripts/` · `references/` · `assets/` on-demand | X |
+| `allowed-tools` 자동 Binding | X |
+| Parallel Sub-agent / Multi-wave / Context Compaction | X |
+
+---
+
+## 11. 현재 Runtime의 의미
+
+현재 구현은 Agent Skills 전체 Spec의 범용 Client가 아니다.
+
+**정확한 정의:** `SKILL.md` 중심 Agent Skills Compatibility를 Gemma4에서 검증하기
+위한 **B1 Runtime**.
+
+검증한 것:
+
+```text
+External SKILL.md → Gemma4 → Tool Selection → Actual Tool Execution → Behavior Change
+```
+
+"Gemma4가 Agent Skills를 Native 지원한다"보다:
+
+> 별도의 Skill/Agent Runtime을 통해 공개 Agent Skills의 핵심 Workflow를 Gemma4에
+> 적용할 수 있음을 확인하였다.
+
+가 정확하다.
 
 후속: [07-future-work.md](07-future-work.md)
+
+### 참고
+
+- [Agent Skills Specification](https://agentskills.io/specification)
+- [Adding Skills Support](https://agentskills.io/client-implementation/adding-skills-support)
