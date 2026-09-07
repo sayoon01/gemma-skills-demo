@@ -11,6 +11,7 @@
 - [xlsx 검증 보고서](docs/xlsx-validation-report.md) — 매출 데모 보고용 결과
 - [대표 증빙 (매출 데모)](docs/evidence/xlsx-demo/README.md) — 성공 실행 한 세트
 - [Runtime 병목 증빙](docs/evidence/xlsx-runtime/README.md) — Skill 적용 성공 + context/timeout 한계
+- [deep-research 준비 증빙](docs/evidence/deep-research-setup/README.md) — Skill 로드 + 웹 도구 스모크
 - [확인된 문제](docs/known-issues.md)
 - [스킬 기본 규격 검사](docs/skill-validation.md)
 
@@ -26,7 +27,12 @@
 | 병목 | Skill 지원이 아니라 Runtime 효율 |
 
 xlsx를 더 깊게 최적화하기보다 community `deep-research` Skill 실험으로 전환합니다.
-`vendor/deep-research` 서브모듈(또는 `vendor/community-skills/deep-research`)을 사용합니다.
+공개 서브모듈은 `vendor/deep-research`, 로컬 클론은 `vendor/community-skills/deep-research`입니다.
+웹 검색은 `ddgs`, 페이지 읽기는 `src/web_tools.py`를 사용합니다.
+
+```bash
+PYTHONPATH=. python3 checks/check_web_tools.py
+```
 
 ## 폴더 역할
 

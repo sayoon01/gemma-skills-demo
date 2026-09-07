@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SEARCH_ROOTS = [
     ROOT / "vendor" / "anthropic-skills" / "skills",
     ROOT / "vendor" / "deep-research",
+    ROOT / "vendor" / "community-skills",
 ]
 
 
@@ -100,9 +101,14 @@ def discover_skills(search_roots):
                 name = metadata["name"]
 
                 if name in catalog:
-                    raise SkillError(
-                        f"중복 스킬 이름: {name}. 검색 위치를 구분해야 합니다."
-                    )
+                    errors.append({
+                        "path": str(path),
+                        "error": (
+                            f"중복 스킬 이름 건너뜀: {name} "
+                            f"(이미 {catalog[name]['path']})"
+                        ),
+                    })
+                    continue
 
                 catalog[name] = {
                     "name": name,

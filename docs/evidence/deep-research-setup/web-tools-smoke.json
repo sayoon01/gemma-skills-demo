@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-09-07",
+  "scope": "web_search + fetch_page smoke test only",
+  "packages": {
+    "requests": true,
+    "bs4": true,
+    "lxml": true,
+    "ddgs": "9.16.0"
+  },
+  "search_backend": "ddgs",
+  "duckduckgo_html_direct": {
+    "status": 202,
+    "usable_as_scraper": false,
+    "note": "Use ddgs package instead of html.duckduckgo.com parsing"
+  },
+  "web_search_sample": {
+    "query": "physical AI robotics autonomous mobile manipulation",
+    "result_count": 5,
+    "first_result": {
+      "title": "Physical artificial intelligence - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Physical_artificial_intelligence",
+      "domain": "en.wikipedia.org"
+    }
+  },
+  "fetch_page_sample": {
+    "url": "https://en.wikipedia.org/wiki/Physical_artificial_intelligence",
+    "title": "Physical artificial intelligence - Wikipedia",
+    "truncated": true,
+    "note": "Content omitted from public evidence; local smoke test returned focused excerpt"
+  },
+  "skill_loader": {
+    "deep_research_activated": true,
+    "body_chars": 12995,
+    "sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159"
+  }
+}

@@ -59,6 +59,13 @@ read_analysis_completed로 기록했다.
 6. 파일 읽기 완료와 분석 검토 완료를 구분한다.
 7. 이후 실험은 community deep-research Skill로 전환한다.
 
+## 3. 웹 검색 백엔드
+
+DuckDuckGo HTML 엔드포인트(`html.duckduckgo.com`)는 HTTP 202를 반환해
+직접 파싱에 부적합했다. 검색은 `ddgs` 패키지로 대체한다.
+
+관련 증빙: [evidence/deep-research-setup/README.md](evidence/deep-research-setup/README.md)
+
 ## 공개 범위
 실제 업무 데이터가 포함된 원본 로그는 outputs에 보관한다.
 공개 저장소에는 기술적 현상과 수정 내용만 기록한다.
