@@ -7,6 +7,8 @@ venv/
 !.env.example
 outputs/*
 !outputs/.gitkeep
+inputs/
+vendor/community-skills/
 .vscode/
 .idea/
 .DS_Store
