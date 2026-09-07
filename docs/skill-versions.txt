@@ -1,0 +1,2 @@
+ 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f vendor/anthropic-skills (heads/main)
+ b0f45cc7db5c83e5c81ccf800f72ad610448269a vendor/deep-research (heads/main)

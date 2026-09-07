@@ -1,0 +1,6 @@
+[submodule "vendor/anthropic-skills"]
+	path = vendor/anthropic-skills
+	url = https://github.com/anthropics/skills.git
+[submodule "vendor/deep-research"]
+	path = vendor/deep-research
+	url = https://github.com/ramit-mitra/deep-research-skill.git
