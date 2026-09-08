@@ -1,0 +1,88 @@
+[
+  {
+    "wave": 2,
+    "assignment_id": "SG04",
+    "status": "completed",
+    "recovery_mode": "sequential_retry",
+    "original_status": "failed",
+    "original_error": "ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)",
+    "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/recovery/SG04/run-d_dj67sx",
+    "metrics": {
+      "turn_count": 5,
+      "tool_call_count": 18,
+      "search_count": 15,
+      "fetch_count": 3,
+      "fetch_success_count": 2,
+      "model_response_times_seconds": [
+        51.19,
+        112.954,
+        67.222,
+        81.52,
+        335.329
+      ],
+      "model_total_seconds": 648.215,
+      "elapsed_seconds": 736.382
+    },
+    "verification": {
+      "worker_web_source_count": 10,
+      "verified_web_source_count": 3,
+      "unverified_web_source_count": 7,
+      "verified_urls": [
+        "https://arxiv.org/abs/2510.07077",
+        "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+        "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/"
+      ],
+      "unverified_urls": [
+        "https://intelidroid.com/2026/04/27/figure-03s-100-autonomous-amazon-trial-the-rise-of-physical-ai-in-humanoid-robotics/",
+        "https://ifactoryapp.com/industries/automotive-manufacturing/figure-03-bmw-spartanburg-case-study-humanoid",
+        "https://biped.news/article/agility-robotics-digit-2026",
+        "https://nexi.fund/agility-digit-commercial-deployment-2026/",
+        "https://techbytes.app/posts/amazon-digit-humanoid-deployment-10k/",
+        "https://blog.robozaps.com/b/unitree-r1-vs-g1",
+        "https://humanoidrobots.com/compare/unitree-g1-vs-unitree-r1"
+      ],
+      "all_worker_web_sources_verified": false
+    }
+  },
+  {
+    "wave": 2,
+    "assignment_id": "SG06",
+    "status": "completed",
+    "recovery_mode": "sequential_retry",
+    "original_status": "failed",
+    "original_error": "ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)",
+    "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/recovery/SG06/run-40c9ge26",
+    "metrics": {
+      "turn_count": 3,
+      "tool_call_count": 8,
+      "search_count": 3,
+      "fetch_count": 5,
+      "fetch_success_count": 5,
+      "model_response_times_seconds": [
+        30.86,
+        110.486,
+        371.554
+      ],
+      "model_total_seconds": 512.9,
+      "elapsed_seconds": 528.922
+    },
+    "verification": {
+      "worker_web_source_count": 8,
+      "verified_web_source_count": 7,
+      "unverified_web_source_count": 1,
+      "verified_urls": [
+        "https://arxiv.org/html/2602.18397v1",
+        "https://arxiv.org/abs/2608.04428",
+        "https://arxiv.org/abs/2608.04428",
+        "https://arxiv.org/abs/2512.24673",
+        "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+        "https://actuatorhq.com/blog/new-research-robotics-energy-efficiency-breakthroughs-2026",
+        "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025"
+      ],
+      "unverified_urls": [
+        "https://tech-champion.com/robotics/optimizing-vla-model-inference-latency-on-edge-hardware-for-robotics/"
+      ],
+      "all_worker_web_sources_verified": false
+    }
+  }
+]

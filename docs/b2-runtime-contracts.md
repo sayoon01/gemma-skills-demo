@@ -99,12 +99,12 @@ Wave 이후 **다음 Wave 입력 계약**이다.
 
 **Skill convergence**와 **resource cap**을 어떻게 기록할지 분리한다.
 
-- converged로 기록하는 조건은 활성 Skill의 convergence 조건이 충족될 때만
-- 현재 deep-research 기준 예: 읽은 고유 출처 10개 이상, 최근 연속 2 wave의 novel claim 비율이 각각 15% 미만
+- 수렴 조건은 활성 `SKILL.md`가 정한다. 이 계약은 그 규칙을 복사하지 않는다
+- Runtime은 wave 수, 읽은 출처 수, novel claim 수, unresolved gap 같은 측정값만 제공한다
 - timeout, 모델/도구 오류, max_waves, 비용·시간 한도는 convergence가 아니다
 - max_waves에 먼저 닿으면 `stop_reason = "resource_cap"` (convergence로 기록하지 않음)
 
-Runtime은 실제 종료 이유와 출처·claim·novelty 수치를 남긴다.
+Runtime은 실제 종료 이유와 측정값을 남긴다. 그 의미는 활성 Skill이 해석한다.
 
 ---
 

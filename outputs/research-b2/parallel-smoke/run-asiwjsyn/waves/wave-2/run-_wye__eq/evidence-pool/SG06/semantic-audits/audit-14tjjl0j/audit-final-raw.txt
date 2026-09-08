@@ -1,0 +1,134 @@
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The retrieved content explicitly mentions standard RGB camera frame rates (24-60 Hz) and the target inference frequencies (10 Hz up to and beyond 100 Hz), supporting the claim.",
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The text directly supports the latency targets and the rationale based on camera frame rates.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "INSUFFICIENT_SUPPORT",
+      "reason": "The source confirms that diffusion-based VLAs are compute-intensive and require high frequency (50-200 Hz), but it does not mention 'motion jitter', 'stalling', 'safety risks', or the 'brain vs body' performance gap.",
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "Source supports the compute-intensity and frequency requirements, but not the specific negative physical outcomes (jitter, stalling, safety risks) listed in the claim.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The abstract explicitly describes the hardware-software co-design, the temporal-aware bit-sparsity algorithm, speculative inference for data loading, and the 1D systolic bit-serial PE arrays.",
+      "evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content contains all technical components of the claim.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The abstract explicitly mentions the Trajectory Smoother (using polynomial fitting) and the Chunk Fuser to ensure position, velocity, and acceleration continuity.",
+      "evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content directly supports the implementation details and the continuity goals.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The text explicitly states the trade-off: LFP offers better thermal stability and cycle life, while NCA offers higher energy density.",
+      "evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content explicitly confirms the chemistry trade-offs as described.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The source explicitly contrasts rigid systems (harmonic drives/brushless motors) requiring continuous power with soft actuators that store and release energy passively.",
+      "evidence": [
+        {
+          "evidence_id": "C006-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content directly supports the energy efficiency comparison between rigid and soft actuators.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The text identifies thermal management as one of the three hardest unsolved barriers and explicitly mentions that compact body designs constrain heat paths, leading to throttling or faults.",
+      "evidence": [
+        {
+          "evidence_id": "C007-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content directly supports the claim regarding thermal bottlenecks and constrained heat paths.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4
+        }
+      ]
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker marked as Tier 1 (Primary), but arXiv is a preprint server; corrected to Tier 2 (Peer-reviewed/Preprint)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C003-E001",
+      "message": "Worker marked as Tier 1 (Primary), but arXiv is a preprint server; corrected to Tier 2 (Peer-reviewed/Preprint)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C004-E001",
+      "message": "Worker marked as Tier 1 (Primary), but arXiv is a preprint server; corrected to Tier 2 (Peer-reviewed/Preprint)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C005-E001",
+      "message": "Worker marked as Tier 2 (Peer-reviewed), but source is a corporate blog (actuatorhq.com); corrected to Tier 4 (Industry)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C006-E001",
+      "message": "Worker marked as Tier 2 (Peer-reviewed), but source is a corporate blog (actuatorhq.com); corrected to Tier 4 (Industry)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C007-E001",
+      "message": "Worker marked as Tier 2 (Peer-reviewed), but source is a corporate blog (actuatorhq.com); corrected to Tier 4 (Industry)."
+    }
+  ]
+}

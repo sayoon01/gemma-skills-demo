@@ -1,0 +1,136 @@
+```json
+{
+  "assignment_id": "SG06",
+  "claims": [
+    {
+      "claim": "Real-time VLA (Vision-Language-Action) inference for robotics targets a latency of 10 to 100 milliseconds (10 Hz to 100 Hz) to align with visual signal ingestion rates from standard RGB cameras (24-60 Hz).",
+      "support": "VLA-Perf analysis defines 10 Hz as a baseline and explores rates up to and beyond 100 Hz to match camera frame rates.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "How Fast Can I Run My VLA? Demystifying VLA Inference Performance with VLA-Perf",
+          "publisher": "arxiv.org",
+          "url": "https://arxiv.org/html/2602.18397v1",
+          "source_type": "peer-reviewed",
+          "tier": 1,
+          "excerpt": "Given that standard RGB camera frame rates typically range from 24 to 60 Hz, we define a 10 Hz inference frequency as... What combinations of models and systems are required to support VLA inference at rates from 10 Hz up to and beyond 100 Hz"
+        }
+      ]
+    },
+    {
+      "claim": "Diffusion-based VLA models are compute-intensive and often create a performance gap where the robot's 'brain' is too slow for its 'body,' resulting in motion jitter, stalling, and safety risks in dynamic environments.",
+      "support": "Multiple sources highlight the compute intensity of diffusion VLAs and the resulting 'performance wall' leading to stuttering movements.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+          "publisher": "arxiv.org",
+          "url": "https://arxiv.org/abs/2608.04428",
+          "source_type": "peer-reviewed",
+          "tier": 1,
+          "excerpt": "diffusion-based VLA models achieve superior motion quality and generalization. However, diffusion-based VLA models are compute-intensive and must run at high control frequency, e.g., 50-200 Hz."
+        },
+        {
+          "source_kind": "web",
+          "title": "Optimizing VLA Model Inference Latency on Edge Hardware for Robotics",
+          "publisher": "tech-champion.com",
+          "url": "https://tech-champion.com/robotics/optimizing-vla-model-inference-latency-on-edge-hardware-for-robotics/",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "The \"brain\" of the robot is often too slow for its \"body,\" leading to stuttering movements and safety risks in dynamic environments."
+        }
+      ]
+    },
+    {
+      "claim": "The Deltoris framework accelerates diffusion-based VLA inference using a hardware-software co-design that employs temporal-aware bit-sparsity to compute only differences between consecutive inputs and speculative inference to amortize data loading.",
+      "support": "Deltoris uses customized 1D systolic bit-serial PE arrays to implement these techniques, achieving up to 34.2x speedup over mobile GPUs.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+          "publisher": "arxiv.org",
+          "url": "https://arxiv.org/abs/2608.04428",
+          "source_type": "peer-reviewed",
+          "tier": 1,
+          "excerpt": "we propose a temporal-aware bit-sparsity algorithm that computes only the differences between consecutive inputs... we propose a speculative inference technique, which amortizes data loading across multiple control steps. Lastly, to support these techniques, we co-design a dedicated accelerator with customized 1D systolic bit-serial PE arrays"
+        }
+      ]
+    },
+    {
+      "claim": "VLA-RAIL addresses VLA inference bottlenecks by implementing an asynchronous inference linker that uses a Trajectory Smoother (polynomial fitting) and a Chunk Fuser to ensure continuity in position, velocity, and acceleration.",
+      "support": "This framework decouples model inference from motion control to eliminate jitter and pauses in action execution.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "[2512.24673] VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots",
+          "publisher": "arxiv.org",
+          "url": "https://arxiv.org/abs/2512.24673",
+          "source_type": "peer-reviewed",
+          "tier": 1,
+          "excerpt": "a Trajectory Smoother that effectively filters out the noise and jitter in the trajectory of one action chunk using polynomial fitting and a Chunk Fuser that seamlessly align the current executing trajectory and the newly arrived chunk"
+        }
+      ]
+    },
+    {
+      "claim": "Humanoid actuator energy efficiency is constrained by a trade-off between battery chemistries: Lithium Iron Phosphate (LFP) provides better thermal stability and cycle life, while Nickel Cobalt Aluminum (NCA) offers higher energy density.",
+      "support": "The choice of chemistry directly impacts the thermal budget and how aggressively the actuator stack can be pushed.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs",
+          "publisher": "actuatorhq.com",
+          "url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "The trade-off between lithium iron phosphate chemistry (LFP) and nickel cobalt aluminum chemistry (NCA) is not academic. LFP offers better thermal stability and cycle life. NCA offers higher energy density."
+        }
+      ]
+    },
+    {
+      "claim": "Rigid actuator systems (e.g., harmonic drives and brushless motors) are energy-inefficient because they require continuous power input to maintain position and generate force, whereas soft actuators can reduce power draw by passively storing and releasing energy.",
+      "support": "Soft actuators exploit material compliance to absorb and redirect energy, which is critical for power-constrained environments like planetary exploration.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "New Research: Robots Push Energy Limits in Three Different Directions",
+          "publisher": "actuatorhq.com",
+          "url": "https://actuatorhq.com/blog/new-research-robotics-energy-efficiency-breakthroughs-2026",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "Rigid actuator systems, like the harmonic drives and brushless motors used in most humanoid robots, require continuous power input to hold position and generate force. Soft actuators can exploit material compliance to absorb and redirect energy more naturally."
+        }
+      ]
+    },
+    {
+      "claim": "Thermal management is a primary bottleneck for humanoid actuators in production; compact body designs constrain heat paths, leading to thermal throttling or faults during sustained operation.",
+      "support": "Actuators that perform well in labs may fail in warm environments due to constrained heat paths in the robot's body.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs",
+          "publisher": "actuatorhq.com",
+          "url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "Thermal protection strategy is listed as a distinct design variable... because actuator motors generate heat under load, and in a compact humanoid body the heat paths are constrained."
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "Specific numeric energy efficiency benchmarks (e.g., Joules per movement) for soft vs. rigid actuators were not provided.",
+    "Detailed hardware specifications for the 'Jetson AGX Thor' in the context of VLA acceleration were mentioned but not deeply detailed in the read sources."
+  ],
+  "leads": [
+    "Investigate the specific '1D systolic bit-serial PE arrays' architecture used in Deltoris to understand the hardware implementation of bit-sparsity.",
+    "Explore the 'DC/DC converter topology' mentioned as a variable for power distribution efficiency in humanoid joints."
+  ]
+}
+```

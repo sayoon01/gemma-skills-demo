@@ -1,0 +1,143 @@
+{
+  "accepted_claims": [
+    {
+      "claim_id": "C001",
+      "claim": "The robotics industry is shifting toward Vision-Language-Action (VLA) models to enable general-purpose capabilities.",
+      "worker_support": "VLA models unify vision, language, and action data at scale, allowing robots to learn policies that generalize across diverse tasks, objects, and environments with minimal task-specific data.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content explicitly states that VLA models aim to learn policies that generalize across diverse tasks, objects, embodiments, and environments by unifying vision, language, and action data at scale.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications",
+              "publisher": "arXiv",
+              "url": "https://arxiv.org/abs/2510.07077",
+              "source_type": "academic",
+              "tier": 1,
+              "excerpt": "By unifying vision, language, and action data at scale... VLA models aim to learn policies that generalise across diverse tasks, objects, embodiments, and environments."
+            },
+            "retrieved_source": {
+              "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications",
+              "url": "https://arxiv.org/abs/2510.07077",
+              "domain": "arxiv.org",
+              "content": "[2510.07077] Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications\nSkip to main content\nSearch\nSubmit\nDonate\nLog in\nPress Enter to search ·\nAdvanced search\nComputer Science > Robotics\narXiv:2510.07077\n(cs)\n[Submitted on 8 Oct 2025]\nTitle:\nVision-Language-Action Models for Robotics: A Review Towards Real-World Applications\nAuthors:\nKento Kawaharazuka\n,\nJihoon Oh\n,\nJun Yamada\n,\nIngmar Posner\n,\nYuke Zhu\nView a PDF of the paper titled Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications, by Kento Kawaharazuka and Jihoon Oh and Jun Yamada and Ingmar Posner and Yuke Zhu\nView PDF\nHTML (experimental)\nAbstract:\nAmid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained significant attention. By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects, embodiments, and environments. This generalisation capability is expected to enable robots to solve novel downstream tasks with minimal or no additional task-specific data, facilitating more flexible and scalable real-world deployment. Unlike previous surveys that focus narrowly on action representations or high-level model architectures, this work offers a comprehensive, full-stack review, integrating both software and hardware components of VLA systems. In particular, this paper provides a systematic review of VLAs, covering their strategy and architectural transition, architectures and building blocks, modality-specific processing techniques, and learning paradigms. In addition, to support the deployment of VLAs in real-world robotic applications, we also review commonly used robot platforms, data collection strategies, publicly available datasets, data augmentation methods, and evaluation benchmarks. Throughout this comprehensive survey, this paper aims to offer practical guidance for the robotics community in applying VLAs to real-world robotic systems. All references categorized by training approach, evaluation method, modality, and dataset are available in the table on our project website:\nthis https URL\n.\nComments:\nAccepted to IEEE Access, website:\nthis https URL\nSubjects:\nRobotics (cs.RO)\n; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG)\nCite as:\narXiv:2510.07077\n[cs.RO]\n(or\narXiv:2510.07077v1\n[cs.RO]\nfor this version)\nhttps://doi.org/10.48550/arXiv.2510.07077\nFocus to learn more\narXiv-issued DOI via DataCite\nRelated DOI\n:\nhttps://doi.org/10.1109/ACCESS.2025.3609980\nFocus to learn more\nDOI(s) linking to related resources\nSubmission history\nFrom: Kento Kawaharazuka [\nview email\n]\n[v1]\nWed, 8 Oct 2025 14:38:25 UTC (7,140 KB)\nFull-text links:\nAccess Paper:\nView a PDF of the paper titled Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications, by Kento Kawaharazuka and Jihoon Oh and Jun Yamada and Ingmar Posner and Yuke Zhu\nView PDF\nHTML (experimental)\nTeX Source\nview license\nCurrent browse context:\ncs.RO\n< prev\n|\nnext >\nnew\n|\nrecent\n|\n2025-10\nChange to browse by:\ncs\ncs.AI\ncs.CV\ncs.LG\nReferences & Citations\nNASA ADS\nGoogle Scholar\nSemantic Scholar\nexport BibTeX citation\nLoading...\nBibTeX formatted citation\n×\nloading...\nData provided by:\nBookmark\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nBibliographic Explorer\n(\nWhat is the Explorer?\n)\nConnected Papers Toggle\nConnected Papers\n(\nWhat is Connected Papers?\n)\nLitmaps Toggle\nLitmaps\n(\nWhat is Litmaps?\n)\nscite.ai Toggle\nscite Smart Citations\n(\nWhat are Smart Citations?\n)\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nalphaXiv\n(\nWhat is alphaXiv?\n)\nLinks to Code Toggle\nCatalyzeX Code Finder for Papers\n(\nWhat is CatalyzeX?\n)\nDagsHub Toggle\nDagsHub\n(\nWhat is DagsHub?\n)\nGotitPub Toggle\nGotit.pub\n(\nWhat is GotitPub?\n)\nHuggingface Toggle\nHugging Face\n(\nWhat is Huggingface?\n)\nScienceCast Toggle\nScienceCast\n(\nWhat is ScienceCast?\n)\nDemos\nDemos\nReplicate Toggle\nReplicate\n(\nWhat is Replicate?\n)\nSpaces Toggle\nHugging Face Spaces\n(\nWhat is Spaces?\n)\nSpaces Toggle\nTXYZ.AI\n(\nWhat is TXYZ.AI?\n)\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\nInfluence Flower\n(\nWhat are Influence Flowers?\n)\nCore recommender toggle\nCORE Recommender\n(\nWhat is CORE?\n)\nAuthor\nVenue\nInstitution\nTopic\nAbout arXivLabs\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\nLearn more about arXivLabs\n.\nWhich authors of this paper are endorsers?\n|\nDisable MathJax\n(\nWhat is MathJax?\n)\nWe gratefully acknowledge support from\nour\nmajor funders\n,\nmember institutions\n,\n,\nand all contributors.\nAbout\n·\nHelp\n·\nContact\n·\nSubscribe\n·\nCopyright\n·\nPrivacy\n·\nAccessibility\n·\nOperational Status\n(opens in new tab)\nMajor funding support from",
+              "content_chars": 5381
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is supported by a single verified academic source. While the source confirms the goals and mechanisms of VLA models, it does not explicitly state that the 'industry' as a whole is shifting toward them, though it notes they have 'recently gained significant attention'."
+    },
+    {
+      "claim_id": "C002",
+      "claim": "Tesla Optimus Gen 3 entered mass production in January 2026 but is not yet available for external commercial sale.",
+      "worker_support": "Mass production of Gen 3 began on January 21, 2026, at the Fremont factory. While in production, these units are used for internal testing and deployment rather than external commercial sales.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "The content explicitly mentions mass production commenced January 21, 2026, at Fremont and specifies that these are 'production' in the manufacturing sense, not the commercial sales sense.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+              "publisher": "optimusk.blog",
+              "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "January 21, 2026: Gen 3 mass production commences at Fremont, California... The units being produced and tested in Fremont are 'production' in the manufacturing sense, not yet in the commercial sales sense."
+            },
+            "retrieved_source": {
+              "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+              "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+              "domain": "optimusk.blog",
+              "content": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)\n// MENU\nHome\nBlog\nServices\nTools\nAbout\nCareers\nContact\nBuy Optimus\nHome\n›\nBlog\n›\nTesla Optimus Gen 3 vs Gen 2\n// Contents\n// Contents\nQuick Answer\nGen 2 Official Specs\nGen 3: What's Confirmed\nGen 3 Hands Deep Dive\nWhat's NOT Yet Confirmed\nFull Comparison Table\nAWE Shanghai 2026\nAI & Software Upgrade\nProduction Status\nWhat to Expect at Reveal\nFAQ\nComparison\n// Published: June 1, 2026\n// 10 min read\n// Lindsey A. Kennedy\nTesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)\nShare:\n𝕏 Twitter\nin LinkedIn\n⎘ Copy Link\n⚡ Quick Answer — Gen 3 vs Gen 2 (June 2026)\nHere is what you actually need to know before reading further:\nGen 3 is NOT fully revealed yet\n— Tesla has shown components (especially hands) but no official Gen 3 full spec sheet as of June 2026\nBiggest upgrade confirmed:\nGen 3 hands — 50 actuators vs ~28 total in Gen 2; 22 DoF per hand vs 11 in Gen 2 — a 4.5× leap\nMass production started:\nJanuary 21, 2026 at Fremont — the first time Tesla used the term \"mass production\" for Optimus\nGen 2 specs are official and confirmed\n— unveiled December 2023, 73 kg, 5 mph walk speed, 11 DoF hands\nFull Gen 3 reveal expected:\nTesla Annual Shareholder Meeting, estimated June 2026\n4.5×\nMore hand actuators in Gen 3\n22\nGen 3 DoF per hand\n3,000+\nManipulation tasks enabled\nJan 21\nGen 3 production start 2026\nVLA\nGen 3 AI model type\nTBC\nGen 3 weight & battery\nUpdated July 3, 2026\nWhat's new:\n✅ “Gen 3” is still a hands + AI upgrade on the Gen 2 body; full V3 body reveal expected near production start (late July–August 2026)\n✅ Gen 3 hands: 50 actuators / 22 DoF vs Gen 2's 11-DoF hands — the single biggest difference\n✅ AI5 chip (taped out April 2026) is Gen 3's new inference brain\nSources:\nElectrek — V3 production window\n·\ntech-insider — AI5 tape-out\n·\nQviro — Optimus specifications\n// Analysis · June 1, 2026\nThis comparison separates what is officially confirmed from what is still pending. For background on the full Gen 3 roadmap, see our\nGen 3 complete guide\n. For Gen 2 technical detail, see our\nGen 2 specs guide\n.\nTesla Optimus Gen 2 — Official Specifications (Confirmed)\nGen 2 was unveiled at\nTesla's Shareholder Meeting in December 2023\n. All specs below are from official Tesla materials or directly confirmed in earnings calls:\nSpecification\nGen 2 Value\nStatus\nOfficial Unveil\nDecember 2023\nConfirmed\nHeight\n5'8\" (173 cm)\nConfirmed\nWeight\n73 kg\nConfirmed\nWalk Speed\nUp to 5 mph\nConfirmed\nHand DoF\n11 per hand\nConfirmed\nTotal Actuators\n~28\nConfirmed\nTotal Degrees of Freedom\n40\nConfirmed\nBattery\n2.3 kWh (est. 8–10 hrs operation)\nConfirmed\nAI System\nTesla neural network, imitation learning\nConfirmed\nProduction Status\n~100+ units (factory learning, 2024–2025)\nConfirmed\nSources: Tesla IR ·\nElectrek\n·\nIEEE Spectrum\n💡\nContext:\nDuring 2024 and early 2025, approximately 100+ Gen 2 units were deployed across Tesla's Fremont and Giga Texas facilities. Their primary function was collecting training data — not doing productive manufacturing work. Musk confirmed on the Q4 2025 earnings call (January 28, 2026) that units were \"primarily for learning, not productive tasks.\"\nTesla Optimus Gen 3 — What Is Confirmed (July 2026)\nTesla has not released a full Gen 3 spec sheet. Here is everything officially confirmed with a source as of June 1, 2026:\nJanuary 21, 2026:\nGen 3 mass production commences at Fremont, California. First use of \"mass production\" terminology by Tesla for Optimus. Source:\nElectrek\nFebruary 17, 2026:\nGen 3 hands revealed. Musk on X: \"This bot got hands.\" 25 actuators per forearm/hand (50 total), 22 DoF per hand, tendon-driven biomimetic design. Source:\nNotateslaapp.com\nMarch 11, 2026:\nTesla China shows Gen 3 hands at Shanghai AWE expo. Weibo post describes fingers as \"nearly identical in proportion to human hands.\" Source: Notateslaapp.com\nMarch 12, 2026:\nMusk at Abundance Summit: Gen 3 in \"final stages,\" will be \"by far the most advanced robot in the world.\" Summer 2026 production start confirmed.\nAI system:\nVLA (Vision-Language-Action) model + AI5 chip + Grok voice integration — confirmed via multiple earnings calls and Musk statements.\n👉\nKey distinction:\nMass production of Gen 3 started January 21, 2026 — but the full-body official reveal has not yet occurred. The units being produced and tested in Fremont are \"production\" in the manufacturing sense, not yet in the commercial sales sense.\nGen 3 Hands: The Most Important Upgrade\nThe hand system is the single biggest confirmed upgrade from Gen 2 to Gen 3.\nIEEE Spectrum's actuator analysis\ncalled it \"a fundamental architectural shift, not an incremental improvement.\"\nGen 3 Hand Architecture\nThe design philosophy changed completely. Gen 2 placed actuators in the hand itself — limiting the number of motors that could physically fit. Gen 3 moves all actuators into the forearm in a tendon-driven biomimetic design, the same principle human hands use (muscles in the forearm, tendons running into the fingers).\nThis single architectural decision enabled:\n✔\n25 actuators per forearm/hand\n— versus the physical limit of what fit in Gen 2's hand\n✔\n22 degrees of freedom per hand\n— approaching human hand capability (human hand: ~27 DoF)\n✔\nLighter hand structure\n— mass moved to forearm reduces wrist torque requirements\n✔\n3,000+ discrete manipulation tasks\n— the figure Tesla cited for Gen 3 hand capability\n✔\nTactile feedback\n— Tesla Board Chair Robyn Denholm described the hands as having \"very good\" tactile nature\n11\nGen 2 DoF per hand\n22\nGen 3 DoF per hand\n~28\nGen 2 total actuators\n50\nGen 3 hand actuators alone\n27\nHuman hand DoF\n3,000+\nGen 3 manipulation tasks\nSources:\nNotateslaapp.com\n·\nIEEE Spectrum\n·\nInteresting Engineering\nWhat Is NOT Yet Confirmed for Gen 3 (June 2026)\n⚠\nImportant for researchers:\nMultiple sites have published \"Gen 3 specs\" that are speculation or analyst estimates. The following specs have NOT been officially disclosed by Tesla as of June 1, 2026.\nSpecification\nStatus\nNotes\nWeight\nTBC\nExpect",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is supported by a single industry blog. The source confirms the mass production date and the distinction between manufacturing production and commercial sale."
+    },
+    {
+      "claim_id": "C003",
+      "claim": "Tesla Optimus Gen 3 features a significant architectural upgrade in its hands compared to Gen 2.",
+      "worker_support": "Gen 3 utilizes a tendon-driven biomimetic design moving actuators to the forearm, increasing hand capability to 50 actuators and 22 degrees of freedom (DoF) per hand, compared to 28 actuators and 11 DoF in Gen 2.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The content details the shift to a tendon-driven biomimetic design with actuators in the forearm, and lists 50 actuators/22 DoF for Gen 3 vs ~28 actuators/11 DoF for Gen 2.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C003-E001",
+            "worker_source": {
+              "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+              "publisher": "optimusk.blog",
+              "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Gen 3 hands — 50 actuators vs ~28 total in Gen 2; 22 DoF per hand vs 11 in Gen 2 — a 4.5× leap"
+            },
+            "retrieved_source": {
+              "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+              "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+              "domain": "optimusk.blog",
+              "content": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)\n// MENU\nHome\nBlog\nServices\nTools\nAbout\nCareers\nContact\nBuy Optimus\nHome\n›\nBlog\n›\nTesla Optimus Gen 3 vs Gen 2\n// Contents\n// Contents\nQuick Answer\nGen 2 Official Specs\nGen 3: What's Confirmed\nGen 3 Hands Deep Dive\nWhat's NOT Yet Confirmed\nFull Comparison Table\nAWE Shanghai 2026\nAI & Software Upgrade\nProduction Status\nWhat to Expect at Reveal\nFAQ\nComparison\n// Published: June 1, 2026\n// 10 min read\n// Lindsey A. Kennedy\nTesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)\nShare:\n𝕏 Twitter\nin LinkedIn\n⎘ Copy Link\n⚡ Quick Answer — Gen 3 vs Gen 2 (June 2026)\nHere is what you actually need to know before reading further:\nGen 3 is NOT fully revealed yet\n— Tesla has shown components (especially hands) but no official Gen 3 full spec sheet as of June 2026\nBiggest upgrade confirmed:\nGen 3 hands — 50 actuators vs ~28 total in Gen 2; 22 DoF per hand vs 11 in Gen 2 — a 4.5× leap\nMass production started:\nJanuary 21, 2026 at Fremont — the first time Tesla used the term \"mass production\" for Optimus\nGen 2 specs are official and confirmed\n— unveiled December 2023, 73 kg, 5 mph walk speed, 11 DoF hands\nFull Gen 3 reveal expected:\nTesla Annual Shareholder Meeting, estimated June 2026\n4.5×\nMore hand actuators in Gen 3\n22\nGen 3 DoF per hand\n3,000+\nManipulation tasks enabled\nJan 21\nGen 3 production start 2026\nVLA\nGen 3 AI model type\nTBC\nGen 3 weight & battery\nUpdated July 3, 2026\nWhat's new:\n✅ “Gen 3” is still a hands + AI upgrade on the Gen 2 body; full V3 body reveal expected near production start (late July–August 2026)\n✅ Gen 3 hands: 50 actuators / 22 DoF vs Gen 2's 11-DoF hands — the single biggest difference\n✅ AI5 chip (taped out April 2026) is Gen 3's new inference brain\nSources:\nElectrek — V3 production window\n·\ntech-insider — AI5 tape-out\n·\nQviro — Optimus specifications\n// Analysis · June 1, 2026\nThis comparison separates what is officially confirmed from what is still pending. For background on the full Gen 3 roadmap, see our\nGen 3 complete guide\n. For Gen 2 technical detail, see our\nGen 2 specs guide\n.\nTesla Optimus Gen 2 — Official Specifications (Confirmed)\nGen 2 was unveiled at\nTesla's Shareholder Meeting in December 2023\n. All specs below are from official Tesla materials or directly confirmed in earnings calls:\nSpecification\nGen 2 Value\nStatus\nOfficial Unveil\nDecember 2023\nConfirmed\nHeight\n5'8\" (173 cm)\nConfirmed\nWeight\n73 kg\nConfirmed\nWalk Speed\nUp to 5 mph\nConfirmed\nHand DoF\n11 per hand\nConfirmed\nTotal Actuators\n~28\nConfirmed\nTotal Degrees of Freedom\n40\nConfirmed\nBattery\n2.3 kWh (est. 8–10 hrs operation)\nConfirmed\nAI System\nTesla neural network, imitation learning\nConfirmed\nProduction Status\n~100+ units (factory learning, 2024–2025)\nConfirmed\nSources: Tesla IR ·\nElectrek\n·\nIEEE Spectrum\n💡\nContext:\nDuring 2024 and early 2025, approximately 100+ Gen 2 units were deployed across Tesla's Fremont and Giga Texas facilities. Their primary function was collecting training data — not doing productive manufacturing work. Musk confirmed on the Q4 2025 earnings call (January 28, 2026) that units were \"primarily for learning, not productive tasks.\"\nTesla Optimus Gen 3 — What Is Confirmed (July 2026)\nTesla has not released a full Gen 3 spec sheet. Here is everything officially confirmed with a source as of June 1, 2026:\nJanuary 21, 2026:\nGen 3 mass production commences at Fremont, California. First use of \"mass production\" terminology by Tesla for Optimus. Source:\nElectrek\nFebruary 17, 2026:\nGen 3 hands revealed. Musk on X: \"This bot got hands.\" 25 actuators per forearm/hand (50 total), 22 DoF per hand, tendon-driven biomimetic design. Source:\nNotateslaapp.com\nMarch 11, 2026:\nTesla China shows Gen 3 hands at Shanghai AWE expo. Weibo post describes fingers as \"nearly identical in proportion to human hands.\" Source: Notateslaapp.com\nMarch 12, 2026:\nMusk at Abundance Summit: Gen 3 in \"final stages,\" will be \"by far the most advanced robot in the world.\" Summer 2026 production start confirmed.\nAI system:\nVLA (Vision-Language-Action) model + AI5 chip + Grok voice integration — confirmed via multiple earnings calls and Musk statements.\n👉\nKey distinction:\nMass production of Gen 3 started January 21, 2026 — but the full-body official reveal has not yet occurred. The units being produced and tested in Fremont are \"production\" in the manufacturing sense, not yet in the commercial sales sense.\nGen 3 Hands: The Most Important Upgrade\nThe hand system is the single biggest confirmed upgrade from Gen 2 to Gen 3.\nIEEE Spectrum's actuator analysis\ncalled it \"a fundamental architectural shift, not an incremental improvement.\"\nGen 3 Hand Architecture\nThe design philosophy changed completely. Gen 2 placed actuators in the hand itself — limiting the number of motors that could physically fit. Gen 3 moves all actuators into the forearm in a tendon-driven biomimetic design, the same principle human hands use (muscles in the forearm, tendons running into the fingers).\nThis single architectural decision enabled:\n✔\n25 actuators per forearm/hand\n— versus the physical limit of what fit in Gen 2's hand\n✔\n22 degrees of freedom per hand\n— approaching human hand capability (human hand: ~27 DoF)\n✔\nLighter hand structure\n— mass moved to forearm reduces wrist torque requirements\n✔\n3,000+ discrete manipulation tasks\n— the figure Tesla cited for Gen 3 hand capability\n✔\nTactile feedback\n— Tesla Board Chair Robyn Denholm described the hands as having \"very good\" tactile nature\n11\nGen 2 DoF per hand\n22\nGen 3 DoF per hand\n~28\nGen 2 total actuators\n50\nGen 3 hand actuators alone\n27\nHuman hand DoF\n3,000+\nGen 3 manipulation tasks\nSources:\nNotateslaapp.com\n·\nIEEE Spectrum\n·\nInteresting Engineering\nWhat Is NOT Yet Confirmed for Gen 3 (June 2026)\n⚠\nImportant for researchers:\nMultiple sites have published \"Gen 3 specs\" that are speculation or analyst estimates. The following specs have NOT been officially disclosed by Tesla as of June 1, 2026.\nSpecification\nStatus\nNotes\nWeight\nTBC\nExpect",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is supported by a single industry blog. The source provides the specific architectural shift (tendon-driven/forearm actuators) and the numerical comparison of actuators and DoF."
+    }
+  ],
+  "unsupported_claims": [],
+  "rejected_evidence": [],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; corrected to Tier 2 (Peer-reviewed/Academic)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but optimusk.blog is an industry blog; corrected to Tier 4."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C003-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but optimusk.blog is an industry blog; corrected to Tier 4."
+    }
+  ],
+  "consistency_warnings": [],
+  "summary": {
+    "input_claim_count": 3,
+    "accepted_claim_count": 3,
+    "unsupported_claim_count": 0,
+    "verified_evidence_count": 3,
+    "rejected_evidence_count": 0,
+    "warning_count": 0
+  }
+}

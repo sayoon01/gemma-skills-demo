@@ -281,4 +281,5 @@ Skill OFF 대비 Skill ON에서는 단순 검색 결과 생성에서 실제 원�
 
 다만 원본 `deep-research` Skill은 병렬 sub-agent 사용을 핵심 요구사항으로 포함하므로, 현재 결과는 Full Compatibility가 아닌 B1 Partial Compatibility로 판정한다.
 
-후속 B2에서는 Agent Tool을 추가하여 복수 Gemma4 sub-agent를 병렬 실행하고, 다중 연구 wave, 독립 출처 triangulation 및 convergence 판단까지 검증할 필요가 있다.
+이 문서는 B1 단일 세션 비교다.
+이후 독립 세션 병렬 조사와 Evidence Pool, Replanner는 [README.md](../README.md)의 B2 절과 [docs/b2-sub-agents.md](../docs/b2-sub-agents.md)를 본다.

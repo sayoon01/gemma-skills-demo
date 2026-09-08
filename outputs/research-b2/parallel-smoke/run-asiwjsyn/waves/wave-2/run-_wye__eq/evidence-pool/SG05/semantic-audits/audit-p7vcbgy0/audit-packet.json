@@ -1,0 +1,142 @@
+{
+  "accepted_claims": [
+    {
+      "claim_id": "C001",
+      "claim": "Samsung Electronics is developing an 'AI-Native' humanoid robot with a target debut at CES 2027 (January 2027).",
+      "worker_support": "Samsung is integrating AI into the robot's design from the initial stage rather than layering software on a pre-built frame, aiming for a reveal at CES 2027.",
+      "worker_confidence": "high",
+      "deterministic_status": "MULTI_SOURCE_PENDING_AUDIT",
+      "sources": [
+        {
+          "evidence_id": "C001-E001",
+          "worker_source": {
+            "title": "삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표 < AI < 미래공감 < 기사본문 - 공감신문",
+            "publisher": "공감신문",
+            "url": "https://www.gokorea.kr/news/articleView.html?idxno=877516",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "삼성전자가 2026년 9월 7일 차세대 지능형 휴머노이드(인간형 로봇) 개발 프로젝트를 본격화하고 2027년 1월 미국 라스베이거스에서 열리는 세계 최대 전자·정보기술 전시회 CES 2027 공개를 목표로 실무 작업에 착수했다."
+          },
+          "retrieved_source": {
+            "title": "삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표 < AI < 미래공감 < 기사본문 - 공감신문",
+            "url": "https://www.gokorea.kr/news/articleView.html?idxno=877516",
+            "domain": "www.gokorea.kr",
+            "content": "삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표 < AI < 미래공감 < 기사본문 - 공감신문\n주요서비스 바로가기\n다음 기사보기\n삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표\n다른 공유 찾기\nAI\n삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표\n신선미\n닫기\n차세대 인공지능과 액추에이터 융합해 지능형 로봇 시장 선점에 나선다\n삼성전자가 2026년 9월 7일 차세대 지능형 휴머노이드(인간형 로봇) 개발 프로젝트를 본격화하고 2027년 1월 미국 라스베이거스에서 열리는 세계 최대 전자·정보기술 전시회 CES 2027 공개를 목표로 실무 작업에 착수했다. 글로벌 빅테크 기업들이 생성형 인공지능(AI)과 로봇 공학을 결합한 지능형 로봇 개발에 속도를 내는 가운데 반도체와 소프트웨어, 가전 생태계를 두루 갖춘 종합 전자 기업의 제조 역량을 로봇 하드웨어에 이식하려는 시도다.\n인간의 신체적 특성을 모사한 휴머노이드 개발은 최근 산업 현장과 가정 내 서비스 영역 모두에서 차세대 전략 산업으로 급부상하고 있다. 테슬라가 자체 개발 중인 옵티머스를 연이어 개량하고 있고 피규어AI와 보스턴다이내믹스 같은 전문 로봇 제조사들도 첨단 센서와 신경망을 탑재한 시제품을 연달아 공개했다. 로봇 시장의 무게중심이 고정된 위치에서 정밀 작업을 수행하던 전통적 산업용 다관절 로봇에서 자율적으로 환경을 인식하고 행동하는 지능형 개체로 급격히 전환되는 추세다.\n휴머노이드 로봇은 머리 부분에 장착된 3차원 비전 센서와 라이다(LiDAR·빛 탐지 및 거리 측정)를 통해 주변 지형을 입체적으로 인식한다. 로봇의 관절에는 회전력을 정밀하게 제어하는 초소형 모터와 감속기가 결합한 액추에이터(구동 장치)가 탑재되어 두 발로 균형을 잡으며 걷거나 계단을 오르내리는 동작을 수행한다. 사람의 손가락 구조를 본뜬 매니퓰레이터(로봇 손)는 수많은 촉각 센서와 힘 피드백 알고리즘을 활용해 달걀처럼 깨지기 쉬운 물체를 깨뜨리지 않고 쥐거나 미세한 전자기 부품을 조립하는 정밀 작업을 지원한다.\n글로벌 조사기관 인터내셔널데이터코퍼레이션(IDC)에 따르면 전 세계 인공지능 및 로봇 융합 시장 규모는 2024년 420억 달러 수준에서 연평균 25% 이상 성장해 2030년 1600억 달러를 넘어설 것으로 집계됐다. 로봇의 두뇌에 해당하는 인공지능 모델이 거대언어모델(LLM)과 멀티모달(복합정보처리) 기술을 흡수하면서 로봇이 사람의 자연어 명령을 듣고 스스로 행동 순서를 계획하는 단계로 발전한 결과다. 공장 내 단순 반복 작업을 넘어 물류 분류와 노인 돌봄, 매장 안내 등 복합적인 판단이 요구되는 환경으로 로봇의 활동 반경이 넓어지고 있다.\n반도체와 온디바이스(기기 탑재형) AI 분야에서 축적한 기술 자산은 로봇 설계에 직접 활용된다. 인간형 로봇이 시각 정보와 센서 데이터를 지연 없이 처리하려면 초저전력 고성능 신경망처리장치(NPU)가 필수적이다. 클라우드 서버와의 통신 지연을 최소화하고 로봇 내부에서 실시간으로 관절 각도와 보행 궤적을 연산하기 위해 기기 자체에서 구동되는 고효율 엣지 컴퓨팅 하드웨어가 두뇌 역할을 맡는다. 배터리 용량의 한계 속에서 장시간 구동을 보장하기 위해서는 전력 관리 반도체(PMIC)와 모바일 프로세서 설계 기술의 집약이 요구된다.\n로봇 하드웨어 부문에서는 고출력 밀도를 갖춘 모터와 하모닉 드라이브 감속기를 소형화하는 기술이 핵심 과제로 꼽힌다. 인간의 체형과 무게를 크게 벗어나지 않으면서도 수십 킬로그램의 하중을 들어 올리려면 관절 단위의 열 방출 설계와 토크(회전력) 제어의 정밀도가 담보되어야 한다. 이를 위해 외부 충격에 유연하게 반응하는 준직접구동(QDD) 방식 액추에이터와 정밀 역학 센서가 관절마다 배치되며, 경량 복합 알루미늄과 탄소 섬유 복합 소재를 사용해 전체 하중을 줄이는 작업이 병행된다.\n한국로봇산업진흥원은 최근 보고서에서 국내 로봇 부품 국산화율이 소프트웨어 플랫폼과 구동 제어기 분야에서 꾸준히 상승하고 있으며, 감속기와 서보모터 등 핵심 하드웨어 분야에서도 국산 대체 기술이 점진적으로 확보되고 있다고 분석했다. 정부 역시 첨단 로봇 산업 비전과 전략을 수립하고 제조 현장 내 지능형 로봇 보급률을 끌어올리기 위한 실증 사업과 규제 개선을 이어오고 있다. 공공 인프라와 민간 실증 단지를 연계해 휴머노이드의 주행 안전성과 작업 신뢰성을 검증하는 시험대가 전국 주요 산업단지에서 운영되는 중이다.\n협회 관계자는 \"단순한 기계적 균형 제어를 넘어 주변 상황을 시각적으로 이해하고 다음 행동을 예측하는 피지컬 AI(물리적 인공지능) 역량이 향후 로봇 산업의 승패를 결정짓는 핵심 지표가 될 것\"이라며 \"세계적인 수준의 반도체 공정과 대규모 양산 체계를 갖춘 종합 정보기술 기업의 진입은 글로벌 휴머노이드 상용화 시점을 대폭 앞당기는 분기점이 된다\"고 설명했다. 이 관계자는 이어 \"기존 스마트폰이나 가전 기기와의 연동성까지 확보된다면 산업용 라인뿐만 아니라 주거 공간에서도 강력한 플랫폼 지배력을 형성할 수 있다\"고 밝혔다.\n국내 부품 제조사들 사이에서도 공급망 다변화에 대한 기대감이 형성되고 있다. 대구의 한 로봇 감속기 협력사에서 기술 개발을 총괄하는 최모 씨(49)는 \"그동안 정밀 감속기나 엔코더 같은 핵심 구동 부품은 해외 수입 의존도가 높아 납기와 단가 조절에 큰 제약이 따랐다\"며 \"국내 대표 전자 기업이 주도하는 차세대 휴머노이드 프로젝트가 실체화되면 국산 정밀 모터와 특수 감속기를 공급할 수 있는 판로가 열려 국내 부품 생태계 전반의 자생력이 강화된다\"고 말했다.\n소프트웨어 분야에서는 디지털 트윈(가상 모형) 환경을 활용한 가상 학습이 집중적으로 이뤄진다. 수백만 대의 가상 로봇을 시뮬레이터 공간에 배치해 물리 법칙에 기반한 강화학습을 거치게 함으로써 실제 기계 부품의 마모나 파손 없이 수만 시간 분량의 보행 및 파지(물체 쥐기) 데이터를 축적한다. 엔비디아의 옴니버스나 아이작 심 같은 로봇 전용 시뮬레이터를 기반으로 가상 환경에서 학습된 신경망 모델을 실제 로봇에 이식하는 심투리얼(Sim-to-Real) 전환 기술이 개발 속도를 끌어올리는 원동력이다.\n국제표준화기구(ISO)는 서비스 로봇과 휴머노이드의 안전 규격을 제정하기 위해 협동로봇 안전 기준인 ISO 10218 및 개인 지원 로봇 안전 표준인 ISO 13482 개정 작업을 진행하고 있다. 로봇이 인간과 같은 공간에서 물리적으로 상호작용할 때 발생할 수 있는 충돌 위험을 감지하고 모터 출력을 순간적으로 차단하거나 회피 기동을 취하도록 강제하는 기능 안전성 기준이 점차 고도화되는 상황이다. 인체 접촉 시 가해지는 압력을 일정 한도 이하로 유지하도록 설계하는 안전 제어 소프트웨어 탑재가 필수 요건으로 자리 잡고 있다.\n산업통상자원부는 2024년부터 2028년까지 추진하는 제4차 지능형 로봇 기본계획을 바탕으로 로봇 핵심 부품과 소프트웨어 국산화 지원 예산을 지속해서 투입하고 있다. 감속기, 서보모터, 그리퍼, 센서, 제어기 등 로봇 5대 핵심 부품의 자립도를 높이고 인공지능 반도체와 통신 칩셋을 하나로 묶는 온디바이스 로봇 통합 모듈 개발을 국가 연구개발 과제로 지정해 운영 중이다. 물류 창고와 반도체 클린룸 등 고정밀 작업 현장을 중심으로 인간형 로봇의 초기 실증 수요를 창출하는 정책적 뒷받침도 병행된다.\n통계청이 발표한 국내 제조업 노동력 현황에 따르면 생산 가능 인구 감소로 인해 정밀 조립 및 물류 공정에서의 인력 수급 격차가 매년 심화되고 있다. 산업 현장에서는 인력 부족 문제를 해결하고 작업자의 근골격계 질환을 예방하기 위해 반복적이고 중량물을 다루는 공정에 인간형 로봇을 도입하려는 수요가 가파르게 늘고 있다. 정형화된 컨베이어 벨트를 벗어나 유연하게 작업 구역을 이동하며 다품종 소량 생산 공정을 도맡아 처리할 수 있는 유연성이 인간형 로봇의 가장 큰 강점으로 평가된다.\n연구위원은 \"인간형 로봇이 공장 바닥을 벗어나 실생활 공간에 안착하려면 전력 소모를 획기적으로 낮추는 모빌리티 메커니즘과 더불어 뜻밖의 돌발 변수에 즉각 대응하는 상식 수준의 인공지능 추론 능력이 결합되어야 한다\"며 \"제조 단가를 낮추는 대량 양산 기술과 부품 신뢰성 검증 과정이 남아 있는 만큼 상용화 직전 단계까지 엄격한 안정성 시험이 요구된다\"고 밝혔다.\n미국가전협회(CTA)는 매년 1월 미국 네바다주 라스베이거스 컨벤션센터에서 개최되는 CES의 공식 기조연설과 전시 주제로 인공지능과 로보틱스의 융합을 집중 조명하고 있다. 주요 글로벌 제조사들은 CES 2027 본무대를 겨냥해 차세대 지능형 로봇의 실물 시연과 산업 적용 청사진을 발표하기 위한 사전 기술 검증을 진행 중이다.\n신선미\n4\n삼성전자·SK하이닉스 자사주 매입, 코스피 반등 이끌며 투자자 관심 집중\n5",
+            "content_chars": 4267
+          }
+        },
+        {
+          "evidence_id": "C001-E002",
+          "worker_source": {
+            "title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+            "publisher": "Seoul Economic Daily",
+            "url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "[Samsung Humanoid to Debut at CES Next Year] ... build a custom humanoid optimized for AI algorithms from the initial design stage"
+          },
+          "retrieved_source": {
+            "title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+            "url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+            "domain": "en.sedaily.com",
+            "content": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily\nSkip to main content\nSeoul Economic Daily\nMarkets\nProperty\nFinance\nBusiness\nTechnology\nPolitics\nSociety\nCulture\nSports\nInternational\nOpinion\nAI KEY\nSeoul Economic Daily\nKST\nSeoul Economic Daily\nKorea's Leading Business News Since 1960\n한국어\nMarkets\nProperty\nFinance\nBusiness\nTechnology\nPolitics\nSociety\nCulture\nSports\nInternational\nOpinion\nAI KEY\nMenu\nSaved Articles\nNewsletters\nAI KEY\nSettings\nSamsung Builds AI Into Robot Design to Speed Humanoid Push\n[Samsung Humanoid to Debut at CES Next Year]\nTechnology validated at chip and appliance plants\nFactories used as large-scale data collection bases\nPatents filed for robot hands and hip joints\nBody and brain developed together for edge\nEcosystem spans AI, smart home and more\nFinance\n|\nPublished\n2026.09.07. 19:10:22\n|\nBy Suh Jong-gap and Kim Yun-soo\ngap@sedaily.com\n,\nsookim@sedaily.com\n|\nSummary\n|\nSave\nA\nA\nA\nSamsung Bot Handy uses a duster to clean dust inside a home (left); Samsung Bot Handy grips a cup (right). Samsung Electronics\nSamsung Electronics (005930) is accelerating in-house development of humanoid robots on an internal assessment that advances in artificial intelligence and the commercialization of physical AI are arriving faster than expected, according to industry sources. Domestic rivals are moving as well: Hyundai Motor (005380) Group has unveiled a new Atlas, and LG Group has introduced Cloi'd, both positioning to claim the humanoid market early. Chinese companies, meanwhile, are scaling up humanoids at a formidable pace in the global market. To counter rivals' speed and volume, Samsung has set a goal of internalizing everything from product design to the AI brain and seizing leadership of the humanoid industry ecosystem at a stroke.\nYoon Jang-hyun, president and chief technology officer of the DX Division. Samsung Electronics\nSamsung's push shows first in an unconventional organizational setup. In the Robotics (RX) Business Promotion Office created in July, Yoon Jang-hyun, president and chief technology officer of the Device eXperience (DX) division, concurrently heads both the hardware development team and the AI software development team. It is unusual at a large corporation for a single executive to oversee both the hardware organization handling robot drivetrains and the AI organization building perception and autonomous navigation.\nThe industry reads this as shifting the lead in robot development from hardware to AI and software. The old approach of building a mechanical frame first and layering software on top cannot keep up with AI advances that change by the day. Executives therefore appear to have given Yoon, a software specialist, full authority over development to build a custom humanoid optimized for AI algorithms from the initial design stage, sharply shortening the development period and raising the level of completion. The aim is to eliminate the development gap between the brain and the body and bring out a product at commercial readiness right away.\nSamsung has been methodically securing core technologies and trademarks for its own robots for years. On trademarks, it filed early for \"SAMSUNG BOT\" in 2022 to lock in rights. That led the industry to expect Samsung Bot would be the name of the company's next-generation robot brand.\nThe company also filed in 2024 for humanoid hip joint design technology, which determines the success of bipedal walking, securing its own lower-body structure. In April this year, it registered a next-generation robot hand patent in the United States that combines camera vision to flexibly rearrange finger configurations according to the shape of an object. Adding language-model control technology that converts natural-language instructions into physical motion completed the technical puzzle.\nA dual research structure linking the R&D campus in Umyeon-dong, Seoul, with the Gumi plant in North Gyeongsang Province is seen as a distinctive Samsung strength. At the Umyeon-dong campus, Samsung Electronics is demonstrating core brain technologies such as visual recognition and precision control for humanoids and refining them. Technology developed there is applied directly to a \"data factory\" under construction at sites including the Gumi plant for validation.\nFor robots to work adeptly in the physical world, vast amounts of physical data are needed. Samsung, which operates semiconductor, smartphone and home appliance production lines around the world, can use its own factories as a huge data collection base. That is an overwhelming comparative advantage that global big tech firms relying on laboratory simulations would find hard to match in a short time.\nSamsung Electronics is moving quickly on robots because the global robot market is growing rapidly. According to Fortune Business Insights, the global humanoid market is projected to expand from 6.6 trillion won in 2025 to 222.4 trillion won in 2034. It has emerged from a niche into a vast market that could decide the fate of future manufacturing.\nChina has taken early leadership in this fast-growing robot market. According to market research firm Smart Analytics Global, global humanoid shipments reached 19,100 units in the first half of this year, a 272% surge from a year earlier. Strikingly, Chinese companies accounted for more than 97% of global shipments in the period. Agibot led with 8,400 units delivered in the first half for a 44% global share, followed by Unitree at 31%, Galbot at 5%, UBTech at 4% and LEJU at 3%.\nChinese robots are seen as having moved past simple proof-of-concept work into mass production, deployed directly on automobile assembly and parts production lines. Smart Analytics Global estimated that more than 70% of first-half humanoid shipments went into industrial and commercial use.\nMany analysts say the recent tightening of U.S. restrictions on imports of Chinese products is a decisive opportunity for Samsung and other Korean companies. ",
+            "content_chars": 6000
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "claim": "Samsung Electronics utilizes its own semiconductor and appliance factories as 'data factories' to collect vast amounts of physical data for humanoid training.",
+      "worker_support": "Samsung leverages its global production lines to gather real-world physical data, providing a comparative advantage over companies relying solely on simulations.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C002-E001",
+          "worker_source": {
+            "title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+            "publisher": "Seoul Economic Daily",
+            "url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "Technology developed there is applied directly to a \"data factory\" under construction at sites including the Gumi plant for validation. ... Samsung, which operates semiconductor, smartphone and home appliance production lines around the world, can use its own factories as a huge data collection base."
+          },
+          "retrieved_source": {
+            "title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+            "url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+            "domain": "en.sedaily.com",
+            "content": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily\nSkip to main content\nSeoul Economic Daily\nMarkets\nProperty\nFinance\nBusiness\nTechnology\nPolitics\nSociety\nCulture\nSports\nInternational\nOpinion\nAI KEY\nSeoul Economic Daily\nKST\nSeoul Economic Daily\nKorea's Leading Business News Since 1960\n한국어\nMarkets\nProperty\nFinance\nBusiness\nTechnology\nPolitics\nSociety\nCulture\nSports\nInternational\nOpinion\nAI KEY\nMenu\nSaved Articles\nNewsletters\nAI KEY\nSettings\nSamsung Builds AI Into Robot Design to Speed Humanoid Push\n[Samsung Humanoid to Debut at CES Next Year]\nTechnology validated at chip and appliance plants\nFactories used as large-scale data collection bases\nPatents filed for robot hands and hip joints\nBody and brain developed together for edge\nEcosystem spans AI, smart home and more\nFinance\n|\nPublished\n2026.09.07. 19:10:22\n|\nBy Suh Jong-gap and Kim Yun-soo\ngap@sedaily.com\n,\nsookim@sedaily.com\n|\nSummary\n|\nSave\nA\nA\nA\nSamsung Bot Handy uses a duster to clean dust inside a home (left); Samsung Bot Handy grips a cup (right). Samsung Electronics\nSamsung Electronics (005930) is accelerating in-house development of humanoid robots on an internal assessment that advances in artificial intelligence and the commercialization of physical AI are arriving faster than expected, according to industry sources. Domestic rivals are moving as well: Hyundai Motor (005380) Group has unveiled a new Atlas, and LG Group has introduced Cloi'd, both positioning to claim the humanoid market early. Chinese companies, meanwhile, are scaling up humanoids at a formidable pace in the global market. To counter rivals' speed and volume, Samsung has set a goal of internalizing everything from product design to the AI brain and seizing leadership of the humanoid industry ecosystem at a stroke.\nYoon Jang-hyun, president and chief technology officer of the DX Division. Samsung Electronics\nSamsung's push shows first in an unconventional organizational setup. In the Robotics (RX) Business Promotion Office created in July, Yoon Jang-hyun, president and chief technology officer of the Device eXperience (DX) division, concurrently heads both the hardware development team and the AI software development team. It is unusual at a large corporation for a single executive to oversee both the hardware organization handling robot drivetrains and the AI organization building perception and autonomous navigation.\nThe industry reads this as shifting the lead in robot development from hardware to AI and software. The old approach of building a mechanical frame first and layering software on top cannot keep up with AI advances that change by the day. Executives therefore appear to have given Yoon, a software specialist, full authority over development to build a custom humanoid optimized for AI algorithms from the initial design stage, sharply shortening the development period and raising the level of completion. The aim is to eliminate the development gap between the brain and the body and bring out a product at commercial readiness right away.\nSamsung has been methodically securing core technologies and trademarks for its own robots for years. On trademarks, it filed early for \"SAMSUNG BOT\" in 2022 to lock in rights. That led the industry to expect Samsung Bot would be the name of the company's next-generation robot brand.\nThe company also filed in 2024 for humanoid hip joint design technology, which determines the success of bipedal walking, securing its own lower-body structure. In April this year, it registered a next-generation robot hand patent in the United States that combines camera vision to flexibly rearrange finger configurations according to the shape of an object. Adding language-model control technology that converts natural-language instructions into physical motion completed the technical puzzle.\nA dual research structure linking the R&D campus in Umyeon-dong, Seoul, with the Gumi plant in North Gyeongsang Province is seen as a distinctive Samsung strength. At the Umyeon-dong campus, Samsung Electronics is demonstrating core brain technologies such as visual recognition and precision control for humanoids and refining them. Technology developed there is applied directly to a \"data factory\" under construction at sites including the Gumi plant for validation.\nFor robots to work adeptly in the physical world, vast amounts of physical data are needed. Samsung, which operates semiconductor, smartphone and home appliance production lines around the world, can use its own factories as a huge data collection base. That is an overwhelming comparative advantage that global big tech firms relying on laboratory simulations would find hard to match in a short time.\nSamsung Electronics is moving quickly on robots because the global robot market is growing rapidly. According to Fortune Business Insights, the global humanoid market is projected to expand from 6.6 trillion won in 2025 to 222.4 trillion won in 2034. It has emerged from a niche into a vast market that could decide the fate of future manufacturing.\nChina has taken early leadership in this fast-growing robot market. According to market research firm Smart Analytics Global, global humanoid shipments reached 19,100 units in the first half of this year, a 272% surge from a year earlier. Strikingly, Chinese companies accounted for more than 97% of global shipments in the period. Agibot led with 8,400 units delivered in the first half for a 44% global share, followed by Unitree at 31%, Galbot at 5%, UBTech at 4% and LEJU at 3%.\nChinese robots are seen as having moved past simple proof-of-concept work into mass production, deployed directly on automobile assembly and parts production lines. Smart Analytics Global estimated that more than 70% of first-half humanoid shipments went into industrial and commercial use.\nMany analysts say the recent tightening of U.S. restrictions on imports of Chinese products is a decisive opportunity for Samsung and other Korean companies. ",
+            "content_chars": 6000
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "claim": "Doosan Robotics has launched 'Scan & Go', an AI-based industrial robot solution that performs tasks like sanding and grinding on large structures without blueprints.",
+      "worker_support": "Scan & Go combines a collaborative robot arm with an AMR, using physics-informed AI and 3D vision to achieve 0.1mm precision and PLe, Cat4 safety compliance.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C003-E001",
+          "worker_source": {
+            "title": "CES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화 - ZDNet korea",
+            "publisher": "ZDNet Korea",
+            "url": "https://zdnet.co.kr/view/?no=20260107154524",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "스캔앤고는 협동로봇 팔과 자율이동로봇(AMR)을 결합한 플랫폼에 물리정보 기반 AI와 3D 비전 기술을 적용한 산업용 AI 로봇 솔루션이다. ... 0.1mm 수준의 작업 정밀도를 구현했다. ... 산업용 안전 기준인 PLe, Cat4도 충족했다."
+          },
+          "retrieved_source": {
+            "title": "CES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화 - ZDNet korea",
+            "url": "https://zdnet.co.kr/view/?no=20260107154524",
+            "domain": "zdnet.co.kr",
+            "content": "CES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화 - ZDNet korea\nZDNet USA\n글로벌뉴스\nAI의 눈\n인공지능\nAI의 눈\nIT'sight\n포토•영상\nCES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화\n[CES 2026] 두산, 미래형 휴머노이드 앞서 '현장형 AI 로봇' 꺼냈다\n디지털경제\n[라스베이거스(미국)=신영빈\n기자] 대형 구조물 앞에 멈춰 선 로봇이 팔을 뻗자\n표면을 따라 미세한 진동과 함께 작업이 시작됐다. 별도 설계 도면이나 사전 입력 없이도 로봇은 구조물의 형상을 스스로 스캔하고 곧바로 최적의 경로를 그리듯 움직였다.\n두산로보틱스가 휴머노이드 로봇 공개에 앞서 협동로봇을 기반으로 한 상업화 솔루션을 선보이며 산업 현장 공략에 속도를 내고 있다. 회사는 CES 2026에서 인공지능(AI) 로봇 솔루션 '스캔앤고'를 처음 공개하고 정식 판매에 나설 계획이다.\n두산로보틱스 AI 기반 로봇 솔루션 '스캔앤고' (사진=지디넷코리아 신영빈 기자)\n스캔앤고는 협동로봇 팔과 자율이동로봇(AMR)을 결합한 플랫폼에 물리정보 기반 AI와 3D 비전 기술을 적용한 산업용 AI 로봇 솔루션이다. 대형 구조물 형상을 스스로 인식하고 최적의 작업 경로를 생성해 검사, 샌딩, 그라인딩 등 작업을 자동 수행한다.\n이 솔루션은 터빈 블레이드, 항공기 동체, 건물 외벽 등 대형 복합 구조물의 표면을 스캔한 뒤 별도의 설계 도면 없이 작업을 수행하는 것이 특징이다. 플러그앤플레이 방식으로 운영돼 현장 적용성이 높고, 0.1mm 수준의 작업 정밀도를\n구현했다.\n로봇팔 6개 축에 장착된 토크센서를 통해 작업 대상이 달라져도 실시간 힘 제어가 가능하며, 산업용 안전 기준인 PLe, Cat4도 충족했다.\n두산로보틱스 AI 기반 로봇 솔루션 '스캔앤고' (사진=지디넷코리아 신영빈 기자)\n특히 물리정보 기반 AI는 로봇의 관절 구조, 토크, 마찰 등 물리적 특성을 학습 과정에 반영해 실제 현장에서의 신뢰성과 작업 안정성을 높인 기술로, 데이터 중심 AI의 한계를 보완하는 접근 방식으로 평가받는다.\n관련기사\n2025.12.23\n[현장] AI G3 향한 대전환 '시동'…산·학계, 피지컬 AI·독자 모델 투트랙 비전 제시\n2025.11.26\n두산로보틱스, CES AI 부문 최고혁신상\n2025.11.06\n에이딘로보틱스, 두산로보틱스와 피지컬 AI 협력\n2025.11.03\n솔루션은 두산로보틱스 파트너사인 캐나다 로봇 자동화 기업 메이플어드밴스드로보틱스(MARI)와 공동 개발했다.\n이번\nCES에서 AI 부문 최고혁신상과 로봇공학 부문 혁신상을\n수상했다.\n두산로보틱스는 휴머노이드 로봇을 중장기 전략으로 추진하는 동시에, 단기적으로는 협동로봇을 활용한 즉시 상용화 가능한 AI 솔루션을 통해 실질적인 시장 성과를 창출하겠다는 전략이다.\n신영빈 기자\n기자의 다른 기사 보기\n두산로보틱스\nCES2026",
+            "content_chars": 1419
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "claim": "Doosan Robotics is collaborating with NVIDIA to develop an 'Agentic Robot O/S' and aims to release industrial humanoid products by 2028.",
+      "worker_support": "The partnership integrates NVIDIA's AI and robotics ecosystem with Doosan's execution software to accelerate the commercialization of industrial humanoids.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C004-E001",
+          "worker_source": {
+            "title": "두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다 - 전자신문",
+            "publisher": "전자신문",
+            "url": "https://www.etnews.com/20260429000466",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "두산로보틱스가 엔비디아와 피지컬 인공지능(AI) 기반 로봇 솔루션 개발 협력에 나선다. ... 2028년에는 산업용 휴머노이드 제품을 순차적으로 공개한다는 목표다. ... 로봇 전용 실행 소프트웨어 '에이전틱 로봇 운영체제(Agentic Robot O/S)'와 엔비디아의 AI·로보틱스 시뮬레이션·학습 인프라를 연계"
+          },
+          "retrieved_source": {
+            "title": "두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다 - 전자신문",
+            "url": "https://www.etnews.com/20260429000466",
+            "domain": "www.etnews.com",
+            "content": "두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다 - 전자신문\nEnglish\n회원가입\nAI·SW\n반도체\n속보\nAI·SW\n반도체\n이슈플러스\nAI 스튜디오\nHot 영상\n소부장\n두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다\n발행일 : 2026-04-29 17:02\n29일 김민표 두산로보틱스 대표(왼쪽 여섯째)와 매디슨 황 엔비디아 수석 이사(왼쪽 다섯째)가 관계자들과 기념사진을 촬영하고 있다.\n두산로보틱스가 엔비디아와 피지컬 인공지능(AI) 기반 로봇 솔루션 개발 협력에 나선다. 로봇 전용 실행 소프트웨어와 엔비디아 AI·로보틱스 생태계를 결합해 지능형 로봇 솔루션과 산업용 휴머노이드 상용화를 추진한다.\n두산로보틱스는 엔비디아 옴니버스 및 로보틱스 제품 마케팅을 총괄하는 매디슨 황 수석 이사가 29일 경기 성남시 분당구 두산로보틱스 이노베이션 센터를 방문해 김민표 두산로보틱스 대표와 기술 협력 방안을 논의했다고 밝혔다.\n두산로보틱스는 이번 협력을 기반으로 내년 에이전틱 로봇 운영체제 기반 지능형 로봇 솔루션을 선보일 예정이다. 2028년에는 산업용 휴머노이드 제품을 순차적으로 공개한다는 목표다. 내년 CES 등 글로벌 주요 전시회에서 엔비디아와 협업 결과물을 발표하는 방안도 추진한다.\n이번 방문은 두산로보틱스가 개발 중인 지능형 로봇 솔루션과 산업용 휴머노이드에 엔비디아 AI·로보틱스 생태계를 접목하기 위한 협의 차원에서 마련됐다. 양사는 두산로보틱스가 개발 중인 로봇 전용 실행 소프트웨어 '에이전틱 로봇 운영체제(Agentic Robot O/S)'와 엔비디아의 AI·로보틱스 시뮬레이션·학습 인프라를 연계하는 방안을 논의했다.\n두산로보틱스는 운영체제 고도화를 위해 로봇과 AI 간 인터페이스 구축, 로봇 제어 표준 프로토콜 개발, 전문 작업 모델 연동, 안전 제어를 위한 기술적 가드레일 적용 등을 검토하고 있다. 엔비디아와의 협력을 통해 시뮬레이션, 학습, 검증, 실행으로 이어지는 로봇 개발 체계를 구체화할 계획이다.\n박유민 기자 newmin@etnews.com\n2\nLG이노텍, 반도체 유리기판 공정에 AI 심는다\n3\n7\n에코프로, 휴머노이드 배터리 공략…하이니켈·전고체 강화\n8\n10\n삼성전자, ASML과 High-NA 협력 확대…2028년 D램 양산 적용 추진\n주요 행사\n❯\nAICC & CX Insight 2026\n고객은 언제 AI를 신뢰하는가 - AI 만족도를 높이는 전략\nAI Smart Work Summit 2026\n모든 담당자(비개발자)를 위한 Claude Code 바이브 코딩 2-day 부트캠프\nIT 메가비전 X IITP 테크&퓨처 인사이트 콘서트 2026\nAI 에이전트 가드레일 & 거버넌스 실전 세미나\n금소법 시대, AI는 어떻게 약관을 지키는가\nCAIO Summit 2026 - AI Native Enterprise\nBIZPLUS\n[올쇼TV] 센드버드, '고객은 언제 AI를 신뢰하는가' 9월 10일 생방송\nAI 구현부터 ROI·통제까지…9월의 실전 교육·세미나",
+            "content_chars": 1497
+          }
+        }
+      ]
+    }
+  ],
+  "already_unsupported_claims": [
+    {
+      "claim_id": "U001",
+      "claim": "The Korea Institute for Robot Industry Advancement (KIRIA) provides public testbeds for robot performance evaluation, including manipulation and driving systems.",
+      "reason": "No source survived deterministic verification."
+    },
+    {
+      "claim_id": "U002",
+      "claim": "KIRIA manages the 'Outdoor Mobile Robot Operational Safety Certification' (실외이동로봇 운행안전인증) for autonomous delivery robots in South Korea.",
+      "reason": "No source survived deterministic verification."
+    }
+  ]
+}

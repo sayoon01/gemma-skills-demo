@@ -173,5 +173,343 @@
       "ok": false,
       "error": "DDGSException: No results found."
     }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "Unitree G1 humanoid robot price vs Unitree R1 price"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 4.565,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Unitree G1 humanoid robot price vs Unitree R1 price",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Unitree R1 vs G1: Which Humanoid Should You Buy? [2026]",
+            "url": "https://blog.robozaps.com/b/unitree-r1-vs-g1",
+            "snippet": "Compare Unitree R1 ($5,900) vs G1 ($13,500). Full specs, sensors, battery, availability breakdown. See which humanoid robot fits your needs and budget.",
+            "domain": "blog.robozaps.com"
+          },
+          {
+            "title": "Unitree R1 vs G1 (2026): Verified US Prices — Which Should You Buy?",
+            "url": "https://botinfo.ai/articles/unitree-r1-vs-g1",
+            "snippet": "Unitree R1 vs G1 with checkout-verified August 2026 US pricing: R1 from $8,990, G1 from $17,990. DOF, SDK access, LeRobot/Isaac GR00T support, lead times — and the one programmability decision that matters.",
+            "domain": "botinfo.ai"
+          },
+          {
+            "title": "Unitree G1 vs R1: The Cheapest Humanoids Compared",
+            "url": "https://humanoidrobots.com/compare/unitree-g1-vs-unitree-r1",
+            "snippet": "Unitree's two low-cost humanoids are pushing the price floor of the category down. The G1 starts around 16,000 dollars with a mature SDK, 23 to 43 degrees of freedom, and a track record in research. The R1 is reported near 5,900 dollars, the cheapest humanoid on the market. A note on honesty: the R1's detailed specs are thin in public sources, so confirm them on Unitree's store before ...",
+            "domain": "humanoidrobots.com"
+          },
+          {
+            "title": "Unitree G1 vs R1 — Which Humanoid Robot Should You Buy?",
+            "url": "https://bestcartai.com/blog/unitree-g1-vs-r1",
+            "snippet": "G1 ($18,852) vs R1 ($4,900) — both Unitree humanoids, wildly different price points. Specs, use cases, EDU paths, and when to pick each one.",
+            "domain": "bestcartai.com"
+          },
+          {
+            "title": "Unitree H1 vs H2 vs G1 vs R1 vs H2 Plus: Specs, Prices Compared (2026 ...",
+            "url": "https://robottesters.com/article-unitree-humanoid-robots-compared",
+            "snippet": "From the $4,900 R1 to the NVIDIA Isaac GR00T-powered H2 Plus: Unitree's complete humanoid lineup compared head-to-head on specs, price and purpose.",
+            "domain": "robottesters.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "Tesla Optimus Gen 3 commercial status 2025 2026"
+    },
+    "ok": false,
+    "error": "DDGSException: No results found.",
+    "elapsed_seconds": 5.515,
+    "result": {
+      "ok": false,
+      "error": "DDGSException: No results found."
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "Agility Robotics Digit Amazon deployment status 2025 2026"
+    },
+    "ok": false,
+    "error": "DDGSException: No results found.",
+    "elapsed_seconds": 5.887,
+    "result": {
+      "ok": false,
+      "error": "DDGSException: No results found."
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "url": "https://arxiv.org/abs/2510.07077"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.144,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://arxiv.org/abs/2510.07077",
+        "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications",
+        "domain": "arxiv.org",
+        "focus": null,
+        "content": "[2510.07077] Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications\nSkip to main content\nSearch\nSubmit\nDonate\nLog in\nPress Enter to search ·\nAdvanced search\nComputer Science > Robotics\narXiv:2510.07077\n(cs)\n[Submitted on 8 Oct 2025]\nTitle:\nVision-Language-Action Models for Robotics: A Review Towards Real-World Applications\nAuthors:\nKento Kawaharazuka\n,\nJihoon Oh\n,\nJun Yamada\n,\nIngmar Posner\n,\nYuke Zhu\nView a PDF of the paper titled Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications, by Kento Kawaharazuka and Jihoon Oh and Jun Yamada and Ingmar Posner and Yuke Zhu\nView PDF\nHTML (experimental)\nAbstract:\nAmid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained significant attention. By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects, embodiments, and environments. This generalisation capability is expected to enable robots to solve novel downstream tasks with minimal or no additional task-specific data, facilitating more flexible and scalable real-world deployment. Unlike previous surveys that focus narrowly on action representations or high-level model architectures, this work offers a comprehensive, full-stack review, integrating both software and hardware components of VLA systems. In particular, this paper provides a systematic review of VLAs, covering their strategy and architectural transition, architectures and building blocks, modality-specific processing techniques, and learning paradigms. In addition, to support the deployment of VLAs in real-world robotic applications, we also review commonly used robot platforms, data collection strategies, publicly available datasets, data augmentation methods, and evaluation benchmarks. Throughout this comprehensive survey, this paper aims to offer practical guidance for the robotics community in applying VLAs to real-world robotic systems. All references categorized by training approach, evaluation method, modality, and dataset are available in the table on our project website:\nthis https URL\n.\nComments:\nAccepted to IEEE Access, website:\nthis https URL\nSubjects:\nRobotics (cs.RO)\n; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG)\nCite as:\narXiv:2510.07077\n[cs.RO]\n(or\narXiv:2510.07077v1\n[cs.RO]\nfor this version)\nhttps://doi.org/10.48550/arXiv.2510.07077\nFocus to learn more\narXiv-issued DOI via DataCite\nRelated DOI\n:\nhttps://doi.org/10.1109/ACCESS.2025.3609980\nFocus to learn more\nDOI(s) linking to related resources\nSubmission history\nFrom: Kento Kawaharazuka [\nview email\n]\n[v1]\nWed, 8 Oct 2025 14:38:25 UTC (7,140 KB)\nFull-text links:\nAccess Paper:\nView a PDF of the paper titled Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications, by Kento Kawaharazuka and Jihoon Oh and Jun Yamada and Ingmar Posner and Yuke Zhu\nView PDF\nHTML (experimental)\nTeX Source\nview license\nCurrent browse context:\ncs.RO\n< prev\n|\nnext >\nnew\n|\nrecent\n|\n2025-10\nChange to browse by:\ncs\ncs.AI\ncs.CV\ncs.LG\nReferences & Citations\nNASA ADS\nGoogle Scholar\nSemantic Scholar\nexport BibTeX citation\nLoading...\nBibTeX formatted citation\n×\nloading...\nData provided by:\nBookmark\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nBibliographic Explorer\n(\nWhat is the Explorer?\n)\nConnected Papers Toggle\nConnected Papers\n(\nWhat is Connected Papers?\n)\nLitmaps Toggle\nLitmaps\n(\nWhat is Litmaps?\n)\nscite.ai Toggle\nscite Smart Citations\n(\nWhat are Smart Citations?\n)\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nalphaXiv\n(\nWhat is alphaXiv?\n)\nLinks to Code Toggle\nCatalyzeX Code Finder for Papers\n(\nWhat is CatalyzeX?\n)\nDagsHub Toggle\nDagsHub\n(\nWhat is DagsHub?\n)\nGotitPub Toggle\nGotit.pub\n(\nWhat is GotitPub?\n)\nHuggingface Toggle\nHugging Face\n(\nWhat is Huggingface?\n)\nScienceCast Toggle\nScienceCast\n(\nWhat is ScienceCast?\n)\nDemos\nDemos\nReplicate Toggle\nReplicate\n(\nWhat is Replicate?\n)\nSpaces Toggle\nHugging Face Spaces\n(\nWhat is Spaces?\n)\nSpaces Toggle\nTXYZ.AI\n(\nWhat is TXYZ.AI?\n)\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\nInfluence Flower\n(\nWhat are Influence Flowers?\n)\nCore recommender toggle\nCORE Recommender\n(\nWhat is CORE?\n)\nAuthor\nVenue\nInstitution\nTopic\nAbout arXivLabs\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\nLearn more about arXivLabs\n.\nWhich authors of this paper are endorsers?\n|\nDisable MathJax\n(\nWhat is MathJax?\n)\nWe gratefully acknowledge support from\nour\nmajor funders\n,\nmember institutions\n,\n,\nand all contributors.\nAbout\n·\nHelp\n·\nContact\n·\nSubscribe\n·\nCopyright\n·\nPrivacy\n·\nAccessibility\n·\nOperational Status\n(opens in new tab)\nMajor funding support from",
+        "content_chars": 5381,
+        "truncated": false
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "url": "https://www.bmwgroup.com/en/news/general/2026/humanoid-robot-in-leipzig.html"
+    },
+    "ok": false,
+    "error": "ReadTimeout: HTTPSConnectionPool(host='www.bmwgroup.com', port=443): Read timed out. (read timeout=20)",
+    "elapsed_seconds": 20.337,
+    "result": {
+      "ok": false,
+      "error": "ReadTimeout: HTTPSConnectionPool(host='www.bmwgroup.com', port=443): Read timed out. (read timeout=20)"
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "Tesla Optimus Gen 3 vs Gen 2 commercial deployment 2026"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 6.259,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Tesla Optimus Gen 3 vs Gen 2 commercial deployment 2026",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+            "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+            "snippet": "Tesla Optimus Gen 3 vs Gen 2 full comparison — specs, hands, AI, weight, battery. What changed, when Gen 3 was revealed, and current status June 2026.",
+            "domain": "optimusk.blog"
+          },
+          {
+            "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+            "url": "https://robottoday.com/industry-briefing/tesla-optimus-gen-3-vs-gen-2-full-specs-comparison-2026/6860",
+            "snippet": "A detailed comparison of the specifications for the upcoming Generation 3 and the previous Generation 2 robotic hands has been released, highlighting significant advancements in technology. The new Generation 3 model boasts 50 actuators and 22 degrees of freedom (DoF), a marked improvement over the Generation 2, which features only 28 actuators and 11 DoF. This comparison has generated ...",
+            "domain": "robottoday.com"
+          },
+          {
+            "title": "Tesla Optimus Gen 3: What We Know So Far (March 2026)",
+            "url": "https://themimic.io/articles/tesla-optimus-gen-3-march-2026",
+            "snippet": "A critical, fact-based breakdown of Tesla's Optimus Gen 3 humanoid robot — specs, timeline, competitor comparison, and a reality check on Musk's promises.",
+            "domain": "themimic.io"
+          },
+          {
+            "title": "Tesla Optimus Gen 2 vs Gen 3: Hands and Production Plan",
+            "url": "https://physicalailab.io/en/tesla-optimus-gen2-vs-gen3-plan/",
+            "snippet": "By January 2026, Tesla's Q4 2025 update described Gen 3 as a major upgrade from version 2.5, including its latest hand and the first Optimus design intended for mass production. Tesla has not published the numerical Gen 3 hand, speed, payload, weight or battery specifications needed for a conventional spec-versus-spec table.",
+            "domain": "physicalailab.io"
+          },
+          {
+            "title": "Tesla Optimus Gen 3: What's Real About the 2026 Production Ramp",
+            "url": "https://robotnewstoday.com/reports/tesla-optimus-gen3-production-2026/",
+            "snippet": "Tesla's Optimus Gen 3 is the most-watched humanoid robot of 2026. Here's what's confirmed about the production ramp at Fremont and Giga Texas — and what's still a promise.",
+            "domain": "robotnewstoday.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "Figure AI humanoid robot deployment Amazon warehouse"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 2.195,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Figure AI humanoid robot deployment Amazon warehouse",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Humanoid Robots Are Now Shipping to BMW and Amazon Warehouses ...",
+            "url": "https://www.vaasblock.com/ai/humanoid-robots-figure-tesla-optimus-warehouse-deployment-2026/",
+            "snippet": "Jun 12, 2026 · Every announcement of a humanoid robot deployment in a BMW facility or an Amazon fulfillment centre generates coverage that frames the development as a technology capability story: how far the robot has advanced, what tasks it can now perform, how it compares to prior demonstration units.",
+            "domain": "www.vaasblock.com"
+          },
+          {
+            "title": "Amazon’s Autonomous Warehouse Robot Push Is Reshaping U.S ...",
+            "url": "https://usabusinesstimes.com/amazons-autonomous-warehouse-robot-push-is-reshaping-u-s-logistics/",
+            "snippet": "Jun 18, 2026 · Rival humanoid robot developers, including Figure AI and Physical Intelligence, have accelerated their enterprise deployment timelines in response, with Figure AI confirming in May 2026 that it had signed a letter of intent with a major U.S. apparel retailer for a 500-unit warehouse pilot.",
+            "domain": "usabusinesstimes.com"
+          },
+          {
+            "title": "Amazon Deploys 10K Digit Humanoids [Robotics 2026]",
+            "url": "https://techbytes.app/posts/amazon-digit-humanoid-deployment-10k/",
+            "snippet": "Jul 5, 2026 · Amazon confirms the massive deployment of 10,000 Agility Robotics Digit humanoids across its fulfillment network. Era of humanoid labor is here.",
+            "domain": "techbytes.app"
+          },
+          {
+            "title": "Figure 03’s 100% Autonomous Amazon Trial: The Rise of ...",
+            "url": "https://intelidroid.com/2026/04/27/figure-03s-100-autonomous-amazon-trial-the-rise-of-physical-ai-in-humanoid-robotics/",
+            "snippet": "Apr 27, 2026 · The humanoid robotics field has reached a new pinnacle with Figure AI’s Figure 03 completing a rigorous 30-day trial at Amazon fulfillment centers, operating at 100% autonomy.",
+            "domain": "intelidroid.com"
+          },
+          {
+            "title": "Boston Dynamics Deploys Humanoid Robots in Amazon Warehouses",
+            "url": "https://ainewspapertoday.com/issues/boston-dynamics-humanoid-robots-warehouse",
+            "snippet": "Mar 20, 2026 · Boston Dynamics has announced that its Atlas humanoid robots are now operating in three Amazon fulfillment centers across the United States. The deployment marks the first large-scale commercial use of general-purpose humanoid robots in logistics.",
+            "domain": "ainewspapertoday.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "Agility Robotics Digit Amazon warehouse deployment status 2025 2026"
+    },
+    "ok": false,
+    "error": "DDGSException: No results found.",
+    "elapsed_seconds": 5.746,
+    "result": {
+      "ok": false,
+      "error": "DDGSException: No results found."
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "Tesla Optimus commercial deployment timeline 2025 2026"
+    },
+    "ok": false,
+    "error": "DDGSException: No results found.",
+    "elapsed_seconds": 4.86,
+    "result": {
+      "ok": false,
+      "error": "DDGSException: No results found."
+    }
+  },
+  {
+    "turn": 4,
+    "name": "web_search",
+    "arguments": {
+      "query": "Agility Robotics Amazon Digit deployment official press release 2025 2026"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 4.103,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Agility Robotics Amazon Digit deployment official press release 2025 2026",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Press Releases | Agility",
+            "url": "https://www.agilityrobotics.com/press-releases",
+            "snippet": "Read the latest official announcements from Agility: product news, company milestones, partnerships, funding updates, and more.",
+            "domain": "www.agilityrobotics.com"
+          },
+          {
+            "title": "Amazon Deploys 10K Digit Humanoids [Robotics 2026]",
+            "url": "https://techbytes.app/posts/amazon-digit-humanoid-deployment-10k/",
+            "snippet": "Amazon confirms the massive deployment of 10,000 Agility Robotics Digit humanoids across its fulfillment network. Era of humanoid labor is here.",
+            "domain": "techbytes.app"
+          },
+          {
+            "title": "Amazon, Toyota & GXO Deploy Agility Digit in Warehouses — Data",
+            "url": "https://embodiedglobal.com/en/article/agility-robotics-digit-amazon-toyota-gxo-commercial-deployment-2026",
+            "snippet": "Agility Robotics Digit moves from pilot to full commercial deployment at Amazon, Toyota, and GXO warehouses. Real-world results, revenue figures, and what it means for the humanoid robotics industry in 2026.",
+            "domain": "embodiedglobal.com"
+          },
+          {
+            "title": "Digit at Work: Agility Robotics' Humanoid Passes the Commercial Test",
+            "url": "https://nexi.fund/agility-digit-commercial-deployment-2026/",
+            "snippet": "Agility Robotics' Digit is the first bipedal humanoid generating revenue from paying customers. 75 units deployed, 4 commercial agreements, and a RaaS model that changes the economics of humanoid robotics.",
+            "domain": "nexi.fund"
+          },
+          {
+            "title": "Agility Robotics and Digit: The Humanoid That Ships",
+            "url": "https://biped.news/article/agility-robotics-digit-2026",
+            "snippet": "Agility Robotics doesn't build robots for YouTube demos. It builds robots that show up for work, move totes in fulfillment centers, and clock hours alongside human coworkers. As of 2025, Digit is the most commercially deployed humanoid robot in the world, operating inside Amazon and GXO Logistics facilities under a Robot-as-a-Service contract.",
+            "domain": "biped.news"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 4,
+    "name": "web_search",
+    "arguments": {
+      "query": "Tesla Optimus commercial availability external customers 2026"
+    },
+    "ok": false,
+    "error": "DDGSException: No results found.",
+    "elapsed_seconds": 5.511,
+    "result": {
+      "ok": false,
+      "error": "DDGSException: No results found."
+    }
+  },
+  {
+    "turn": 4,
+    "name": "web_search",
+    "arguments": {
+      "query": "Figure AI official news Amazon deployment Figure 03"
+    },
+    "ok": false,
+    "error": "DDGSException: No results found.",
+    "elapsed_seconds": 5.152,
+    "result": {
+      "ok": false,
+      "error": "DDGSException: No results found."
+    }
+  },
+  {
+    "turn": 4,
+    "name": "fetch_page",
+    "arguments": {
+      "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.828,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+        "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+        "domain": "optimusk.blog",
+        "focus": null,
+        "content": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)\n// MENU\nHome\nBlog\nServices\nTools\nAbout\nCareers\nContact\nBuy Optimus\nHome\n›\nBlog\n›\nTesla Optimus Gen 3 vs Gen 2\n// Contents\n// Contents\nQuick Answer\nGen 2 Official Specs\nGen 3: What's Confirmed\nGen 3 Hands Deep Dive\nWhat's NOT Yet Confirmed\nFull Comparison Table\nAWE Shanghai 2026\nAI & Software Upgrade\nProduction Status\nWhat to Expect at Reveal\nFAQ\nComparison\n// Published: June 1, 2026\n// 10 min read\n// Lindsey A. Kennedy\nTesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)\nShare:\n𝕏 Twitter\nin LinkedIn\n⎘ Copy Link\n⚡ Quick Answer — Gen 3 vs Gen 2 (June 2026)\nHere is what you actually need to know before reading further:\nGen 3 is NOT fully revealed yet\n— Tesla has shown components (especially hands) but no official Gen 3 full spec sheet as of June 2026\nBiggest upgrade confirmed:\nGen 3 hands — 50 actuators vs ~28 total in Gen 2; 22 DoF per hand vs 11 in Gen 2 — a 4.5× leap\nMass production started:\nJanuary 21, 2026 at Fremont — the first time Tesla used the term \"mass production\" for Optimus\nGen 2 specs are official and confirmed\n— unveiled December 2023, 73 kg, 5 mph walk speed, 11 DoF hands\nFull Gen 3 reveal expected:\nTesla Annual Shareholder Meeting, estimated June 2026\n4.5×\nMore hand actuators in Gen 3\n22\nGen 3 DoF per hand\n3,000+\nManipulation tasks enabled\nJan 21\nGen 3 production start 2026\nVLA\nGen 3 AI model type\nTBC\nGen 3 weight & battery\nUpdated July 3, 2026\nWhat's new:\n✅ “Gen 3” is still a hands + AI upgrade on the Gen 2 body; full V3 body reveal expected near production start (late July–August 2026)\n✅ Gen 3 hands: 50 actuators / 22 DoF vs Gen 2's 11-DoF hands — the single biggest difference\n✅ AI5 chip (taped out April 2026) is Gen 3's new inference brain\nSources:\nElectrek — V3 production window\n·\ntech-insider — AI5 tape-out\n·\nQviro — Optimus specifications\n// Analysis · June 1, 2026\nThis comparison separates what is officially confirmed from what is still pending. For background on the full Gen 3 roadmap, see our\nGen 3 complete guide\n. For Gen 2 technical detail, see our\nGen 2 specs guide\n.\nTesla Optimus Gen 2 — Official Specifications (Confirmed)\nGen 2 was unveiled at\nTesla's Shareholder Meeting in December 2023\n. All specs below are from official Tesla materials or directly confirmed in earnings calls:\nSpecification\nGen 2 Value\nStatus\nOfficial Unveil\nDecember 2023\nConfirmed\nHeight\n5'8\" (173 cm)\nConfirmed\nWeight\n73 kg\nConfirmed\nWalk Speed\nUp to 5 mph\nConfirmed\nHand DoF\n11 per hand\nConfirmed\nTotal Actuators\n~28\nConfirmed\nTotal Degrees of Freedom\n40\nConfirmed\nBattery\n2.3 kWh (est. 8–10 hrs operation)\nConfirmed\nAI System\nTesla neural network, imitation learning\nConfirmed\nProduction Status\n~100+ units (factory learning, 2024–2025)\nConfirmed\nSources: Tesla IR ·\nElectrek\n·\nIEEE Spectrum\n💡\nContext:\nDuring 2024 and early 2025, approximately 100+ Gen 2 units were deployed across Tesla's Fremont and Giga Texas facilities. Their primary function was collecting training data — not doing productive manufacturing work. Musk confirmed on the Q4 2025 earnings call (January 28, 2026) that units were \"primarily for learning, not productive tasks.\"\nTesla Optimus Gen 3 — What Is Confirmed (July 2026)\nTesla has not released a full Gen 3 spec sheet. Here is everything officially confirmed with a source as of June 1, 2026:\nJanuary 21, 2026:\nGen 3 mass production commences at Fremont, California. First use of \"mass production\" terminology by Tesla for Optimus. Source:\nElectrek\nFebruary 17, 2026:\nGen 3 hands revealed. Musk on X: \"This bot got hands.\" 25 actuators per forearm/hand (50 total), 22 DoF per hand, tendon-driven biomimetic design. Source:\nNotateslaapp.com\nMarch 11, 2026:\nTesla China shows Gen 3 hands at Shanghai AWE expo. Weibo post describes fingers as \"nearly identical in proportion to human hands.\" Source: Notateslaapp.com\nMarch 12, 2026:\nMusk at Abundance Summit: Gen 3 in \"final stages,\" will be \"by far the most advanced robot in the world.\" Summer 2026 production start confirmed.\nAI system:\nVLA (Vision-Language-Action) model + AI5 chip + Grok voice integration — confirmed via multiple earnings calls and Musk statements.\n👉\nKey distinction:\nMass production of Gen 3 started January 21, 2026 — but the full-body official reveal has not yet occurred. The units being produced and tested in Fremont are \"production\" in the manufacturing sense, not yet in the commercial sales sense.\nGen 3 Hands: The Most Important Upgrade\nThe hand system is the single biggest confirmed upgrade from Gen 2 to Gen 3.\nIEEE Spectrum's actuator analysis\ncalled it \"a fundamental architectural shift, not an incremental improvement.\"\nGen 3 Hand Architecture\nThe design philosophy changed completely. Gen 2 placed actuators in the hand itself — limiting the number of motors that could physically fit. Gen 3 moves all actuators into the forearm in a tendon-driven biomimetic design, the same principle human hands use (muscles in the forearm, tendons running into the fingers).\nThis single architectural decision enabled:\n✔\n25 actuators per forearm/hand\n— versus the physical limit of what fit in Gen 2's hand\n✔\n22 degrees of freedom per hand\n— approaching human hand capability (human hand: ~27 DoF)\n✔\nLighter hand structure\n— mass moved to forearm reduces wrist torque requirements\n✔\n3,000+ discrete manipulation tasks\n— the figure Tesla cited for Gen 3 hand capability\n✔\nTactile feedback\n— Tesla Board Chair Robyn Denholm described the hands as having \"very good\" tactile nature\n11\nGen 2 DoF per hand\n22\nGen 3 DoF per hand\n~28\nGen 2 total actuators\n50\nGen 3 hand actuators alone\n27\nHuman hand DoF\n3,000+\nGen 3 manipulation tasks\nSources:\nNotateslaapp.com\n·\nIEEE Spectrum\n·\nInteresting Engineering\nWhat Is NOT Yet Confirmed for Gen 3 (June 2026)\n⚠\nImportant for researchers:\nMultiple sites have published \"Gen 3 specs\" that are speculation or analyst estimates. The following specs have NOT been officially disclosed by Tesla as of June 1, 2026.\nSpecification\nStatus\nNotes\nWeight\nTBC\nExpect",
+        "content_chars": 6000,
+        "truncated": true
+      }
+    }
   }
 ]

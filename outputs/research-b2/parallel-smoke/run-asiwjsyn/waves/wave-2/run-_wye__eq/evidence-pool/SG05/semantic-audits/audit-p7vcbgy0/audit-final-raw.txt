@@ -1,0 +1,68 @@
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "verdict": "TRIANGULATED",
+      "reason": "Both sources confirm Samsung's development of a humanoid robot and the target debut at CES 2027. Source E002 specifically supports the 'AI-native' approach (optimizing for AI from the initial design stage).",
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "Explicitly states Samsung started a next-gen intelligent humanoid project on 2026-09-07 with a goal to reveal it at CES 2027 in Las Vegas.",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        },
+        {
+          "evidence_id": "C001-E002",
+          "state": "VERIFIED",
+          "reason": "Confirms the goal to debut at CES 'next year' (relative to Sept 2026) and explicitly mentions building a custom humanoid optimized for AI algorithms from the initial design stage.",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "Only one source provides evidence for the use of Samsung's own factories as 'data factories'.",
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "Explicitly mentions a 'data factory' under construction at sites including the Gumi plant and states Samsung can use its semiconductor, smartphone, and home appliance production lines as a huge data collection base.",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "Only one source provides evidence for the 'Scan & Go' solution and its specific capabilities.",
+      "evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "Confirms 'Scan & Go' is an AI robot solution for tasks like sanding and grinding on large structures without blueprints, achieving 0.1mm precision and PLe, Cat4 safety compliance.",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "Only one source provides evidence for the NVIDIA collaboration and the 2028 humanoid target.",
+      "evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "reason": "Explicitly mentions the collaboration with NVIDIA, the development of the 'Agentic Robot O/S', and the goal to sequentially reveal industrial humanoid products by 2028.",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    }
+  ],
+  "quality_flags": []
+}

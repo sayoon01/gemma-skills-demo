@@ -106,8 +106,10 @@ python3 research_run.py \
 
 SHA-256으로 Skill 버전 추적·OFF/ON 재현성·소스 연결을 확보한다.
 
-B1에서는 원본 Skill이 병렬 Sub-agent를 요구하지만 Agent Spawn Tool이 없으므로
-Runtime 제약을 System Context에 명시하고, Gaps에 한계를 적도록 한다.
+B1에서는 원본 Skill이 병렬 Sub-agent를 요구하지만 단일 세션만 쓰므로,
+Runtime 제약을 System Context에 명시하고 Gaps에 한계를 적도록 한다.
+이후 B2는 별도 세션으로 Coordinator와 Worker를 나눈다.
+상위: [README.md](../README.md) · [docs/b2-sub-agents.md](../docs/b2-sub-agents.md)
 
 ---
 
@@ -178,40 +180,37 @@ Skill 활성·경로·SHA-256·Model·Tool·Token·Turn별 모델 시간·전체
 
 ## 10. 현재 지원 범위
 
-| Capability | 상태 |
-|---|---|
-| Skill Discovery / Validation / Activation | O |
-| SKILL.md Body Load / Instruction Injection | O |
-| Ollama Tool Calling / Generic Binding | O |
-| Tool Result Feedback / Multi-turn Loop | O |
-| Run Logging / Turn별 Runtime 측정 | O |
-| `scripts/` · `references/` · `assets/` on-demand | X |
-| `allowed-tools` 자동 Binding | X |
-| Parallel Sub-agent / Multi-wave / Context Compaction | X |
+이 문서의 본문은 B1 단일 세션 Runtime이다.
+B2 모듈은 `src/research_b2/`에 따로 있다.
+
+| Capability | B1 `research_run.py` | B2 `src/research_b2/` |
+|---|---|---|
+| Skill Discovery / Activation | O | O |
+| Ollama Tool Calling / Agent Loop | O | Worker만 |
+| 독립 Chat Session 병렬 조사 | X | O |
+| Evidence Gate / Semantic Auditor | X | O |
+| Evidence Pool / Replanner | X | O |
+| 한 명령으로 Wave 전체 연결 | X | X |
+| `scripts/` · `references/` on-demand | X | X |
+| Context Compaction | X | X |
 
 ---
 
 ## 11. 현재 Runtime의 의미
 
-현재 구현은 Agent Skills 전체 Spec의 범용 Client가 아니다.
+이 파일은 Agent Skills 전체 Spec의 범용 Client가 아니다.
 
-**정확한 정의:** `SKILL.md` 중심 Agent Skills Compatibility를 Gemma4에서 검증하기
-위한 **B1 Runtime**.
-
-검증한 것:
+**B1 정의:** `SKILL.md`를 단일 Gemma4 세션에 넣어 Tool Calling과 행동 변화를 확인하는 Runtime.
 
 ```text
 External SKILL.md → Gemma4 → Tool Selection → Actual Tool Execution → Behavior Change
 ```
 
-"Gemma4가 Agent Skills를 Native 지원한다"보다:
+B2는 같은 원칙을 유지한 채 세션을 나눈다.
+Python이 연구 주제를 쓰지 않고, 공개 Skill과 Runtime 계약만 읽는다.
+설명: [README.md](../README.md) · [docs/b2-runtime-contracts.md](../docs/b2-runtime-contracts.md)
 
-> 별도의 Skill/Agent Runtime을 통해 공개 Agent Skills의 핵심 Workflow를 Gemma4에
-> 적용할 수 있음을 확인하였다.
-
-가 정확하다.
-
-후속: [07-future-work.md](07-future-work.md)
+후속으로 남은 것: [07-future-work.md](07-future-work.md)
 
 ### 참고
 

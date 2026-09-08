@@ -207,10 +207,11 @@ Public Skills → Skill Runtime
 | C | Actual Tool Execution | SUCCESS |
 | D | Skill-driven Behavior Change | SUCCESS |
 | E | Full Resource Compatibility | PARTIAL |
-| F | Parallel / Multi-agent Workflow | UNSUPPORTED |
+| F | Parallel / Multi-agent Workflow | B1에서는 UNSUPPORTED. B2에서 독립 세션으로 구현 |
 | **Overall** | **B1 Partial Compatibility** | **SUCCESS** |
 
-B2 목표: [07-future-work.md](07-future-work.md)
+위 표는 2026-09-07 B1 판정이다.
+B2 단계 구현과 남은 일은 [README.md](../README.md)와 [07-future-work.md](07-future-work.md)를 본다.
 
 ---
 
@@ -225,6 +226,7 @@ B2 목표: [07-future-work.md](07-future-work.md)
 
 > Gemma4에서 Agent Skills 적용 가능성을 실제 Tool 실행까지 검증하였으며,
 > **B1 수준의 Partial Compatibility를 확인하였다.**
+> 병렬 세션과 Evidence Gate는 이후 B2 모듈에서 따로 검증한다.
 
 ### 관련 Run (로컬)
 

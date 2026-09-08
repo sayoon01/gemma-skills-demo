@@ -1,0 +1,96 @@
+{
+  "status": "completed",
+  "stage": "B2-2D",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/evidence-pool/SG05/semantic-audits/audit-p7vcbgy0",
+  "created_at": "2026-09-08T09:10:29.444805+00:00",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ],
+  "audit_result": {
+    "claims": [
+      {
+        "claim_id": "C001",
+        "verdict": "TRIANGULATED",
+        "reason": "Both sources confirm Samsung's development of a humanoid robot and the target debut at CES 2027. Source E002 specifically supports the 'AI-native' approach (optimizing for AI from the initial design stage).",
+        "evidence": [
+          {
+            "evidence_id": "C001-E001",
+            "state": "VERIFIED",
+            "reason": "Explicitly states Samsung started a next-gen intelligent humanoid project on 2026-09-07 with a goal to reveal it at CES 2027 in Las Vegas.",
+            "audited_source_type": "industry",
+            "audited_tier": 2
+          },
+          {
+            "evidence_id": "C001-E002",
+            "state": "VERIFIED",
+            "reason": "Confirms the goal to debut at CES 'next year' (relative to Sept 2026) and explicitly mentions building a custom humanoid optimized for AI algorithms from the initial design stage.",
+            "audited_source_type": "industry",
+            "audited_tier": 2
+          }
+        ]
+      },
+      {
+        "claim_id": "C002",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "Only one source provides evidence for the use of Samsung's own factories as 'data factories'.",
+        "evidence": [
+          {
+            "evidence_id": "C002-E001",
+            "state": "VERIFIED",
+            "reason": "Explicitly mentions a 'data factory' under construction at sites including the Gumi plant and states Samsung can use its semiconductor, smartphone, and home appliance production lines as a huge data collection base.",
+            "audited_source_type": "industry",
+            "audited_tier": 2
+          }
+        ]
+      },
+      {
+        "claim_id": "C003",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "Only one source provides evidence for the 'Scan & Go' solution and its specific capabilities.",
+        "evidence": [
+          {
+            "evidence_id": "C003-E001",
+            "state": "VERIFIED",
+            "reason": "Confirms 'Scan & Go' is an AI robot solution for tasks like sanding and grinding on large structures without blueprints, achieving 0.1mm precision and PLe, Cat4 safety compliance.",
+            "audited_source_type": "industry",
+            "audited_tier": 2
+          }
+        ]
+      },
+      {
+        "claim_id": "C004",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "Only one source provides evidence for the NVIDIA collaboration and the 2028 humanoid target.",
+        "evidence": [
+          {
+            "evidence_id": "C004-E001",
+            "state": "VERIFIED",
+            "reason": "Explicitly mentions the collaboration with NVIDIA, the development of the 'Agentic Robot O/S', and the goal to sequentially reveal industrial humanoid products by 2028.",
+            "audited_source_type": "industry",
+            "audited_tier": 2
+          }
+        ]
+      }
+    ],
+    "quality_flags": []
+  },
+  "integrity": {
+    "ok": true,
+    "errors": [],
+    "expected_claim_count": 4,
+    "seen_claim_count": 4,
+    "expected_evidence_count": 5,
+    "seen_evidence_count": 5
+  },
+  "metrics": {
+    "claim_count": 4,
+    "evidence_count": 5,
+    "elapsed_seconds": 126.823
+  }
+}

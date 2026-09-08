@@ -1,0 +1,147 @@
+```json
+{
+  "assignment_id": "SG04",
+  "claims": [
+    {
+      "claim": "The robotics industry is shifting toward Vision-Language-Action (VLA) models to enable general-purpose capabilities.",
+      "support": "VLA models unify vision, language, and action data at scale, allowing robots to learn policies that generalize across diverse tasks, objects, and environments with minimal task-specific data.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications",
+          "publisher": "arXiv",
+          "url": "https://arxiv.org/abs/2510.07077",
+          "source_type": "academic",
+          "tier": 1,
+          "excerpt": "By unifying vision, language, and action data at scale... VLA models aim to learn policies that generalise across diverse tasks, objects, embodiments, and environments."
+        }
+      ]
+    },
+    {
+      "claim": "Tesla Optimus Gen 3 entered mass production in January 2026 but is not yet available for external commercial sale.",
+      "support": "Mass production of Gen 3 began on January 21, 2026, at the Fremont factory. While in production, these units are used for internal testing and deployment rather than external commercial sales.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+          "publisher": "optimusk.blog",
+          "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "January 21, 2026: Gen 3 mass production commences at Fremont, California... The units being produced and tested in Fremont are 'production' in the manufacturing sense, not yet in the commercial sales sense."
+        }
+      ]
+    },
+    {
+      "claim": "Tesla Optimus Gen 3 features a significant architectural upgrade in its hands compared to Gen 2.",
+      "support": "Gen 3 utilizes a tendon-driven biomimetic design moving actuators to the forearm, increasing hand capability to 50 actuators and 22 degrees of freedom (DoF) per hand, compared to 28 actuators and 11 DoF in Gen 2.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+          "publisher": "optimusk.blog",
+          "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "Gen 3 hands — 50 actuators vs ~28 total in Gen 2; 22 DoF per hand vs 11 in Gen 2 — a 4.5× leap"
+        }
+      ]
+    },
+    {
+      "claim": "Figure AI has deployed Figure 02 and Figure 03 robots at BMW and conducted trials at Amazon.",
+      "support": "Figure 02 was deployed in BMW's body shop, and Figure 03 is handling complex production logistics at BMW Spartanburg. Additionally, Figure 03 completed a 30-day trial at Amazon fulfillment centers in April 2026 operating at 100% autonomy.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Figure 03’s 100% Autonomous Amazon Trial: The Rise of Physical AI in Humanoid Robotics",
+          "publisher": "intelidroid.com",
+          "url": "https://intelidroid.com/2026/04/27/figure-03s-100-autonomous-amazon-trial-the-rise-of-physical-ai-in-humanoid-robotics/",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "Figure AI’s Figure 03 completing a rigorous 30-day trial at Amazon fulfillment centers, operating at 100% autonomy."
+        },
+        {
+          "source_kind": "web",
+          "title": "Figure 03 at BMW Spartanburg: 30,000+ Vehicle Humanoid ...",
+          "publisher": "ifactoryapp.com",
+          "url": "https://ifactoryapp.com/industries/automotive-manufacturing/figure-03-bmw-spartanburg-case-study-humanoid",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "With the BMW deployment in commissioning, Figure AI closes a $675M Series C round..."
+        }
+      ]
+    },
+    {
+      "claim": "Agility Robotics' Digit is commercially deployed at Amazon and GXO under a Robot-as-a-Service (RaaS) model.",
+      "support": "Digit is operating in Amazon and GXO Logistics facilities. However, there is a significant conflict regarding the scale of deployment: one source claims 10,000 units at Amazon, while another reports only 75 units deployed across 4 commercial agreements.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Agility Robotics and Digit: The Humanoid That Ships",
+          "publisher": "biped.news",
+          "url": "https://biped.news/article/agility-robotics-digit-2026",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "As of 2025, Digit is the most commercially deployed humanoid robot in the world, operating inside Amazon and GXO Logistics facilities under a Robot-as-a-Service contract."
+        },
+        {
+          "source_kind": "web",
+          "title": "Digit at Work: Agility Robotics' Humanoid Passes the Commercial Test",
+          "publisher": "nexi.fund",
+          "url": "https://nexi.fund/agility-digit-commercial-deployment-2026/",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "75 units deployed, 4 commercial agreements, and a RaaS model"
+        },
+        {
+          "source_kind": "web",
+          "title": "Amazon Deploys 10K Digit Humanoids [Robotics 2026]",
+          "publisher": "techbytes.app",
+          "url": "https://techbytes.app/posts/amazon-digit-humanoid-deployment-10k/",
+          "source_type": "industry",
+          "tier": 3,
+          "excerpt": "Amazon confirms the massive deployment of 10,000 Agility Robotics Digit humanoids across its fulfillment network."
+        }
+      ]
+    },
+    {
+      "claim": "The Unitree humanoid robot priced around $4,000-$6,000 is the R1 model, not the G1.",
+      "support": "The Unitree R1 is the budget-oriented model priced between $4,900 and $5,900. The Unitree G1 is a higher-end model with a significantly higher starting price, typically between $13,500 and $18,000.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Unitree R1 vs G1: Which Humanoid Should You Buy? [2026]",
+          "publisher": "blog.robozaps.com",
+          "url": "https://blog.robozaps.com/b/unitree-r1-vs-g1",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "Compare Unitree R1 ($5,900) vs G1 ($13,500)."
+        },
+        {
+          "source_kind": "web",
+          "title": "Unitree G1 vs R1: The Cheapest Humanoids Compared",
+          "publisher": "humanoidrobots.com",
+          "url": "https://humanoidrobots.com/compare/unitree-g1-vs-unitree-r1",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "The G1 starts around 16,000 dollars... The R1 is reported near 5,900 dollars, the cheapest humanoid on the market."
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "Verification of the exact number of Agility Digit robots deployed at Amazon (conflict between 75 and 10,000 units).",
+    "Official confirmation from Tesla regarding the external commercial availability date for Optimus Gen 3."
+  ],
+  "leads": [
+    "Investigate the 'major U.S. apparel retailer' mentioned in Figure AI's 500-unit pilot agreement to identify the partner.",
+    "Monitor Tesla's Annual Shareholder Meeting (June/July 2026) for the full Gen 3 body reveal and pricing."
+  ]
+}
+```

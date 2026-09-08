@@ -15,25 +15,28 @@
 현재 B1 실험에서는 공개 `SKILL.md`를 Gemma4에 적용하여 Skill Discovery, Activation,
 Tool Calling 및 Agent Loop가 동작하는 것을 확인하였다.
 
-다만 `deep-research` 원본 Skill의 요구사항을 기준으로 보면 일부 기능은 아직 미지원이거나
-부분적으로만 충족되었다. 또한 Skill 적용에 따른 Runtime 비용과 Tool 안정성 문제도
-확인되었다.
+2026-09-08 이후 B2는 더 이상 “예정”만은 아니다.
+독립 Coordinator, 병렬 Worker, Deterministic Gate, Semantic Auditor, Evidence Pool,
+Replanner와 schema repair를 `src/research_b2/`에 구현하고 스모크 실행까지 했다.
+설명은 [README.md](../README.md)와 [docs/b2-sub-agents.md](../docs/b2-sub-agents.md)에 있다.
 
-따라서 향후 적용에서는 아래 항목을 우선적으로 보완할 예정이다.
+아직 없는 것은 한 프로세스로 Wave를 잇는 실행기, 최종 보고서 합성,
+출처 독립성 확정, Resource Loader, 자동 Eval이다.
+아래 7.2 이후의 설계 초안은 그 당시 목표 기록이다. 구현된 동작은 B2 문서를 우선한다.
 
 ---
 
 ## 7.1 현재 미충족·부분충족 사항
 
-| 항목 | 현재 상태 | 실험에서 확인된 내용 |
+| 항목 | B1 당시 | 2026-09-08 이후 |
 |---|---|---|
-| 병렬 Sub-agent | 미충족 | 현재 Runtime은 단일 Gemma4 Agent만 실행하며 deep-research가 요구하는 병렬 조사 구조는 지원하지 않음 |
-| Multi-wave Research | 미충족 | 1차 조사 후 Gap을 분석하여 추가 조사 Wave를 수행하는 반복 구조가 없음 |
-| 모든 Citation 원문 검증 | 부분충족 | 최종 Sources 6개 중 `fetch_page`로 실제 원문을 읽은 URL은 2개 |
-| 2-source Triangulation | 부분충족 | 일부 주장에 복수 Citation이 존재하지만 모든 출처가 실제 원문 검증된 것은 아님 |
-| Web Search 안정성 | 부분충족 | Skill ON 실행에서 `web_search` 1회 오류 발생 |
-| Source Quality 관리 | 부분충족 | 최종 결과에 Tier 4~5 수준의 산업자료·블로그 출처가 포함됨 |
-| Runtime 성능 | 개선 필요 | Skill ON 실행시간이 Skill OFF 대비 약 35.9% 증가함 |
+| 병렬 Sub-agent | 미충족 | B2 Worker 독립 세션으로 구현. overlap 로그로만 병렬을 주장한다 |
+| Multi-wave Research | 미충족 | Replanner와 `--wave`까지 구현. 한 CLI로 자동 반복은 아직 없다 |
+| Citation 원문 검증 | 부분충족 | Deterministic Gate와 Auditor가 fetch된 본문만 판정한다. 최종 합성은 없다 |
+| 2-source Triangulation | 부분충족 | Post-Audit는 `VERIFIED` 개수만 센다. 독립성은 확정하지 않는다 |
+| Web Search 안정성 | 부분충족 | 동일. Retry/fallback은 없다 |
+| Source Quality 관리 | 부분충족 | Auditor가 tier를 다시 볼 수 있으나 Skill 규칙을 Runtime에 복사하지 않는다 |
+| Runtime 성능 | 개선 필요 | 병렬 조사는 한 Wave 20~30분. timeout recovery가 시간을 더한다 |
 
 ---
 
@@ -348,24 +351,20 @@ Skill
 
 ## 7.12 B2 검증 목표
 
-다음 단계인 B2에서는 특히 다음 항목을 우선 검증한다.
+B2에서 우선 보려던 항목의 현재 상태다.
 
-1. Parallel Gemma4 Sub-agent 실행
-2. Sub-goal별 독립 조사
-3. Multi-wave Research
-4. Evidence Aggregation
-5. 모든 주요 Citation 원문 확인
-6. 2-source Triangulation
-7. Source Quality Gate
-8. Convergence 판단
-9. Context 및 Runtime 최적화
-
-B2가 완료되면 현재의 **SKILL.md 중심 Partial Compatibility**에서 벗어나
-공개 Agent Skill의 원본 Workflow를 보다 충실하게 실행할 수 있는
-**범용 Gemma4 Agent Runtime**으로 확장하는 것을 목표로 한다.
+1. Parallel Gemma4 Sub-agent 실행 — 구현, 스모크 실행
+2. Sub-goal별 독립 조사 — 구현
+3. Multi-wave Research — Replanner와 Wave 2 실행까지. 자동 루프는 없음
+4. Evidence Aggregation — Evidence Pool까지
+5. 주요 Citation 원문 확인 — fetch 성공 URL만 Gate를 통과
+6. 2-source Triangulation — 개수 집계만. 독립성 미확정
+7. Source Quality Gate — Skill과 Auditor에 남김. Runtime 하드코딩 없음
+8. Convergence 판단 — 측정값 기록. 규칙은 활성 Skill
+9. Context 및 Runtime 최적화 — 미완. 600초 timeout과 순차 recovery가 남아 있다
 
 | 단계 | 범위 | 상태 |
 |---|---|---|
 | B1 | SKILL.md 중심 Partial Compatibility | **완료** |
-| B2 | Parallel Sub-agent · Multi-wave · Evidence Gate | 예정 |
-| B3 | Resource Loader · Eval · Sandbox 강화 | 검토 |
+| B2 | 독립 세션 · Gate · Pool · Replanner | **단계 구현, 단일 실행기 없음** |
+| B3 | 최종 합성 · Resource Loader · Eval | 검토 |

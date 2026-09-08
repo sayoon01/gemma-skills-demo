@@ -1,0 +1,160 @@
+{
+  "accepted_claims": [
+    {
+      "claim": "Samsung Electronics is developing an 'AI-Native' humanoid robot with a target debut at CES 2027 (January 2027).",
+      "support": "Samsung is integrating AI into the robot's design from the initial stage rather than layering software on a pre-built frame, aiming for a reveal at CES 2027.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표 < AI < 미래공감 < 기사본문 - 공감신문",
+          "publisher": "공감신문",
+          "url": "https://www.gokorea.kr/news/articleView.html?idxno=877516",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "삼성전자가 2026년 9월 7일 차세대 지능형 휴머노이드(인간형 로봇) 개발 프로젝트를 본격화하고 2027년 1월 미국 라스베이거스에서 열리는 세계 최대 전자·정보기술 전시회 CES 2027 공개를 목표로 실무 작업에 착수했다.",
+          "verification_state": "FETCHED",
+          "retrieved_title": "삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표 < AI < 미래공감 < 기사본문 - 공감신문",
+          "retrieved_url": "https://www.gokorea.kr/news/articleView.html?idxno=877516",
+          "retrieved_content_chars": 4267
+        },
+        {
+          "source_kind": "web",
+          "title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+          "publisher": "Seoul Economic Daily",
+          "url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "[Samsung Humanoid to Debut at CES Next Year] ... build a custom humanoid optimized for AI algorithms from the initial design stage",
+          "verification_state": "FETCHED",
+          "retrieved_title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+          "retrieved_url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+          "retrieved_content_chars": 6000
+        }
+      ],
+      "verified_source_count": 2,
+      "validation_status": "MULTI_SOURCE_PENDING_AUDIT"
+    },
+    {
+      "claim": "Samsung Electronics utilizes its own semiconductor and appliance factories as 'data factories' to collect vast amounts of physical data for humanoid training.",
+      "support": "Samsung leverages its global production lines to gather real-world physical data, providing a comparative advantage over companies relying solely on simulations.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+          "publisher": "Seoul Economic Daily",
+          "url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "Technology developed there is applied directly to a \"data factory\" under construction at sites including the Gumi plant for validation. ... Samsung, which operates semiconductor, smartphone and home appliance production lines around the world, can use its own factories as a huge data collection base.",
+          "verification_state": "FETCHED",
+          "retrieved_title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+          "retrieved_url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+          "retrieved_content_chars": 6000
+        }
+      ],
+      "verified_source_count": 1,
+      "validation_status": "SINGLE_SOURCE"
+    },
+    {
+      "claim": "Doosan Robotics has launched 'Scan & Go', an AI-based industrial robot solution that performs tasks like sanding and grinding on large structures without blueprints.",
+      "support": "Scan & Go combines a collaborative robot arm with an AMR, using physics-informed AI and 3D vision to achieve 0.1mm precision and PLe, Cat4 safety compliance.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "CES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화 - ZDNet korea",
+          "publisher": "ZDNet Korea",
+          "url": "https://zdnet.co.kr/view/?no=20260107154524",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "스캔앤고는 협동로봇 팔과 자율이동로봇(AMR)을 결합한 플랫폼에 물리정보 기반 AI와 3D 비전 기술을 적용한 산업용 AI 로봇 솔루션이다. ... 0.1mm 수준의 작업 정밀도를 구현했다. ... 산업용 안전 기준인 PLe, Cat4도 충족했다.",
+          "verification_state": "FETCHED",
+          "retrieved_title": "CES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화 - ZDNet korea",
+          "retrieved_url": "https://zdnet.co.kr/view/?no=20260107154524",
+          "retrieved_content_chars": 1419
+        }
+      ],
+      "verified_source_count": 1,
+      "validation_status": "SINGLE_SOURCE"
+    },
+    {
+      "claim": "Doosan Robotics is collaborating with NVIDIA to develop an 'Agentic Robot O/S' and aims to release industrial humanoid products by 2028.",
+      "support": "The partnership integrates NVIDIA's AI and robotics ecosystem with Doosan's execution software to accelerate the commercialization of industrial humanoids.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다 - 전자신문",
+          "publisher": "전자신문",
+          "url": "https://www.etnews.com/20260429000466",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "두산로보틱스가 엔비디아와 피지컬 인공지능(AI) 기반 로봇 솔루션 개발 협력에 나선다. ... 2028년에는 산업용 휴머노이드 제품을 순차적으로 공개한다는 목표다. ... 로봇 전용 실행 소프트웨어 '에이전틱 로봇 운영체제(Agentic Robot O/S)'와 엔비디아의 AI·로보틱스 시뮬레이션·학습 인프라를 연계",
+          "verification_state": "FETCHED",
+          "retrieved_title": "두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다 - 전자신문",
+          "retrieved_url": "https://www.etnews.com/20260429000466",
+          "retrieved_content_chars": 1497
+        }
+      ],
+      "verified_source_count": 1,
+      "validation_status": "SINGLE_SOURCE"
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim": "The Korea Institute for Robot Industry Advancement (KIRIA) provides public testbeds for robot performance evaluation, including manipulation and driving systems.",
+      "support": "KIRIA operates infrastructure for manipulation performance (compliant with ISO 18646-3, including finger strength tests) and driving performance (including durability and non-structured driving tracks).",
+      "confidence": "high",
+      "sources": [],
+      "verified_source_count": 0,
+      "validation_status": "UNSUPPORTED"
+    },
+    {
+      "claim": "KIRIA manages the 'Outdoor Mobile Robot Operational Safety Certification' (실외이동로봇 운행안전인증) for autonomous delivery robots in South Korea.",
+      "support": "KIRIA issues safety certifications for outdoor mobile robots, with recent certifications granted to companies like Mobinn and Woowa Brothers.",
+      "confidence": "high",
+      "sources": [],
+      "verified_source_count": 0,
+      "validation_status": "UNSUPPORTED"
+    }
+  ],
+  "rejected_sources": [
+    {
+      "claim_index": 5,
+      "source_index": 1,
+      "state": "UNREAD",
+      "source": {
+        "source_kind": "web",
+        "title": "한국로봇산업진흥원 - KIRIA공동활용장비 - i-Tube공동활용장비 - i-Tube한국로봇산업진흥원한국로봇산업진흥원 - KIRIA대구연구장비정보시스템 - dris.or.kr",
+        "publisher": "KIRIA",
+        "url": "https://www.kiria.org/portal/cert/portalCertEvalTest.do",
+        "source_type": "official",
+        "tier": 1,
+        "excerpt": "ISO TC299 WG4 서비스로봇 국제표준화에서 개발중인 ISO 18646-3 Manipulation 성능평가 방법에 부합하는 장비로, 서비스로봇 제품의 조작성능 (8개 항목)을 시험평가하기 위한 장비이며, 8개 항목은 아래와 같음 • Finger Strength : 손가락 힘 측정 ... 로봇주행성능평가시스템은 바닥 환경이 다른 조건에서의 주행성능, 경사로, 주행내구성, 비정형주행 등의 시험‧평가를 통해"
+      }
+    },
+    {
+      "claim_index": 6,
+      "source_index": 1,
+      "state": "UNREAD",
+      "source": {
+        "source_kind": "web",
+        "title": "한국로봇산업진흥원 - KIRIA",
+        "publisher": "KIRIA",
+        "url": "https://www.kiria.org/portal/cert/portalCertEvalTest.do",
+        "source_type": "official",
+        "tier": 1,
+        "excerpt": "실외이동로봇 운행안전인증 제품 공표 (KIRIA-01-26-005-01, 모빈 주식회사-P, P2) 2026-08-13 ... 실외이동로봇 운행안전인증 제품 공표 (KIRIA-01-26-004-01, 주식회사 우아한형제들-실내·외 자율주행 배달 로봇"
+      }
+    }
+  ],
+  "summary": {
+    "raw_claim_count": 6,
+    "accepted_claim_count": 4,
+    "unsupported_claim_count": 2,
+    "rejected_source_count": 2,
+    "successful_fetch_source_count": 4
+  }
+}

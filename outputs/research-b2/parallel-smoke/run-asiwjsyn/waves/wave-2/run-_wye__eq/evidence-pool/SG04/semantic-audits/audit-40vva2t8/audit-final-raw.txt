@@ -1,0 +1,63 @@
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The claim is supported by a single verified academic source. While the source confirms the goals and mechanisms of VLA models, it does not explicitly state that the 'industry' as a whole is shifting toward them, though it notes they have 'recently gained significant attention'.",
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content explicitly states that VLA models aim to learn policies that generalize across diverse tasks, objects, embodiments, and environments by unifying vision, language, and action data at scale.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The claim is supported by a single industry blog. The source confirms the mass production date and the distinction between manufacturing production and commercial sale.",
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "The content explicitly mentions mass production commenced January 21, 2026, at Fremont and specifies that these are 'production' in the manufacturing sense, not the commercial sales sense.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The claim is supported by a single industry blog. The source provides the specific architectural shift (tendon-driven/forearm actuators) and the numerical comparison of actuators and DoF.",
+      "evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The content details the shift to a tendon-driven biomimetic design with actuators in the forearm, and lists 50 actuators/22 DoF for Gen 3 vs ~28 actuators/11 DoF for Gen 2.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4
+        }
+      ]
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; corrected to Tier 2 (Peer-reviewed/Academic)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but optimusk.blog is an industry blog; corrected to Tier 4."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C003-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but optimusk.blog is an industry blog; corrected to Tier 4."
+    }
+  ]
+}
