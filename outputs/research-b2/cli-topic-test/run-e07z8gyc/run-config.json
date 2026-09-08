@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-09-08T05:14:00.183958+00:00",
+  "stage": "B2-1",
+  "status": "configured",
+  "dry_run": true,
+  "case_name": "cli-topic-test",
+  "model": "gemma4:31b",
+  "request_source": {
+    "type": "topic",
+    "value": "2024년 이후 제조업 Physical AI 기술 동향과 주요 기업, 상용화 병목을 조사해줘."
+  },
+  "input_dir": "/home/keti_spark1/yune/gemma-skills-demo/inputs",
+  "input_dir_exists": true,
+  "skill": {
+    "name": "deep-research",
+    "base_dir": "/home/keti_spark1/yune/gemma-skills-demo/vendor/community-skills/deep-research",
+    "sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+    "description": "Iterative, source-backed deep research skill. Decomposes any topic into sub-goals, dispatches parallel sub-agents to investigate the open web, refines its plan across waves until convergence, then returns a structured, citation-dense report inline.",
+    "body_chars": 12995
+  },
+  "runtime": {
+    "max_workers": 3,
+    "max_waves": 3,
+    "max_worker_turns": 6,
+    "min_sources": 10,
+    "novelty_threshold": 0.15
+  },
+  "b2_targets": [
+    "parallel_sub_agents",
+    "subgoal_isolation",
+    "multi_wave_research",
+    "evidence_aggregation",
+    "verified_citations",
+    "two_source_triangulation",
+    "source_quality_gate",
+    "convergence",
+    "context_runtime_optimization"
+  ]
+}

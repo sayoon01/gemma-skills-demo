@@ -1,0 +1,107 @@
+[
+  {
+    "assignment_id": "SG01",
+    "title": "자율작업형 피지컬 AI 로봇의 기술 구성 및 발전 방향 분석",
+    "status": "completed",
+    "started_at": "2026-09-08T06:28:34.644021+00:00",
+    "finished_at": "2026-09-08T06:54:53.341466+00:00",
+    "relative_start_seconds": 0.000928,
+    "relative_end_seconds": 1578.698357,
+    "wall_seconds": 1578.697,
+    "error": null,
+    "error_traceback": null,
+    "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/workers/SG01/run-vmoyrz03",
+    "worker_metrics": {
+      "turn_count": 4,
+      "tool_call_count": 11,
+      "search_count": 6,
+      "fetch_count": 5,
+      "fetch_success_count": 4,
+      "model_response_times_seconds": [
+        167.318,
+        384.874,
+        533.768,
+        468.613
+      ],
+      "model_total_seconds": 1554.573,
+      "elapsed_seconds": 1578.658
+    },
+    "worker_verification": {
+      "worker_web_source_count": 8,
+      "verified_web_source_count": 7,
+      "unverified_web_source_count": 1,
+      "verified_urls": [
+        "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+        "https://www.meta-intelligence.tech/en/insight-physical-ai",
+        "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+        "https://www.patsnap.com/resources/blog/rd-blog/robotic-grasping-technology-landscape-2026-patsnap-eureka/",
+        "https://www.industrynews.co.kr/news/articleView.html?idxno=54354",
+        "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+        "https://www.meta-intelligence.tech/en/insight-physical-ai"
+      ],
+      "unverified_urls": [
+        "https://arxiv.org/abs/2504.21432"
+      ],
+      "all_worker_web_sources_verified": false
+    }
+  },
+  {
+    "assignment_id": "SG02",
+    "title": "국내외 주요 기업 및 대표 제품 기능 비교 및 단계 분석",
+    "status": "failed",
+    "started_at": "2026-09-08T06:28:34.644448+00:00",
+    "finished_at": "2026-09-08T06:43:13.126208+00:00",
+    "relative_start_seconds": 0.001357,
+    "relative_end_seconds": 878.483097,
+    "wall_seconds": 878.482,
+    "error": "ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)",
+    "error_traceback": "Traceback (most recent call last):\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 534, in _make_request\n    response = conn.getresponse()\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connection.py\", line 571, in getresponse\n    httplib_response = super().getresponse()\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/http/client.py\", line 1450, in getresponse\n    response.begin()\n    ~~~~~~~~~~~~~~^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/http/client.py\", line 336, in begin\n    version, status, reason = self._read_status()\n                              ~~~~~~~~~~~~~~~~~^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/http/client.py\", line 297, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/socket.py\", line 725, in readinto\n    return self._sock.recv_into(b)\n           ~~~~~~~~~~~~~~~~~~~~^^^\nTimeoutError: timed out\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/adapters.py\", line 645, in send\n    resp = conn.urlopen(\n        method=request.method,\n    ...<9 lines>...\n        chunked=chunked,\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 841, in urlopen\n    retries = retries.increment(\n        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/util/retry.py\", line 490, in increment\n    raise reraise(type(error), error, _stacktrace)\n          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/util/util.py\", line 39, in reraise\n    raise value\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 787, in urlopen\n    response = self._make_request(\n        conn,\n    ...<10 lines>...\n        **response_kw,\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 536, in _make_request\n    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 367, in _raise_timeout\n    raise ReadTimeoutError(\n        self, url, f\"Read timed out. (read timeout={timeout_value})\"\n    ) from err\nurllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/keti_spark1/yune/gemma-skills-demo/src/research_b2/parallel_workers.py\", line 267, in run_one_worker\n    worker_result = run_worker(\n        assignment=\n    ...<6 lines>...\n            worker_root,\n    )\n  File \"/home/keti_spark1/yune/gemma-skills-demo/src/research_b2/worker.py\", line 491, in run_worker\n    response = client.chat(\n        messages,\n        tools=tools.schemas,\n    )\n  File \"/home/keti_spark1/yune/gemma-skills-demo/src/ollama_client.py\", line 35, in chat\n    response = requests.post(\n        f\"{self.base_url}/api/chat\",\n        json=payload,\n        timeout=(10, 600),\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/api.py\", line 115, in post\n    return request(\"post\", url, data=data, json=json, **kwargs)\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/api.py\", line 59, in request\n    return session.request(method=method, url=url, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/sessions.py\", line 592, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/sessions.py\", line 706, in send\n    r = adapter.send(request, **kwargs)\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/adapters.py\", line 691, in send\n    raise ReadTimeout(e, request=request)\nrequests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)\n",
+    "worker_run_dir": null,
+    "worker_metrics": null,
+    "worker_verification": null
+  },
+  {
+    "assignment_id": "SG03",
+    "title": "상용화 병목 지점 및 시험·검증 인프라 요구사항 분석",
+    "status": "completed",
+    "started_at": "2026-09-08T06:28:34.644852+00:00",
+    "finished_at": "2026-09-08T06:58:52.883148+00:00",
+    "relative_start_seconds": 0.001756,
+    "relative_end_seconds": 1818.240043,
+    "wall_seconds": 1818.238,
+    "error": null,
+    "error_traceback": null,
+    "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/workers/SG03/run-qya0gef6",
+    "worker_metrics": {
+      "turn_count": 5,
+      "tool_call_count": 14,
+      "search_count": 8,
+      "fetch_count": 6,
+      "fetch_success_count": 4,
+      "model_response_times_seconds": [
+        127.41,
+        277.34,
+        568.638,
+        235.333,
+        578.576
+      ],
+      "model_total_seconds": 1787.298,
+      "elapsed_seconds": 1818.198
+    },
+    "worker_verification": {
+      "worker_web_source_count": 6,
+      "verified_web_source_count": 6,
+      "unverified_web_source_count": 0,
+      "verified_urls": [
+        "https://qnx.software/en/blog/2026/inside-the-robot",
+        "https://qnx.software/en/blog/2026/inside-the-robot",
+        "https://qnx.software/en/blog/2026/inside-the-robot",
+        "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/",
+        "https://www.betanews.net/article/view/beta202609030109",
+        "https://www.yna.co.kr/view/AKR20250930148000052"
+      ],
+      "unverified_urls": [],
+      "all_worker_web_sources_verified": true
+    }
+  }
+]

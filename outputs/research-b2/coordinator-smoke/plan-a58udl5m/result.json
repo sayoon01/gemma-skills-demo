@@ -1,0 +1,84 @@
+{
+  "stage": "B2-3",
+  "created_at": "2026-09-08T06:14:13.855186+00:00",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "controller_contract_sha256": "ea78bb46fd23ad45f913055fa1fdc8183464e9eb829ddb24d46ccf52005797b1",
+  "request_source": {
+    "type": "file",
+    "path": "/home/keti_spark1/yune/gemma-skills-demo/tasks/physical-ai-research.md"
+  },
+  "max_workers": 3,
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ],
+  "status": "completed",
+  "elapsed_seconds": 168.316,
+  "plan": {
+    "wave": 1,
+    "assignments": [
+      {
+        "assignment_id": "SG01",
+        "title": "자율작업형 피지컬 AI 기술 구성 및 아키텍처 분석",
+        "objective": "이동 플랫폼, 자율주행, 작업 수행(Manipulation), 온디바이스 AI를 중심으로 피지컬 AI 로봇의 최신 기술 구성과 상호작용 아키텍처를 정의하고 분석함.",
+        "queries": [
+          "Physical AI robot technical architecture 2024",
+          "on-device AI for autonomous task execution robots trends",
+          "autonomous mobile manipulation robot system composition 2024"
+        ],
+        "source_priority": [
+          "Primary (Official documentation, Patents)",
+          "Peer-reviewed (arXiv, Journal articles)",
+          "Industry (Technical whitepapers)"
+        ],
+        "needs_local_files": false
+      },
+      {
+        "assignment_id": "SG02",
+        "title": "국내외 주요 기업 및 제품별 기능 및 단계 분석",
+        "objective": "Tesla, Figure, Boston Dynamics 등 글로벌 기업과 국내 주요 로봇 기업의 대표 제품을 조사하고, 각 제품의 기능 비교 및 연구 단계 vs 상용화/현장 도입 단계 구분.",
+        "queries": [
+          "Tesla Optimus vs Figure AI vs Boston Dynamics Atlas 2024 comparison",
+          "Korean autonomous physical AI robot companies and products 2024",
+          "humanoid robot commercial deployment status 2024"
+        ],
+        "source_priority": [
+          "Primary (Manufacturer official docs)",
+          "Reputable news (Financial Times, Bloomberg, etc.)",
+          "Industry (Analyst reports)"
+        ],
+        "needs_local_files": false
+      },
+      {
+        "assignment_id": "SG03",
+        "title": "상용화 병목, 검증 요구사항 및 시험 인프라 분석",
+        "objective": "피지컬 AI 로봇의 실제 현장 도입 시 발생하는 기술적/제도적 병목 현상을 분석하고, 이를 해결하기 위한 시험·검증 요구사항 및 공용 시험 인프라의 필요성을 도출함.",
+        "queries": [
+          "Physical AI robot commercialization bottlenecks and challenges",
+          "robotics safety and performance verification standards 2024",
+          "public testing infrastructure for autonomous robots requirements"
+        ],
+        "source_priority": [
+          "Primary (Regulatory filings, Standards bodies like ISO/IEEE)",
+          "Peer-reviewed (Conference papers)",
+          "Industry (Vendor whitepapers)"
+        ],
+        "needs_local_files": false
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "assignment_count": 3,
+    "assignment_ids": [
+      "SG01",
+      "SG02",
+      "SG03"
+    ]
+  }
+}

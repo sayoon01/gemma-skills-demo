@@ -5,8 +5,6 @@ venv/
 .env
 .env.*
 !.env.example
-outputs/*
-!outputs/.gitkeep
 inputs/
 vendor/community-skills/
 .vscode/

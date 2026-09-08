@@ -1,0 +1,67 @@
+{
+  "model": "gemma4:31b",
+  "created_at": "2026-09-08T07:06:12.219175688Z",
+  "message": {
+    "role": "assistant",
+    "content": "",
+    "thinking": "The search results provide a good starting point. I have several candidate sources for both global and domestic companies.\n\n*Global Candidates:*\n- Tesla (Optimus Gen 3)\n- Figure AI (Figure 02/03)\n- Agility Robotics (Digit)\n- Boston Dynamics (Atlas Electric)\n- 1X (Neo)\n- Unitree (G1)\n\n*Domestic (Korean) Candidates:*\n- Rainbow Robotics (Collaborating with Tomorrow Robotics)\n- Samsung Electronics (Bot series - need to verify current status)\n- Doosan Robotics (Collaborative robots, but checking for \"Physical AI\" integration)\n- Hyundai Robotics / Boston Dynamics (Hyundai owns BD)\n- POSCO / HD Hyundai (Mentioned as collaborating)\n\n*Key Information to Extract:*\n- Product Name\n- Key Functions (AI capabilities: perception, manipulation, autonomy, learning)\n- Current Stage (Research vs. Pilot/Beta vs. Commercial/Sales)\n- Deployment Cases (e.g., Amazon for Digit, Tesla factories for Optimus)\n\nI will now proceed to read the most promising sources to extract specific details. I'll focus on the \"showdown\" and \"comparison\" articles for global robots and the Korean news for domestic ones.\n\n*Plan:*\n1.  Read `https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown` for global comparison.\n2.  Read `https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/` for deployment status.\n3.  Read `https://www.kyeonggi.com/article/20260723580350` and `https://rabby.kr/physical-ai-robots-korea-cases-2026/` for Korean context.\n4.  Check for Samsung and Doosan's specific \"Physical AI\" products.",
+    "tool_calls": [
+      {
+        "id": "call_yldzkcs8",
+        "function": {
+          "index": 0,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "Comparison of Boston Dynamics Atlas, Tesla Optimus, and Figure 02: hardware specs, software ecosystem, autonomy level, and commercial readiness as of 2026.",
+            "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown"
+          }
+        }
+      },
+      {
+        "id": "call_2z13r7a3",
+        "function": {
+          "index": 1,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "Deployment status of Figure AI, Agility Robotics (Digit at Amazon), 1X (Neo), and Tesla Optimus in factories.",
+            "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/"
+          }
+        }
+      },
+      {
+        "id": "call_mnyezp83",
+        "function": {
+          "index": 2,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "Physical AI robot adoption cases in Korea 2026, K-Humanoid alliance, and specific company roles.",
+            "url": "https://rabby.kr/physical-ai-robots-korea-cases-2026/"
+          }
+        }
+      },
+      {
+        "id": "call_dc7iax38",
+        "function": {
+          "index": 3,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "MOU between Tomorrow Robotics and Rainbow Robotics for Physical AI robot R&D and business cooperation.",
+            "url": "https://www.kyeonggi.com/article/20260723580350"
+          }
+        }
+      }
+    ]
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 89704912071,
+  "load_duration": 126632668,
+  "prompt_eval_count": 4726,
+  "prompt_eval_duration": 3444596544,
+  "eval_count": 755,
+  "eval_duration": 85800915880,
+  "_runtime": {
+    "turn": 2,
+    "model_elapsed_seconds": 89.708
+  }
+}

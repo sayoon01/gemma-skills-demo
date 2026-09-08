@@ -1,0 +1,10 @@
+{
+  "status": "failed_before_final_answer",
+  "completed_response_count": 2,
+  "tool_call_count": 10,
+  "tool_error_count": 0,
+  "search_count": 10,
+  "fetch_count": 0,
+  "unique_search_urls": 49,
+  "unique_fetched_urls": 0
+}

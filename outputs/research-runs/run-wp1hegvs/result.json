@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-09-07T07:48:40.081576+00:00",
+  "status": "failed",
+  "mode": "skill:deep-research",
+  "model": "gemma4:31b",
+  "request_file": "/home/keti_spark1/yune/gemma-skills-demo/tasks/physical-ai-research.md",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "skill_base_dir": "/home/keti_spark1/yune/gemma-skills-demo/vendor/deep-research",
+  "error": "ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)",
+  "finished_at": "2026-09-07T07:58:15.940974+00:00",
+  "elapsed_seconds": 575.859
+}

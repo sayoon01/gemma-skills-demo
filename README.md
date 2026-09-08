@@ -368,13 +368,6 @@ Skill OFF와 비교해 조사 방식·최종 결과 구조를 바꿨다.
 | `docs/` | 보고서·known-issues |
 | `docs/evidence/` | 공개 증빙 |
 | `reports/` | 실험·개요 상세 보고서 |
-| `outputs/` | 원본 실행 로그 (Git 제외) |
+| `outputs/` | 원본 실행 로그 |
 | `inputs/` | 실제 입력 파일 (Git 제외) |
-| `checks/` | 환경·스모크·회귀 |
 | `vendor/` | 공개 Skill 저장소 |
-
-```bash
-python checks/check_environment.py
-python checks/check_skill_prompt.py
-PYTHONPATH=. python3 checks/check_web_tools.py
-```

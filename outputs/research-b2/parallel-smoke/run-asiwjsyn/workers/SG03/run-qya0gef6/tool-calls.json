@@ -1,0 +1,516 @@
+[
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Physical AI robot commercialization bottlenecks technical institutional challenges"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.485,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Physical AI robot commercialization bottlenecks technical institutional challenges",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "What Is a VLA (Vision-Language-Action) Model? — Physical AI ...",
+            "url": "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/",
+            "snippet": "Dec 27, 2025 · The three challenges the first edition laid out — heterogeneity, the Sim-to-Real Gap, and scarcity — remain the bottleneck even now that the ...",
+            "domain": "blog.pebblous.ai"
+          },
+          {
+            "title": "The Physical AI Revolution Part II: Dawn of the True Robotics ...",
+            "url": "https://www.edgeofautomation.com/p/the-physical-ai-revolution-part-ii",
+            "snippet": "Feb 26, 2025 · The challenges seemed insurmountable. Sensors and actuators were inefficient and fragile, failing to provide the dexterity required for human- ...",
+            "domain": "www.edgeofautomation.com"
+          },
+          {
+            "title": "Challenges of robotics in institutions - Facebook",
+            "url": "https://www.facebook.com/MagarinosC/posts/sharing-my-article-on-robotics-and-institutions-the-challenges-ahead-opinions-we/1589467182752896/",
+            "snippet": "In healthcare, robots carry out surgical procedures with precision better than human hands taking complex procedures faster and safer. Over to agriculture where ...",
+            "domain": "www.facebook.com"
+          },
+          {
+            "title": "Physical AI: The Next Frontier in AI and Robotics to Build Truly ...",
+            "url": "https://www.preprints.org/manuscript/202604.0549",
+            "snippet": "Apr 8, 2026 · Several deep technical problems distinguish Physical AI from other AI domains. current AI lacks. We identify six coupled challenges—data ...",
+            "domain": "www.preprints.org"
+          },
+          {
+            "title": "Software Architecture: The New Bottleneck for Physical AI - QNX",
+            "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+            "snippet": "May 27, 2026 · QNX's new robotics architecture report reveals hardware is no longer the main constraint, based on insights from 1, 000 global developers.",
+            "domain": "qnx.software"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "robotics testing and verification standards 2024-2026 autonomous robots"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.34,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "robotics testing and verification standards 2024-2026 autonomous robots",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "State of Robotics 2026 | Robotics Center page",
+            "url": "https://www.roboticscenter.ai/state-of-robotics-2026",
+            "snippet": "the 2026 State of Robotics report covers hardware, data costs, AI policy, and deployment across 12 verticals. Download the free 48-page PDF — no paywall. A ...",
+            "domain": "www.roboticscenter.ai"
+          },
+          {
+            "title": "Safe Autonomy: How AI‑Driven Robots Are Rewriting Industrial ...",
+            "url": "https://www.onewise.tech/article/6a6df7d814d991744d2ee638",
+            "snippet": "Aug 16, 2026 · 542,000 units were installed in 2024, ISO Safety governance is shifting from device certification. The binding constraint on adoption is ...",
+            "domain": "www.onewise.tech"
+          },
+          {
+            "title": "Research Overview: Safe, Agile, and Interactive Robotics",
+            "url": "https://icontrol.ri.cmu.edu/research/statement.html",
+            "snippet": "The ultimate goal of our research is to develop provably safe autonomous robotic systems that can adapt to and interact with the world in the way that human ...",
+            "domain": "icontrol.ri.cmu.edu"
+          },
+          {
+            "title": "Foundation Models in Robotics: A Comprehensive Review of ...",
+            "url": "https://arxiv.org/html/2604.15395v3",
+            "snippet": "Aug 24, 2026 · Aug 2026 Foundation Models in Robotics: A Comprehensive Review of Methods, Models, Datasets, Challenges and Future Research. Verifyllm: llm- ...",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "Types of Robots and How They're Used: An Expert Perspective",
+            "url": "https://encycam.com/articles/types-of-robots-and-how-theyre-used-an-expert-perspective/",
+            "snippet": "Apr 30, 2025 · They feature integrated safety mechanisms like force sensing, speed limiters, and collision detection. suitable for inspection and testing ...",
+            "domain": "encycam.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "public testing infrastructure for autonomous robots requirements necessity"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 3.949,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "public testing infrastructure for autonomous robots requirements necessity",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Testing, Validation, and Verification of Robotic and ...",
+            "url": "https://dl.acm.org/doi/10.1145/3542945",
+            "snippet": "We perform a systematic literature review on testing, validation, and verification of robotic and autonomous systems (RAS).",
+            "domain": "dl.acm.org"
+          },
+          {
+            "title": "Robotics and autonomous systems (RP 2024)",
+            "url": "https://interoperable-europe.ec.europa.eu/collection/rolling-plan-ict-standardisation/robotics-and-autonomous-systems-rp-2024",
+            "snippet": "As an example, the robotics community has requested recently the development of new safety standards that prescribe testing procedures for wearable robots, such ...",
+            "domain": "interoperable-europe.ec.europa.eu"
+          },
+          {
+            "title": "Robots Are the New Public Safety Infrastructure",
+            "url": "https://sixdegreesofrobotics.substack.com/p/robots-are-the-new-public-safety",
+            "snippet": "Nov 14, 2025 · robots serve public safety, These robots must align with responder doctrine, hazardous environments, and FEMA/DHS requirements.",
+            "domain": "sixdegreesofrobotics.substack.com"
+          },
+          {
+            "title": "Autonomous Mobile Robot Design and Testing for Data Center ...",
+            "url": "https://ieeexplore.ieee.org/iel8/6287639/6514899/11165233.pdf",
+            "snippet": "DCs are critical infrastructures that provide secure and reliable data management and support services for both private and public sector clients.",
+            "domain": "ieeexplore.ieee.org"
+          },
+          {
+            "title": "Infrastructure requirements for the safe operation of automated ...",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0967070X23000264",
+            "snippet": "enabling AVs to travel on public roads might require some infrastructure upgrades or adjustments based on the needs of automated driving technologies",
+            "domain": "www.sciencedirect.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "자율작업 로봇 상용화 병목 및 공용 시험 인프라 요구사항"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 3.867,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "자율작업 로봇 상용화 병목 및 공용 시험 인프라 요구사항",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Ktl, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충",
+            "url": "https://www.yna.co.kr/view/AKR20250930148000052",
+            "snippet": "(진주=연합뉴스) 박정헌 기자 = 국내 유일 공공 종합시험인증기관인 한국산업기술시험원 (KTL)이 국내 로봇 기업의 성장을 뒷받침하고 산업 경쟁력을 높이기 위해 시험·인증 인프라 확충에 나선다. 7일 KTL에 따르면 최근 전 세계 산업현장에서 인간과 작업 공간을 공유하는 협동로봇이 노동력 부족, 생산성 향상, 고령화 대응의 핵심 동력으로 급부상하고 있다. 사람과 함께 운용된다는 특성상 제품과 시스템에 대한 안전인증이 필수적이지만, 그동안 국내 시험인증 기반 부족으로 해외 의존도가 높았다.",
+            "domain": "www.yna.co.kr"
+          },
+          {
+            "title": "한병도, '로봇특별법' 대표발의…이동로봇 실증·상용화·안전 ...",
+            "url": "https://www.betanews.net/article/view/beta202609030109",
+            "snippet": "한병도 더불어민주당 원내대표가 3일 '이동로봇의 안전한 이용 및 상용화 촉진을 위한 특별법안 (로봇특별법)'을 대표발의했다. 배송·보안·주차·건설 등 일상과 산업 현장에서 활용되는 이동로봇의 실증부터 상용화, 안전관리까지 통합 지원하는 첫 법안이다.",
+            "domain": "www.betanews.net"
+          },
+          {
+            "title": "Ktl, 로봇 시험·인증 인프라 확충…K-로봇 글로벌 경쟁력 높인다",
+            "url": "https://www.msn.com/ko-kr/기술/기술-회사/ktl-로봇-시험-인증-인프라-확충-k-로봇-글로벌-경쟁력-높인다/ar-AA1NZAop",
+            "snippet": "한국산업기술시험원 (KTL)이 국내 로봇 산업의 글로벌 경쟁력 강화를 위해 시험·인증 인프라 확충에 속도를 내고 있다.7일 관련업계에 따르면 KTL은 ...",
+            "domain": "www.msn.com"
+          },
+          {
+            "title": "한병도, '로봇특별법' 발의…이동로봇 상용화·안전관리 통합 ...",
+            "url": "https://biz.heraldcorp.com/article/10861860",
+            "snippet": "정치 한병도, '로봇특별법' 발의…이동로봇 상용화·안전관리 통합 지원 입력 2026-09-03 15:26:45 헤럴드경제 검색 선호 매체 추가 영문번역 0 0",
+            "domain": "biz.heraldcorp.com"
+          },
+          {
+            "title": "케이엔알시스템, 신성장 동력 '로봇 부품 시험인프라' 사업 시동",
+            "url": "https://www.sidae.com/article/2026040616360515375",
+            "snippet": "로봇 전문기업인 코스닥 상장사 케이엔알시스템은 로봇 핵심부품의 성능과 신뢰성 등을 검증하는 로봇 부품 시험인프라 시장에 본격 진출한다고 6일 밝혔다. 케이엔알시스템은 최근 국내 로봇시장이 급성장하면서 각 로봇기업마다 액추에이터, 모터, 감속기 등 로봇 핵심부품의 신뢰성 확보가 ...",
+            "domain": "www.sidae.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "six coupled challenges of Physical AI, technical problems distinguishing Physical AI from other AI domains",
+      "url": "https://www.preprints.org/manuscript/202604.0549"
+    },
+    "ok": false,
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.preprints.org/manuscript/202604.0549",
+    "elapsed_seconds": 0.112,
+    "result": {
+      "ok": false,
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.preprints.org/manuscript/202604.0549"
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "software architecture as a bottleneck for Physical AI, hardware vs software constraints",
+      "url": "https://qnx.software/en/blog/2026/inside-the-robot"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.295,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+        "title": "Software Architecture: The New Bottleneck for Physical AI",
+        "domain": "qnx.software",
+        "focus": "software architecture as a bottleneck for Physical AI, hardware vs software constraints",
+        "content": "Software Architecture: The New Bottleneck for Physical AI\nheader-teaser, header-teaser-item-box-position-left, header-teaser-item-box-color-dark, enable-dynamic-media\nRobotics is experiencing an unprecedented era of innovation, driven by the rapid rise of Physical AI and machine learning capabilities. As robots increasingly break out of controlled factory cages and navigate dynamic human environments, traditional development paradigms are shifting. According to the newly released\nInside the Robot: Architecture Benchmark Report\nby QNX, which surveyed 1,000 global robotics developers, hardware is no longer the primary constraint. Today, software has taken the lead: almost one in three developers (27%) cite software architecture and integration as their biggest performance bottleneck, compared to just 16% who cite hardware constraints.\nHere is a breakdown of the core findings and what they mean for the future of robotics engineering.\nThe Physical AI Imperative vs. Real-World Readiness\nThe ambition across the robotics sector is clear. Nearly nine in ten developers (89%) view Physical AI, systems that can perceive, reason, and act autonomously in the physical world, as critical to their organizational strategy over the next three to five years. To support this transition,\n85% of developers expect the role of software to expand\n, with development teams anticipating their largest future budget allocations will go toward AI-driven decision making (51%) and cybersecurity (51%).\nHowever, ambition is currently outpacing field readiness. While industry optimism remains highly resilient, only 29% of developers feel \"very confident\" in their systems' ability to make safe, predictable decisions in unconstrained, real-world environments.\nThe Determinism Disconnect: Flexibility vs. Safety\nAs robotics systems increasingly operate alongside humans, a reality for 83% of respondents today, the demand for flawless reliability skyrockets. An overwhelming\n95% of developers state that deterministic, real-time execution is essential\n91% of development teams still rely on general-purpose operating systems (GPOS)\n, such as Linux, to run at least some real-time or safety-critical workloads. Nearly a third (32%) do so extensively.\nTo manage this, 64% of businesses currently utilize hybrid architectures that combine safety controllers, vision computers, and microcontrollers. While these hybrid setups enhance capability, they significantly increase integration complexity, which 42% of developers cite as their biggest software development challenge\n.\nThe Certification Wall\nThe tension between utilizing flexible, open-source software and meeting strict industry safety guarantees is resulting in massive deployment bottlenecks. Two-thirds (66%) of developers report experiencing project delays specifically due to industry certification requirements. This friction is heavily tied to two main regulatory hurdles: cybersecurity standards (such as ISO/SAE 21434) and functional safety standards (like ISO 10218), which are cited as the most challenging to navigate by 51% and 49% of respondents, respectively.\nThe commercial and financial pressure to push through these bottlenecks is immense. Alarmingly, 84% of developers agree that strict deadlines and budget pressures can lead engineering teams to compromise on critical aspects of development, including safety protocols.\nImplications: Re-evaluating the Foundation\nThe robotics industry is rapidly approaching an architectural tipping point. Scaling Physical AI requires foundational software that can handle mixed-criticality workloads safely, without crippling development velocity or risking failed compliance audits.\nRecognizing the limits of their current stacks,\n86% of respondents currently using a GPOS express openness to changing their operating system\n. When looking ahead to mitigate integration and scalability limits, many developers are shifting toward more robust paradigms: 31% cite a safety-certified commercial off-the-shelf (COTS) operating system as the best fit for their needs, while 27% are opting for virtualized Linux combined with a Real-Time OS (RTOS).\nConclusion\nHardware advances have set the stage, but the next major leap in robotics will be dictated by software architecture. Re-evaluating foundational architectures from the OS up is no longer just a backend technical exercise; it is a strategic necessity for securing certifications, ensuring human safety, and successfully scaling Physical AI into the real world.\nRead the Full Report",
+        "content_chars": 4539,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "ISO Safety governance shift, binding constraint on adoption of AI-driven robots",
+      "url": "https://www.onewise.tech/article/6a6df7d814d991744d2ee638"
+    },
+    "ok": false,
+    "error": "HTTPError: 404 Client Error: Not Found for url: https://www.onewise.tech/article/6a6df7d814d991744d2ee638",
+    "elapsed_seconds": 5.262,
+    "result": {
+      "ok": false,
+      "error": "HTTPError: 404 Client Error: Not Found for url: https://www.onewise.tech/article/6a6df7d814d991744d2ee638"
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "heterogeneity, Sim-to-Real Gap, and scarcity as bottlenecks in Physical AI",
+      "url": "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.301,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/",
+        "title": "What Is a VLA (Vision-Language-Action) Model? — Physical AI Model Evolution & Data Strategy (2026 Edition) | Pebblous",
+        "domain": "blog.pebblous.ai",
+        "focus": "heterogeneity, Sim-to-Real Gap, and scarcity as bottlenecks in Physical AI",
+        "content": "Physical AI\nis the technology that lets robots, self-driving cars, and smart factories perceive and act in the real world. Its brain has evolved from text-only LLMs, through vision-added VLMs, to\nVLA (Vision-Language-Action)\nmillions of real-robot manipulation episodes\n. The three challenges the first edition laid out — heterogeneity, the Sim-to-Real Gap, and scarcity — remain the bottleneck even now that the models have grown far larger.\nIn 2026, as humanoids step onto factory floors, the question facing manufacturing, logistics, and drone companies converges on one thing: \"How do we turn our field data into a form AI can actually learn from?\" Pebblous's\nDataClinic\nPhysical AI\n, where AI interacts directly with the physical world. Systems that fuse hardware and AI to perceive, understand, and act in reality are arriving in earnest: autonomous vehicles, humanoid robots, smart factories, drones, and unmanned defense platforms.\nPhysical AI\non objects in the real physical world. Where generative AI concentrates on producing digital content, Physical AI concentrates on the intelligence of machines that actually operate in reality.\nOnly recently this trend was described as \"a story for the next ten years.\" It is already present tense. As of 2026, humanoid robots have moved past demo reels and begun working on real automotive lines at the likes of BMW and Hyundai, and general-purpose robot foundation models sit at the center of startup valuation races. Physical AI is no longer a forecast — it is a technology being validated on industrial floors right now.\n▲ A humanoid robot built to perceive, reason, and act is the archetype of the autonomous system Physical AI aims for (pictured: Tesla Optimus Gen 2, 2024) | Source:\nNVIDIA\nA world foundation model (world model) for Physical AI. Infrastructure for Sim-to-Real and synthetic-data generation\n※ The specific architectures and release dates above follow each developer's official materials; verify detailed figures against the original sources in the\nThe three defining traits of Physical AI data\nWhat makes Physical AI data hard to work with narrows down to three factors: heterogeneity, the reality gap, and scarcity. They are not separate problems — they interlock, and together they become the root cause that pushes collection and refinement costs up. Let's take them one at a time.\n🔀\nteleoperation\n, where a human physically demonstrates a task for the robot, fell from roughly $340 per hour in 2024 to $118–200 in 2026, about 60% lower. As equipment costs dropped, the bottleneck moved elsewhere: 20–30% of collected episodes are thrown out in quality filtering, and training a single skilled operator costs $1,000–3,000 per person. In other words,\nthe bottleneck has shifted from \"equipment\" to \"skilled operators and data quality.\"\nAI \"brain\" (foundation models and general-purpose software)\n. The body has converged; the contest is decided by the quantity and quality of training data. For how these technical challenges get solved at the practical level — sensor synchronization, physical-validity checks, label consistency — see\n\"The Physical AI Data Pipeline: Four Core Challenges and Solutions.\"\nrobotics foundation models\ndraw so much attention — the goal is judgment that generalizes across diverse situations. World models such as NVIDIA Cosmos and domain randomization are the latest attempts to close this gap.\n③\nThe limits of action\nPhysical properties of robot joints (backlash, friction, elasticity) affect control accuracy. It is why a motion that was perfect in simulation fails on the real robot, and it must ultimately be corrected with real motion data.\n▲ Physical properties of a robot's joints are never fully captured by simulation alone — they ultimately have to be corrected with real motion data | Source:\nPhysical AI in 2026\n2026 is the inflection point where Physical AI moves past the lab and onto industrial floors in earnest. Where the first edition emphasized market size, the clearer signals now are\nthe direction of the money\nAI brain (foundation models and general-purpose software)\n. Individual valuations bear this out: Physical Intelligence, which builds VLA models, was valued in the multi-billion-dollar range, and the humanoid company Figure AI and robotics-AI firm Skild AI closed large rounds in succession. This \"not the body, the brain\" trend is the market's version of\n\"Physical AI = a data problem.\"\nPebbloSim\ngenerates synthetic data in simulation environments that faithfully replicate the laws of physics, shrinking the Sim-to-Real Gap and safely producing the\nedge-case data\nhyperefficient models\nas core capabilities for Physical AI startups. In practice, edge AI inference has already become a real bottleneck — it accounts for the bulk of related hardware volume — and on-board VLAs like Figure Helix show the way forward.\n⏱️\nThe market is proving, with money, that data is the battleground\nThe fact that the new generation of VLAs (π0, GR00T, and the rest) are all bound to large-scale cross-embodiment data, together with the flow of investment toward the brain rather than the body, amounts to capital testifying on behalf of the claim that \"Physical AI is a data problem.\"\nThe challenges still come back to \"data quality\"\nThe three challenges (heterogeneity, Sim-to-Real, scarcity) remain the bottleneck even now that the models have grown. Advances in world models, synthetic data, and domain randomization all converge on the same question: which data do you refine and feed in, and how much of it? The new economic data, showing that the teleoperation bottleneck has shifted from equipment to skilled operators and quality, re-confirms, in measured terms, Pebblous's approach of data\ndiagnosis and cultivation\nGathering a scattered conversation in one place\nThis page is the gateway that connects the basic definition, the latest VLA landscape, data strategy, industry trends, and eight in-depth reports. Organizing the Physical AI data conversation so you can ",
+        "content_chars": 6000,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "KTL's expansion of testing and certification infrastructure, reasons for overseas dependence, specific robot types targeted",
+      "url": "https://www.yna.co.kr/view/AKR20250930148000052"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.236,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://www.yna.co.kr/view/AKR20250930148000052",
+        "title": "KTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충 | 연합뉴스",
+        "domain": "www.yna.co.kr",
+        "focus": "KTL's expansion of testing and certification infrastructure, reasons for overseas dependence, specific robot types targeted",
+        "content": "KTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충 | 연합뉴스\n연합뉴스\n메뉴 열기\nKTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충\n북마크\n최신뉴스\nKTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충\n송고\n이 밖에 경남로봇산업협회와 업무협약을 체결하고 로봇 핵심부품 시험인증과 상호 연구개발 협력에 나서는 등 지역·산업계와 협력을 강화하며 국내 기업의 기술 사업화를 지원하고 있다.\n이동혁 KTL 로봇시험인증센터장은 \"고부가가치 사업인 첨단 로봇산업의 급속한 성장에 발맞춰 국내 로봇 기업이 신속하고 편리하게 지원받을 수 있는 환경을 마련하는 데 최선을 다하겠다\"고 말했다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n[한국산업기술시험원 제공. 재판매 및 DB 금지]\n(진주=연합뉴스) 박정헌 기자 = 국내 유일 공공 종합시험인증기관인 한국산업기술시험원(KTL)이 국내 로봇 기업의 성장을 뒷받침하고 산업 경쟁력을 높이기 위해 시험·인증 인프라 확충에 나선다.\n7일 KTL에 따르면 최근 전 세계 산업현장에서 인간과 작업 공간을 공유하는 협동로봇이 노동력 부족, 생산성 향상, 고령화 대응의 핵심 동력으로 급부상하고 있다.\n사람과 함께 운용된다는 특성상 제품과 시스템에 대한 안전인증이 필수적이지만, 그동안 국내 시험인증 기반 부족으로 해외 의존도가 높았다.\n이에 KTL은 지난해 7월 서울 강남구 수서동 '로봇플러스 테스트 필드' 내 로봇시험인증센터를 개소하며 국내 기업의 애로 해소에 팔을 걷어붙였다.\n센터는 협동로봇의 성능·안전성 평가 전용 장비 11종 등 첨단 장비를 갖췄으며, 국제표준에 기반한 협동로봇 제품 인증과 작업장 위험성 평가·실증 등 로봇 개발 전 주기 지원 체계를 구축했다.\n이 밖에 경남로봇산업협회(GRIA)와 업무협약을 체결하고 로봇 핵심부품 시험인증과 상호 연구개발 협력에 나서는 등 지역·산업계와 협력을 강화하며 국내 기업의 기술 사업화를 지원하고 있다.\n이동혁 KTL 로봇시험인증센터장은 \"고부가가치 사업인 첨단 로봇산업의 급속한 성장에 발맞춰 국내 로봇 기업이 신속하고 편리하게 지원받을 수 있는 환경을 마련하는 데 최선을 다하겠다\"고 말했다.\nhome1223@yna.co.kr\n#진주\n#KTL\n#로봇",
+        "content_chars": 1115,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "details of the 'Robot Special Law' (로봇특별법), integrated support for demonstration, commercialization, and safety management",
+      "url": "https://www.betanews.net/article/view/beta202609030109"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.193,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://www.betanews.net/article/view/beta202609030109",
+        "title": "한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원",
+        "domain": "www.betanews.net",
+        "focus": "details of the 'Robot Special Law' (로봇특별법), integrated support for demonstration, commercialization, and safety management",
+        "content": "한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원\n뉴스레터 구독신청\n가\n한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원\n5년 단위 상용화 기본계획·정책위원회 설치, ‘이동로봇 활용 진흥지구’ 지정…책임보험 의무화·사고조사위 신설\n2026-09-03 17:15:28\n한병도 더불어민주당 원내대표가 3일 ‘이동로봇의 안전한 이용 및 상용화 촉진을 위한 특별법안(로봇특별법)’을 대표발의했다. 배송·보안·주차·건설 등 일상과 산업 현장에서 활용되는 이동로봇의 실증부터 상용화, 안전관리까지 통합 지원하는 첫 법안이다.\n이동로봇은 자율주행과 인공지능(AI) 등 첨단기술을 기반으로 다양한 업무를 수행하는 신산업 분야다. 기존 산업용 로봇이 생산라인 중심으로 쓰였다면 이동로봇은 공동주택과 건축물, 건설현장, 주차장 등 생활공간 전반으로 활용 범위가 넓어지고 있다. 그러나 현행 제도는 기술개발과 인증·보급 등 제품 중심의 산업 진흥에 초점이 맞춰져 있고, 활용 관련 규정도 건축법·공동주택관리법·개인정보보호법 등에 흩어져 있어 통합적인 제도 기반이 필요하다는 지적이 제기돼 왔다.",
+        "content_chars": 571,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "robotics testbed infrastructure technical requirements equipment list"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 2.867,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "robotics testbed infrastructure technical requirements equipment list",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Requirements for Demonstration Testbeds to Enhance the Technology ...",
+            "url": "https://journal.ksles.org/articles/article/kRz2/",
+            "snippet": "Through a review of smart construction policies, TRL definitions, robot test standards, safety standards, and relevant legal frameworks, the study classifies testbed requirements into technical, environmental, operational, and institutional components.",
+            "domain": "journal.ksles.org"
+          },
+          {
+            "title": "PDF Robotics Plan in Support of DOME Testbed Operations",
+            "url": "https://inldigitallibrary.inl.gov/content/uploads/50/2026/04/Sort_67416.pdf",
+            "snippet": "The following criteria were used for each robotic system to be ranked and compared: footprint inside of DOME, work envelope/range of operation, infrastructure requirements, rough order magnitude (ROM) costs, platform versatility, timeline to use, and radiation tolerance.",
+            "domain": "inldigitallibrary.inl.gov"
+          },
+          {
+            "title": "PDF Robotics and Automation Engineering Technology Equipment List",
+            "url": "https://ns4ed.s3.us-east-2.amazonaws.com/wp-content/uploads/2024/09/24112623/RoboticsandAutomationEngineering-Technology-Equpment-List-1.pdf",
+            "snippet": "Robotics Kits and Platforms: Educational Robot Kits: Such as VEX Robotics, LEGO Mindstorms, or Arduino-based kits for hands-on learning. Industrial Robots: Small-scale industrial robots (like those from FANUC, ABB, or KUKA) for advanced students. Mobile Robots: Kits like TurtleBot or ROS-compatible platforms for teaching autonomous navigation.",
+            "domain": "ns4ed.s3.us-east-2.amazonaws.com"
+          },
+          {
+            "title": "Research Testbeds | NIST",
+            "url": "https://www.nist.gov/research-test-beds",
+            "snippet": "The NIST manufacturing robotics testbed consists of several labs located in three buildings on NIST's Gaithersburg campus. Combined, these serve as a resource for research in robotics for advanced manufacturing and material handling.",
+            "domain": "www.nist.gov"
+          },
+          {
+            "title": "PDF List of Equipments for Ai & Robotics Lab",
+            "url": "https://www.marian.ac.in/public/images/uploads/LIST+OF+EQUIPMENTS+FOR+AI+(1).pdf",
+            "snippet": "LIST OF EQUIPMENTS FOR AI & ROBOTICS LAB",
+            "domain": "www.marian.ac.in"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "\"six coupled challenges\" Physical AI robotics"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 5.628,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "\"six coupled challenges\" Physical AI robotics",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Physical AI: The Next Frontier in AI and Robotics to Build ...",
+            "url": "https://www.preprints.org/manuscript/202604.0549",
+            "snippet": "Apr 8, 2026 · We identify six coupled challenges—data ecosystems, sim-to-real resilience, lifelong adaptation, safety assurance, workforce integration, and sustainable hardware—and anchor a concrete research roadmap to regulatory milestones through 2030 (Section 8).",
+            "domain": "www.preprints.org"
+          },
+          {
+            "title": "Physical AI and the Future of Robotics Report 2026 - svb.com",
+            "url": "https://www.svb.com/trends-insights/reports/physical-ai-robotics/",
+            "snippet": "Explore the future of robotics and physical AI investment, backed by data on VC funding, warehouse automation AI adoption and hardware supply chain shifts.",
+            "domain": "www.svb.com"
+          },
+          {
+            "title": "Physical AI: The Next Frontier in AI and Robotics to Build ...",
+            "url": "https://tsingtaoai.com/newsinfo/11307020.html",
+            "snippet": "Physical AI extends generative AI—which produces text and images in digital domains—to real-world tasks through embodied interaction. Unlike traditional robotics, which relies on fixed programs in controlled settings, Physical AI replaces hand-crafted routines with adaptive policies that generalise, learn from experience, and handle novelty ...",
+            "domain": "tsingtaoai.com"
+          },
+          {
+            "title": "South Korea’s push for military applications of physical AI",
+            "url": "https://www.iiss.org/online-analysis/online-analysis/2026/08/south-koreas-push-for-military-applications-of-physical-ai/",
+            "snippet": "Aug 26, 2026 · South Korea is rapidly incorporating physical AI into its armed forces. It has the potential to become a global leader in this area and to support its security partners’ efforts to develop AI-enabled uninhabited and robotic capabilities.",
+            "domain": "www.iiss.org"
+          },
+          {
+            "title": "Physical AI and humanoid robots | Deloitte Insights",
+            "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/physical-ai-humanoid-robots.html",
+            "snippet": "Dec 10, 2025 · The transition from prototype to production is happening now. Physical AI refers to artificial intelligence systems that enable machines to autonomously perceive, understand, reason about, and interact with the physical world in real time. These capabilities show up in robots, vehicles, simulations, and sensor systems.",
+            "domain": "www.deloitte.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "EU AI Act impact on autonomous robot certification and testing requirements"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.312,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "EU AI Act impact on autonomous robot certification and testing requirements",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "AI Act | Shaping Europe's digital future - European Union",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+            "snippet": "The AI Act is the first-ever legal framework on AI, which addresses the risks of AI and positions Europe to play a leading role globally.",
+            "domain": "digital-strategy.ec.europa.eu"
+          },
+          {
+            "title": "EU AI Act Explained for Automotive: What Changes for AI ...",
+            "url": "https://www.automotive-iq.com/generative-ai/articles/eu-ai-act-explained-for-automotive-what-changes-for-ai-vehicle-safety-adas-and-autonomous-driving",
+            "snippet": "Jun 3, 2026 · It is designed to regulate AI systems based on risk, with stricter requirements for systems that may affect safety, fundamental rights or public ...",
+            "domain": "www.automotive-iq.com"
+          },
+          {
+            "title": "The EU's AI act: A framework for collaborative governance",
+            "url": "https://www.sciencedirect.com/science/article/pii/S2542660524002324",
+            "snippet": "This regulation evaluates AI applications to ensure they are used ethically and responsibly, promoting the development of safe and lawful AI across the EU's ...",
+            "domain": "www.sciencedirect.com"
+          },
+          {
+            "title": "Overview of the Code of Practice | EU Artificial Intelligence Act",
+            "url": "https://artificialintelligenceact.eu/code-of-practice-overview/",
+            "snippet": "Jul 30, 2025 · The Code of Practice offers a clear framework to help developers of General Purpose AI (GPAI) models meet the requirements of the EU AI Act.",
+            "domain": "artificialintelligenceact.eu"
+          },
+          {
+            "title": "One Robot, Two Laws: How the EU's AI Act and Machinery ...",
+            "url": "https://www.linkedin.com/pulse/one-robot-two-laws-how-eus-ai-act-machinery-collide-factory-prather-xb3vf",
+            "snippet": "Mar 14, 2026 · And under the new Machinery Regulation, the same adaptive, self-updating features will trigger stricter CE-marking requirements for machine ...",
+            "domain": "www.linkedin.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 4,
+    "name": "web_search",
+    "arguments": {
+      "query": "\"robotics testbed\" technical requirements \"equipment\" list"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 4.041,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "\"robotics testbed\" technical requirements \"equipment\" list",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Research Testbeds - NIST",
+            "url": "https://www.nist.gov/research-test-beds",
+            "snippet": "The NIST manufacturing robotics testbed consists of several labs located in three buildings on NIST's Gaithersburg campus. ... The facility houses artifacts and ...",
+            "domain": "www.nist.gov"
+          },
+          {
+            "title": "[PDF] RoboBoat 2026: Technical Design Report Georgia Tech ...",
+            "url": "https://robonation.org/app/uploads/sites/3/2026/02/TDR_GTMRG_RB2026.pdf",
+            "snippet": "agent field robotics testbed. ... We extend our gratitude to Blue Robotics for the foundational BlueBoat platform and RoboNation for their generous equipment ...",
+            "domain": "robonation.org"
+          },
+          {
+            "title": "Research University Robotics | Petronella - Petronella Technology ...",
+            "url": "https://petronellatech.com/industries/research-universities-robotics/",
+            "snippet": "Section 889 of the FY2019 NDAA restricts use of certain telecommunications and surveillance equipment from designated foreign vendors on federally-funded work.",
+            "domain": "petronellatech.com"
+          },
+          {
+            "title": "State of Robotics Singapore 2026",
+            "url": "https://www.roboticscenter.ai/state-of-robotics-singapore-2026",
+            "snippet": "... equipment purchases, with simplified application for pre-approved robot models. Over 2,400 SMEs have used this program since 2023. GovTech Robotics Testbed ...",
+            "domain": "www.roboticscenter.ai"
+          },
+          {
+            "title": "A One-stop Shop Bridging the Gap from Lab to Real-World IoT ...",
+            "url": "https://arxiv.org/html/2401.14829v2",
+            "snippet": "... equipment. The hardware should operate in realistic conditions and ... The robotics testbed ingress point is the arena server, which is the main entry ...",
+            "domain": "arxiv.org"
+          }
+        ]
+      }
+    }
+  }
+]

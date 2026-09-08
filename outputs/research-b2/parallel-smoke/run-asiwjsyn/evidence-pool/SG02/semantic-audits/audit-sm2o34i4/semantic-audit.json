@@ -1,0 +1,142 @@
+{
+  "status": "completed",
+  "stage": "B2-2D",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/evidence-pool/SG02/semantic-audits/audit-sm2o34i4",
+  "created_at": "2026-09-08T07:44:46.502421+00:00",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ],
+  "audit_result": {
+    "claims": [
+      {
+        "claim_id": "C001",
+        "verdict": "TRIANGULATED",
+        "reason": "The claim is fully supported by the retrieved content from AI Herald, which explicitly mentions Gen 3 is in limited production at the Fremont facility and deployed in Tesla factories for bin picking, kitting, and basic assembly.",
+        "evidence": [
+          {
+            "evidence_id": "C001-E001",
+            "state": "VERIFIED",
+            "reason": "The source text explicitly states: 'The Gen 3 unit, now in limited production at Tesla’s Fremont facility' and 'Optimus units are primarily deployed inside Tesla factories—performing bin picking, kitting, and basic assembly tasks.'",
+            "audited_source_type": "industry_analysis",
+            "audited_tier": 4
+          }
+        ]
+      },
+      {
+        "claim_id": "C002",
+        "verdict": "CONFLICTING",
+        "reason": "The claim mentions Figure 02 and 03. Source E001 verifies Figure 02 deployments at BMW and Amazon. Source E002 mentions Figure 03 and its VLA model, but does not explicitly confirm that Figure 03 itself is in the 'commercial deployment stage' with active installations at those specific sites; it only describes Figure 03's technical capabilities.",
+        "evidence": [
+          {
+            "evidence_id": "C002-E001",
+            "state": "VERIFIED",
+            "reason": "Confirms Figure 02 installations at BMW’s Spartanburg plant and Amazon Robotics fulfillment centers.",
+            "audited_source_type": "industry_analysis",
+            "audited_tier": 4
+          },
+          {
+            "evidence_id": "C002-E002",
+            "state": "INSUFFICIENT_SUPPORT",
+            "reason": "Mentions Figure 03's technical specs (Helix VLA model) but does not verify its commercial deployment status or specific installation sites.",
+            "audited_source_type": "industry_analysis",
+            "audited_tier": 5
+          }
+        ]
+      },
+      {
+        "claim_id": "C003",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The claim is supported by a single industry analysis blog (andrew.ooo) stating Agility is deploying Digit at Amazon.",
+        "evidence": [
+          {
+            "evidence_id": "C003-E001",
+            "state": "VERIFIED",
+            "reason": "The text explicitly states 'Agility deploying Digit at Amazon'.",
+            "audited_source_type": "industry_analysis",
+            "audited_tier": 5
+          }
+        ]
+      },
+      {
+        "claim_id": "C004",
+        "verdict": "TRIANGULATED",
+        "reason": "Source E001 confirms Atlas is primarily a research platform. Source E002 (Korean source) confirms it is being pilot-operated in Hyundai factories to move automotive parts.",
+        "evidence": [
+          {
+            "evidence_id": "C004-E001",
+            "state": "VERIFIED",
+            "reason": "Confirms 'Atlas remains a research platform'.",
+            "audited_source_type": "industry_analysis",
+            "audited_tier": 4
+          },
+          {
+            "evidence_id": "C004-E002",
+            "state": "VERIFIED",
+            "reason": "The Korean text confirms Atlas is 'actually being pilot-operated in Hyundai Motor factories' (현대차 공장에서 실제로 시범 운영 중) and moving automotive parts (자동차 부품을 직접 옮기는 장면).",
+            "audited_source_type": "industry_analysis",
+            "audited_tier": 5
+          }
+        ]
+      },
+      {
+        "claim_id": "C005",
+        "verdict": "TRIANGULATED",
+        "reason": "The official news report from Kyeonggi Ilbo fully supports the MOU between Tomorrow Robotics and Rainbow Robotics for AI-Native humanoid development using RFM and AI Agents.",
+        "evidence": [
+          {
+            "evidence_id": "C005-E001",
+            "state": "VERIFIED",
+            "reason": "The source explicitly details the MOU for 'AI-Native humanoid robot' development, specifically mentioning the use of 'Robot Foundation Model (RFM)' and 'AI Agent'.",
+            "audited_source_type": "official",
+            "audited_tier": 1
+          }
+        ]
+      },
+      {
+        "claim_id": "C006",
+        "verdict": "UNSUPPORTED",
+        "reason": "The claim identifies the robot as 'G1', but the retrieved source explicitly mentions 'Unitree drops the R1 to $4K'. This is a content mismatch regarding the product model name.",
+        "evidence": [
+          {
+            "evidence_id": "C006-E001",
+            "state": "CONTENT_MISMATCH",
+            "reason": "The source refers to the 'R1' model, not the 'G1' model mentioned in the claim.",
+            "audited_source_type": "industry_analysis",
+            "audited_tier": 5
+          }
+        ]
+      }
+    ],
+    "quality_flags": [
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C001-E001",
+        "message": "Worker classified as Tier 2 (Peer-reviewed/Reputable News), but AI Herald is an industry blog/analysis site, which is Tier 4."
+      },
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C002-E001",
+        "message": "Worker classified as Tier 2, but is actually Tier 4."
+      }
+    ]
+  },
+  "integrity": {
+    "ok": true,
+    "errors": [],
+    "expected_claim_count": 6,
+    "seen_claim_count": 6,
+    "expected_evidence_count": 8,
+    "seen_evidence_count": 8
+  },
+  "metrics": {
+    "claim_count": 6,
+    "evidence_count": 8,
+    "elapsed_seconds": 193.884
+  }
+}

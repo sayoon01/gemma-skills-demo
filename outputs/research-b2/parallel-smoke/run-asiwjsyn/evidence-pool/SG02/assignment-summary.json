@@ -1,0 +1,38 @@
+{
+  "assignment_id": "SG02",
+  "worker_source": "recovery",
+  "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/recovery/SG02/run-vol9e0k5",
+  "worker_metrics": {
+    "turn_count": 4,
+    "tool_call_count": 8,
+    "search_count": 4,
+    "fetch_count": 4,
+    "fetch_success_count": 4,
+    "model_response_times_seconds": [
+      58.567,
+      89.708,
+      111.609,
+      270.054
+    ],
+    "model_total_seconds": 529.938,
+    "elapsed_seconds": 540.087
+  },
+  "deterministic_summary": {
+    "raw_claim_count": 6,
+    "accepted_claim_count": 6,
+    "unsupported_claim_count": 0,
+    "rejected_source_count": 0,
+    "successful_fetch_source_count": 4
+  },
+  "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/evidence-pool/SG02/semantic-audits/audit-sm2o34i4",
+  "post_audit_summary": {
+    "input_claim_count": 6,
+    "accepted_claim_count": 5,
+    "unsupported_claim_count": 1,
+    "verified_evidence_count": 6,
+    "rejected_evidence_count": 2,
+    "warning_count": 3
+  },
+  "accepted_claim_count": 5,
+  "gap_count": 3
+}

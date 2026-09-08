@@ -1,0 +1,157 @@
+{
+  "status": "completed",
+  "stage": "B2-2B",
+  "created_at": "2026-09-08T06:58:52.882761+00:00",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/workers/SG03/run-qya0gef6",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "assignment": "# Runtime Context\n\n- Current date: 2026-09-08\n\n# Controller Assignment\n\n{\n  \"assignment_id\": \"SG03\",\n  \"title\": \"상용화 병목 지점 및 시험·검증 인프라 요구사항 분석\",\n  \"objective\": \"피지컬 AI 로봇의 상용화를 가로막는 기술적/제도적 병목 지점을 분석하고, 이를 해결하기 위한 시험·검증 요구사항 및 공용 시험 인프라 구축의 필요성을 조사한다.\",\n  \"queries\": [\n    \"Physical AI robot commercialization bottlenecks and challenges\",\n    \"robotics testing and verification standards 2024-2026\",\n    \"public testing infrastructure for autonomous robots requirements\",\n    \"자율작업 로봇 상용화 병목 및 공용 시험 인프라 시사점\"\n  ],\n  \"source_priority\": [\n    \"Primary (Regulatory/Government data)\",\n    \"Peer-reviewed (Conference papers)\",\n    \"Industry (Technical blogs)\"\n  ],\n  \"needs_local_files\": false\n}",
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ],
+  "worker_result": {
+    "assignment_id": "SG03",
+    "claims": [
+      {
+        "claim": "Software architecture and integration have become a primary technical bottleneck for Physical AI, with 27% of developers citing it as their biggest performance constraint, surpassing hardware constraints (16%).",
+        "support": "A survey of 1,000 global robotics developers by QNX indicates that software architecture is now a more significant bottleneck than hardware.",
+        "confidence": "high",
+        "sources": [
+          {
+            "source_kind": "web",
+            "title": "Software Architecture: The New Bottleneck for Physical AI",
+            "publisher": "QNX",
+            "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+            "source_type": "industry",
+            "tier": 3,
+            "excerpt": "almost one in three developers (27%) cite software architecture and integration as their biggest performance bottleneck, compared to just 16% who cite hardware constraints."
+          }
+        ]
+      },
+      {
+        "claim": "There is a 'Determinism Disconnect' in robotics development where 95% of developers require deterministic, real-time execution for safety, yet 91% still rely on general-purpose operating systems (GPOS) like Linux for some real-time or safety-critical workloads.",
+        "support": "QNX's Architecture Benchmark Report highlights the tension between the need for real-time reliability and the continued use of non-deterministic GPOS.",
+        "confidence": "high",
+        "sources": [
+          {
+            "source_kind": "web",
+            "title": "Software Architecture: The New Bottleneck for Physical AI",
+            "publisher": "QNX",
+            "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+            "source_type": "industry",
+            "tier": 3,
+            "excerpt": "An overwhelming 95% of developers state that deterministic, real-time execution is essential... 91% of development teams still rely on general-purpose operating systems (GPOS), such as Linux, to run at least some real-time or safety-critical workloads."
+          }
+        ]
+      },
+      {
+        "claim": "The commercialization of Physical AI is hindered by a 'Certification Wall,' with 66% of developers reporting project delays due to industry certification requirements, particularly cybersecurity (ISO/SAE 21434) and functional safety (ISO 10218) standards.",
+        "support": "QNX reports that the friction between flexible open-source software and strict safety guarantees leads to significant deployment bottlenecks.",
+        "confidence": "high",
+        "sources": [
+          {
+            "source_kind": "web",
+            "title": "Software Architecture: The New Bottleneck for Physical AI",
+            "publisher": "QNX",
+            "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+            "source_type": "industry",
+            "tier": 3,
+            "excerpt": "Two-thirds (66%) of developers report experiencing project delays specifically due to industry certification requirements... cybersecurity standards (such as ISO/SAE 21434) and functional safety standards (like ISO 10218), which are cited as the most challenging to navigate"
+          }
+        ]
+      },
+      {
+        "claim": "Physical AI development is bottlenecked by three interlocking factors: heterogeneity, the Sim-to-Real Gap, and data scarcity, with the primary challenge shifting from equipment costs to the availability of skilled operators and data quality.",
+        "support": "Pebblous identifies these three factors as the root cause of high collection and refinement costs in Physical AI data pipelines.",
+        "confidence": "high",
+        "sources": [
+          {
+            "source_kind": "web",
+            "title": "What Is a VLA (Vision-Language-Action) Model? — Physical AI Model Evolution & Data Strategy (2026 Edition)",
+            "publisher": "Pebblous",
+            "url": "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/",
+            "source_type": "industry",
+            "tier": 3,
+            "excerpt": "The three challenges... heterogeneity, the Sim-to-Real Gap, and scarcity — remain the bottleneck... the bottleneck has shifted from 'equipment' to 'skilled operators and data quality.'"
+          }
+        ]
+      },
+      {
+        "claim": "In South Korea, the commercialization of mobile robots is hindered by fragmented regulations across various laws (e.g., Building Act, Personal Information Protection Act), leading to the proposal of a 'Robot Special Law' to provide integrated support for demonstration, commercialization, and safety management.",
+        "support": "The 'Robot Special Law' (이동로봇의 안전한 이용 및 상용화 촉진을 위한 특별법안) was proposed to address the lack of a unified institutional framework.",
+        "confidence": "high",
+        "sources": [
+          {
+            "source_kind": "web",
+            "title": "한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원",
+            "publisher": "Betanews",
+            "url": "https://www.betanews.net/article/view/beta202609030109",
+            "source_type": "industry",
+            "tier": 3,
+            "excerpt": "활용 관련 규정도 건축법·공동주택관리법·개인정보보호법 등에 흩어져 있어 통합적인 제도 기반이 필요하다는 지적이 제기되어 왔다."
+          }
+        ]
+      },
+      {
+        "claim": "There is a critical need for public testing and certification infrastructure to reduce overseas dependence and support the entire lifecycle of robot development, from performance evaluation to risk assessment.",
+        "support": "The Korea Testing Laboratory (KTL) has established the 'Robot Plus Test Field' to provide domestic certification and risk assessment for collaborative robots, as previous lack of infrastructure led to high overseas dependence.",
+        "confidence": "high",
+        "sources": [
+          {
+            "source_kind": "web",
+            "title": "KTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충",
+            "publisher": "YNA",
+            "url": "https://www.yna.co.kr/view/AKR20250930148000052",
+            "source_type": "official",
+            "tier": 1,
+            "excerpt": "사람과 함께 운용된다는 특성상 제품과 시스템에 대한 안전인증이 필수적이지만, 그동안 국내 시험인증 기반 부족으로 해외 의존도가 높았다."
+          }
+        ]
+      }
+    ],
+    "gaps": [
+      "Detailed technical specifications and a comprehensive equipment list for a 'state-of-the-art' public robotics testbed (beyond the mention of '11 types of equipment').",
+      "Verification of the 'six coupled challenges' of Physical AI (data ecosystems, sim-to-real resilience, lifelong adaptation, safety assurance, workforce integration, and sustainable hardware) due to access restrictions on the primary source."
+    ],
+    "leads": [
+      "Detailed analysis of the 'Robot Special Law' (로봇특별법) to identify specific regulatory exemptions or mandates for commercialization.",
+      "Investigation into the EU AI Act's specific requirements for 'high-risk' AI systems in robotics and how they differ from existing Machinery Regulations.",
+      "Research into the specific '11 types of equipment' used at KTL's Robot Plus Test Field to define a baseline for public infrastructure requirements."
+    ]
+  },
+  "verification": {
+    "worker_web_source_count": 6,
+    "verified_web_source_count": 6,
+    "unverified_web_source_count": 0,
+    "verified_urls": [
+      "https://qnx.software/en/blog/2026/inside-the-robot",
+      "https://qnx.software/en/blog/2026/inside-the-robot",
+      "https://qnx.software/en/blog/2026/inside-the-robot",
+      "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/",
+      "https://www.betanews.net/article/view/beta202609030109",
+      "https://www.yna.co.kr/view/AKR20250930148000052"
+    ],
+    "unverified_urls": [],
+    "all_worker_web_sources_verified": true
+  },
+  "metrics": {
+    "turn_count": 5,
+    "tool_call_count": 14,
+    "search_count": 8,
+    "fetch_count": 6,
+    "fetch_success_count": 4,
+    "model_response_times_seconds": [
+      127.41,
+      277.34,
+      568.638,
+      235.333,
+      578.576
+    ],
+    "model_total_seconds": 1787.298,
+    "elapsed_seconds": 1818.198
+  }
+}

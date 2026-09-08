@@ -642,69 +642,108 @@ def run_evidence_pool(
             / "semantic-audits"
         )
 
-        audit_runtime = run_audit(
-            validated_result_path=
-                deterministic_path,
-            tool_calls_path=
-                tool_calls_path,
-            skill_name=
-                skill_name,
-            output_root=
-                semantic_root,
-        )
-
-        if (
-            audit_runtime.get(
-                "status"
-            )
-            != "completed"
-        ):
-            raise RuntimeError(
-                f"{assignment_id}: "
-                "Semantic Auditor 결과가 "
-                f"정상이 아닙니다: "
-                f"{audit_runtime.get('status')}"
-            )
-
-        audit_run_dir = Path(
-            audit_runtime[
-                "run_dir"
-            ]
-        )
-
-        packet = load_json(
-            audit_run_dir
-            / "audit-packet.json"
-        )
-
-        semantic_audit = load_json(
-            audit_run_dir
-            / "semantic-audit.json"
-        )
-
-        post_audit = (
-            apply_audit_gate(
-                packet=packet,
-                audit_document=
-                    semantic_audit,
-            )
-        )
-
         post_path = (
             assignment_dir
             / "post-audit-result.json"
         )
 
-        save_json(
-            post_path,
-            post_audit,
-        )
+        audit_run_dir = None
 
-        save_json(
-            audit_run_dir
-            / "post-audit-result.json",
-            post_audit,
-        )
+        if post_path.is_file():
+            print(
+                "resume: existing post-audit result",
+                flush=True,
+            )
+
+            post_audit = load_json(
+                post_path
+            )
+
+            completed_audits = sorted(
+                [
+                    audit_dir
+                    for audit_dir
+                    in semantic_root.glob(
+                        "audit-*"
+                    )
+                    if (
+                        audit_dir
+                        / "semantic-audit.json"
+                    ).is_file()
+                    and (
+                        audit_dir
+                        / "post-audit-result.json"
+                    ).is_file()
+                ],
+                key=lambda value:
+                    value.stat().st_mtime,
+                reverse=True,
+            )
+
+            if completed_audits:
+                audit_run_dir = (
+                    completed_audits[0]
+                )
+
+        else:
+            audit_runtime = run_audit(
+                validated_result_path=
+                    deterministic_path,
+                tool_calls_path=
+                    tool_calls_path,
+                skill_name=
+                    skill_name,
+                output_root=
+                    semantic_root,
+            )
+
+            if (
+                audit_runtime.get(
+                    "status"
+                )
+                != "completed"
+            ):
+                raise RuntimeError(
+                    f"{assignment_id}: "
+                    "Semantic Auditor 결과가 "
+                    f"정상이 아닙니다: "
+                    f"{audit_runtime.get('status')}"
+                )
+
+            audit_run_dir = Path(
+                audit_runtime[
+                    "run_dir"
+                ]
+            )
+
+            packet = load_json(
+                audit_run_dir
+                / "audit-packet.json"
+            )
+
+            semantic_audit = load_json(
+                audit_run_dir
+                / "semantic-audit.json"
+            )
+
+            post_audit = (
+                apply_audit_gate(
+                    packet=packet,
+                    audit_document=
+                        semantic_audit,
+                )
+            )
+
+            save_json(
+                post_path,
+                post_audit,
+            )
+
+            save_json(
+                audit_run_dir
+                / "post-audit-result.json",
+                post_audit,
+            )
 
         assignment_accepted = []
 
@@ -819,8 +858,12 @@ def run_evidence_pool(
                     "summary"
                 ),
             "semantic_audit_run_dir":
-                str(
-                    audit_run_dir
+                (
+                    str(
+                        audit_run_dir
+                    )
+                    if audit_run_dir
+                    else None
                 ),
             "post_audit_summary":
                 post_audit.get(

@@ -1,0 +1,17 @@
+{
+  "stage": "B2-4",
+  "created_at": "2026-09-08T06:28:34.643039+00:00",
+  "plan_path": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/coordinator-smoke/plan-wv_mjqzg/plan.json",
+  "wave": 1,
+  "skill": "deep-research",
+  "max_workers": 3,
+  "max_turns": 6,
+  "current_date": "2026-09-08",
+  "assignment_count": 3,
+  "assignment_ids": [
+    "SG01",
+    "SG02",
+    "SG03"
+  ],
+  "local_file_tools": false
+}

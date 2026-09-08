@@ -1,0 +1,78 @@
+{
+  "model": "gemma4:31b",
+  "created_at": "2026-09-08T06:33:09.266952696Z",
+  "message": {
+    "role": "assistant",
+    "content": "",
+    "thinking": "The search results provide a good starting point. I have several candidate sources for both global and domestic companies.\n\n*Global:*\n- Tesla Optimus (Gen 3 mentioned)\n- Figure AI (Figure 02, Figure 03 mentioned)\n- Agility Robotics (Digit - deployed at Amazon)\n- Boston Dynamics (Atlas Electric)\n- 1X (Neo - shipping)\n- Unitree (G1)\n\n*Domestic (Korea):*\n- Rainbow Robotics (Collaborating with Tomorrow Robotics for AI-Native humanoid)\n- Hyundai Motor Group (Atlas mentioned, possibly through Boston Dynamics acquisition, but also \"Hyundai Atlas\" mentioned in some snippets)\n- Samsung Electronics (Bot series)\n- LG Electronics (Mentioned in a general context)\n- Tomorrow Robotics (Physical AI specialist)\n\n*Key points to verify:*\n- Specific functions (AI capabilities: perception, manipulation, autonomy).\n- Commercialization stage: Research vs. Pilot/Beta vs. Commercial/Sales.\n- Deployment cases (e.g., Agility at Amazon, Tesla in factories).\n\nI will now read the most promising sources to extract precise data.\n\n*Sources to read:*\n1. `https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown` (Comparison of Atlas, Optimus, Figure 02)\n2. `https://optimusk.blog/blog/tesla-optimus-vs-figure-ai-atlas-2026/` (Comparison of Optimus Gen 3, Figure 03, Hyundai Atlas Electric)\n3. `https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/` (Landscape including 1X Neo and Agility Digit)\n4. `https://www.kyeonggi.com/article/2020723580350` (Rainbow Robotics and Tomorrow Robotics collaboration)\n5. `https://gilzabi.com/economy/physical-ai-robotics-korea/` (Korean humanoid/industrial robot status)\n6. `https://gov001.infodrim.com/2026/05/ai-2026-summary-investment.html` (Korean AI humanoid status 2026)\n\nI'll start with the global comparisons first.",
+    "tool_calls": [
+      {
+        "id": "call_zm4na5r0",
+        "function": {
+          "index": 0,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "Comparison of hardware specs, software ecosystem, autonomy level, and commercial readiness of Boston Dynamics Atlas, Tesla Optimus, and Figure 02 as of 2026.",
+            "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown"
+          }
+        }
+      },
+      {
+        "id": "call_gzeq6su5",
+        "function": {
+          "index": 1,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "Comparison of Tesla Optimus Gen 3, Figure 03, and Hyundai Atlas Electric: specs, capabilities, production status, and funding.",
+            "url": "https://optimusk.blog/blog/tesla-optimus-vs-figure-ai-atlas-2026/"
+          }
+        }
+      },
+      {
+        "id": "call_l8zaxcrj",
+        "function": {
+          "index": 2,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "Commercial status and deployment of Figure AI, Agility Robotics (Digit at Amazon), 1X (Neo), and Tesla Optimus in factories.",
+            "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/"
+          }
+        }
+      },
+      {
+        "id": "call_horw0djm",
+        "function": {
+          "index": 3,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "Collaboration between Tomorrow Robotics and Rainbow Robotics for AI-Native humanoid robots and their current development/commercialization stage.",
+            "url": "https://www.kyeonggi.com/article/20260723580350"
+          }
+        }
+      },
+      {
+        "id": "call_jl0rmdk8",
+        "function": {
+          "index": 4,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "Current status of Korean Physical AI robots, including Hyundai's Atlas production plans, Rainbow Robotics, and other domestic companies.",
+            "url": "https://gilzabi.com/economy/physical-ai-robotics-korea/"
+          }
+        }
+      }
+    ]
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 208335738805,
+  "load_duration": 285032199,
+  "prompt_eval_count": 4803,
+  "prompt_eval_duration": 4680784865,
+  "eval_count": 921,
+  "eval_duration": 102188579138,
+  "_runtime": {
+    "turn": 2,
+    "model_elapsed_seconds": 208.34
+  }
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "assignment_id": "SG02",
+    "status": "completed",
+    "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/recovery/SG02/run-vol9e0k5",
+    "metrics": {
+      "turn_count": 4,
+      "tool_call_count": 8,
+      "search_count": 4,
+      "fetch_count": 4,
+      "fetch_success_count": 4,
+      "model_response_times_seconds": [
+        58.567,
+        89.708,
+        111.609,
+        270.054
+      ],
+      "model_total_seconds": 529.938,
+      "elapsed_seconds": 540.087
+    },
+    "verification": {
+      "worker_web_source_count": 8,
+      "verified_web_source_count": 8,
+      "unverified_web_source_count": 0,
+      "verified_urls": [
+        "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+        "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+        "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+        "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+        "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+        "https://rabby.kr/physical-ai-robots-korea-cases-2026/",
+        "https://www.kyeonggi.com/article/20260723580350",
+        "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/"
+      ],
+      "unverified_urls": [],
+      "all_worker_web_sources_verified": true
+    }
+  }
+]

@@ -1,0 +1,46 @@
+```json
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "verdict": "UNSUPPORTED",
+      "reason": "The source supports the existence of OpenVLA as an open-source alternative to closed models like RT-2 and the use of Open X-Embodiment, but it does not mention SmolVLA nor provide evidence of a general industry 'trend' beyond the scope of a single paper.",
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "The source confirms OpenVLA is open-source, trained on Open X-Embodiment, and outperforms the closed RT-2-X. However, it does not mention SmolVLA, and a single research paper is insufficient to establish a general industry 'trend' as claimed.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "UNSUPPORTED",
+      "reason": "The source supports the concepts of Compact VLA (SmolVLA) and Asynchronous Inference Stacks, but it contains no mention of quantization or a combined quantization-pruning technology (such as SQAP-VLA).",
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "The source verifies the use of a compact model (SmolVLA-450M), the skipping of vision layers (pruning), and the introduction of an asynchronous inference stack. However, it does not mention quantization or the specific combined quantization-pruning frameworks mentioned in the worker support.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4
+        }
+      ]
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker classified as Tier 1 (Official), but arXiv is a preprint server; corrected to Tier 2 (Peer-reviewed/Preprint)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker classified as Tier 1 (Official), but a company blog is Tier 4 (Industry)."
+    }
+  ]
+}
+```

@@ -1,0 +1,63 @@
+{
+  "model": "gemma4:31b",
+  "created_at": "2026-09-08T05:32:13.241219527Z",
+  "message": {
+    "role": "assistant",
+    "content": "",
+    "thinking": "Analysis of results:\n- **OpenVLA**: 7B parameters, based on Llama 2 + DINOv2/SigLIP. Outperforms RT-2-X (55B) in some tasks. Supports LoRA fine-tuning and quantization for consumer GPUs.\n- **SmolVLA**: 450M parameters. Designed for affordable hardware (SO-100, etc.). Uses a VLM + action expert. Optimizations: skipping half of vision model layers, reducing visual tokens, asynchronous inference stack.\n- **Pi0 ($\\pi_0$)**: The previous search result mentioned it as a \"flow model\". The `fetch_page` for the arXiv link I tried was wrong (it was a comet paper). I need to find the correct paper for $\\pi_0$.\n- **Helix**: The arXiv link was a placeholder/wrong. I need to find the actual paper or source for Helix.\n- **On-Device AI**: The trends are clear (quantization, NPU, edge-cloud), but I need to link them specifically to these VLA models. For example, OpenVLA's quantization and SmolVLA's 450M size are direct responses to on-device constraints.\n\nMissing/Need to refine:\n1.  **Correct source for $\\pi_0$ (Pi0)**: It's likely from Physical Intelligence.\n2.  **Correct source for Helix**: Need to find the actual paper.\n3.  **On-device AI technicals**: Look for specific \"on-device\" optimization techniques mentioned in the context of these new VLAs (e.g., 4-bit quantization, KV cache optimization for robotics).\n4.  **FAST tokenizer**: The GitHub snippet mentioned it speeds up inference by 15x. I want to know *how* it does this (e.g., action chunking/compression).\n\nUpdated Plan:\n1.  Search for \"Physical Intelligence Pi0\" and \"Helix VLA\" to get correct papers.\n2.  Search for \"FAST action tokenizer OpenVLA\" to understand the mechanism.\n3.  Search for \"VLA model quantization on-device robotics\" to find specific technical methods (e.g., AWQ, GPTQ, or custom robotics-specific ones).\n4.  Synthesize all into the JSON format.",
+    "tool_calls": [
+      {
+        "id": "call_cygyjtfg",
+        "function": {
+          "index": 0,
+          "name": "web_search",
+          "arguments": {
+            "query": "Physical Intelligence Pi0 VLA model paper technical details"
+          }
+        }
+      },
+      {
+        "id": "call_lcoko7yx",
+        "function": {
+          "index": 1,
+          "name": "web_search",
+          "arguments": {
+            "query": "Helix VLA model robotics System 1 System 2 paper"
+          }
+        }
+      },
+      {
+        "id": "call_afem50h5",
+        "function": {
+          "index": 2,
+          "name": "web_search",
+          "arguments": {
+            "query": "OpenVLA FAST action tokenizer technical details inference speed"
+          }
+        }
+      },
+      {
+        "id": "call_1otx05hw",
+        "function": {
+          "index": 3,
+          "name": "web_search",
+          "arguments": {
+            "query": "on-device AI optimization for VLA models quantization pruning 2024 2025"
+          }
+        }
+      }
+    ]
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 76792091210,
+  "load_duration": 191653484,
+  "prompt_eval_count": 9169,
+  "prompt_eval_duration": 6038963988,
+  "eval_count": 611,
+  "eval_duration": 70228954350,
+  "_runtime": {
+    "turn": 3,
+    "model_elapsed_seconds": 76.795
+  }
+}

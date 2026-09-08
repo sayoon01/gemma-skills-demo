@@ -1,0 +1,478 @@
+[
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Vision-Language-Action (VLA) robot models trends 2024 2025 research papers"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 3.856,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Vision-Language-Action (VLA) robot models trends 2024 2025 research papers",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review ...",
+            "url": "https://arxiv.org/abs/2510.07077",
+            "snippet": "Amid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained significant attention. By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects ...",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "[2505.04769] Vision-Language-Action (VLA) Models: Concepts, Progress ...",
+            "url": "https://arxiv.org/abs/2505.04769",
+            "snippet": "Vision-Language-Action (VLA) models mark a transformative advancement in artificial intelligence, aiming to unify perception, natural language understanding, and embodied action within a single computational framework. This foundational review presents a comprehensive synthesis of recent advancements in Vision-Language-Action models, systematically organized across five thematic pillars that ...",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+            "url": "https://vla-survey.github.io/",
+            "snippet": "A comprehensive review of Vision-Language-Action models for robotics, covering architectures, learning paradigms, and real-world applications.",
+            "domain": "vla-survey.github.io"
+          },
+          {
+            "title": "What matters in building vision-language-action models for ... - Nature",
+            "url": "https://www.nature.com/articles/s42256-025-01168-7",
+            "snippet": "Vision-language-action models recently emerged as a tool for robotics. Here Li and colleagues compare vision-language-action models and highlight what makes a model useful.",
+            "domain": "www.nature.com"
+          },
+          {
+            "title": "PDF Open-source vision-language-action models for robotics - Springer",
+            "url": "https://link.springer.com/content/pdf/10.1007/s42791-025-00108-1.pdf",
+            "snippet": "Abstract In recent years, Vision-Language-Action (VLA) foundation models have been advancing embodied intelligence in robotics by integrating multimodal perception, semantic understanding, and dynamic action generation through end-to-end architectures. This paper focuses on open-source VLA models and their technological innovations and practical applications across three representative robotic ...",
+            "domain": "link.springer.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "on-device AI for robotics trends 2024 2025 hardware software optimization"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.808,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "on-device AI for robotics trends 2024 2025 hardware software optimization",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Edge AI for Robotics: The Hardware Powering On-Device ...",
+            "url": "https://www.robotocist.com/articles/edge-ai-robotics-hardware",
+            "snippet": "Jan 20, 2026 · Choose wisely, optimize aggressively, and stay current — the hardware landscape changes every year. A comprehensive guide to edge AI hardware for robotics — from NVIDIA Jetson and Google Coral to custom ASICs. How to choose the right compute platform for your robot's AI workload.",
+            "domain": "www.robotocist.com"
+          },
+          {
+            "title": "Why On-Device AI is Redefining Robotics System Design",
+            "url": "https://usa.seco.com/news/details/why-on-device-ai-is-redefining-robotics-system-design",
+            "snippet": "Aug 20, 2026 · Advancements in edge AI are changing industrial robotics, but SECO provides the solutions and expertise to help engineers gain the full benefits of edge hardware when building physical AI systems.",
+            "domain": "usa.seco.com"
+          },
+          {
+            "title": "GenAI and robotics propel on-device AI to new heights",
+            "url": "https://futureiot.tech/genai-and-robotics-propel-on-device-ai-to-new-heights/",
+            "snippet": "Nov 21, 2025 · The second layer consists of on-device AI platforms that integrate hardware, software, and developer tools, aimed at simplifying the deployment and optimisation of AI models.",
+            "domain": "futureiot.tech"
+          },
+          {
+            "title": "[2503.06027] Empowering Edge Intelligence: A Comprehensive ...",
+            "url": "https://arxiv.org/abs/2503.06027",
+            "snippet": "Mar 8, 2025 · By providing a structured overview of the challenges, solutions, and future directions, this survey aims to facilitate further research and application of on-device AI, ultimately contributing to the advancement of intelligent systems in everyday life.",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "Empowering Edge Intelligence: A Comprehensive Survey on On ...",
+            "url": "https://arxiv.org/html/2503.06027v1",
+            "snippet": "Figure 5 illustrates the various system optimization approaches, highlighting how software and hardware optimizations work in tandem to improve computational efficiency for on-device AI models.",
+            "domain": "arxiv.org"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "OpenVLA model technical details 2024"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 4.776,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "OpenVLA model technical details 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Vision–language–action model - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Vision-language-action_model",
+            "snippet": "June 17, 2026 - OpenVLA is a 7b-parameter open-source VLA model introduced in June 2024 by researchers at Stanford. It was trained on the Open X-Embodiment dataset, a collaboration between 21 institutions that collected over one million episodes on 22 different embodiments. The model fuses image features using ...",
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "[2406.09246] OpenVLA: An Open-Source Vision-Language-Action Model",
+            "url": "https://arxiv.org/abs/2406.09246",
+            "snippet": "September 5, 2024 - We further show that we can effectively fine-tune OpenVLA for new settings, with especially strong generalization results in multi-task environments involving multiple objects and strong language grounding abilities, and outperform expressive from-scratch imitation learning methods such as Diffusion Policy by 20.4%. We also explore compute efficiency; as a separate contribution, we show that OpenVLA can be fine-tuned on consumer GPUs via modern low-rank adaptation methods and served efficiently via quantization without a hit to downstream success rate. Finally, we release model checkpoints, fine-tuning notebooks, and our PyTorch codebase with built-in support for training VLAs at scale on Open X-Embodiment datasets. From: Moo Jin Kim [view email] [v1] Thu, 13 Jun 2024 15:46:55 UTC (11,299 KB) [v2] Wed, 4 Sep 2024 02:14:57 UTC (11,361 KB) [v3] Thu, 5 Sep 2024 19:46:34 UTC (11,362 KB)",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+            "url": "https://openvla.github.io/",
+            "snippet": "To train OpenVLA, we curate a dataset of 970k robot manipulation trajectories from the Open X-Embodiment (OpenX) dataset. Our dataset spans a wide range of tasks, scenes and robot embodiments.",
+            "domain": "openvla.github.io"
+          },
+          {
+            "title": "GitHub - openvla/openvla: OpenVLA: An open-source vision-language-action model for robotic manipulation. · GitHub",
+            "url": "https://github.com/openvla/openvla",
+            "snippet": "Unlike FAST, OFT uses continuous actions for greater model quality. See project website here. [2025-01-16] The FAST action tokenizer was recently released! Compared to vanilla OpenVLA-style 256-bin action discretization, FAST allows action chunks to be compressed into fewer tokens, speeding up inference by up to 15x when using discrete robot actions. See project website here. [2024-10-15] Added a VLA Performance Troubleshooting section to the README with best practices for debugging poor VLA performance after fine-tuning.",
+            "domain": "github.com"
+          },
+          {
+            "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+            "url": "https://proceedings.mlr.press/v270/kim25c.html",
+            "snippet": "January 12, 2025 - Yet, widespread adoption of VLAs for robotics has been challenging as 1) existing VLAs are largely closed and inaccessible to the public, and 2) prior work fails to explore methods for efficiently fine-tuning VLAs for new tasks, a key component for adoption. Addressing these challenges, we introduce OpenVLA, a 7B-parameter open-source VLA trained on a diverse collection of 970k real-world robot demonstrations.",
+            "domain": "proceedings.mlr.press"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "RT-2 RT-X robot VLA updates 2024"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.413,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "RT-2 RT-X robot VLA updates 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Vision–language–action model - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Vision-language-action_model",
+            "snippet": "June 17, 2026 - Compared to its predecessor RT-1, which was trained only on robotic data, RT-2 exhibits stronger generalization for new tasks, being also able to perform multi-step reasoning using chain-of-thought. OpenVLA is a 7b-parameter open-source VLA model introduced in June 2024 by researchers at Stanford.",
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "VLA Leaderboard 2026: RT-2 vs OpenVLA vs Pi0 vs Octo (Robotics Benchmarks) | Codesota | CodeSOTA",
+            "url": "https://www.codesota.com/robotics",
+            "snippet": "April 22, 2026 - RT-2 introduced VLA in 2023. 2024 added Octo and OpenVLA as the first open-source generalists; 2025 brought production deployment at Tesla Optimus and Figure AI scale. ... Fig 3 · Generalist robot policies. Shaded rows mark the three frontier systems (RT-2-X, Pi0, Isaac GR00T N1).",
+            "domain": "www.codesota.com"
+          },
+          {
+            "title": "What is RT-2? Google DeepMind’s vision-language-action model for robotics",
+            "url": "https://blog.google/innovation-and-ai/products/google-deepmind-rt2-robotics-vla-model/",
+            "snippet": "January 7, 2026 - Today, we’re introducing a new advancement in robotics that brings us closer to a future of helpful robots. Robotics Transformer 2, or RT-2, is a first-of-its-kind vision-language-action (VLA) model. A Transformer-based model trained on text and images from the web, RT-2 can directly output robotic actions.",
+            "domain": "blog.google"
+          },
+          {
+            "title": "Vision-Language-Action (VLA) Models: The AI Brain Behind the Next Generation of Robots & Physical AI | by RAKTIM SINGH | Stackademic",
+            "url": "https://medium.com/@raktims2210/vision-language-action-vla-models-the-ai-brain-behind-the-next-generation-of-robots-physical-bced48e8ae94",
+            "snippet": "April 14, 2026 - RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control — Google DeepMind, 2023 · OpenVLA: An Open-Source Vision-Language-Action Model — Kim et al., 2024 (Open X-Embodiment) π₀: A Vision-Language-Action Flow Model for General Robot Control — Black et al., 2024 · SmolVLA: A Compact Vision-Language-Action Model for Affordable Robotics — Hugging Face & collaborators, 2025 · Helix: A “System 1, System 2” VLA ...",
+            "domain": "medium.com"
+          },
+          {
+            "title": "The VLA Paradigm: From Google RT-2 to OpenVLA in Real-World Robotics - RobotWale",
+            "url": "https://robotwale.com/article/vla-models-rt2-octo-openvla-real-world-robotics",
+            "snippet": "June 28, 2026 - RT-2 was trained on the GoogLeNet dataset, which included web images and text, allowing the robot to understand concepts like \"treat\" or \"cup\" without explicit programming. In 2024, Google introduced Octo, a generalist robot policy. Unlike RT-2, ...",
+            "domain": "robotwale.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "technical architecture, parameters, and efficiency of OpenVLA, including quantization and FAST tokenizer",
+      "url": "https://arxiv.org/abs/2406.09246"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.123,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://arxiv.org/abs/2406.09246",
+        "title": "[2406.09246] OpenVLA: An Open-Source Vision-Language-Action Model",
+        "domain": "arxiv.org",
+        "focus": "technical architecture, parameters, and efficiency of OpenVLA, including quantization and FAST tokenizer",
+        "content": "[2406.09246] OpenVLA: An Open-Source Vision-Language-Action Model\nSkip to main content\nTitle:\nOpenVLA: An Open-Source Vision-Language-Action Model\nAuthors:\nChelsea Finn\nView a PDF of the paper titled OpenVLA: An Open-Source Vision-Language-Action Model, by Moo Jin Kim and 17 other authors\nView PDF\nAbstract:\nLarge policies pretrained on a combination of Internet-scale vision-language data and diverse robot demonstrations have the potential to change how we teach robots new skills: rather than training new behaviors from scratch, we can fine-tune such vision-language-action (VLA) models to obtain robust, generalizable policies for visuomotor control. Yet, widespread adoption of VLAs for robotics has been challenging as 1) existing VLAs are largely closed and inaccessible to the public, and 2) prior work fails to explore methods for efficiently fine-tuning VLAs for new tasks, a key component for adoption. Addressing these challenges, we introduce OpenVLA, a 7B-parameter open-source VLA trained on a diverse collection of 970k real-world robot demonstrations. OpenVLA builds on a Llama 2 language model combined with a visual encoder that fuses pretrained features from DINOv2 and SigLIP. As a product of the added data diversity and new model components, OpenVLA demonstrates strong results for generalist manipulation, outperforming closed models such as RT-2-X (55B) by 16.5% in absolute task success rate across 29 tasks and multiple robot embodiments, with 7x fewer parameters. We further show that we can effectively fine-tune OpenVLA for new settings, with especially strong generalization results in multi-task environments involving multiple objects and strong language grounding abilities, and outperform expressive from-scratch imitation learning methods such as Diffusion Policy by 20.4%. We also explore compute efficiency; as a separate contribution, we show that OpenVLA can be fine-tuned on consumer GPUs via modern low-rank adaptation methods and served efficiently via quantization without a hit to downstream success rate. Finally, we release model checkpoints, fine-tuning notebooks, and our PyTorch codebase with built-in support for training VLAs at scale on Open X-Embodiment datasets.\nComments:\nAccess Paper:\nView a PDF of the paper titled OpenVLA: An Open-Source Vision-Language-Action Model, by Moo Jin Kim and 17 other authors\nView PDF\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\n.\nWhich authors of this paper are endorsers?\n|\n,\nand all contributors.\nAbout",
+        "content_chars": 3177,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "technical details of Pi0 (π₀) VLA flow model, how it differs from standard VLAs",
+      "url": "https://arxiv.org/abs/2410.13644"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.345,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://arxiv.org/abs/2410.13644",
+        "title": "[2410.13644] Analysing the Onset of Cometary Activity by the Jupiter-Family Comet 2023 RN3",
+        "domain": "arxiv.org",
+        "focus": "technical details of Pi0 (π₀) VLA flow model, how it differs from standard VLAs",
+        "content": "[2410.13644] Analysing the Onset of Cometary Activity by the Jupiter-Family Comet 2023 RN3\nSkip to main content\nSearch\nSubmit\nDonate\n(astro-ph)\n[Submitted on 17 Oct 2024]\nTitle:\nAnalysing the Onset of Cometary Activity by the Jupiter-Family Comet 2023 RN3\nAuthors:\n,\nAlan Fitzsimmons\n,\n,\nKen W. Smith\n,\nSarah Greenstreet\nView a PDF of the paper titled Analysing the Onset of Cometary Activity by the Jupiter-Family Comet 2023 RN3, by Matthew M. Dobson and 18 other authors\nView PDF\nAbstract:\nWe utilize serendipitous observations from the Asteroid Terrestrial-impact Last Alert System (ATLAS) and the Zwicky Transient Facility (ZTF) in addition to targeted follow-up observations from the Las Cumbres Observatory (LCO) and Liverpool Telescope to analyze the first observed instance of cometary activity by the newly-discovered Jupiter-family comet C/2023 RN3 (ATLAS), whose orbital dynamics place it close to residing on a Centaur-like orbit. Across our 7-month baseline, we observe an epoch of cometary activity commencing in August 2023 with an increase in brightness of >5.4 mag. The lightcurve of 2023 RN3 indicates the presence of continuous cometary activity across our observations, suggesting the onset of a new period of sustained activity. We find no evidence of any outbursts on top of the observed brightening, nor do we find any significant color evolution across our observations. 2023 RN3 is visibly extended in LCO and Liverpool Telescope observations, indicating the presence of a spatially-extended coma. Numerical integration of 2023 RN3's orbit reveals the comet to have recently undergone a slight increase in semimajor axis due to a planetary encounter with Jupiter, however whether this orbital change could trigger 2023 RN3's cometary activity is unclear. Our estimate for the maximum dust production metric of Afrho ~400 cm is consistent with previous measurements for the Jupiter-family comet and Centaur populations.\nComments:\nEarth and Planetary Astrophysics (astro-ph.EP)\nCite as:\narXiv:2410.13644\nFocus to learn more\narXiv-issued DOI via DataCite\nSubmission history\nFrom: Matthew Dobson [\nview email\nAccess Paper:\nView a PDF of the paper titled Analysing the Onset of Cometary Activity by the Jupiter-Family Comet 2023 RN3, by Matthew M. Dobson and 18 other authors\nView PDF\nastro-ph\nReferences & Citations\nNASA ADS\nSemantic Scholar\nexport BibTeX citation\nLoading...\nBibTeX formatted citation\n×\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nAbout arXivLabs\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?",
+        "content_chars": 3013,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "SmolVLA architecture, parameter size, and optimization for affordable robotics",
+      "url": "https://huggingface.co/blog/smolvla"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.767,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://huggingface.co/blog/smolvla",
+        "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data",
+        "domain": "huggingface.co",
+        "focus": "SmolVLA architecture, parameter size, and optimization for affordable robotics",
+        "content": "tag.\nSmolVLA-450M outperforms much larger VLAs and strong baselines such as\nACT\nIntroduction\nOver the past few years, Transformers have driven remarkable progress in AI, from language models capable of human-like reasoning to multimodal systems that understand both images and text. However, in real-world robotics, advancements have been much slower. Robots still struggle to generalize across diverse objects, environments, and tasks. This limited progress stems from a\nlack of high-quality, diverse data\nconsumer-grade hardware using only publicly available datasets\n. By releasing not only model weights but also using very affordable open-source hardware, SmolVLA aims to democratize access to vision-language-action models and accelerate research toward generalist robotic agents.\nFigure 1: Comparison of SmolVLA across task variations. From left to right: (1) asynchronous pick-place cube counting, (2) synchronous pick-place cube counting, (3) pick-place cube counting under perturbations, and (4) generalization on pick-and-place of the lego block with real-world SO101.\nReleased with full training and inference recipes\nCan be tested and deployed on very affordable hardware (SO-100, SO-101, LeKiwi, etc.)\nInspired by the training paradigms of Large Language Models (LLMs), SmolVLA goes through a pretraining phase on general manipulation data, followed by task-specific post-training. Architecturally, it combines Transformers with\n, and is optimized for speed and low-latency inference with the following design choices:\nSkipping half of the layers of the vision model for faster inference and smaller size\nInterleaving self-attention and cross-attention blocks\nof much larger models, both in simulation and the real world.\nTo make real-time robotics easier to use, we introduce an asynchronous inference stack. This technology separates how robots perform actions from how they understand what they see and hear. Because of this separation, robots can respond more quickly in fast-changing environments.\nFigure 2. SmolVLA takes as input a sequence of RGB images from multiple cameras, the robot’s current sensorimotor state, and a natural language instruction. The VLM encodes these into contextual features, which condition the action expert to generate a continuous sequence of actions.\n🚀 How to Use SmolVLA?\nSmolVLA is designed to be easy to use and integrate—whether you're finetuning on your own data or plugging it into an existing robotics stack.\nInstall\nMethod\nSmolVLA is not only a lightweight yet capable model, but also a method for training and evaluating generalist robotics policies. In this section, we introduce the\nmodel architecture\naction expert\nthat outputs robot control commands. Below, we share the details of the main components of SmolVLA architecture and the Asynchronous Inference. More details can be found in our\ntechnical report\nDesign Choices for Efficiency and Robustness\nWhile combining a vision-language model with an action prediction module is a common design pattern in recent VLA systems—such as Pi0, GR00T, Diffusion Policy — we identified several architectural choices that significantly enhance the robustness and performance. In SmolVLA, we apply three key techniques:\nreducing the number of visual tokens, skipping upper layers in the VLM\nCommunity Datasets\nWhile vision and language models thrive on web-scale datasets like LAION, ImageNet, and Common Crawl, robotics lacks a comparable resource. There’s no “Internet of robots.” Instead, data is fragmented across robot types, sensors, control schemes, and formats—forming disconnected \"data islands\". In our\nprevious post\nSmolVLA is our first step toward that vision\n: It is pretrained on a curated mix of publicly available, community-contributed datasets designed to reflect real-world variation. Rather than optimizing for dataset size alone, we focus on diversity: a range of behaviors, camera viewpoints, and embodiments that promote transfer and generalization.\nAll training data used in SmolVLA comes from\nResults\nWe evaluate SmolVLA across simulation and real-world benchmarks to test its generalization, efficiency, and robustness. Despite being compact, It consistently outperforms or matches the performance of significantly larger models and policies pretrained on higher-scale robotics data.\nTable 2. SmolVLA Performance on Simulation Benchmarks.\nConclusion\nSmolVLA is our contribution to building robotics foundation models that are open, efficient, and reproducible. Despite its small size, it matches or outperforms larger, proprietary models across a range of real-world and simulated tasks. By relying solely on community-contributed datasets and affordable hardware, SmolVLA lowers the barrier to entry for researchers, educators, and hobbyists alike.\nBut this is just the beginning. SmolVLA is more than just a model — it's part of a growing open-source movement toward scalable, collaborative robotics.\nTry it out!\nFinetune SmolVLA on your own data, deploy it on affordable hardware, or benchmark it against your current stack and share it on twitter/linkedin.\n🤖\nUpload the dataset!\nGot a robot? Collect and share your data using the lerobot format. Help expand the community dataset that powers SmolVLA.\n💬\nfor updates, tutorials, and new releases.\nTogether, we can make real-world robotics more capable, more affordable, and more open. ✨\nModels mentioned in this article\n33\nSmolVLA: A Vision-Language-Action Model for Affordable and Efficient\nRobotics\nNov 6, 2025\nIn Table 9, the average success rate of 0.75 × d seems lower than 0.5 × d and 1.0, but paper state that “reducing the expert’s hidden size to 0.75 × d achieves a good balance between performance and efficiency.”\nCould you clarify how you concluded that 0.75 × d is the best trade-off? Was it chosen based on other considerations (e.g., stability, memory usage, or consistency across tasks)?\n33\nSmolVLA: A Vision-Language-Action Model for Affordable and Efficient\nRobotics",
+        "content_chars": 5966,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "Helix VLA System 1 and System 2 architecture and implementation",
+      "url": "https://arxiv.org/abs/2412.00000"
+    },
+    "ok": false,
+    "error": "HTTPError: 404 Client Error: Not Found for url: https://arxiv.org/abs/2412.00000",
+    "elapsed_seconds": 0.36,
+    "result": {
+      "ok": false,
+      "error": "HTTPError: 404 Client Error: Not Found for url: https://arxiv.org/abs/2412.00000"
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "Physical Intelligence Pi0 VLA model paper technical details"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 4.911,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Physical Intelligence Pi0 VLA model paper technical details",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "[2504.16054] $π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization",
+            "url": "https://arxiv.org/abs/2504.16054",
+            "snippet": "April 22, 2025 - View a PDF of the paper titled ... PDF HTML (experimental) Abstract:In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab....",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "π0: A Vision-Language-Action Flow Model for General Robot Control",
+            "url": "https://www.pi.website/download/pi0.pdf",
+            "snippet": "this paper, we discuss how generalist robot policies (i.e., robot · foundation models) can address these challenges, and how we can · design effective generalist robot policies for complex and highly · dexterous tasks. We propose a novel flow matching architecture · Physical Intelligence, San Francisco, California, USA.",
+            "domain": "www.pi.website"
+          },
+          {
+            "title": "𝜋_0: A Vision-Language-Action Flow Model for General Robot Control",
+            "url": "https://arxiv.org/html/2410.24164v1",
+            "snippet": "October 31, 2024 - First, any such research must be done at a very large scale, because the full benefits of large-scale pre-training are often not present at smaller scales [54]. Second, it requires developing the right model architectures that can effectively make use of diverse data sources, while at the same time being able to represent the intricate and subtle behaviors necessary to interact with complex physical scenes. Third, it requires the right training recipe. This is perhaps the most important ingredient, as much of the recent progress with large models in NLP and computer vision has relied heavily on delicate strategies for curating pre-training and post-training data [35]. In this paper, we present a prototype model and learning framework, which we call",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "Robotics Foundation Models by Physical Intelligence: OpenPi | by Siamak Yousefi | Medium",
+            "url": "https://medium.com/@siamak.yousefi.1984_58741/robotics-foundation-models-by-physical-intelligence-openpi-663dc55aa9d3",
+            "snippet": "November 29, 2025 - In this article I provide a technical ... choices that enable broad generalization. The core objective of VLA models is to learn the conditional action distribution given observation, i.e., p(A_t | o_t), where:...",
+            "domain": "medium.com"
+          },
+          {
+            "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+            "url": "https://www.pi.website/download/pi05.pdf",
+            "snippet": "Fig. 3: Model overview. π0.5 is trained in two stages. First, a pre-training stage combines all of the different data sources to produce an initial VLA with",
+            "domain": "www.pi.website"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "Helix VLA model robotics System 1 System 2 paper"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 2.237,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Helix VLA model robotics System 1 System 2 paper",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Helix: A Vision-Language-Action Model for Generalist Humanoid Control",
+            "url": "https://www.figure.ai/news/helix",
+            "snippet": "Helix: A \"System 1, System 2\" VLA for Whole Upper Body Control Helix is a first-of-its-kind \"System 1, System 2\" VLA model for high-rate, dexterous control of the entire humanoid upper body. Prior approaches face a fundamental tradeoff: VLM backbones are general, but not fast, and robot visuomotor policies are fast but not general. Helix resolves this tradeoff through two complementary systems ...",
+            "domain": "www.figure.ai"
+          },
+          {
+            "title": "GitHub - OpenHelix-Team/OpenHelix: OpenHelix: An Open-source Dual ...",
+            "url": "https://github.com/OpenHelix-Team/OpenHelix",
+            "snippet": "title={OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation}, author={Cui, Can and Ding, Pengxiang and Song, Wenxuan and Bai, Shuanghao and Tong, Xinyang and Ge, Zirui and Suo, Runze and Zhou, Wanqi and Liu, Yang and Jia, Bofang and others},",
+            "domain": "github.com"
+          },
+          {
+            "title": "Computer Science > Robotics - arXiv.org",
+            "url": "https://arxiv.org/abs/2505.03912",
+            "snippet": "Dual-system VLA (Vision-Language-Action) architectures have become a hot topic in embodied intelligence research, but there is a lack of sufficient open-source work for further performance analysis and optimization. To address this problem, this paper will summarize and compare the structural designs of existing dual-system architectures, and conduct systematic empirical evaluations on the ...",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "OpenHelix",
+            "url": "https://openhelix-robot.github.io/",
+            "snippet": "Abstract Dual-system VLA (Vision-Language-Action) architectures have become a hot topic in embodied intelligence research, but there is a lack of sufficient open-source work for further performance analysis and optimization. To address this problem, this paper will summarize and compare the structural designs of existing dual-system architectures, and conduct systematic empirical evaluations ...",
+            "domain": "openhelix-robot.github.io"
+          },
+          {
+            "title": "GitHub - OpenHelix-robot/awesome-dual-system-vla: A comprehensive list ...",
+            "url": "https://github.com/OpenHelix-robot/awesome-dual-system-vla",
+            "snippet": "The development and architectural details of Dual-System VLA models are discussed in the paper. This repository will be continuously updated, and we warmly welcome contributions from the community. If you have papers, projects, or resources that are not yet included, please feel free to submit them via a pull request or open an issue for ...",
+            "domain": "github.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "OpenVLA FAST action tokenizer technical details inference speed"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 5.651,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "OpenVLA FAST action tokenizer technical details inference speed",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "FAST: Efficient Action Tokenization for Vision-Language ... - arXiv",
+            "url": "https://arxiv.org/html/2501.09747v1",
+            "snippet": "Jan 16, 2025 · FAST is able to significantly boost performance of OpenVLA, enabling it to train effectively on high-frequency robot manipulation data.",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+            "url": "https://github.com/openvla/openvla",
+            "snippet": "FAST allows action chunks to be compressed into fewer tokens, speeding up inference by up to 15x when using discrete robot actions.",
+            "domain": "github.com"
+          },
+          {
+            "title": "FAST: Efficient Robot Action Tokenization - Physical Intelligence",
+            "url": "https://www.pi.website/research/fast",
+            "snippet": "Jan 16, 2025 · A new robot action tokenizer that allows us to train generalist policies 5x faster than previous models.",
+            "domain": "www.pi.website"
+          },
+          {
+            "title": "FAST (Fast Action Tokenizer) - sudoremove",
+            "url": "https://sudoremove.com/en/knowledge/models/fast/",
+            "snippet": "Jan 20, 2026 · Has the drawback of slow inference, making it more suitable for research/training phases … 30-60 Implementation Complexity",
+            "domain": "sudoremove.com"
+          },
+          {
+            "title": "FASTer: Toward Powerful and Efficient Autoregressive...",
+            "url": "https://openreview.net/forum",
+            "snippet": "The encoding and decoding speed of FASTer is determined solely by the tokenizer model size, rather than by the diversity or amount of action data it is trained ...",
+            "domain": "openreview.net"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "on-device AI optimization for VLA models quantization pruning 2024 2025"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 3.548,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "on-device AI optimization for VLA models quantization pruning 2024 2025",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "[2509.09090] SQAP-VLA: A Synergistic Quantization-Aware ...SQAP-VLA: A Synergistic Quantization-Aware Pruning Framework ...GitHub - LumosJiang/Awesome-On-Device-LLMs: [Artificial ...research-agent/vla_compression_literature_review.md at main ...Optimizing Vision-Language Models for Production: A Deep Dive ...MobileQuant: Mobile-friendly Quantization for On-device ...LiteVLA-Edge: On-Device AI for Real-Time Robotics Control",
+            "url": "https://arxiv.org/abs/2509.09090",
+            "snippet": "Sep 11, 2025 · We overcome the incompatibility by co-designing the quantization and token pruning pipeline, where we propose new quantization-aware token pruning criteria that work on an aggressively quantized model while improving the quantizer design to enhance pruning effectiveness. SQAP-VLA resolves the incapability of token pruning on quantized VLA models via a quantization-aware pruning criteria. Mar 12, 2026 · The paper connects model-side compression with system-side execution, covering quantization, pruning, knowledge distillation, low-rank methods, hybrid compression, compilers, inference runtimes, memory and KV-cache optimization, hardware support, and edge-cloud collaboration. The research reveals significant progress in quantization, pruning, and knowledge distillation approaches that enable VLA model deployment on edge devices while maintaining competitive performance. Dec 9, 2025 · Vision-Language Models (VLMs) like LLaVA, Qwen-VL, and PaliGemma are transforming how mach",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "SQAP-VLA: A Synergistic Quantization-Aware Pruning Framework ...",
+            "url": "https://arxiv.org/pdf/2509.09090",
+            "snippet": "SQAP-VLA resolves the incapability of token pruning on quantized VLA models via a quantization-aware pruning criteria.",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "GitHub - LumosJiang/Awesome-On-Device-LLMs: [Artificial ...",
+            "url": "https://github.com/LumosJiang/Awesome-On-Device-LLMs",
+            "snippet": "Mar 12, 2026 · The paper connects model-side compression with system-side execution, covering quantization, pruning, knowledge distillation, low-rank methods, hybrid compression, compilers, inference runtimes, memory and KV-cache optimization, hardware support, and edge-cloud collaboration.",
+            "domain": "github.com"
+          },
+          {
+            "title": "research-agent/vla_compression_literature_review.md at main ...",
+            "url": "https://github.com/heeh02/research-agent/blob/main/vla_compression_literature_review.md",
+            "snippet": "The research reveals significant progress in quantization, pruning, and knowledge distillation approaches that enable VLA model deployment on edge devices while maintaining competitive performance.",
+            "domain": "github.com"
+          },
+          {
+            "title": "Optimizing Vision-Language Models for Production: A Deep Dive ...",
+            "url": "https://khrtim.github.io/blog/2025/12/vqa-optimization/",
+            "snippet": "Dec 9, 2025 · Vision-Language Models (VLMs) like LLaVA, Qwen-VL, and PaliGemma are transforming how machines understand the world. But deploying these behemoths in production—especially on edge devices or latency-sensitive applications—is a massive challenge.",
+            "domain": "khrtim.github.io"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,166 @@
+Skill discovery 확인 필요: [{"path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md", "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."}]
+실행 폴더: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-runs/run-il0bppa7
+모델: gemma4:31b
+모드: skill:deep-research
+
+[1/20] 모델 응답 대기
+모델 응답 시간: 143.139초
+도구 실행: web_search / {'query': '자율작업형 피지컬 AI 로봇 기술 동향 2024 2025'}
+도구 실행: web_search / {'query': 'Physical AI robotics trends 2024 VLA models on-device AI'}
+도구 실행: web_search / {'query': 'Tesla Optimus Figure AI Boston Dynamics Agility Robotics comparison 2024'}
+도구 실행: web_search / {'query': '국내 자율작업 로봇 기업 기술 현황 레인보우로보틱스 두산로보틱스'}
+도구 실행: web_search / {'query': 'robotics commercialization bottlenecks testing verification requirements 2024'}
+
+[2/20] 모델 응답 대기
+모델 응답 시간: 96.667초
+도구 실행: fetch_page / {'focus': 'VLA (Vision-Language-Action) models architecture, how they unify vision, language, and action, and their role in Physical AI.', 'url': 'https://vla-survey.github.io/'}
+도구 실행: fetch_page / {'focus': 'Onboard capability of physical AI, running LLMs/VLA models on-device, and the importance for safety-critical decisions.', 'url': 'https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/physical-ai-humanoid-robots.html'}
+도구 실행: web_search / {'query': 'ISO safety standards for AI-driven autonomous robots ISO 10218 ISO/TS 15066 AI update'}
+도구 실행: web_search / {'query': 'robotics sim-to-real gap verification methods 2024'}
+도구 실행: web_search / {'query': '국내 로봇 공용 시험 인프라 구축 현황 및 필요성'}
+
+[3/20] 모델 응답 대기
+모델 응답 시간: 383.130초
+
+최종 답변 수신
+
+===== METRICS =====
+{
+  "turn_count": 3,
+  "tool_call_count": 10,
+  "tool_error_count": 1,
+  "search_count": 8,
+  "fetch_count": 2,
+  "unique_search_urls": 35,
+  "unique_fetched_urls": 2,
+  "answer_chars": 5508,
+  "elapsed_seconds": 642.762,
+  "model_response_times_seconds": [
+    143.139,
+    96.667,
+    383.13
+  ],
+  "model_total_seconds": 622.936
+}
+
+===== FINAL ANSWER =====
+# Deep Research: 자율작업형 피지컬 AI 로봇 기술 동향 분석
+
+## TL;DR
+- **패러다임 시프트**: 기존의 정해진 경로를 따르는 '자동화(Automation)'에서, VLA(Vision-Language-Action) 모델을 통해 스스로 판단하고 행동하는 '피지컬 AI(Physical AI)'로 진화 중입니다.
+- **핵심 기술**: 온디바이스 AI(NPU)를 통한 저지연 추론과 시뮬레이션-실제 환경 간의 간극을 줄이는 Sim-to-Real 전이 기술이 상용화의 핵심입니다.
+- **시장 구도**: 테슬라(Optimus), 피규어 AI(Figure) 등이 AI 모델 중심의 접근을 취하는 반면, 보스턴 다이내믹스와 어질리티 로보틱스는 하드웨어 완성도와 실제 현장 도입(Digit)에 강점을 보입니다.
+- **국내 동향**: 레인보우로보틱스 등이 삼성전자와의 협력을 통해 휴머노이드 양산을 준비 중이며, 제조 특화 AI 양팔 로봇 등 특정 도메인 최적화에 집중하고 있습니다.
+- **병목 지점**: AI의 비결정론적(Non-deterministic) 특성으로 인해 기존 ISO 안전 표준(ISO 10218 등) 적용에 한계가 있으며, 이를 해결할 새로운 검증 체계와 공용 시험 인프라가 시급합니다.
+
+---
+
+## Scope and framing
+- **Topic**: 자율작업형 피지컬 AI 로봇의 기술 동향 분석
+- **Scope**: Narrow drill-down (기술 스택, 주요 제품 비교, 상용화 병목 및 인프라)
+- **Audience**: 기술 분석가 및 산업 관계자
+- **Recency cutoff**: 2024년 ~ 현재
+- **Sub-goals investigated**:
+    - 피지컬 AI의 기술적 정의 및 VLA 모델의 구조 분석
+    - 글로벌 및 국내 주요 기업의 제품별 기능 및 상용화 단계 비교
+    - 온디바이스 AI 및 Sim-to-Real 기술의 발전 방향 조사
+    - 로봇 안전 표준(ISO)의 변화와 AI 로봇의 검증 요구사항 분석
+    - 공용 시험 인프라 구축의 필요성 및 시사점 도출
+
+---
+
+## Key findings
+1. **VLA 모델의 등장으로 '범용 작업' 가능성 확대**: 시각(Vision), 언어(Language), 행동(Action)을 하나의 신경망으로 통합한 VLA 모델이 등장하며, 별도의 프로그래밍 없이 자연어 명령만으로 새로운 작업을 수행하는 제로샷(Zero-shot) 능력이 강화되었습니다.[^1][^2]
+2. **클라우드에서 온디바이스(On-device) AI로의 전환**: 안전이 직결된 피지컬 AI의 특성상, 클라우드 의존도를 낮추고 NPU(신경망처리장치)를 통해 로봇 내부에서 실시간으로 판단하는 온디바이스 추론이 필수 기술로 자리 잡았습니다.[^3]
+3. **상용화 단계의 분화**: 어질리티 로보틱스의 'Digit'처럼 물류 현장에 실제 도입된 사례가 있는 반면, 테슬라의 'Optimus'나 'Figure'는 고도화된 AI 모델을 탑재한 프로토타입 단계에서 파일럿 테스트로 넘어가는 과도기에 있습니다.[^4][^5]
+4. **안전 표준의 패러다임 변화**: 기존의 결정론적 안전 기준에서 벗어나, AI 기반 로봇의 특성을 반영한 ISO 10218-1/2(2025 개정판) 등 협동 운전 및 AI 제어 로봇에 대한 안전 요구사항이 구체화되고 있습니다.[^6]
+
+---
+
+## Evidence
+
+### 1. 기술 개요와 구성: 피지컬 AI 스택
+피지컬 AI는 디지털 지능을 물리적 신체에 결합하여 실시간으로 환경을 인식하고 상호작용하는 시스템입니다.[^3]
+
+- **인식-판단-실행 루프**:
+    - **인식(Perception)**: 멀티모달 센서 $\rightarrow$ VLM(Vision-Language Model)을 통해 환경의 의미론적 이해.
+    - **판단(Reasoning)**: **VLA(Vision-Language-Action) 모델**이 핵심. 시각 정보와 텍스트 명령을 입력받아 직접적인 모터 제어 값(Action)을 출력합니다.[^1][^2]
+    - **실행(Execution)**: 고정밀 액추에이터 및 온디바이스 AI(NPU)를 통한 저지연 제어.[^3]
+- **학습 방법**: 가상 환경에서 수백만 번의 반복 학습을 수행하는 **강화학습(RL)** $\rightarrow$ 이를 실제 로봇에 적용하는 **Sim-to-Real 전이** $\rightarrow$ 실제 데이터로 미세 조정(Fine-tuning)하는 루프를 따릅니다.[^3]
+
+### 2. 주요 기업·제품별 기능 및 단계 비교
+| 구분 | Tesla Optimus | Figure AI (Figure 01/02) | Boston Dynamics Atlas (Electric) | Agility Robotics Digit | 국내 기업 (레인보우/두산 등) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **핵심 전략** | AI 모델 및 생태계 확장 | VLA 기반 자연어 상호작용 | 하드웨어 극한 성능 $\rightarrow$ 상용화 | 물류 현장 즉시 투입 | 제조 특화 및 협동 로봇 확장 |
+| **AI 특징** | End-to-End 신경망 | OpenAI 협력 VLA 모델 | 고도화된 제어 알고리즘 | 작업 최적화 AI | 도메인 특화 AI (양팔 로봇 등) |
+| **현재 단계** | 파일럿/연구 $\rightarrow$ 도입 준비 | 파일럿/연구 | 연구 $\rightarrow$ 상용화 전환 | **실제 현장 도입/판매** | 상용(협동) / 연구(휴머노이드) |
+| **특이사항** | 자체 칩 및 데이터 확보 | 실시간 대화 및 작업 수행 | 완전 전동화 모델 전환 | 아마존 등 물류사 테스트 | 삼성전자 투자 및 양산 준비 |
+
+[^4]: [Tesla Optimus vs Agility Robotics Digit Comparison](https://blog.robozaps.com/b/tesla-optimus-vs-agility-robotics-digit)
+[^5]: [Tesla Optimus vs Figure AI vs Hyundai Atlas](https://optimusk.blog/blog/tesla-optimus-vs-figure-ai-atlas-2026/)
+
+### 3. 핵심 기술의 발전 방향
+- **VLA 모델의 경량화**: 거대 모델을 로봇의 제한된 전력/연산 환경에서 구동하기 위해 LoRA(Low-Rank Adaptation) 등의 효율적 미세 조정 기술이 연구되고 있습니다.[^2]
+- **데이터 확보 전략**: 실제 데이터 수집의 한계를 극복하기 위해 고충실도(High-fidelity) 디지털 트윈과 합성 데이터(Synthetic Data) 생성 기술이 가속화되고 있습니다.[^3]
+- **온디바이스 AI 가속**: 클라우드 지연 시간(Latency)을 없애고 보안을 강화하기 위해 로봇 전용 NPU 탑재가 일반화되는 추세입니다.[^3]
+
+### 4. 상용화 병목과 시험·검증 요구사항
+- **비결정론적 행동의 위험성**: AI 모델은 동일 입력에도 다른 출력을 낼 수 있어, 기존의 "정해진 경로" 기반 안전 인증이 불가능합니다.
+- **Sim-to-Real Gap**: 시뮬레이션에서는 성공했으나 실제 물리 세계의 마찰, 조명, 예외 상황(Edge case)에서 실패하는 문제가 여전합니다.
+- **규제 및 표준**: ISO 10218-1/2(2025) 등 최신 표준이 AI 제어 로봇의 안전 요구사항을 통합하고 있으나, 실제 인증 절차는 여전히 복잡합니다.[^6]
+
+### 5. 공용 시험 인프라 구축에 대한 시사점
+- **표준 벤치마크의 부재**: 현재는 기업별 자체 테스트에 의존하고 있어, 객관적인 성능 지표(KPI)가 부족합니다.
+- **공용 테스트베드의 필요성**: 
+    - **엣지 케이스 라이브러리**: 다양한 물리적 환경(바닥 재질, 조명, 장애물)을 갖춘 표준 시나리오 제공.
+    - **디지털 트윈 연동**: 실제 테스트 전 가상 환경에서 검증하고, 그 결과를 다시 실제 데이터로 피드백하는 통합 루프 구축.
+    - **규제 샌드박스**: 비결정론적 AI 로봇이 안전하게 실증될 수 있는 법적/물리적 격리 구역 필요.
+
+---
+
+## Counter-evidence and dissent
+- **휴머노이드 회의론**: 일부 전문가들은 모든 작업에 휴머노이드 형태가 필요하지 않으며, 특정 작업에 최적화된 전용 로봇(Specialized Robots)이 경제성과 효율성 면에서 훨씬 빠르게 상용화될 것이라고 주장합니다.[single-source]
+- **AI 과신(Overtrust) 문제**: 사용자가 AI 로봇의 능력을 과신하여 안전 수칙을 무시하는 행동적 과신 현상이 물리적 사고로 이어질 수 있다는 경고가 제기됩니다.[^3]
+
+---
+
+## Gaps and unknowns
+- **정확한 판매 수치**: 대부분의 기업이 파일럿 단계이거나 비공개 계약을 체결하고 있어, 실제 '판매 대수'에 대한 객관적 데이터 확보가 어렵습니다.
+- **국내 공용 인프라 세부 현황**: 정부 차원의 로봇 인프라 구축 계획은 있으나, '피지컬 AI'라는 최신 트렌드를 반영한 구체적인 표준 테스트베드 운영 현황은 확인되지 않았습니다.
+- **제약 사항**: 본 보고서는 병렬 서브 에이전트 도구 없이 단일 에이전트의 선형 조사를 통해 작성되었으므로, 광범위한 교차 검증에 일부 한계가 있을 수 있습니다.
+
+---
+
+## Sources
+
+[^1]: [Vision-Language-Action Models for Robotics: A Review](https://vla-survey.github.io/) — Tier 2
+[^2]: [Towards Accessible Physical AI: LoRA-Based Fine-Tuning of VLA Models](https://arxiv.org/abs/2512.11921) — Tier 2
+[^3]: [Physical AI and humanoid robots | Deloitte Insights](https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/physical-ai-humanoid-robots.html) — Tier 4
+[^4]: [Tesla Optimus vs Agility Robotics Digit Comparison](https://blog.robozaps.com/b/tesla-optimus-vs-agility-robotics-digit) — Tier 5
+[^5]: [Tesla Optimus vs Figure AI vs Hyundai Atlas](https://optimusk.blog/blog/tesla-optimus-vs-figure-ai-atlas-2026/) — Tier 5
+[^6]: [Robotics Safety Standards Compliance Deep Dive 2026](https://smert.ai/blog/robotics-safety-standards-compliance-deep-dive-2026) — Tier 4
+
+기록 저장: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-runs/run-il0bppa7
+	Command being timed: "python3 research_run.py --skill deep-research --request tasks/physical-ai-research.md --max-turns 20"
+	User time (seconds): 0.45
+	System time (seconds): 0.09
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:43.04
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 66208
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 21071
+	Voluntary context switches: 602
+	Involuntary context switches: 10
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 616
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

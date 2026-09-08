@@ -1,0 +1,88 @@
+{
+  "stage": "B2-3",
+  "created_at": "2026-09-08T06:20:39.095985+00:00",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "controller_contract_sha256": "b2e97cfd78359c9b8be52bb50b0c4efcc2742c5c3e672acedf95355f8ddcf8c6",
+  "request_source": {
+    "type": "file",
+    "path": "/home/keti_spark1/yune/gemma-skills-demo/tasks/physical-ai-research.md"
+  },
+  "max_workers": 3,
+  "current_date": "2026-09-08",
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ],
+  "status": "completed",
+  "elapsed_seconds": 177.694,
+  "plan": {
+    "wave": 1,
+    "assignments": [
+      {
+        "assignment_id": "SG01",
+        "title": "자율작업형 피지컬 AI 로봇의 기술 구성 및 발전 방향 분석",
+        "objective": "이동 플랫폼, 자율주행, 작업 수행(Manipulation), 온디바이스 AI 등 핵심 구성 요소의 최신 기술 동향(2024-2026)과 발전 방향을 조사한다.",
+        "queries": [
+          "Physical AI robot technical architecture 2024-2026",
+          "autonomous mobile manipulator task execution trends",
+          "on-device AI for physical robots latest developments",
+          "자율작업형 로봇 온디바이스 AI 및 자율주행 기술 동향"
+        ],
+        "source_priority": [
+          "Primary (Standards/RFCs)",
+          "Peer-reviewed (arXiv/Journals)",
+          "Industry (Whitepapers)"
+        ],
+        "needs_local_files": false
+      },
+      {
+        "assignment_id": "SG02",
+        "title": "국내외 주요 기업 및 대표 제품 기능 비교 및 단계 분석",
+        "objective": "글로벌 및 국내 주요 기업의 피지컬 AI 로봇 제품군을 식별하고, 주요 기능을 비교하며, 현재 단계(연구 단계 vs 실제 판매/현장 도입 단계)를 구분하여 조사한다.",
+        "queries": [
+          "Physical AI robot major companies and products 2024-2026",
+          "comparison of Tesla Optimus Figure AI Agility Robotics and Korean robot companies",
+          "autonomous physical AI robot commercial deployment cases",
+          "국내외 자율작업 로봇 제품 기능 비교 및 상용화 단계"
+        ],
+        "source_priority": [
+          "Primary (Official Documentation)",
+          "Reputable news",
+          "Industry (Analyst reports)"
+        ],
+        "needs_local_files": false
+      },
+      {
+        "assignment_id": "SG03",
+        "title": "상용화 병목 지점 및 시험·검증 인프라 요구사항 분석",
+        "objective": "피지컬 AI 로봇의 상용화를 가로막는 기술적/제도적 병목 지점을 분석하고, 이를 해결하기 위한 시험·검증 요구사항 및 공용 시험 인프라 구축의 필요성을 조사한다.",
+        "queries": [
+          "Physical AI robot commercialization bottlenecks and challenges",
+          "robotics testing and verification standards 2024-2026",
+          "public testing infrastructure for autonomous robots requirements",
+          "자율작업 로봇 상용화 병목 및 공용 시험 인프라 시사점"
+        ],
+        "source_priority": [
+          "Primary (Regulatory/Government data)",
+          "Peer-reviewed (Conference papers)",
+          "Industry (Technical blogs)"
+        ],
+        "needs_local_files": false
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "assignment_count": 3,
+    "assignment_ids": [
+      "SG01",
+      "SG02",
+      "SG03"
+    ]
+  }
+}

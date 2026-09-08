@@ -1,0 +1,17 @@
+{
+  "SG01": {
+    "assignment_id": "SG01",
+    "source": "parallel",
+    "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/workers/SG01/run-vmoyrz03"
+  },
+  "SG02": {
+    "assignment_id": "SG02",
+    "source": "recovery",
+    "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/recovery/SG02/run-vol9e0k5"
+  },
+  "SG03": {
+    "assignment_id": "SG03",
+    "source": "parallel",
+    "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/workers/SG03/run-qya0gef6"
+  }
+}

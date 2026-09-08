@@ -17,7 +17,14 @@ class OllamaClient:
             or os.environ.get("OLLAMA_MODEL", "gemma4:31b")
         )
 
-    def chat(self, messages, tools=None):
+    def chat(
+        self,
+        messages,
+        tools=None,
+        *,
+        think=None,
+        response_format=None,
+    ):
         payload = {
             "model": self.model,
             "messages": messages,
@@ -28,6 +35,12 @@ class OllamaClient:
                 "num_predict": 4096,
             },
         }
+
+        if think is not None:
+            payload["think"] = think
+
+        if response_format is not None:
+            payload["format"] = response_format
 
         if tools:
             payload["tools"] = tools

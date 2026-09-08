@@ -1,0 +1,46 @@
+```json
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The source explicitly confirms that OpenVLA is an open-source VLA, trained on the Open X-Embodiment dataset, and outperforms closed models like RT-2-X. However, only one independent source was provided.",
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved text directly supports the claims regarding OpenVLA's open-source nature, its training on 970k demonstrations (Open X-Embodiment), and its performance relative to RT-2-X.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The source verifies the existence of Compact VLAs (SmolVLA-450M) and the Asynchronous Inference Stack. However, the specific mention of 'SQAP-VLA' and 'quantization' in the worker's support text is not present in the retrieved source content.",
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "While the source supports the 'Compact VLA' and 'Asynchronous Inference Stack' portions of the claim, it contains no mention of 'SQAP-VLA' or 'quantization' techniques, which were cited as primary evidence for the second half of the claim.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4
+        }
+      ]
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker classified as Tier 1 (Official); corrected to Tier 2 (Peer-reviewed/arXiv)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker classified as Tier 1 (Official); corrected to Tier 4 (Industry blog)."
+    }
+  ]
+}
+```

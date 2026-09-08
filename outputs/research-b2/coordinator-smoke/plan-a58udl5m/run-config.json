@@ -1,0 +1,19 @@
+{
+  "stage": "B2-3",
+  "created_at": "2026-09-08T06:14:13.855186+00:00",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "controller_contract_sha256": "ea78bb46fd23ad45f913055fa1fdc8183464e9eb829ddb24d46ccf52005797b1",
+  "request_source": {
+    "type": "file",
+    "path": "/home/keti_spark1/yune/gemma-skills-demo/tasks/physical-ai-research.md"
+  },
+  "max_workers": 3,
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ]
+}

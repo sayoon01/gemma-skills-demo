@@ -1,0 +1,69 @@
+{
+  "model": "gemma4:31b",
+  "created_at": "2026-09-07T07:52:57.538866949Z",
+  "message": {
+    "role": "assistant",
+    "content": "",
+    "thinking": "The initial search has provided a good breadth of information. I have:\n- **Technical Overview:** Concepts like VLA (Vision-Language-Action) models, World Models, and the shift from pre-programmed to generative/adaptive AI.\n- **Major Companies/Products:**\n    - *Global:* Tesla (Optimus), Figure AI (Figure 02), Boston Dynamics (Electric Atlas), Agility Robotics (Digit).\n    - *Domestic (Korea):* Rainbow Robotics, Doosan Robotics (though more focused on cobots, they are moving towards AI integration).\n- **Commercialization Status:**\n    - *Research/Prototype:* Many humanoid prototypes.\n    - *Pilots/Field Deployment:* Figure AI at BMW, Optimus in Tesla factories, Digit at Amazon, Atlas in Hyundai plants.\n- **Core Technology Trends:** Foundation models for robotics, on-device AI, VLA models, and the integration of \"motor intelligence\" and \"cognitive intelligence.\"\n- **Bottlenecks:** Data quality, integration, cybersecurity, and the \"sim-to-real\" gap.\n- **Infrastructure:** Mention of digital twins (HD Hyundai) and the need for verification.\n\nWhat's missing or needs more depth:\n- **Specific \"On-device AI\" technical details:** How are they implementing this? (e.g., NPU integration, model quantization for robots).\n- **Detailed \"Commercialization Bottlenecks\" and \"Verification Requirements\":** I have high-level mentions, but the user wants \"시험·검증 요구사항\" (testing/verification requirements) and \"공용 시험 인프라\" (public testing infrastructure) implications. I need to look for standards (ISO, etc.) or specific industry whitepapers on robot verification.\n- **Domestic (Korean) \"Physical AI\" specific products:** I have the company names, but I need to see if they have a specific \"Physical AI\" (autonomous task-performing) product beyond standard cobots.\n- **Public Testing Infrastructure:** I need to find if there are existing public testbeds or proposals for them in Korea or globally.\n\nPlan for the next wave:\n1.  Search for specific robot verification standards (ISO, IEC) and testing requirements for autonomous physical AI.\n2.  Investigate \"public robot testbeds\" or \"common testing infrastructure\" (공용 시험 인프라) in Korea and globally.\n3.  Deep dive into the \"on-device AI\" architecture for robots (e.g., NVIDIA Jetson, specialized NPUs, edge-cloud hybrid).\n4.  Search for specific \"Physical AI\" projects/products from Rainbow Robotics and Doosan Robotics to see if they've moved beyond cobots to autonomous task-performing robots.\n\nI will use `web_search` and `fetch_page` to get these details.",
+    "tool_calls": [
+      {
+        "id": "call_urrutqpm",
+        "function": {
+          "index": 0,
+          "name": "web_search",
+          "arguments": {
+            "query": "autonomous robot verification standards ISO IEC 2024 2025"
+          }
+        }
+      },
+      {
+        "id": "call_93b9qdt5",
+        "function": {
+          "index": 1,
+          "name": "web_search",
+          "arguments": {
+            "query": "robot testing infrastructure public testbed Korea global"
+          }
+        }
+      },
+      {
+        "id": "call_l2yq3by5",
+        "function": {
+          "index": 2,
+          "name": "web_search",
+          "arguments": {
+            "query": "on-device AI architecture for robotics NPU quantization 2024"
+          }
+        }
+      },
+      {
+        "id": "call_fiee3drl",
+        "function": {
+          "index": 3,
+          "name": "web_search",
+          "arguments": {
+            "query": "레인보우로보틱스 휴머노이드 자율작업 로봇 기술 현황"
+          }
+        }
+      },
+      {
+        "id": "call_wu54clza",
+        "function": {
+          "index": 4,
+          "name": "web_search",
+          "arguments": {
+            "query": "두산로보틱스 AI 기반 자율작업 로봇 제품군"
+          }
+        }
+      }
+    ]
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 93036191111,
+  "load_duration": 127344634,
+  "prompt_eval_count": 9152,
+  "prompt_eval_duration": 7120353216,
+  "eval_count": 739,
+  "eval_duration": 85416028041
+}

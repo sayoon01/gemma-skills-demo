@@ -1,0 +1,472 @@
+[
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "자율작업형 피지컬 AI 로봇 기술 동향 2024 2025"
+    },
+    "elapsed_seconds": 3.178,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "자율작업형 피지컬 AI 로봇 기술 동향 2024 2025",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "AI@Data Report 2025-제2호 목차 ❶ 피지컬 AI 진화와 의의 /p07 ❷ 국내외 피지컬 AI 동향 /p11",
+            "url": "https://cs.inhatc.ac.kr/bbs/cs/269/153085/download.do",
+            "snippet": "Ÿ (지능형 예측모델) 강화학습과 모델 기반 추론을 결합해, 로봇이 시각·언어 정보를 바탕으로 현실을 · 머릿속에서 예측·상상하며 시뮬레이션 없이 행동을 계획·학습할 수 있는 지능형 예측 모델로 발전 · Ÿ (글로벌 동향) DeepMind는 Dreamer, Genie 등을 통해 자율 시뮬레이션 기반 강화학습 구현 · 18) Ranjan et al(2025). Vision-Language-Action Models: Concepts, Progress, Applications and Challenge. 19) Jingtao et al(2024).",
+            "domain": "cs.inhatc.ac.kr"
+          },
+          {
+            "title": "'피지컬 AI'... 자율차·로봇 1억4500만대 시대 열린다. 휴머노이드 연평균 73% 성장 전망 - 카운터포인트",
+            "url": "https://korea.counterpointresearch.com/피지컬-ai-자율차·로봇-1억4500만대-시대-열린다-휴머노/",
+            "snippet": "April 10, 2026 - 휴머노이드 로봇은 출하량 기준 가장 빠르게 성장하는 분야로, 2028년까지 누적 설치량이 10만 대를 넘어 2025년 대비 약 7배 확대될 전망이다.",
+            "domain": "korea.counterpointresearch.com"
+          },
+          {
+            "title": "2025-2026 글로벌 로보틱스 및 피지컬 AI(Physical AI) 기술 동향 심층 분석: 보스턴 다이나믹스와 산업의 대전환",
+            "url": "https://research4lab.tistory.com/entry/2025-2026-글로벌-로보틱스-및-피지컬-AIPhysical-AI-기술-동향-심층-분석-보스턴-다이나믹스와-산업의-대전환",
+            "snippet": "January 21, 2026 - 보스턴 다이나믹스의 일렉트릭 아틀라스 전환과 AI 연구소의 성과, 그리고 경쟁사들의 약진을 종합해 볼 때, 2026년은 피지컬 AI가 연구실을 벗어나 실물 경제(Real Economy)에 진입하는 원년이 될 것이다. 기술의 융합: 하드웨어의 '운동 지능'과 소프트웨어의 '인지 지능'은 VLA 모델과 같은 통합 아키텍처를 통해 하나로 합쳐질 것이다. 이는 로봇이 더 이상 \"시키는 대로만 하는 기계\"가 아니라 \"맥락을 이해하고 행동하는 동료\"가 됨을 의미한다.",
+            "domain": "research4lab.tistory.com"
+          },
+          {
+            "title": "피지컬 AI 기반 로봇의 주요국별 기술 동향",
+            "url": "https://www.irsglobal.com/bbs/rwdboard/28266",
+            "snippet": "September 17, 2025 - 2024년에만 유니트리(Unitree), 에이지봇(AgiBot), 레주 로보틱스(Leju Robotics) 등 6개 주요 휴머노이드 제조사가 양산 계획을 발표했으며, 2025년까지 연간 1,000대 이상 생산을 목표로 하고 있다.",
+            "domain": "www.irsglobal.com"
+          },
+          {
+            "title": "세상 밖으로 뛰쳐나온 인공지능, 피지컬 AI가 바꾸는 우리의 일상과 산업 현장 - SAMPYO",
+            "url": "https://sampyo.co.kr/blog/세상-밖으로-뛰쳐나온-인공지능-피지컬-ai가-바꾸는/",
+            "snippet": "February 3, 2026 - HD현대 조선소에서는 디지털 트윈으로 선박 설계와 공정을 시뮬레이션하고 최적 조건을 도출한 뒤, 피지컬 AI 기반 로봇과 장비가 이를 실제 생산 현장에 적용해 효율성과 안전성을 동시에 확보합니다. HD현대는 디지털 트윈 기술로 조선소 전 과정을 가상화해 실시간 모니터링은 물론 의사결정과 공정 효율을 높이고 있으며, 이를 토대로 생산성 30% 향상과 선박 건조 기간 단축 같은 구체적 목표를 추구하며 성과를 올리고 있습니다.",
+            "domain": "sampyo.co.kr"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Physical AI robot trends 2024 2025 autonomous task execution on-device AI"
+    },
+    "elapsed_seconds": 1.649,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Physical AI robot trends 2024 2025 autonomous task execution on-device AI",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Physical AI Landscape: From Digital Intelligence to the ...",
+            "url": "https://robottoday.com/article/physical-ai-landscape-from-digital-intelligence-to-the-embodied-physical-world",
+            "snippet": "Jul 10, 2026 · A comprehensive industry analysis of Physical AI — covering Embodied AI, Field AI, Factory AI, VLM, World Model, VLA, and the VLA vs WAM architecture debate. Includes 20+ companies, 28 references, and the RobotToday Physical AI Landscape diagram.",
+            "domain": "robottoday.com"
+          },
+          {
+            "title": "Physical AI and Robotics – Outputs from IS-PAIR 2025 and ...",
+            "url": "https://www.frontiersin.org/research-topics/69571/physical-ai-and-robotics---outputs-from-is-pair-2025-and-beyond/magazine",
+            "snippet": "Physical Artificial Intelligence (AI) is an emerging interdisciplinary field that not only integrates AI and robotics but also considers dynamic interactions with the environment.",
+            "domain": "www.frontiersin.org"
+          },
+          {
+            "title": "AI for robots and drones | Deloitte Insights",
+            "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/ai-for-robots-drones.html",
+            "snippet": "But unless the broader technology, AI, and robotics ecosystem address bottlenecks related to data quality, integration, and cyber security, the market for industrial robots is likely to stay at its current level of relatively modest annual growth. Advanced and special types of AI models as catalysts for industrial robots",
+            "domain": "www.deloitte.com"
+          },
+          {
+            "title": "AI goes physical: Navigating the convergence of AI and robotics",
+            "url": "https://www.deloitte.com/ce/en/industries/technology/analysis/ai-goes-physical--navigating-the-convergence-of-ai-and-robotics.html",
+            "snippet": "Deloitte Tech Trends highlights how physical Artificial Intelligence (AI) is turning traditional robots into systems that can learn, adjust, and operate safely in real-world conditions. Instead of relying only on fixed, preprogrammed steps, these machines respond to what is happening around them.",
+            "domain": "www.deloitte.com"
+          },
+          {
+            "title": "Physical AI: Powering the New Age of Industrial Operations",
+            "url": "https://reports.weforum.org/docs/WEF_Physical_AI_Powering_the_New_Age_of_Industrial_Operations_2025.pdf",
+            "snippet": "At this inflection point, a new era of industrial automation is emerging – powered by physical AI. These intelligent robotic systems combine perception, reasoning and action, enabling a level of autonomy and adaptability that marks a critical juncture in industrial automation.",
+            "domain": "reports.weforum.org"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Tesla Optimus Figure AI Boston Dynamics Agility Robotics commercialization status 2024"
+    },
+    "elapsed_seconds": 1.261,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Tesla Optimus Figure AI Boston Dynamics Agility Robotics commercialization status 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status | Meta Intelligence",
+            "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+            "snippet": "November 29, 2025 - Goldman Sachs estimates the humanoid ... from prototype validation to commercial piloting. Figure AI was the most capital-pursued humanoid robot startup during 2024-2025, backed by an investor lineup including OpenAI, Microsoft, ...",
+            "domain": "www.meta-intelligence.tech"
+          },
+          {
+            "title": "AI Robotics 2026 — Humanoid Robots: Tesla Optimus, Figure AI, Boston Dynamics Atlas | Singularity Moments",
+            "url": "https://www.singularitymoments.com/ai-robotics-guide-2026/",
+            "snippet": "Humanoid robots are entering commercial deployment in 2026. Tesla Optimus is in its own factories; Figure 02 is running BMW pilots with OpenAI; Boston Dynamics' electric Atlas is live in Hyundai plants.",
+            "domain": "www.singularitymoments.com"
+          },
+          {
+            "title": "Humanoid Robots in the Workplace: The 2026 Business Leader's Reality Check (Tesla Optimus, Atlas, Figure AI) | AI Magicx Blog | AI Magicx",
+            "url": "https://www.aimagicx.com/blog/humanoid-robots-workplace-tesla-optimus-atlas-2026",
+            "snippet": "March 23, 2026 - Tesla announced cumulative production of over 50,000 Optimus units. Figure AI surpassed 10,000 deployments across partner warehouses. Boston Dynamics began commercial leasing of its fully electric Atlas platform.",
+            "domain": "www.aimagicx.com"
+          },
+          {
+            "title": "Tesla Optimus vs Agility Robotics Digit: Full 2026 Comparison",
+            "url": "https://blog.robozaps.com/b/tesla-optimus-vs-agility-robotics-digit",
+            "snippet": "August 1, 2026 - Key milestones include: September 2023: Opened RoboFab in Salem, Oregon — the world's first dedicated humanoid robot manufacturing facility (6,500 m², capacity 10,000+ units/year) 2023-2024: Amazon began testing Digit in its fulfillment centers, ...",
+            "domain": "blog.robozaps.com"
+          },
+          {
+            "title": "Tesla Optimus vs Boston Dynamics & All Rivals (2026)",
+            "url": "https://optimusk.blog/blog/tesla-optimus-vs-boston-dynamics/",
+            "snippet": "August 6, 2026 - The right humanoid robot decision depends on your timeline, budget, and use case: Grades reflect 2026 availability, verified performance, and commercial deployment status — not theoretical specs. Source: composite analysis from Robozaps · BotInfo.ai · xpert.digital comparison · Is Tesla Optimus better than Boston Dynamics Atlas? It depends on the metric. Boston Dynamics Atlas leads in dynamic agility (56 DoF, backflips, parkour), durability (IP67), lift capacity (50 kg), and enterprise AI (Google DeepMind).",
+            "domain": "optimusk.blog"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "국내 자율작업 로봇 기업 기술 동향 2024 레인보우로보틱스 두산로보틱스"
+    },
+    "elapsed_seconds": 5.016,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "국내 자율작업 로봇 기업 기술 동향 2024 레인보우로보틱스 두산로보틱스",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "2024 로봇 산업의 미래: 기회와 도전",
+            "url": "https://goover.ai/report-detail/go-public-report-ko-0290a502-112e-4db7-8fb7-cfe5925ee592-0-0",
+            "snippet": "본 보고서는 2024 로봇 산업의 현재와 미래를 조망하며, 산업 내 주요 기업들의 전략, 기술 혁신 및 시장 전망을 분석합니다. 로봇 기술은 다양한 산업에 걸쳐 혁신을 가져오고 있으며, 이를 통해 기업들은 새로운 기회를 창출하고 있습니다. 특히, 국내외 로봇 기업들이 최근 참여한 주요 행사들을 통해 전시된 혁신 기술과 제품들을 살펴보겠습니다. 2. 로봇 산업 전망: 성장 가능성과 시장 동향.",
+            "domain": "goover.ai"
+          },
+          {
+            "title": "2026 레인보우로보틱스 vs 두산로보틱스 비교 | 코스닥·코스피 ...",
+            "url": "https://lemontia.tistory.com/1285",
+            "snippet": "두산로보틱스 2015년 두산그룹이 신성장 동력으로 설립했습니다. 2023년 10월 코스피에 상장했으며, 협동로봇 분야에서 국내 1위, 글로벌 4~5위를 차지하고 있습니다. 두산(주)가 최대주주이며, 계열사 협력을 통해 다양한 분야로 로봇을 확산하고 있습니다.",
+            "domain": "lemontia.tistory.com"
+          },
+          {
+            "title": "로봇신문, '2024 올해의 대한민국 로봇기업' 32개사 발표",
+            "url": "https://www.irobotnews.com/news/articleView.html?idxno=36921",
+            "snippet": "올 한 해 동안 대한민국 로봇산업 발전에 기여한 공적과 기업의 미래 성장 가능성, CEO 경영 능력, 신제품 발표 및 시장 성과 등 종합적인 요소를 평가해 산업용 로봇, 전문 서비스 로봇, 개인 서비스 로봇, 로봇 부품, 로봇SW/플랫폼, 인공지능, 로봇 SI (시스템 통합) 등 7개 부문에 총 32개 회사를 '2024 올해의 대한민국 로봇 기업 (Korea Robot Company of the Year 2024)'으로 선정했다.",
+            "domain": "www.irobotnews.com"
+          },
+          {
+            "title": "로봇 대장주 5개, 레인보우로보틱스, Lig넥스원, 두산로보틱스 등 ...",
+            "url": "https://dotoriindigo.com/14100",
+            "snippet": "2026년 로봇 산업의 성장이 가속화되는 가운데 레인보우로보틱스, 두산로보틱스 등 국내 주요 로봇 대장주 종목들의 사업 현황과 경쟁력을 정리해 봅니다. 이 정보는 투자 참고용이며, 투자에 대한 최종 판단과 책임은 투자자 본인에게 있습니다",
+            "domain": "dotoriindigo.com"
+          },
+          {
+            "title": "2024 하반기 로보틱스 산업 전망, 현실과 이상 사이 그 어딘가",
+            "url": "https://m.blog.naver.com/infoquest/223469256632",
+            "snippet": "2024년 하반기 로보틱스 산업에 대한 보고서는 미국과 중국의 로봇 산업 동향, AI와 로보틱스의 결합, 국내 로봇 업체들의 실적 및 향후 투자 전략에 대해 심층적으로 분석하고 있습니다.",
+            "domain": "m.blog.naver.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "robotics foundation models on-device AI trends 2024"
+    },
+    "elapsed_seconds": 3.131,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "robotics foundation models on-device AI trends 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Foundation model - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Foundation_model",
+            "snippet": "In artificial intelligence, a foundation model (FM), also known as large x model is a machine learning or deep learning model trained on vast datasets so ...",
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "Foundation Model Driven Robotics: A Comprehensive Review",
+            "url": "https://arxiv.org/html/2507.10087v1",
+            "snippet": "Jul 14, 2025 · These models allow robots to describe and reason about their surroundings, enhancing transparency and enabling explanation of actions. For ...",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "A Comprehensive Survey on On-Device AI Models",
+            "url": "https://dl.acm.org/doi/full/10.1145/3724420",
+            "snippet": "This survey comprehensively explores the current state, technical challenges, and future trends of on-device AI models.",
+            "domain": "dl.acm.org"
+          },
+          {
+            "title": "A realistic path to robotic foundation models - Interconnects AI",
+            "url": "https://www.interconnects.ai/p/robotic-foundation-models",
+            "snippet": "Jun 5, 2024 · The goal is to build general robotics models that work on many robots, for many tasks, with a general interface. They want to be the colloquial ...",
+            "domain": "www.interconnects.ai"
+          },
+          {
+            "title": "Anthropic's AI model controls physical devices like robotic arms",
+            "url": "https://www.facebook.com/ITWebZA/posts/anthropics-new-model-hardware-standard-lets-ai-models-interact-with-physical-dev/1692778712852560/",
+            "snippet": "Aug 28, 2026 · Anthropic's new Model Hardware Standard lets AI models interact with physical devices, from robotic arms and microscopes to laboratory equipment ...",
+            "domain": "www.facebook.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "autonomous robot verification standards ISO IEC 2024 2025"
+    },
+    "elapsed_seconds": 2.591,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "autonomous robot verification standards ISO IEC 2024 2025",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "ISO - Robotics",
+            "url": "https://www.iso.org/sectors/engineering/robotics",
+            "snippet": "Standards advance safety, precision, and innovation in robotics, supporting seamless integration and safe human-robot interactions across industries.",
+            "domain": "www.iso.org"
+          },
+          {
+            "title": "Safety and certification: ISO 10218, 13482 — RobotForge",
+            "url": "https://robotforge.org/tutorials/frontiers/safety-certification",
+            "snippet": "Updated in 2025; the 2025 revision adds explicit requirements for collaborative robots and integrated AI-based control. ISO 13482: personal-care service robots The standard for service robots that operate around people in non-industrial settings. Vacuum cleaners, hospital delivery, elderly-care robots.",
+            "domain": "robotforge.org"
+          },
+          {
+            "title": "PDF I 4.0 S C OBOTICS AND AUTONOMOUS SYSTEMS - sirris.be",
+            "url": "https://www.sirris.be/system/files/documents/2024-09/norms+overview+Robotics+and+Autonomous+systems_09_2024.pdf",
+            "snippet": "INDUSTRY 4.0 STANDARDS CELL ROBOTICS AND AUTONOMOUS SYSTEMS September 2024 An increasing number of robots and autonomous vehicles work alongside operators. 's new on the standardisation front? What does the future hold in the field?",
+            "domain": "www.sirris.be"
+          },
+          {
+            "title": "ISO 18646-2:2024 (en), Robotics — Performance criteria and related test ...",
+            "url": "https://www.iso.org/obp/ui/en/#!iso:std:82643:en",
+            "snippet": "International organizations, governmental and non-governmental, in liaison with ISO, also take part in the work. ISO collaborates closely with the International Electrotechnical Commission (IEC) on all matters of electrotechnical standardization.",
+            "domain": "www.iso.org"
+          },
+          {
+            "title": "EU CE Update: EN ISO 13849-1:2025 for Autonomous Robots",
+            "url": "https://www.theinduwire.com/news/Manual---Craft-News/Autonomous-Robots/EU-CE-Update-Sets-EN-ISO-13849-1-2025-for-Autonomous-Robots.html",
+            "snippet": "The directive requires all Autonomous Robots placed on the EU market to comply with the new EN ISO 13849-1:2025 standard from January 1, 2027. The update places particular emphasis on verification of safety control systems at PLd level.",
+            "domain": "www.theinduwire.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "robot testing infrastructure public testbed Korea global"
+    },
+    "elapsed_seconds": 2.919,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "robot testing infrastructure public testbed Korea global",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Is Robot Labor Labor? Delivery Robots and the Politics of Work ...",
+            "url": "https://arxiv.org/html/2602.20180v1",
+            "snippet": "As sidewalk delivery robots become increasingly familiar presences in cities like Seoul, they prompt a deeper question: Is robot labor labor?",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "Self-driving laboratories in Korea: a new era of autonomous ...",
+            "url": "https://pubs.rsc.org/dd/article/5/5/1968/1244548/Self-driving-laboratories-in-Korea-a-new-era-of",
+            "snippet": "Self-driving laboratories (SDLs) integrate automation, robotics, and artificial intelligence to accelerate discovery through closed-loop experimentation.",
+            "domain": "pubs.rsc.org"
+          },
+          {
+            "title": "What does it really take to deploy robots in the real world? At ...",
+            "url": "https://www.facebook.com/IMDAsg/posts/what-does-it-really-take-to-deploy-robots-in-the-real-world-at-the-first-punggol/1387902953527342/",
+            "snippet": "5 days ago · The testbed will give organisations the space to test, refine and scale robotics ... Systems. Big Stories of Small Businesses. 6y · Public ...",
+            "domain": "www.facebook.com"
+          },
+          {
+            "title": "Social Robots as Welfare Infrastructure in South Korea",
+            "url": "https://techsavvy.media/en/trend/the-robot-grandchild-social-robots-as-welfare-infrastructure-in-south-korea/",
+            "snippet": "Korea is a living laboratory for integrating social robots into public eldercare systems. South Korea became a super-aged society in 2024, a demographic ...",
+            "domain": "techsavvy.media"
+          },
+          {
+            "title": "a multi-environment testbed for sustainability robotics - Nature",
+            "url": "https://www.nature.com/articles/s44182-025-00054-z",
+            "snippet": "Jan 12, 2026 · The establishment of robotics testbeds has been driven by the need to create controlled environments that facilitate the development, testing, ...",
+            "domain": "www.nature.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "on-device AI architecture for robotics NPU quantization 2024"
+    },
+    "elapsed_seconds": 2.98,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "on-device AI architecture for robotics NPU quantization 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "A Comprehensive Survey on On-Device AI Models - arXiv",
+            "url": "https://arxiv.org/html/2503.06027v1",
+            "snippet": "This survey comprehensively explores the current state, technical challenges, and future trends of on-device AI models.",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "A Comprehensive Survey on On-Device AI Models",
+            "url": "https://dl.acm.org/doi/full/10.1145/3724420",
+            "snippet": "Model compression approaches including pruning, quantization, knowledge distillation, and low-rank factorization significantly reduce model size while ...",
+            "domain": "dl.acm.org"
+          },
+          {
+            "title": "[PDF] Unlocking on-device generative AI with an NPU ... - Qualcomm",
+            "url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/documents/Unlocking-on-device-generative-AI-with-an-NPU-and-heterogeneous-computing.pdf",
+            "snippet": "Neural Processing Unit (NPU) NPU is designed for sustained, high-performance AI inference at low power. quantization is beneficial for performance, power ...",
+            "domain": "www.qualcomm.com"
+          },
+          {
+            "title": "AI Disruption is Driving Innovation in On-device Inference",
+            "url": "https://www.edge-ai-vision.com/2025/02/ai-disruption-is-driving-innovation-in-on-device-inference/",
+            "snippet": "Feb 20, 2025 · State-of-the-art quantization and pruning techniques allow developers to reduce the size of models with no material impact in accuracy.",
+            "domain": "www.edge-ai-vision.com"
+          },
+          {
+            "title": "NPU (Neural Processing Unit): What It Is and Why It Matters in ...",
+            "url": "https://resources.l-p.com/glossary/npu-neural-processing-unit-architecture-edge-ai-explained",
+            "snippet": "Nov 5, 2025 · Learn what an NPU (Neural Processing Unit) is, how it works, and why NPUs are essential for AI workloads and edge devices.",
+            "domain": "resources.l-p.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "레인보우로보틱스 휴머노이드 자율작업 로봇 기술 현황"
+    },
+    "elapsed_seconds": 5.697,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "레인보우로보틱스 휴머노이드 자율작업 로봇 기술 현황",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "레인보우로보틱스 | 휴머노이드 기반 로봇 플랫폼 전문기업",
+            "url": "https://rainbow-robotics.com/",
+            "snippet": "레인보우로보틱스는 KAIST 휴보랩에서 출발한 대한민국 로봇 플랫폼 전문기업입니다. 휴머노이드 원천기술을 기반으로 협동로봇 RB 시리즈, 자율이동로봇(AMR), 이동형 양팔로봇, 사족·이족보행 로봇과 산업 자동화 솔루션을 개발·공급합니다.",
+            "domain": "rainbow-robotics.com"
+          },
+          {
+            "title": "삼성전자 로봇사업 전망 2026｜레인보우로보틱스·RX사업추진실·휴머노...",
+            "url": "https://meneruva.com/2026/07/22/hello-world/",
+            "snippet": "Jul 22, 2026 · 레인보우로보틱스는 KAIST 휴머노이드 연구센터 출신 연구진이 설립한 기업으로, 국내 최초의 이족보행 로봇 ‘휴보(HUBO)’ 개발 경험을 바탕으로 협동로봇, 이동형 로봇, 휴머노이드 기술을 보유하고 있습니다.",
+            "domain": "meneruva.com"
+          },
+          {
+            "title": "\"2028년 휴머노이드 상용화\"…레인보우로보틱스, R&D에 올인",
+            "url": "https://zdnet.co.kr/view/?no=20250322142703",
+            "snippet": "Mar 23, 2025 · 고속 민첩한 이동이 가능하면서도 우수한 장애물 극복 성능을 가지며, 양팔을 이용하여 다양한 물체의 파지 및 자율적 조작이 가능한 휴머노이드 ...",
+            "domain": "zdnet.co.kr"
+          },
+          {
+            "title": "핵심기술 | 레인보우로보틱스",
+            "url": "https://rainbow-robotics.com/company/회사소개/핵심기술/",
+            "snippet": "휴머노이드 로봇(HUBO)에서 출발한 우리의 기술은 로봇 설계부터 제어 알고리즘까지 하나의 흐름으로 이어진 일관된 체계를 갖추고 있습니다. 이 일관성이 바로 레인보우로보틱스 기술 정체성의 근본입니다. Mechanical 구조 설계부터 구동계까지 직접 만드는 ...",
+            "domain": "rainbow-robotics.com"
+          },
+          {
+            "title": "레인보우로보틱스, 휴머노이드 사업화 '첫걸음'... \"데이터 학습 3~4...",
+            "url": "https://www.thelec.kr/news/articleView.html?idxno=37684",
+            "snippet": "Jul 2, 2025 · 로봇의 3가지 핵심 동작은 보행(Mobility), 인지(Sensing), 작업(Manipulation)이다. 레인보우로보틱스는 특히 AI 학습 기반 보행 연구에 한창이다. 사족로봇이 다리 하나가 고장 난 상황에서도 삼족 보행하는 등 다양한 움직임을 학습시키고 있다.",
+            "domain": "www.thelec.kr"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "두산로보틱스 AI 기반 자율작업 로봇 제품군"
+    },
+    "elapsed_seconds": 4.11,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "두산로보틱스 AI 기반 자율작업 로봇 제품군",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "뉴쓱 (@clipai_kr) • Instagram photos and videos",
+            "url": "https://www.instagram.com/clipai_kr/",
+            "snippet": "... 두산로보틱스와 산업용 협동로봇을 위한 피지컬 AI 턴키 솔루션 공급 파트너십을 체결했다. 그리드 다이내믹스의 AI 솔루션이 연동된 두산로보틱스 제품은 3D 비전과 ...",
+            "domain": "www.instagram.com"
+          },
+          {
+            "title": "We are excited to announce our Robot Learning with ... - Threads",
+            "url": "https://www.threads.com/@joycelyn_thewhale/post/DcgpFcSgbom/we-are-excited-to-announce-our-robot-learning-with-world-models-robo-wm/",
+            "snippet": "Aug 26, 2026 · 엔비디아가 피지컬 AI용 오픈 월드 모델 제품군 '코스모스 3'를 공개하고 옴니버스와 묶는 구상을 6일 내놨습니다. 모델은 셋으로 나뉩니다. 고충실도 ...",
+            "domain": "www.threads.com"
+          },
+          {
+            "title": "11월호 홈피용 - jungwoo2267 | 플립 PDF 온라인 - FlipHTML5",
+            "url": "https://fliphtml5.com/phowg/cnik/11월호_홈피용/",
+            "snippet": "한국 협동로봇 시장에서 1위를 달리. 고 있는 두산로보틱스는 협동로봇의 동. 작·기능을 담은 애플리케이션을 공유. 하는 플랫폼 '다트 스위트'를 내놓았다. 이 플랫폼을 ...",
+            "domain": "fliphtml5.com"
+          },
+          {
+            "title": "레인보우로보틱스 (@rainbowrobotics) - Instagram",
+            "url": "https://www.instagram.com/rainbowrobotics/",
+            "snippet": "이번 선정은 AI 기반 자율보행 기술의 수준과 사족보행 로봇 플랫폼으로서의. Physical AI 기반 수술보조 로봇' 개발을 진행합니다. 지컬 AI 기반 자율 보조 기능을 구현 ...",
+            "domain": "www.instagram.com"
+          },
+          {
+            "title": "20 planning engineer Jobs in South Korea, August 2026",
+            "url": "https://www.glassdoor.com/Job/south-korea-planning-engineer-jobs-SRCH_IL.0,11_IN135_KO12,29.htm",
+            "snippet": "'세계 최고의 AI 기반 모빌리티 플랫폼 기업'으로 성장하고 있는 베어로보틱스 ... NET 기반의 PC 윈도우 애플리케이션 개발 · 로봇 자동화 라인 제어 프로그램 및 ...",
+            "domain": "www.glassdoor.com"
+          }
+        ]
+      }
+    }
+  }
+]

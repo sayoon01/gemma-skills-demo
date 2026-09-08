@@ -1,0 +1,403 @@
+[
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Physical AI robot technical architecture 2024-2026 trends"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.497,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Physical AI robot technical architecture 2024-2026 trends",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status",
+            "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+            "snippet": "Between 2025 and 2026, three major technological breakthroughs transformed Physical AI from a \"long-term vision\" into a \"deployable technology\": First, Robot Foundation Modelsenable robots to complete diverse tasks through natural language instructions[5]; Second, GPU-accelerated simulationallows robots to train at high speed in virtual environments, no longer constrained by real-world ...",
+            "domain": "www.meta-intelligence.tech"
+          },
+          {
+            "title": "Physical AI and humanoid robots | Deloitte Insights",
+            "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/physical-ai-humanoid-robots.html",
+            "snippet": "Physical AI refers to artificial intelligence systems that enable machines to autonomously perceive, understand, reason about, and interact with the physical world in real time. These capabilities show up in robots, vehicles, simulations, and sensor systems. Unlike traditional robots that follow preprogrammed instructions, physical AI systems perceive their environment, learn from experience ...",
+            "domain": "www.deloitte.com"
+          },
+          {
+            "title": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide",
+            "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+            "snippet": "This article is a technical deep-dive into the architecture and engineering of Physical AI systems in 2026. It covers the internals of Vision-Language-Action models, the full training pipeline from synthetic data generation to sim-to-real transfer, and the inference constraints governing edge deployment on current hardware. All specifications and benchmarks cited are drawn directly from NVIDIA ...",
+            "domain": "neuralcoretech.com"
+          },
+          {
+            "title": "Physical AI moves from concept to system architecture - CES 2026 post ...",
+            "url": "https://www.yolegroup.com/strategy-insights/ces-2026-physical-ai-moves-from-concept-to-system-architecture/",
+            "snippet": "The world's largest consumer electronics conference demonstrated the technical synergies between automotive and robotics. At CES 2026, there was a clear cross-sector message: Physical AI is the common language across the automotive, robotaxi and humanoid robotics segments, built on a shared set of technologies, compute platforms, and design assumptions. The term \"physical AI\" has emerged […]",
+            "domain": "www.yolegroup.com"
+          },
+          {
+            "title": "Physical AI in 2026: Practical Robotics Architecture and Safety ...",
+            "url": "https://nat.io/blog/physical-ai-robotics-palpable-applications-2026",
+            "snippet": "A deep dive into physical AI and robotics in 2026, covering deployment patterns, LLM-controller design, failure containment, and why industrial use cases are accelerating.",
+            "domain": "nat.io"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "autonomous mobile manipulator task execution trends 2024-2026"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 2.395,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "autonomous mobile manipulator task execution trends 2024-2026",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Robotic Grasping Technology Landscape 2026 — PatSnap Eureka ...",
+            "url": "https://www.patsnap.com/de/resources/blog/rd-blog/robotic-grasping-technology-landscape-2026-patsnap-eureka/",
+            "snippet": "Samsung's task-aware grasp estimation patents (US, 2024–2026) demonstrate that grasp selection should be informed by the downstream placement geometry, linking ...",
+            "domain": "www.patsnap.com"
+          },
+          {
+            "title": "[PDF] Journal of Advanced Robotics, Autonomous Systems and ...",
+            "url": "https://www.primeopenaccess.com/scholarly-articles/the-state-of-robotic-intelligence-an-exhaustive-analysis-of-learning-control-vision-and-safety-benchmarks-20242026.pdf",
+            "snippet": "Jul 24, 2026 · The period spanning 2024 to 2026 marks a transformative epoch in robotics, a model trained on a mobile manipulator",
+            "domain": "www.primeopenaccess.com"
+          },
+          {
+            "title": "State of Robotics 2026 | Robotics Center page",
+            "url": "https://www.roboticscenter.ai/state-of-robotics-2026",
+            "snippet": "Mobile Manipulator 2,200 $28,000 – $95,000. Our analysis suggests most manipulation tasks require 300 to 1,200 high-quality demonstrations. Most manipulation ...",
+            "domain": "www.roboticscenter.ai"
+          },
+          {
+            "title": "Embodied AI Market Size, Share and Trends",
+            "url": "https://www.marketsandmarkets.com/Market-Reports/embodied-ai-market-83867232.html",
+            "snippet": "AI-powered robots improve productivity by optimizing processes, minimizing errors, and executing tasks with high accuracy.",
+            "domain": "www.marketsandmarkets.com"
+          },
+          {
+            "title": "Humanoid Production Economics [2026] - Blog - RoboZaps",
+            "url": "https://blog.robozaps.com/b/economics-of-humanoid-robot-production",
+            "snippet": "Mar 12, 2025 · DIGITIMES Research expects actuator advances and scale to cut locomotion and manipulation module costs 50-70% after 2029. On this page.",
+            "domain": "blog.robozaps.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "on-device AI for physical robots latest developments 2024-2026"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.096,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "on-device AI for physical robots latest developments 2024-2026",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "State of Robotics 2026 | Robotics Center page",
+            "url": "https://www.roboticscenter.ai/state-of-robotics-2026",
+            "snippet": "The EU's AI Act and updated Machinery Regulation will force the first wave of commercial humanoid operators to demonstrate systematic safety cases by Q3 2027.",
+            "domain": "www.roboticscenter.ai"
+          },
+          {
+            "title": "Physical AI and Autonomous Robotics Are Finally Getting Real",
+            "url": "https://medium.com/@mrhotfix/physical-ai-and-autonomous-robotics-are-finally-getting-real-30ae3d4a3001",
+            "snippet": "Jun 18, 2026 · DeepMind released an on-device version designed to run locally on robots edges but directionally captures the hardware reality:",
+            "domain": "medium.com"
+          },
+          {
+            "title": "The State of Embodied Intelligence: Robotics in 2026 | voxos.ai",
+            "url": "https://voxos.ai/blog/embodied-intelligence-robotics-2026/",
+            "snippet": "AI task duration is doubling every seven months, from one-hour tasks in early 2025 to a projected eight hours by late 2026. But no robot system is expected to ...",
+            "domain": "voxos.ai"
+          },
+          {
+            "title": "Physical AI Market: 65 Funding Deals (Full List 2024-2026) (2026 ...",
+            "url": "https://newmarketpitch.com/blogs/news/physical-ai-list-deals",
+            "snippet": "The physical AI market is attracting major investment as robots become more capable, flexible, and useful in everyday work.",
+            "domain": "newmarketpitch.com"
+          },
+          {
+            "title": "Report: CES 2026 and the Rise of AI as Physical Intelligence",
+            "url": "https://aiworldjournal.com/report-ces-2026-and-the-rise-of-ai-as-physical-intelligence/",
+            "snippet": "Jan 19, 2026 · AI emerged as the primary operating system for physical machines and real-world infrastructure. CES 2026 marked the transition from AI as a ...",
+            "domain": "aiworldjournal.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "자율작업형 로봇 온디바이스 AI 및 자율주행 기술 동향 2024-2026"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 5.523,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "자율작업형 로봇 온디바이스 AI 및 자율주행 기술 동향 2024-2026",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "자율주행차 AI 기술 및 글로벌 동향",
+            "url": "https://insight.goover.ai/report/202409/go-public-report-ko-f1959338-8c37-46b3-bfb5-420161917e36-0-0.html",
+            "snippet": "특히 자율주행차의 인지, 판단, 제어 기능에서 AI 기술의 역할과 중요성을 조명하며, 현대자동차와 같은 기업들이 어떻게 이 기술을 활용하고 있는지 살펴봅니다.",
+            "domain": "insight.goover.ai"
+          },
+          {
+            "title": "엣지AI·온디바이스AI 스마트공장: 실시간 자율제어 핵심 기술과 도입 ...",
+            "url": "https://kitim.org/ko/blog/edge-ai-on-device-smart-factory-realtime-autonomous-control-2026",
+            "snippet": "Apr 13, 2026 · 클라우드 의존 없이 현장에서 실시간 AI 판정을 수행하는 엣지AI·온디바이스AI의 핵심 기술과 2026 스마트 제조혁신 AI 트랙 지원 전략, 중소기업 도입 가이드를 다룹니다.",
+            "domain": "kitim.org"
+          },
+          {
+            "title": "인터넷 없이 AI 로봇 구동… ‘적응형 온디바이스 AI ’ 실현 < Techn...",
+            "url": "https://www.popsci.co.kr/news/articleView.html?idxno=21707",
+            "snippet": "Aug 1, 2024 · 로봇이나 자율주행차가 새로운 환경에서 스스로 판단하고 움직이려면 적응형 AI 기술은 필수적이다. 변화하는 환경에 적응할 수 있는 AI로, 새로운 데이터, 피드백, 경험을 기반으로 학습하고 진화할 수 있어야 하기 때문이다.",
+            "domain": "www.popsci.co.kr"
+          },
+          {
+            "title": "자율주행차·무인로봇 필수품 '온디바이스 AI 반도체' 기술개발 본격 ...",
+            "url": "https://www.ajunews.com/view/20250822160520122",
+            "snippet": "Aug 22, 2025 · 자율주행차, 스마트가전, 협동로봇, 무인기 등 첨단제품에 필수적으로 사용되는 온디바이스 AI반도체 기술개발을 위해 정부가 본격 지원에 나선다 ...",
+            "domain": "www.ajunews.com"
+          },
+          {
+            "title": "KAIST, 자율주행차·로봇 등 온디바이스 환경서 적응형 인공지능 실현 ...",
+            "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=54354",
+            "snippet": "Aug 1, 2024 · [인더스트리뉴스 최종윤 기자] 자율주행차, 로봇 등 온디바이스 자율시스템 환경에서 클라우드의 원격 컴퓨팅 자원 없이 기기 자체에 내장된 인공지능칩을 활용한 온디바이스 자원만으로 적응형 AI를 실현하는 기술이 개발됐다.",
+            "domain": "www.industrynews.co.kr"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "VLA (Vision-Language-Action) models, training pipeline, synthetic data, sim-to-real transfer, and edge deployment constraints for Physical AI in 2026.",
+      "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.68,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+        "title": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide - NeuralCoreTech",
+        "domain": "neuralcoretech.com",
+        "focus": "VLA (Vision-Language-Action) models, training pipeline, synthetic data, sim-to-real transfer, and edge deployment constraints for Physical AI in 2026.",
+        "content": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide\nA deep technical analysis of Vision-Language-Action (VLA) architectures, diffusion-based robot policies, and the infrastructure powering large-scale Physical AI systems.\nby\nExternal Sources & Technical References\nThis article is a technical deep-dive into the architecture and engineering of Physical AI systems in 2026. It covers the internals of Vision-Language-Action models, the full training pipeline from synthetic data generation to sim-to-real transfer, and the inference constraints governing edge deployment on current hardware. All specifications and benchmarks cited are drawn directly from NVIDIA’s published technical documentation, arXiv papers, and official developer blog posts.\nTL;DR — Key Insights for AI Engineers\nPhysical AI is not a single model or framework — it is a multi-layer systems engineering challenge. The core problem is converting noisy, high-dimensional sensor input (RGB frames, depth maps, proprioceptive joint states, IMU readings) into continuous motor commands, in real time, across tasks and environments the system has never seen before. Every component in the stack is constrained by physics: the robot must maintain dynamic balance while manipulating objects, comply with joint torque limits, avoid collisions, and do all of this within the latency budget of a real-time control loop.\nBefore 2024, the dominant approach was task-specific policy learning: a robot was trained on demonstrations for a single task, in a single environment, with a fixed object set. Generalization was essentially absent. The architectural shift that defines 2025–2026 is the introduction of foundation model backbones into the policy — specifically, large Vision-Language Models (VLMs) pretrained on internet-scale data — paired with action generation modules capable of producing smooth, continuous motor trajectories. This is the Vision-Language-Action (VLA) paradigm, and understanding its internals is prerequisite to evaluating any Physical AI platform.\nVLA Architecture: Layer-by-Layer\nVision Encoder: SigLIP + MLP Projector\nGR00T N1’s visual encoding pipeline begins with a SigLIP vision transformer. SigLIP — Sigmoid Loss for Language-Image Pre-training — is a contrastive vision encoder trained to produce image representations that are semantically aligned with natural language descriptions. The SigLIP encoder in GR00T N1 operates on image patches of 14×14 pixels. For a standard input resolution, this produces a fixed-length sequence of visual tokens, each with an embedding dimension of 1152. The encoder comprises 27 SiglipEncoderLayer blocks, each containing a SiglipFlashAttention2 self-attention module (with query, key, and value projection dimensions of 1152), followed by layer normalization and a two-layer MLP with GELU activations and a hidden dimension of 4304.\nIn GR00T N1.6, the VLM was upgraded to a variant of Cosmos-Reason-2B with native resolution support — meaning the vision encoder processes images at their original aspect ratio rather than padding them to a square. This is architecturally significant: padding introduces artificial boundaries in the visual field that the attention mechanism can learn to attend to spuriously, degrading object localization and spatial reasoning. Native resolution support improves scene understanding and task decomposition reliability, particularly for manipulation tasks requiring fine-grained spatial judgment (e.g., grasping a specific face of a multi-sided object).\nThe visual tokens from SigLIP are projected into the LLM’s embedding space via an MLP connector. In N1 and N1.5, this was a standard two-layer MLP with added layer normalization. In N1.6, the MLP connector was modified to improve performance, and the top four layers of the VLM backbone were unfrozen during pretraining — a deliberate architectural decision to allow the VLM’s upper layers to adapt to the distribution of robot-relevant visual scenes rather than remaining fixed at the internet-data pretraining distribution.\nLanguage Encoder and Cross-Modal Fusion\nThe Jetson T5000 module powering the AGX Thor Developer Kit includes a Blackwell GPU with 2,560 CUDA cores, 96 fifth-generation Tensor cores, and a 14-core Arm Neoverse-V3AE CPU. Memory is 128 GB of LPDDR5x operating on a 256-bit bus for 276 GB/s of bandwidth. The module is rated for 2,070 TFLOPs at FP4 precision and 1,035 TOPS at FP8. The Blackwell architecture introduces NVFP4 as a first-class inference datatype, enabling 7.5x higher effective AI compute compared to the AGX Orin at the same power envelope, when models are optimized for this format. Multi-Instance GPU (MIG) support allows the Blackwell GPU to be partitioned into up to seven independent compute slices, enabling simultaneous execution of the perception stack, the VLM System 2 pass, and the DiT System 1 pass on separate GPU partitions with deterministic resource allocation.\nThe memory architecture is unified: CPU and GPU draw from the same 128 GB pool with no static partitioning. This eliminates the PCIe bandwidth bottleneck that affects discrete GPU systems when transferring tensors between CPU and GPU memory, which is particularly significant for VLA inference because the pipeline requires frequent data movement between the perception pre-processing stage (often CPU-bound) and the transformer inference stage (GPU-bound).\nInference Latency Breakdown\nQuantization and Precision Trade-offs\nRunning full-precision (BF16 or FP32) VLA models on edge hardware is impractical for most deployments. The GR00T N1.6 3B model uses approximately 6.15 GB of GPU memory in FP16 on a DGX Spark (Blackwell GB10), as documented in community deployment reports. On Orin Nano hardware with 8 GB of unified memory, a W4A16 (4-bit weights, 16-bit activations) quantized Cosmos Reason2-2B achieves 16–17 tokens per second and uses approximately 5.8 GB of RAM at max_model_length=2048. This is sufficient for non-real-time reasoning task",
+        "content_chars": 6000,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "Robot Foundation Models, GPU-accelerated simulation, and the transition of Physical AI to deployable technology 2025-2026.",
+      "url": "https://www.meta-intelligence.tech/en/insight-physical-ai"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.3,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+        "title": "Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status",
+        "domain": "www.meta-intelligence.tech",
+        "focus": "Robot Foundation Models, GPU-accelerated simulation, and the transition of Physical AI to deployable technology 2025-2026.",
+        "content": "Key Findings\nPhysical AI is moving from the lab to the production line — NVIDIA's Isaac platform combines GPU-accelerated simulation with robot foundation models, enabling developers to train robot policies at 1,000x real-world speed in digital twin environments, dramatically shortening the cycle from concept to deployment\n[1]\n[4]\nBreakthroughs in Robot Foundation Models are the key driving force behind Physical AI's accelerated deployment — RT-2 and other Vision-Language-Action models (VLA) achieved, for the first time, \"commanding robots with natural language to complete previously unseen tasks\"\n[5]\n[1]\n. This is no rhetorical exaggeration — from the Isaac robotics platform and the Omniverse digital twin engine to the Jetson Thor SoC designed specifically for robots, NVIDIA is building a complete Physical AI technology stack.\nThe core challenge of Physical AI lies in this: the physical world is far more complex than the digital world. In the digital world, a flawed inference at most produces imperfect text; in the physical world, one wrong movement can damage equipment, ruin products, or even injure personnel. Robots must make millisecond-level decisions in uncertain environments — perceiving object positions and materials, planning arm trajectories, applying precisely the right amount of force, and adjusting in real time when encountering unexpected situations. This requires AI to simultaneously possess visual understanding, spatial reasoning, force control, and real-time response capabilities — technical complexity far exceeding purely digital scenarios.\nBetween 2025 and 2026, three major technological breakthroughs transformed Physical AI from a \"long-term vision\" into a \"deployable technology\": First,\nRobot Foundation Models\n. Just as large language models enabled computers to understand human language, robot foundation models enable robots to understand the operational logic of the physical world.\nFrom RT-1 to RT-2: The Birth of Vision-Language-Action Models\n— it can not only understand images and language, but also directly translate that understanding into robot motion commands.\nRT-2's core breakthrough lies in \"knowledge transfer\": built on pre-trained vision-language models (such as PaLI-X), it transfers broad world knowledge learned from the internet to the robot control domain. This means RT-2 can understand concepts that never appeared in its training data. For example, even without any robot operation examples of \"throw trash in the trash can,\" RT-2 can correctly execute the task based on its semantic understanding of \"trash\" and \"trash can.\" In Google's tests, RT-2 achieved a more than 3x improvement in success rates on previously unseen tasks compared to its predecessor RT-1.\nOpen X-Embodiment: A Shared Knowledge Repository Across Robots\n, led by Google DeepMind with 21 participating research institutions, aims to break this bottleneck.\nOpen X-Embodiment established a standardized dataset covering 22 different robot forms and over 1 million operational trajectories. The RT-X model trained on this dataset demonstrated remarkable cross-robot transfer capabilities — on robots never seen before, RT-X's task success rate exceeded the robot's original dedicated model by 50%. The implications are profound: it proves robot AI can adopt the \"foundation model\" paradigm — training one general large model, then fine-tuning for different robot forms, just as GPT can be fine-tuned for text generation in different languages.\nNVIDIA GR00T and Isaac Lab: The Development Platform for Physical AI\nIsaac Lab / Isaac Sim:\nA robot simulation platform built on Omniverse. Developers can train robot policies in physically precise virtual environments at up to 1,000x real-world speed, dramatically reducing the cost and risk of real-world training. Isaac Lab supports domain randomization — randomizing lighting, friction, object shapes, and other parameters in simulation to improve strategy transfer to real environments\nJetson Thor:\n[10]\nnoted that robot foundation models are experiencing a \"scaling law validation period\" similar to large language models — the larger the model, the more diverse the training data, and the more precise the simulation environment, the stronger the robot's generalization capability. By 2027, robot foundation model parameter scales are expected to cross from the current billions into the hundreds of billions, at which point robots will be able to complete most structured physical operations through language instructions alone.\n4. Core Application Scenarios for Physical AI\nScenario 4: Hazardous Environment Operations — Replacing Humans in High-Risk Zones\nIn scenarios such as nuclear plant decommissioning, chemical handling, post-disaster search and rescue, and high-altitude work, the cost of exposing humans to physical risk is extremely high. Physical AI can send robots into these dangerous environments to perform inspection, repair, cleanup, and rescue tasks. Boston Dynamics' Atlas was originally developed for DARPA's post-disaster rescue challenge\n[4]\n[1]\nto build digital twin models of the site, simulating robot workflows and efficiency in virtual environments before deciding whether to proceed with physical pilots.\nDuring the proof of concept phase, we recommend a\ncollaborative robot (Cobot) + AI vision\ncombination as the starting point, rather than directly deploying humanoid robots. The reasons: Cobots have higher technology maturity, shorter deployment cycles (typically 2-4 weeks), lower costs (approximately NT$1-2 million), and well-established safety certifications. Through Cobot pilots, enterprises can validate the feasibility and ROI of AI-driven automation in their specific settings at low risk.\nPhase 2: Expanded Deployment and System Integration (6-18 months)\nAfter successful proof of concept, enterprises should expand Physical AI from a single workstation to entire production lines or warehouse sections. The key challenge at this stage is not the robots them",
+        "content_chars": 6000,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "State of robotic intelligence 2024-2026, learning, control, vision, and safety benchmarks.",
+      "url": "https://www.primeopenaccess.com/scholarly-articles/the-state-of-robotic-intelligence-an-exhaustive-analysis-of-learning-control-vision-and-safety-benchmarks-20242026.pdf"
+    },
+    "ok": false,
+    "error": "ValueError: 현재 HTML 페이지만 지원합니다: application/pdf",
+    "elapsed_seconds": 2.433,
+    "result": {
+      "ok": false,
+      "error": "ValueError: 현재 HTML 페이지만 지원합니다: application/pdf"
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "Task-aware grasp estimation, Samsung patents 2024-2026, and downstream placement geometry.",
+      "url": "https://www.patsnap.com/de/resources/blog/rd-blog/robotic-grasping-technology-landscape-2026-patsnap-eureka/"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.771,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://www.patsnap.com/resources/blog/rd-blog/robotic-grasping-technology-landscape-2026-patsnap-eureka/",
+        "title": "Robotic Grasping Technology Landscape 2026 — PatSnap Eureka | Patsnap",
+        "domain": "www.patsnap.com",
+        "focus": "Task-aware grasp estimation, Samsung patents 2024-2026, and downstream placement geometry.",
+        "content": ", tactile and vision-based sensing, soft robotic end-effectors, and multi-arm coordination. The field is converging from classical geometric planning toward data-driven, adaptive systems capable of handling novel objects in unstructured environments.\nWithin this dataset, patents cluster around four interacting domains: (1) machine learning and neural network-based grasp prediction, (2) vision and sensing systems for object pose estimation and grasp candidate selection, (3) trajectory planning and collision avoidance for manipulator arms, and (4) physical end-effector design including soft robotics and tactile feedback.\nThe dataset spans 34+ distinct assignees across at least 11 jurisdictions (JP, US, EP, WO, CN, KR, IT, AU, IN, CA, EA), with the largest concentration in Japan (JP), reflecting the extensive procedural filing activity of both domestic and foreign assignees through the\nreinforcement learning (RL) policies\ntrained in simulation and transferred to real hardware; geometry-aware 3D object representations derived from 2D/2.5D sensor inputs; human demonstration-based grasp teaching; and multi-view imaging to resolve ambiguous grasp configurations.\nFour Core Domains\nVision & Sensing\nObject pose estimation and grasp candidate selection systems\n📐\nTask-Aware & Multi-Arm Coordinated Manipulation\nAn emerging cluster links grasp selection to downstream task constraints — where the robot should place an object influences how it is grasped. Multi-arm coordination and shared-workspace motion planning represent a complementary sub-cluster addressing throughput and complexity scaling.\nSamsung\nFanuc Corporation's\nmultiple grasp generation patents explicitly target bin-picking and machine-tending scenarios where parts are randomly oriented in bins. Bymer Group AS's pick-and-place robot system handles continuously moving bulk material streams with dynamically reconfigured suction-cup grippers. Dexterity, Inc.'s autonomous unknown object pick-and-place (CA, 2024) scores grasp strategies across multiple camera views for warehouse-relevant unknown objects.\nBin picking · Machine tending · Pallet loading\nHuman-Robot Collaboration & Teaching\nSeveral patents address the interface between human operators and robotic systems for manipulation learning. Schaeffler Technologies AG's gesture-controlled robot teaching with visual-inertial odometry allows operators to guide arm trajectories via hand gestures with collision avoidance. NVIDIA's machine learning-controlled object handover system enables safe object transfer from human hand to robot gripper using depth-camera-derived point clouds and hand-pose estimation.\nTeleoperation · Demonstration learning · Handover\nTask-Conditioned Grasp Planning (Grasp-for-Placement Synergy)\nSamsung's task-aware grasp estimation patents (US, 2024–2026) demonstrate that grasp selection should be informed by the downstream placement geometry, linking pick-and-place into a unified neural planning problem. This reduces re-grasp events and improves cycle time.\n⚡\nTask-conditioned manipulation is displacing isolated grasp planning.\nThe progression from grasp-success prediction to task-aware grasp-placement synergy (Samsung, Autodesk, Mitsubishi Electric) signals that the field is moving toward unified manipulation policies where downstream task constraints define upstream grasp parameters. IP strategists should evaluate claims that link grasp selection to placement or assembly context. See\nPatSnap's IP analytics platform\nData generation pipelines are a primary IP differentiator — not just model architecture\nTask-conditioned grasp-placement synergy is the new frontier (Samsung, Autodesk, Mitsubishi)\nSensor fusion IP (tactile + vision) spans both industrial and surgical verticals\n5–6 assignees\naccount for the majority of technically substantive grasp-learning patents in the dataset, while a longer tail of specialized industrial and surgical robotics players occupies the remaining space.\nEmerging Trends 2024–2026\nLandmark Patents Across Technology Clusters\nA curated selection of technically substantive patents from the dataset, spanning deep learning grasp prediction, RL-based tactile grasping, simulation data generation, and task-aware manipulation.\nPatent Title\nDeep Learning Grasp Prediction\nEye-on-Hand Reinforcement Learner for Dynamic Grasping with Active Pose Estimation\nEye-on-hand vision sensor; RL policy tracks moving objects maintaining them in sensor field-of-view\nSimulation & Demo Transfer\nSynergies between pick and place: task-aware grasp estimation\nNeural network derives affordance info from 3D geometry; grasp orientation and placement jointly determined\nSamsung Electronics\n+\nWithin this dataset, robotic grasping and manipulation patents cluster around four interacting domains: (1) machine learning and neural network-based grasp prediction, (2) vision and sensing systems for object pose estimation and grasp candidate selection, (3) trajectory planning and collision avoidance for manipulator arms, and (4) physical end-effector design including soft robotics and tactile feedback.\nWhich companies hold the most robotic grasping patents in this dataset?\n+\nFanuc Corporation is the largest single assignee cluster (5+ patents), concentrated on grasp data generation, region-based grasp planning, machine-tending applications, and human-demonstration transfer. Google LLC and X Development LLC combined hold 7+ patents across JP, US, EP, WO, IN, CN. NVIDIA Corporation holds 3 patents covering tactile RL grasping, cluttered-scene grasp pose determination, and human-to-robot handover. Samsung Electronics holds 3–4 patents covering task-aware grasp estimation, placement policy imitation learning, and hand-eye calibration.\nWhy is Japan the dominant filing jurisdiction for robotic grasping patents?\n+\nBased on filings dated 2024–2026 in this dataset, five forward-looking directions are identifiable: (1) Dynamic and Moving-Target Grasping via Eye-on-Hand RL, (2) Multi-Arm Coordinated Manipu",
+        "content_chars": 6000,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "Adaptive AI on-device for autonomous systems, KAIST's technology for running AI without cloud resources.",
+      "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=54354"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.199,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=54354",
+        "title": "KAIST, 자율주행차·로봇 등 온디바이스 환경서 적응형 인공지능 실현 < 이슈·트렌드 < 자율제조·스마트팩토리 < 산업 < 기사본문 - 인더스트리뉴스",
+        "domain": "www.industrynews.co.kr",
+        "focus": "Adaptive AI on-device for autonomous systems, KAIST's technology for running AI without cloud resources.",
+        "content": "KAIST, 자율주행차·로봇 등 온디바이스 환경서 적응형 인공지능 실현 < 이슈·트렌드 < 자율제조·스마트팩토리 < 산업 < 기사본문 - 인더스트리뉴스\n주요서비스 바로가기\n테크\nAI\n경제·금융\n테크\nAI\n경제·금융\n납품업체엔 59일 '버티기', 오너家엔 900억 '통 큰' 배당… 다이소의 이중 잣대\n‘7000피’ 되찾은 코스피…오픈AI ‘아스트라’ 호재에 상승폭 확대\n한은 “하반기 충격 없다면 올해 3.3% 성장·1인당 GNI 4만달러 가능해”\n이슈·트렌드\nKAIST, 자율주행차·로봇 등 온디바이스 환경서 적응형 인공지능 실현\n전산학부 박종세 교수 연구팀, ISCA 2024서 ‘최우수 연구 기록물 상’ 수상\n이 기사를 공유합니다\n[인더스트리뉴스 최종윤 기자] 자율주행차, 로봇 등 온디바이스 자율시스템 환경에서 클라우드의 원격 컴퓨팅 자원 없이 기기 자체에 내장된 인공지능칩을 활용한 온디바이스 자원만으로 적응형 AI를 실현하는 기술이 개발됐다.\n박종세 교수팀이 연구 결과를 발표하고 있다. [사진=KAIST]\nKAIST(총장 이광형)는 전산학부 박종세 교수 연구팀이 지난 6월 29일부터 7월 3일까지 아르헨티나 부에노스아이레스에서 열린 ‘2024 국제 컴퓨터구조 심포지엄(International Symposium on Computer Architecture, ISCA 2024)’에서 최우수 연구 기록물상(Distinguished Artifact Award)을 수상했다고 1일 밝혔다.\n국제 컴퓨터 구조 심포지움(ISCA)은 컴퓨터 아키텍처 분야에서 최고 권위를 자랑하는 국제 학회로 올해는 423편의 논문이 제출됐으며, 그중 83편 만이 채택됐다. 최우수 연구 기록물 상은 학회에서 주어지는 특별한 상 중 하나로, 제출 논문 중 연구 기록물의 혁신성, 활용 가능성, 영향력을 고려해 선정된다.\n자율시스템 상의 연속학습 연산 작업 흐름. 연속학습은 시스템 상에서 센서 데이터를 활용한 추론 작업 뿐만 아니라, 적응형 AI를 위해 훈련 데이터 생성을 위한 데이터 라벨링 작업 및 학습 작업을 포함한다. [자료=KAIST]\n이번 수상 연구는 적응형 AI의 기반 기술인 ‘연속 학습’ 가속을 위한 NPU(신경망처리장치) 구조 및 온디바이스 소프트웨어 시스템을 최초 개발한 점, 향후 온디바이스 AI 시스템 연구의 지속적인 발전을 위해 오픈소스로 공개한 코드, 데이터 등의 완성도 측면에서 높은 평가를 받았다.\n연구 결과는 소프트웨어 중심 자동차(SDV, Software-Defined Vehicles), 소프트웨어 중심 로봇(SDR, Software-Defined Robots)으로 대표되는 미래 모빌리티 환경에서 온디바이스 AI 시스템을 구축하는 등 다양한 분야에 활용될 수 있을 것으로 기대된다.\n개발한 온디바이스 적응형 AI 신경망처리장치(NPU) 내부 구조. 효율적 병렬 프로세싱을 위해 2차원 시스톨릭 배열(Systolic Array) 구조를 기반으로 한다. 저전력 온디바이스 환경에서 연속학습이 가능하도록 하드웨어 자원 활용도를 극대화하는 공간적 자원 분할 기법과 마이크로소프트(Microsoft) MX 기반 다중 정밀도 연산 기법을 개발했다. [자료=KAIST]\nKAIST 전산학부 박종세 교수는 “이번 연구를 통해 온디바이스 자원만으로 적응형 AI를 실현할 수 있다는 것을 입증하게 돼 매우 기쁘고, 이 성과는 학생들의 헌신적인 노력과 구글 및 메타 연구자들과의 긴밀한 협력 덕분”이라며, “앞으로도 온디바이스 AI를 위한 하드웨어와 소프트웨어 연구를 지속해 나갈 것”이라고 소감을 전했다.\n이번 연구는 KAIST 전산학부 김윤성, 오창훈, 황진우, 김원웅, 오성룡, 이유빈 학생들과 메타(Meta)의 하딕 샤르마(Hardik Sharma) 박사, 구글 딥마인드(Google Deepmind)의 아미르 야즈단바크시(Amir Yazdanbakhsh) 박사, KAIST 전산학부 박종세 교수가 참여했다.\n한편 이번 연구는 한국연구재단 우수신진연구자지원사업, 정보통신기획평가원(IITP), 대학ICT연구센터(ITRC), 인공지능대학원지원사업, 인공지능반도체대학원지원사업의 지원을 받아 수행됐다.\n관련기사\nKAIST, 공기 중 이산화탄소 95% 포집 기술 개발\n서울로보틱스, KAIST 및 독일 KIT 학생 초청 멘토링 세션 진행\n국내 연구진, 실리콘 진동자로 뉴로모픽 진동 신경망 구현… “복잡한 컴퓨팅 난제 해결”\nKAIST, GPU에서 대규모 출력데이터 난제 해결\n마우저, IoT·자동화 지원하는 아두이노 오픈소스 제품군 공급\n뉴빌리티-요기요, 인천 송도에서 국내 첫 대규모 로봇배달 론칭\nKAIST-엔젤로보틱스, 웨어러블 로봇 ‘워크온슈트F1’ 공개… 로봇 스스로 걸어와 착용\n최종윤 기자\n다른기사 보기\n저작권자 © 인더스트리뉴스 무단전재 및 재배포, AI학습 및 활용 금지\n개의 댓글\n위존, ‘M.AX 전문기업’ 선정…제조AI 전환 사업 확대\nICT 인프라 및 AX 최적화 솔루션 전문기업 위존(대표 박대현)은 한국산업기술기획평가원(이하 ‘KEIT’라 한다)이 지정하는 ‘M.AX(Manufacturing AI Transformation) 전문기업’에 최종 선정됐다고 8일 밝혔다.M.AX는 산업통상자원부가 국내 제조업의 경쟁력 강화를 위해 추진하는 제조 인공지능 대전환 프로젝트다. KEIT는 기술력 및 전문성, 제조기업 대상 공급 실적과 시장 신뢰도, 기업 성장 가능성 등을 종합적으로 평가해 제조기업의 AI 도입과 활용을 지원하고 제조AI 생태\n국토부·LH, 수도권 주택 공급용 유휴부지 5000억원 비축",
+        "content_chars": 2706,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "autonomous navigation trends 2024-2026 semantic SLAM end-to-end navigation"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 5.307,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "autonomous navigation trends 2024-2026 semantic SLAM end-to-end navigation",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "A semantic SLAM-based method for navigation and landing of UAVs in ...",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0950705124003289",
+            "snippet": "In this paper, a visual semantic SLAM-based system is developed for UAVs to achieve autonomous navigation and landing tasks. The whole framework takes the semantic target as guidance, terrain conditions as safe validation, and engineering constraints as optimization factors.",
+            "domain": "www.sciencedirect.com"
+          },
+          {
+            "title": "State-of-the-art and future directions in autonomous navigation for ...",
+            "url": "https://www.sciencedirect.com/science/article/pii/S1566253526005907",
+            "snippet": "This review provides a comprehensive synthesis of recent research (2015-present) on autonomous UAV navigation in GNSS-denied environments, focusing on state-of-the-art methods and emerging trends.",
+            "domain": "www.sciencedirect.com"
+          },
+          {
+            "title": "Advances in AI-Driven SLAM: Recent Breakthroughs and Future ... - LinkedIn",
+            "url": "https://www.linkedin.com/pulse/advances-ai-driven-slam-recent-breakthroughs-future-ramachandran-xuyde",
+            "snippet": "Abstract Simultaneous Localization and Mapping (SLAM) is central to autonomous robotic navigation, particularly in GPS-denied and dynamic environments. Recent artificial intelligence (AI ...",
+            "domain": "www.linkedin.com"
+          },
+          {
+            "title": "A Guide to SLAM Algorithms for Autonomous Navigation in Robotics",
+            "url": "https://roboticsmeta.com/a-guide-to-slam-algorithms-for-autonomous-navigation-in-robotics/",
+            "snippet": "For autonomous vehicles, drones, and warehouse robots, SLAM is the foundational technology that enables navigation in environments where GPS is unavailable or imprecise.",
+            "domain": "roboticsmeta.com"
+          },
+          {
+            "title": "UAV-VLN: End-to-End Vision Language guided Navigation for UAVs",
+            "url": "https://arxiv.org/abs/2504.21432",
+            "snippet": "A core challenge in AI-guided autonomy is enabling agents to navigate realistically and effectively in previously unseen environments based on natural language commands. We propose UAV-VLN, a novel end-to-end Vision-Language Navigation (VLN) framework for Unmanned Aerial Vehicles (UAVs) that seamlessly integrates Large Language Models (LLMs) with visual perception to facilitate human ...",
+            "domain": "arxiv.org"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "Tesla Optimus Figure AI technical architecture 2024-2026 VLA"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 2.874,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Tesla Optimus Figure AI technical architecture 2024-2026 VLA",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Tesla Optimus Capabilities: What Can It Do? (2026)",
+            "url": "https://optimusk.blog/blog/tesla-optimus-capabilities/",
+            "snippet": "VLA Models: Vision-Language-Action. The most significant AI advancement in Optimus's capability stack is the integration of Vision-Language-Action (VLA) models.",
+            "domain": "optimusk.blog"
+          },
+          {
+            "title": "Tesla Optimus Gen 3 Architecture: Compute, Battery, Actuators",
+            "url": "https://iotdigitaltwinplm.com/tesla-optimus-gen-3-humanoid-architecture-2026/",
+            "snippet": "May 26, 2026 · Tesla is vertically integrated end-to-end — SoC, actuators, cells, and the VLA training cluster are all in-house. Figure 02 uses third-party ...",
+            "domain": "iotdigitaltwinplm.com"
+          },
+          {
+            "title": "Robot Foundation Models: A Complete Technical Survey",
+            "url": "https://medium.com/@adnanmasood/robot-foundation-models-a-complete-technical-survey-5bf9add22d1c",
+            "snippet": "Aug 17, 2026 · Figure AI occupies the hierarchical VLA camp with full vertical integration. Helix explicitly divides cognition from high-frequency visuomotor ...",
+            "domain": "medium.com"
+          },
+          {
+            "title": "The State of Embodied Intelligence: Robotics in 2026 | voxos.ai",
+            "url": "https://voxos.ai/blog/embodied-intelligence-robotics-2026/",
+            "snippet": "Large VLA models require 50-100 milliseconds per inference on edge hardware, enabling only 10-20Hz control. Manipulation tasks typically need 20-100Hz. Until ...",
+            "domain": "voxos.ai"
+          },
+          {
+            "title": "Vision–Language–Action (VLA) Models for Unmanned Aerial ...",
+            "url": "https://arxiv.org/html/2607.06706v1",
+            "snippet": "Jul 7, 2026 · Vision–Language–Action (VLA) models use a single foundation model to map camera images and language instructions to robot actions.",
+            "domain": "arxiv.org"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "accepted_claims": [
+    {
+      "claim_id": "C001",
+      "claim": "2024년 이후 VLA 모델은 폐쇄형 모델(RT-2 등)에서 OpenVLA, SmolVLA와 같은 오픈소스 범용 모델로 전환되는 추세이며, 데이터 다양성 확보를 위해 Open X-Embodiment와 같은 대규모 데이터셋을 활용한다.",
+      "worker_support": "OpenVLA는 97만 개의 로봇 조작 궤적이 포함된 Open X-Embodiment 데이터셋으로 학습된 7B 파라미터 오픈소스 모델이며, RT-2-X(55B)보다 파라미터 수는 7배 적지만 일부 작업에서 더 높은 성공률을 보였다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved text directly supports the claims regarding OpenVLA's open-source nature, its training on 970k demonstrations (Open X-Embodiment), and its performance relative to RT-2-X.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "title": "[2406.09246] OpenVLA: An Open-Source Vision-Language-Action Model",
+              "publisher": "arXiv",
+              "url": "https://arxiv.org/abs/2406.09246",
+              "source_type": "official",
+              "tier": 1,
+              "excerpt": "we introduce OpenVLA, a 7B-parameter open-source VLA trained on a diverse collection of 970k real-world robot demonstrations... OpenVLA demonstrates strong results for generalist manipulation, outperforming closed models such as RT-2-X (55B) by 16.5% in absolute task success rate across 29 tasks"
+            },
+            "retrieved_source": {
+              "title": "[2406.09246] OpenVLA: An Open-Source Vision-Language-Action Model",
+              "url": "https://arxiv.org/abs/2406.09246",
+              "domain": "arxiv.org",
+              "content": "[2406.09246] OpenVLA: An Open-Source Vision-Language-Action Model\nSkip to main content\nTitle:\nOpenVLA: An Open-Source Vision-Language-Action Model\nAuthors:\nChelsea Finn\nView a PDF of the paper titled OpenVLA: An Open-Source Vision-Language-Action Model, by Moo Jin Kim and 17 other authors\nView PDF\nAbstract:\nLarge policies pretrained on a combination of Internet-scale vision-language data and diverse robot demonstrations have the potential to change how we teach robots new skills: rather than training new behaviors from scratch, we can fine-tune such vision-language-action (VLA) models to obtain robust, generalizable policies for visuomotor control. Yet, widespread adoption of VLAs for robotics has been challenging as 1) existing VLAs are largely closed and inaccessible to the public, and 2) prior work fails to explore methods for efficiently fine-tuning VLAs for new tasks, a key component for adoption. Addressing these challenges, we introduce OpenVLA, a 7B-parameter open-source VLA trained on a diverse collection of 970k real-world robot demonstrations. OpenVLA builds on a Llama 2 language model combined with a visual encoder that fuses pretrained features from DINOv2 and SigLIP. As a product of the added data diversity and new model components, OpenVLA demonstrates strong results for generalist manipulation, outperforming closed models such as RT-2-X (55B) by 16.5% in absolute task success rate across 29 tasks and multiple robot embodiments, with 7x fewer parameters. We further show that we can effectively fine-tune OpenVLA for new settings, with especially strong generalization results in multi-task environments involving multiple objects and strong language grounding abilities, and outperform expressive from-scratch imitation learning methods such as Diffusion Policy by 20.4%. We also explore compute efficiency; as a separate contribution, we show that OpenVLA can be fine-tuned on consumer GPUs via modern low-rank adaptation methods and served efficiently via quantization without a hit to downstream success rate. Finally, we release model checkpoints, fine-tuning notebooks, and our PyTorch codebase with built-in support for training VLAs at scale on Open X-Embodiment datasets.\nComments:\nAccess Paper:\nView a PDF of the paper titled OpenVLA: An Open-Source Vision-Language-Action Model, by Moo Jin Kim and 17 other authors\nView PDF\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\n.\nWhich authors of this paper are endorsers?\n|\n,\nand all contributors.\nAbout",
+              "content_chars": 3177
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The source explicitly confirms that OpenVLA is an open-source VLA, trained on the Open X-Embodiment dataset, and outperforms closed models like RT-2-X. However, only one independent source was provided."
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim_id": "C002",
+      "claim": "온디바이스 AI 구현을 위해 VLA 모델의 경량화(Compact VLA)와 비동기 추론 스택(Asynchronous Inference Stack) 및 양자화-프루닝 결합 기술이 발전하고 있다.",
+      "worker_support": "SmolVLA는 450M 파라미터의 경량 모델로, 비전 모델 레이어 일부를 생략하고 비동기 추론 스택을 도입하여 저가형 하드웨어에서도 실시간 응답이 가능하게 했다. 또한 SQAP-VLA와 같은 프레임워크는 양자화와 토큰 프루닝을 결합하여 엣지 디바이스 배포 효율을 높인다.",
+      "runtime_status": "UNSUPPORTED",
+      "verified_evidence_count": 0,
+      "verified_evidence": [],
+      "nonverified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "While the source supports the 'Compact VLA' and 'Asynchronous Inference Stack' portions of the claim, it contains no mention of 'SQAP-VLA' or 'quantization' techniques, which were cited as primary evidence for the second half of the claim.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data",
+              "publisher": "Hugging Face",
+              "url": "https://huggingface.co/blog/smolvla",
+              "source_type": "official",
+              "tier": 1,
+              "excerpt": "SmolVLA-450M... optimized for speed and low-latency inference... Skipping half of the layers of the vision model... we introduce an asynchronous inference stack."
+            },
+            "retrieved_source": {
+              "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data",
+              "url": "https://huggingface.co/blog/smolvla",
+              "domain": "huggingface.co",
+              "content": "tag.\nSmolVLA-450M outperforms much larger VLAs and strong baselines such as\nACT\nIntroduction\nOver the past few years, Transformers have driven remarkable progress in AI, from language models capable of human-like reasoning to multimodal systems that understand both images and text. However, in real-world robotics, advancements have been much slower. Robots still struggle to generalize across diverse objects, environments, and tasks. This limited progress stems from a\nlack of high-quality, diverse data\nconsumer-grade hardware using only publicly available datasets\n. By releasing not only model weights but also using very affordable open-source hardware, SmolVLA aims to democratize access to vision-language-action models and accelerate research toward generalist robotic agents.\nFigure 1: Comparison of SmolVLA across task variations. From left to right: (1) asynchronous pick-place cube counting, (2) synchronous pick-place cube counting, (3) pick-place cube counting under perturbations, and (4) generalization on pick-and-place of the lego block with real-world SO101.\nReleased with full training and inference recipes\nCan be tested and deployed on very affordable hardware (SO-100, SO-101, LeKiwi, etc.)\nInspired by the training paradigms of Large Language Models (LLMs), SmolVLA goes through a pretraining phase on general manipulation data, followed by task-specific post-training. Architecturally, it combines Transformers with\n, and is optimized for speed and low-latency inference with the following design choices:\nSkipping half of the layers of the vision model for faster inference and smaller size\nInterleaving self-attention and cross-attention blocks\nof much larger models, both in simulation and the real world.\nTo make real-time robotics easier to use, we introduce an asynchronous inference stack. This technology separates how robots perform actions from how they understand what they see and hear. Because of this separation, robots can respond more quickly in fast-changing environments.\nFigure 2. SmolVLA takes as input a sequence of RGB images from multiple cameras, the robot’s current sensorimotor state, and a natural language instruction. The VLM encodes these into contextual features, which condition the action expert to generate a continuous sequence of actions.\n🚀 How to Use SmolVLA?\nSmolVLA is designed to be easy to use and integrate—whether you're finetuning on your own data or plugging it into an existing robotics stack.\nInstall\nMethod\nSmolVLA is not only a lightweight yet capable model, but also a method for training and evaluating generalist robotics policies. In this section, we introduce the\nmodel architecture\naction expert\nthat outputs robot control commands. Below, we share the details of the main components of SmolVLA architecture and the Asynchronous Inference. More details can be found in our\ntechnical report\nDesign Choices for Efficiency and Robustness\nWhile combining a vision-language model with an action prediction module is a common design pattern in recent VLA systems—such as Pi0, GR00T, Diffusion Policy — we identified several architectural choices that significantly enhance the robustness and performance. In SmolVLA, we apply three key techniques:\nreducing the number of visual tokens, skipping upper layers in the VLM\nCommunity Datasets\nWhile vision and language models thrive on web-scale datasets like LAION, ImageNet, and Common Crawl, robotics lacks a comparable resource. There’s no “Internet of robots.” Instead, data is fragmented across robot types, sensors, control schemes, and formats—forming disconnected \"data islands\". In our\nprevious post\nSmolVLA is our first step toward that vision\n: It is pretrained on a curated mix of publicly available, community-contributed datasets designed to reflect real-world variation. Rather than optimizing for dataset size alone, we focus on diversity: a range of behaviors, camera viewpoints, and embodiments that promote transfer and generalization.\nAll training data used in SmolVLA comes from\nResults\nWe evaluate SmolVLA across simulation and real-world benchmarks to test its generalization, efficiency, and robustness. Despite being compact, It consistently outperforms or matches the performance of significantly larger models and policies pretrained on higher-scale robotics data.\nTable 2. SmolVLA Performance on Simulation Benchmarks.\nConclusion\nSmolVLA is our contribution to building robotics foundation models that are open, efficient, and reproducible. Despite its small size, it matches or outperforms larger, proprietary models across a range of real-world and simulated tasks. By relying solely on community-contributed datasets and affordable hardware, SmolVLA lowers the barrier to entry for researchers, educators, and hobbyists alike.\nBut this is just the beginning. SmolVLA is more than just a model — it's part of a growing open-source movement toward scalable, collaborative robotics.\nTry it out!\nFinetune SmolVLA on your own data, deploy it on affordable hardware, or benchmark it against your current stack and share it on twitter/linkedin.\n🤖\nUpload the dataset!\nGot a robot? Collect and share your data using the lerobot format. Help expand the community dataset that powers SmolVLA.\n💬\nfor updates, tutorials, and new releases.\nTogether, we can make real-world robotics more capable, more affordable, and more open. ✨\nModels mentioned in this article\n33\nSmolVLA: A Vision-Language-Action Model for Affordable and Efficient\nRobotics\nNov 6, 2025\nIn Table 9, the average success rate of 0.75 × d seems lower than 0.5 × d and 1.0, but paper state that “reducing the expert’s hidden size to 0.75 × d achieves a good balance between performance and efficiency.”\nCould you clarify how you concluded that 0.75 × d is the best trade-off? Was it chosen based on other considerations (e.g., stability, memory usage, or consistency across tasks)?\n33\nSmolVLA: A Vision-Language-Action Model for Affordable and Efficient\nRobotics",
+              "content_chars": 5966
+            }
+          }
+        }
+      ],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The source verifies the existence of Compact VLAs (SmolVLA-450M) and the Asynchronous Inference Stack. However, the specific mention of 'SQAP-VLA' and 'quantization' in the worker's support text is not present in the retrieved source content."
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "claim_id": "C002",
+      "evidence_id": "C002-E001",
+      "state": "INSUFFICIENT_SUPPORT",
+      "reason": "While the source supports the 'Compact VLA' and 'Asynchronous Inference Stack' portions of the claim, it contains no mention of 'SQAP-VLA' or 'quantization' techniques, which were cited as primary evidence for the second half of the claim.",
+      "audited_source_type": "industry_blog",
+      "audited_tier": 4,
+      "source": {
+        "evidence_id": "C002-E001",
+        "worker_source": {
+          "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data",
+          "publisher": "Hugging Face",
+          "url": "https://huggingface.co/blog/smolvla",
+          "source_type": "official",
+          "tier": 1,
+          "excerpt": "SmolVLA-450M... optimized for speed and low-latency inference... Skipping half of the layers of the vision model... we introduce an asynchronous inference stack."
+        },
+        "retrieved_source": {
+          "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data",
+          "url": "https://huggingface.co/blog/smolvla",
+          "domain": "huggingface.co",
+          "content": "tag.\nSmolVLA-450M outperforms much larger VLAs and strong baselines such as\nACT\nIntroduction\nOver the past few years, Transformers have driven remarkable progress in AI, from language models capable of human-like reasoning to multimodal systems that understand both images and text. However, in real-world robotics, advancements have been much slower. Robots still struggle to generalize across diverse objects, environments, and tasks. This limited progress stems from a\nlack of high-quality, diverse data\nconsumer-grade hardware using only publicly available datasets\n. By releasing not only model weights but also using very affordable open-source hardware, SmolVLA aims to democratize access to vision-language-action models and accelerate research toward generalist robotic agents.\nFigure 1: Comparison of SmolVLA across task variations. From left to right: (1) asynchronous pick-place cube counting, (2) synchronous pick-place cube counting, (3) pick-place cube counting under perturbations, and (4) generalization on pick-and-place of the lego block with real-world SO101.\nReleased with full training and inference recipes\nCan be tested and deployed on very affordable hardware (SO-100, SO-101, LeKiwi, etc.)\nInspired by the training paradigms of Large Language Models (LLMs), SmolVLA goes through a pretraining phase on general manipulation data, followed by task-specific post-training. Architecturally, it combines Transformers with\n, and is optimized for speed and low-latency inference with the following design choices:\nSkipping half of the layers of the vision model for faster inference and smaller size\nInterleaving self-attention and cross-attention blocks\nof much larger models, both in simulation and the real world.\nTo make real-time robotics easier to use, we introduce an asynchronous inference stack. This technology separates how robots perform actions from how they understand what they see and hear. Because of this separation, robots can respond more quickly in fast-changing environments.\nFigure 2. SmolVLA takes as input a sequence of RGB images from multiple cameras, the robot’s current sensorimotor state, and a natural language instruction. The VLM encodes these into contextual features, which condition the action expert to generate a continuous sequence of actions.\n🚀 How to Use SmolVLA?\nSmolVLA is designed to be easy to use and integrate—whether you're finetuning on your own data or plugging it into an existing robotics stack.\nInstall\nMethod\nSmolVLA is not only a lightweight yet capable model, but also a method for training and evaluating generalist robotics policies. In this section, we introduce the\nmodel architecture\naction expert\nthat outputs robot control commands. Below, we share the details of the main components of SmolVLA architecture and the Asynchronous Inference. More details can be found in our\ntechnical report\nDesign Choices for Efficiency and Robustness\nWhile combining a vision-language model with an action prediction module is a common design pattern in recent VLA systems—such as Pi0, GR00T, Diffusion Policy — we identified several architectural choices that significantly enhance the robustness and performance. In SmolVLA, we apply three key techniques:\nreducing the number of visual tokens, skipping upper layers in the VLM\nCommunity Datasets\nWhile vision and language models thrive on web-scale datasets like LAION, ImageNet, and Common Crawl, robotics lacks a comparable resource. There’s no “Internet of robots.” Instead, data is fragmented across robot types, sensors, control schemes, and formats—forming disconnected \"data islands\". In our\nprevious post\nSmolVLA is our first step toward that vision\n: It is pretrained on a curated mix of publicly available, community-contributed datasets designed to reflect real-world variation. Rather than optimizing for dataset size alone, we focus on diversity: a range of behaviors, camera viewpoints, and embodiments that promote transfer and generalization.\nAll training data used in SmolVLA comes from\nResults\nWe evaluate SmolVLA across simulation and real-world benchmarks to test its generalization, efficiency, and robustness. Despite being compact, It consistently outperforms or matches the performance of significantly larger models and policies pretrained on higher-scale robotics data.\nTable 2. SmolVLA Performance on Simulation Benchmarks.\nConclusion\nSmolVLA is our contribution to building robotics foundation models that are open, efficient, and reproducible. Despite its small size, it matches or outperforms larger, proprietary models across a range of real-world and simulated tasks. By relying solely on community-contributed datasets and affordable hardware, SmolVLA lowers the barrier to entry for researchers, educators, and hobbyists alike.\nBut this is just the beginning. SmolVLA is more than just a model — it's part of a growing open-source movement toward scalable, collaborative robotics.\nTry it out!\nFinetune SmolVLA on your own data, deploy it on affordable hardware, or benchmark it against your current stack and share it on twitter/linkedin.\n🤖\nUpload the dataset!\nGot a robot? Collect and share your data using the lerobot format. Help expand the community dataset that powers SmolVLA.\n💬\nfor updates, tutorials, and new releases.\nTogether, we can make real-world robotics more capable, more affordable, and more open. ✨\nModels mentioned in this article\n33\nSmolVLA: A Vision-Language-Action Model for Affordable and Efficient\nRobotics\nNov 6, 2025\nIn Table 9, the average success rate of 0.75 × d seems lower than 0.5 × d and 1.0, but paper state that “reducing the expert’s hidden size to 0.75 × d achieves a good balance between performance and efficiency.”\nCould you clarify how you concluded that 0.75 × d is the best trade-off? Was it chosen based on other considerations (e.g., stability, memory usage, or consistency across tasks)?\n33\nSmolVLA: A Vision-Language-Action Model for Affordable and Efficient\nRobotics",
+          "content_chars": 5966
+        }
+      }
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker classified as Tier 1 (Official); corrected to Tier 2 (Peer-reviewed/arXiv)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker classified as Tier 1 (Official); corrected to Tier 4 (Industry blog)."
+    }
+  ],
+  "consistency_warnings": [
+    {
+      "type": "VERDICT_OVERRIDDEN",
+      "claim_id": "C002",
+      "auditor_verdict": "SINGLE_SOURCE",
+      "runtime_status": "UNSUPPORTED"
+    }
+  ],
+  "summary": {
+    "input_claim_count": 2,
+    "accepted_claim_count": 1,
+    "unsupported_claim_count": 1,
+    "verified_evidence_count": 1,
+    "rejected_evidence_count": 1,
+    "warning_count": 1
+  }
+}

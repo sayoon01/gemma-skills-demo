@@ -1,0 +1,171 @@
+{
+  "accepted_claims": [
+    {
+      "claim": "Tesla Optimus Gen 3 is currently in limited production and deployed within Tesla's own factories for tasks such as bin picking, kitting, and basic assembly.",
+      "support": "Optimus Gen 3 is in limited production at the Fremont facility and is primarily deployed inside Tesla factories for bin picking, kitting, and basic assembly tasks.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+          "publisher": "AI Herald",
+          "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+          "source_type": "industry_analysis",
+          "tier": 2,
+          "excerpt": "The Gen 3 unit, now in limited production at Tesla’s Fremont facility... Optimus units are primarily deployed inside Tesla factories—performing bin picking, kitting, and basic assembly tasks.",
+          "verification_state": "FETCHED",
+          "retrieved_title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+          "retrieved_url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+          "retrieved_content_chars": 5622
+        }
+      ],
+      "verified_source_count": 1,
+      "validation_status": "SINGLE_SOURCE"
+    },
+    {
+      "claim": "Figure AI's Figure 02 and 03 are in the commercial deployment stage, with active installations at BMW's Spartanburg plant and Amazon Robotics fulfillment centers.",
+      "support": "Figure 02 leads in real-world deployments, with confirmed installations at BMW’s Spartanburg plant, Amazon Robotics and several automotive Tier 1 suppliers. Figure 03 pairs improved dexterity with the Helix vision-language-action (VLA) model.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+          "publisher": "AI Herald",
+          "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+          "source_type": "industry_analysis",
+          "tier": 2,
+          "excerpt": "Figure 02 leads in real-world deployments, with confirmed installations at BMW’s Spartanburg plant, Amazon Robotics fulfillment centers, and several automotive Tier 1 suppliers.",
+          "verification_state": "FETCHED",
+          "retrieved_title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+          "retrieved_url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+          "retrieved_content_chars": 5622
+        },
+        {
+          "source_kind": "web",
+          "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+          "publisher": "andrew.ooo",
+          "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+          "source_type": "industry_analysis",
+          "tier": 3,
+          "excerpt": "Figure 03 pairs improved dexterity with the Helix vision-language-action model — Figure’s in-house VLA",
+          "verification_state": "FETCHED",
+          "retrieved_title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+          "retrieved_url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+          "retrieved_content_chars": 3701
+        }
+      ],
+      "verified_source_count": 2,
+      "validation_status": "MULTI_SOURCE_PENDING_AUDIT"
+    },
+    {
+      "claim": "Agility Robotics' Digit is in the commercial deployment stage, specifically deployed at Amazon.",
+      "support": "Agility is deploying Digit at Amazon.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+          "publisher": "andrew.ooo",
+          "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+          "source_type": "industry_analysis",
+          "tier": 3,
+          "excerpt": "Agility deploying Digit at Amazon",
+          "verification_state": "FETCHED",
+          "retrieved_title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+          "retrieved_url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+          "retrieved_content_chars": 3701
+        }
+      ],
+      "verified_source_count": 1,
+      "validation_status": "SINGLE_SOURCE"
+    },
+    {
+      "claim": "Boston Dynamics' electric Atlas is primarily a research platform, though it is being piloted in Hyundai Motor Group factories for moving automotive parts.",
+      "support": "Atlas remains a research platform... [but] is actually being pilot-operated in Hyundai Motor factories, moving automotive parts.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+          "publisher": "AI Herald",
+          "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+          "source_type": "industry_analysis",
+          "tier": 2,
+          "excerpt": "Atlas remains a research platform, though Boston Dynamics has hinted at a commercial Atlas variant for 2027.",
+          "verification_state": "FETCHED",
+          "retrieved_title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+          "retrieved_url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+          "retrieved_content_chars": 5622
+        },
+        {
+          "source_kind": "web",
+          "title": "피지컬 AI 로봇 2026 한국 7가지 도입 사례 총정리",
+          "publisher": "rabby.kr",
+          "url": "https://rabby.kr/physical-ai-robots-korea-cases-2026/",
+          "source_type": "industry_analysis",
+          "tier": 3,
+          "excerpt": "보스턴다이내믹스 ‘아틀라스’가 자동차 부품을 직접 옮기는 장면... 현대차 공장에서 실제로 시범 운영 중인 모습이더군요.",
+          "verification_state": "FETCHED",
+          "retrieved_title": "피지컬 AI 로봇 2026 한국 7가지 도입 사례 총정리",
+          "retrieved_url": "https://rabby.kr/physical-ai-robots-korea-cases-2026/",
+          "retrieved_content_chars": 1340
+        }
+      ],
+      "verified_source_count": 2,
+      "validation_status": "MULTI_SOURCE_PENDING_AUDIT"
+    },
+    {
+      "claim": "Rainbow Robotics and Tomorrow Robotics have entered a joint development phase to create 'AI-Native' humanoid robots using Robot Foundation Models (RFM) and AI Agents.",
+      "support": "Tomorrow Robotics and Rainbow Robotics signed an MOU for 'Physical AI-based robot joint development and business cooperation' to develop AI-Native humanoid robots that can perceive and judge environments autonomously.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "투모로 로보틱스, 피지컬 AI 상용화 속도…레인보우로보틱스와 '스스로 일하는 로봇' 공동개발",
+          "publisher": "경기일보",
+          "url": "https://www.kyeonggi.com/article/20260723580350",
+          "source_type": "official",
+          "tier": 1,
+          "excerpt": "투모로 로보틱스는 지난 21일 레인보우로보틱스와 ‘피지컬 AI 기반 로봇 연구개발 및 사업 협력을 위한 업무협약(MOU)’을 체결했다고 23일 밝혔다... 레인보우로보틱스의 로봇 하드웨어 기술과 투모로 로보틱스의 AI·소프트웨어 기술을 결합해 실제 산업 현장에서 활용할 수 있는 AI-Native 휴머노이드 로봇을 공동 개발하는 것이 핵심이다.",
+          "verification_state": "FETCHED",
+          "retrieved_title": "투모로 로보틱스, 피지컬 AI 상용화 속도…레인보우로보틱스와 '스스로 일하는 로봇' 공동개발",
+          "retrieved_url": "https://www.kyeonggi.com/article/20260723580350",
+          "retrieved_content_chars": 2888
+        }
+      ],
+      "verified_source_count": 1,
+      "validation_status": "SINGLE_SOURCE"
+    },
+    {
+      "claim": "Unitree has entered the commercial market with the G1 humanoid robot, significantly lowering the price point to approximately $4,000.",
+      "support": "Unitree drops the R1 to $4K [referring to the commercialization race in 2026].",
+      "confidence": "medium",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+          "publisher": "andrew.ooo",
+          "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+          "source_type": "industry_analysis",
+          "tier": 3,
+          "excerpt": "Unitree drops the R1 to $4K.",
+          "verification_state": "FETCHED",
+          "retrieved_title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+          "retrieved_url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+          "retrieved_content_chars": 3701
+        }
+      ],
+      "verified_source_count": 1,
+      "validation_status": "SINGLE_SOURCE"
+    }
+  ],
+  "unsupported_claims": [],
+  "rejected_sources": [],
+  "summary": {
+    "raw_claim_count": 6,
+    "accepted_claim_count": 6,
+    "unsupported_claim_count": 0,
+    "rejected_source_count": 0,
+    "successful_fetch_source_count": 4
+  }
+}

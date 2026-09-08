@@ -1,0 +1,33 @@
+{
+  "model": "gemma4:31b",
+  "created_at": "2026-09-08T07:08:07.435323438Z",
+  "message": {
+    "role": "assistant",
+    "content": "",
+    "thinking": "I have gathered a significant amount of information. Let's synthesize it.\n\n**Global Companies & Products:**\n\n*   **Tesla (Optimus Gen 3):**\n    *   *Functions:* Tactile feedback in hands, handles tools/wires/small parts, imitation learning from human demonstrations, \"Skill Store\" for pre-trained manipulation primitives.\n    *   *Stage:* Limited production (Fremont facility), deployed in Tesla factories (bin picking, kitting, basic assembly).\n    *   *Status:* Commercial/Pilot (Internal deployment).\n\n*   **Figure AI (Figure 02 / Figure 03):**\n    *   *Functions:* Modular design (replaceable parts in <30 mins), Helix vision-language-action (VLA) model (Figure 03), hybrid approach (classical motion planning + learned policies).\n    *   *Stage:* Commercial deployment.\n    *   *Deployment:* BMW Spartanburg plant, Amazon Robotics fulfillment centers, automotive Tier 1 suppliers.\n    *   *Status:* Commercial/Deployment.\n\n*   **Agility Robotics (Digit):**\n    *   *Functions:* High-locomotion, enterprise integration.\n    *   *Stage:* Commercial deployment.\n    *   *Deployment:* Amazon.\n    *   *Status:* Commercial/Deployment.\n\n*   **Boston Dynamics (Atlas Electric):**\n    *   *Functions:* Most athletically capable, electric actuator suite (replaces hydraulics), MPC loop (1 kHz), explicit geometric mapping.\n    *   *Stage:* Research platform (though commercial variant hinted for 2027).\n    *   *Deployment:* Pilot/Demo in Hyundai factories (moving auto parts).\n    *   *Status:* Research/Pilot.\n\n*   **1X (Neo):**\n    *   *Functions:* Shipping Neo.\n    *   *Stage:* Shipping/Commercial.\n    *   *Status:* Commercial.\n\n*   **Unitree (G1):**\n    *   *Functions:* Volume industrial pricing (dropped to $4K).\n    *   *Stage:* Commercial.\n    *   *Status:* Commercial.\n\n**Domestic (Korean) Companies & Products:**\n\n*   **Rainbow Robotics:**\n    *   *Functions:* Hardware and control/sensor technology.\n    *   *Stage:* R&D / Joint Development.\n    *   *Collaboration:* MOU with Tomorrow Robotics to develop \"AI-Native\" humanoid robots (Robot Foundation Model, AI Agent).\n    *   *Status:* Research/Development.\n\n*   **Tomorrow Robotics:**\n    *   *Functions:* Robot Foundation Model (RFM), AI Agent, robot operating software.\n    *   *Stage:* R&D / Joint Development.\n    *   *Status:* Research/Development.\n\n*   **Hyundai Motor Group (via Boston Dynamics):**\n    *   *Functions:* Leveraging Atlas for industrial tasks.\n    *   *Stage:* Pilot/Demo (Hyundai factories).\n    *   *Status:* Pilot.\n\n*   **Samsung Electronics / Doosan Robotics:**\n    *   The search results mentioned \"major conglomerates investing in Physical AI,\" but specific product names and current \"Physical AI\" (VLA/Foundation model) stages for Samsung's Bot or Doosan's cobots weren't explicitly detailed in the read pages. I know Samsung has \"Bot\" and Doosan has cobots, but the \"Physical AI\" (embodied AI) transition is the key. I should check if there's a specific \"Physical AI\" product for them or if they are in the investment/R&D phase.\n\n*Refining the \"Stage\" Analysis:*\n- **Research/R&D:** Rainbow Robotics, Tomorrow Robotics.\n- **Pilot/Beta (Internal/Limited):** Tesla Optimus (internal), Boston Dynamics Atlas (Hyundai pilot).\n- **Commercial/Deployment (External):** Figure AI, Agility Robotics, 1X, Unitree.\n\nI have enough to form a very strong comparison. I will double-check if there are any other major Korean players or specific Samsung/Doosan \"Physical AI\" updates to be thorough. The prompt asks for \"major companies and representative product functions.\"\n\nOne more quick search for Samsung and Doosan's \"Physical AI\" status to ensure I'm not missing a specific product launch.",
+    "tool_calls": [
+      {
+        "id": "call_dfokz26d",
+        "function": {
+          "index": 0,
+          "name": "web_search",
+          "arguments": {
+            "query": "삼성전자 봇 피지컬 AI 상용화 단계 두산로보틱스 피지컬 AI 제품"
+          }
+        }
+      }
+    ]
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 111605990358,
+  "load_duration": 155526313,
+  "prompt_eval_count": 10726,
+  "prompt_eval_duration": 9545932934,
+  "eval_count": 963,
+  "eval_duration": 101459041616,
+  "_runtime": {
+    "turn": 3,
+    "model_elapsed_seconds": 111.609
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "turn_count": 3,
+  "tool_call_count": 10,
+  "tool_error_count": 1,
+  "search_count": 8,
+  "fetch_count": 2,
+  "unique_search_urls": 35,
+  "unique_fetched_urls": 2,
+  "answer_chars": 5508,
+  "elapsed_seconds": 642.762,
+  "model_response_times_seconds": [
+    143.139,
+    96.667,
+    383.13
+  ],
+  "model_total_seconds": 622.936
+}

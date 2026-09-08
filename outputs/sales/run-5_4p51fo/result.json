@@ -1,0 +1,87 @@
+{
+  "started_at": "2026-09-07T06:20:10.409066+00:00",
+  "status": "passed",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/sales/run-5_4p51fo",
+  "workbook": "/home/keti_spark1/yune/gemma-skills-demo/outputs/sales/run-5_4p51fo/sales.xlsx",
+  "visual_review": "미실시",
+  "model_used": false,
+  "scope": "엑셀 도구 자체의 생성·재계산·자동 검증",
+  "skill_sha256": "6712b39718fe815054abca9c3ee72f989613e6f771c8a5c58f30a65a6c905622",
+  "recalc_returncode": 0,
+  "recalc": {
+    "status": "success",
+    "total_errors": 0,
+    "error_summary": {},
+    "total_formulas": 7
+  },
+  "verification": {
+    "passed": true,
+    "problems": [],
+    "cells": [
+      {
+        "cell": "D2",
+        "expected": "10000",
+        "actual": 10000,
+        "formula": "=B2*C2",
+        "value_ok": true,
+        "formula_ok": true
+      },
+      {
+        "cell": "D3",
+        "expected": "0",
+        "actual": 0,
+        "formula": "=B3*C3",
+        "value_ok": true,
+        "formula_ok": true
+      },
+      {
+        "cell": "D4",
+        "expected": "30000",
+        "actual": 30000,
+        "formula": "=B4*C4",
+        "value_ok": true,
+        "formula_ok": true
+      },
+      {
+        "cell": "D5",
+        "expected": "20000",
+        "actual": 20000,
+        "formula": "=B5*C5",
+        "value_ok": true,
+        "formula_ok": true
+      },
+      {
+        "cell": "D6",
+        "expected": "21600",
+        "actual": 21600,
+        "formula": "=B6*C6",
+        "value_ok": true,
+        "formula_ok": true
+      },
+      {
+        "cell": "D7",
+        "expected": "15000",
+        "actual": 15000,
+        "formula": "=B7*C7",
+        "value_ok": true,
+        "formula_ok": true
+      },
+      {
+        "cell": "D8",
+        "expected": "96600",
+        "actual": 96600,
+        "formula": "=SUM(D2:D7)",
+        "value_ok": true,
+        "formula_ok": true
+      }
+    ],
+    "formula_count": 7,
+    "chart_count": 1,
+    "visual_review": "미실시"
+  },
+  "markitdown": {
+    "status": "success",
+    "text_length": 548
+  },
+  "finished_at": "2026-09-07T06:20:11.992555+00:00"
+}

@@ -1,0 +1,385 @@
+[
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "자율작업형 피지컬 AI 로봇 기술 동향 2024 2025"
+    },
+    "elapsed_seconds": 1.1,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "자율작업형 피지컬 AI 로봇 기술 동향 2024 2025",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "2025 대한의료정보학회 춘계학술대회 초록집 - Scribd",
+            "url": "https://www.scribd.com/document/931949626/2025-대한의료정보학회-춘계학술대회-초록집",
+            "snippet": "자원의 구조와 특성을 소개하고, 이들 데이터를 효과적으로 수집, 표준화, 품질 관리, 보안하는 전략을 다룹니다. 특히 의료 AI와 치료 최적화 기술의 발전을 뒷받침하기 ...",
+            "domain": "www.scribd.com"
+          },
+          {
+            "title": "2026 이슈 브리핑 - 핵심 체크 포인트 - Lexology",
+            "url": "https://www.lexology.com/library/detail.aspx",
+            "snippet": "Dec 30, 2025 · 2026 이슈 브리핑 - 핵심 체크 포인트 · 1)피지컬 AI에 대한 지원 Ÿ핵심 정책 · 2)강력한 보안 규제(징벌적 과징금 등) 도입 · 3)AI 기본법 시행에 대비.",
+            "domain": "www.lexology.com"
+          },
+          {
+            "title": "엠아이티마스 | 대한민국 | 기업 고객대상 IT 사용자 지원 서비스",
+            "url": "https://www.mitmas.com/",
+            "snippet": "로봇과 자율주행을 중심으로 한 피지컬 AI는 AI 수익화의 가장 현실적인 해법으로 부상했다. ...",
+            "domain": "www.mitmas.com"
+          },
+          {
+            "title": "LG그룹 (@lg_group_kr) · Seoul - Instagram",
+            "url": "https://www.instagram.com/lg_group_kr/",
+            "snippet": "... 로봇 파운데이션 모델도 고도화할 계획 ⇒ 데이터부터 확보가 중요한 피지컬 AI 경쟁에서 LG전자는 한 발 앞서가고 있는 중 ✨ ...",
+            "domain": "www.instagram.com"
+          },
+          {
+            "title": "AI 전쟁 2.0 - HANBIT | 플립 PDF 온라인 - FlipHTML5",
+            "url": "https://fliphtml5.com/hkuy/opgz/AI_전쟁_2.0/",
+            "snippet": "Jun 24, 2025 · 우리는 온라인 공간을 넘어서 스마트폰·로봇·자율주행차·드론 등 물리적 세계의 기기들과 통합되는 온디바이스 AI가 만들어낼",
+            "domain": "fliphtml5.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Physical AI robotics trends 2024 VLA models on-device AI"
+    },
+    "elapsed_seconds": 2.814,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Physical AI robotics trends 2024 VLA models on-device AI",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Physical AI and humanoid robots | Deloitte Insights",
+            "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/physical-ai-humanoid-robots.html",
+            "snippet": "Onboard capability allows physical AI systems to run LLMs and VLA models, process high-speed sensor data, and make split-second, safety-critical decisions without cloud dependency—essential for autonomous vehicles, industrial robotics, and remote surgery.3It can also transform robots from isolated machines into autonomous systems that can ...",
+            "domain": "www.deloitte.com"
+          },
+          {
+            "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+            "url": "https://vla-survey.github.io/",
+            "snippet": "comprehensive survey of Vision-Language-Action (VLA) models for robotics. Explore the latest research on VLA architectures, learning paradigms, and real-world applications in robotic systems.",
+            "domain": "vla-survey.github.io"
+          },
+          {
+            "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review ...",
+            "url": "https://arxiv.org/abs/2510.07077",
+            "snippet": "Amid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained significant attention. By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects ...",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "Vision‑Language‑Action Models for Robotics | UDHY",
+            "url": "https://www.udhy.com/vision-language-action-models-physical-ai-guide/",
+            "snippet": "Master Vision-Language-Action (VLA) models for Physical AI. Learn how to deploy OpenVLA and RT-X on edge hardware for zero-shot robotic manipulation.",
+            "domain": "www.udhy.com"
+          },
+          {
+            "title": "Towards Accessible Physical AI: LoRA-Based Fine-Tuning of VLA Models ...",
+            "url": "https://arxiv.org/abs/2512.11921",
+            "snippet": "Vision-Language-Action (VLA) models have demonstrated remarkable capabilities in robotic manipulation,enabling robots to execute natural language commands through end-to-end learning from visual observations.However, deploying large-scale VLA models on affordable robotic platforms remains challenging due to computational constraints and the need for efficient adaptation to new robot ...",
+            "domain": "arxiv.org"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Tesla Optimus Figure AI Boston Dynamics Agility Robotics comparison 2024"
+    },
+    "elapsed_seconds": 3.31,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Tesla Optimus Figure AI Boston Dynamics Agility Robotics comparison 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Tesla Optimus vs Agility Robotics Digit: Full 2026 Comparison",
+            "url": "https://blog.robozaps.com/b/tesla-optimus-vs-agility-robotics-digit",
+            "snippet": "Mar 10, 2026 · Digit wins on commercial traction today; Optimus on AI ambition and scale potential. Tesla Optimus wins on raw capability (AI, dexterity, speed ...",
+            "domain": "blog.robozaps.com"
+          },
+          {
+            "title": "Tesla Optimus vs Figure AI vs Hyundai Atlas: Full Comparison ...",
+            "url": "https://optimusk.blog/blog/tesla-optimus-vs-figure-ai-atlas-2026/",
+            "snippet": "May 9, 2026 · Tesla Optimus Gen 3 vs Figure 03 vs Hyundai Atlas Electric — specs, capabilities, production status, and funding compared.",
+            "domain": "optimusk.blog"
+          },
+          {
+            "title": "Humanoid robots in comparison Tesla Optimus Boston ...",
+            "url": "https://xpert.digital/en/robot-comparison/",
+            "snippet": "Dec 13, 2024 · Discover the future of humanoid robots! Comparison: Tesla Optimus, Boston Dynamics Atlas, Agility Robotics Digit & Unitree G1 ...",
+            "domain": "xpert.digital"
+          },
+          {
+            "title": "Specialized robot in competition with Tesla to bring AI robots to ...",
+            "url": "https://www.facebook.com/electrekco/posts/specialized-robot-in-competition-with-tesla-to-bring-ai-robots-to-market-ai-huma/1486229713542755/",
+            "snippet": "Jul 28, 2026 · Top companies like Tesla, Boston Dynamics, Sanctuary AI, and others are racing to create humanoid robots that can walk, lift, and work alongside ...",
+            "domain": "www.facebook.com"
+          },
+          {
+            "title": "Tesla's Optimus isn't the only humanoid robot in development ...",
+            "url": "https://www.facebook.com/quartznews/posts/teslas-optimus-isnt-the-only-humanoid-robot-in-development-here-are-7-more-robot/1203061898356293/",
+            "snippet": "Nov 17, 2025 · Both robots are roughly the same size: Optimus is five foot eight inches tall and 161 pounds, while Figure 2.0 is five foot six inches tall and ...",
+            "domain": "www.facebook.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "국내 자율작업 로봇 기업 기술 현황 레인보우로보틱스 두산로보틱스"
+    },
+    "elapsed_seconds": 1.226,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "국내 자율작업 로봇 기업 기술 현황 레인보우로보틱스 두산로보틱스",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "레인보우로보틱스 - 로봇 플랫폼 전문기업",
+            "url": "https://www.rainbow-robotics.com/?_l=ko",
+            "snippet": "끊임없는 R&D를 통해 독자적인 기술을 확보하고 우수한 로봇을 합리적인 가격으로 제공함으로써 로봇 상용화를 위해 노력하고 있습니다. VIEW MORE ... 보도자료 2026-04-02 09:30:30 플라잎-레인보우로보틱스, 제조 특화 AI 양팔로봇 V2 공동 개발 추진",
+            "domain": "www.rainbow-robotics.com"
+          },
+          {
+            "title": "레인보우로보틱스(휴보) - 기업정보 | 투자, 매출, 주가 - THE VC",
+            "url": "https://thevc.kr/rainbowrobotics",
+            "snippet": "2 weeks ago - 삼성전자 자회사 레인보우로보틱스의 연구개발(R&D) 인력은 1년 새 크게 늘어난 것으로 나타났다. 삼성전자가 휴머노이드 로봇 양산을 정조준하며 로드맵에 속도를 내는 것이다.",
+            "domain": "thevc.kr"
+          },
+          {
+            "title": "레인보우로보틱스 - 나무위키",
+            "url": "https://namu.wiki/w/레인보우로보틱스",
+            "snippet": "July 21, 2026 - '레인보우아스트로' 브랜드를 통해 천체관측용 적도의를 판매한다. 기존 적도의는 웜기어를 쓰는데, 레인보우로보틱스는 로봇 기술을 바탕으로 산업 현장에나 쓰던 하모닉 드라이브를 도입하여 가벼운 무게로 강한 허용중량을 구현한 것이 특징.",
+            "domain": "namu.wiki"
+          },
+          {
+            "title": "[브랜드평판] 레인보우로보틱스, 로봇 상장기업 3월 1위···LIG넥스원·두산 상위권 < 에너지톱브랜드 < 에너지 < 기사본문 - 이넷뉴스",
+            "url": "https://www.enetnews.co.kr/news/articleView.html?idxno=48232",
+            "snippet": "March 30, 2026 - 2026년 3월 로봇 상장기업 브랜드평판이 공개됐다.로봇 상장기업 브랜드평판 2026년 3월 빅데이터 분석결과, 1위 레인보우로보틱스 2위 LIG넥스원 3위 두산 순으로 분석됐다.한국기업평판연구소는 로봇 상장기업 56개 브랜드에 ...",
+            "domain": "www.enetnews.co.kr"
+          },
+          {
+            "title": "로봇 상장기업 브랜드평판 2026년 1월 빅데이터 분석결과... 1위 두산, 2위 레인보우로보틱스, 3위 LIG넥스원 < 경제 < 문화·엔터 < 기사본문 - E동아",
+            "url": "https://edu.donga.com/news/articleView.html?idxno=102584",
+            "snippet": "January 29, 2026 - 로봇 상장기업 브랜드평판 2026년 1월 빅데이터 분석결과... 1위 두산, 2위 레인보우로보틱스, 3위 LIG넥스원",
+            "domain": "edu.donga.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "robotics commercialization bottlenecks testing verification requirements 2024"
+    },
+    "elapsed_seconds": 1.348,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "robotics commercialization bottlenecks testing verification requirements 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Robotics | NIST",
+            "url": "https://www.nist.gov/el/robotics",
+            "snippet": "April 23, 2026 - Measurement science establishes a common language for expressing performance requirements and provides means of verifying that systems meet those requirements. Tangible performance targets also direct innovations toward addressing existing capability gaps in robotic systems. NIST will deliver performance metrics, information models, data sets, test methods, and protocols to assess and assure the key attributes of robotic systems necessary to enable enterprises of all sizes to achieve flexible and dynamic production.",
+            "domain": "www.nist.gov"
+          },
+          {
+            "title": "The Missing Layer in Robotics Adoption: Why Emerging Markets Need Commercialization Labs | RoboticsTomorrow",
+            "url": "https://www.roboticstomorrow.com/story/2026/05/the-missing-layer-in-robotics-adoption-why-emerging-markets-need-commercialization-labs/26609/",
+            "snippet": "For robotics manufacturers, growth in emerging markets will depend as much on local integration, ROI validation, training, financing, and service infrastructure as on hardware capability.",
+            "domain": "www.roboticstomorrow.com"
+          },
+          {
+            "title": "Robotics and autonomous systems (RP 2024) | Interoperable Europe Portal",
+            "url": "https://interoperable-europe.ec.europa.eu/collection/rolling-plan-ict-standardisation/robotics-and-autonomous-systems-rp-2024",
+            "snippet": "ITU-T SG11 is developing draft Recommendation Q.TSN “Testing of robotics based on a model network” which defines architecture and characteristics of a model network for testing a remote robotics control service over the network.",
+            "domain": "interoperable-europe.ec.europa.eu"
+          },
+          {
+            "title": "Testing, Validation, and Verification of Robotic and Autonomous Systems: A Systematic Review | ACM Transactions on Software Engineering and Methodology",
+            "url": "https://dl.acm.org/doi/10.1145/3542945",
+            "snippet": "We perform a systematic literature review on testing, validation, and verification of robotic and autonomous systems (RAS). The scope of this review covers peer-reviewed research papers proposing, ...",
+            "domain": "dl.acm.org"
+          },
+          {
+            "title": "Robotics & AI in Regression Testing: Exploring Testing Challenges in 2024 - SGBI",
+            "url": "https://sgbi.us/robotics-ai-in-regression-testing-exploring-testing-challenges-in-2024/",
+            "snippet": "December 27, 2024 - AI and robotics can effectively identify areas of an application impacted by recent code changes that are under-tested or not tested at all, ensuring thorough and reliable software testing.",
+            "domain": "sgbi.us"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "VLA (Vision-Language-Action) models architecture, how they unify vision, language, and action, and their role in Physical AI.",
+      "url": "https://vla-survey.github.io/"
+    },
+    "elapsed_seconds": 0.295,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://vla-survey.github.io/",
+        "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications",
+        "domain": "vla-survey.github.io",
+        "focus": "VLA (Vision-Language-Action) models architecture, how they unify vision, language, and action, and their role in Physical AI.",
+        "content": "Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications\nVision-Language-Action Models Survey\nVision-Language-Action Models for Robotics:\nA Review Towards Real-World Applications\n(b)\nIngmar Posner\n(b)*\n(c)\nThe University of Texas at Austin\n*\nOverview\nFigure: Overview of Vision-Language-Action Models Survey\nAmid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained significant attention.\nBy unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects, embodiments, and environments.\nThis generalisation capability is expected to enable robots to solve novel downstream tasks with minimal or no additional task-specific data, facilitating more flexible and scalable real-world deployment.\nTo better understand the foundations and progress towards this goal, this paper provides a systematic review of VLAs, covering their strategy and architectural transition, architectures and building blocks, modality-specific processing techniques, and learning paradigms.\nIn addition, to support the deployment of VLAs in real-world robotic applications, we also review commonly used robot platforms, data collection strategies, publicly available datasets, data augmentation methods, and evaluation benchmarks.\nThroughout this comprehensive survey, this paper aims to offer practical guidance for the robotics community in applying VLAs to real-world robotic systems.\nFigure: Modality, Architecture and Learning Paradigm of VLA\nFigure: Robot, Data Collection, Dataset and Evaluation for VLA\nInteractive Survey Table\nExplore our comprehensive database of VLA models. Use the filters below to search by category,\ntask type, modality, or robot platform. Click on column headers to sort.\nTask\nDomain\nRobot\nTraining\nEvaluation\nLoading CSV data...\nShowing\n0\n@article{kawaharazuka2025vla-survey,\nauthor={Kento Kawaharazuka and Jihoon Oh and Jun Yamada and Ingmar Posner and Yuke Zhu},\njournal={IEEE Access},\ntitle={Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications},\nvolume={13},",
+        "content_chars": 2268,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "Onboard capability of physical AI, running LLMs/VLA models on-device, and the importance for safety-critical decisions.",
+      "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/physical-ai-humanoid-robots.html"
+    },
+    "elapsed_seconds": 0.426,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/physical-ai-humanoid-robots.html",
+        "title": "Physical AI and humanoid robots | Deloitte Insights",
+        "domain": "www.deloitte.com",
+        "focus": "Onboard capability of physical AI, running LLMs/VLA models on-device, and the importance for safety-critical decisions.",
+        "content": "Deloitte Insights Newsletters\nLooking to stay on top of the latest news and trends? With MyDeloitte you'll never miss out on the information you need to lead. Simply link your email or social profile and select the newsletters and alerts that matter most to you.\nSPOTLIGHT\nDeloitte Insights Newsletters\nLooking to stay on top of the latest news and trends? With MyDeloitte you'll never miss out on the information you need to lead. Simply link your email or social profile and select the newsletters and alerts that matter most to you.\nAI goes physical: Navigating the convergence of AI and robotics\nPowered by artificial intelligence, traditional robots are becoming adaptive machines that can operate in and learn from complex environments, unlocking safety and precision gains\nPrint\nAI goes physical: Navigating the convergence of AI and robotics\nMore\nPhysical AI refers to artificial intelligence systems that enable machines to autonomously perceive, understand, reason about, and interact with the physical world in real time. These capabilities show up in robots, vehicles, simulations, and sensor systems. Unlike traditional robots that follow preprogrammed instructions, physical AI systems perceive their environment, learn from experience, and adapt their behavior based on real-time data. Automation alone doesn’t make them revolutionary; rather, it’s their capacity to bridge the gap between digital intelligence and the physical world.\nIn the nascent but rapidly evolving category of robots, physical AI turns robots into adaptive, learning machines that can operate in complex, unpredictable environments. The combination of AI, mobility, and physical agency enables robots to move through environments, perform tasks, and interact with the world in ways that fundamentally differ from enhanced appliances. Embodied in robotic systems, physical AI is quite literally on the move.\nYour Top 10\nFeatured Article\nToday, AI-enabled drones, autonomous vehicles, and other robots are becoming increasingly common, particularly in smart warehousing and supply chain operations. The industry, regulatory bodies, and potential adopters are working to break down barriers that hinder the deployment of solutions at scale. As organizations overcome these challenges, AI-enabled robots will likely transition from niche to mainstream adoption. Eventually, we’ll witness physical AI’s next evolutionary leap: the arrival of humanoid robots that can navigate human spaces with unprecedented capability.\nFrom prototype to production\nUnlike traditional AI systems that operate solely in digital environments, physical AI systems integrate sensory input, spatial understanding, and decision-making capabilities, enabling machines to adapt and respond to three-dimensional environments and physical dynamics. They rely on a blend of neural graphics, synthetic data generation, physics-based simulation, and advanced AI reasoning. Training approaches such as reinforcement learning and imitation learning enable these systems to master principles like gravity and friction in virtual environments before being deployed in the real world.\nRobots are only one embodiment of physical AI. It also encompasses smart spaces that use fixed cameras and computer vision to optimize operations in factories and warehouses, digital twin simulations that enable virtual testing and optimization of physical systems, and sensor-based AI systems that help human teams manage complex physical environments without requiring robotic manipulation.\nWhereas traditional robots follow set instructions, physical AI systems perceive their environment, learn from experience, and adapt their behavior based on real-time data and changing conditions. They manipulate objects, navigate unpredictable spaces, and make split-second decisions with real-world implications. Robot dogs process acoustic signatures to detect equipment failures before they become catastrophic. Factory robots recalculate their routes when production schedules shift mid-operation. Autonomous vehicles use sensor data to spot cyclists sooner than human drivers. Delivery drones adjust their flight paths as wind conditions change. What makes these systems revolutionary isn’t just task automation but their capacity to perceive, reason, and adapt, which enables them to bridge the gap between digital intelligence and the physical world.\n1\nTech advancements drive physical AI–robotics integration\nPhysical AI is ready for mainstream deployment because of the convergence of several technologies that impact how robots perceive their environment, process information, and execute actions in real time.\nVision-language-action models.\nPhysical AI adopts training methods from large language models (LLMs) while incorporating data that describes the physical world. Multimodal vision-language-action (VLA) models integrate computer vision, natural language processing, and motor control.\n2\nOnboard computing and processing\n. Neural processing units—specialized processors optimized for edge computing—enable low-latency, energy-efficient, real-time AI processing directly on robots. Onboard capability allows physical AI systems to run LLMs and VLA models, process high-speed sensor data, and make split-second, safety-critical decisions without cloud dependency—essential for autonomous vehicles, industrial robotics, and remote surgery.\n3\n5\nA blend of these techniques, starting with simulation-based reinforcement training and then fine-tuning with targeted physical demonstrations, can create continuous learning loops. This helps robots continue to improve by feeding real-world data back into their training policies and simulation spaces.\n6\nAs technology advances, costs have been coming down, and many real-world applications have emerged.\nAdvanced manufacturing infrastructure now supports the production of complex robotics and physical AI systems at enterprise scale. This means that physical AI robots can now be produced with the reliability and quality control of smartphones or cars, making them practical for everyday industrial use.\nComponent commoditization and open-source development are reducing entry costs for physical AI systems. However, because these robots need advanced AI chips and processors, they remain more expensive than traditional industrial robots. For now, this cost gap is likely to persist, even as overall prices gradually decline.\nThese economics are driving the adoption of physical AI and robotics in select use cases. Autonomous vehicles and drones are the most visible robotic form factors (figure 2). Waymo’s robotaxi service has completed over 10 million paid rides, while Aurora Innovation has launched the first commercial self-driving truck service with regular freight deliveries between Dallas and Houston.\n7\nMy research on overtrust focuses on behaviors, not what people say. We’ve conducted studies where people interact with robotic systems that were programmed to make mistakes. When surveyed, participants said they didn’t trust the systems because they had seen them make errors. But when we analyzed their actual behaviors, we saw something different: Their actions showed they did trust the robot.\nWith physical embodiments of AI, this behavioral overtrust becomes dangerous because these robots apply physical forces in the environment. When they do things, the consequences can be irreversible. With today’s AI, you still need human actuation for most tasks, though agentic AI is starting to change that landscape.\nQ:\nData management\n. Organizations must capture and manage massive amounts of sensor data, 3D environmental models, and real-time information. High-fidelity digital twins of physical assets are essential for effective training and deployment, requiring extensive data on physical characteristics, object properties, and interactions. Organizations will also need to integrate multimodal data from disparate sources, ensure data security, and manage data infrastructure costs.\nHum",
+        "content_chars": 8000,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "ISO safety standards for AI-driven autonomous robots ISO 10218 ISO/TS 15066 AI update"
+    },
+    "elapsed_seconds": 1.759,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "ISO safety standards for AI-driven autonomous robots ISO 10218 ISO/TS 15066 AI update",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Robot Safety Standards Guide 2026: ISO 10218, ISO/TS 15066 & CE ...",
+            "url": "https://www.grabarobot.com/blog/robot-safety-iso-standards-guide-2026/",
+            "snippet": "Industrial robot safety requires ISO 10218-1/2 compliance. Collaborative robots add ISO/TS 15066. Learn what standards apply, what they require, and how to achieve CE marking.",
+            "domain": "www.grabarobot.com"
+          },
+          {
+            "title": "ISO - Robotics",
+            "url": "https://www.iso.org/sectors/engineering/robotics",
+            "snippet": "Standards advance safety, precision, and innovation in robotics, supporting seamless integration and safe human-robot interactions across industries.",
+            "domain": "www.iso.org"
+          },
+          {
+            "title": "Robot Safety Standards: ISO 10218, ISO/TS 15066 and What They Actually ...",
+            "url": "https://robotops.pro/blog/robot-safety-standards-iso-10218",
+            "snippet": "A practical breakdown of the newly revised ISO 10218 industrial robot safety standard, what happened to ISO/TS 15066, and what integrators and operators actually need to do differently.",
+            "domain": "robotops.pro"
+          },
+          {
+            "title": "Robotics Safety, Standards & Compliance 2026: ISO 10218, ISO/TS 15066 ...",
+            "url": "https://smert.ai/blog/robotics-safety-standards-compliance-deep-dive-2026",
+            "snippet": "Two-part standard: Part 1 for the robot manufacturer, Part 2 for the integrator building the cell. The 2025 revision brought collaborative-operation content that was previously separate (in TS 15066) into the main standard's scope, and clarified requirements for AI-controlled robots.",
+            "domain": "smert.ai"
+          },
+          {
+            "title": "ISO 10218-1:2025 (en), Robotics — Safety requirements — Part 1 ...",
+            "url": "https://www.iso.org/obp/ui/en/#!iso:std:73933:en",
+            "snippet": "Where appropriate, ISO/TS 15066:2016 on the safety of collaborative robot applications was added to the ISO 10218 series. Because human-robot collaboration relates to the application and not to the robot alone, most of the requirements of ISO/TS 15066 have been incorporated into ISO 10218-2:2025.",
+            "domain": "www.iso.org"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "robotics sim-to-real gap verification methods 2024"
+    },
+    "elapsed_seconds": 5.112,
+    "result": {
+      "ok": false,
+      "error": "DDGSException: No results found."
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "국내 로봇 공용 시험 인프라 구축 현황 및 필요성"
+    },
+    "elapsed_seconds": 2.433,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "국내 로봇 공용 시험 인프라 구축 현황 및 필요성",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "학회장 인사 - 한국현미경학회",
+            "url": "https://microscopy.or.kr/data/2025/2025_Abstract_Book.pdf",
+            "snippet": "Nov 20, 2025 ... 수요자 친화적 장비 공동 활용 시스템 구축, 국가 디지털 바이오 인프라 확충 및 개선을 위한 정부 사업 - 이용료 지원 첨단 바이오 대형. 연구장비 및 ...",
+            "domain": "microscopy.or.kr"
+          },
+          {
+            "title": "W-BUSAN (@w_busan_com) • Instagram photos and videos",
+            "url": "https://www.instagram.com/w_busan_com/",
+            "snippet": "로봇 도입은 인력 부족 문제를 해결하고 인간 노동자를 위험한 환경 ... ➡️ 해사전문법원 및 금융 인프라 2028년 개청 예정인 해사전문법원을 통해 국제 ...",
+            "domain": "www.instagram.com"
+          },
+          {
+            "title": "(@ramc2.euni) • Instagram photos and videos",
+            "url": "https://www.instagram.com/ramc2.euni/",
+            "snippet": "해당 지역은 대중교통 및 다양한 인프라가 잘 구축되어 있어, 높은 수요가 예상됩니다. ... 로봇 기술을 도입합니다. 이 �새로운 시도는 단순히 주거 공간을 제공하는 ...",
+            "domain": "www.instagram.com"
+          },
+          {
+            "title": "2021서울생활사조사연구 보고서 - FlipHTML5",
+            "url": "https://fliphtml5.com/gyjfg/ldxv/2021서울생활사조사연구_보고서_&lt;서울시민의_주생활&gt;/",
+            "snippet": "도시 인프라를 건설하는 토지개발사업을 말한다. 이때 개발 전과 후의 토지 가격 차이가 상당하므로, 기존 토지 토지구획정리사업은, 일정한 지역의 토지를 전면 수용 ...",
+            "domain": "fliphtml5.com"
+          },
+          {
+            "title": "부천시사_2023_02 - Designintro | 플립 PDF 온라인 - FlipHTML5",
+            "url": "https://fliphtml5.com/gyjfg/jdtk/부천시사_2023_02/",
+            "snippet": "으로 관내 로봇산업 인프라 조성 및 기업 경쟁력 제고를. 위한 지원사업을 ... 주차로봇 개발사업의 2단계로 도심 및 상업지구. 내 주차 문제 해결을 위하여 동일 ...",
+            "domain": "fliphtml5.com"
+          }
+        ]
+      }
+    }
+  }
+]

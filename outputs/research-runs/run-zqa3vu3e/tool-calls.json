@@ -1,0 +1,378 @@
+[
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "자율작업형 피지컬 AI 로봇 기술 동향 2024 2025 Embodied AI"
+    },
+    "elapsed_seconds": 4.688,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "자율작업형 피지컬 AI 로봇 기술 동향 2024 2025 Embodied AI",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "아마존·테슬라가 주목한 '피지컬 Ai'… Nia가 분석한 글로벌 동향 및 한국 대응 전략",
+            "url": "https://aimatters.co.kr/news-report/ai-report/33209/",
+            "snippet": "디지털 세계를 넘어 물리적 현실과 직접 상호작용하는 피지컬 AI(Physical AI)가 차세대 산업 혁신의 핵심 기술로 부상하고 있다. 한국지능정보사회진흥원(NIA)이 발표한 리포트에 따르면, 피지컬 AI는 센서를 통한 현실 데이터 인지, AI 모델의 판단, 물리적 실행을 거쳐",
+            "domain": "aimatters.co.kr"
+          },
+          {
+            "title": "피지컬 Ai 현주소와 기술 동향: 로봇 혁신과 산업별 적용 사례 총정리1",
+            "url": "https://it.kor-goodinfo.com/physical-ai-technology-trends-and-robotics/",
+            "snippet": "2026년 현재, 글로벌 테크 업계와 제조 현장에서는 생성형 AI 다음의 거대한 패러다임으로 피지컬 AI를 지목하고 있습니다. 글로벌 투자 시장의 거두인 손정의 소프트뱅크 회장은 \"피지컬 AI와 로봇 산업이 1조 달러 규모의 차세대 산업이 될 것\"이라고 강조하며 이 시장의 폭발적인 잠재력을 ...",
+            "domain": "it.kor-goodinfo.com"
+          },
+          {
+            "title": "로봇 자율동작을 위한 피지컬 AI 기반 체화지능 연구동향 | DBpia",
+            "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12546244",
+            "snippet": "로봇 자율동작을 위한 피지컬 AI 기반 체화지능 연구동향 Trends in Physical AI-Driven Embodied Intelligence for Autonomous Robotics 저자정보 권우경 (한국전자통신연구원) 저널정보 대한전기학회 전기의세계 전기의 세계 제75권 제1호",
+            "domain": "www.dbpia.co.kr"
+          },
+          {
+            "title": "피지컬 Ai 기술: 휴머노이드·자율주행·기업·반도체 - Kinyu",
+            "url": "https://kinyu.blog/physical-ai-technology-future/",
+            "snippet": "피지컬 AI 는 디지털 세계를 넘어 물리적 세계와 직접 상호작용하는 기술입니다. 이 글은 피지컬 AI의 정의, 핵심 원리 (인식-판단-행동), 성장을 이끄는 AI 반도체, 그리고 휴머노이드 로봇 과 자율주행 같은 주요 적용 분야를 심도 있게 다룹니다.",
+            "domain": "kinyu.blog"
+          },
+          {
+            "title": "[Monthly Focus] 대한민국, 피지컬 AI 주도권 경쟁 나서다 - 월간로봇기술",
+            "url": "https://robotzine.co.kr/detail/275044",
+            "snippet": "피지컬 AI의 중요성은 나날이 높아지고 있으며, 우리나라 정부 또한 이를 인지하고 피지컬 AI 시대 선점을 위한 전략적 R&D 투자와 실증 기반 구축에 속도를 내고 있다. 2024년부터 시작된 산업기술 R&D, 로봇 AI 융합 실증, 디지털 인재 양성 사업은 2025년에 들어 더욱 ...",
+            "domain": "robotzine.co.kr"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Physical AI robot mobile platform autonomous driving task execution on-device AI trends 2024"
+    },
+    "elapsed_seconds": 2.401,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Physical AI robot mobile platform autonomous driving task execution on-device AI trends 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "What Is Physical AI? Inside the Global Race - theroboticlife.com",
+            "url": "https://theroboticlife.com/the-rise-of-physical-ai-inside-the-global-race-to-build-autonomous-robots/",
+            "snippet": "May 27, 2026 · Physical AI moves intelligence from screens into robots, vehicles, and factories. Here is what it is, who is building it, and who leads the race.",
+            "domain": "theroboticlife.com"
+          },
+          {
+            "title": "Physical AI for Robotics & Drones | Edge AI for Physical Devices",
+            "url": "https://hailo.ai/applications/physical-ai/robotics/",
+            "snippet": "Many physical AI applications operate in low-light, nighttime, or otherwise visually degraded environments, outdoor service robots, agricultural systems, security and inspection robots, and mobile platforms operating around the clock.",
+            "domain": "hailo.ai"
+          },
+          {
+            "title": "Physical AI: The compute foundation for autonomous machines",
+            "url": "https://www.arm.com/markets/physical-ai",
+            "snippet": "Arm provides a safe, efficient, and scalable compute foundation for physical AI. Discover how Arm powers the next generation of autonomous vehicles, humanoid robots, and intelligent drones to sense, think, and act in the real world.",
+            "domain": "www.arm.com"
+          },
+          {
+            "title": "AI goes physical: Navigating the convergence of AI and robotics",
+            "url": "https://www.deloitte.com/ce/en/industries/technology/analysis/ai-goes-physical--navigating-the-convergence-of-ai-and-robotics.html",
+            "snippet": "Deloitte Tech Trends highlights how physical Artificial Intelligence (AI) is turning traditional robots into systems that can learn, adjust, and operate safely in real-world conditions. Instead of relying only on fixed, preprogrammed steps, these machines respond to what is happening around them.",
+            "domain": "www.deloitte.com"
+          },
+          {
+            "title": "Build Next-Gen Physical AI with Edge‑First LLMs for ...",
+            "url": "https://developer.nvidia.com/blog/build-next-gen-physical-ai-with-edge‑first-llms-for-autonomous-vehicles-and-robotics/",
+            "snippet": "Mar 12, 2026 · Drawing on her background in autonomous driving and automotive OEMs, she is inspired to build production-grade inference systems that deliver best-in-class performance for deep learning workloads across data center, edge, and physical AI applications—enabling systems that perceive, reason, and act in the real world.",
+            "domain": "developer.nvidia.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Tesla Optimus Figure AI NVIDIA Project GR00T Boston Dynamics Atlas comparison 2024"
+    },
+    "elapsed_seconds": 4.208,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Tesla Optimus Figure AI NVIDIA Project GR00T Boston Dynamics Atlas comparison 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Tesla Optimus, Figure 02 & NVIDIA Isaac Status - 超智諮詢",
+            "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+            "snippet": "Nov 29, 2025 · Figure AI was the most capital-pursued humanoid robot startup during 2024 ... Boston Dynamics Electric Atlas: The Benchmark for Motion Control.",
+            "domain": "www.meta-intelligence.tech"
+          },
+          {
+            "title": "Nvidia is breaking into the humanoid robot space with Project ...",
+            "url": "https://www.facebook.com/cnet/posts/nvidia-is-breaking-into-the-humanoid-robot-space-with-project-gr00t-which-aims-t/806523914670803/",
+            "snippet": "Apr 15, 2024 · The Optimus vs Figure 2.0 case By ED Research, August 30, 2024 Millions of humanoid robots, those that look and move like humans, could become ...",
+            "domain": "www.facebook.com"
+          },
+          {
+            "title": "Nvidia is breaking into the humanoid robot space with Project ...",
+            "url": "https://www.facebook.com/cnet/videos/nvidia-groot-vs-tesla-optimus-competing-paths-to-humanoid-robots-/8173145476033894/",
+            "snippet": "Mar 22, 2024 · Nvidia is breaking into the humanoid robot space with Project GR00T, which aims to provide a platform for various companies.",
+            "domain": "www.facebook.com"
+          },
+          {
+            "title": "NVIDIA launches Project GR00T, a framework for humanoid ...",
+            "url": "https://www.reddit.com/r/Futurology/comments/1bincqh/nvidia_launches_project_gr00t_a_framework_for/",
+            "snippet": "Mar 19, 2024 · NVIDIA, along with many other big tech companies are investors in Figure AI's humanoid robot, which seems to have taken the lead from Boston ...",
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "NVIDIA GR00T N2 and Cosmos 3 bring physical AI to robots ...",
+            "url": "https://udit.co/blog/nvidia-groot-n2-physical-ai-robots-cosmos-disney",
+            "snippet": "Mar 17, 2026 · NVIDIA GR00T N2 and Cosmos 3 bring physical AI to robots from Boston Dynamics to Disney ... Competitive landscape: Tesla Optimus and Figure AI.",
+            "domain": "udit.co"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "로봇 상용화 병목 현상 및 시험 검증 요구사항 2024"
+    },
+    "elapsed_seconds": 3.626,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "로봇 상용화 병목 현상 및 시험 검증 요구사항 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "KS B ISO 10218-1 로봇 및 로봇장치－산업용 로봇의 안전에 관한 요구사항－제1부：로봇",
+            "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010135666",
+            "snippet": "KS B ISO 10218-1 로봇 및 로봇장치－산업용 로봇의 안전에 관한 요구사항－제1부：로봇",
+            "domain": "www.kssn.net"
+          },
+          {
+            "title": "2024년 로봇기구개발기사 실기 안내 및 출제기준 - YOGYUI",
+            "url": "https://yogyui.tistory.com/entry/2024년-로봇기구개발기사-실기-안내-및-출제기준",
+            "snippet": "August 11, 2024 - 로봇기구개발기사 출제기준(2022.1.1.~2024.12.31.).hwp ... [직무 내용] 로봇수요자의 요구분석 결과에 따라 로봇 기구, Tool, 주변장치 등을 설계 및 제작하고 시험 평가 결과를 반영하여 로봇 기구를 개발하는 직무이다. [수행 준거] 1. 로봇수요자의 요구사항을 파악하고, 이 결과를 바탕으로 로봇에 요구되는 성능 및 요구사항을 분석하고 지표화 할 수 있다.",
+            "domain": "yogyui.tistory.com"
+          },
+          {
+            "title": "[자격증] 2024년 로봇기구개발기사(산업기사) 시험일정, 합격률, 응시자격",
+            "url": "https://zeropass.tistory.com/entry/자격증-2024년-로봇기구개발기사산업기사-시험일정-합격률-응시자격",
+            "snippet": "January 13, 2024 - 1. 로봇기구개발기사 시험 과목 ① 시 행 처 : 한국산업인력공단 ② 관련학과 : 로봇공학과, 메카트로닉스공학과, 기계공학과 등 관련학과 ③ 시험과목 - 필기 : 1. 로봇기구사양설계, 2. 로봇기구설계, 3. 로봇기구해석, 4. 로봇통합 및 시험 - 실기 : 로봇기구개발 실무 ④ 검정방법 - 필기 : 객관식 4지 택일형 과목당 20문항(과목당 30분) - 실기 : 복합형(필답형(2시간, 60점)+작업형(4시간, 40점)) ⑤ 합격기준 - 필기 : 100점을 만점으로 하여 과목당 40점 이상 전과목 평균 60점 이상 - 실기 : 100점을 만점으로 하여 60점 이상 2. 로봇기구개발기사 시험 일정 회차 필기시험 응시자격 서류제출 응시자격 기준일 실기시험 원서접수 시험시행 합격자발표 원서접수 시험시행 합격..",
+            "domain": "zeropass.tistory.com"
+          },
+          {
+            "title": "K-로봇경제 실현을 위한 제4차 지능형로봇 기본계획 : 2024~2028",
+            "url": "https://nsp.nanet.go.kr/plan/subject/detail.do?nationalPlanControlNo=PLAN0000043368",
+            "snippet": "#로봇산업 #지능형로봇 #산업용로봇 #첨단로봇 #로봇경제 · 국가로봇테스트필드 구축 본격 실행한다 2024-03-21",
+            "domain": "nsp.nanet.go.kr"
+          },
+          {
+            "title": "로봇 분야 표준화 동향 및 한국의 국제표준화 전략(2024-2028 로드맵)",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003212865",
+            "snippet": "This paper analyzes key trends in robotics standardization by examining the activities of both de jure (ISO, IEC) and de facto (IEEE, OMG) standardization organizations, as well as the role of the Korea Robotics Standard Forum (KOROS) and the current status of Korean Industrial Standards (KS). Based on these insights, the study reviews Korea’s “Converging Robot Technology International Standardization Strategy (2024–2028)” and presents strategic directions for strengthening Korea’s leadership in global standardization.",
+            "domain": "www.kci.go.kr"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "삼성전자 LG전자 현대자동차 피지컬 AI 로봇 제품 2024 2025"
+    },
+    "elapsed_seconds": 2.402,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "삼성전자 LG전자 현대자동차 피지컬 AI 로봇 제품 2024 2025",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "삼성·현대차·LG, 로봇에 사활 거는 이유…'피지컬 AI'가 반도체 뒤를 이을까 - 테크42",
+            "url": "https://www.tech42.co.kr/삼성·현대차·lg-로봇에-사활-거는-이유피지컬-ai가/",
+            "snippet": "3 weeks ago - 엔비디아의 로봇 파운데이션 모델 '아이작 그루트(Isaac GR00T)'와 온보드 컴퓨팅 플랫폼 '젯슨 토르(Jetson Thor)', 안전 시스템 '헤일로스(Halos)'가 탑재된다. 하드웨어는 LG전자 액추에이터, LG이노텍 센서, LG에너지솔루션 배터리 등 계열사 역량을 모아 자체 제작하고, 학습 데이터는 LG CNS의 로봇 플랫폼 '피지컬웍스'로 수집한다.",
+            "domain": "www.tech42.co.kr"
+          },
+          {
+            "title": "[컨콜노트-전체공개] LG전자, 가전을 넘어 AI와 로봇까지 준비 중",
+            "url": "https://contents.premium.naver.com/ystreet/irnote/contents/251103105636564xz",
+            "snippet": "November 3, 2025 - 이를 통해 학습 데이터 생성, 강화 학습 기반 로봇 모델 연구 협력을 지속 강화할 계획임 · 당사의 가전, 전장, 상업 분야의 축적된 데이터가 피지컬 AI 고도화를 위한 학습 데이터로 활용 가능할 것으로 기대함 · 여기에 AI 데이터센터 냉각 솔루션 분야와의 시너지 효과 또한 기대되며 CDU 공급을 위해 NVIDIA 인증을 추진 중임 ... 공개컨콜기업 : LG전자(066570) 공개컨콜일자 : 2025년 7월 하순 ※ 이번 컨퍼런스콜은 해당 기업에서 누구나 들을 수 있게 진행하여 의 본 컨콜노트도 전체공개-무료콘텐츠로 오픈해놓았습니다.",
+            "domain": "contents.premium.naver.com"
+          },
+          {
+            "title": "AI 다음은 '피지컬 AI'…신성장 동력으로 '로봇' 준비하는 삼성·LG",
+            "url": "https://www.asiatime.co.kr/article/20250307500135",
+            "snippet": "신체 노동 대체 가능한 '피지컬 AI', 관련 기업 적극 M&A 삼성전자, 휴머노이드 연구 박차⋯올 상반기 '볼리' 출시 LG전자, 인천공항 클로이 등 상업∙산업∙가정용 폭넓게 활용 [아시아...",
+            "domain": "www.asiatime.co.kr"
+          },
+          {
+            "title": "삼성전자 vs LG전자 신규 전쟁터 ‘피지컬 AI’…각각 현대차·엔비디아와 맞손 < 산업일반 < 산업 < 기사본문 - 뉴스퀘스트",
+            "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=263686",
+            "snippet": "March 25, 2026 - 그러면서 “이는 양사의 숨은 가치(hidden value)를 재평가하는 핵심 트리거로 작용할 전망”이라며 “보스턴다이내믹스의 4족 로봇 스팟(Spot)에 적용된 로봇 파운데이션 모델은 향후 삼성전자 휴머노이드 로봇에도 적용될 가능성이 높을 것으로 추정된다”고 언급했다. LG전자도 그룹의 AI 연구를 총괄하는 LG AI연구원의 성과를 토대로 피지컬 AI 기술 경쟁 강화에 뛰어들었다.",
+            "domain": "www.newsquest.co.kr"
+          },
+          {
+            "title": "피지컬 AI의 현실화…로봇 움직이는 '로보틱스 반도체' 부상",
+            "url": "https://v.daum.net/v/20251230060123567",
+            "snippet": "December 30, 2025 - 이러한 산업 트렌드의 변화는 CES 전시장에서도 그대로 드러날 전망이다. 삼성전자와 LG전자 등 전통적인 전자 기업은 물론, 현대차·두산까지 AI 로보틱스 기술을 전면에 내세울 예정이다.",
+            "domain": "v.daum.net"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "VLA model robotics on-device AI implementation technical details 2024"
+    },
+    "elapsed_seconds": 4.392,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "VLA model robotics on-device AI implementation technical details 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Vision–language–action model - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Vision–language–action_model",
+            "snippet": "June 17, 2026 - Compared to its predecessor RT-1, which was trained only on robotic data, RT-2 exhibits stronger generalization for new tasks, being also able to perform multi-step reasoning using chain-of-thought. OpenVLA is a 7b-parameter open-source VLA model introduced in June 2024 by researchers at Stanford.",
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "Foundation Models for Robotics: Vision-Language-Action (VLA) | Rohit Bandaru",
+            "url": "https://rohitbandaru.github.io/blog/Foundation-Models-for-Robotics-VLA/",
+            "snippet": "September 28, 2025 - The simplest implementations of VLAs discretize actions so the model can predict them as tokens in its vocabulary. The actions are trained and decoded autoregressively, with discretized tokens added to the model’s vocabulary.",
+            "domain": "rohitbandaru.github.io"
+          },
+          {
+            "title": "VLA Large Model Applications in Automotive and Robotics Research Report, 2025 - ResearchInChina",
+            "url": "https://www.researchinchina.com/Htmls/Report/2025/77089.html",
+            "snippet": "July 29, 2025 - 2.3 Overview of VLA Large Model Implementation Solutions 2.4 VLA Implementation Solution (1): Solution Based on Classic Transformer Structure 2.4 VLA Implementation Solution (2): Solution Based on Pre-trained LLM/VLM 2.4 VLA Implementation Solution (3): Solution Based on Diffusion Model 2.4 VLA Implementation Solution (4): LLM + Diffusion Model Solution 2.4 VLA Implementation Solution (5): Video Generation + Inverse Kinematics Solution 2.4 VLA Implementation Solution (6): Explicit End-to-End VLA Solution 2.4 VLA Implementation Solution (7): Implicit End-to-End VLA Solution 2.4 VLA Implementati",
+            "domain": "www.researchinchina.com"
+          },
+          {
+            "title": "Vision-Language-Action (VLA) Models: Concepts, Progress, Applications and Challenges",
+            "url": "https://arxiv.org/html/2505.04769v2",
+            "snippet": "Specialization and Embodied Reasoning (2024). Second-generation VLAs incorporated domain-specific inductive biases. [269] enhanced few-shot adaptation through retrieval-augmented training, while [280] optimized navigation via 3D scene-graph integration. [48] introduced reversible architectures ...",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+            "url": "https://openvla.github.io/",
+            "snippet": "Our model consists of three key elements: (1) a fused visual encoder, consisting of a SigLIP and a DinoV2 backbone, that maps image inputs to a number of ``image patch embeddings'', (2) a projector that takes the output embeddings of the visual encoder and maps them into the input space of a large language model, and (3) a Llama 2 7B language model backbone that predicts tokenized output actions. These tokens get decoded into continuous output actions that can be directly executed on the robot.",
+            "domain": "openvla.github.io"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "robotics commercialization bottlenecks data scarcity power efficiency latency 2024"
+    },
+    "elapsed_seconds": 1.601,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "robotics commercialization bottlenecks data scarcity power efficiency latency 2024",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "The Download: robotics’ data bottleneck, and our AI afterlives",
+            "url": "https://www.technologyreview.com/2024/04/30/1091920/the-download-robotics-data-bottleneck-and-our-ai-afterlives/",
+            "snippet": "Apr 30, 2024 · It’s far harder to come by than the data used to train the most advanced AI models, and that scarcity is one of the main things currently holding progress in robotics back. As a result,...",
+            "domain": "www.technologyreview.com"
+          },
+          {
+            "title": "Can robotics overcome its data scarcity challenge? — RoboticsBiz",
+            "url": "https://roboticsbiz.com/can-robotics-overcome-its-data-scarcity-challenge/",
+            "snippet": "Feb 29, 2024 · This article explores the underlying factors contributing to the data scarcity problem in robotics and examines potential solutions to address this critical issue.",
+            "domain": "roboticsbiz.com"
+          },
+          {
+            "title": "2024 Robotics Industry Report - Benchmark International",
+            "url": "https://www.benchmarkintl.com/insights/2024-robotics-industry-report/",
+            "snippet": "May 9, 2024 · Explore the latest 2024 Robotics Industry Report revealing market trends, growth opportunities, and key players in the global robotics sector.",
+            "domain": "www.benchmarkintl.com"
+          },
+          {
+            "title": "State of Robotics 2024 | Robotics Center page",
+            "url": "https://www.roboticscenter.ai/state-of-robotics-2024",
+            "snippet": "The definitive 2024 annual report on global robotics — foundation models enter production, humanoid platforms proliferate, data costs fall. Free from Robotics Center of Silicon Valley.",
+            "domain": "www.roboticscenter.ai"
+          },
+          {
+            "title": "Can Robotics Overcome Its Data Scarcity Problem?",
+            "url": "https://meta-quantum.today/?p=2587",
+            "snippet": "Exploring the challenges of data scarcity in robotics and innovative solutions being pursued to overcome this hurdle. Find out more in this insightful paper.",
+            "domain": "meta-quantum.today"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "국가로봇테스트필드 구축 목적 및 주요 시험 항목"
+    },
+    "elapsed_seconds": 1.121,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "국가로봇테스트필드 구축 목적 및 주요 시험 항목",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "BOAZ 보아즈 (@boaz_bigdata) • Instagram photos and videos",
+            "url": "https://www.instagram.com/boaz_bigdata/",
+            "snippet": "서류 결과 발표 및 면접 안내 : 2026년 7월 1일(수) 3. 면접 : 2026년 7월 4일(토) ~ 7월 5일(일) 4. 최종 결과 발표 : 2026년 7월 6일(월) 5. 27기 신입회원 전체 OT : ...",
+            "domain": "www.instagram.com"
+          },
+          {
+            "title": "한국에서 혁신적인 디지털 헬스케어 스타트업이 탄생하려면 | PDF",
+            "url": "https://www.slideshare.net/slideshow/ss-154420693/154420693",
+            "snippet": "DHP의 목적 및존재 이유 혁신적 헬스케어 스타트업 헬스케어 스타트업 생태계 구축 의료 혁신과 사회적 가치의 창출. 7. 윤상철 MD 안과전문의 연세의료원 안과교수 전 ...",
+            "domain": "www.slideshare.net"
+          },
+          {
+            "title": "2025 대한의료정보학회 춘계학술대회 초록집 - Scribd",
+            "url": "https://www.scribd.com/document/931949626/2025-대한의료정보학회-춘계학술대회-초록집",
+            "snippet": "하고, 코드 정규화, 논리 검증, 오류 탐지 알고리즘 등 정량적 품질평가 도구를 포함하여 실무 적용 가능성을 높인 것이 특징이다. 비정형 데이터 품질관리는 수면다원검사 ...",
+            "domain": "www.scribd.com"
+          },
+          {
+            "title": "ANZINE_Vol.21 - TSNE | 플립 PDF 온라인 | FlipHTML5",
+            "url": "https://fliphtml5.com/pexb/yhkd/ANZINE_Vol.21/",
+            "snippet": "ANZINE_Vol.21을 찾고 계십니까? 저자 TSNE 의 모든 플립 PDF를 확인하십시오. ANZINE_Vol.21이 마음에 드십니까? ANZINE_Vol.21을 무료로 공유하고 다운로드하세요.",
+            "domain": "fliphtml5.com"
+          },
+          {
+            "title": "실험실 학교 | Virginia 주 교육부",
+            "url": "https://doe.ko.virginia.gov/teaching-learning-assessment/specialized-instruction/laboratory-schools",
+            "snippet": "버지니아 대학 파트너십 실습 학교에 대한 자주 묻는 질문은 실습 학교 자주 묻는 질문 페이지를 참조하세요. 초등학생이 로봇 디자인을 코딩하는 모습. 개요.",
+            "domain": "doe.ko.virginia.gov"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "model": "gemma4:31b",
+  "created_at": "2026-09-07T07:38:51.765327093Z",
+  "message": {
+    "role": "assistant",
+    "content": "",
+    "thinking": "Autonomous Physical AI Robots (자율작업형 피지컬AI 로봇).\nKorean.\n\n        *   Timeframe: 2024 to present.\n        *   Scope: Mobile platforms, autonomous driving, task execution, on-device AI.\n        *   Entities: Major domestic (Korean) and international companies/products.\n        *   Stages: Research vs. Commercial/Deployment.\n\n        1.  Technical Overview & Composition.\n        2.  Comparison of Major Companies/Products.\n        3.  Development Direction of Core Technologies.\n        4.  Commercialization Bottlenecks & Testing/Verification Requirements.\n        5.  Implications for Public Testing Infrastructure.\n\n        *   Prioritize primary/high-reliability sources (official docs, gov/standard bodies, papers).\n        *   Distinguish between facts and analysis.\n        *   No guessing.\n        *   Cite sources for major claims.\n\n    *   *Physical AI* is a broad term often associated with \"Embodied AI.\"\n    *   Key trends in 2024: Humanoid robots (Tesla Optimus, Figure AI), Foundation Models for Robotics (RT-2, VLA models), On-device AI (NVIDIA Jetson, specialized NPUs), and the shift from pre-programmed tasks to general-purpose autonomy.\n    *   Domestic (Korea): Samsung, Hyundai (Boston Dynamics), LG, and various startups.\n    *   International: Tesla, Figure, OpenAI (partnerships), NVIDIA (Isaac), Google DeepMind.\n\n    *   *Step 1: Search for recent (2024+) trends in Physical AI/Embodied AI.*\n    *   *Step 2: Identify key players and their latest products/models.*\n    *   *Step 3: Look for technical papers or whitepapers on \"On-device AI\" and \"VLA (Vision-Language-Action)\" models.*\n    *   *Step 4: Search for industry reports on commercialization barriers and testing standards.*\n    *   *Step 5: Synthesize the information into the requested structure.*\n\n    *   *Query 1:* \"Physical AI robot trends 2024 2025\"\n    *   *Query 2:* \"Embodied AI robot commercialization bottlenecks 2024\"\n    *   *Query 3:* \"자율작업형 피지컬 AI 로봇 기술 동향 2024\"\n    *   *Query 4:* \"Tesla Optimus Figure AI NVIDIA Project GR00T comparison\"\n    *   *Query 5:* \"로봇 공용 시험 인프라 구축 필요성\"",
+    "tool_calls": [
+      {
+        "id": "call_wquiqv3k",
+        "function": {
+          "index": 0,
+          "name": "web_search",
+          "arguments": {
+            "query": "자율작업형 피지컬 AI 로봇 기술 동향 2024 2025 Embodied AI"
+          }
+        }
+      },
+      {
+        "id": "call_h81w62r0",
+        "function": {
+          "index": 1,
+          "name": "web_search",
+          "arguments": {
+            "query": "Physical AI robot mobile platform autonomous driving task execution on-device AI trends 2024"
+          }
+        }
+      },
+      {
+        "id": "call_23ko953k",
+        "function": {
+          "index": 2,
+          "name": "web_search",
+          "arguments": {
+            "query": "Tesla Optimus Figure AI NVIDIA Project GR00T Boston Dynamics Atlas comparison 2024"
+          }
+        }
+      },
+      {
+        "id": "call_opbpg77h",
+        "function": {
+          "index": 3,
+          "name": "web_search",
+          "arguments": {
+            "query": "로봇 상용화 병목 현상 및 시험 검증 요구사항 2024"
+          }
+        }
+      }
+    ]
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 78713014270,
+  "load_duration": 5890452614,
+  "prompt_eval_count": 600,
+  "prompt_eval_duration": 853044814,
+  "eval_count": 711,
+  "eval_duration": 71581837253
+}

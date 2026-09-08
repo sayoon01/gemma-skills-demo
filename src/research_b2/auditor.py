@@ -606,7 +606,9 @@ def run_audit(
     )
 
     response = client.chat(
-        messages
+        messages,
+        think=False,
+        response_format="json",
     )
 
     elapsed = (
@@ -625,6 +627,20 @@ def run_audit(
         .get("content")
         or ""
     )
+
+    if not raw_text.strip():
+        thinking = (
+            response["message"]
+            .get("thinking")
+            or ""
+        )
+
+        raise RuntimeError(
+            "Semantic Auditor가 빈 content를 반환했습니다. "
+            f"done_reason={response.get('done_reason')!r}, "
+            f"eval_count={response.get('eval_count')!r}, "
+            f"thinking_chars={len(thinking)}"
+        )
 
     (
         run_dir

@@ -1,0 +1,34 @@
+# User Research Request
+
+자율작업형 피지컬AI 로봇의 기술 동향 분석서를 한국어로 작성해 주세요.
+
+조사 범위:
+- 2024년부터 조사 시점까지 공개된 자료
+- 이동 플랫폼, 자율주행, 작업 수행, 온디바이스 AI
+- 국내외 주요 기업과 대표 제품
+- 연구 단계와 실제 판매·현장 도입 단계를 구분
+
+분석 항목:
+1. 기술 개요와 구성
+2. 주요 기업·제품별 기능 비교
+3. 핵심 기술의 발전 방향
+4. 상용화 병목과 시험·검증 요구사항
+5. 공용 시험 인프라 구축에 대한 시사점
+
+제조사 공식 문서, 연구논문, 표준기관 자료를 우선 사용하세요.
+확인된 사실과 분석자의 추론을 구분하고 주요 주장에 출처를 달아주세요.
+최종 결과를 reports/physical-ai-trends.md에 저장해 주세요.
+
+# Runtime Context
+
+- Current date: 2026-09-08
+
+# Runtime Limits
+
+- Maximum assignments in this wave: 3
+- This is planning only.
+- Do not perform research in this response.
+- Do not provide research findings yet.
+- Do not invent sources or URLs.
+- Return the planning JSON required by the controller contract.
+

@@ -1,0 +1,63 @@
+{
+  "started_at": "2026-09-07T06:19:20.973055+00:00",
+  "status": "passed",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/sales/run-r_2wy5np",
+  "workbook": "/home/keti_spark1/yune/gemma-skills-demo/outputs/sales/run-r_2wy5np/sales.xlsx",
+  "visual_review": "미실시",
+  "model_used": false,
+  "scope": "엑셀 도구 자체의 생성·재계산·자동 검증",
+  "skill_sha256": "6712b39718fe815054abca9c3ee72f989613e6f771c8a5c58f30a65a6c905622",
+  "recalc_returncode": 0,
+  "recalc": {
+    "status": "success",
+    "total_errors": 0,
+    "error_summary": {},
+    "total_formulas": 4
+  },
+  "verification": {
+    "passed": true,
+    "problems": [],
+    "cells": [
+      {
+        "cell": "D2",
+        "expected": "10000",
+        "actual": 10000,
+        "formula": "=B2*C2",
+        "value_ok": true,
+        "formula_ok": true
+      },
+      {
+        "cell": "D3",
+        "expected": "30000",
+        "actual": 30000,
+        "formula": "=B3*C3",
+        "value_ok": true,
+        "formula_ok": true
+      },
+      {
+        "cell": "D4",
+        "expected": "30000",
+        "actual": 30000,
+        "formula": "=B4*C4",
+        "value_ok": true,
+        "formula_ok": true
+      },
+      {
+        "cell": "D5",
+        "expected": "70000",
+        "actual": 70000,
+        "formula": "=SUM(D2:D4)",
+        "value_ok": true,
+        "formula_ok": true
+      }
+    ],
+    "formula_count": 4,
+    "chart_count": 1,
+    "visual_review": "미실시"
+  },
+  "markitdown": {
+    "status": "success",
+    "text_length": 448
+  },
+  "finished_at": "2026-09-07T06:19:22.535951+00:00"
+}

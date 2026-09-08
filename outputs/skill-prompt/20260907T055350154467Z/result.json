@@ -1,0 +1,10 @@
+{
+  "status": "response_received",
+  "elapsed_seconds": 132.39,
+  "skill": "xlsx",
+  "skill_sha256": "6712b39718fe815054abca9c3ee72f989613e6f771c8a5c58f30a65a6c905622",
+  "done_reason": "stop",
+  "scope": "스킬 본문 전달 및 모델 응답 수신",
+  "content_quality_reviewed": false,
+  "file_generation_tested": false
+}

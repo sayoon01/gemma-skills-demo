@@ -1,0 +1,131 @@
+{
+  "accepted_claims": [
+    {
+      "claim": "2024년 이후 VLA 모델은 폐쇄형 모델(RT-2 등)에서 OpenVLA, SmolVLA와 같은 오픈소스 범용 모델로 전환되는 추세이며, 데이터 다양성 확보를 위해 Open X-Embodiment와 같은 대규모 데이터셋을 활용한다.",
+      "support": "OpenVLA는 97만 개의 로봇 조작 궤적이 포함된 Open X-Embodiment 데이터셋으로 학습된 7B 파라미터 오픈소스 모델이며, RT-2-X(55B)보다 파라미터 수는 7배 적지만 일부 작업에서 더 높은 성공률을 보였다.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "[2406.09246] OpenVLA: An Open-Source Vision-Language-Action Model",
+          "publisher": "arXiv",
+          "url": "https://arxiv.org/abs/2406.09246",
+          "source_type": "official",
+          "tier": 1,
+          "excerpt": "we introduce OpenVLA, a 7B-parameter open-source VLA trained on a diverse collection of 970k real-world robot demonstrations... OpenVLA demonstrates strong results for generalist manipulation, outperforming closed models such as RT-2-X (55B) by 16.5% in absolute task success rate across 29 tasks",
+          "verification_state": "FETCHED",
+          "retrieved_title": "[2406.09246] OpenVLA: An Open-Source Vision-Language-Action Model",
+          "retrieved_url": "https://arxiv.org/abs/2406.09246",
+          "retrieved_content_chars": 3177
+        }
+      ],
+      "verified_source_count": 1,
+      "validation_status": "SINGLE_SOURCE"
+    },
+    {
+      "claim": "온디바이스 AI 구현을 위해 VLA 모델의 경량화(Compact VLA)와 비동기 추론 스택(Asynchronous Inference Stack) 및 양자화-프루닝 결합 기술이 발전하고 있다.",
+      "support": "SmolVLA는 450M 파라미터의 경량 모델로, 비전 모델 레이어 일부를 생략하고 비동기 추론 스택을 도입하여 저가형 하드웨어에서도 실시간 응답이 가능하게 했다. 또한 SQAP-VLA와 같은 프레임워크는 양자화와 토큰 프루닝을 결합하여 엣지 디바이스 배포 효율을 높인다.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data",
+          "publisher": "Hugging Face",
+          "url": "https://huggingface.co/blog/smolvla",
+          "source_type": "official",
+          "tier": 1,
+          "excerpt": "SmolVLA-450M... optimized for speed and low-latency inference... Skipping half of the layers of the vision model... we introduce an asynchronous inference stack.",
+          "verification_state": "FETCHED",
+          "retrieved_title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data",
+          "retrieved_url": "https://huggingface.co/blog/smolvla",
+          "retrieved_content_chars": 5966
+        }
+      ],
+      "verified_source_count": 1,
+      "validation_status": "SINGLE_SOURCE"
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim": "VLA 모델의 추론 속도와 제어 정밀도를 높이기 위해 'Flow Matching' 아키텍처와 'FAST' 액션 토크나이저와 같은 새로운 기술이 도입되었다.",
+      "support": "Physical Intelligence의 π₀(Pi0)는 기존의 오토레그레시브 토큰 예측 대신 Flow Matching 아키텍처를 사용하여 더 정교한 제어를 구현하며, FAST 토크나이저는 액션 청크를 더 적은 토큰으로 압축하여 추론 속도를 최대 15배 향상시킨다.",
+      "confidence": "high",
+      "sources": [],
+      "verified_source_count": 0,
+      "validation_status": "UNSUPPORTED"
+    },
+    {
+      "claim": "로봇의 실시간 제어와 범용적 추론 능력을 동시에 확보하기 위해 'System 1(빠른 제어)'과 'System 2(느린 추론)'를 결합한 듀얼 시스템 VLA 구조가 등장했다.",
+      "support": "Figure AI의 Helix 모델은 VLM 백본의 범용성(System 2)과 로봇 시각-운동 정책의 빠른 속도(System 1) 사이의 트레이드오프를 해결하기 위해 두 시스템을 상호 보완적으로 결합한 구조를 가진다.",
+      "confidence": "high",
+      "sources": [],
+      "verified_source_count": 0,
+      "validation_status": "UNSUPPORTED"
+    }
+  ],
+  "rejected_sources": [
+    {
+      "claim_index": 2,
+      "source_index": 1,
+      "state": "UNREAD",
+      "source": {
+        "source_kind": "web",
+        "title": "π0: A Vision-Language-Action Flow Model for General Robot Control",
+        "publisher": "Physical Intelligence",
+        "url": "https://www.pi.website/download/pi0.pdf",
+        "source_type": "official",
+        "tier": 1,
+        "excerpt": "We propose a novel flow matching architecture... to represent the intricate and subtle behaviors necessary to interact with complex physical scenes."
+      }
+    },
+    {
+      "claim_index": 2,
+      "source_index": 2,
+      "state": "UNREAD",
+      "source": {
+        "source_kind": "web",
+        "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+        "publisher": "GitHub",
+        "url": "https://github.com/openvla/openvla",
+        "source_type": "official",
+        "tier": 2,
+        "excerpt": "FAST allows action chunks to be compressed into fewer tokens, speeding up inference by up to 15x when using discrete robot actions."
+      }
+    },
+    {
+      "claim_index": 3,
+      "source_index": 1,
+      "state": "UNREAD",
+      "source": {
+        "source_kind": "web",
+        "title": "Helix: A Vision-Language-Action Model for Generalist Humanoid Control",
+        "publisher": "Figure AI",
+        "url": "https://www.figure.ai/news/helix",
+        "source_type": "official",
+        "tier": 1,
+        "excerpt": "Helix resolves this tradeoff through two complementary systems... VLM backbones are general, but not fast, and robot visuomotor policies are fast but not general."
+      }
+    },
+    {
+      "claim_index": 4,
+      "source_index": 2,
+      "state": "UNREAD",
+      "source": {
+        "source_kind": "web",
+        "title": "[2509.09090] SQAP-VLA: A Synergistic Quantization-Aware Pruning Framework",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2509.09090",
+        "source_type": "official",
+        "tier": 1,
+        "excerpt": "SQAP-VLA resolves the incapability of token pruning on quantized VLA models via a quantization-aware pruning criteria."
+      }
+    }
+  ],
+  "summary": {
+    "raw_claim_count": 4,
+    "accepted_claim_count": 2,
+    "unsupported_claim_count": 2,
+    "rejected_source_count": 4,
+    "successful_fetch_source_count": 3
+  }
+}

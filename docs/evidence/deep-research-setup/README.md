@@ -40,14 +40,9 @@ python3 -m src.skill_loader \
 
 ## 3. 웹 도구 스모크 테스트
 
-코드: `src/web_tools.py`  
-검사: `checks/check_web_tools.py`
+코드: `src/web_tools.py`
 
-```bash
-PYTHONPATH=. python3 checks/check_web_tools.py
-```
-
-관찰 결과(요약):
+당시 관찰 결과(요약):
 
 - `web_search`: 질의에 대해 제목·URL·snippet·domain 반환
 - `fetch_page`: Wikipedia 등 HTML에서 텍스트 추출, focus 기반 축소 가능

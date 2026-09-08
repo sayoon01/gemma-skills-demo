@@ -1,0 +1,167 @@
+{
+  "accepted_claims": [
+    {
+      "claim_id": "C001",
+      "claim": "Software architecture and integration have become a primary technical bottleneck for Physical AI, with 27% of developers citing it as their biggest performance constraint, surpassing hardware constraints (16%).",
+      "worker_support": "A survey of 1,000 global robotics developers by QNX indicates that software architecture is now a more significant bottleneck than hardware.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C001-E001",
+          "worker_source": {
+            "title": "Software Architecture: The New Bottleneck for Physical AI",
+            "publisher": "QNX",
+            "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+            "source_type": "industry",
+            "tier": 3,
+            "excerpt": "almost one in three developers (27%) cite software architecture and integration as their biggest performance bottleneck, compared to just 16% who cite hardware constraints."
+          },
+          "retrieved_source": {
+            "title": "Software Architecture: The New Bottleneck for Physical AI",
+            "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+            "domain": "qnx.software",
+            "content": "Software Architecture: The New Bottleneck for Physical AI\nheader-teaser, header-teaser-item-box-position-left, header-teaser-item-box-color-dark, enable-dynamic-media\nRobotics is experiencing an unprecedented era of innovation, driven by the rapid rise of Physical AI and machine learning capabilities. As robots increasingly break out of controlled factory cages and navigate dynamic human environments, traditional development paradigms are shifting. According to the newly released\nInside the Robot: Architecture Benchmark Report\nby QNX, which surveyed 1,000 global robotics developers, hardware is no longer the primary constraint. Today, software has taken the lead: almost one in three developers (27%) cite software architecture and integration as their biggest performance bottleneck, compared to just 16% who cite hardware constraints.\nHere is a breakdown of the core findings and what they mean for the future of robotics engineering.\nThe Physical AI Imperative vs. Real-World Readiness\nThe ambition across the robotics sector is clear. Nearly nine in ten developers (89%) view Physical AI, systems that can perceive, reason, and act autonomously in the physical world, as critical to their organizational strategy over the next three to five years. To support this transition,\n85% of developers expect the role of software to expand\n, with development teams anticipating their largest future budget allocations will go toward AI-driven decision making (51%) and cybersecurity (51%).\nHowever, ambition is currently outpacing field readiness. While industry optimism remains highly resilient, only 29% of developers feel \"very confident\" in their systems' ability to make safe, predictable decisions in unconstrained, real-world environments.\nThe Determinism Disconnect: Flexibility vs. Safety\nAs robotics systems increasingly operate alongside humans, a reality for 83% of respondents today, the demand for flawless reliability skyrockets. An overwhelming\n95% of developers state that deterministic, real-time execution is essential\n91% of development teams still rely on general-purpose operating systems (GPOS)\n, such as Linux, to run at least some real-time or safety-critical workloads. Nearly a third (32%) do so extensively.\nTo manage this, 64% of businesses currently utilize hybrid architectures that combine safety controllers, vision computers, and microcontrollers. While these hybrid setups enhance capability, they significantly increase integration complexity, which 42% of developers cite as their biggest software development challenge\n.\nThe Certification Wall\nThe tension between utilizing flexible, open-source software and meeting strict industry safety guarantees is resulting in massive deployment bottlenecks. Two-thirds (66%) of developers report experiencing project delays specifically due to industry certification requirements. This friction is heavily tied to two main regulatory hurdles: cybersecurity standards (such as ISO/SAE 21434) and functional safety standards (like ISO 10218), which are cited as the most challenging to navigate by 51% and 49% of respondents, respectively.\nThe commercial and financial pressure to push through these bottlenecks is immense. Alarmingly, 84% of developers agree that strict deadlines and budget pressures can lead engineering teams to compromise on critical aspects of development, including safety protocols.\nImplications: Re-evaluating the Foundation\nThe robotics industry is rapidly approaching an architectural tipping point. Scaling Physical AI requires foundational software that can handle mixed-criticality workloads safely, without crippling development velocity or risking failed compliance audits.\nRecognizing the limits of their current stacks,\n86% of respondents currently using a GPOS express openness to changing their operating system\n. When looking ahead to mitigate integration and scalability limits, many developers are shifting toward more robust paradigms: 31% cite a safety-certified commercial off-the-shelf (COTS) operating system as the best fit for their needs, while 27% are opting for virtualized Linux combined with a Real-Time OS (RTOS).\nConclusion\nHardware advances have set the stage, but the next major leap in robotics will be dictated by software architecture. Re-evaluating foundational architectures from the OS up is no longer just a backend technical exercise; it is a strategic necessity for securing certifications, ensuring human safety, and successfully scaling Physical AI into the real world.\nRead the Full Report",
+            "content_chars": 4539
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "claim": "There is a 'Determinism Disconnect' in robotics development where 95% of developers require deterministic, real-time execution for safety, yet 91% still rely on general-purpose operating systems (GPOS) like Linux for some real-time or safety-critical workloads.",
+      "worker_support": "QNX's Architecture Benchmark Report highlights the tension between the need for real-time reliability and the continued use of non-deterministic GPOS.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C002-E001",
+          "worker_source": {
+            "title": "Software Architecture: The New Bottleneck for Physical AI",
+            "publisher": "QNX",
+            "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+            "source_type": "industry",
+            "tier": 3,
+            "excerpt": "An overwhelming 95% of developers state that deterministic, real-time execution is essential... 91% of development teams still rely on general-purpose operating systems (GPOS), such as Linux, to run at least some real-time or safety-critical workloads."
+          },
+          "retrieved_source": {
+            "title": "Software Architecture: The New Bottleneck for Physical AI",
+            "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+            "domain": "qnx.software",
+            "content": "Software Architecture: The New Bottleneck for Physical AI\nheader-teaser, header-teaser-item-box-position-left, header-teaser-item-box-color-dark, enable-dynamic-media\nRobotics is experiencing an unprecedented era of innovation, driven by the rapid rise of Physical AI and machine learning capabilities. As robots increasingly break out of controlled factory cages and navigate dynamic human environments, traditional development paradigms are shifting. According to the newly released\nInside the Robot: Architecture Benchmark Report\nby QNX, which surveyed 1,000 global robotics developers, hardware is no longer the primary constraint. Today, software has taken the lead: almost one in three developers (27%) cite software architecture and integration as their biggest performance bottleneck, compared to just 16% who cite hardware constraints.\nHere is a breakdown of the core findings and what they mean for the future of robotics engineering.\nThe Physical AI Imperative vs. Real-World Readiness\nThe ambition across the robotics sector is clear. Nearly nine in ten developers (89%) view Physical AI, systems that can perceive, reason, and act autonomously in the physical world, as critical to their organizational strategy over the next three to five years. To support this transition,\n85% of developers expect the role of software to expand\n, with development teams anticipating their largest future budget allocations will go toward AI-driven decision making (51%) and cybersecurity (51%).\nHowever, ambition is currently outpacing field readiness. While industry optimism remains highly resilient, only 29% of developers feel \"very confident\" in their systems' ability to make safe, predictable decisions in unconstrained, real-world environments.\nThe Determinism Disconnect: Flexibility vs. Safety\nAs robotics systems increasingly operate alongside humans, a reality for 83% of respondents today, the demand for flawless reliability skyrockets. An overwhelming\n95% of developers state that deterministic, real-time execution is essential\n91% of development teams still rely on general-purpose operating systems (GPOS)\n, such as Linux, to run at least some real-time or safety-critical workloads. Nearly a third (32%) do so extensively.\nTo manage this, 64% of businesses currently utilize hybrid architectures that combine safety controllers, vision computers, and microcontrollers. While these hybrid setups enhance capability, they significantly increase integration complexity, which 42% of developers cite as their biggest software development challenge\n.\nThe Certification Wall\nThe tension between utilizing flexible, open-source software and meeting strict industry safety guarantees is resulting in massive deployment bottlenecks. Two-thirds (66%) of developers report experiencing project delays specifically due to industry certification requirements. This friction is heavily tied to two main regulatory hurdles: cybersecurity standards (such as ISO/SAE 21434) and functional safety standards (like ISO 10218), which are cited as the most challenging to navigate by 51% and 49% of respondents, respectively.\nThe commercial and financial pressure to push through these bottlenecks is immense. Alarmingly, 84% of developers agree that strict deadlines and budget pressures can lead engineering teams to compromise on critical aspects of development, including safety protocols.\nImplications: Re-evaluating the Foundation\nThe robotics industry is rapidly approaching an architectural tipping point. Scaling Physical AI requires foundational software that can handle mixed-criticality workloads safely, without crippling development velocity or risking failed compliance audits.\nRecognizing the limits of their current stacks,\n86% of respondents currently using a GPOS express openness to changing their operating system\n. When looking ahead to mitigate integration and scalability limits, many developers are shifting toward more robust paradigms: 31% cite a safety-certified commercial off-the-shelf (COTS) operating system as the best fit for their needs, while 27% are opting for virtualized Linux combined with a Real-Time OS (RTOS).\nConclusion\nHardware advances have set the stage, but the next major leap in robotics will be dictated by software architecture. Re-evaluating foundational architectures from the OS up is no longer just a backend technical exercise; it is a strategic necessity for securing certifications, ensuring human safety, and successfully scaling Physical AI into the real world.\nRead the Full Report",
+            "content_chars": 4539
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "claim": "The commercialization of Physical AI is hindered by a 'Certification Wall,' with 66% of developers reporting project delays due to industry certification requirements, particularly cybersecurity (ISO/SAE 21434) and functional safety (ISO 10218) standards.",
+      "worker_support": "QNX reports that the friction between flexible open-source software and strict safety guarantees leads to significant deployment bottlenecks.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C003-E001",
+          "worker_source": {
+            "title": "Software Architecture: The New Bottleneck for Physical AI",
+            "publisher": "QNX",
+            "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+            "source_type": "industry",
+            "tier": 3,
+            "excerpt": "Two-thirds (66%) of developers report experiencing project delays specifically due to industry certification requirements... cybersecurity standards (such as ISO/SAE 21434) and functional safety standards (like ISO 10218), which are cited as the most challenging to navigate"
+          },
+          "retrieved_source": {
+            "title": "Software Architecture: The New Bottleneck for Physical AI",
+            "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+            "domain": "qnx.software",
+            "content": "Software Architecture: The New Bottleneck for Physical AI\nheader-teaser, header-teaser-item-box-position-left, header-teaser-item-box-color-dark, enable-dynamic-media\nRobotics is experiencing an unprecedented era of innovation, driven by the rapid rise of Physical AI and machine learning capabilities. As robots increasingly break out of controlled factory cages and navigate dynamic human environments, traditional development paradigms are shifting. According to the newly released\nInside the Robot: Architecture Benchmark Report\nby QNX, which surveyed 1,000 global robotics developers, hardware is no longer the primary constraint. Today, software has taken the lead: almost one in three developers (27%) cite software architecture and integration as their biggest performance bottleneck, compared to just 16% who cite hardware constraints.\nHere is a breakdown of the core findings and what they mean for the future of robotics engineering.\nThe Physical AI Imperative vs. Real-World Readiness\nThe ambition across the robotics sector is clear. Nearly nine in ten developers (89%) view Physical AI, systems that can perceive, reason, and act autonomously in the physical world, as critical to their organizational strategy over the next three to five years. To support this transition,\n85% of developers expect the role of software to expand\n, with development teams anticipating their largest future budget allocations will go toward AI-driven decision making (51%) and cybersecurity (51%).\nHowever, ambition is currently outpacing field readiness. While industry optimism remains highly resilient, only 29% of developers feel \"very confident\" in their systems' ability to make safe, predictable decisions in unconstrained, real-world environments.\nThe Determinism Disconnect: Flexibility vs. Safety\nAs robotics systems increasingly operate alongside humans, a reality for 83% of respondents today, the demand for flawless reliability skyrockets. An overwhelming\n95% of developers state that deterministic, real-time execution is essential\n91% of development teams still rely on general-purpose operating systems (GPOS)\n, such as Linux, to run at least some real-time or safety-critical workloads. Nearly a third (32%) do so extensively.\nTo manage this, 64% of businesses currently utilize hybrid architectures that combine safety controllers, vision computers, and microcontrollers. While these hybrid setups enhance capability, they significantly increase integration complexity, which 42% of developers cite as their biggest software development challenge\n.\nThe Certification Wall\nThe tension between utilizing flexible, open-source software and meeting strict industry safety guarantees is resulting in massive deployment bottlenecks. Two-thirds (66%) of developers report experiencing project delays specifically due to industry certification requirements. This friction is heavily tied to two main regulatory hurdles: cybersecurity standards (such as ISO/SAE 21434) and functional safety standards (like ISO 10218), which are cited as the most challenging to navigate by 51% and 49% of respondents, respectively.\nThe commercial and financial pressure to push through these bottlenecks is immense. Alarmingly, 84% of developers agree that strict deadlines and budget pressures can lead engineering teams to compromise on critical aspects of development, including safety protocols.\nImplications: Re-evaluating the Foundation\nThe robotics industry is rapidly approaching an architectural tipping point. Scaling Physical AI requires foundational software that can handle mixed-criticality workloads safely, without crippling development velocity or risking failed compliance audits.\nRecognizing the limits of their current stacks,\n86% of respondents currently using a GPOS express openness to changing their operating system\n. When looking ahead to mitigate integration and scalability limits, many developers are shifting toward more robust paradigms: 31% cite a safety-certified commercial off-the-shelf (COTS) operating system as the best fit for their needs, while 27% are opting for virtualized Linux combined with a Real-Time OS (RTOS).\nConclusion\nHardware advances have set the stage, but the next major leap in robotics will be dictated by software architecture. Re-evaluating foundational architectures from the OS up is no longer just a backend technical exercise; it is a strategic necessity for securing certifications, ensuring human safety, and successfully scaling Physical AI into the real world.\nRead the Full Report",
+            "content_chars": 4539
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "claim": "Physical AI development is bottlenecked by three interlocking factors: heterogeneity, the Sim-to-Real Gap, and data scarcity, with the primary challenge shifting from equipment costs to the availability of skilled operators and data quality.",
+      "worker_support": "Pebblous identifies these three factors as the root cause of high collection and refinement costs in Physical AI data pipelines.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C004-E001",
+          "worker_source": {
+            "title": "What Is a VLA (Vision-Language-Action) Model? — Physical AI Model Evolution & Data Strategy (2026 Edition)",
+            "publisher": "Pebblous",
+            "url": "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/",
+            "source_type": "industry",
+            "tier": 3,
+            "excerpt": "The three challenges... heterogeneity, the Sim-to-Real Gap, and scarcity — remain the bottleneck... the bottleneck has shifted from 'equipment' to 'skilled operators and data quality.'"
+          },
+          "retrieved_source": {
+            "title": "What Is a VLA (Vision-Language-Action) Model? — Physical AI Model Evolution & Data Strategy (2026 Edition) | Pebblous",
+            "url": "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/",
+            "domain": "blog.pebblous.ai",
+            "content": "Physical AI\nis the technology that lets robots, self-driving cars, and smart factories perceive and act in the real world. Its brain has evolved from text-only LLMs, through vision-added VLMs, to\nVLA (Vision-Language-Action)\nmillions of real-robot manipulation episodes\n. The three challenges the first edition laid out — heterogeneity, the Sim-to-Real Gap, and scarcity — remain the bottleneck even now that the models have grown far larger.\nIn 2026, as humanoids step onto factory floors, the question facing manufacturing, logistics, and drone companies converges on one thing: \"How do we turn our field data into a form AI can actually learn from?\" Pebblous's\nDataClinic\nPhysical AI\n, where AI interacts directly with the physical world. Systems that fuse hardware and AI to perceive, understand, and act in reality are arriving in earnest: autonomous vehicles, humanoid robots, smart factories, drones, and unmanned defense platforms.\nPhysical AI\non objects in the real physical world. Where generative AI concentrates on producing digital content, Physical AI concentrates on the intelligence of machines that actually operate in reality.\nOnly recently this trend was described as \"a story for the next ten years.\" It is already present tense. As of 2026, humanoid robots have moved past demo reels and begun working on real automotive lines at the likes of BMW and Hyundai, and general-purpose robot foundation models sit at the center of startup valuation races. Physical AI is no longer a forecast — it is a technology being validated on industrial floors right now.\n▲ A humanoid robot built to perceive, reason, and act is the archetype of the autonomous system Physical AI aims for (pictured: Tesla Optimus Gen 2, 2024) | Source:\nNVIDIA\nA world foundation model (world model) for Physical AI. Infrastructure for Sim-to-Real and synthetic-data generation\n※ The specific architectures and release dates above follow each developer's official materials; verify detailed figures against the original sources in the\nThe three defining traits of Physical AI data\nWhat makes Physical AI data hard to work with narrows down to three factors: heterogeneity, the reality gap, and scarcity. They are not separate problems — they interlock, and together they become the root cause that pushes collection and refinement costs up. Let's take them one at a time.\n🔀\nteleoperation\n, where a human physically demonstrates a task for the robot, fell from roughly $340 per hour in 2024 to $118–200 in 2026, about 60% lower. As equipment costs dropped, the bottleneck moved elsewhere: 20–30% of collected episodes are thrown out in quality filtering, and training a single skilled operator costs $1,000–3,000 per person. In other words,\nthe bottleneck has shifted from \"equipment\" to \"skilled operators and data quality.\"\nAI \"brain\" (foundation models and general-purpose software)\n. The body has converged; the contest is decided by the quantity and quality of training data. For how these technical challenges get solved at the practical level — sensor synchronization, physical-validity checks, label consistency — see\n\"The Physical AI Data Pipeline: Four Core Challenges and Solutions.\"\nrobotics foundation models\ndraw so much attention — the goal is judgment that generalizes across diverse situations. World models such as NVIDIA Cosmos and domain randomization are the latest attempts to close this gap.\n③\nThe limits of action\nPhysical properties of robot joints (backlash, friction, elasticity) affect control accuracy. It is why a motion that was perfect in simulation fails on the real robot, and it must ultimately be corrected with real motion data.\n▲ Physical properties of a robot's joints are never fully captured by simulation alone — they ultimately have to be corrected with real motion data | Source:\nPhysical AI in 2026\n2026 is the inflection point where Physical AI moves past the lab and onto industrial floors in earnest. Where the first edition emphasized market size, the clearer signals now are\nthe direction of the money\nAI brain (foundation models and general-purpose software)\n. Individual valuations bear this out: Physical Intelligence, which builds VLA models, was valued in the multi-billion-dollar range, and the humanoid company Figure AI and robotics-AI firm Skild AI closed large rounds in succession. This \"not the body, the brain\" trend is the market's version of\n\"Physical AI = a data problem.\"\nPebbloSim\ngenerates synthetic data in simulation environments that faithfully replicate the laws of physics, shrinking the Sim-to-Real Gap and safely producing the\nedge-case data\nhyperefficient models\nas core capabilities for Physical AI startups. In practice, edge AI inference has already become a real bottleneck — it accounts for the bulk of related hardware volume — and on-board VLAs like Figure Helix show the way forward.\n⏱️\nThe market is proving, with money, that data is the battleground\nThe fact that the new generation of VLAs (π0, GR00T, and the rest) are all bound to large-scale cross-embodiment data, together with the flow of investment toward the brain rather than the body, amounts to capital testifying on behalf of the claim that \"Physical AI is a data problem.\"\nThe challenges still come back to \"data quality\"\nThe three challenges (heterogeneity, Sim-to-Real, scarcity) remain the bottleneck even now that the models have grown. Advances in world models, synthetic data, and domain randomization all converge on the same question: which data do you refine and feed in, and how much of it? The new economic data, showing that the teleoperation bottleneck has shifted from equipment to skilled operators and quality, re-confirms, in measured terms, Pebblous's approach of data\ndiagnosis and cultivation\nGathering a scattered conversation in one place\nThis page is the gateway that connects the basic definition, the latest VLA landscape, data strategy, industry trends, and eight in-depth reports. Organizing the Physical AI data conversation so you can ",
+            "content_chars": 6000
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "claim": "In South Korea, the commercialization of mobile robots is hindered by fragmented regulations across various laws (e.g., Building Act, Personal Information Protection Act), leading to the proposal of a 'Robot Special Law' to provide integrated support for demonstration, commercialization, and safety management.",
+      "worker_support": "The 'Robot Special Law' (이동로봇의 안전한 이용 및 상용화 촉진을 위한 특별법안) was proposed to address the lack of a unified institutional framework.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C005-E001",
+          "worker_source": {
+            "title": "한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원",
+            "publisher": "Betanews",
+            "url": "https://www.betanews.net/article/view/beta202609030109",
+            "source_type": "industry",
+            "tier": 3,
+            "excerpt": "활용 관련 규정도 건축법·공동주택관리법·개인정보보호법 등에 흩어져 있어 통합적인 제도 기반이 필요하다는 지적이 제기되어 왔다."
+          },
+          "retrieved_source": {
+            "title": "한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원",
+            "url": "https://www.betanews.net/article/view/beta202609030109",
+            "domain": "www.betanews.net",
+            "content": "한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원\n뉴스레터 구독신청\n가\n한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원\n5년 단위 상용화 기본계획·정책위원회 설치, ‘이동로봇 활용 진흥지구’ 지정…책임보험 의무화·사고조사위 신설\n2026-09-03 17:15:28\n한병도 더불어민주당 원내대표가 3일 ‘이동로봇의 안전한 이용 및 상용화 촉진을 위한 특별법안(로봇특별법)’을 대표발의했다. 배송·보안·주차·건설 등 일상과 산업 현장에서 활용되는 이동로봇의 실증부터 상용화, 안전관리까지 통합 지원하는 첫 법안이다.\n이동로봇은 자율주행과 인공지능(AI) 등 첨단기술을 기반으로 다양한 업무를 수행하는 신산업 분야다. 기존 산업용 로봇이 생산라인 중심으로 쓰였다면 이동로봇은 공동주택과 건축물, 건설현장, 주차장 등 생활공간 전반으로 활용 범위가 넓어지고 있다. 그러나 현행 제도는 기술개발과 인증·보급 등 제품 중심의 산업 진흥에 초점이 맞춰져 있고, 활용 관련 규정도 건축법·공동주택관리법·개인정보보호법 등에 흩어져 있어 통합적인 제도 기반이 필요하다는 지적이 제기돼 왔다.",
+            "content_chars": 571
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "claim": "There is a critical need for public testing and certification infrastructure to reduce overseas dependence and support the entire lifecycle of robot development, from performance evaluation to risk assessment.",
+      "worker_support": "The Korea Testing Laboratory (KTL) has established the 'Robot Plus Test Field' to provide domestic certification and risk assessment for collaborative robots, as previous lack of infrastructure led to high overseas dependence.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C006-E001",
+          "worker_source": {
+            "title": "KTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충",
+            "publisher": "YNA",
+            "url": "https://www.yna.co.kr/view/AKR20250930148000052",
+            "source_type": "official",
+            "tier": 1,
+            "excerpt": "사람과 함께 운용된다는 특성상 제품과 시스템에 대한 안전인증이 필수적이지만, 그동안 국내 시험인증 기반 부족으로 해외 의존도가 높았다."
+          },
+          "retrieved_source": {
+            "title": "KTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충 | 연합뉴스",
+            "url": "https://www.yna.co.kr/view/AKR20250930148000052",
+            "domain": "www.yna.co.kr",
+            "content": "KTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충 | 연합뉴스\n연합뉴스\n메뉴 열기\nKTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충\n북마크\n최신뉴스\nKTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충\n송고\n이 밖에 경남로봇산업협회와 업무협약을 체결하고 로봇 핵심부품 시험인증과 상호 연구개발 협력에 나서는 등 지역·산업계와 협력을 강화하며 국내 기업의 기술 사업화를 지원하고 있다.\n이동혁 KTL 로봇시험인증센터장은 \"고부가가치 사업인 첨단 로봇산업의 급속한 성장에 발맞춰 국내 로봇 기업이 신속하고 편리하게 지원받을 수 있는 환경을 마련하는 데 최선을 다하겠다\"고 말했다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n[한국산업기술시험원 제공. 재판매 및 DB 금지]\n(진주=연합뉴스) 박정헌 기자 = 국내 유일 공공 종합시험인증기관인 한국산업기술시험원(KTL)이 국내 로봇 기업의 성장을 뒷받침하고 산업 경쟁력을 높이기 위해 시험·인증 인프라 확충에 나선다.\n7일 KTL에 따르면 최근 전 세계 산업현장에서 인간과 작업 공간을 공유하는 협동로봇이 노동력 부족, 생산성 향상, 고령화 대응의 핵심 동력으로 급부상하고 있다.\n사람과 함께 운용된다는 특성상 제품과 시스템에 대한 안전인증이 필수적이지만, 그동안 국내 시험인증 기반 부족으로 해외 의존도가 높았다.\n이에 KTL은 지난해 7월 서울 강남구 수서동 '로봇플러스 테스트 필드' 내 로봇시험인증센터를 개소하며 국내 기업의 애로 해소에 팔을 걷어붙였다.\n센터는 협동로봇의 성능·안전성 평가 전용 장비 11종 등 첨단 장비를 갖췄으며, 국제표준에 기반한 협동로봇 제품 인증과 작업장 위험성 평가·실증 등 로봇 개발 전 주기 지원 체계를 구축했다.\n이 밖에 경남로봇산업협회(GRIA)와 업무협약을 체결하고 로봇 핵심부품 시험인증과 상호 연구개발 협력에 나서는 등 지역·산업계와 협력을 강화하며 국내 기업의 기술 사업화를 지원하고 있다.\n이동혁 KTL 로봇시험인증센터장은 \"고부가가치 사업인 첨단 로봇산업의 급속한 성장에 발맞춰 국내 로봇 기업이 신속하고 편리하게 지원받을 수 있는 환경을 마련하는 데 최선을 다하겠다\"고 말했다.\nhome1223@yna.co.kr\n#진주\n#KTL\n#로봇",
+            "content_chars": 1115
+          }
+        }
+      ]
+    }
+  ],
+  "already_unsupported_claims": []
+}

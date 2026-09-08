@@ -1,0 +1,102 @@
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "verdict": "TRIANGULATED",
+      "reason": "Both sources confirm the shift toward VLA foundation models (using VLMs pretrained on internet-scale data) to enable robots to perform unseen tasks via natural language, specifically within the 2024-2026 timeframe.",
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "Explicitly states the architectural shift of 2025-2026 is the introduction of foundation model backbones (VLMs pretrained on internet-scale data) paired with action generation, defining the VLA paradigm.",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        },
+        {
+          "evidence_id": "C001-E002",
+          "state": "VERIFIED",
+          "reason": "Confirms VLA models (like RT-2) allow commanding robots with natural language to complete previously unseen tasks.",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "Only one source provides the technical details regarding GR00T N1.6's use of SigLIP and native resolution support to improve spatial reasoning.",
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly links GR00T N1.6's upgrade to native resolution support (avoiding padding) to improved object localization and spatial reasoning, and mentions the SigLIP vision transformer.",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "Only one source discusses the specific 'Grasp-for-Placement Synergy' and Samsung's related patents.",
+      "evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly mentions Samsung's task-aware grasp estimation patents (2024-2026) and the concept of 'Grasp-for-Placement Synergy' where downstream placement geometry informs grasp selection.",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "Only one source provides evidence for the KAIST research on Adaptive AI and the specific NPU architecture.",
+      "evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "reason": "The article confirms the development of an NPU structure based on 2D Systolic Arrays and Microsoft MX multi-precision computing to realize Adaptive AI/Continual Learning on-device without cloud resources.",
+          "audited_source_type": "official",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "Only one source provides the specific technical details on NVFP4 and MIG partitioning for the perception/VLM/DiT stacks.",
+      "evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly mentions NVFP4 providing 7.5x higher compute than Orin and the use of MIG to partition the GPU into slices for the perception stack, VLM System 2, and DiT System 1.",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "While the source verifies the Sim-to-Real speed (1,000x), it contains no mention of 'Vision-Language Navigation (VLN)' or 'UAV-VLN', making the claim only partially supported.",
+      "evidence": [
+        {
+          "evidence_id": "C006-E001",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "The source verifies that NVIDIA Isaac Lab enables training at 1,000x real-world speed. However, it does not mention VLN, UAV-VLN, or end-to-end navigation systems for unknown environments. The claim is a compound assertion where the second half is unsupported by the provided text.",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C004-E001",
+      "message": "Worker labeled as 'official', but it is a news article from 'Industry News' (industry/news tier), not a primary official document from KAIST."
+    }
+  ]
+}
