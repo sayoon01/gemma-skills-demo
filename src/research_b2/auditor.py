@@ -656,6 +656,8 @@ def run_audit(
             ),
         "stage":
             "B2-2D",
+        "run_dir":
+            str(run_dir),
         "created_at":
             datetime.now(
                 timezone.utc
