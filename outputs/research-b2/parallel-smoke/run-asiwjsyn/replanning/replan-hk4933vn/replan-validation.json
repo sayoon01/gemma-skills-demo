@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "errors": [],
+  "needs_another_wave": true,
+  "assignment_count": 3,
+  "assignment_ids": [
+    "SG04",
+    "SG05",
+    "SG06"
+  ]
+}

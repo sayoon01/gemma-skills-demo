@@ -1,0 +1,522 @@
+{
+  "completed_assignments": [
+    {
+      "assignment_id": "SG01",
+      "worker_source": "parallel",
+      "accepted_claim_count": 5,
+      "gap_count": 3
+    },
+    {
+      "assignment_id": "SG02",
+      "worker_source": "recovery",
+      "accepted_claim_count": 5,
+      "gap_count": 3
+    },
+    {
+      "assignment_id": "SG03",
+      "worker_source": "parallel",
+      "accepted_claim_count": 6,
+      "gap_count": 2
+    }
+  ],
+  "accepted_claims": [
+    {
+      "claim_ref": "SG01:C001",
+      "assignment_id": "SG01",
+      "claim": "2024-2026년 자율작업형 로봇의 핵심 아키텍처는 기존의 작업별 정책 학습에서 시각-언어-행동(VLA, Vision-Language-Action) 모델 기반의 파운데이션 모델 체계로 전환되었다.",
+      "runtime_status": "MULTI_SOURCE_PENDING_INDEPENDENCE",
+      "verified_evidence_count": 2,
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "publisher": "NeuralCoreTech",
+          "domain": "neuralcoretech.com",
+          "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        },
+        {
+          "evidence_id": "C001-E002",
+          "state": "VERIFIED",
+          "publisher": "meta-intelligence.tech",
+          "domain": "www.meta-intelligence.tech",
+          "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG01:C002",
+      "assignment_id": "SG01",
+      "claim": "NVIDIA의 GR00T N1.6 아키텍처는 SigLIP 비전 인코더와 네이티브 해상도 지원 VLM을 통해 공간 추론 및 객체 정밀 제어 능력을 향상시켰다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "publisher": "NeuralCoreTech",
+          "domain": "neuralcoretech.com",
+          "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG01:C003",
+      "assignment_id": "SG01",
+      "claim": "작업 수행(Manipulation) 기술은 단순한 파지(Grasping) 예측에서 '파지-배치 시너지(Grasp-for-Placement Synergy)' 기반의 작업 인식형 파지 추정으로 발전하고 있다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "publisher": "Patsnap",
+          "domain": "www.patsnap.com",
+          "url": "https://www.patsnap.com/resources/blog/rd-blog/robotic-grasping-technology-landscape-2026-patsnap-eureka/",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG01:C004",
+      "assignment_id": "SG01",
+      "claim": "온디바이스 AI 분야에서는 클라우드 없이 기기 자체에서 학습이 가능한 '적응형 AI(Adaptive AI)' 및 연속 학습(Continual Learning) 가속 기술이 개발되었다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "publisher": "인더스트리뉴스",
+          "domain": "www.industrynews.co.kr",
+          "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=54354",
+          "audited_source_type": "official",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG01:C005",
+      "assignment_id": "SG01",
+      "claim": "물리적 AI 로봇의 실시간 제어를 위해 하드웨어 가속기(NVIDIA Blackwell 등)의 정밀도 최적화와 GPU 파티셔닝 기술이 적용되고 있다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "publisher": "NeuralCoreTech",
+          "domain": "neuralcoretech.com",
+          "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+          "audited_source_type": "industry",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG02:C001",
+      "assignment_id": "SG02",
+      "claim": "Tesla Optimus Gen 3 is currently in limited production and deployed within Tesla's own factories for tasks such as bin picking, kitting, and basic assembly.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "publisher": "AI Herald",
+          "domain": "artificialintelligenceherald.com",
+          "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG02:C002",
+      "assignment_id": "SG02",
+      "claim": "Figure AI's Figure 02 and 03 are in the commercial deployment stage, with active installations at BMW's Spartanburg plant and Amazon Robotics fulfillment centers.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "publisher": "AI Herald",
+          "domain": "artificialintelligenceherald.com",
+          "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG02:C003",
+      "assignment_id": "SG02",
+      "claim": "Agility Robotics' Digit is in the commercial deployment stage, specifically deployed at Amazon.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "publisher": "andrew.ooo",
+          "domain": "andrew.ooo",
+          "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 5
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG02:C004",
+      "assignment_id": "SG02",
+      "claim": "Boston Dynamics' electric Atlas is primarily a research platform, though it is being piloted in Hyundai Motor Group factories for moving automotive parts.",
+      "runtime_status": "MULTI_SOURCE_PENDING_INDEPENDENCE",
+      "verified_evidence_count": 2,
+      "evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "publisher": "AI Herald",
+          "domain": "artificialintelligenceherald.com",
+          "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 4
+        },
+        {
+          "evidence_id": "C004-E002",
+          "state": "VERIFIED",
+          "publisher": "rabby.kr",
+          "domain": "rabby.kr",
+          "url": "https://rabby.kr/physical-ai-robots-korea-cases-2026/",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 5
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG02:C005",
+      "assignment_id": "SG02",
+      "claim": "Rainbow Robotics and Tomorrow Robotics have entered a joint development phase to create 'AI-Native' humanoid robots using Robot Foundation Models (RFM) and AI Agents.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "publisher": "경기일보",
+          "domain": "www.kyeonggi.com",
+          "url": "https://www.kyeonggi.com/article/20260723580350",
+          "audited_source_type": "official",
+          "audited_tier": 1
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG03:C001",
+      "assignment_id": "SG03",
+      "claim": "Software architecture and integration have become a primary technical bottleneck for Physical AI, with 27% of developers citing it as their biggest performance constraint, surpassing hardware constraints (16%).",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "publisher": "QNX",
+          "domain": "qnx.software",
+          "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG03:C002",
+      "assignment_id": "SG03",
+      "claim": "There is a 'Determinism Disconnect' in robotics development where 95% of developers require deterministic, real-time execution for safety, yet 91% still rely on general-purpose operating systems (GPOS) like Linux for some real-time or safety-critical workloads.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "publisher": "QNX",
+          "domain": "qnx.software",
+          "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG03:C003",
+      "assignment_id": "SG03",
+      "claim": "The commercialization of Physical AI is hindered by a 'Certification Wall,' with 66% of developers reporting project delays due to industry certification requirements, particularly cybersecurity (ISO/SAE 21434) and functional safety (ISO 10218) standards.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "publisher": "QNX",
+          "domain": "qnx.software",
+          "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG03:C004",
+      "assignment_id": "SG03",
+      "claim": "Physical AI development is bottlenecked by three interlocking factors: heterogeneity, the Sim-to-Real Gap, and data scarcity, with the primary challenge shifting from equipment costs to the availability of skilled operators and data quality.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "publisher": "Pebblous",
+          "domain": "blog.pebblous.ai",
+          "url": "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG03:C005",
+      "assignment_id": "SG03",
+      "claim": "In South Korea, the commercialization of mobile robots is hindered by fragmented regulations across various laws (e.g., Building Act, Personal Information Protection Act), leading to the proposal of a 'Robot Special Law' to provide integrated support for demonstration, commercialization, and safety management.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "publisher": "Betanews",
+          "domain": "www.betanews.net",
+          "url": "https://www.betanews.net/article/view/beta202609030109",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG03:C006",
+      "assignment_id": "SG03",
+      "claim": "There is a critical need for public testing and certification infrastructure to reduce overseas dependence and support the entire lifecycle of robot development, from performance evaluation to risk assessment.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C006-E001",
+          "state": "VERIFIED",
+          "publisher": "YNA",
+          "domain": "www.yna.co.kr",
+          "url": "https://www.yna.co.kr/view/AKR20250930148000052",
+          "audited_source_type": "official",
+          "audited_tier": 1
+        }
+      ]
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim_ref": "SG01:C006",
+      "assignment_id": "SG01",
+      "claim": "자율주행 및 이동 플랫폼 기술은 시뮬레이션 기반의 초고속 학습(Sim-to-Real)과 시각-언어 내비게이션(VLN)으로 진화하고 있다.",
+      "reason": "While the source verifies the Sim-to-Real speed (1,000x), it contains no mention of 'Vision-Language Navigation (VLN)' or 'UAV-VLN', making the claim only partially supported."
+    },
+    {
+      "claim_ref": "SG02:C006",
+      "assignment_id": "SG02",
+      "claim": "Unitree has entered the commercial market with the G1 humanoid robot, significantly lowering the price point to approximately $4,000.",
+      "reason": "The claim identifies the robot as 'G1', but the retrieved source explicitly mentions 'Unitree drops the R1 to $4K'. This is a content mismatch regarding the product model name."
+    }
+  ],
+  "gaps": [
+    {
+      "assignment_id": "SG01",
+      "type": "WORKER_GAP",
+      "detail": "Tesla Optimus 및 Figure AI의 구체적인 하드웨어-소프트웨어 통합 아키텍처 세부 명세(SoC 설계 등)에 대한 공식 기술 문서 부족",
+      "reason": null
+    },
+    {
+      "assignment_id": "SG01",
+      "type": "WORKER_GAP",
+      "detail": "VLA 모델의 추론 지연 시간(Latency) 문제를 해결하기 위한 최신 하드웨어 가속 기법의 구체적인 벤치마크 수치",
+      "reason": null
+    },
+    {
+      "assignment_id": "SG01",
+      "type": "UNSUPPORTED_CLAIM",
+      "detail": "자율주행 및 이동 플랫폼 기술은 시뮬레이션 기반의 초고속 학습(Sim-to-Real)과 시각-언어 내비게이션(VLN)으로 진화하고 있다.",
+      "reason": "While the source verifies the Sim-to-Real speed (1,000x), it contains no mention of 'Vision-Language Navigation (VLN)' or 'UAV-VLN', making the claim only partially supported."
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "WORKER_GAP",
+      "detail": "Specific current 'Physical AI' product names and commercialization stages for Samsung Electronics and Doosan Robotics were not explicitly detailed in the verified sources, although general investment trends were noted.",
+      "reason": null
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "WORKER_GAP",
+      "detail": "Detailed technical specifications (payload, battery life) for the latest 2026 versions of Optimus and Figure 03 were partially omitted in the read excerpts.",
+      "reason": null
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "UNSUPPORTED_CLAIM",
+      "detail": "Unitree has entered the commercial market with the G1 humanoid robot, significantly lowering the price point to approximately $4,000.",
+      "reason": "The claim identifies the robot as 'G1', but the retrieved source explicitly mentions 'Unitree drops the R1 to $4K'. This is a content mismatch regarding the product model name."
+    },
+    {
+      "assignment_id": "SG03",
+      "type": "WORKER_GAP",
+      "detail": "Detailed technical specifications and a comprehensive equipment list for a 'state-of-the-art' public robotics testbed (beyond the mention of '11 types of equipment').",
+      "reason": null
+    },
+    {
+      "assignment_id": "SG03",
+      "type": "WORKER_GAP",
+      "detail": "Verification of the 'six coupled challenges' of Physical AI (data ecosystems, sim-to-real resilience, lifelong adaptation, safety assurance, workforce integration, and sustainable hardware) due to access restrictions on the primary source.",
+      "reason": null
+    }
+  ],
+  "verified_source_registry": [
+    {
+      "source_id": "SRC001",
+      "domain": "andrew.ooo",
+      "publisher": "andrew.ooo",
+      "audited_source_type": "industry_analysis",
+      "audited_tier": 5,
+      "claim_refs": [
+        "SG02:C003"
+      ]
+    },
+    {
+      "source_id": "SRC002",
+      "domain": "artificialintelligenceherald.com",
+      "publisher": "AI Herald",
+      "audited_source_type": "industry_analysis",
+      "audited_tier": 4,
+      "claim_refs": [
+        "SG02:C001",
+        "SG02:C002",
+        "SG02:C004"
+      ]
+    },
+    {
+      "source_id": "SRC003",
+      "domain": "blog.pebblous.ai",
+      "publisher": "Pebblous",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "claim_refs": [
+        "SG03:C004"
+      ]
+    },
+    {
+      "source_id": "SRC004",
+      "domain": "neuralcoretech.com",
+      "publisher": "NeuralCoreTech",
+      "audited_source_type": "industry",
+      "audited_tier": 2,
+      "claim_refs": [
+        "SG01:C001",
+        "SG01:C002",
+        "SG01:C005"
+      ]
+    },
+    {
+      "source_id": "SRC005",
+      "domain": "qnx.software",
+      "publisher": "QNX",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "claim_refs": [
+        "SG03:C001",
+        "SG03:C002",
+        "SG03:C003"
+      ]
+    },
+    {
+      "source_id": "SRC006",
+      "domain": "rabby.kr",
+      "publisher": "rabby.kr",
+      "audited_source_type": "industry_analysis",
+      "audited_tier": 5,
+      "claim_refs": [
+        "SG02:C004"
+      ]
+    },
+    {
+      "source_id": "SRC007",
+      "domain": "www.betanews.net",
+      "publisher": "Betanews",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "claim_refs": [
+        "SG03:C005"
+      ]
+    },
+    {
+      "source_id": "SRC008",
+      "domain": "www.industrynews.co.kr",
+      "publisher": "인더스트리뉴스",
+      "audited_source_type": "official",
+      "audited_tier": 2,
+      "claim_refs": [
+        "SG01:C004"
+      ]
+    },
+    {
+      "source_id": "SRC009",
+      "domain": "www.kyeonggi.com",
+      "publisher": "경기일보",
+      "audited_source_type": "official",
+      "audited_tier": 1,
+      "claim_refs": [
+        "SG02:C005"
+      ]
+    },
+    {
+      "source_id": "SRC010",
+      "domain": "www.meta-intelligence.tech",
+      "publisher": "meta-intelligence.tech",
+      "audited_source_type": "industry",
+      "audited_tier": 2,
+      "claim_refs": [
+        "SG01:C001"
+      ]
+    },
+    {
+      "source_id": "SRC011",
+      "domain": "www.patsnap.com",
+      "publisher": "Patsnap",
+      "audited_source_type": "industry",
+      "audited_tier": 2,
+      "claim_refs": [
+        "SG01:C003"
+      ]
+    },
+    {
+      "source_id": "SRC012",
+      "domain": "www.yna.co.kr",
+      "publisher": "YNA",
+      "audited_source_type": "official",
+      "audited_tier": 1,
+      "claim_refs": [
+        "SG03:C006"
+      ]
+    }
+  ]
+}

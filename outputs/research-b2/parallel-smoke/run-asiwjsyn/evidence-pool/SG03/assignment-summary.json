@@ -1,0 +1,39 @@
+{
+  "assignment_id": "SG03",
+  "worker_source": "parallel",
+  "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/workers/SG03/run-qya0gef6",
+  "worker_metrics": {
+    "turn_count": 5,
+    "tool_call_count": 14,
+    "search_count": 8,
+    "fetch_count": 6,
+    "fetch_success_count": 4,
+    "model_response_times_seconds": [
+      127.41,
+      277.34,
+      568.638,
+      235.333,
+      578.576
+    ],
+    "model_total_seconds": 1787.298,
+    "elapsed_seconds": 1818.198
+  },
+  "deterministic_summary": {
+    "raw_claim_count": 6,
+    "accepted_claim_count": 6,
+    "unsupported_claim_count": 0,
+    "rejected_source_count": 0,
+    "successful_fetch_source_count": 4
+  },
+  "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/evidence-pool/SG03/semantic-audits/audit-pyuaskdo",
+  "post_audit_summary": {
+    "input_claim_count": 6,
+    "accepted_claim_count": 6,
+    "unsupported_claim_count": 0,
+    "verified_evidence_count": 6,
+    "rejected_evidence_count": 0,
+    "warning_count": 0
+  },
+  "accepted_claim_count": 6,
+  "gap_count": 2
+}

@@ -250,6 +250,12 @@ def build_source_registry(
             or ""
         )
 
+        claim_ref = (
+            f"{assignment_id}:{claim_id}"
+            if assignment_id and claim_id
+            else claim_id
+        )
+
         for evidence in (
             claim.get(
                 "verified_evidence"
@@ -353,8 +359,8 @@ def build_source_registry(
                 )
 
             if (
-                claim_id
-                and claim_id
+                claim_ref
+                and claim_ref
                 not in record[
                     "claim_ids"
                 ]
@@ -362,7 +368,7 @@ def build_source_registry(
                 record[
                     "claim_ids"
                 ].append(
-                    claim_id
+                    claim_ref
                 )
 
             evidence_id = (
@@ -761,6 +767,13 @@ def run_evidence_pool(
                 "assignment_id"
             ] = assignment_id
 
+            value[
+                "claim_ref"
+            ] = (
+                f"{assignment_id}:"
+                f"{value.get('claim_id', '')}"
+            )
+
             assignment_accepted.append(
                 value
             )
@@ -782,6 +795,13 @@ def run_evidence_pool(
             value[
                 "assignment_id"
             ] = assignment_id
+
+            value[
+                "claim_ref"
+            ] = (
+                f"{assignment_id}:"
+                f"{value.get('claim_id', '')}"
+            )
 
             unsupported_claims.append(
                 value

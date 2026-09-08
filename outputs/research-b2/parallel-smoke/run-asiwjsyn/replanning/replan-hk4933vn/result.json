@@ -1,0 +1,122 @@
+{
+  "status": "completed",
+  "stage": "B2-6",
+  "created_at": "2026-09-08T08:02:54.776515+00:00",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/replanning/replan-hk4933vn",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "replan_contract_sha256": "723c4b10afe0eaf34dbda02aae5e23b31193eddfe284847ffdb0f429f463a90a",
+  "convergence_contract_sha256": "a309765b044abb0085925e66ee67ef56e944f95b28cba32a9f652675a4392603",
+  "elapsed_seconds": 169.188,
+  "measurements": {
+    "wave_count": 1,
+    "max_waves": 3,
+    "resource_cap_reached": false,
+    "distinct_sources_read": 12,
+    "distinct_source_urls": [
+      "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026",
+      "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+      "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en",
+      "https://neuralcoretech.com/physical-ai-architecture-vla-robotics",
+      "https://qnx.software/en/blog/2026/inside-the-robot",
+      "https://rabby.kr/physical-ai-robots-korea-cases-2026",
+      "https://www.betanews.net/article/view/beta202609030109",
+      "https://www.industrynews.co.kr/news/articleView.html?idxno=54354",
+      "https://www.kyeonggi.com/article/20260723580350",
+      "https://www.meta-intelligence.tech/en/insight-physical-ai",
+      "https://www.patsnap.com/resources/blog/rd-blog/robotic-grasping-technology-landscape-2026-patsnap-eureka",
+      "https://www.yna.co.kr/view/AKR20250930148000052"
+    ],
+    "unique_verified_sources": 12,
+    "running_claim_count": 16,
+    "single_source_claim_count": 14,
+    "pending_independence_claim_count": 2,
+    "unsupported_claim_count": 2,
+    "conflicting_claim_count": 0,
+    "unresolved_gap_count": 8,
+    "novel_claim_counts": [
+      16
+    ],
+    "novelty_ratios": [
+      1.0
+    ],
+    "novelty_measurement_note": "Wave 1 begins with an empty prior validated claim set, so all accepted claims are measured as novel. Future-wave semantic novelty requires comparison against the running claim set."
+  },
+  "replan": {
+    "needs_another_wave": true,
+    "reason": "The majority of material claims are currently single-source. Critical gaps remain regarding hardware architectures, commercialization stages of Samsung and Doosan, and the Unitree model mismatch. Triangulation of VLA models and commercial deployment status for Figure/Optimus/Digit is required.",
+    "assignments": [
+      {
+        "assignment_id": "SG04",
+        "title": "Triangulation of Physical AI Architecture and Commercial Status",
+        "objective": "Cross-verify the shift to VLA models, the commercial deployment status of Tesla Optimus Gen 3, Figure 02/03, and Agility Digit, and resolve the conflict/mismatch regarding Unitree's $4k robot model name (G1 vs R1).",
+        "queries": [
+          "Tesla Optimus Gen 3 commercial deployment status 2026",
+          "Figure AI Figure 02 03 commercial installation BMW Amazon",
+          "Agility Robotics Digit commercial deployment Amazon",
+          "Unitree G1 vs R1 humanoid robot price $4000",
+          "Vision-Language-Action (VLA) models robotics foundation models 2024-2026"
+        ],
+        "source_priority": [
+          "official",
+          "industry"
+        ],
+        "needs_local_files": false
+      },
+      {
+        "assignment_id": "SG05",
+        "title": "Korean Physical AI Ecosystem and Infrastructure",
+        "objective": "Identify specific Physical AI products or projects from Samsung Electronics and Doosan Robotics, and find detailed specifications for public robotics testbeds/certification infrastructure in South Korea.",
+        "queries": [
+          "삼성전자 자율작업형 로봇 AI-Native humanoid",
+          "두산로보틱스 AI-Native 로봇 작업 수행 기술",
+          "한국 공용 시험 인프라 로봇 성능 평가 장비 리스트",
+          "South Korea public robotics testbed certification infrastructure specifications",
+          "삼성전자 휴머노이드 로봇 개발 현황 2026",
+          "두산로보틱스 AI 로봇 상용화 단계"
+        ],
+        "source_priority": [
+          "official",
+          "industry"
+        ],
+        "needs_local_files": false
+      },
+      {
+        "assignment_id": "SG06",
+        "title": "Technical Bottlenecks and Hardware Acceleration",
+        "objective": "Investigate current hardware acceleration bottlenecks for Physical AI, specifically focusing on on-device inference for VLA models and energy efficiency in humanoid actuators.",
+        "queries": [
+          "on-device inference bottlenecks for VLA models in robotics",
+          "humanoid robot actuator energy efficiency technical challenges",
+          "hardware acceleration for real-time physical AI inference"
+        ],
+        "source_priority": [
+          "peer-reviewed",
+          "industry"
+        ],
+        "needs_local_files": false
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "needs_another_wave": true,
+    "assignment_count": 3,
+    "assignment_ids": [
+      "SG04",
+      "SG05",
+      "SG06"
+    ]
+  },
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ],
+  "initial_status": "invalid_replan",
+  "repair_applied": true,
+  "repair_attempt_count": 1
+}

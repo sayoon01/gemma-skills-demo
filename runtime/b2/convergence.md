@@ -1,55 +1,89 @@
-# B2 Convergence Policy
+# B2 Convergence Runtime Contract
 
-## Skill convergence
+## Purpose
 
-Research is considered converged only when the active Skill's convergence conditions are satisfied.
+Convergence criteria are defined by the active Agent Skill.
 
-For the current deep-research Skill, the controller should evaluate:
+This runtime contract must not redefine or replace the active Skill's
+research-specific stopping rules.
 
-- at least 10 distinct sources have been read across all waves;
-- the last 2 consecutive waves each added fewer than 15% novel claims relative to the running claim total.
+The controller must read the active Skill and determine whether its
+convergence conditions have been satisfied using the runtime measurements
+provided after each wave.
 
-The runtime must record the actual reason research stopped.
+## Runtime measurements
 
-## Novel claim
+The runtime may provide measurements such as:
 
-A novel claim is a materially new factual finding that was not already represented in the running claim set.
+- completed wave count;
+- distinct sources actually read;
+- validated source count;
+- running validated claim count;
+- novel claim count for each wave;
+- novelty ratio for each wave;
+- unresolved single-source claims;
+- unsupported claims;
+- conflicting claims;
+- unresolved research gaps;
+- resource limits.
+
+These values are observations.
+
+They are not themselves convergence rules unless the active Skill says so.
+
+## Novel claim measurement
+
+A novel claim is a materially new factual finding that was not already
+represented in the running validated claim set.
 
 A wording variation of an existing claim is not novel.
 
-## Do not fake convergence
+The runtime may measure and record novelty, but the active Skill determines
+how that measurement affects convergence.
 
-The following are not convergence:
+## Stop reasons
 
-- timeout;
-- model error;
-- tool error;
-- reaching the configured maximum wave count;
-- reaching a cost or runtime limit.
+The runtime must distinguish semantic convergence from operational stopping.
 
-These must be recorded separately.
+Allowed stop reasons include:
 
-## Runtime safety cap
+- `convergence`
+- `resource_cap`
+- `model_error`
+- `tool_error`
+- `runtime_error`
+- `user_stop`
 
-The B2 experiment may define max_waves as a resource safety limit.
+A configured maximum wave count is only a resource safety limit.
 
-If max_waves is reached before Skill convergence:
+Reaching a resource limit must never be reported as semantic convergence.
 
-stop_reason = "resource_cap"
+## Controller decision
 
-not:
+The controller should return a convergence assessment based on:
 
-stop_reason = "convergence"
+1. the active Skill;
+2. the supplied runtime measurements;
+3. the unresolved evidence state.
 
-## Output record
+The controller must not claim convergence merely because the current wave
+completed successfully.
 
-The runtime should record:
+## Runtime record
+
+The runtime should record a generic structure such as:
 
 {
   "converged": false,
-  "stop_reason": "resource_cap",
+  "stop_reason": null,
+  "wave_count": 1,
+  "distinct_sources_read": 0,
   "unique_verified_sources": 0,
   "running_claim_count": 0,
   "novel_claim_counts": [],
-  "novelty_ratios": []
+  "novelty_ratios": [],
+  "unresolved_gap_count": 0
 }
+
+The meaning of these measurements is interpreted according to the active
+Skill.

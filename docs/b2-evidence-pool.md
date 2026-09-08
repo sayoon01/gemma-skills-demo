@@ -117,4 +117,4 @@ Pack에 없는 URL, 출판사, 제목, 날짜, tier를 합성 단계에서 만�
 - 실패한 Worker의 빈 결과를 다른 Worker 자료로 메우지 않는다
 - Auditor 세 개를 동시에 돌려 서로의 본문을 섞지 않는다
 - 사용자용 최종 보고서를 쓰지 않는다
-- lead를 보고 다음 Wave assignment를 만들지 않는다. 그건 [replan.md](../runtime/b2/replan.md)다
+- lead를 보고 다음 Wave assignment를 만들지 않는다. 그건 [b2-replanner.md](b2-replanner.md)다

@@ -612,6 +612,7 @@ def run_parallel_workers(
     max_workers: int,
     max_turns: int,
     output_root: Path,
+    wave_override: int | None = None,
 ) -> dict[str, Any]:
     if not 1 <= max_workers <= 5:
         raise ValueError(
@@ -639,10 +640,31 @@ def run_parallel_workers(
         )
     )
 
+    if (
+        wave_override is not None
+        and wave_override < 1
+    ):
+        raise ValueError(
+            "wave_override는 1 이상이어야 합니다."
+        )
+
     wave = (
-        plan.get("wave")
-        or 1
+        wave_override
+        if wave_override is not None
+        else (
+            plan.get("wave")
+            or 1
+        )
     )
+
+    if (
+        not isinstance(wave, int)
+        or isinstance(wave, bool)
+        or wave < 1
+    ):
+        raise ValueError(
+            f"유효하지 않은 wave 값: {wave!r}"
+        )
 
     output_root.mkdir(
         parents=True,
@@ -1047,6 +1069,16 @@ def main() -> int:
         ),
     )
 
+    parser.add_argument(
+        "--wave",
+        type=int,
+        default=None,
+        help=(
+            "Plan 내부 wave 값 대신 사용할 "
+            "runtime wave 번호"
+        ),
+    )
+
     args = parser.parse_args()
 
     run_parallel_workers(
@@ -1060,6 +1092,8 @@ def main() -> int:
             args.max_turns,
         output_root=
             args.output_root,
+        wave_override=
+            args.wave,
     )
 
     return 0

@@ -221,12 +221,8 @@ Anthropic 공개 `xlsx` Skill로 Excel 구조 확인·범위 읽기·도구 자�
 
 **병목은 Skill 지원이 아니라 Runtime 효율**(대량 cell JSON → context·처리시간).
 
-```bash
-python3 run.py \
-  --skill xlsx \
-  --input "inputs/....xlsx" \
-  --request "tasks/budget-comparison.md"
-```
+xlsx 보조 스크립트와 예산 비교 요청 파일은 저장소에서 뺐다.
+당시 결과는 위 링크의 기록으로 남긴다.
 
 ---
 

@@ -1,0 +1,17 @@
+{
+  "stage": "B2-4",
+  "created_at": "2026-09-08T08:14:14.354714+00:00",
+  "plan_path": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/replanning/replan-hk4933vn/replan.json",
+  "wave": 2,
+  "skill": "deep-research",
+  "max_workers": 3,
+  "max_turns": 6,
+  "current_date": "2026-09-08",
+  "assignment_count": 3,
+  "assignment_ids": [
+    "SG04",
+    "SG05",
+    "SG06"
+  ],
+  "local_file_tools": false
+}

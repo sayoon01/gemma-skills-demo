@@ -45,20 +45,13 @@ SKILL.md → Gemma4 Tool Choice → Actual Excel Read
 ## 3. 입력·요청
 
 - 입력: 예실대비표 Excel 2개 (`inputs/`, Git 제외)
-- 요청: [tasks/budget-comparison.md](../tasks/budget-comparison.md)
+- 요청: 예산 비교 요청 파일. 저장소에서는 제거했다.
 
 핵심 요구 요약: Sheet/Header 파악, 합계·비교·음수 잔액·한쪽만 있는 항목,
 파일명/Sheet/Cell 근거, 이중 합산 방지, 근거 없는 주장 금지, **원본 파일 변경 금지**.
 
-(업무 원본 셀 값은 공개 문서에 포함하지 않는다.)
-
-```bash
-python3 run.py \
-  --skill xlsx \
-  --input "inputs/....xlsx" \
-  --input "inputs/....xlsx" \
-  --request "tasks/budget-comparison.md"
-```
+(업무 원본 셀 값은 공개 문서에 포함하지 않는다.
+xlsx 보조 스크립트도 저장소에서 뺐다.)
 
 ---
 

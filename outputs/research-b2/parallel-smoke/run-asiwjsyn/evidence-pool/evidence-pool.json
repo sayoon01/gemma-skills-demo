@@ -1,0 +1,1335 @@
+{
+  "stage": "B2-5",
+  "created_at": "2026-09-08T07:55:01.907860+00:00",
+  "batch_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn",
+  "skill": "deep-research",
+  "assignments": [
+    {
+      "assignment_id": "SG01",
+      "worker_source": "parallel",
+      "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/workers/SG01/run-vmoyrz03",
+      "worker_metrics": {
+        "turn_count": 4,
+        "tool_call_count": 11,
+        "search_count": 6,
+        "fetch_count": 5,
+        "fetch_success_count": 4,
+        "model_response_times_seconds": [
+          167.318,
+          384.874,
+          533.768,
+          468.613
+        ],
+        "model_total_seconds": 1554.573,
+        "elapsed_seconds": 1578.658
+      },
+      "deterministic_summary": {
+        "raw_claim_count": 6,
+        "accepted_claim_count": 6,
+        "unsupported_claim_count": 0,
+        "rejected_source_count": 1,
+        "successful_fetch_source_count": 4
+      },
+      "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/evidence-pool/SG01/semantic-audits/audit-_jug23tu",
+      "post_audit_summary": {
+        "input_claim_count": 6,
+        "accepted_claim_count": 5,
+        "unsupported_claim_count": 1,
+        "verified_evidence_count": 6,
+        "rejected_evidence_count": 1,
+        "warning_count": 1
+      },
+      "accepted_claim_count": 5,
+      "gap_count": 3
+    },
+    {
+      "assignment_id": "SG02",
+      "worker_source": "recovery",
+      "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/recovery/SG02/run-vol9e0k5",
+      "worker_metrics": {
+        "turn_count": 4,
+        "tool_call_count": 8,
+        "search_count": 4,
+        "fetch_count": 4,
+        "fetch_success_count": 4,
+        "model_response_times_seconds": [
+          58.567,
+          89.708,
+          111.609,
+          270.054
+        ],
+        "model_total_seconds": 529.938,
+        "elapsed_seconds": 540.087
+      },
+      "deterministic_summary": {
+        "raw_claim_count": 6,
+        "accepted_claim_count": 6,
+        "unsupported_claim_count": 0,
+        "rejected_source_count": 0,
+        "successful_fetch_source_count": 4
+      },
+      "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/evidence-pool/SG02/semantic-audits/audit-sm2o34i4",
+      "post_audit_summary": {
+        "input_claim_count": 6,
+        "accepted_claim_count": 5,
+        "unsupported_claim_count": 1,
+        "verified_evidence_count": 6,
+        "rejected_evidence_count": 2,
+        "warning_count": 3
+      },
+      "accepted_claim_count": 5,
+      "gap_count": 3
+    },
+    {
+      "assignment_id": "SG03",
+      "worker_source": "parallel",
+      "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/workers/SG03/run-qya0gef6",
+      "worker_metrics": {
+        "turn_count": 5,
+        "tool_call_count": 14,
+        "search_count": 8,
+        "fetch_count": 6,
+        "fetch_success_count": 4,
+        "model_response_times_seconds": [
+          127.41,
+          277.34,
+          568.638,
+          235.333,
+          578.576
+        ],
+        "model_total_seconds": 1787.298,
+        "elapsed_seconds": 1818.198
+      },
+      "deterministic_summary": {
+        "raw_claim_count": 6,
+        "accepted_claim_count": 6,
+        "unsupported_claim_count": 0,
+        "rejected_source_count": 0,
+        "successful_fetch_source_count": 4
+      },
+      "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/evidence-pool/SG03/semantic-audits/audit-pyuaskdo",
+      "post_audit_summary": {
+        "input_claim_count": 6,
+        "accepted_claim_count": 6,
+        "unsupported_claim_count": 0,
+        "verified_evidence_count": 6,
+        "rejected_evidence_count": 0,
+        "warning_count": 0
+      },
+      "accepted_claim_count": 6,
+      "gap_count": 2
+    }
+  ],
+  "accepted_claims": [
+    {
+      "claim_id": "C001",
+      "claim": "2024-2026년 자율작업형 로봇의 핵심 아키텍처는 기존의 작업별 정책 학습에서 시각-언어-행동(VLA, Vision-Language-Action) 모델 기반의 파운데이션 모델 체계로 전환되었다.",
+      "worker_support": "VLA 모델은 인터넷 규모의 데이터로 사전 학습된 시각-언어 모델(VLM)을 백본으로 사용하여, 자연어 명령을 통해 학습되지 않은 새로운 작업(unseen tasks)을 수행할 수 있게 한다.",
+      "runtime_status": "MULTI_SOURCE_PENDING_INDEPENDENCE",
+      "verified_evidence_count": 2,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "Explicitly states the architectural shift of 2025-2026 is the introduction of foundation model backbones (VLMs pretrained on internet-scale data) paired with action generation, defining the VLA paradigm.",
+          "audited_source_type": "industry",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "title": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide - NeuralCoreTech",
+              "publisher": "NeuralCoreTech",
+              "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "The architectural shift that defines 2025–2026 is the introduction of foundation model backbones into the policy — specifically, large Vision-Language Models (VLMs) pretrained on internet-scale data — paired with action generation modules capable of producing smooth, continuous motor trajectories. This is the Vision-Language-Action (VLA) paradigm"
+            },
+            "retrieved_source": {
+              "title": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide - NeuralCoreTech",
+              "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+              "domain": "neuralcoretech.com",
+              "content": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide\nA deep technical analysis of Vision-Language-Action (VLA) architectures, diffusion-based robot policies, and the infrastructure powering large-scale Physical AI systems.\nby\nExternal Sources & Technical References\nThis article is a technical deep-dive into the architecture and engineering of Physical AI systems in 2026. It covers the internals of Vision-Language-Action models, the full training pipeline from synthetic data generation to sim-to-real transfer, and the inference constraints governing edge deployment on current hardware. All specifications and benchmarks cited are drawn directly from NVIDIA’s published technical documentation, arXiv papers, and official developer blog posts.\nTL;DR — Key Insights for AI Engineers\nPhysical AI is not a single model or framework — it is a multi-layer systems engineering challenge. The core problem is converting noisy, high-dimensional sensor input (RGB frames, depth maps, proprioceptive joint states, IMU readings) into continuous motor commands, in real time, across tasks and environments the system has never seen before. Every component in the stack is constrained by physics: the robot must maintain dynamic balance while manipulating objects, comply with joint torque limits, avoid collisions, and do all of this within the latency budget of a real-time control loop.\nBefore 2024, the dominant approach was task-specific policy learning: a robot was trained on demonstrations for a single task, in a single environment, with a fixed object set. Generalization was essentially absent. The architectural shift that defines 2025–2026 is the introduction of foundation model backbones into the policy — specifically, large Vision-Language Models (VLMs) pretrained on internet-scale data — paired with action generation modules capable of producing smooth, continuous motor trajectories. This is the Vision-Language-Action (VLA) paradigm, and understanding its internals is prerequisite to evaluating any Physical AI platform.\nVLA Architecture: Layer-by-Layer\nVision Encoder: SigLIP + MLP Projector\nGR00T N1’s visual encoding pipeline begins with a SigLIP vision transformer. SigLIP — Sigmoid Loss for Language-Image Pre-training — is a contrastive vision encoder trained to produce image representations that are semantically aligned with natural language descriptions. The SigLIP encoder in GR00T N1 operates on image patches of 14×14 pixels. For a standard input resolution, this produces a fixed-length sequence of visual tokens, each with an embedding dimension of 1152. The encoder comprises 27 SiglipEncoderLayer blocks, each containing a SiglipFlashAttention2 self-attention module (with query, key, and value projection dimensions of 1152), followed by layer normalization and a two-layer MLP with GELU activations and a hidden dimension of 4304.\nIn GR00T N1.6, the VLM was upgraded to a variant of Cosmos-Reason-2B with native resolution support — meaning the vision encoder processes images at their original aspect ratio rather than padding them to a square. This is architecturally significant: padding introduces artificial boundaries in the visual field that the attention mechanism can learn to attend to spuriously, degrading object localization and spatial reasoning. Native resolution support improves scene understanding and task decomposition reliability, particularly for manipulation tasks requiring fine-grained spatial judgment (e.g., grasping a specific face of a multi-sided object).\nThe visual tokens from SigLIP are projected into the LLM’s embedding space via an MLP connector. In N1 and N1.5, this was a standard two-layer MLP with added layer normalization. In N1.6, the MLP connector was modified to improve performance, and the top four layers of the VLM backbone were unfrozen during pretraining — a deliberate architectural decision to allow the VLM’s upper layers to adapt to the distribution of robot-relevant visual scenes rather than remaining fixed at the internet-data pretraining distribution.\nLanguage Encoder and Cross-Modal Fusion\nThe Jetson T5000 module powering the AGX Thor Developer Kit includes a Blackwell GPU with 2,560 CUDA cores, 96 fifth-generation Tensor cores, and a 14-core Arm Neoverse-V3AE CPU. Memory is 128 GB of LPDDR5x operating on a 256-bit bus for 276 GB/s of bandwidth. The module is rated for 2,070 TFLOPs at FP4 precision and 1,035 TOPS at FP8. The Blackwell architecture introduces NVFP4 as a first-class inference datatype, enabling 7.5x higher effective AI compute compared to the AGX Orin at the same power envelope, when models are optimized for this format. Multi-Instance GPU (MIG) support allows the Blackwell GPU to be partitioned into up to seven independent compute slices, enabling simultaneous execution of the perception stack, the VLM System 2 pass, and the DiT System 1 pass on separate GPU partitions with deterministic resource allocation.\nThe memory architecture is unified: CPU and GPU draw from the same 128 GB pool with no static partitioning. This eliminates the PCIe bandwidth bottleneck that affects discrete GPU systems when transferring tensors between CPU and GPU memory, which is particularly significant for VLA inference because the pipeline requires frequent data movement between the perception pre-processing stage (often CPU-bound) and the transformer inference stage (GPU-bound).\nInference Latency Breakdown\nQuantization and Precision Trade-offs\nRunning full-precision (BF16 or FP32) VLA models on edge hardware is impractical for most deployments. The GR00T N1.6 3B model uses approximately 6.15 GB of GPU memory in FP16 on a DGX Spark (Blackwell GB10), as documented in community deployment reports. On Orin Nano hardware with 8 GB of unified memory, a W4A16 (4-bit weights, 16-bit activations) quantized Cosmos Reason2-2B achieves 16–17 tokens per second and uses approximately 5.8 GB of RAM at max_model_length=2048. This is sufficient for non-real-time reasoning task",
+              "content_chars": 6000
+            }
+          }
+        },
+        {
+          "evidence_id": "C001-E002",
+          "state": "VERIFIED",
+          "reason": "Confirms VLA models (like RT-2) allow commanding robots with natural language to complete previously unseen tasks.",
+          "audited_source_type": "industry",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C001-E002",
+            "worker_source": {
+              "title": "Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status",
+              "publisher": "meta-intelligence.tech",
+              "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Breakthroughs in Robot Foundation Models are the key driving force behind Physical AI's accelerated deployment — RT-2 and other Vision-Language-Action models (VLA) achieved, for the first time, \"commanding robots with natural language to complete previously unseen tasks\""
+            },
+            "retrieved_source": {
+              "title": "Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status",
+              "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+              "domain": "www.meta-intelligence.tech",
+              "content": "Key Findings\nPhysical AI is moving from the lab to the production line — NVIDIA's Isaac platform combines GPU-accelerated simulation with robot foundation models, enabling developers to train robot policies at 1,000x real-world speed in digital twin environments, dramatically shortening the cycle from concept to deployment\n[1]\n[4]\nBreakthroughs in Robot Foundation Models are the key driving force behind Physical AI's accelerated deployment — RT-2 and other Vision-Language-Action models (VLA) achieved, for the first time, \"commanding robots with natural language to complete previously unseen tasks\"\n[5]\n[1]\n. This is no rhetorical exaggeration — from the Isaac robotics platform and the Omniverse digital twin engine to the Jetson Thor SoC designed specifically for robots, NVIDIA is building a complete Physical AI technology stack.\nThe core challenge of Physical AI lies in this: the physical world is far more complex than the digital world. In the digital world, a flawed inference at most produces imperfect text; in the physical world, one wrong movement can damage equipment, ruin products, or even injure personnel. Robots must make millisecond-level decisions in uncertain environments — perceiving object positions and materials, planning arm trajectories, applying precisely the right amount of force, and adjusting in real time when encountering unexpected situations. This requires AI to simultaneously possess visual understanding, spatial reasoning, force control, and real-time response capabilities — technical complexity far exceeding purely digital scenarios.\nBetween 2025 and 2026, three major technological breakthroughs transformed Physical AI from a \"long-term vision\" into a \"deployable technology\": First,\nRobot Foundation Models\n. Just as large language models enabled computers to understand human language, robot foundation models enable robots to understand the operational logic of the physical world.\nFrom RT-1 to RT-2: The Birth of Vision-Language-Action Models\n— it can not only understand images and language, but also directly translate that understanding into robot motion commands.\nRT-2's core breakthrough lies in \"knowledge transfer\": built on pre-trained vision-language models (such as PaLI-X), it transfers broad world knowledge learned from the internet to the robot control domain. This means RT-2 can understand concepts that never appeared in its training data. For example, even without any robot operation examples of \"throw trash in the trash can,\" RT-2 can correctly execute the task based on its semantic understanding of \"trash\" and \"trash can.\" In Google's tests, RT-2 achieved a more than 3x improvement in success rates on previously unseen tasks compared to its predecessor RT-1.\nOpen X-Embodiment: A Shared Knowledge Repository Across Robots\n, led by Google DeepMind with 21 participating research institutions, aims to break this bottleneck.\nOpen X-Embodiment established a standardized dataset covering 22 different robot forms and over 1 million operational trajectories. The RT-X model trained on this dataset demonstrated remarkable cross-robot transfer capabilities — on robots never seen before, RT-X's task success rate exceeded the robot's original dedicated model by 50%. The implications are profound: it proves robot AI can adopt the \"foundation model\" paradigm — training one general large model, then fine-tuning for different robot forms, just as GPT can be fine-tuned for text generation in different languages.\nNVIDIA GR00T and Isaac Lab: The Development Platform for Physical AI\nIsaac Lab / Isaac Sim:\nA robot simulation platform built on Omniverse. Developers can train robot policies in physically precise virtual environments at up to 1,000x real-world speed, dramatically reducing the cost and risk of real-world training. Isaac Lab supports domain randomization — randomizing lighting, friction, object shapes, and other parameters in simulation to improve strategy transfer to real environments\nJetson Thor:\n[10]\nnoted that robot foundation models are experiencing a \"scaling law validation period\" similar to large language models — the larger the model, the more diverse the training data, and the more precise the simulation environment, the stronger the robot's generalization capability. By 2027, robot foundation model parameter scales are expected to cross from the current billions into the hundreds of billions, at which point robots will be able to complete most structured physical operations through language instructions alone.\n4. Core Application Scenarios for Physical AI\nScenario 4: Hazardous Environment Operations — Replacing Humans in High-Risk Zones\nIn scenarios such as nuclear plant decommissioning, chemical handling, post-disaster search and rescue, and high-altitude work, the cost of exposing humans to physical risk is extremely high. Physical AI can send robots into these dangerous environments to perform inspection, repair, cleanup, and rescue tasks. Boston Dynamics' Atlas was originally developed for DARPA's post-disaster rescue challenge\n[4]\n[1]\nto build digital twin models of the site, simulating robot workflows and efficiency in virtual environments before deciding whether to proceed with physical pilots.\nDuring the proof of concept phase, we recommend a\ncollaborative robot (Cobot) + AI vision\ncombination as the starting point, rather than directly deploying humanoid robots. The reasons: Cobots have higher technology maturity, shorter deployment cycles (typically 2-4 weeks), lower costs (approximately NT$1-2 million), and well-established safety certifications. Through Cobot pilots, enterprises can validate the feasibility and ROI of AI-driven automation in their specific settings at low risk.\nPhase 2: Expanded Deployment and System Integration (6-18 months)\nAfter successful proof of concept, enterprises should expand Physical AI from a single workstation to entire production lines or warehouse sections. The key challenge at this stage is not the robots them",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "TRIANGULATED",
+      "auditor_reason": "Both sources confirm the shift toward VLA foundation models (using VLMs pretrained on internet-scale data) to enable robots to perform unseen tasks via natural language, specifically within the 2024-2026 timeframe.",
+      "assignment_id": "SG01",
+      "claim_ref": "SG01:C001"
+    },
+    {
+      "claim_id": "C002",
+      "claim": "NVIDIA의 GR00T N1.6 아키텍처는 SigLIP 비전 인코더와 네이티브 해상도 지원 VLM을 통해 공간 추론 및 객체 정밀 제어 능력을 향상시켰다.",
+      "worker_support": "SigLIP 인코더를 통해 시각 토큰을 생성하고, 패딩 없이 원본 종횡비를 유지하는 네이티브 해상도 지원을 통해 객체 국소화(localization) 및 공간 추론의 정확도를 높였다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly links GR00T N1.6's upgrade to native resolution support (avoiding padding) to improved object localization and spatial reasoning, and mentions the SigLIP vision transformer.",
+          "audited_source_type": "industry",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "title": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide - NeuralCoreTech",
+              "publisher": "NeuralCoreTech",
+              "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "In GR00T N1.6, the VLM was upgraded to a variant of Cosmos-Reason-2B with native resolution support — meaning the vision encoder processes images at their original aspect ratio rather than padding them to a square. This is architecturally significant: padding introduces artificial boundaries... degrading object localization and spatial reasoning."
+            },
+            "retrieved_source": {
+              "title": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide - NeuralCoreTech",
+              "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+              "domain": "neuralcoretech.com",
+              "content": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide\nA deep technical analysis of Vision-Language-Action (VLA) architectures, diffusion-based robot policies, and the infrastructure powering large-scale Physical AI systems.\nby\nExternal Sources & Technical References\nThis article is a technical deep-dive into the architecture and engineering of Physical AI systems in 2026. It covers the internals of Vision-Language-Action models, the full training pipeline from synthetic data generation to sim-to-real transfer, and the inference constraints governing edge deployment on current hardware. All specifications and benchmarks cited are drawn directly from NVIDIA’s published technical documentation, arXiv papers, and official developer blog posts.\nTL;DR — Key Insights for AI Engineers\nPhysical AI is not a single model or framework — it is a multi-layer systems engineering challenge. The core problem is converting noisy, high-dimensional sensor input (RGB frames, depth maps, proprioceptive joint states, IMU readings) into continuous motor commands, in real time, across tasks and environments the system has never seen before. Every component in the stack is constrained by physics: the robot must maintain dynamic balance while manipulating objects, comply with joint torque limits, avoid collisions, and do all of this within the latency budget of a real-time control loop.\nBefore 2024, the dominant approach was task-specific policy learning: a robot was trained on demonstrations for a single task, in a single environment, with a fixed object set. Generalization was essentially absent. The architectural shift that defines 2025–2026 is the introduction of foundation model backbones into the policy — specifically, large Vision-Language Models (VLMs) pretrained on internet-scale data — paired with action generation modules capable of producing smooth, continuous motor trajectories. This is the Vision-Language-Action (VLA) paradigm, and understanding its internals is prerequisite to evaluating any Physical AI platform.\nVLA Architecture: Layer-by-Layer\nVision Encoder: SigLIP + MLP Projector\nGR00T N1’s visual encoding pipeline begins with a SigLIP vision transformer. SigLIP — Sigmoid Loss for Language-Image Pre-training — is a contrastive vision encoder trained to produce image representations that are semantically aligned with natural language descriptions. The SigLIP encoder in GR00T N1 operates on image patches of 14×14 pixels. For a standard input resolution, this produces a fixed-length sequence of visual tokens, each with an embedding dimension of 1152. The encoder comprises 27 SiglipEncoderLayer blocks, each containing a SiglipFlashAttention2 self-attention module (with query, key, and value projection dimensions of 1152), followed by layer normalization and a two-layer MLP with GELU activations and a hidden dimension of 4304.\nIn GR00T N1.6, the VLM was upgraded to a variant of Cosmos-Reason-2B with native resolution support — meaning the vision encoder processes images at their original aspect ratio rather than padding them to a square. This is architecturally significant: padding introduces artificial boundaries in the visual field that the attention mechanism can learn to attend to spuriously, degrading object localization and spatial reasoning. Native resolution support improves scene understanding and task decomposition reliability, particularly for manipulation tasks requiring fine-grained spatial judgment (e.g., grasping a specific face of a multi-sided object).\nThe visual tokens from SigLIP are projected into the LLM’s embedding space via an MLP connector. In N1 and N1.5, this was a standard two-layer MLP with added layer normalization. In N1.6, the MLP connector was modified to improve performance, and the top four layers of the VLM backbone were unfrozen during pretraining — a deliberate architectural decision to allow the VLM’s upper layers to adapt to the distribution of robot-relevant visual scenes rather than remaining fixed at the internet-data pretraining distribution.\nLanguage Encoder and Cross-Modal Fusion\nThe Jetson T5000 module powering the AGX Thor Developer Kit includes a Blackwell GPU with 2,560 CUDA cores, 96 fifth-generation Tensor cores, and a 14-core Arm Neoverse-V3AE CPU. Memory is 128 GB of LPDDR5x operating on a 256-bit bus for 276 GB/s of bandwidth. The module is rated for 2,070 TFLOPs at FP4 precision and 1,035 TOPS at FP8. The Blackwell architecture introduces NVFP4 as a first-class inference datatype, enabling 7.5x higher effective AI compute compared to the AGX Orin at the same power envelope, when models are optimized for this format. Multi-Instance GPU (MIG) support allows the Blackwell GPU to be partitioned into up to seven independent compute slices, enabling simultaneous execution of the perception stack, the VLM System 2 pass, and the DiT System 1 pass on separate GPU partitions with deterministic resource allocation.\nThe memory architecture is unified: CPU and GPU draw from the same 128 GB pool with no static partitioning. This eliminates the PCIe bandwidth bottleneck that affects discrete GPU systems when transferring tensors between CPU and GPU memory, which is particularly significant for VLA inference because the pipeline requires frequent data movement between the perception pre-processing stage (often CPU-bound) and the transformer inference stage (GPU-bound).\nInference Latency Breakdown\nQuantization and Precision Trade-offs\nRunning full-precision (BF16 or FP32) VLA models on edge hardware is impractical for most deployments. The GR00T N1.6 3B model uses approximately 6.15 GB of GPU memory in FP16 on a DGX Spark (Blackwell GB10), as documented in community deployment reports. On Orin Nano hardware with 8 GB of unified memory, a W4A16 (4-bit weights, 16-bit activations) quantized Cosmos Reason2-2B achieves 16–17 tokens per second and uses approximately 5.8 GB of RAM at max_model_length=2048. This is sufficient for non-real-time reasoning task",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "Only one source provides the technical details regarding GR00T N1.6's use of SigLIP and native resolution support to improve spatial reasoning.",
+      "assignment_id": "SG01",
+      "claim_ref": "SG01:C002"
+    },
+    {
+      "claim_id": "C003",
+      "claim": "작업 수행(Manipulation) 기술은 단순한 파지(Grasping) 예측에서 '파지-배치 시너지(Grasp-for-Placement Synergy)' 기반의 작업 인식형 파지 추정으로 발전하고 있다.",
+      "worker_support": "삼성전자의 2024-2026년 특허에 따르면, 객체를 어디에 놓을 것인가라는 하위 작업의 제약 조건이 상위 단계의 파지 방식을 결정하는 통합 신경망 계획(unified neural planning) 방식이 적용되어 재파지(re-grasp) 횟수를 줄이고 사이클 타임을 개선한다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly mentions Samsung's task-aware grasp estimation patents (2024-2026) and the concept of 'Grasp-for-Placement Synergy' where downstream placement geometry informs grasp selection.",
+          "audited_source_type": "industry",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C003-E001",
+            "worker_source": {
+              "title": "Robotic Grasping Technology Landscape 2026 — PatSnap Eureka | Patsnap",
+              "publisher": "Patsnap",
+              "url": "https://www.patsnap.com/resources/blog/rd-blog/robotic-grasping-technology-landscape-2026-patsnap-eureka/",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Samsung's task-aware grasp estimation patents (US, 2024–2026) demonstrate that grasp selection should be informed by the downstream placement geometry, linking pick-and-place into a unified neural planning problem. This reduces re-grasp events and improves cycle time."
+            },
+            "retrieved_source": {
+              "title": "Robotic Grasping Technology Landscape 2026 — PatSnap Eureka | Patsnap",
+              "url": "https://www.patsnap.com/resources/blog/rd-blog/robotic-grasping-technology-landscape-2026-patsnap-eureka/",
+              "domain": "www.patsnap.com",
+              "content": ", tactile and vision-based sensing, soft robotic end-effectors, and multi-arm coordination. The field is converging from classical geometric planning toward data-driven, adaptive systems capable of handling novel objects in unstructured environments.\nWithin this dataset, patents cluster around four interacting domains: (1) machine learning and neural network-based grasp prediction, (2) vision and sensing systems for object pose estimation and grasp candidate selection, (3) trajectory planning and collision avoidance for manipulator arms, and (4) physical end-effector design including soft robotics and tactile feedback.\nThe dataset spans 34+ distinct assignees across at least 11 jurisdictions (JP, US, EP, WO, CN, KR, IT, AU, IN, CA, EA), with the largest concentration in Japan (JP), reflecting the extensive procedural filing activity of both domestic and foreign assignees through the\nreinforcement learning (RL) policies\ntrained in simulation and transferred to real hardware; geometry-aware 3D object representations derived from 2D/2.5D sensor inputs; human demonstration-based grasp teaching; and multi-view imaging to resolve ambiguous grasp configurations.\nFour Core Domains\nVision & Sensing\nObject pose estimation and grasp candidate selection systems\n📐\nTask-Aware & Multi-Arm Coordinated Manipulation\nAn emerging cluster links grasp selection to downstream task constraints — where the robot should place an object influences how it is grasped. Multi-arm coordination and shared-workspace motion planning represent a complementary sub-cluster addressing throughput and complexity scaling.\nSamsung\nFanuc Corporation's\nmultiple grasp generation patents explicitly target bin-picking and machine-tending scenarios where parts are randomly oriented in bins. Bymer Group AS's pick-and-place robot system handles continuously moving bulk material streams with dynamically reconfigured suction-cup grippers. Dexterity, Inc.'s autonomous unknown object pick-and-place (CA, 2024) scores grasp strategies across multiple camera views for warehouse-relevant unknown objects.\nBin picking · Machine tending · Pallet loading\nHuman-Robot Collaboration & Teaching\nSeveral patents address the interface between human operators and robotic systems for manipulation learning. Schaeffler Technologies AG's gesture-controlled robot teaching with visual-inertial odometry allows operators to guide arm trajectories via hand gestures with collision avoidance. NVIDIA's machine learning-controlled object handover system enables safe object transfer from human hand to robot gripper using depth-camera-derived point clouds and hand-pose estimation.\nTeleoperation · Demonstration learning · Handover\nTask-Conditioned Grasp Planning (Grasp-for-Placement Synergy)\nSamsung's task-aware grasp estimation patents (US, 2024–2026) demonstrate that grasp selection should be informed by the downstream placement geometry, linking pick-and-place into a unified neural planning problem. This reduces re-grasp events and improves cycle time.\n⚡\nTask-conditioned manipulation is displacing isolated grasp planning.\nThe progression from grasp-success prediction to task-aware grasp-placement synergy (Samsung, Autodesk, Mitsubishi Electric) signals that the field is moving toward unified manipulation policies where downstream task constraints define upstream grasp parameters. IP strategists should evaluate claims that link grasp selection to placement or assembly context. See\nPatSnap's IP analytics platform\nData generation pipelines are a primary IP differentiator — not just model architecture\nTask-conditioned grasp-placement synergy is the new frontier (Samsung, Autodesk, Mitsubishi)\nSensor fusion IP (tactile + vision) spans both industrial and surgical verticals\n5–6 assignees\naccount for the majority of technically substantive grasp-learning patents in the dataset, while a longer tail of specialized industrial and surgical robotics players occupies the remaining space.\nEmerging Trends 2024–2026\nLandmark Patents Across Technology Clusters\nA curated selection of technically substantive patents from the dataset, spanning deep learning grasp prediction, RL-based tactile grasping, simulation data generation, and task-aware manipulation.\nPatent Title\nDeep Learning Grasp Prediction\nEye-on-Hand Reinforcement Learner for Dynamic Grasping with Active Pose Estimation\nEye-on-hand vision sensor; RL policy tracks moving objects maintaining them in sensor field-of-view\nSimulation & Demo Transfer\nSynergies between pick and place: task-aware grasp estimation\nNeural network derives affordance info from 3D geometry; grasp orientation and placement jointly determined\nSamsung Electronics\n+\nWithin this dataset, robotic grasping and manipulation patents cluster around four interacting domains: (1) machine learning and neural network-based grasp prediction, (2) vision and sensing systems for object pose estimation and grasp candidate selection, (3) trajectory planning and collision avoidance for manipulator arms, and (4) physical end-effector design including soft robotics and tactile feedback.\nWhich companies hold the most robotic grasping patents in this dataset?\n+\nFanuc Corporation is the largest single assignee cluster (5+ patents), concentrated on grasp data generation, region-based grasp planning, machine-tending applications, and human-demonstration transfer. Google LLC and X Development LLC combined hold 7+ patents across JP, US, EP, WO, IN, CN. NVIDIA Corporation holds 3 patents covering tactile RL grasping, cluttered-scene grasp pose determination, and human-to-robot handover. Samsung Electronics holds 3–4 patents covering task-aware grasp estimation, placement policy imitation learning, and hand-eye calibration.\nWhy is Japan the dominant filing jurisdiction for robotic grasping patents?\n+\nBased on filings dated 2024–2026 in this dataset, five forward-looking directions are identifiable: (1) Dynamic and Moving-Target Grasping via Eye-on-Hand RL, (2) Multi-Arm Coordinated Manipu",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "Only one source discusses the specific 'Grasp-for-Placement Synergy' and Samsung's related patents.",
+      "assignment_id": "SG01",
+      "claim_ref": "SG01:C003"
+    },
+    {
+      "claim_id": "C004",
+      "claim": "온디바이스 AI 분야에서는 클라우드 없이 기기 자체에서 학습이 가능한 '적응형 AI(Adaptive AI)' 및 연속 학습(Continual Learning) 가속 기술이 개발되었다.",
+      "worker_support": "KAIST 연구팀은 2차원 시스톨릭 배열(Systolic Array) 구조의 NPU와 MX 기반 다중 정밀도 연산 기법을 통해 온디바이스 자원만으로 적응형 AI를 실현하는 하드웨어 및 소프트웨어 시스템을 개발하였다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "reason": "The article confirms the development of an NPU structure based on 2D Systolic Arrays and Microsoft MX multi-precision computing to realize Adaptive AI/Continual Learning on-device without cloud resources.",
+          "audited_source_type": "official",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C004-E001",
+            "worker_source": {
+              "title": "KAIST, 자율주행차·로봇 등 온디바이스 환경서 적응형 인공지능 실현",
+              "publisher": "인더스트리뉴스",
+              "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=54354",
+              "source_type": "official",
+              "tier": 2,
+              "excerpt": "적응형 AI의 기반 기술인 ‘연속 학습’ 가속을 위한 NPU(신경망처리장치) 구조 및 온디바이스 소프트웨어 시스템을 최초 개발... 효율적 병렬 프로세싱을 위해 2차원 시스톨릭 배열(Systolic Array) 구조를 기반으로 한다."
+            },
+            "retrieved_source": {
+              "title": "KAIST, 자율주행차·로봇 등 온디바이스 환경서 적응형 인공지능 실현 < 이슈·트렌드 < 자율제조·스마트팩토리 < 산업 < 기사본문 - 인더스트리뉴스",
+              "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=54354",
+              "domain": "www.industrynews.co.kr",
+              "content": "KAIST, 자율주행차·로봇 등 온디바이스 환경서 적응형 인공지능 실현 < 이슈·트렌드 < 자율제조·스마트팩토리 < 산업 < 기사본문 - 인더스트리뉴스\n주요서비스 바로가기\n테크\nAI\n경제·금융\n테크\nAI\n경제·금융\n납품업체엔 59일 '버티기', 오너家엔 900억 '통 큰' 배당… 다이소의 이중 잣대\n‘7000피’ 되찾은 코스피…오픈AI ‘아스트라’ 호재에 상승폭 확대\n한은 “하반기 충격 없다면 올해 3.3% 성장·1인당 GNI 4만달러 가능해”\n이슈·트렌드\nKAIST, 자율주행차·로봇 등 온디바이스 환경서 적응형 인공지능 실현\n전산학부 박종세 교수 연구팀, ISCA 2024서 ‘최우수 연구 기록물 상’ 수상\n이 기사를 공유합니다\n[인더스트리뉴스 최종윤 기자] 자율주행차, 로봇 등 온디바이스 자율시스템 환경에서 클라우드의 원격 컴퓨팅 자원 없이 기기 자체에 내장된 인공지능칩을 활용한 온디바이스 자원만으로 적응형 AI를 실현하는 기술이 개발됐다.\n박종세 교수팀이 연구 결과를 발표하고 있다. [사진=KAIST]\nKAIST(총장 이광형)는 전산학부 박종세 교수 연구팀이 지난 6월 29일부터 7월 3일까지 아르헨티나 부에노스아이레스에서 열린 ‘2024 국제 컴퓨터구조 심포지엄(International Symposium on Computer Architecture, ISCA 2024)’에서 최우수 연구 기록물상(Distinguished Artifact Award)을 수상했다고 1일 밝혔다.\n국제 컴퓨터 구조 심포지움(ISCA)은 컴퓨터 아키텍처 분야에서 최고 권위를 자랑하는 국제 학회로 올해는 423편의 논문이 제출됐으며, 그중 83편 만이 채택됐다. 최우수 연구 기록물 상은 학회에서 주어지는 특별한 상 중 하나로, 제출 논문 중 연구 기록물의 혁신성, 활용 가능성, 영향력을 고려해 선정된다.\n자율시스템 상의 연속학습 연산 작업 흐름. 연속학습은 시스템 상에서 센서 데이터를 활용한 추론 작업 뿐만 아니라, 적응형 AI를 위해 훈련 데이터 생성을 위한 데이터 라벨링 작업 및 학습 작업을 포함한다. [자료=KAIST]\n이번 수상 연구는 적응형 AI의 기반 기술인 ‘연속 학습’ 가속을 위한 NPU(신경망처리장치) 구조 및 온디바이스 소프트웨어 시스템을 최초 개발한 점, 향후 온디바이스 AI 시스템 연구의 지속적인 발전을 위해 오픈소스로 공개한 코드, 데이터 등의 완성도 측면에서 높은 평가를 받았다.\n연구 결과는 소프트웨어 중심 자동차(SDV, Software-Defined Vehicles), 소프트웨어 중심 로봇(SDR, Software-Defined Robots)으로 대표되는 미래 모빌리티 환경에서 온디바이스 AI 시스템을 구축하는 등 다양한 분야에 활용될 수 있을 것으로 기대된다.\n개발한 온디바이스 적응형 AI 신경망처리장치(NPU) 내부 구조. 효율적 병렬 프로세싱을 위해 2차원 시스톨릭 배열(Systolic Array) 구조를 기반으로 한다. 저전력 온디바이스 환경에서 연속학습이 가능하도록 하드웨어 자원 활용도를 극대화하는 공간적 자원 분할 기법과 마이크로소프트(Microsoft) MX 기반 다중 정밀도 연산 기법을 개발했다. [자료=KAIST]\nKAIST 전산학부 박종세 교수는 “이번 연구를 통해 온디바이스 자원만으로 적응형 AI를 실현할 수 있다는 것을 입증하게 돼 매우 기쁘고, 이 성과는 학생들의 헌신적인 노력과 구글 및 메타 연구자들과의 긴밀한 협력 덕분”이라며, “앞으로도 온디바이스 AI를 위한 하드웨어와 소프트웨어 연구를 지속해 나갈 것”이라고 소감을 전했다.\n이번 연구는 KAIST 전산학부 김윤성, 오창훈, 황진우, 김원웅, 오성룡, 이유빈 학생들과 메타(Meta)의 하딕 샤르마(Hardik Sharma) 박사, 구글 딥마인드(Google Deepmind)의 아미르 야즈단바크시(Amir Yazdanbakhsh) 박사, KAIST 전산학부 박종세 교수가 참여했다.\n한편 이번 연구는 한국연구재단 우수신진연구자지원사업, 정보통신기획평가원(IITP), 대학ICT연구센터(ITRC), 인공지능대학원지원사업, 인공지능반도체대학원지원사업의 지원을 받아 수행됐다.\n관련기사\nKAIST, 공기 중 이산화탄소 95% 포집 기술 개발\n서울로보틱스, KAIST 및 독일 KIT 학생 초청 멘토링 세션 진행\n국내 연구진, 실리콘 진동자로 뉴로모픽 진동 신경망 구현… “복잡한 컴퓨팅 난제 해결”\nKAIST, GPU에서 대규모 출력데이터 난제 해결\n마우저, IoT·자동화 지원하는 아두이노 오픈소스 제품군 공급\n뉴빌리티-요기요, 인천 송도에서 국내 첫 대규모 로봇배달 론칭\nKAIST-엔젤로보틱스, 웨어러블 로봇 ‘워크온슈트F1’ 공개… 로봇 스스로 걸어와 착용\n최종윤 기자\n다른기사 보기\n저작권자 © 인더스트리뉴스 무단전재 및 재배포, AI학습 및 활용 금지\n개의 댓글\n위존, ‘M.AX 전문기업’ 선정…제조AI 전환 사업 확대\nICT 인프라 및 AX 최적화 솔루션 전문기업 위존(대표 박대현)은 한국산업기술기획평가원(이하 ‘KEIT’라 한다)이 지정하는 ‘M.AX(Manufacturing AI Transformation) 전문기업’에 최종 선정됐다고 8일 밝혔다.M.AX는 산업통상자원부가 국내 제조업의 경쟁력 강화를 위해 추진하는 제조 인공지능 대전환 프로젝트다. KEIT는 기술력 및 전문성, 제조기업 대상 공급 실적과 시장 신뢰도, 기업 성장 가능성 등을 종합적으로 평가해 제조기업의 AI 도입과 활용을 지원하고 제조AI 생태\n국토부·LH, 수도권 주택 공급용 유휴부지 5000억원 비축",
+              "content_chars": 2706
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "Only one source provides evidence for the KAIST research on Adaptive AI and the specific NPU architecture.",
+      "assignment_id": "SG01",
+      "claim_ref": "SG01:C004"
+    },
+    {
+      "claim_id": "C005",
+      "claim": "물리적 AI 로봇의 실시간 제어를 위해 하드웨어 가속기(NVIDIA Blackwell 등)의 정밀도 최적화와 GPU 파티셔닝 기술이 적용되고 있다.",
+      "worker_support": "NVIDIA Blackwell 아키텍처의 NVFP4 정밀도는 Orin 대비 7.5배 높은 AI 연산 성능을 제공하며, MIG(Multi-Instance GPU)를 통해 인지 스택, VLM 추론(System 2), DiT 제어(System 1)를 독립적인 컴퓨팅 슬라이스로 분리하여 결정론적 자원 할당을 수행한다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly mentions NVFP4 providing 7.5x higher compute than Orin and the use of MIG to partition the GPU into slices for the perception stack, VLM System 2, and DiT System 1.",
+          "audited_source_type": "industry",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C005-E001",
+            "worker_source": {
+              "title": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide - NeuralCoreTech",
+              "publisher": "NeuralCoreTech",
+              "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "The Blackwell architecture introduces NVFP4 as a first-class inference datatype, enabling 7.5x higher effective AI compute compared to the AGX Orin... Multi-Instance GPU (MIG) support allows the Blackwell GPU to be partitioned into up to seven independent compute slices, enabling simultaneous execution of the perception stack, the VLM System 2 pass, and the DiT System 1 pass"
+            },
+            "retrieved_source": {
+              "title": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide - NeuralCoreTech",
+              "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+              "domain": "neuralcoretech.com",
+              "content": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide\nA deep technical analysis of Vision-Language-Action (VLA) architectures, diffusion-based robot policies, and the infrastructure powering large-scale Physical AI systems.\nby\nExternal Sources & Technical References\nThis article is a technical deep-dive into the architecture and engineering of Physical AI systems in 2026. It covers the internals of Vision-Language-Action models, the full training pipeline from synthetic data generation to sim-to-real transfer, and the inference constraints governing edge deployment on current hardware. All specifications and benchmarks cited are drawn directly from NVIDIA’s published technical documentation, arXiv papers, and official developer blog posts.\nTL;DR — Key Insights for AI Engineers\nPhysical AI is not a single model or framework — it is a multi-layer systems engineering challenge. The core problem is converting noisy, high-dimensional sensor input (RGB frames, depth maps, proprioceptive joint states, IMU readings) into continuous motor commands, in real time, across tasks and environments the system has never seen before. Every component in the stack is constrained by physics: the robot must maintain dynamic balance while manipulating objects, comply with joint torque limits, avoid collisions, and do all of this within the latency budget of a real-time control loop.\nBefore 2024, the dominant approach was task-specific policy learning: a robot was trained on demonstrations for a single task, in a single environment, with a fixed object set. Generalization was essentially absent. The architectural shift that defines 2025–2026 is the introduction of foundation model backbones into the policy — specifically, large Vision-Language Models (VLMs) pretrained on internet-scale data — paired with action generation modules capable of producing smooth, continuous motor trajectories. This is the Vision-Language-Action (VLA) paradigm, and understanding its internals is prerequisite to evaluating any Physical AI platform.\nVLA Architecture: Layer-by-Layer\nVision Encoder: SigLIP + MLP Projector\nGR00T N1’s visual encoding pipeline begins with a SigLIP vision transformer. SigLIP — Sigmoid Loss for Language-Image Pre-training — is a contrastive vision encoder trained to produce image representations that are semantically aligned with natural language descriptions. The SigLIP encoder in GR00T N1 operates on image patches of 14×14 pixels. For a standard input resolution, this produces a fixed-length sequence of visual tokens, each with an embedding dimension of 1152. The encoder comprises 27 SiglipEncoderLayer blocks, each containing a SiglipFlashAttention2 self-attention module (with query, key, and value projection dimensions of 1152), followed by layer normalization and a two-layer MLP with GELU activations and a hidden dimension of 4304.\nIn GR00T N1.6, the VLM was upgraded to a variant of Cosmos-Reason-2B with native resolution support — meaning the vision encoder processes images at their original aspect ratio rather than padding them to a square. This is architecturally significant: padding introduces artificial boundaries in the visual field that the attention mechanism can learn to attend to spuriously, degrading object localization and spatial reasoning. Native resolution support improves scene understanding and task decomposition reliability, particularly for manipulation tasks requiring fine-grained spatial judgment (e.g., grasping a specific face of a multi-sided object).\nThe visual tokens from SigLIP are projected into the LLM’s embedding space via an MLP connector. In N1 and N1.5, this was a standard two-layer MLP with added layer normalization. In N1.6, the MLP connector was modified to improve performance, and the top four layers of the VLM backbone were unfrozen during pretraining — a deliberate architectural decision to allow the VLM’s upper layers to adapt to the distribution of robot-relevant visual scenes rather than remaining fixed at the internet-data pretraining distribution.\nLanguage Encoder and Cross-Modal Fusion\nThe Jetson T5000 module powering the AGX Thor Developer Kit includes a Blackwell GPU with 2,560 CUDA cores, 96 fifth-generation Tensor cores, and a 14-core Arm Neoverse-V3AE CPU. Memory is 128 GB of LPDDR5x operating on a 256-bit bus for 276 GB/s of bandwidth. The module is rated for 2,070 TFLOPs at FP4 precision and 1,035 TOPS at FP8. The Blackwell architecture introduces NVFP4 as a first-class inference datatype, enabling 7.5x higher effective AI compute compared to the AGX Orin at the same power envelope, when models are optimized for this format. Multi-Instance GPU (MIG) support allows the Blackwell GPU to be partitioned into up to seven independent compute slices, enabling simultaneous execution of the perception stack, the VLM System 2 pass, and the DiT System 1 pass on separate GPU partitions with deterministic resource allocation.\nThe memory architecture is unified: CPU and GPU draw from the same 128 GB pool with no static partitioning. This eliminates the PCIe bandwidth bottleneck that affects discrete GPU systems when transferring tensors between CPU and GPU memory, which is particularly significant for VLA inference because the pipeline requires frequent data movement between the perception pre-processing stage (often CPU-bound) and the transformer inference stage (GPU-bound).\nInference Latency Breakdown\nQuantization and Precision Trade-offs\nRunning full-precision (BF16 or FP32) VLA models on edge hardware is impractical for most deployments. The GR00T N1.6 3B model uses approximately 6.15 GB of GPU memory in FP16 on a DGX Spark (Blackwell GB10), as documented in community deployment reports. On Orin Nano hardware with 8 GB of unified memory, a W4A16 (4-bit weights, 16-bit activations) quantized Cosmos Reason2-2B achieves 16–17 tokens per second and uses approximately 5.8 GB of RAM at max_model_length=2048. This is sufficient for non-real-time reasoning task",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "Only one source provides the specific technical details on NVFP4 and MIG partitioning for the perception/VLM/DiT stacks.",
+      "assignment_id": "SG01",
+      "claim_ref": "SG01:C005"
+    },
+    {
+      "claim_id": "C001",
+      "claim": "Tesla Optimus Gen 3 is currently in limited production and deployed within Tesla's own factories for tasks such as bin picking, kitting, and basic assembly.",
+      "worker_support": "Optimus Gen 3 is in limited production at the Fremont facility and is primarily deployed inside Tesla factories for bin picking, kitting, and basic assembly tasks.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The source text explicitly states: 'The Gen 3 unit, now in limited production at Tesla’s Fremont facility' and 'Optimus units are primarily deployed inside Tesla factories—performing bin picking, kitting, and basic assembly tasks.'",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+              "publisher": "AI Herald",
+              "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+              "source_type": "industry_analysis",
+              "tier": 2,
+              "excerpt": "The Gen 3 unit, now in limited production at Tesla’s Fremont facility... Optimus units are primarily deployed inside Tesla factories—performing bin picking, kitting, and basic assembly tasks."
+            },
+            "retrieved_source": {
+              "title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+              "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+              "domain": "artificialintelligenceherald.com",
+              "content": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald\nSkip to main content\n/\nBoston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown\nRobotics\n1292 views\nBoston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown\nEric Samuels\nIntroduction: The Humanoid Robot Triad of 2026\nThe year 2026 marks a decisive inflection point in the commercial humanoid robotics landscape. Three platforms dominate the conversation: Boston Dynamics’ Atlas, Tesla’s Optimus (Gen 3), and\nFigure AI\n’s Figure 02. Each represents a fundamentally different design philosophy, business model, and technical stack. For developers and tech professionals evaluating these systems for integration, research, or deployment, the differences are not merely academic—they dictate feasibility, cost, and capability in real-world environments.\nThis comparison provides a data-driven, practical analysis of each robot’s hardware specs, software ecosystem, autonomy level, and commercial readiness as of mid-2026.\nHardware Architecture: Actuation, Power, and Payload\nBoston Dynamics Atlas (2026 Update)\nAtlas remains the most athletically capable humanoid robot ever built. The 2026 iteration sheds its hydraulic system in favor of an advanced electric actuator suite, a move that reduces noise, improves energy efficiency, and lowers maintenance overhead. Key specs include:\nHeight/Weight:\nTesla Optimus Gen 3 (2026)\nOptimus has evolved rapidly from its 2022 prototype. The Gen 3 unit, now in limited production at Tesla’s Fremont facility, prioritizes cost reduction and manufacturability. Key specs:\nHeight/Weight:\n20 kg (arms), 50 kg (squat lift)\nOptimus uses a central battery pack mounted in the torso, similar to Tesla vehicles, and leverages the company’s expertise in thermal management and cell chemistry. The hands are a standout feature, capable of handling tools, wires, and small parts with tactile feedback.\nFigure 02 (2026 Production Model)\nFigure AI, backed by a $1.5B funding round in 2025, has focused on commercial deployment from day one. The Figure 02 is built explicitly for logistics and manufacturing tasks. Key specs:\nHeight/Weight:\nFigure 02’s design emphasizes modularity. The arms, legs, and torso can be replaced in under 30 minutes in the field, a critical advantage for industrial maintenance teams.\nSoftware Stack and Autonomy\nPerception and Localization\nAtlas:\nRelies on a combination of stereo cameras, LiDAR (Velodyne puck), and IMU data. The perception stack is built on a custom ROS 2 framework, with real-time mapping via RTAB-Map. Atlas does not use neural SLAM; it uses explicit geometric mapping for precise foot placement.\nOptimus:\nFigure 02:\nEmploys six RGB-D cameras (Intel RealSense) and two Ouster LiDAR units. The software stack runs on a custom NVIDIA Jetson AGX Orin-based compute module. Figure uses a hybrid approach: classical motion planning for safety-critical movements and learned policies for manipulation.\nManipulation and Task Execution\nAtlas\nuses a model-predictive control (MPC) loop running at 1 kHz. Tasks are programmed via offline trajectory optimization and then executed with real-time adaptation. There is no high-level task planner exposed to external developers; Atlas is primarily a research platform.\nOptimus\nexposes a Python API via Tesla’s custom runtime, allowing developers to script sequences using a high-level action library. The robot can learn new tasks via imitation learning from human demonstrations (teleoperation). In 2026, Tesla released a “Skill Store” where pre-trained manipulation primitives (e.g., “grasp cylinder,” “insert peg”) can be downloaded and composed.\nFigure 02\n~4,500\nFigure 02 leads in real-world deployments, with confirmed installations at BMW’s Spartanburg plant, Amazon Robotics fulfillment centers, and several automotive Tier 1 suppliers. Optimus units are primarily deployed inside Tesla factories—performing bin picking, kitting, and basic assembly tasks. Atlas remains a research platform, though Boston Dynamics has hinted at a commercial Atlas variant for 2027.\nSafety and Compliance\nFigure 02\noffers the most open ecosystem. It provides an official NVIDIA Isaac Sim integration, a Gazebo plugin, and a digital twin API that mirrors the real robot’s state. Figure also publishes a Python SDK with examples for motion planning, perception, and task sequencing. The SDK includes pre-built wrappers for MoveIt 2 and TrajOpt.\nRelated:\nConclusion\nIn 2026, the humanoid robot market is no longer a single race but three distinct competitions. Boston Dynamics Atlas remains the gold standard for dynamic mobility and research, but it is not a practical tool for most developers or businesses. Tesla Optimus offers the best cost-to-capability ratio for high-volume, repetitive tasks within a controlled environment, leveraging Tesla’s vertical integration and manufacturing scale. Figure 02 provides the most mature, developer-friendly platform for real-world deployment, with a focus on modularity, safety, and open tooling. For technical professionals seeking to integrate humanoid robots into production systems today, Figure 02 is the pragmatic choice. For those pushing the boundaries of locomotion and control, Atlas remains unmatched. Optimus sits in between, promising a future where humanoid robots are as ubiquitous as electric cars—but that future is still a few years away.\nShare this article\nDrone Autonomy 2026: AI-Powered Self-Navigation Without Pilots\nThe Autonomous Horizon: Drone AI in 2026 By 2026, the era of the radio-control (RC) pilot for commercial and tactical drones is ef...\n393 views",
+              "content_chars": 5622
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "TRIANGULATED",
+      "auditor_reason": "The claim is fully supported by the retrieved content from AI Herald, which explicitly mentions Gen 3 is in limited production at the Fremont facility and deployed in Tesla factories for bin picking, kitting, and basic assembly.",
+      "assignment_id": "SG02",
+      "claim_ref": "SG02:C001"
+    },
+    {
+      "claim_id": "C002",
+      "claim": "Figure AI's Figure 02 and 03 are in the commercial deployment stage, with active installations at BMW's Spartanburg plant and Amazon Robotics fulfillment centers.",
+      "worker_support": "Figure 02 leads in real-world deployments, with confirmed installations at BMW’s Spartanburg plant, Amazon Robotics and several automotive Tier 1 suppliers. Figure 03 pairs improved dexterity with the Helix vision-language-action (VLA) model.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "Confirms Figure 02 installations at BMW’s Spartanburg plant and Amazon Robotics fulfillment centers.",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+              "publisher": "AI Herald",
+              "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+              "source_type": "industry_analysis",
+              "tier": 2,
+              "excerpt": "Figure 02 leads in real-world deployments, with confirmed installations at BMW’s Spartanburg plant, Amazon Robotics fulfillment centers, and several automotive Tier 1 suppliers."
+            },
+            "retrieved_source": {
+              "title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+              "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+              "domain": "artificialintelligenceherald.com",
+              "content": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald\nSkip to main content\n/\nBoston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown\nRobotics\n1292 views\nBoston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown\nEric Samuels\nIntroduction: The Humanoid Robot Triad of 2026\nThe year 2026 marks a decisive inflection point in the commercial humanoid robotics landscape. Three platforms dominate the conversation: Boston Dynamics’ Atlas, Tesla’s Optimus (Gen 3), and\nFigure AI\n’s Figure 02. Each represents a fundamentally different design philosophy, business model, and technical stack. For developers and tech professionals evaluating these systems for integration, research, or deployment, the differences are not merely academic—they dictate feasibility, cost, and capability in real-world environments.\nThis comparison provides a data-driven, practical analysis of each robot’s hardware specs, software ecosystem, autonomy level, and commercial readiness as of mid-2026.\nHardware Architecture: Actuation, Power, and Payload\nBoston Dynamics Atlas (2026 Update)\nAtlas remains the most athletically capable humanoid robot ever built. The 2026 iteration sheds its hydraulic system in favor of an advanced electric actuator suite, a move that reduces noise, improves energy efficiency, and lowers maintenance overhead. Key specs include:\nHeight/Weight:\nTesla Optimus Gen 3 (2026)\nOptimus has evolved rapidly from its 2022 prototype. The Gen 3 unit, now in limited production at Tesla’s Fremont facility, prioritizes cost reduction and manufacturability. Key specs:\nHeight/Weight:\n20 kg (arms), 50 kg (squat lift)\nOptimus uses a central battery pack mounted in the torso, similar to Tesla vehicles, and leverages the company’s expertise in thermal management and cell chemistry. The hands are a standout feature, capable of handling tools, wires, and small parts with tactile feedback.\nFigure 02 (2026 Production Model)\nFigure AI, backed by a $1.5B funding round in 2025, has focused on commercial deployment from day one. The Figure 02 is built explicitly for logistics and manufacturing tasks. Key specs:\nHeight/Weight:\nFigure 02’s design emphasizes modularity. The arms, legs, and torso can be replaced in under 30 minutes in the field, a critical advantage for industrial maintenance teams.\nSoftware Stack and Autonomy\nPerception and Localization\nAtlas:\nRelies on a combination of stereo cameras, LiDAR (Velodyne puck), and IMU data. The perception stack is built on a custom ROS 2 framework, with real-time mapping via RTAB-Map. Atlas does not use neural SLAM; it uses explicit geometric mapping for precise foot placement.\nOptimus:\nFigure 02:\nEmploys six RGB-D cameras (Intel RealSense) and two Ouster LiDAR units. The software stack runs on a custom NVIDIA Jetson AGX Orin-based compute module. Figure uses a hybrid approach: classical motion planning for safety-critical movements and learned policies for manipulation.\nManipulation and Task Execution\nAtlas\nuses a model-predictive control (MPC) loop running at 1 kHz. Tasks are programmed via offline trajectory optimization and then executed with real-time adaptation. There is no high-level task planner exposed to external developers; Atlas is primarily a research platform.\nOptimus\nexposes a Python API via Tesla’s custom runtime, allowing developers to script sequences using a high-level action library. The robot can learn new tasks via imitation learning from human demonstrations (teleoperation). In 2026, Tesla released a “Skill Store” where pre-trained manipulation primitives (e.g., “grasp cylinder,” “insert peg”) can be downloaded and composed.\nFigure 02\n~4,500\nFigure 02 leads in real-world deployments, with confirmed installations at BMW’s Spartanburg plant, Amazon Robotics fulfillment centers, and several automotive Tier 1 suppliers. Optimus units are primarily deployed inside Tesla factories—performing bin picking, kitting, and basic assembly tasks. Atlas remains a research platform, though Boston Dynamics has hinted at a commercial Atlas variant for 2027.\nSafety and Compliance\nFigure 02\noffers the most open ecosystem. It provides an official NVIDIA Isaac Sim integration, a Gazebo plugin, and a digital twin API that mirrors the real robot’s state. Figure also publishes a Python SDK with examples for motion planning, perception, and task sequencing. The SDK includes pre-built wrappers for MoveIt 2 and TrajOpt.\nRelated:\nConclusion\nIn 2026, the humanoid robot market is no longer a single race but three distinct competitions. Boston Dynamics Atlas remains the gold standard for dynamic mobility and research, but it is not a practical tool for most developers or businesses. Tesla Optimus offers the best cost-to-capability ratio for high-volume, repetitive tasks within a controlled environment, leveraging Tesla’s vertical integration and manufacturing scale. Figure 02 provides the most mature, developer-friendly platform for real-world deployment, with a focus on modularity, safety, and open tooling. For technical professionals seeking to integrate humanoid robots into production systems today, Figure 02 is the pragmatic choice. For those pushing the boundaries of locomotion and control, Atlas remains unmatched. Optimus sits in between, promising a future where humanoid robots are as ubiquitous as electric cars—but that future is still a few years away.\nShare this article\nDrone Autonomy 2026: AI-Powered Self-Navigation Without Pilots\nThe Autonomous Horizon: Drone AI in 2026 By 2026, the era of the radio-control (RC) pilot for commercial and tactical drones is ef...\n393 views",
+              "content_chars": 5622
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [
+        {
+          "evidence_id": "C002-E002",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "Mentions Figure 03's technical specs (Helix VLA model) but does not verify its commercial deployment status or specific installation sites.",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 5,
+          "source": {
+            "evidence_id": "C002-E002",
+            "worker_source": {
+              "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+              "publisher": "andrew.ooo",
+              "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+              "source_type": "industry_analysis",
+              "tier": 3,
+              "excerpt": "Figure 03 pairs improved dexterity with the Helix vision-language-action model — Figure’s in-house VLA"
+            },
+            "retrieved_source": {
+              "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+              "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+              "domain": "andrew.ooo",
+              "content": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo\nandrew\nooo\nAI agents · OpenClaw · self-hosting · automation\nhome\nQuick Answer\nBoston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026)\nPublished:\nJuly 16, 2026\nBoston Dynamics vs Figure vs Agility vs 1X: Humanoid Landscape (July 2026)\nHyundai took 100% of Boston Dynamics on July 15, 2026, and reshuffled the humanoid robotics race.\nWith Figure AI valued at ~$40B, Agility deploying Digit at Amazon, 1X shipping Neo, and Tesla Optimus in factories, the question for enterprises and investors is: which humanoid actually wins, and in which market?\nHere is the July 2026 head-to-head.\nTesla FSD lineage\nPublic listing status\n2027-2028 IPO candidate\nBoston Dynamics Atlas — The Newly Focused Player\nAfter 13 years of ownership churn (Google → SoftBank → Hyundai partial → Hyundai full), Boston Dynamics finally has a single decisive owner with capital and a captive customer.\nStrengths:\n(usually good, but not automatic)\nBest for: heavy industrial buyers who value locomotion maturity and want a supplier backed by a major OEM.\nFigure 03 — The BMW-Backed Momentum Story\nFigure AI is the most-hyped humanoid company. Figure 03 pairs improved dexterity with the Helix vision-language-action model — Figure’s in-house VLA that competes with Google’s Gemini Robotics and openai-partnered stacks.\nStrengths:\nTesla Optimus Gen 3 — The Wild Card\nTesla Optimus is deployed at Tesla factories, and the roadmap is aggressive: consumer availability at $20-$30K “eventually.”\nStrengths:\n— WAIC 2026 announcements will set the tone\nThe humanoid market is bifurcating: US/Western makers dominating high-locomotion / enterprise-integration segments, Chinese makers dominating volume industrial pricing. Boston Dynamics under Hyundai is the biggest bet on the Western side. Agility is the biggest deployment story. Figure is the biggest brand narrative.\nThe Frame\nHumanoid robotics in July 2026 is where autonomous vehicles were in 2018 — real deployments happening, most of the market still ahead, valuations aggressive, timelines slippery. The Hyundai/Boston Dynamics deal is the strongest signal yet that this becomes a public-markets story within 24 months.\nDo not confuse capability demos with commercial reality. Ask about actual unit deployments, actual maintenance costs, actual hours-of-autonomous-work-per-day. Everyone shows highlight reels. Only Agility and Figure have real production data. Boston Dynamics is about to.\nSources\n— Figure 03 announcements\nAgility Robotics: Digit deployments\n— 2026\nEngineAI vs Unitree vs Figure: Humanoid Robots (June 2026)\nEngineAI files for Hong Kong IPO; Figure ships 240 units/month; Unitree drops the R1 to $4K. The 2026 humanoid robot commercialization race compared.\n💬\nAGIBOT A3 Ultra vs Tesla Optimus vs Figure 03 (Jul 2026)\nAGIBOT unveiled A3 Ultra at WAIC 2026 (July 18, 2026) — the only embodied AI 'Gem of the Exhibition'. How it compares to Tesla Optimus and Figure 03.\n💬\nWAICO vs NVIDIA Cosmos vs US/EU Humanoid Rules (Jul 2026)\nHumanoid robotics needs governance. WAICO covers China. NVIDIA Cosmos alliance covers US industry. US executive orders and EU AI Act cover regulation. Who governs what.\n💬\nHyundai Buys Full Boston Dynamics from SoftBank (July 2026)\nHyundai took 100% of Boston Dynamics from SoftBank on July 15, 2026. What the humanoid robot deal means, why now, and what happens to the Atlas program.\n💬\nGrok 4.5 vs GPT-5.6 Sol vs Claude Opus 4.8: Post-Launch Benchmarks (July 2026)\nGrok 4.5 launched July 8, 2026 at $2/$6 per MTok. Here's how it actually stacks up against GPT-5.6 Sol and Claude Opus 4.8 on coding, reasoning, and cost.\n← More answers",
+              "content_chars": 3701
+            }
+          }
+        }
+      ],
+      "auditor_verdict": "CONFLICTING",
+      "auditor_reason": "The claim mentions Figure 02 and 03. Source E001 verifies Figure 02 deployments at BMW and Amazon. Source E002 mentions Figure 03 and its VLA model, but does not explicitly confirm that Figure 03 itself is in the 'commercial deployment stage' with active installations at those specific sites; it only describes Figure 03's technical capabilities.",
+      "assignment_id": "SG02",
+      "claim_ref": "SG02:C002"
+    },
+    {
+      "claim_id": "C003",
+      "claim": "Agility Robotics' Digit is in the commercial deployment stage, specifically deployed at Amazon.",
+      "worker_support": "Agility is deploying Digit at Amazon.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly states 'Agility deploying Digit at Amazon'.",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 5,
+          "source": {
+            "evidence_id": "C003-E001",
+            "worker_source": {
+              "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+              "publisher": "andrew.ooo",
+              "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+              "source_type": "industry_analysis",
+              "tier": 3,
+              "excerpt": "Agility deploying Digit at Amazon"
+            },
+            "retrieved_source": {
+              "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+              "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+              "domain": "andrew.ooo",
+              "content": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo\nandrew\nooo\nAI agents · OpenClaw · self-hosting · automation\nhome\nQuick Answer\nBoston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026)\nPublished:\nJuly 16, 2026\nBoston Dynamics vs Figure vs Agility vs 1X: Humanoid Landscape (July 2026)\nHyundai took 100% of Boston Dynamics on July 15, 2026, and reshuffled the humanoid robotics race.\nWith Figure AI valued at ~$40B, Agility deploying Digit at Amazon, 1X shipping Neo, and Tesla Optimus in factories, the question for enterprises and investors is: which humanoid actually wins, and in which market?\nHere is the July 2026 head-to-head.\nTesla FSD lineage\nPublic listing status\n2027-2028 IPO candidate\nBoston Dynamics Atlas — The Newly Focused Player\nAfter 13 years of ownership churn (Google → SoftBank → Hyundai partial → Hyundai full), Boston Dynamics finally has a single decisive owner with capital and a captive customer.\nStrengths:\n(usually good, but not automatic)\nBest for: heavy industrial buyers who value locomotion maturity and want a supplier backed by a major OEM.\nFigure 03 — The BMW-Backed Momentum Story\nFigure AI is the most-hyped humanoid company. Figure 03 pairs improved dexterity with the Helix vision-language-action model — Figure’s in-house VLA that competes with Google’s Gemini Robotics and openai-partnered stacks.\nStrengths:\nTesla Optimus Gen 3 — The Wild Card\nTesla Optimus is deployed at Tesla factories, and the roadmap is aggressive: consumer availability at $20-$30K “eventually.”\nStrengths:\n— WAIC 2026 announcements will set the tone\nThe humanoid market is bifurcating: US/Western makers dominating high-locomotion / enterprise-integration segments, Chinese makers dominating volume industrial pricing. Boston Dynamics under Hyundai is the biggest bet on the Western side. Agility is the biggest deployment story. Figure is the biggest brand narrative.\nThe Frame\nHumanoid robotics in July 2026 is where autonomous vehicles were in 2018 — real deployments happening, most of the market still ahead, valuations aggressive, timelines slippery. The Hyundai/Boston Dynamics deal is the strongest signal yet that this becomes a public-markets story within 24 months.\nDo not confuse capability demos with commercial reality. Ask about actual unit deployments, actual maintenance costs, actual hours-of-autonomous-work-per-day. Everyone shows highlight reels. Only Agility and Figure have real production data. Boston Dynamics is about to.\nSources\n— Figure 03 announcements\nAgility Robotics: Digit deployments\n— 2026\nEngineAI vs Unitree vs Figure: Humanoid Robots (June 2026)\nEngineAI files for Hong Kong IPO; Figure ships 240 units/month; Unitree drops the R1 to $4K. The 2026 humanoid robot commercialization race compared.\n💬\nAGIBOT A3 Ultra vs Tesla Optimus vs Figure 03 (Jul 2026)\nAGIBOT unveiled A3 Ultra at WAIC 2026 (July 18, 2026) — the only embodied AI 'Gem of the Exhibition'. How it compares to Tesla Optimus and Figure 03.\n💬\nWAICO vs NVIDIA Cosmos vs US/EU Humanoid Rules (Jul 2026)\nHumanoid robotics needs governance. WAICO covers China. NVIDIA Cosmos alliance covers US industry. US executive orders and EU AI Act cover regulation. Who governs what.\n💬\nHyundai Buys Full Boston Dynamics from SoftBank (July 2026)\nHyundai took 100% of Boston Dynamics from SoftBank on July 15, 2026. What the humanoid robot deal means, why now, and what happens to the Atlas program.\n💬\nGrok 4.5 vs GPT-5.6 Sol vs Claude Opus 4.8: Post-Launch Benchmarks (July 2026)\nGrok 4.5 launched July 8, 2026 at $2/$6 per MTok. Here's how it actually stacks up against GPT-5.6 Sol and Claude Opus 4.8 on coding, reasoning, and cost.\n← More answers",
+              "content_chars": 3701
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is supported by a single industry analysis blog (andrew.ooo) stating Agility is deploying Digit at Amazon.",
+      "assignment_id": "SG02",
+      "claim_ref": "SG02:C003"
+    },
+    {
+      "claim_id": "C004",
+      "claim": "Boston Dynamics' electric Atlas is primarily a research platform, though it is being piloted in Hyundai Motor Group factories for moving automotive parts.",
+      "worker_support": "Atlas remains a research platform... [but] is actually being pilot-operated in Hyundai Motor factories, moving automotive parts.",
+      "runtime_status": "MULTI_SOURCE_PENDING_INDEPENDENCE",
+      "verified_evidence_count": 2,
+      "verified_evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "reason": "Confirms 'Atlas remains a research platform'.",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C004-E001",
+            "worker_source": {
+              "title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+              "publisher": "AI Herald",
+              "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+              "source_type": "industry_analysis",
+              "tier": 2,
+              "excerpt": "Atlas remains a research platform, though Boston Dynamics has hinted at a commercial Atlas variant for 2027."
+            },
+            "retrieved_source": {
+              "title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+              "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+              "domain": "artificialintelligenceherald.com",
+              "content": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald\nSkip to main content\n/\nBoston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown\nRobotics\n1292 views\nBoston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown\nEric Samuels\nIntroduction: The Humanoid Robot Triad of 2026\nThe year 2026 marks a decisive inflection point in the commercial humanoid robotics landscape. Three platforms dominate the conversation: Boston Dynamics’ Atlas, Tesla’s Optimus (Gen 3), and\nFigure AI\n’s Figure 02. Each represents a fundamentally different design philosophy, business model, and technical stack. For developers and tech professionals evaluating these systems for integration, research, or deployment, the differences are not merely academic—they dictate feasibility, cost, and capability in real-world environments.\nThis comparison provides a data-driven, practical analysis of each robot’s hardware specs, software ecosystem, autonomy level, and commercial readiness as of mid-2026.\nHardware Architecture: Actuation, Power, and Payload\nBoston Dynamics Atlas (2026 Update)\nAtlas remains the most athletically capable humanoid robot ever built. The 2026 iteration sheds its hydraulic system in favor of an advanced electric actuator suite, a move that reduces noise, improves energy efficiency, and lowers maintenance overhead. Key specs include:\nHeight/Weight:\nTesla Optimus Gen 3 (2026)\nOptimus has evolved rapidly from its 2022 prototype. The Gen 3 unit, now in limited production at Tesla’s Fremont facility, prioritizes cost reduction and manufacturability. Key specs:\nHeight/Weight:\n20 kg (arms), 50 kg (squat lift)\nOptimus uses a central battery pack mounted in the torso, similar to Tesla vehicles, and leverages the company’s expertise in thermal management and cell chemistry. The hands are a standout feature, capable of handling tools, wires, and small parts with tactile feedback.\nFigure 02 (2026 Production Model)\nFigure AI, backed by a $1.5B funding round in 2025, has focused on commercial deployment from day one. The Figure 02 is built explicitly for logistics and manufacturing tasks. Key specs:\nHeight/Weight:\nFigure 02’s design emphasizes modularity. The arms, legs, and torso can be replaced in under 30 minutes in the field, a critical advantage for industrial maintenance teams.\nSoftware Stack and Autonomy\nPerception and Localization\nAtlas:\nRelies on a combination of stereo cameras, LiDAR (Velodyne puck), and IMU data. The perception stack is built on a custom ROS 2 framework, with real-time mapping via RTAB-Map. Atlas does not use neural SLAM; it uses explicit geometric mapping for precise foot placement.\nOptimus:\nFigure 02:\nEmploys six RGB-D cameras (Intel RealSense) and two Ouster LiDAR units. The software stack runs on a custom NVIDIA Jetson AGX Orin-based compute module. Figure uses a hybrid approach: classical motion planning for safety-critical movements and learned policies for manipulation.\nManipulation and Task Execution\nAtlas\nuses a model-predictive control (MPC) loop running at 1 kHz. Tasks are programmed via offline trajectory optimization and then executed with real-time adaptation. There is no high-level task planner exposed to external developers; Atlas is primarily a research platform.\nOptimus\nexposes a Python API via Tesla’s custom runtime, allowing developers to script sequences using a high-level action library. The robot can learn new tasks via imitation learning from human demonstrations (teleoperation). In 2026, Tesla released a “Skill Store” where pre-trained manipulation primitives (e.g., “grasp cylinder,” “insert peg”) can be downloaded and composed.\nFigure 02\n~4,500\nFigure 02 leads in real-world deployments, with confirmed installations at BMW’s Spartanburg plant, Amazon Robotics fulfillment centers, and several automotive Tier 1 suppliers. Optimus units are primarily deployed inside Tesla factories—performing bin picking, kitting, and basic assembly tasks. Atlas remains a research platform, though Boston Dynamics has hinted at a commercial Atlas variant for 2027.\nSafety and Compliance\nFigure 02\noffers the most open ecosystem. It provides an official NVIDIA Isaac Sim integration, a Gazebo plugin, and a digital twin API that mirrors the real robot’s state. Figure also publishes a Python SDK with examples for motion planning, perception, and task sequencing. The SDK includes pre-built wrappers for MoveIt 2 and TrajOpt.\nRelated:\nConclusion\nIn 2026, the humanoid robot market is no longer a single race but three distinct competitions. Boston Dynamics Atlas remains the gold standard for dynamic mobility and research, but it is not a practical tool for most developers or businesses. Tesla Optimus offers the best cost-to-capability ratio for high-volume, repetitive tasks within a controlled environment, leveraging Tesla’s vertical integration and manufacturing scale. Figure 02 provides the most mature, developer-friendly platform for real-world deployment, with a focus on modularity, safety, and open tooling. For technical professionals seeking to integrate humanoid robots into production systems today, Figure 02 is the pragmatic choice. For those pushing the boundaries of locomotion and control, Atlas remains unmatched. Optimus sits in between, promising a future where humanoid robots are as ubiquitous as electric cars—but that future is still a few years away.\nShare this article\nDrone Autonomy 2026: AI-Powered Self-Navigation Without Pilots\nThe Autonomous Horizon: Drone AI in 2026 By 2026, the era of the radio-control (RC) pilot for commercial and tactical drones is ef...\n393 views",
+              "content_chars": 5622
+            }
+          }
+        },
+        {
+          "evidence_id": "C004-E002",
+          "state": "VERIFIED",
+          "reason": "The Korean text confirms Atlas is 'actually being pilot-operated in Hyundai Motor factories' (현대차 공장에서 실제로 시범 운영 중) and moving automotive parts (자동차 부품을 직접 옮기는 장면).",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 5,
+          "source": {
+            "evidence_id": "C004-E002",
+            "worker_source": {
+              "title": "피지컬 AI 로봇 2026 한국 7가지 도입 사례 총정리",
+              "publisher": "rabby.kr",
+              "url": "https://rabby.kr/physical-ai-robots-korea-cases-2026/",
+              "source_type": "industry_analysis",
+              "tier": 3,
+              "excerpt": "보스턴다이내믹스 ‘아틀라스’가 자동차 부품을 직접 옮기는 장면... 현대차 공장에서 실제로 시범 운영 중인 모습이더군요."
+            },
+            "retrieved_source": {
+              "title": "피지컬 AI 로봇 2026 한국 7가지 도입 사례 총정리",
+              "url": "https://rabby.kr/physical-ai-robots-korea-cases-2026/",
+              "domain": "rabby.kr",
+              "content": "피지컬 AI 로봇 2026 한국 7가지 도입 사례 총정리\n본문으로 건너뛰기\n메뉴\n피지컬 AI 로봇이 진짜 공장에 들어왔습니다 – 2026 한국 7가지 도입 현장\nrabby\n4월 30, 2026\n6월 30, 2026\nIT·테크 노트\n“로봇이 진짜 사람처럼 공장에서 일한다고요?” 며칠 전 친구가 CES 2026 영상을 보내주면서 물었습니다. 보스턴다이내믹스 ‘아틀라스’가 자동차 부품을 직접 옮기는 장면이었는데, 솔직히 저도 처음엔 합성인 줄 알았습니다. 그런데 자료를 찾아보니 이게 시연이 아니라 현대차 공장에서 실제로 시범 운영 중인 모습이더군요.\n피지컬 AI 로봇\n이 2026년 한국 제조업에 본격 진입하고 있다는 신호였습니다.\n이 글은 가트너가 2026년 10대 전략 기술 트렌드 중 하나로 꼽은\n피지컬 AI 로봇\n이 정확히 무엇이고, 한국에서 어떤 회사들이 어디까지 와 있는지를 1차 자료 중심으로 정리한 기록입니다. 단순한 트렌드 소개가 아니라, 제가 며칠 동안 관련 보도자료·연구 보고서·CES 시연 영상을 직접 찾아보며 정리한 7가지 도입 현장과 솔직한 한계를 함께 담았습니다.\n목차\n피지컬 AI 로봇이란 정확히 무엇인가요?\n가트너 2026 트렌드와 시장 규모\n한국 제조업 7가지 도입 현장\n우리는 뭘 준비해야 할까요?\n피지컬 AI 로봇이란 정확히 무엇인가요?\n피지컬 AI 로봇\n은 한 마디로 “현실 세계에서 직접 움직이는 AI”입니다. 챗GPT처럼 화면 속에서 글로 답하는 AI가 아니라, 실제 공장이나 창고에서 부품을 집어 옮기고 사람과 같은 공간에서 일하는 AI를 가리킵니다. 이글루코퍼레이션의 2026 AI 리포트는 피지컬 AI를 4가지 구성 요소로 정의합니다.\n구성 요소\n가트너 2026 트렌드와 시장 규모\n가트너는 2026년 10대 전략 기술 트렌드 발표에서 피지컬 AI를 핵심 축으로 지목했습니다. SAP Korea 뉴스센터에 정리된 가트너 발표 자료에 따르면, 피지컬 AI는 “물리적 환경의 복잡한 문제를 해결하고 오프라인 산업의 디지털 전환을 가속화하는 동력”으로 평가됐습니다. 단순한 화두가 아니라, 시장 데이터도 따라옵니다.\n지표\n참고 자료\nSAP Korea: 가트너 2026년 10대 전략 기술 트렌드\nNVIDIA Blog: National Robotics Week 2026 — Isaac GR00T·Cosmos\n이글루코퍼레이션: 2026년은 피지컬 AI의 해 (AI Report)\n로봇신문: 로봇융합연구원 피지컬 AI 휴머노이드 R&D\n4월 17, 2026\n하네스 엔지니어링 뜻과 5가지 핵심 전략 – 2026 AI 에이전트 제어의 새로운 패러다임\n4월 10, 2026\nAI 의료 활용 사례 7가지 – 2026 병원 현장이 달라지고 있다\n4월 13, 2026",
+              "content_chars": 1340
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "TRIANGULATED",
+      "auditor_reason": "Source E001 confirms Atlas is primarily a research platform. Source E002 (Korean source) confirms it is being pilot-operated in Hyundai factories to move automotive parts.",
+      "assignment_id": "SG02",
+      "claim_ref": "SG02:C004"
+    },
+    {
+      "claim_id": "C005",
+      "claim": "Rainbow Robotics and Tomorrow Robotics have entered a joint development phase to create 'AI-Native' humanoid robots using Robot Foundation Models (RFM) and AI Agents.",
+      "worker_support": "Tomorrow Robotics and Rainbow Robotics signed an MOU for 'Physical AI-based robot joint development and business cooperation' to develop AI-Native humanoid robots that can perceive and judge environments autonomously.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly details the MOU for 'AI-Native humanoid robot' development, specifically mentioning the use of 'Robot Foundation Model (RFM)' and 'AI Agent'.",
+          "audited_source_type": "official",
+          "audited_tier": 1,
+          "source": {
+            "evidence_id": "C005-E001",
+            "worker_source": {
+              "title": "투모로 로보틱스, 피지컬 AI 상용화 속도…레인보우로보틱스와 '스스로 일하는 로봇' 공동개발",
+              "publisher": "경기일보",
+              "url": "https://www.kyeonggi.com/article/20260723580350",
+              "source_type": "official",
+              "tier": 1,
+              "excerpt": "투모로 로보틱스는 지난 21일 레인보우로보틱스와 ‘피지컬 AI 기반 로봇 연구개발 및 사업 협력을 위한 업무협약(MOU)’을 체결했다고 23일 밝혔다... 레인보우로보틱스의 로봇 하드웨어 기술과 투모로 로보틱스의 AI·소프트웨어 기술을 결합해 실제 산업 현장에서 활용할 수 있는 AI-Native 휴머노이드 로봇을 공동 개발하는 것이 핵심이다."
+            },
+            "retrieved_source": {
+              "title": "투모로 로보틱스, 피지컬 AI 상용화 속도…레인보우로보틱스와 '스스로 일하는 로봇' 공동개발",
+              "url": "https://www.kyeonggi.com/article/20260723580350",
+              "domain": "www.kyeonggi.com",
+              "content": "투모로 로보틱스, 피지컬 AI 상용화 속도…레인보우로보틱스와 '스스로 일하는 로봇' 공동개발\nmenu\n우리동네 소식통\n투모로 로보틱스, 피지컬 AI 상용화 속도…레인보우로보틱스와 '스스로 일하는 로봇' 공동개발\n구글에서 경기일보 기사 추천받기\n휴머노이드 공동개발·현장 실증·사업화까지 단계 추진\n장병탁 대표 \"현장 데이터 축적이 피지컬 AI 경쟁력\"\n장병탁 투모로 로보틱스 대표(우측)와 이정호 레인보우로보틱스 대표(좌측)가 지난 지난 7월 21일 세종특별시에 위치한 레인보우로보틱스 본사에서 ‘Physical AI 기반 로봇 공동개발 및 사업 협력’을 위한 업무 협약을 체결한 뒤 기념 촬영을 하고 있다. 투모로 로보틱스 제공\n피지컬 AI(Physical AI) 전문기업 투모로 로보틱스(공동대표 장병탁·박상욱)가 풀스택 로보틱스 기업 레인보우로보틱스(대표이사 이정호)와 손잡고 산업 현장에서 스스로 판단하고 작업을 수행하는 인공지능 기반 휴머노이드 로봇 공동개발(AI-Native)에 나선다. 생성형 AI를 넘어 AI가 현실 공간에서 직접 작업을 수행하는 '피지컬 AI' 상용화에 속도를 내겠다는 구상이다.\n투모로 로보틱스는 지난 21일 레인보우로보틱스와 ‘피지컬 AI 기반 로봇 연구개발 및 사업 협력을 위한 업무협약(MOU)’을 체결했다고 23일 밝혔다.\n이번 협약은 레인보우로보틱스의 로봇 하드웨어 기술과 투모로 로보틱스의 AI·소프트웨어 기술을 결합해 실제 산업 현장에서 활용할 수 있는 AI-Native 휴머노이드 로봇을 공동 개발하는 것이 핵심이다. 양사는 연구개발을 넘어 현장 실증과 성능 고도화, 고객 발굴, 사업화까지 협력 범위를 확대할 계획이다.\n투모로 로보틱스는 로봇 파운데이션 모델(Robot Foundation Model·RFM), AI Agent, 로봇 운영 소프트웨어를 개발·적용하고, 레인보우로보틱스는 로봇 하드웨어와 제어·센서 기술을 지원한다.\n양사가 개발하는 AI-Native 로봇은 사람이 미리 입력한 동작을 반복 수행하는 기존 산업용 로봇과 달리 주변 환경과 작업 상황을 스스로 인식하고 판단해 복합 작업을 수행하는 것이 특징이다. 물류센터나 제조 현장에서 물체를 인식해 집고 이동한 뒤 적재하거나 설비를 조작하는 일련의 작업을 하나의 흐름으로 수행하도록 구현하는 것이 목표다.\n작업 과정에서 축적되는 데이터는 AI 모델 학습과 로봇 운용 안정성 향상에 다시 활용된다. 장병탁 투모로 로보틱스 공동대표가 앞서 \"피지컬 AI는 AI 모델만으로 완성되는 것이 아니라 실제 현장에서 데이터를 반복적으로 확보하고 성능을 개선하는 과정이 중요하다\"고 강조한 것처럼, 이번 협력 역시 현장 데이터를 기반으로 AI 성능을 고도화하는 데 초점을 맞췄다.\n양사는 ▲로봇 하드웨어와 AI 소프트웨어 연동 및 최적화 ▲산업 현장 실증 과제 발굴과 성능 검증 ▲현장 데이터 기반 로봇 성능 및 운용 안정성 개선 ▲복합 작업 자동화를 위한 AI Agent 개발 ▲공동 고객 발굴 및 사업화 등을 공동 추진한다.\n협력은 3단계로 진행된다. 우선 하드웨어와 AI 소프트웨어를 연동해 핵심 인터페이스를 구축하고, 이후 실제 산업 현장 또는 이에 준하는 환경에서 작업 성능과 안정성을 검증한다. 마지막 단계에서는 AI Agent를 활용한 운영 자동화와 WaaS(Workforce-as-a-Service) 사업 모델 적용 가능성을 검토할 예정이다.\nWaaS는 기업이 로봇 장비를 직접 구매하는 대신 로봇과 AI 소프트웨어, 운영 시스템을 결합한 '작업 수행 능력'을 서비스 형태로 제공받는 개념이다. 피킹과 이송, 분류, 검사 등 특정 작업을 서비스로 이용할 수 있는 새로운 사업 모델이다.\n실증 과정에서는 반복 작업의 안정성과 작업 처리 시간, 안전성, 장애 대응 능력, 운영 편의성 등을 종합적으로 검증한다. 양사는 실증 결과를 바탕으로 기술을 지속적으로 고도화하고 공동 제안과 데모, 전시, 상용 프로젝트 등으로 협력을 확대할 계획이다.\nWaaS는 고객이 로봇 장비 자체를 구매하는 방식에서 나아가, 로봇과 AI 소프트웨어, 운영 시스템을 결합한 ‘작업 수행 능력’을 서비스 형태로 이용하는 모델이다. 피킹, 이송, 분류, 검사 등 특정 업무의 수행 결과를 서비스로 제공하는 개념이다.\n장병탁 투모로 로보틱스 공동대표는 \"피지컬 AI 상용화는 AI 모델 개발만으로 완성되지 않으며 실제 로봇과 현장에 적용해 데이터를 확보하고 성능을 개선하는 과정이 중요하다\"며 \"레인보우로보틱스의 로봇 기술과 투모로 로보틱스의 로봇 파운데이션 모델, AI Agent 기술을 결합해 실제 산업 현장에서 일할 수 있는 AI 기반 휴머노이드를 구현하겠다\"고 말했다.\n이정호 레인보우로보틱스 대표는 \"산업 현장에서 보다 다양하고 복잡한 업무를 수행하기 위해서는 우수한 하드웨어뿐 아니라 상황을 인식하고 판단할 수 있는 AI 기술이 함께 발전해야 한다\"며 \"이번 협력을 통해 다양한 산업 현장에서 새로운 가치를 창출할 수 있는 로봇 플랫폼의 가능성을 검증해 나가겠다\"고 밝혔다.\n장 대표는 앞서 경기일보와의 인터뷰에서도 \"생성형 AI가 디지털 공간에서 정보를 처리하는 AI였다면, 피지컬 AI는 현실 세계에서 사람을 대신해 일하는 AI\"라며 \"AI가 'HOW(방법)'를 수행하고 사람은 'WHAT(무엇을 할 것인가)'과 'WHY(왜 하는가)'를 고민하는 시대가 올 것\"이라고 밝힌 바 있다.\n한편 투모로 로보틱스는 최근 자사 최고과학자(Chief Scientist)인 이승준 부산대 교수 연구팀 '타이디보이(Tidyboy)'가 국제 로봇대회 '로보컵 2026' 홈서비스 부문에서 우승하며 기술력을 입증했다. 최종 우승과 함께 최우수 물체조작상, 최우수 인간-로봇 상호작용상을 동시에 수상했으며, 한 팀이 두 부문을 모두 석권한 것은 로보컵 홈서비스 대회 역사상 처음이다.\n#인공지능\n#피지컬AI\n© 경기일보(www.kyeonggi.com), 무단전재 및 수집, 재배포금지",
+              "content_chars": 2888
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "TRIANGULATED",
+      "auditor_reason": "The official news report from Kyeonggi Ilbo fully supports the MOU between Tomorrow Robotics and Rainbow Robotics for AI-Native humanoid development using RFM and AI Agents.",
+      "assignment_id": "SG02",
+      "claim_ref": "SG02:C005"
+    },
+    {
+      "claim_id": "C001",
+      "claim": "Software architecture and integration have become a primary technical bottleneck for Physical AI, with 27% of developers citing it as their biggest performance constraint, surpassing hardware constraints (16%).",
+      "worker_support": "A survey of 1,000 global robotics developers by QNX indicates that software architecture is now a more significant bottleneck than hardware.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The content explicitly states that 27% of developers cite software architecture and integration as the biggest bottleneck compared to 16% for hardware.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "title": "Software Architecture: The New Bottleneck for Physical AI",
+              "publisher": "QNX",
+              "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+              "source_type": "industry",
+              "tier": 3,
+              "excerpt": "almost one in three developers (27%) cite software architecture and integration as their biggest performance bottleneck, compared to just 16% who cite hardware constraints."
+            },
+            "retrieved_source": {
+              "title": "Software Architecture: The New Bottleneck for Physical AI",
+              "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+              "domain": "qnx.software",
+              "content": "Software Architecture: The New Bottleneck for Physical AI\nheader-teaser, header-teaser-item-box-position-left, header-teaser-item-box-color-dark, enable-dynamic-media\nRobotics is experiencing an unprecedented era of innovation, driven by the rapid rise of Physical AI and machine learning capabilities. As robots increasingly break out of controlled factory cages and navigate dynamic human environments, traditional development paradigms are shifting. According to the newly released\nInside the Robot: Architecture Benchmark Report\nby QNX, which surveyed 1,000 global robotics developers, hardware is no longer the primary constraint. Today, software has taken the lead: almost one in three developers (27%) cite software architecture and integration as their biggest performance bottleneck, compared to just 16% who cite hardware constraints.\nHere is a breakdown of the core findings and what they mean for the future of robotics engineering.\nThe Physical AI Imperative vs. Real-World Readiness\nThe ambition across the robotics sector is clear. Nearly nine in ten developers (89%) view Physical AI, systems that can perceive, reason, and act autonomously in the physical world, as critical to their organizational strategy over the next three to five years. To support this transition,\n85% of developers expect the role of software to expand\n, with development teams anticipating their largest future budget allocations will go toward AI-driven decision making (51%) and cybersecurity (51%).\nHowever, ambition is currently outpacing field readiness. While industry optimism remains highly resilient, only 29% of developers feel \"very confident\" in their systems' ability to make safe, predictable decisions in unconstrained, real-world environments.\nThe Determinism Disconnect: Flexibility vs. Safety\nAs robotics systems increasingly operate alongside humans, a reality for 83% of respondents today, the demand for flawless reliability skyrockets. An overwhelming\n95% of developers state that deterministic, real-time execution is essential\n91% of development teams still rely on general-purpose operating systems (GPOS)\n, such as Linux, to run at least some real-time or safety-critical workloads. Nearly a third (32%) do so extensively.\nTo manage this, 64% of businesses currently utilize hybrid architectures that combine safety controllers, vision computers, and microcontrollers. While these hybrid setups enhance capability, they significantly increase integration complexity, which 42% of developers cite as their biggest software development challenge\n.\nThe Certification Wall\nThe tension between utilizing flexible, open-source software and meeting strict industry safety guarantees is resulting in massive deployment bottlenecks. Two-thirds (66%) of developers report experiencing project delays specifically due to industry certification requirements. This friction is heavily tied to two main regulatory hurdles: cybersecurity standards (such as ISO/SAE 21434) and functional safety standards (like ISO 10218), which are cited as the most challenging to navigate by 51% and 49% of respondents, respectively.\nThe commercial and financial pressure to push through these bottlenecks is immense. Alarmingly, 84% of developers agree that strict deadlines and budget pressures can lead engineering teams to compromise on critical aspects of development, including safety protocols.\nImplications: Re-evaluating the Foundation\nThe robotics industry is rapidly approaching an architectural tipping point. Scaling Physical AI requires foundational software that can handle mixed-criticality workloads safely, without crippling development velocity or risking failed compliance audits.\nRecognizing the limits of their current stacks,\n86% of respondents currently using a GPOS express openness to changing their operating system\n. When looking ahead to mitigate integration and scalability limits, many developers are shifting toward more robust paradigms: 31% cite a safety-certified commercial off-the-shelf (COTS) operating system as the best fit for their needs, while 27% are opting for virtualized Linux combined with a Real-Time OS (RTOS).\nConclusion\nHardware advances have set the stage, but the next major leap in robotics will be dictated by software architecture. Re-evaluating foundational architectures from the OS up is no longer just a backend technical exercise; it is a strategic necessity for securing certifications, ensuring human safety, and successfully scaling Physical AI into the real world.\nRead the Full Report",
+              "content_chars": 4539
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is fully supported by the retrieved QNX blog post, which explicitly cites the 27% vs 16% statistics from the 'Inside the Robot: Architecture Benchmark Report'. However, only one independent source is provided.",
+      "assignment_id": "SG03",
+      "claim_ref": "SG03:C001"
+    },
+    {
+      "claim_id": "C002",
+      "claim": "There is a 'Determinism Disconnect' in robotics development where 95% of developers require deterministic, real-time execution for safety, yet 91% still rely on general-purpose operating systems (GPOS) like Linux for some real-time or safety-critical workloads.",
+      "worker_support": "QNX's Architecture Benchmark Report highlights the tension between the need for real-time reliability and the continued use of non-deterministic GPOS.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly mentions the 95% and 91% figures in the 'Determinism Disconnect' section.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "title": "Software Architecture: The New Bottleneck for Physical AI",
+              "publisher": "QNX",
+              "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+              "source_type": "industry",
+              "tier": 3,
+              "excerpt": "An overwhelming 95% of developers state that deterministic, real-time execution is essential... 91% of development teams still rely on general-purpose operating systems (GPOS), such as Linux, to run at least some real-time or safety-critical workloads."
+            },
+            "retrieved_source": {
+              "title": "Software Architecture: The New Bottleneck for Physical AI",
+              "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+              "domain": "qnx.software",
+              "content": "Software Architecture: The New Bottleneck for Physical AI\nheader-teaser, header-teaser-item-box-position-left, header-teaser-item-box-color-dark, enable-dynamic-media\nRobotics is experiencing an unprecedented era of innovation, driven by the rapid rise of Physical AI and machine learning capabilities. As robots increasingly break out of controlled factory cages and navigate dynamic human environments, traditional development paradigms are shifting. According to the newly released\nInside the Robot: Architecture Benchmark Report\nby QNX, which surveyed 1,000 global robotics developers, hardware is no longer the primary constraint. Today, software has taken the lead: almost one in three developers (27%) cite software architecture and integration as their biggest performance bottleneck, compared to just 16% who cite hardware constraints.\nHere is a breakdown of the core findings and what they mean for the future of robotics engineering.\nThe Physical AI Imperative vs. Real-World Readiness\nThe ambition across the robotics sector is clear. Nearly nine in ten developers (89%) view Physical AI, systems that can perceive, reason, and act autonomously in the physical world, as critical to their organizational strategy over the next three to five years. To support this transition,\n85% of developers expect the role of software to expand\n, with development teams anticipating their largest future budget allocations will go toward AI-driven decision making (51%) and cybersecurity (51%).\nHowever, ambition is currently outpacing field readiness. While industry optimism remains highly resilient, only 29% of developers feel \"very confident\" in their systems' ability to make safe, predictable decisions in unconstrained, real-world environments.\nThe Determinism Disconnect: Flexibility vs. Safety\nAs robotics systems increasingly operate alongside humans, a reality for 83% of respondents today, the demand for flawless reliability skyrockets. An overwhelming\n95% of developers state that deterministic, real-time execution is essential\n91% of development teams still rely on general-purpose operating systems (GPOS)\n, such as Linux, to run at least some real-time or safety-critical workloads. Nearly a third (32%) do so extensively.\nTo manage this, 64% of businesses currently utilize hybrid architectures that combine safety controllers, vision computers, and microcontrollers. While these hybrid setups enhance capability, they significantly increase integration complexity, which 42% of developers cite as their biggest software development challenge\n.\nThe Certification Wall\nThe tension between utilizing flexible, open-source software and meeting strict industry safety guarantees is resulting in massive deployment bottlenecks. Two-thirds (66%) of developers report experiencing project delays specifically due to industry certification requirements. This friction is heavily tied to two main regulatory hurdles: cybersecurity standards (such as ISO/SAE 21434) and functional safety standards (like ISO 10218), which are cited as the most challenging to navigate by 51% and 49% of respondents, respectively.\nThe commercial and financial pressure to push through these bottlenecks is immense. Alarmingly, 84% of developers agree that strict deadlines and budget pressures can lead engineering teams to compromise on critical aspects of development, including safety protocols.\nImplications: Re-evaluating the Foundation\nThe robotics industry is rapidly approaching an architectural tipping point. Scaling Physical AI requires foundational software that can handle mixed-criticality workloads safely, without crippling development velocity or risking failed compliance audits.\nRecognizing the limits of their current stacks,\n86% of respondents currently using a GPOS express openness to changing their operating system\n. When looking ahead to mitigate integration and scalability limits, many developers are shifting toward more robust paradigms: 31% cite a safety-certified commercial off-the-shelf (COTS) operating system as the best fit for their needs, while 27% are opting for virtualized Linux combined with a Real-Time OS (RTOS).\nConclusion\nHardware advances have set the stage, but the next major leap in robotics will be dictated by software architecture. Re-evaluating foundational architectures from the OS up is no longer just a backend technical exercise; it is a strategic necessity for securing certifications, ensuring human safety, and successfully scaling Physical AI into the real world.\nRead the Full Report",
+              "content_chars": 4539
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The retrieved text explicitly confirms both the 95% requirement for determinism and the 91% reliance on GPOS/Linux. Only one source is provided.",
+      "assignment_id": "SG03",
+      "claim_ref": "SG03:C002"
+    },
+    {
+      "claim_id": "C003",
+      "claim": "The commercialization of Physical AI is hindered by a 'Certification Wall,' with 66% of developers reporting project delays due to industry certification requirements, particularly cybersecurity (ISO/SAE 21434) and functional safety (ISO 10218) standards.",
+      "worker_support": "QNX reports that the friction between flexible open-source software and strict safety guarantees leads to significant deployment bottlenecks.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly links the 66% project delay rate to certification requirements and names the specific ISO standards.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C003-E001",
+            "worker_source": {
+              "title": "Software Architecture: The New Bottleneck for Physical AI",
+              "publisher": "QNX",
+              "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+              "source_type": "industry",
+              "tier": 3,
+              "excerpt": "Two-thirds (66%) of developers report experiencing project delays specifically due to industry certification requirements... cybersecurity standards (such as ISO/SAE 21434) and functional safety standards (like ISO 10218), which are cited as the most challenging to navigate"
+            },
+            "retrieved_source": {
+              "title": "Software Architecture: The New Bottleneck for Physical AI",
+              "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+              "domain": "qnx.software",
+              "content": "Software Architecture: The New Bottleneck for Physical AI\nheader-teaser, header-teaser-item-box-position-left, header-teaser-item-box-color-dark, enable-dynamic-media\nRobotics is experiencing an unprecedented era of innovation, driven by the rapid rise of Physical AI and machine learning capabilities. As robots increasingly break out of controlled factory cages and navigate dynamic human environments, traditional development paradigms are shifting. According to the newly released\nInside the Robot: Architecture Benchmark Report\nby QNX, which surveyed 1,000 global robotics developers, hardware is no longer the primary constraint. Today, software has taken the lead: almost one in three developers (27%) cite software architecture and integration as their biggest performance bottleneck, compared to just 16% who cite hardware constraints.\nHere is a breakdown of the core findings and what they mean for the future of robotics engineering.\nThe Physical AI Imperative vs. Real-World Readiness\nThe ambition across the robotics sector is clear. Nearly nine in ten developers (89%) view Physical AI, systems that can perceive, reason, and act autonomously in the physical world, as critical to their organizational strategy over the next three to five years. To support this transition,\n85% of developers expect the role of software to expand\n, with development teams anticipating their largest future budget allocations will go toward AI-driven decision making (51%) and cybersecurity (51%).\nHowever, ambition is currently outpacing field readiness. While industry optimism remains highly resilient, only 29% of developers feel \"very confident\" in their systems' ability to make safe, predictable decisions in unconstrained, real-world environments.\nThe Determinism Disconnect: Flexibility vs. Safety\nAs robotics systems increasingly operate alongside humans, a reality for 83% of respondents today, the demand for flawless reliability skyrockets. An overwhelming\n95% of developers state that deterministic, real-time execution is essential\n91% of development teams still rely on general-purpose operating systems (GPOS)\n, such as Linux, to run at least some real-time or safety-critical workloads. Nearly a third (32%) do so extensively.\nTo manage this, 64% of businesses currently utilize hybrid architectures that combine safety controllers, vision computers, and microcontrollers. While these hybrid setups enhance capability, they significantly increase integration complexity, which 42% of developers cite as their biggest software development challenge\n.\nThe Certification Wall\nThe tension between utilizing flexible, open-source software and meeting strict industry safety guarantees is resulting in massive deployment bottlenecks. Two-thirds (66%) of developers report experiencing project delays specifically due to industry certification requirements. This friction is heavily tied to two main regulatory hurdles: cybersecurity standards (such as ISO/SAE 21434) and functional safety standards (like ISO 10218), which are cited as the most challenging to navigate by 51% and 49% of respondents, respectively.\nThe commercial and financial pressure to push through these bottlenecks is immense. Alarmingly, 84% of developers agree that strict deadlines and budget pressures can lead engineering teams to compromise on critical aspects of development, including safety protocols.\nImplications: Re-evaluating the Foundation\nThe robotics industry is rapidly approaching an architectural tipping point. Scaling Physical AI requires foundational software that can handle mixed-criticality workloads safely, without crippling development velocity or risking failed compliance audits.\nRecognizing the limits of their current stacks,\n86% of respondents currently using a GPOS express openness to changing their operating system\n. When looking ahead to mitigate integration and scalability limits, many developers are shifting toward more robust paradigms: 31% cite a safety-certified commercial off-the-shelf (COTS) operating system as the best fit for their needs, while 27% are opting for virtualized Linux combined with a Real-Time OS (RTOS).\nConclusion\nHardware advances have set the stage, but the next major leap in robotics will be dictated by software architecture. Re-evaluating foundational architectures from the OS up is no longer just a backend technical exercise; it is a strategic necessity for securing certifications, ensuring human safety, and successfully scaling Physical AI into the real world.\nRead the Full Report",
+              "content_chars": 4539
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The retrieved text confirms the 66% delay figure and identifies ISO/SAE 21434 and ISO 10218 as the most challenging standards. Only one source is provided.",
+      "assignment_id": "SG03",
+      "claim_ref": "SG03:C003"
+    },
+    {
+      "claim_id": "C004",
+      "claim": "Physical AI development is bottlenecked by three interlocking factors: heterogeneity, the Sim-to-Real Gap, and data scarcity, with the primary challenge shifting from equipment costs to the availability of skilled operators and data quality.",
+      "worker_support": "Pebblous identifies these three factors as the root cause of high collection and refinement costs in Physical AI data pipelines.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "reason": "The content explicitly lists the three challenges and states the bottleneck has shifted from 'equipment' to 'skilled operators and data quality'.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C004-E001",
+            "worker_source": {
+              "title": "What Is a VLA (Vision-Language-Action) Model? — Physical AI Model Evolution & Data Strategy (2026 Edition)",
+              "publisher": "Pebblous",
+              "url": "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/",
+              "source_type": "industry",
+              "tier": 3,
+              "excerpt": "The three challenges... heterogeneity, the Sim-to-Real Gap, and scarcity — remain the bottleneck... the bottleneck has shifted from 'equipment' to 'skilled operators and data quality.'"
+            },
+            "retrieved_source": {
+              "title": "What Is a VLA (Vision-Language-Action) Model? — Physical AI Model Evolution & Data Strategy (2026 Edition) | Pebblous",
+              "url": "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/",
+              "domain": "blog.pebblous.ai",
+              "content": "Physical AI\nis the technology that lets robots, self-driving cars, and smart factories perceive and act in the real world. Its brain has evolved from text-only LLMs, through vision-added VLMs, to\nVLA (Vision-Language-Action)\nmillions of real-robot manipulation episodes\n. The three challenges the first edition laid out — heterogeneity, the Sim-to-Real Gap, and scarcity — remain the bottleneck even now that the models have grown far larger.\nIn 2026, as humanoids step onto factory floors, the question facing manufacturing, logistics, and drone companies converges on one thing: \"How do we turn our field data into a form AI can actually learn from?\" Pebblous's\nDataClinic\nPhysical AI\n, where AI interacts directly with the physical world. Systems that fuse hardware and AI to perceive, understand, and act in reality are arriving in earnest: autonomous vehicles, humanoid robots, smart factories, drones, and unmanned defense platforms.\nPhysical AI\non objects in the real physical world. Where generative AI concentrates on producing digital content, Physical AI concentrates on the intelligence of machines that actually operate in reality.\nOnly recently this trend was described as \"a story for the next ten years.\" It is already present tense. As of 2026, humanoid robots have moved past demo reels and begun working on real automotive lines at the likes of BMW and Hyundai, and general-purpose robot foundation models sit at the center of startup valuation races. Physical AI is no longer a forecast — it is a technology being validated on industrial floors right now.\n▲ A humanoid robot built to perceive, reason, and act is the archetype of the autonomous system Physical AI aims for (pictured: Tesla Optimus Gen 2, 2024) | Source:\nNVIDIA\nA world foundation model (world model) for Physical AI. Infrastructure for Sim-to-Real and synthetic-data generation\n※ The specific architectures and release dates above follow each developer's official materials; verify detailed figures against the original sources in the\nThe three defining traits of Physical AI data\nWhat makes Physical AI data hard to work with narrows down to three factors: heterogeneity, the reality gap, and scarcity. They are not separate problems — they interlock, and together they become the root cause that pushes collection and refinement costs up. Let's take them one at a time.\n🔀\nteleoperation\n, where a human physically demonstrates a task for the robot, fell from roughly $340 per hour in 2024 to $118–200 in 2026, about 60% lower. As equipment costs dropped, the bottleneck moved elsewhere: 20–30% of collected episodes are thrown out in quality filtering, and training a single skilled operator costs $1,000–3,000 per person. In other words,\nthe bottleneck has shifted from \"equipment\" to \"skilled operators and data quality.\"\nAI \"brain\" (foundation models and general-purpose software)\n. The body has converged; the contest is decided by the quantity and quality of training data. For how these technical challenges get solved at the practical level — sensor synchronization, physical-validity checks, label consistency — see\n\"The Physical AI Data Pipeline: Four Core Challenges and Solutions.\"\nrobotics foundation models\ndraw so much attention — the goal is judgment that generalizes across diverse situations. World models such as NVIDIA Cosmos and domain randomization are the latest attempts to close this gap.\n③\nThe limits of action\nPhysical properties of robot joints (backlash, friction, elasticity) affect control accuracy. It is why a motion that was perfect in simulation fails on the real robot, and it must ultimately be corrected with real motion data.\n▲ Physical properties of a robot's joints are never fully captured by simulation alone — they ultimately have to be corrected with real motion data | Source:\nPhysical AI in 2026\n2026 is the inflection point where Physical AI moves past the lab and onto industrial floors in earnest. Where the first edition emphasized market size, the clearer signals now are\nthe direction of the money\nAI brain (foundation models and general-purpose software)\n. Individual valuations bear this out: Physical Intelligence, which builds VLA models, was valued in the multi-billion-dollar range, and the humanoid company Figure AI and robotics-AI firm Skild AI closed large rounds in succession. This \"not the body, the brain\" trend is the market's version of\n\"Physical AI = a data problem.\"\nPebbloSim\ngenerates synthetic data in simulation environments that faithfully replicate the laws of physics, shrinking the Sim-to-Real Gap and safely producing the\nedge-case data\nhyperefficient models\nas core capabilities for Physical AI startups. In practice, edge AI inference has already become a real bottleneck — it accounts for the bulk of related hardware volume — and on-board VLAs like Figure Helix show the way forward.\n⏱️\nThe market is proving, with money, that data is the battleground\nThe fact that the new generation of VLAs (π0, GR00T, and the rest) are all bound to large-scale cross-embodiment data, together with the flow of investment toward the brain rather than the body, amounts to capital testifying on behalf of the claim that \"Physical AI is a data problem.\"\nThe challenges still come back to \"data quality\"\nThe three challenges (heterogeneity, Sim-to-Real, scarcity) remain the bottleneck even now that the models have grown. Advances in world models, synthetic data, and domain randomization all converge on the same question: which data do you refine and feed in, and how much of it? The new economic data, showing that the teleoperation bottleneck has shifted from equipment to skilled operators and quality, re-confirms, in measured terms, Pebblous's approach of data\ndiagnosis and cultivation\nGathering a scattered conversation in one place\nThis page is the gateway that connects the basic definition, the latest VLA landscape, data strategy, industry trends, and eight in-depth reports. Organizing the Physical AI data conversation so you can ",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The retrieved Pebblous blog post confirms the three interlocking factors (heterogeneity, Sim-to-Real Gap, scarcity) and the shift in bottleneck from equipment to skilled operators/data quality. Only one source is provided.",
+      "assignment_id": "SG03",
+      "claim_ref": "SG03:C004"
+    },
+    {
+      "claim_id": "C005",
+      "claim": "In South Korea, the commercialization of mobile robots is hindered by fragmented regulations across various laws (e.g., Building Act, Personal Information Protection Act), leading to the proposal of a 'Robot Special Law' to provide integrated support for demonstration, commercialization, and safety management.",
+      "worker_support": "The 'Robot Special Law' (이동로봇의 안전한 이용 및 상용화 촉진을 위한 특별법안) was proposed to address the lack of a unified institutional framework.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "reason": "The text confirms the representative proposal of the law and explicitly lists the fragmented laws (건축법, 공동주택관리법, 개인정보보호법).",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C005-E001",
+            "worker_source": {
+              "title": "한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원",
+              "publisher": "Betanews",
+              "url": "https://www.betanews.net/article/view/beta202609030109",
+              "source_type": "industry",
+              "tier": 3,
+              "excerpt": "활용 관련 규정도 건축법·공동주택관리법·개인정보보호법 등에 흩어져 있어 통합적인 제도 기반이 필요하다는 지적이 제기되어 왔다."
+            },
+            "retrieved_source": {
+              "title": "한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원",
+              "url": "https://www.betanews.net/article/view/beta202609030109",
+              "domain": "www.betanews.net",
+              "content": "한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원\n뉴스레터 구독신청\n가\n한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원\n5년 단위 상용화 기본계획·정책위원회 설치, ‘이동로봇 활용 진흥지구’ 지정…책임보험 의무화·사고조사위 신설\n2026-09-03 17:15:28\n한병도 더불어민주당 원내대표가 3일 ‘이동로봇의 안전한 이용 및 상용화 촉진을 위한 특별법안(로봇특별법)’을 대표발의했다. 배송·보안·주차·건설 등 일상과 산업 현장에서 활용되는 이동로봇의 실증부터 상용화, 안전관리까지 통합 지원하는 첫 법안이다.\n이동로봇은 자율주행과 인공지능(AI) 등 첨단기술을 기반으로 다양한 업무를 수행하는 신산업 분야다. 기존 산업용 로봇이 생산라인 중심으로 쓰였다면 이동로봇은 공동주택과 건축물, 건설현장, 주차장 등 생활공간 전반으로 활용 범위가 넓어지고 있다. 그러나 현행 제도는 기술개발과 인증·보급 등 제품 중심의 산업 진흥에 초점이 맞춰져 있고, 활용 관련 규정도 건축법·공동주택관리법·개인정보보호법 등에 흩어져 있어 통합적인 제도 기반이 필요하다는 지적이 제기돼 왔다.",
+              "content_chars": 571
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The Korean news article confirms the proposal of the 'Robot Special Law' and the fragmentation of regulations across the Building Act, Multi-Family Housing Management Act, and Personal Information Protection Act. Only one source is provided.",
+      "assignment_id": "SG03",
+      "claim_ref": "SG03:C005"
+    },
+    {
+      "claim_id": "C006",
+      "claim": "There is a critical need for public testing and certification infrastructure to reduce overseas dependence and support the entire lifecycle of robot development, from performance evaluation to risk assessment.",
+      "worker_support": "The Korea Testing Laboratory (KTL) has established the 'Robot Plus Test Field' to provide domestic certification and risk assessment for collaborative robots, as previous lack of infrastructure led to high overseas dependence.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C006-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly states that domestic certification infrastructure was lacking, leading to high overseas dependence, and describes KTL's new center as a solution.",
+          "audited_source_type": "official",
+          "audited_tier": 1,
+          "source": {
+            "evidence_id": "C006-E001",
+            "worker_source": {
+              "title": "KTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충",
+              "publisher": "YNA",
+              "url": "https://www.yna.co.kr/view/AKR20250930148000052",
+              "source_type": "official",
+              "tier": 1,
+              "excerpt": "사람과 함께 운용된다는 특성상 제품과 시스템에 대한 안전인증이 필수적이지만, 그동안 국내 시험인증 기반 부족으로 해외 의존도가 높았다."
+            },
+            "retrieved_source": {
+              "title": "KTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충 | 연합뉴스",
+              "url": "https://www.yna.co.kr/view/AKR20250930148000052",
+              "domain": "www.yna.co.kr",
+              "content": "KTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충 | 연합뉴스\n연합뉴스\n메뉴 열기\nKTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충\n북마크\n최신뉴스\nKTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충\n송고\n이 밖에 경남로봇산업협회와 업무협약을 체결하고 로봇 핵심부품 시험인증과 상호 연구개발 협력에 나서는 등 지역·산업계와 협력을 강화하며 국내 기업의 기술 사업화를 지원하고 있다.\n이동혁 KTL 로봇시험인증센터장은 \"고부가가치 사업인 첨단 로봇산업의 급속한 성장에 발맞춰 국내 로봇 기업이 신속하고 편리하게 지원받을 수 있는 환경을 마련하는 데 최선을 다하겠다\"고 말했다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n[한국산업기술시험원 제공. 재판매 및 DB 금지]\n(진주=연합뉴스) 박정헌 기자 = 국내 유일 공공 종합시험인증기관인 한국산업기술시험원(KTL)이 국내 로봇 기업의 성장을 뒷받침하고 산업 경쟁력을 높이기 위해 시험·인증 인프라 확충에 나선다.\n7일 KTL에 따르면 최근 전 세계 산업현장에서 인간과 작업 공간을 공유하는 협동로봇이 노동력 부족, 생산성 향상, 고령화 대응의 핵심 동력으로 급부상하고 있다.\n사람과 함께 운용된다는 특성상 제품과 시스템에 대한 안전인증이 필수적이지만, 그동안 국내 시험인증 기반 부족으로 해외 의존도가 높았다.\n이에 KTL은 지난해 7월 서울 강남구 수서동 '로봇플러스 테스트 필드' 내 로봇시험인증센터를 개소하며 국내 기업의 애로 해소에 팔을 걷어붙였다.\n센터는 협동로봇의 성능·안전성 평가 전용 장비 11종 등 첨단 장비를 갖췄으며, 국제표준에 기반한 협동로봇 제품 인증과 작업장 위험성 평가·실증 등 로봇 개발 전 주기 지원 체계를 구축했다.\n이 밖에 경남로봇산업협회(GRIA)와 업무협약을 체결하고 로봇 핵심부품 시험인증과 상호 연구개발 협력에 나서는 등 지역·산업계와 협력을 강화하며 국내 기업의 기술 사업화를 지원하고 있다.\n이동혁 KTL 로봇시험인증센터장은 \"고부가가치 사업인 첨단 로봇산업의 급속한 성장에 발맞춰 국내 로봇 기업이 신속하고 편리하게 지원받을 수 있는 환경을 마련하는 데 최선을 다하겠다\"고 말했다.\nhome1223@yna.co.kr\n#진주\n#KTL\n#로봇",
+              "content_chars": 1115
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The YNA article confirms that KTL established the 'Robot Plus Test Field' to address high overseas dependence caused by a lack of domestic certification infrastructure. Only one source is provided.",
+      "assignment_id": "SG03",
+      "claim_ref": "SG03:C006"
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim_id": "C006",
+      "claim": "자율주행 및 이동 플랫폼 기술은 시뮬레이션 기반의 초고속 학습(Sim-to-Real)과 시각-언어 내비게이션(VLN)으로 진화하고 있다.",
+      "worker_support": "NVIDIA Isaac Lab은 디지털 트윈 환경에서 실제 세계보다 최대 1,000배 빠른 속도로 정책 학습을 가능하게 하며, 최신 연구(UAV-VLN 등)에서는 LLM과 시각 인지를 통합하여 자연어 명령만으로 미지의 환경을 탐색하는 엔드-투-엔드 내비게이션 체계가 제안되고 있다.",
+      "runtime_status": "UNSUPPORTED",
+      "verified_evidence_count": 0,
+      "verified_evidence": [],
+      "nonverified_evidence": [
+        {
+          "evidence_id": "C006-E001",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "The source verifies that NVIDIA Isaac Lab enables training at 1,000x real-world speed. However, it does not mention VLN, UAV-VLN, or end-to-end navigation systems for unknown environments. The claim is a compound assertion where the second half is unsupported by the provided text.",
+          "audited_source_type": "industry",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C006-E001",
+            "worker_source": {
+              "title": "Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status",
+              "publisher": "meta-intelligence.tech",
+              "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "NVIDIA's Isaac platform combines GPU-accelerated simulation with robot foundation models, enabling developers to train robot policies at 1,000x real-world speed in digital twin environments"
+            },
+            "retrieved_source": {
+              "title": "Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status",
+              "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+              "domain": "www.meta-intelligence.tech",
+              "content": "Key Findings\nPhysical AI is moving from the lab to the production line — NVIDIA's Isaac platform combines GPU-accelerated simulation with robot foundation models, enabling developers to train robot policies at 1,000x real-world speed in digital twin environments, dramatically shortening the cycle from concept to deployment\n[1]\n[4]\nBreakthroughs in Robot Foundation Models are the key driving force behind Physical AI's accelerated deployment — RT-2 and other Vision-Language-Action models (VLA) achieved, for the first time, \"commanding robots with natural language to complete previously unseen tasks\"\n[5]\n[1]\n. This is no rhetorical exaggeration — from the Isaac robotics platform and the Omniverse digital twin engine to the Jetson Thor SoC designed specifically for robots, NVIDIA is building a complete Physical AI technology stack.\nThe core challenge of Physical AI lies in this: the physical world is far more complex than the digital world. In the digital world, a flawed inference at most produces imperfect text; in the physical world, one wrong movement can damage equipment, ruin products, or even injure personnel. Robots must make millisecond-level decisions in uncertain environments — perceiving object positions and materials, planning arm trajectories, applying precisely the right amount of force, and adjusting in real time when encountering unexpected situations. This requires AI to simultaneously possess visual understanding, spatial reasoning, force control, and real-time response capabilities — technical complexity far exceeding purely digital scenarios.\nBetween 2025 and 2026, three major technological breakthroughs transformed Physical AI from a \"long-term vision\" into a \"deployable technology\": First,\nRobot Foundation Models\n. Just as large language models enabled computers to understand human language, robot foundation models enable robots to understand the operational logic of the physical world.\nFrom RT-1 to RT-2: The Birth of Vision-Language-Action Models\n— it can not only understand images and language, but also directly translate that understanding into robot motion commands.\nRT-2's core breakthrough lies in \"knowledge transfer\": built on pre-trained vision-language models (such as PaLI-X), it transfers broad world knowledge learned from the internet to the robot control domain. This means RT-2 can understand concepts that never appeared in its training data. For example, even without any robot operation examples of \"throw trash in the trash can,\" RT-2 can correctly execute the task based on its semantic understanding of \"trash\" and \"trash can.\" In Google's tests, RT-2 achieved a more than 3x improvement in success rates on previously unseen tasks compared to its predecessor RT-1.\nOpen X-Embodiment: A Shared Knowledge Repository Across Robots\n, led by Google DeepMind with 21 participating research institutions, aims to break this bottleneck.\nOpen X-Embodiment established a standardized dataset covering 22 different robot forms and over 1 million operational trajectories. The RT-X model trained on this dataset demonstrated remarkable cross-robot transfer capabilities — on robots never seen before, RT-X's task success rate exceeded the robot's original dedicated model by 50%. The implications are profound: it proves robot AI can adopt the \"foundation model\" paradigm — training one general large model, then fine-tuning for different robot forms, just as GPT can be fine-tuned for text generation in different languages.\nNVIDIA GR00T and Isaac Lab: The Development Platform for Physical AI\nIsaac Lab / Isaac Sim:\nA robot simulation platform built on Omniverse. Developers can train robot policies in physically precise virtual environments at up to 1,000x real-world speed, dramatically reducing the cost and risk of real-world training. Isaac Lab supports domain randomization — randomizing lighting, friction, object shapes, and other parameters in simulation to improve strategy transfer to real environments\nJetson Thor:\n[10]\nnoted that robot foundation models are experiencing a \"scaling law validation period\" similar to large language models — the larger the model, the more diverse the training data, and the more precise the simulation environment, the stronger the robot's generalization capability. By 2027, robot foundation model parameter scales are expected to cross from the current billions into the hundreds of billions, at which point robots will be able to complete most structured physical operations through language instructions alone.\n4. Core Application Scenarios for Physical AI\nScenario 4: Hazardous Environment Operations — Replacing Humans in High-Risk Zones\nIn scenarios such as nuclear plant decommissioning, chemical handling, post-disaster search and rescue, and high-altitude work, the cost of exposing humans to physical risk is extremely high. Physical AI can send robots into these dangerous environments to perform inspection, repair, cleanup, and rescue tasks. Boston Dynamics' Atlas was originally developed for DARPA's post-disaster rescue challenge\n[4]\n[1]\nto build digital twin models of the site, simulating robot workflows and efficiency in virtual environments before deciding whether to proceed with physical pilots.\nDuring the proof of concept phase, we recommend a\ncollaborative robot (Cobot) + AI vision\ncombination as the starting point, rather than directly deploying humanoid robots. The reasons: Cobots have higher technology maturity, shorter deployment cycles (typically 2-4 weeks), lower costs (approximately NT$1-2 million), and well-established safety certifications. Through Cobot pilots, enterprises can validate the feasibility and ROI of AI-driven automation in their specific settings at low risk.\nPhase 2: Expanded Deployment and System Integration (6-18 months)\nAfter successful proof of concept, enterprises should expand Physical AI from a single workstation to entire production lines or warehouse sections. The key challenge at this stage is not the robots them",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "While the source verifies the Sim-to-Real speed (1,000x), it contains no mention of 'Vision-Language Navigation (VLN)' or 'UAV-VLN', making the claim only partially supported.",
+      "assignment_id": "SG01",
+      "claim_ref": "SG01:C006"
+    },
+    {
+      "claim_id": "C006",
+      "claim": "Unitree has entered the commercial market with the G1 humanoid robot, significantly lowering the price point to approximately $4,000.",
+      "worker_support": "Unitree drops the R1 to $4K [referring to the commercialization race in 2026].",
+      "runtime_status": "UNSUPPORTED",
+      "verified_evidence_count": 0,
+      "verified_evidence": [],
+      "nonverified_evidence": [
+        {
+          "evidence_id": "C006-E001",
+          "state": "CONTENT_MISMATCH",
+          "reason": "The source refers to the 'R1' model, not the 'G1' model mentioned in the claim.",
+          "audited_source_type": "industry_analysis",
+          "audited_tier": 5,
+          "source": {
+            "evidence_id": "C006-E001",
+            "worker_source": {
+              "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+              "publisher": "andrew.ooo",
+              "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+              "source_type": "industry_analysis",
+              "tier": 3,
+              "excerpt": "Unitree drops the R1 to $4K."
+            },
+            "retrieved_source": {
+              "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+              "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+              "domain": "andrew.ooo",
+              "content": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo\nandrew\nooo\nAI agents · OpenClaw · self-hosting · automation\nhome\nQuick Answer\nBoston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026)\nPublished:\nJuly 16, 2026\nBoston Dynamics vs Figure vs Agility vs 1X: Humanoid Landscape (July 2026)\nHyundai took 100% of Boston Dynamics on July 15, 2026, and reshuffled the humanoid robotics race.\nWith Figure AI valued at ~$40B, Agility deploying Digit at Amazon, 1X shipping Neo, and Tesla Optimus in factories, the question for enterprises and investors is: which humanoid actually wins, and in which market?\nHere is the July 2026 head-to-head.\nTesla FSD lineage\nPublic listing status\n2027-2028 IPO candidate\nBoston Dynamics Atlas — The Newly Focused Player\nAfter 13 years of ownership churn (Google → SoftBank → Hyundai partial → Hyundai full), Boston Dynamics finally has a single decisive owner with capital and a captive customer.\nStrengths:\n(usually good, but not automatic)\nBest for: heavy industrial buyers who value locomotion maturity and want a supplier backed by a major OEM.\nFigure 03 — The BMW-Backed Momentum Story\nFigure AI is the most-hyped humanoid company. Figure 03 pairs improved dexterity with the Helix vision-language-action model — Figure’s in-house VLA that competes with Google’s Gemini Robotics and openai-partnered stacks.\nStrengths:\nTesla Optimus Gen 3 — The Wild Card\nTesla Optimus is deployed at Tesla factories, and the roadmap is aggressive: consumer availability at $20-$30K “eventually.”\nStrengths:\n— WAIC 2026 announcements will set the tone\nThe humanoid market is bifurcating: US/Western makers dominating high-locomotion / enterprise-integration segments, Chinese makers dominating volume industrial pricing. Boston Dynamics under Hyundai is the biggest bet on the Western side. Agility is the biggest deployment story. Figure is the biggest brand narrative.\nThe Frame\nHumanoid robotics in July 2026 is where autonomous vehicles were in 2018 — real deployments happening, most of the market still ahead, valuations aggressive, timelines slippery. The Hyundai/Boston Dynamics deal is the strongest signal yet that this becomes a public-markets story within 24 months.\nDo not confuse capability demos with commercial reality. Ask about actual unit deployments, actual maintenance costs, actual hours-of-autonomous-work-per-day. Everyone shows highlight reels. Only Agility and Figure have real production data. Boston Dynamics is about to.\nSources\n— Figure 03 announcements\nAgility Robotics: Digit deployments\n— 2026\nEngineAI vs Unitree vs Figure: Humanoid Robots (June 2026)\nEngineAI files for Hong Kong IPO; Figure ships 240 units/month; Unitree drops the R1 to $4K. The 2026 humanoid robot commercialization race compared.\n💬\nAGIBOT A3 Ultra vs Tesla Optimus vs Figure 03 (Jul 2026)\nAGIBOT unveiled A3 Ultra at WAIC 2026 (July 18, 2026) — the only embodied AI 'Gem of the Exhibition'. How it compares to Tesla Optimus and Figure 03.\n💬\nWAICO vs NVIDIA Cosmos vs US/EU Humanoid Rules (Jul 2026)\nHumanoid robotics needs governance. WAICO covers China. NVIDIA Cosmos alliance covers US industry. US executive orders and EU AI Act cover regulation. Who governs what.\n💬\nHyundai Buys Full Boston Dynamics from SoftBank (July 2026)\nHyundai took 100% of Boston Dynamics from SoftBank on July 15, 2026. What the humanoid robot deal means, why now, and what happens to the Atlas program.\n💬\nGrok 4.5 vs GPT-5.6 Sol vs Claude Opus 4.8: Post-Launch Benchmarks (July 2026)\nGrok 4.5 launched July 8, 2026 at $2/$6 per MTok. Here's how it actually stacks up against GPT-5.6 Sol and Claude Opus 4.8 on coding, reasoning, and cost.\n← More answers",
+              "content_chars": 3701
+            }
+          }
+        }
+      ],
+      "auditor_verdict": "UNSUPPORTED",
+      "auditor_reason": "The claim identifies the robot as 'G1', but the retrieved source explicitly mentions 'Unitree drops the R1 to $4K'. This is a content mismatch regarding the product model name.",
+      "assignment_id": "SG02",
+      "claim_ref": "SG02:C006"
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "claim_id": "C006",
+      "evidence_id": "C006-E001",
+      "state": "INSUFFICIENT_SUPPORT",
+      "reason": "The source verifies that NVIDIA Isaac Lab enables training at 1,000x real-world speed. However, it does not mention VLN, UAV-VLN, or end-to-end navigation systems for unknown environments. The claim is a compound assertion where the second half is unsupported by the provided text.",
+      "audited_source_type": "industry",
+      "audited_tier": 2,
+      "source": {
+        "evidence_id": "C006-E001",
+        "worker_source": {
+          "title": "Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status",
+          "publisher": "meta-intelligence.tech",
+          "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "NVIDIA's Isaac platform combines GPU-accelerated simulation with robot foundation models, enabling developers to train robot policies at 1,000x real-world speed in digital twin environments"
+        },
+        "retrieved_source": {
+          "title": "Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status",
+          "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+          "domain": "www.meta-intelligence.tech",
+          "content": "Key Findings\nPhysical AI is moving from the lab to the production line — NVIDIA's Isaac platform combines GPU-accelerated simulation with robot foundation models, enabling developers to train robot policies at 1,000x real-world speed in digital twin environments, dramatically shortening the cycle from concept to deployment\n[1]\n[4]\nBreakthroughs in Robot Foundation Models are the key driving force behind Physical AI's accelerated deployment — RT-2 and other Vision-Language-Action models (VLA) achieved, for the first time, \"commanding robots with natural language to complete previously unseen tasks\"\n[5]\n[1]\n. This is no rhetorical exaggeration — from the Isaac robotics platform and the Omniverse digital twin engine to the Jetson Thor SoC designed specifically for robots, NVIDIA is building a complete Physical AI technology stack.\nThe core challenge of Physical AI lies in this: the physical world is far more complex than the digital world. In the digital world, a flawed inference at most produces imperfect text; in the physical world, one wrong movement can damage equipment, ruin products, or even injure personnel. Robots must make millisecond-level decisions in uncertain environments — perceiving object positions and materials, planning arm trajectories, applying precisely the right amount of force, and adjusting in real time when encountering unexpected situations. This requires AI to simultaneously possess visual understanding, spatial reasoning, force control, and real-time response capabilities — technical complexity far exceeding purely digital scenarios.\nBetween 2025 and 2026, three major technological breakthroughs transformed Physical AI from a \"long-term vision\" into a \"deployable technology\": First,\nRobot Foundation Models\n. Just as large language models enabled computers to understand human language, robot foundation models enable robots to understand the operational logic of the physical world.\nFrom RT-1 to RT-2: The Birth of Vision-Language-Action Models\n— it can not only understand images and language, but also directly translate that understanding into robot motion commands.\nRT-2's core breakthrough lies in \"knowledge transfer\": built on pre-trained vision-language models (such as PaLI-X), it transfers broad world knowledge learned from the internet to the robot control domain. This means RT-2 can understand concepts that never appeared in its training data. For example, even without any robot operation examples of \"throw trash in the trash can,\" RT-2 can correctly execute the task based on its semantic understanding of \"trash\" and \"trash can.\" In Google's tests, RT-2 achieved a more than 3x improvement in success rates on previously unseen tasks compared to its predecessor RT-1.\nOpen X-Embodiment: A Shared Knowledge Repository Across Robots\n, led by Google DeepMind with 21 participating research institutions, aims to break this bottleneck.\nOpen X-Embodiment established a standardized dataset covering 22 different robot forms and over 1 million operational trajectories. The RT-X model trained on this dataset demonstrated remarkable cross-robot transfer capabilities — on robots never seen before, RT-X's task success rate exceeded the robot's original dedicated model by 50%. The implications are profound: it proves robot AI can adopt the \"foundation model\" paradigm — training one general large model, then fine-tuning for different robot forms, just as GPT can be fine-tuned for text generation in different languages.\nNVIDIA GR00T and Isaac Lab: The Development Platform for Physical AI\nIsaac Lab / Isaac Sim:\nA robot simulation platform built on Omniverse. Developers can train robot policies in physically precise virtual environments at up to 1,000x real-world speed, dramatically reducing the cost and risk of real-world training. Isaac Lab supports domain randomization — randomizing lighting, friction, object shapes, and other parameters in simulation to improve strategy transfer to real environments\nJetson Thor:\n[10]\nnoted that robot foundation models are experiencing a \"scaling law validation period\" similar to large language models — the larger the model, the more diverse the training data, and the more precise the simulation environment, the stronger the robot's generalization capability. By 2027, robot foundation model parameter scales are expected to cross from the current billions into the hundreds of billions, at which point robots will be able to complete most structured physical operations through language instructions alone.\n4. Core Application Scenarios for Physical AI\nScenario 4: Hazardous Environment Operations — Replacing Humans in High-Risk Zones\nIn scenarios such as nuclear plant decommissioning, chemical handling, post-disaster search and rescue, and high-altitude work, the cost of exposing humans to physical risk is extremely high. Physical AI can send robots into these dangerous environments to perform inspection, repair, cleanup, and rescue tasks. Boston Dynamics' Atlas was originally developed for DARPA's post-disaster rescue challenge\n[4]\n[1]\nto build digital twin models of the site, simulating robot workflows and efficiency in virtual environments before deciding whether to proceed with physical pilots.\nDuring the proof of concept phase, we recommend a\ncollaborative robot (Cobot) + AI vision\ncombination as the starting point, rather than directly deploying humanoid robots. The reasons: Cobots have higher technology maturity, shorter deployment cycles (typically 2-4 weeks), lower costs (approximately NT$1-2 million), and well-established safety certifications. Through Cobot pilots, enterprises can validate the feasibility and ROI of AI-driven automation in their specific settings at low risk.\nPhase 2: Expanded Deployment and System Integration (6-18 months)\nAfter successful proof of concept, enterprises should expand Physical AI from a single workstation to entire production lines or warehouse sections. The key challenge at this stage is not the robots them",
+          "content_chars": 6000
+        }
+      },
+      "assignment_id": "SG01"
+    },
+    {
+      "claim_id": "C002",
+      "evidence_id": "C002-E002",
+      "state": "INSUFFICIENT_SUPPORT",
+      "reason": "Mentions Figure 03's technical specs (Helix VLA model) but does not verify its commercial deployment status or specific installation sites.",
+      "audited_source_type": "industry_analysis",
+      "audited_tier": 5,
+      "source": {
+        "evidence_id": "C002-E002",
+        "worker_source": {
+          "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+          "publisher": "andrew.ooo",
+          "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+          "source_type": "industry_analysis",
+          "tier": 3,
+          "excerpt": "Figure 03 pairs improved dexterity with the Helix vision-language-action model — Figure’s in-house VLA"
+        },
+        "retrieved_source": {
+          "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+          "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+          "domain": "andrew.ooo",
+          "content": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo\nandrew\nooo\nAI agents · OpenClaw · self-hosting · automation\nhome\nQuick Answer\nBoston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026)\nPublished:\nJuly 16, 2026\nBoston Dynamics vs Figure vs Agility vs 1X: Humanoid Landscape (July 2026)\nHyundai took 100% of Boston Dynamics on July 15, 2026, and reshuffled the humanoid robotics race.\nWith Figure AI valued at ~$40B, Agility deploying Digit at Amazon, 1X shipping Neo, and Tesla Optimus in factories, the question for enterprises and investors is: which humanoid actually wins, and in which market?\nHere is the July 2026 head-to-head.\nTesla FSD lineage\nPublic listing status\n2027-2028 IPO candidate\nBoston Dynamics Atlas — The Newly Focused Player\nAfter 13 years of ownership churn (Google → SoftBank → Hyundai partial → Hyundai full), Boston Dynamics finally has a single decisive owner with capital and a captive customer.\nStrengths:\n(usually good, but not automatic)\nBest for: heavy industrial buyers who value locomotion maturity and want a supplier backed by a major OEM.\nFigure 03 — The BMW-Backed Momentum Story\nFigure AI is the most-hyped humanoid company. Figure 03 pairs improved dexterity with the Helix vision-language-action model — Figure’s in-house VLA that competes with Google’s Gemini Robotics and openai-partnered stacks.\nStrengths:\nTesla Optimus Gen 3 — The Wild Card\nTesla Optimus is deployed at Tesla factories, and the roadmap is aggressive: consumer availability at $20-$30K “eventually.”\nStrengths:\n— WAIC 2026 announcements will set the tone\nThe humanoid market is bifurcating: US/Western makers dominating high-locomotion / enterprise-integration segments, Chinese makers dominating volume industrial pricing. Boston Dynamics under Hyundai is the biggest bet on the Western side. Agility is the biggest deployment story. Figure is the biggest brand narrative.\nThe Frame\nHumanoid robotics in July 2026 is where autonomous vehicles were in 2018 — real deployments happening, most of the market still ahead, valuations aggressive, timelines slippery. The Hyundai/Boston Dynamics deal is the strongest signal yet that this becomes a public-markets story within 24 months.\nDo not confuse capability demos with commercial reality. Ask about actual unit deployments, actual maintenance costs, actual hours-of-autonomous-work-per-day. Everyone shows highlight reels. Only Agility and Figure have real production data. Boston Dynamics is about to.\nSources\n— Figure 03 announcements\nAgility Robotics: Digit deployments\n— 2026\nEngineAI vs Unitree vs Figure: Humanoid Robots (June 2026)\nEngineAI files for Hong Kong IPO; Figure ships 240 units/month; Unitree drops the R1 to $4K. The 2026 humanoid robot commercialization race compared.\n💬\nAGIBOT A3 Ultra vs Tesla Optimus vs Figure 03 (Jul 2026)\nAGIBOT unveiled A3 Ultra at WAIC 2026 (July 18, 2026) — the only embodied AI 'Gem of the Exhibition'. How it compares to Tesla Optimus and Figure 03.\n💬\nWAICO vs NVIDIA Cosmos vs US/EU Humanoid Rules (Jul 2026)\nHumanoid robotics needs governance. WAICO covers China. NVIDIA Cosmos alliance covers US industry. US executive orders and EU AI Act cover regulation. Who governs what.\n💬\nHyundai Buys Full Boston Dynamics from SoftBank (July 2026)\nHyundai took 100% of Boston Dynamics from SoftBank on July 15, 2026. What the humanoid robot deal means, why now, and what happens to the Atlas program.\n💬\nGrok 4.5 vs GPT-5.6 Sol vs Claude Opus 4.8: Post-Launch Benchmarks (July 2026)\nGrok 4.5 launched July 8, 2026 at $2/$6 per MTok. Here's how it actually stacks up against GPT-5.6 Sol and Claude Opus 4.8 on coding, reasoning, and cost.\n← More answers",
+          "content_chars": 3701
+        }
+      },
+      "assignment_id": "SG02"
+    },
+    {
+      "claim_id": "C006",
+      "evidence_id": "C006-E001",
+      "state": "CONTENT_MISMATCH",
+      "reason": "The source refers to the 'R1' model, not the 'G1' model mentioned in the claim.",
+      "audited_source_type": "industry_analysis",
+      "audited_tier": 5,
+      "source": {
+        "evidence_id": "C006-E001",
+        "worker_source": {
+          "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+          "publisher": "andrew.ooo",
+          "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+          "source_type": "industry_analysis",
+          "tier": 3,
+          "excerpt": "Unitree drops the R1 to $4K."
+        },
+        "retrieved_source": {
+          "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+          "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+          "domain": "andrew.ooo",
+          "content": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo\nandrew\nooo\nAI agents · OpenClaw · self-hosting · automation\nhome\nQuick Answer\nBoston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026)\nPublished:\nJuly 16, 2026\nBoston Dynamics vs Figure vs Agility vs 1X: Humanoid Landscape (July 2026)\nHyundai took 100% of Boston Dynamics on July 15, 2026, and reshuffled the humanoid robotics race.\nWith Figure AI valued at ~$40B, Agility deploying Digit at Amazon, 1X shipping Neo, and Tesla Optimus in factories, the question for enterprises and investors is: which humanoid actually wins, and in which market?\nHere is the July 2026 head-to-head.\nTesla FSD lineage\nPublic listing status\n2027-2028 IPO candidate\nBoston Dynamics Atlas — The Newly Focused Player\nAfter 13 years of ownership churn (Google → SoftBank → Hyundai partial → Hyundai full), Boston Dynamics finally has a single decisive owner with capital and a captive customer.\nStrengths:\n(usually good, but not automatic)\nBest for: heavy industrial buyers who value locomotion maturity and want a supplier backed by a major OEM.\nFigure 03 — The BMW-Backed Momentum Story\nFigure AI is the most-hyped humanoid company. Figure 03 pairs improved dexterity with the Helix vision-language-action model — Figure’s in-house VLA that competes with Google’s Gemini Robotics and openai-partnered stacks.\nStrengths:\nTesla Optimus Gen 3 — The Wild Card\nTesla Optimus is deployed at Tesla factories, and the roadmap is aggressive: consumer availability at $20-$30K “eventually.”\nStrengths:\n— WAIC 2026 announcements will set the tone\nThe humanoid market is bifurcating: US/Western makers dominating high-locomotion / enterprise-integration segments, Chinese makers dominating volume industrial pricing. Boston Dynamics under Hyundai is the biggest bet on the Western side. Agility is the biggest deployment story. Figure is the biggest brand narrative.\nThe Frame\nHumanoid robotics in July 2026 is where autonomous vehicles were in 2018 — real deployments happening, most of the market still ahead, valuations aggressive, timelines slippery. The Hyundai/Boston Dynamics deal is the strongest signal yet that this becomes a public-markets story within 24 months.\nDo not confuse capability demos with commercial reality. Ask about actual unit deployments, actual maintenance costs, actual hours-of-autonomous-work-per-day. Everyone shows highlight reels. Only Agility and Figure have real production data. Boston Dynamics is about to.\nSources\n— Figure 03 announcements\nAgility Robotics: Digit deployments\n— 2026\nEngineAI vs Unitree vs Figure: Humanoid Robots (June 2026)\nEngineAI files for Hong Kong IPO; Figure ships 240 units/month; Unitree drops the R1 to $4K. The 2026 humanoid robot commercialization race compared.\n💬\nAGIBOT A3 Ultra vs Tesla Optimus vs Figure 03 (Jul 2026)\nAGIBOT unveiled A3 Ultra at WAIC 2026 (July 18, 2026) — the only embodied AI 'Gem of the Exhibition'. How it compares to Tesla Optimus and Figure 03.\n💬\nWAICO vs NVIDIA Cosmos vs US/EU Humanoid Rules (Jul 2026)\nHumanoid robotics needs governance. WAICO covers China. NVIDIA Cosmos alliance covers US industry. US executive orders and EU AI Act cover regulation. Who governs what.\n💬\nHyundai Buys Full Boston Dynamics from SoftBank (July 2026)\nHyundai took 100% of Boston Dynamics from SoftBank on July 15, 2026. What the humanoid robot deal means, why now, and what happens to the Atlas program.\n💬\nGrok 4.5 vs GPT-5.6 Sol vs Claude Opus 4.8: Post-Launch Benchmarks (July 2026)\nGrok 4.5 launched July 8, 2026 at $2/$6 per MTok. Here's how it actually stacks up against GPT-5.6 Sol and Claude Opus 4.8 on coding, reasoning, and cost.\n← More answers",
+          "content_chars": 3701
+        }
+      },
+      "assignment_id": "SG02"
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C004-E001",
+      "message": "Worker labeled as 'official', but it is a news article from 'Industry News' (industry/news tier), not a primary official document from KAIST.",
+      "assignment_id": "SG01"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker classified as Tier 2 (Peer-reviewed/Reputable News), but AI Herald is an industry blog/analysis site, which is Tier 4.",
+      "assignment_id": "SG02"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker classified as Tier 2, but is actually Tier 4.",
+      "assignment_id": "SG02"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker classified as Tier 3 (Reputable News), but it is a corporate blog (Industry), which is Tier 4.",
+      "assignment_id": "SG03"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker classified as Tier 3, but it is a corporate blog (Industry), which is Tier 4.",
+      "assignment_id": "SG03"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C003-E001",
+      "message": "Worker classified as Tier 3, but it is a corporate blog (Industry), which is Tier 4.",
+      "assignment_id": "SG03"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C004-E001",
+      "message": "Worker classified as Tier 3, but it is a corporate blog (Industry), which is Tier 4.",
+      "assignment_id": "SG03"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C005-E001",
+      "message": "Worker classified as Tier 3, but it is a news site (Reputable News/Industry), likely Tier 3 or 4; however, the claim is only single-sourced.",
+      "assignment_id": "SG03"
+    }
+  ],
+  "gaps": [
+    {
+      "assignment_id": "SG01",
+      "type": "WORKER_GAP",
+      "detail": "Tesla Optimus 및 Figure AI의 구체적인 하드웨어-소프트웨어 통합 아키텍처 세부 명세(SoC 설계 등)에 대한 공식 기술 문서 부족"
+    },
+    {
+      "assignment_id": "SG01",
+      "type": "WORKER_GAP",
+      "detail": "VLA 모델의 추론 지연 시간(Latency) 문제를 해결하기 위한 최신 하드웨어 가속 기법의 구체적인 벤치마크 수치"
+    },
+    {
+      "assignment_id": "SG01",
+      "type": "UNSUPPORTED_CLAIM",
+      "claim_id": "C006",
+      "detail": "자율주행 및 이동 플랫폼 기술은 시뮬레이션 기반의 초고속 학습(Sim-to-Real)과 시각-언어 내비게이션(VLN)으로 진화하고 있다.",
+      "reason": "While the source verifies the Sim-to-Real speed (1,000x), it contains no mention of 'Vision-Language Navigation (VLN)' or 'UAV-VLN', making the claim only partially supported."
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "WORKER_GAP",
+      "detail": "Specific current 'Physical AI' product names and commercialization stages for Samsung Electronics and Doosan Robotics were not explicitly detailed in the verified sources, although general investment trends were noted."
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "WORKER_GAP",
+      "detail": "Detailed technical specifications (payload, battery life) for the latest 2026 versions of Optimus and Figure 03 were partially omitted in the read excerpts."
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "UNSUPPORTED_CLAIM",
+      "claim_id": "C006",
+      "detail": "Unitree has entered the commercial market with the G1 humanoid robot, significantly lowering the price point to approximately $4,000.",
+      "reason": "The claim identifies the robot as 'G1', but the retrieved source explicitly mentions 'Unitree drops the R1 to $4K'. This is a content mismatch regarding the product model name."
+    },
+    {
+      "assignment_id": "SG03",
+      "type": "WORKER_GAP",
+      "detail": "Detailed technical specifications and a comprehensive equipment list for a 'state-of-the-art' public robotics testbed (beyond the mention of '11 types of equipment')."
+    },
+    {
+      "assignment_id": "SG03",
+      "type": "WORKER_GAP",
+      "detail": "Verification of the 'six coupled challenges' of Physical AI (data ecosystems, sim-to-real resilience, lifelong adaptation, safety assurance, workforce integration, and sustainable hardware) due to access restrictions on the primary source."
+    }
+  ],
+  "sources": [
+    {
+      "canonical_url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026",
+      "url": "https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026/",
+      "title": "Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026) — andrew.ooo",
+      "domain": "andrew.ooo",
+      "claimed_publisher": "andrew.ooo",
+      "audited_source_type": "industry_analysis",
+      "audited_tier": 5,
+      "assignments": [
+        "SG02"
+      ],
+      "claim_ids": [
+        "SG02:C003"
+      ],
+      "evidence_ids": [
+        "C003-E001"
+      ],
+      "source_id": "SRC001"
+    },
+    {
+      "canonical_url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+      "url": "https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown",
+      "title": "Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown - AI Herald",
+      "domain": "artificialintelligenceherald.com",
+      "claimed_publisher": "AI Herald",
+      "audited_source_type": "industry_analysis",
+      "audited_tier": 4,
+      "assignments": [
+        "SG02"
+      ],
+      "claim_ids": [
+        "SG02:C001",
+        "SG02:C002",
+        "SG02:C004"
+      ],
+      "evidence_ids": [
+        "C001-E001",
+        "C002-E001",
+        "C004-E001"
+      ],
+      "source_id": "SRC002"
+    },
+    {
+      "canonical_url": "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en",
+      "url": "https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en/",
+      "title": "What Is a VLA (Vision-Language-Action) Model? — Physical AI Model Evolution & Data Strategy (2026 Edition) | Pebblous",
+      "domain": "blog.pebblous.ai",
+      "claimed_publisher": "Pebblous",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "assignments": [
+        "SG03"
+      ],
+      "claim_ids": [
+        "SG03:C004"
+      ],
+      "evidence_ids": [
+        "C004-E001"
+      ],
+      "source_id": "SRC003"
+    },
+    {
+      "canonical_url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics",
+      "url": "https://neuralcoretech.com/physical-ai-architecture-vla-robotics/",
+      "title": "Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide - NeuralCoreTech",
+      "domain": "neuralcoretech.com",
+      "claimed_publisher": "NeuralCoreTech",
+      "audited_source_type": "industry",
+      "audited_tier": 2,
+      "assignments": [
+        "SG01"
+      ],
+      "claim_ids": [
+        "SG01:C001",
+        "SG01:C002",
+        "SG01:C005"
+      ],
+      "evidence_ids": [
+        "C001-E001",
+        "C002-E001",
+        "C005-E001"
+      ],
+      "source_id": "SRC004"
+    },
+    {
+      "canonical_url": "https://qnx.software/en/blog/2026/inside-the-robot",
+      "url": "https://qnx.software/en/blog/2026/inside-the-robot",
+      "title": "Software Architecture: The New Bottleneck for Physical AI",
+      "domain": "qnx.software",
+      "claimed_publisher": "QNX",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "assignments": [
+        "SG03"
+      ],
+      "claim_ids": [
+        "SG03:C001",
+        "SG03:C002",
+        "SG03:C003"
+      ],
+      "evidence_ids": [
+        "C001-E001",
+        "C002-E001",
+        "C003-E001"
+      ],
+      "source_id": "SRC005"
+    },
+    {
+      "canonical_url": "https://rabby.kr/physical-ai-robots-korea-cases-2026",
+      "url": "https://rabby.kr/physical-ai-robots-korea-cases-2026/",
+      "title": "피지컬 AI 로봇 2026 한국 7가지 도입 사례 총정리",
+      "domain": "rabby.kr",
+      "claimed_publisher": "rabby.kr",
+      "audited_source_type": "industry_analysis",
+      "audited_tier": 5,
+      "assignments": [
+        "SG02"
+      ],
+      "claim_ids": [
+        "SG02:C004"
+      ],
+      "evidence_ids": [
+        "C004-E002"
+      ],
+      "source_id": "SRC006"
+    },
+    {
+      "canonical_url": "https://www.betanews.net/article/view/beta202609030109",
+      "url": "https://www.betanews.net/article/view/beta202609030109",
+      "title": "한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원",
+      "domain": "www.betanews.net",
+      "claimed_publisher": "Betanews",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "assignments": [
+        "SG03"
+      ],
+      "claim_ids": [
+        "SG03:C005"
+      ],
+      "evidence_ids": [
+        "C005-E001"
+      ],
+      "source_id": "SRC007"
+    },
+    {
+      "canonical_url": "https://www.industrynews.co.kr/news/articleView.html?idxno=54354",
+      "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=54354",
+      "title": "KAIST, 자율주행차·로봇 등 온디바이스 환경서 적응형 인공지능 실현 < 이슈·트렌드 < 자율제조·스마트팩토리 < 산업 < 기사본문 - 인더스트리뉴스",
+      "domain": "www.industrynews.co.kr",
+      "claimed_publisher": "인더스트리뉴스",
+      "audited_source_type": "official",
+      "audited_tier": 2,
+      "assignments": [
+        "SG01"
+      ],
+      "claim_ids": [
+        "SG01:C004"
+      ],
+      "evidence_ids": [
+        "C004-E001"
+      ],
+      "source_id": "SRC008"
+    },
+    {
+      "canonical_url": "https://www.kyeonggi.com/article/20260723580350",
+      "url": "https://www.kyeonggi.com/article/20260723580350",
+      "title": "투모로 로보틱스, 피지컬 AI 상용화 속도…레인보우로보틱스와 '스스로 일하는 로봇' 공동개발",
+      "domain": "www.kyeonggi.com",
+      "claimed_publisher": "경기일보",
+      "audited_source_type": "official",
+      "audited_tier": 1,
+      "assignments": [
+        "SG02"
+      ],
+      "claim_ids": [
+        "SG02:C005"
+      ],
+      "evidence_ids": [
+        "C005-E001"
+      ],
+      "source_id": "SRC009"
+    },
+    {
+      "canonical_url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+      "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+      "title": "Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status",
+      "domain": "www.meta-intelligence.tech",
+      "claimed_publisher": "meta-intelligence.tech",
+      "audited_source_type": "industry",
+      "audited_tier": 2,
+      "assignments": [
+        "SG01"
+      ],
+      "claim_ids": [
+        "SG01:C001"
+      ],
+      "evidence_ids": [
+        "C001-E002"
+      ],
+      "source_id": "SRC010"
+    },
+    {
+      "canonical_url": "https://www.patsnap.com/resources/blog/rd-blog/robotic-grasping-technology-landscape-2026-patsnap-eureka",
+      "url": "https://www.patsnap.com/resources/blog/rd-blog/robotic-grasping-technology-landscape-2026-patsnap-eureka/",
+      "title": "Robotic Grasping Technology Landscape 2026 — PatSnap Eureka | Patsnap",
+      "domain": "www.patsnap.com",
+      "claimed_publisher": "Patsnap",
+      "audited_source_type": "industry",
+      "audited_tier": 2,
+      "assignments": [
+        "SG01"
+      ],
+      "claim_ids": [
+        "SG01:C003"
+      ],
+      "evidence_ids": [
+        "C003-E001"
+      ],
+      "source_id": "SRC011"
+    },
+    {
+      "canonical_url": "https://www.yna.co.kr/view/AKR20250930148000052",
+      "url": "https://www.yna.co.kr/view/AKR20250930148000052",
+      "title": "KTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충 | 연합뉴스",
+      "domain": "www.yna.co.kr",
+      "claimed_publisher": "YNA",
+      "audited_source_type": "official",
+      "audited_tier": 1,
+      "assignments": [
+        "SG03"
+      ],
+      "claim_ids": [
+        "SG03:C006"
+      ],
+      "evidence_ids": [
+        "C006-E001"
+      ],
+      "source_id": "SRC012"
+    }
+  ],
+  "summary": {
+    "assignment_count": 3,
+    "accepted_claim_count": 16,
+    "unsupported_claim_count": 2,
+    "rejected_evidence_count": 3,
+    "quality_flag_count": 8,
+    "gap_count": 8,
+    "unique_verified_source_count": 12
+  }
+}

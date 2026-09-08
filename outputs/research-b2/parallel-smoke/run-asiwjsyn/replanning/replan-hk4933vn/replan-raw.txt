@@ -1,0 +1,55 @@
+{
+  "needs_another_wave": true,
+  "reason": "The majority of material claims (14/16) are currently single-source, and several critical gaps remain regarding specific hardware architectures, commercialization stages of key Korean companies (Samsung, Doosan), and the same-model mismatch for Unitree.com. Triangulation of core architectural shifts (VLA) and commercial deployment status of Figure/Optimus/Digit is required to meet the 'triangulated across at least 2 independent sources' rule.",
+  "assignments": [
+    {
+      "assignment_id": "SG04",
+      "title": "Triangulation of Physical AI Architecture and Commercial Status",
+      "objective": "Cross-verify the shift to VLA models, the commercial deployment status of Tesla Optimus Gen 3, Figure 02/03, and Agility Digit, and resolve the conflict/mismatch regarding Unitree's $4k robot model name (G1 vs R1).",
+      "queries": [
+        "Tesla Optimus Gen 3 commercial deployment status 2026",
+        "Figure AI Figure 02 03 commercial installation BMW Amazon",
+        "Agility Robotics Digit commercial deployment Amazon",
+        "Unitree G1 vs R1 humanoid robot price $4000",
+        "Vision-Language-Action (VLA) models robotics foundation models 2024-2026"
+      ],
+      "source_priority": [
+        "official",
+        "industry"
+      ],
+      "needs_local_files": false
+    },
+    {
+      "assignment_id": "SG05",
+      "title": "Korean Physical AI Ecosystem and Infrastructure",
+      "objective": "Identify specific Physical AI products or projects from Samsung Electronics and Doosan Robotics, and find detailed specifications for public robotics testbeds/certification infrastructure in South Korea.",
+      "queries": [
+        "삼성전자 자율작업형 로봇 AI-Native humanoid",
+        "두산로보틱스 AI-Native 로봇 작업 수행 기술",
+        "한국 공용 시험 인프라 로봇 성능 평가 장비 리스트",
+        "South Korea public robotics testbed certification infrastructure specifications"
+      ],
+      "queries_ko": [
+        "삼성전자 휴머노이드 로봇 개발 현황 2026",
+        "두산로보틱스 AI 로봇 상용화 단계",
+        "국가 로봇 시험 인증 센터 성능 평가 항목 및 장비 리스트"
+      ],
+      "source_priority": [
+        "official",
+        "official",
+        "official",
+        "official"
+      ],
+      "source_priority_ko": [
+        "official",
+        "official", "official", "official"
+      ],
+      "source_priority_ko////: ":", "
+      },
+      {
+        "assignment_id": "SG06",
+      "title": "Technical Bottlenecks and Hardware Acceleration",
+        "objective": " "
+      }
+    ]
+}
