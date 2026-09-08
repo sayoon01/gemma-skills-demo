@@ -1,0 +1,358 @@
+# Semantic Audit Output Repair
+
+The previous semantic audit completed, but its structured output failed runtime integrity validation.
+
+This is a schema and consistency repair pass. Do not perform new research. Do not add new claims, new evidence, new URLs, or unsupported facts.
+
+# Integrity Errors
+
+[
+  "잘못된 verdict: C002 / INSUFFICIENT_SUPPORT"
+]
+
+# Original Audit Packet
+
+{
+  "accepted_claims": [
+    {
+      "claim_id": "C001",
+      "claim": "Real-time VLA (Vision-Language-Action) inference for robotics targets a latency of 10 to 100 milliseconds (10 Hz to 100 Hz) to align with visual signal ingestion rates from standard RGB cameras (24-60 Hz).",
+      "worker_support": "VLA-Perf analysis defines 10 Hz as a baseline and explores rates up to and beyond 100 Hz to match camera frame rates.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C001-E001",
+          "worker_source": {
+            "title": "How Fast Can I Run My VLA? Demystifying VLA Inference Performance with VLA-Perf",
+            "publisher": "arxiv.org",
+            "url": "https://arxiv.org/html/2602.18397v1",
+            "source_type": "peer-reviewed",
+            "tier": 1,
+            "excerpt": "Given that standard RGB camera frame rates typically range from 24 to 60 Hz, we define a 10 Hz inference frequency as... What combinations of models and systems are required to support VLA inference at rates from 10 Hz up to and beyond 100 Hz"
+          },
+          "retrieved_source": {
+            "title": "How Fast Can I Run My VLA? Demystifying VLA Inference Performance with VLA-Perf",
+            "url": "https://arxiv.org/html/2602.18397v1",
+            "domain": "arxiv.org",
+            "content": "2.3\nResearch Gap: Comprehensive Analysis of the VLA Inference Performance Landscape\n3\nVision-Language-Action (VLA) models have recently demonstrated impressive capabilities across various embodied AI tasks.\nWhile deploying VLA models on real-world robots imposes strict real-time inference constraints, the inference performance landscape of VLA remains poorly understood due to the large combinatorial space of model architectures and inference systems.\nIn this paper, we ask a fundamental research question:\nHow should we design future VLA models and systems to support real-time inference?\nTo address this question, we first introduce\nVLA-Perf\n, an analytical performance model that can analyze inference performance for arbitrary combinations of VLA models and inference systems.\nUsing\nVLA-Perf\n, we conduct the first systematic study of the VLA inference performance landscape.\nFrom a model-design perspective, we examine how inference performance is affected by model scaling, model architectural choices, long-context video inputs, asynchronous inference, and dual-system model pipelines.\nFrom the deployment perspective, we analyze where VLA inference should be executed — on-device, on edge servers, or in the cloud — and how hardware capability and network performance jointly determine end-to-end latency.\nBy distilling 15 key takeaways from our comprehensive evaluation, we hope this work can provide practical guidance for the design of future VLA models and inference systems.\n1\n.\nTo react to real-time changes in the physical world, VLA inference must operate with low latency, motivating recent work to treat inference performance\n2\n.\nWhile these efforts on efficient VLA model design are an important step forward, we still lack a comprehensive understanding of the VLA inference performance landscape, which is determined by the vast combinatorial space of possible (1)\nmodels\nThis study aims to answer a simple yet fundamental question:\nhow should we design VLA models and systems to achieve real-time inference performance?\nGiven that standard RGB camera frame rates typically range from 24 to 60 Hz, we define a 10 Hz inference frequency as\n)?\nWhat combinations of models and systems are required to support VLA inference at rates from 10 Hz up to and beyond 100 Hz (§\n4.11\n.\nTo enable such systematic analysis across the nearly unbounded combinatorial space of VLA models and inference systems,\nwe develop VLA-Perf, an analytical, roofline-based performance model that predicts the optimal inference latency and throughput for arbitrary model–system combinations\n(\nFrom the results, we summarize\n15 key performance takeaways that provide practical guidance for the design of future VLA models and inference systems.\nFigure 1\nVLA-Perf\nenables a comprehensive performance analysis of the VLA inference landscape. Our systematic study explores the interplay between model architectures and deployment configurations, yielding 15 actionable insights for designing future VLA models and serving systems.\n2\nIn this paper,\nwe aim to provide a comprehensive analysis of VLA inference performance across both existing and future, potentially hypothetical, combinations of VLA models and inference systems.\nOur evaluation focuses exclusively on performance characteristics — including latency and throughput — under the assumption that the underlying models meet the necessary accuracy thresholds for deployment.\nAcross all components, larger models impose proportionally higher computational costs, and thus inference latency grows approximately linearly with model size.\nTakeaway 4: While edge and consumer GPUs struggle with larger models, datacenter GPUs can still support real-time inference for VLA models that are more than one order of magnitude larger.\nTable\n:\nInference performance and memory consumption of long-context VLA models.\nTimesteps\nWith asynchronous inference, the model predicts actions based on stale observations rather than the latest state, allowing model inference and robot action execution to be partially overlapped.\nWhile this form of asynchrony does not increase the maximum inference throughput for on-device inference without network latency, it can benefit server-side inference by allowing network transmission and GPU computation to proceed concurrently.\nThus, the asynchronous inference throughput is bounded by the minimum of GPU inference throughput and network transmission throughput.\n, an analytical performance modeling tool that we develop, we systematically explore a wide range of (1) model configurations, including model size, context length, architectural choices, and synchronous versus asynchronous execution, and (2) system configurations spanning different hardware platforms, inference placements, and network conditions.\nFrom the performance study, we distill 15 key takeaways that provide practical guidance for the design of future VLA models and inference systems.\nWhile this work represents an important step toward understanding and building next-generation VLA systems, we view it as only a starting point.",
+            "content_chars": 5080
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "claim": "Diffusion-based VLA models are compute-intensive and often create a performance gap where the robot's 'brain' is too slow for its 'body,' resulting in motion jitter, stalling, and safety risks in dynamic environments.",
+      "worker_support": "Multiple sources highlight the compute intensity of diffusion VLAs and the resulting 'performance wall' leading to stuttering movements.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C002-E001",
+          "worker_source": {
+            "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+            "publisher": "arxiv.org",
+            "url": "https://arxiv.org/abs/2608.04428",
+            "source_type": "peer-reviewed",
+            "tier": 1,
+            "excerpt": "diffusion-based VLA models achieve superior motion quality and generalization. However, diffusion-based VLA models are compute-intensive and must run at high control frequency, e.g., 50-200 Hz."
+          },
+          "retrieved_source": {
+            "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+            "url": "https://arxiv.org/abs/2608.04428",
+            "domain": "arxiv.org",
+            "content": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference\nSkip to main content\nTitle:\nDeltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference\nAuthors:\nYu Feng\nView a PDF of the paper titled Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference, by Zheng Liu and 11 other authors\nView PDF\nAbstract:\nVision-language-action (VLA) models have emerged as a key component in embodied AI. Among existing approaches, diffusion-based VLA models achieve superior motion quality and generalization. However, diffusion-based VLA models are compute-intensive and must run at high control frequency, e.g., 50-200 Hz. Thus, it imposes strict latency and energy constraints on edge devices.\nIn this work, we present Deltoris, an algorithm-hardware co-design framework for efficient diffusion-based VLA inference. First, we exploit the temporal similarity of consecutive inputs and propose a \\textit{temporal-aware bit-sparsity} algorithm that computes only the differences between consecutive inputs, eliminating redundant bit-level operations. To further address the extra off-chip traffic introduced by our algorithm, we propose a \\textit{speculative inference} technique, which amortizes data loading across multiple control steps. Lastly, to support these techniques, we co-design a dedicated accelerator with customized 1D systolic bit-serial PE arrays that eliminate PE workload imbalance. Our evaluation shows that Deltoris achieves up to 34.2$\\times$ speedup over mobile GPUs and 6.1$\\times$ over prior accelerators, while maintaining comparable accuracy.\nSubjects:\n[cs.AR]\nfor this version)\nhttps://doi.org/10.48550/arXiv.2608.04428\nAccess Paper:\nView a PDF of the paper titled Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference, by Zheng Liu and 11 other authors\nView PDF\nLoading...\nBibTeX formatted citation\n×\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nLinks to Code Toggle\nCatalyzeX Code Finder for Papers\n(\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\nTopic\nAbout arXivLabs\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\nLearn more about arXivLabs\n.\n,\nand all contributors.\nAbout",
+            "content_chars": 2890
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "claim": "The Deltoris framework accelerates diffusion-based VLA inference using a hardware-software co-design that employs temporal-aware bit-sparsity to compute only differences between consecutive inputs and speculative inference to amortize data loading.",
+      "worker_support": "Deltoris uses customized 1D systolic bit-serial PE arrays to implement these techniques, achieving up to 34.2x speedup over mobile GPUs.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C003-E001",
+          "worker_source": {
+            "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+            "publisher": "arxiv.org",
+            "url": "https://arxiv.org/abs/2608.04428",
+            "source_type": "peer-reviewed",
+            "tier": 1,
+            "excerpt": "we propose a temporal-aware bit-sparsity algorithm that computes only the differences between consecutive inputs... we propose a speculative inference technique, which amortizes data loading across multiple control steps. Lastly, to support these techniques, we co-design a dedicated accelerator with customized 1D systolic bit-serial PE arrays"
+          },
+          "retrieved_source": {
+            "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+            "url": "https://arxiv.org/abs/2608.04428",
+            "domain": "arxiv.org",
+            "content": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference\nSkip to main content\nTitle:\nDeltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference\nAuthors:\nYu Feng\nView a PDF of the paper titled Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference, by Zheng Liu and 11 other authors\nView PDF\nAbstract:\nVision-language-action (VLA) models have emerged as a key component in embodied AI. Among existing approaches, diffusion-based VLA models achieve superior motion quality and generalization. However, diffusion-based VLA models are compute-intensive and must run at high control frequency, e.g., 50-200 Hz. Thus, it imposes strict latency and energy constraints on edge devices.\nIn this work, we present Deltoris, an algorithm-hardware co-design framework for efficient diffusion-based VLA inference. First, we exploit the temporal similarity of consecutive inputs and propose a \\textit{temporal-aware bit-sparsity} algorithm that computes only the differences between consecutive inputs, eliminating redundant bit-level operations. To further address the extra off-chip traffic introduced by our algorithm, we propose a \\textit{speculative inference} technique, which amortizes data loading across multiple control steps. Lastly, to support these techniques, we co-design a dedicated accelerator with customized 1D systolic bit-serial PE arrays that eliminate PE workload imbalance. Our evaluation shows that Deltoris achieves up to 34.2$\\times$ speedup over mobile GPUs and 6.1$\\times$ over prior accelerators, while maintaining comparable accuracy.\nSubjects:\n[cs.AR]\nfor this version)\nhttps://doi.org/10.48550/arXiv.2608.04428\nAccess Paper:\nView a PDF of the paper titled Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference, by Zheng Liu and 11 other authors\nView PDF\nLoading...\nBibTeX formatted citation\n×\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nLinks to Code Toggle\nCatalyzeX Code Finder for Papers\n(\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\nTopic\nAbout arXivLabs\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\nLearn more about arXivLabs\n.\n,\nand all contributors.\nAbout",
+            "content_chars": 2890
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "claim": "VLA-RAIL addresses VLA inference bottlenecks by implementing an asynchronous inference linker that uses a Trajectory Smoother (polynomial fitting) and a Chunk Fuser to ensure continuity in position, velocity, and acceleration.",
+      "worker_support": "This framework decouples model inference from motion control to eliminate jitter and pauses in action execution.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C004-E001",
+          "worker_source": {
+            "title": "[2512.24673] VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots",
+            "publisher": "arxiv.org",
+            "url": "https://arxiv.org/abs/2512.24673",
+            "source_type": "peer-reviewed",
+            "tier": 1,
+            "excerpt": "a Trajectory Smoother that effectively filters out the noise and jitter in the trajectory of one action chunk using polynomial fitting and a Chunk Fuser that seamlessly align the current executing trajectory and the newly arrived chunk"
+          },
+          "retrieved_source": {
+            "title": "[2512.24673] VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots",
+            "url": "https://arxiv.org/abs/2512.24673",
+            "domain": "arxiv.org",
+            "content": "[2512.24673] VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots\nSkip to main content\nTitle:\nVLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots\nAuthors:\nHan Gao\nView a PDF of the paper titled VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots, by Yongsheng Zhao and 5 other authors\nView PDF\nAbstract:\nVision-Language-Action (VLA) models have achieved remarkable breakthroughs in robotics, with the action chunk playing a dominant role in these advances. Given the real-time and continuous nature of robotic motion control, the strategies for fusing a queue of successive action chunks have a profound impact on the overall performance of VLA models. Existing methods suffer from jitter, stalling, or even pauses in robotic action execution, which not only limits the achievable execution speed but also reduces the overall success rate of task completion. This paper introduces VLA-RAIL (A Real-Time Asynchronous Inference Linker), a novel framework designed to address these issues by conducting model inference and robot motion control asynchronously and guaranteeing smooth, continuous, and high-speed action execution. The core contributions of the paper are two fold: a Trajectory Smoother that effectively filters out the noise and jitter in the trajectory of one action chunk using polynomial fitting and a Chunk Fuser that seamlessly align the current executing trajectory and the newly arrived chunk, ensuring position, velocity, and acceleration continuity between two successive action chunks. We validate the effectiveness of VLA-RAIL on a benchmark of dynamic simulation tasks and several real-world manipulation tasks. Experimental results demonstrate that VLA-RAIL significantly reduces motion jitter, enhances execution speed, and improves task success rates, which will become a key infrastructure for the large-scale deployment of VLA models.\nSubjects:\nRobotics (cs.RO)\n; Artificial Intelligence (cs.AI); Systems and Control (eess.SY)\nCite as:\nAccess Paper:\nView a PDF of the paper titled VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots, by Yongsheng Zhao and 5 other authors\nView PDF\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\n)\nWe gratefully acknowledge support from\nour\n,\nand all contributors.\nAbout",
+            "content_chars": 3014
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "claim": "Humanoid actuator energy efficiency is constrained by a trade-off between battery chemistries: Lithium Iron Phosphate (LFP) provides better thermal stability and cycle life, while Nickel Cobalt Aluminum (NCA) offers higher energy density.",
+      "worker_support": "The choice of chemistry directly impacts the thermal budget and how aggressively the actuator stack can be pushed.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C005-E001",
+          "worker_source": {
+            "title": "Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs",
+            "publisher": "actuatorhq.com",
+            "url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "The trade-off between lithium iron phosphate chemistry (LFP) and nickel cobalt aluminum chemistry (NCA) is not academic. LFP offers better thermal stability and cycle life. NCA offers higher energy density."
+          },
+          "retrieved_source": {
+            "title": "Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs",
+            "url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+            "domain": "actuatorhq.com",
+            "content": "From Prototype to Production: What Still Blocks Humanoid Robots?\nMotion control, thermal management, and sensing architecture remain the three hardest unsolved engineering barriers blocking humanoid robots from real-world production scale.\nMarch 20, 2026\nWhy does thermal management deserve its own engineering track?\nWhat does the shift to modular architectures mean for actuator design?\nIs social intelligence a viable alternative to solving the hard actuator problems?\nMassive funding could not shortcut unsolved hardware problems. Motion control, power, and thermal constraints kept humanoids far from practical deployment at scale.\nAccording to IEEE Spectrum, 2025 was supposed to be the year AI and humanoid robots made transformative progress toward real practicality. The money arrived. The hype was everywhere. But as IEEE Spectrum reported, it became genuinely hard to rationalize what actually happened against the scale of investment and optimism heading into the year. That gap between capital and capability points directly at hardware. Not software. Not AI. The actuator stack, the thermal budget, and the sensing architecture are where humanoid development keeps stalling. ActuatorHQ analysis: this is exactly why component-level thinking matters. A better foundation model does not fix a joint that overheats after 20 minutes of operation.\nFact\nStable bipedal locomotion demands real-time sensor fusion, complex dynamic modelling, and continuous feedback across dozens of degrees of freedom simultaneously.\nAccording to the Wiley Knowledge Hub technical examination of humanoid engineering challenges, motion control remains the single hardest unsolved problem in the field. The reasons are layered. Maintaining stable bipedal locomotion across dynamic environments requires managing modelling complexity, real-time feedback requirements, and sensor fusion demands all at once. Every joint in a humanoid leg or arm is a potential failure point under load. The number of degrees of freedom in a full humanoid, typically ranging from 20 to more than 40 active joints, means the control system must coordinate an enormous number of actuator states in real time. Any lag, any miscalibration, any thermal drift in a sensor signal, and the robot falls.\nFact\nWhat role does sensor fusion play at the joint level?\nThe Wiley technical brief highlights inertial measurement units, force and torque feedback, and tactile sensing as the core sensing modalities for reliable human-robot interaction and collision avoidance. Fusing these streams in real time while driving 20-plus joints is a compute and latency problem as much as a mechanical one. Actuator designers who integrate force-torque sensing directly into the joint housing are reducing the signal path length and improving fusion latency.\nHow does degrees of freedom count affect control complexity?\nHow do power and thermal constraints determine operational endurance?\nBattery chemistry selection between LFP and NCA, DC/DC converter topology choices, and thermal protection strategies directly set the ceiling on how long a humanoid can operate.\nThe Wiley Knowledge Hub technical examination goes specific on power system design in a way that most humanoid coverage ignores. The trade-off between lithium iron phosphate chemistry (LFP) and nickel cobalt aluminum chemistry (NCA) is not academic. LFP offers better thermal stability and cycle life. NCA offers higher energy density. For a humanoid carrying its own power, that chemistry decision affects both runtime and how aggressively you can push the actuator stack before the battery becomes a thermal risk. On top of chemistry, DC/DC converter topology selection shapes how efficiently power is distributed across joints under dynamic load conditions.\nFact\n:\nBattery chemistry selection between LFP and NCA, DC/DC converter topologies, and thermal protection strategies are identified as the key variables determining operational endurance in humanoid systems.\n(\n)\nWhat I notice here: The LFP versus NCA decision is a microcosm of the broader design philosophy tension in humanoids. Do you optimize for safety margins and longevity, or for energy density and peak performance? Teams building for industrial deployment are likely weighting LFP more heavily. Teams chasing demo videos are probably weighting NCA. The actuator thermal budget changes significantly depending on which path you take.\nWhy does thermal management deserve its own engineering track?\nThermal protection strategy is listed as a distinct design variable in the Wiley technical brief, separate from battery and converter decisions. This matters because actuator motors generate heat under load, and in a compact humanoid body the heat paths are constrained. An actuator that performs well at ambient temperature in a lab may throttle or fault after sustained operation in a warm warehouse. Thermal design at the joint level is not optional at production scale.\nWhat does the shift to modular architectures mean for actuator design?\nModular architecture is the industry response to production scaling pressure, pushing actuator designers to standardize interfaces, thermal profiles, and control protocols across joint families.\nThe Wiley Knowledge Hub technical brief identifies the shift toward modular architectures as a defining transition as humanoid development moves from prototype to mass production. From an actuator perspective, this is significant. Prototype hardware can be bespoke and hand-tuned. Production hardware needs to be swappable, manufacturable at volume, and consistent across units. Modular actuator design means standardized mechanical interfaces, predictable thermal envelopes, and interoperable communication protocols. It is a fundamentally different design discipline from building a one-off demo joint. The companies that solve modular actuator design early will have a structural manufacturing cost advantage.\nFact\nIntBot is betting that social intelligence and platform-neutr",
+            "content_chars": 6000
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "claim": "Rigid actuator systems (e.g., harmonic drives and brushless motors) are energy-inefficient because they require continuous power input to maintain position and generate force, whereas soft actuators can reduce power draw by passively storing and releasing energy.",
+      "worker_support": "Soft actuators exploit material compliance to absorb and redirect energy, which is critical for power-constrained environments like planetary exploration.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C006-E001",
+          "worker_source": {
+            "title": "New Research: Robots Push Energy Limits in Three Different Directions",
+            "publisher": "actuatorhq.com",
+            "url": "https://actuatorhq.com/blog/new-research-robotics-energy-efficiency-breakthroughs-2026",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "Rigid actuator systems, like the harmonic drives and brushless motors used in most humanoid robots, require continuous power input to hold position and generate force. Soft actuators can exploit material compliance to absorb and redirect energy more naturally."
+          },
+          "retrieved_source": {
+            "title": "New Research: Robots Push Energy Limits in Three Different Directions",
+            "url": "https://actuatorhq.com/blog/new-research-robotics-energy-efficiency-breakthroughs-2026",
+            "domain": "actuatorhq.com",
+            "content": "New Research: Three Robotics Breakthroughs Redefine Energy Limits\nNew findings from Figure AI, ESA, and German researchers show robots pushing past energy and endurance limits that previously defined the field.\nMay 15, 2026\nWhat remains unknown about Figure AI's methodology\nWhat is the inchworm robot built by University of Gothenburg researchers, and why does it matter for actuator design?\nHow soft actuators change the energy equation\nDegrees of freedom and terrain navigation without rigid joints\nHow does the German EV battery recycling robot connect to the energy efficiency story in robotics?\nWhy robotic disassembly of batteries is technically difficult\nWhat did Figure AI actually achieve with its 24-hour runtime milestone?\nFigure AI's humanoid robots completed 24 consecutive hours of autonomous operation, a first for the company and a meaningful marker for industrial deployment readiness.\nAccording to Interesting Engineering, Figure AI announced that its humanoid robots have crossed the 24-hour continuous autonomous work threshold. The company described this as entering 'uncharted territory.' From a builder's perspective, that framing matters: continuous runtime is not just a performance metric, it is a reliability signal. Any machine running nonstop for a full day is accumulating thermal stress, joint wear, and software edge cases simultaneously. What the data suggests is that Figure AI is stress-testing its systems under conditions that resemble actual industrial deployment, not controlled lab runs.\nFact\n)\nFrom a builder perspective: 24 hours of uptime sounds like a headline, but the underlying question is about energy management. How many battery swaps or charge cycles does that involve? What degrades fastest under sustained load? Those are the specs that will define whether this milestone translates into real deployment.\nWhy runtime matters more than raw speed for humanoid deployment\nUniversity of Gothenburg researchers built a soft robot using artificial muscles rated to 10 MeV radiation, capable of navigating unstructured terrain without rigid actuators.\nAs reported by Interesting Engineering, a team led by researchers at the University of Gothenburg developed an inchworm-inspired soft robot designed for planetary exploration. The key engineering detail is the radiation tolerance: the artificial muscles can withstand 10 MeV radiation levels, which are relevant for Mars surface conditions. The robot uses soft actuators rather than conventional rigid motor-and-gearbox systems, which changes the energy profile significantly. Soft actuators can store and release energy passively, which reduces the power draw per movement cycle.\nFact\n)\nHere is what stands out from a Physical AI perspective: the inchworm robot is not trying to be fast or strong. It is optimized for survival in a hostile environment with minimal energy input. That design philosophy, prioritizing resilience and efficiency over performance peaks, is a useful counterpoint to the high-torque, high-speed direction most humanoid actuator development is heading.\nHow soft actuators change the energy equation\nRigid actuator systems, like the harmonic drives and brushless motors used in most humanoid robots, require continuous power input to hold position and generate force. Soft actuators can exploit material compliance to absorb and redirect energy more naturally. For planetary exploration, where power budgets are extremely tight, this is not a nice-to-have. It is a design requirement. The Gothenburg team's approach connects directly to ongoing debates in humanoid robotics about whether quasi-direct drive or series elastic systems can deliver similar passive energy benefits.\nDegrees of freedom and terrain navigation without rigid joints\nAccording to the Interesting Engineering report, the inchworm robot navigates Mars-like terrain using its soft muscle architecture across multiple degrees of freedom. Without rigid joints defining movement limits, the robot can conform to irregular surfaces in ways that traditional legged or wheeled systems cannot. The limitation is obvious: soft robots sacrifice speed and payload capacity for adaptability. For exploration tasks in unstructured environments, that trade-off may be acceptable. For warehouse logistics, it is not.\nHow does the German EV battery recycling robot connect to the energy efficiency story in robotics?\nGerman researchers are developing a robot-assisted system to recover and repurpose EV battery cells, addressing a supply chain bottleneck that directly affects robot energy storage capacity.\nAs reported by Interesting Engineering, German researchers are building a robotic system to recover usable cells from end-of-life electric vehicle batteries and prepare them for reuse. The connection to robotics energy efficiency is direct: humanoid robots depend on high-density battery cells, and the supply chain for those cells is under pressure. A system that can reliably sort, test, and repurpose EV battery cells at scale could reduce the cost and improve the availability of battery packs used in mobile robotics platforms.\nFact\nWhat pattern emerges when you look at all three research developments together?\nAll three efforts share a core constraint: energy. Runtime, radiation-tolerant actuation, and battery recovery are all responses to the same underlying limit on how long and how efficiently robots can operate.\nFrom a builder's perspective, these three stories are not coincidentally published in the same week. They reflect a field-wide reckoning with energy as the binding constraint in robotics. Figure AI is pushing runtime. The University of Gothenburg team is building actuators that survive on minimal power in hostile conditions. German engineers are working on recovering the energy storage components that make mobile robots possible. The specs tell a different story than the individual headlines: the robotics industry is not just a compute problem or a software problem. It is fund",
+            "content_chars": 6000
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "claim": "Thermal management is a primary bottleneck for humanoid actuators in production; compact body designs constrain heat paths, leading to thermal throttling or faults during sustained operation.",
+      "worker_support": "Actuators that perform well in labs may fail in warm environments due to constrained heat paths in the robot's body.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C007-E001",
+          "worker_source": {
+            "title": "Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs",
+            "publisher": "actuatorhq.com",
+            "url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "Thermal protection strategy is listed as a distinct design variable... because actuator motors generate heat under load, and in a compact humanoid body the heat paths are constrained."
+          },
+          "retrieved_source": {
+            "title": "Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs",
+            "url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+            "domain": "actuatorhq.com",
+            "content": "From Prototype to Production: What Still Blocks Humanoid Robots?\nMotion control, thermal management, and sensing architecture remain the three hardest unsolved engineering barriers blocking humanoid robots from real-world production scale.\nMarch 20, 2026\nWhy does thermal management deserve its own engineering track?\nWhat does the shift to modular architectures mean for actuator design?\nIs social intelligence a viable alternative to solving the hard actuator problems?\nMassive funding could not shortcut unsolved hardware problems. Motion control, power, and thermal constraints kept humanoids far from practical deployment at scale.\nAccording to IEEE Spectrum, 2025 was supposed to be the year AI and humanoid robots made transformative progress toward real practicality. The money arrived. The hype was everywhere. But as IEEE Spectrum reported, it became genuinely hard to rationalize what actually happened against the scale of investment and optimism heading into the year. That gap between capital and capability points directly at hardware. Not software. Not AI. The actuator stack, the thermal budget, and the sensing architecture are where humanoid development keeps stalling. ActuatorHQ analysis: this is exactly why component-level thinking matters. A better foundation model does not fix a joint that overheats after 20 minutes of operation.\nFact\nStable bipedal locomotion demands real-time sensor fusion, complex dynamic modelling, and continuous feedback across dozens of degrees of freedom simultaneously.\nAccording to the Wiley Knowledge Hub technical examination of humanoid engineering challenges, motion control remains the single hardest unsolved problem in the field. The reasons are layered. Maintaining stable bipedal locomotion across dynamic environments requires managing modelling complexity, real-time feedback requirements, and sensor fusion demands all at once. Every joint in a humanoid leg or arm is a potential failure point under load. The number of degrees of freedom in a full humanoid, typically ranging from 20 to more than 40 active joints, means the control system must coordinate an enormous number of actuator states in real time. Any lag, any miscalibration, any thermal drift in a sensor signal, and the robot falls.\nFact\nWhat role does sensor fusion play at the joint level?\nThe Wiley technical brief highlights inertial measurement units, force and torque feedback, and tactile sensing as the core sensing modalities for reliable human-robot interaction and collision avoidance. Fusing these streams in real time while driving 20-plus joints is a compute and latency problem as much as a mechanical one. Actuator designers who integrate force-torque sensing directly into the joint housing are reducing the signal path length and improving fusion latency.\nHow does degrees of freedom count affect control complexity?\nHow do power and thermal constraints determine operational endurance?\nBattery chemistry selection between LFP and NCA, DC/DC converter topology choices, and thermal protection strategies directly set the ceiling on how long a humanoid can operate.\nThe Wiley Knowledge Hub technical examination goes specific on power system design in a way that most humanoid coverage ignores. The trade-off between lithium iron phosphate chemistry (LFP) and nickel cobalt aluminum chemistry (NCA) is not academic. LFP offers better thermal stability and cycle life. NCA offers higher energy density. For a humanoid carrying its own power, that chemistry decision affects both runtime and how aggressively you can push the actuator stack before the battery becomes a thermal risk. On top of chemistry, DC/DC converter topology selection shapes how efficiently power is distributed across joints under dynamic load conditions.\nFact\n:\nBattery chemistry selection between LFP and NCA, DC/DC converter topologies, and thermal protection strategies are identified as the key variables determining operational endurance in humanoid systems.\n(\n)\nWhat I notice here: The LFP versus NCA decision is a microcosm of the broader design philosophy tension in humanoids. Do you optimize for safety margins and longevity, or for energy density and peak performance? Teams building for industrial deployment are likely weighting LFP more heavily. Teams chasing demo videos are probably weighting NCA. The actuator thermal budget changes significantly depending on which path you take.\nWhy does thermal management deserve its own engineering track?\nThermal protection strategy is listed as a distinct design variable in the Wiley technical brief, separate from battery and converter decisions. This matters because actuator motors generate heat under load, and in a compact humanoid body the heat paths are constrained. An actuator that performs well at ambient temperature in a lab may throttle or fault after sustained operation in a warm warehouse. Thermal design at the joint level is not optional at production scale.\nWhat does the shift to modular architectures mean for actuator design?\nModular architecture is the industry response to production scaling pressure, pushing actuator designers to standardize interfaces, thermal profiles, and control protocols across joint families.\nThe Wiley Knowledge Hub technical brief identifies the shift toward modular architectures as a defining transition as humanoid development moves from prototype to mass production. From an actuator perspective, this is significant. Prototype hardware can be bespoke and hand-tuned. Production hardware needs to be swappable, manufacturable at volume, and consistent across units. Modular actuator design means standardized mechanical interfaces, predictable thermal envelopes, and interoperable communication protocols. It is a fundamentally different design discipline from building a one-off demo joint. The companies that solve modular actuator design early will have a structural manufacturing cost advantage.\nFact\nIntBot is betting that social intelligence and platform-neutr",
+            "content_chars": 6000
+          }
+        }
+      ]
+    }
+  ],
+  "already_unsupported_claims": []
+}
+
+# Invalid Audit Output
+
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The retrieved content explicitly mentions standard RGB camera frame rates (24-60 Hz) and the target inference frequencies (10 Hz up to and beyond 100 Hz), supporting the claim.",
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The text directly supports the relationship between camera frame rates and the defined VLA inference frequency targets.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "INSUFFICIENT_SUPPORT",
+      "reason": "While the source confirms diffusion-based VLAs are compute-intensive and require high frequency (50-200 Hz), it does not mention 'motion jitter', 'stalling', 'safety risks', or the 'brain vs body' performance gap.",
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "The source supports the compute-intensity and frequency requirements, but the specific consequences (jitter, stalling, safety risks) are absent from the retrieved text.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The abstract explicitly describes the Deltoris framework's use of temporal-aware bit-sparsity, speculative inference, and customized 1D systolic bit-serial PE arrays.",
+      "evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content contains all technical components of the claim including the specific algorithm names and hardware architecture.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The abstract explicitly mentions the Trajectory Smoother (using polynomial fitting) and the Chunk Fuser to ensure position, velocity, and acceleration continuity.",
+      "evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved text directly supports the implementation of the Smoother and Fuser and their specific goals for continuity.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2
+        }
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The source explicitly states the trade-off: LFP offers better thermal stability and cycle life, while NCA offers higher energy density.",
+      "evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly confirms the specific properties of LFP vs NCA chemistries in the context of humanoid power systems.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The source explicitly contrasts rigid systems (harmonic drives/brushless motors) requiring continuous power with soft actuators that store and release energy passively.",
+      "evidence": [
+        {
+          "evidence_id": "C006-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content directly supports the energy efficiency comparison between rigid and soft actuators.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The source identifies thermal management as one of the three hardest barriers and explicitly mentions that compact body designs constrain heat paths, leading to throttling or faults.",
+      "evidence": [
+        {
+          "evidence_id": "C007-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly links compact body heat path constraints to the risk of actuators throttling or faulting during sustained operation.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4
+        }
+      ]
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; should be Tier 2 (Peer-reviewed/Preprint)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C003-E001",
+      "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; should be Tier 2."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C004-E001",
+      "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; should be Tier 2."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C005-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but source is a company blog (actuatorhq.com); should be Tier 4 (Industry)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C006-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but source is a company blog (actuatorhq.com); should be Tier 4 (Industry)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C007-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but source is a company blog (actuatorhq.com); should be Tier 4 (Industry)."
+    }
+  ]
+}
+
+# Repair Requirements
+
+- Preserve every expected claim_id.
+- Preserve every expected evidence_id.
+- Do not create or remove claims or evidence.
+- Use only claim verdict values permitted by the semantic verification contract in the system prompt.
+- Use only evidence state values permitted by that contract.
+- Do not use an evidence-state label as a claim verdict unless the contract explicitly permits it.
+- Keep the semantic judgment of the previous audit whenever possible, changing only what is required for contract consistency and integrity.
+- Claim-level verdicts must remain consistent with their evidence-level states according to the active verification contract.
+- Return the semantic audit JSON object only.
+

@@ -1,0 +1,55 @@
+{
+  "families": [
+    {
+      "family_ref": "SG01:C001",
+      "pairwise": [
+        {
+          "source_a_ref": "S001",
+          "source_b_ref": "S002",
+          "verdict": "CONFIRMED_INDEPENDENT",
+          "reason": "S001 is a peer-reviewed academic review paper (arXiv) providing a theoretical and systematic overview, while S002 is a technical engineering guide from a private entity (NeuralCoreTech) focusing on specific hardware implementations (e.g., SigLIP, Blackwell GPU)."
+        },
+        {
+          "source_a_ref": "S001",
+          "source_b_ref": "S003",
+          "verdict": "CONFIRMED_INDEPENDENT",
+          "reason": "S001 is an academic review; S003 is a strategic industry insight piece from a different organization (meta-intelligence.tech) focusing on deployment and the NVIDIA Isaac platform."
+        },
+        {
+          "source_a_ref": "S002",
+          "source_b_ref": "S003",
+          "verdict": "INSUFFICIENT_PROVENANCE",
+          "reason": "Both S002 and S003 are industry-tier sources discussing the same general trend (VLA shift) and referencing the same underlying ecosystem (NVIDIA/Physical AI). There is no evidence of separate primary research or direct reporting; they may both be deriving their claims from the same NVIDIA technical documentation or press releases."
+        }
+      ],
+      "final_verdict": "TRIANGULATED",
+      "reason": "The claim is confirmed independent via the pairing of the academic paper (S001) with either of the industry sources."
+    },
+    {
+      "family_ref": "SG02:C004",
+      "pairwise": [
+        {
+          "source_a_ref": "S001",
+          "source_b_ref": "S002",
+          "verdict": "INSUFFICIENT_PROVENANCE",
+          "reason": "S001 (AI Herald) and S002 (rabby.kr) both report on the same event: Atlas being piloted at Hyundai factories. S002 explicitly mentions seeing this in 'CES 2026 videos'. S001 is a general comparison. There is no evidence that either source conducted independent reporting or had separate primary access; they are likely repeating the same public demonstration/press release from CES 2026."
+        }
+      ],
+      "final_verdict": "UNKNOWN",
+      "reason": "The sources are likely dependent on a single common origin (CES 2026 public demonstration), and no separate primary provenance is established."
+    },
+    {
+      "family_ref": "SG05:C001",
+      "pairwise": [
+        {
+          "source_a_ref": "S001",
+          "source_b_ref": "S002",
+          "verdict": "INSUFFICIENT_PROVENANCE",
+          "reason": "S001 (Seoul Economic Daily) and S002 (Gonggam Shinmun) report nearly identical specific details (the date 2026.09.07 and the CES 2027 target). The phrasing and specific data points suggest they are both reporting on the same single press release or industry leak rather than conducting independent investigative journalism."
+        }
+      ],
+      "final_verdict": "UNKNOWN",
+      "reason": "The high degree of overlap in specific dates and targets suggests a common primary source (press release), making independence unverified."
+    }
+  ]
+}

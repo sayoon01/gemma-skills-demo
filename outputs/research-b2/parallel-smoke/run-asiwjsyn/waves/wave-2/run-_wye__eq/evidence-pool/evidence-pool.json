@@ -1,0 +1,1042 @@
+{
+  "stage": "B2-5",
+  "created_at": "2026-09-08T09:26:05.456256+00:00",
+  "batch_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq",
+  "skill": "deep-research",
+  "assignments": [
+    {
+      "assignment_id": "SG04",
+      "worker_source": "recovery",
+      "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/recovery/SG04/run-d_dj67sx",
+      "worker_metrics": {
+        "turn_count": 5,
+        "tool_call_count": 18,
+        "search_count": 15,
+        "fetch_count": 3,
+        "fetch_success_count": 2,
+        "model_response_times_seconds": [
+          51.19,
+          112.954,
+          67.222,
+          81.52,
+          335.329
+        ],
+        "model_total_seconds": 648.215,
+        "elapsed_seconds": 736.382
+      },
+      "deterministic_summary": {
+        "raw_claim_count": 6,
+        "accepted_claim_count": 3,
+        "unsupported_claim_count": 3,
+        "rejected_source_count": 7,
+        "successful_fetch_source_count": 2
+      },
+      "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/evidence-pool/SG04/semantic-audits/audit-40vva2t8",
+      "post_audit_summary": {
+        "input_claim_count": 3,
+        "accepted_claim_count": 3,
+        "unsupported_claim_count": 0,
+        "verified_evidence_count": 3,
+        "rejected_evidence_count": 0,
+        "warning_count": 0
+      },
+      "accepted_claim_count": 3,
+      "gap_count": 2
+    },
+    {
+      "assignment_id": "SG05",
+      "worker_source": "parallel",
+      "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/workers/SG05/run-b7r3dai6",
+      "worker_metrics": {
+        "turn_count": 4,
+        "tool_call_count": 13,
+        "search_count": 9,
+        "fetch_count": 4,
+        "fetch_success_count": 4,
+        "model_response_times_seconds": [
+          33.629,
+          144.613,
+          270.692,
+          511.019
+        ],
+        "model_total_seconds": 959.954,
+        "elapsed_seconds": 982.61
+      },
+      "deterministic_summary": {
+        "raw_claim_count": 6,
+        "accepted_claim_count": 4,
+        "unsupported_claim_count": 2,
+        "rejected_source_count": 2,
+        "successful_fetch_source_count": 4
+      },
+      "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/evidence-pool/SG05/semantic-audits/audit-p7vcbgy0",
+      "post_audit_summary": {
+        "input_claim_count": 4,
+        "accepted_claim_count": 4,
+        "unsupported_claim_count": 0,
+        "verified_evidence_count": 5,
+        "rejected_evidence_count": 0,
+        "warning_count": 0
+      },
+      "accepted_claim_count": 4,
+      "gap_count": 1
+    },
+    {
+      "assignment_id": "SG06",
+      "worker_source": "recovery",
+      "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/recovery/SG06/run-40c9ge26",
+      "worker_metrics": {
+        "turn_count": 3,
+        "tool_call_count": 8,
+        "search_count": 3,
+        "fetch_count": 5,
+        "fetch_success_count": 5,
+        "model_response_times_seconds": [
+          30.86,
+          110.486,
+          371.554
+        ],
+        "model_total_seconds": 512.9,
+        "elapsed_seconds": 528.922
+      },
+      "deterministic_summary": {
+        "raw_claim_count": 7,
+        "accepted_claim_count": 7,
+        "unsupported_claim_count": 0,
+        "rejected_source_count": 1,
+        "successful_fetch_source_count": 5
+      },
+      "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/evidence-pool/SG06/semantic-audits/audit-lm_k_7dp",
+      "post_audit_summary": {
+        "input_claim_count": 7,
+        "accepted_claim_count": 6,
+        "unsupported_claim_count": 1,
+        "verified_evidence_count": 6,
+        "rejected_evidence_count": 1,
+        "warning_count": 0
+      },
+      "accepted_claim_count": 6,
+      "gap_count": 3
+    }
+  ],
+  "accepted_claims": [
+    {
+      "claim_id": "C001",
+      "claim": "The robotics industry is shifting toward Vision-Language-Action (VLA) models to enable general-purpose capabilities.",
+      "worker_support": "VLA models unify vision, language, and action data at scale, allowing robots to learn policies that generalize across diverse tasks, objects, and environments with minimal task-specific data.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content explicitly states that VLA models aim to learn policies that generalize across diverse tasks, objects, embodiments, and environments by unifying vision, language, and action data at scale.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications",
+              "publisher": "arXiv",
+              "url": "https://arxiv.org/abs/2510.07077",
+              "source_type": "academic",
+              "tier": 1,
+              "excerpt": "By unifying vision, language, and action data at scale... VLA models aim to learn policies that generalise across diverse tasks, objects, embodiments, and environments."
+            },
+            "retrieved_source": {
+              "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications",
+              "url": "https://arxiv.org/abs/2510.07077",
+              "domain": "arxiv.org",
+              "content": "[2510.07077] Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications\nSkip to main content\nSearch\nSubmit\nDonate\nLog in\nPress Enter to search ·\nAdvanced search\nComputer Science > Robotics\narXiv:2510.07077\n(cs)\n[Submitted on 8 Oct 2025]\nTitle:\nVision-Language-Action Models for Robotics: A Review Towards Real-World Applications\nAuthors:\nKento Kawaharazuka\n,\nJihoon Oh\n,\nJun Yamada\n,\nIngmar Posner\n,\nYuke Zhu\nView a PDF of the paper titled Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications, by Kento Kawaharazuka and Jihoon Oh and Jun Yamada and Ingmar Posner and Yuke Zhu\nView PDF\nHTML (experimental)\nAbstract:\nAmid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained significant attention. By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects, embodiments, and environments. This generalisation capability is expected to enable robots to solve novel downstream tasks with minimal or no additional task-specific data, facilitating more flexible and scalable real-world deployment. Unlike previous surveys that focus narrowly on action representations or high-level model architectures, this work offers a comprehensive, full-stack review, integrating both software and hardware components of VLA systems. In particular, this paper provides a systematic review of VLAs, covering their strategy and architectural transition, architectures and building blocks, modality-specific processing techniques, and learning paradigms. In addition, to support the deployment of VLAs in real-world robotic applications, we also review commonly used robot platforms, data collection strategies, publicly available datasets, data augmentation methods, and evaluation benchmarks. Throughout this comprehensive survey, this paper aims to offer practical guidance for the robotics community in applying VLAs to real-world robotic systems. All references categorized by training approach, evaluation method, modality, and dataset are available in the table on our project website:\nthis https URL\n.\nComments:\nAccepted to IEEE Access, website:\nthis https URL\nSubjects:\nRobotics (cs.RO)\n; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG)\nCite as:\narXiv:2510.07077\n[cs.RO]\n(or\narXiv:2510.07077v1\n[cs.RO]\nfor this version)\nhttps://doi.org/10.48550/arXiv.2510.07077\nFocus to learn more\narXiv-issued DOI via DataCite\nRelated DOI\n:\nhttps://doi.org/10.1109/ACCESS.2025.3609980\nFocus to learn more\nDOI(s) linking to related resources\nSubmission history\nFrom: Kento Kawaharazuka [\nview email\n]\n[v1]\nWed, 8 Oct 2025 14:38:25 UTC (7,140 KB)\nFull-text links:\nAccess Paper:\nView a PDF of the paper titled Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications, by Kento Kawaharazuka and Jihoon Oh and Jun Yamada and Ingmar Posner and Yuke Zhu\nView PDF\nHTML (experimental)\nTeX Source\nview license\nCurrent browse context:\ncs.RO\n< prev\n|\nnext >\nnew\n|\nrecent\n|\n2025-10\nChange to browse by:\ncs\ncs.AI\ncs.CV\ncs.LG\nReferences & Citations\nNASA ADS\nGoogle Scholar\nSemantic Scholar\nexport BibTeX citation\nLoading...\nBibTeX formatted citation\n×\nloading...\nData provided by:\nBookmark\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nBibliographic Explorer\n(\nWhat is the Explorer?\n)\nConnected Papers Toggle\nConnected Papers\n(\nWhat is Connected Papers?\n)\nLitmaps Toggle\nLitmaps\n(\nWhat is Litmaps?\n)\nscite.ai Toggle\nscite Smart Citations\n(\nWhat are Smart Citations?\n)\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nalphaXiv\n(\nWhat is alphaXiv?\n)\nLinks to Code Toggle\nCatalyzeX Code Finder for Papers\n(\nWhat is CatalyzeX?\n)\nDagsHub Toggle\nDagsHub\n(\nWhat is DagsHub?\n)\nGotitPub Toggle\nGotit.pub\n(\nWhat is GotitPub?\n)\nHuggingface Toggle\nHugging Face\n(\nWhat is Huggingface?\n)\nScienceCast Toggle\nScienceCast\n(\nWhat is ScienceCast?\n)\nDemos\nDemos\nReplicate Toggle\nReplicate\n(\nWhat is Replicate?\n)\nSpaces Toggle\nHugging Face Spaces\n(\nWhat is Spaces?\n)\nSpaces Toggle\nTXYZ.AI\n(\nWhat is TXYZ.AI?\n)\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\nInfluence Flower\n(\nWhat are Influence Flowers?\n)\nCore recommender toggle\nCORE Recommender\n(\nWhat is CORE?\n)\nAuthor\nVenue\nInstitution\nTopic\nAbout arXivLabs\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\nLearn more about arXivLabs\n.\nWhich authors of this paper are endorsers?\n|\nDisable MathJax\n(\nWhat is MathJax?\n)\nWe gratefully acknowledge support from\nour\nmajor funders\n,\nmember institutions\n,\n,\nand all contributors.\nAbout\n·\nHelp\n·\nContact\n·\nSubscribe\n·\nCopyright\n·\nPrivacy\n·\nAccessibility\n·\nOperational Status\n(opens in new tab)\nMajor funding support from",
+              "content_chars": 5381
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is supported by a single verified academic source. While the source confirms the goals and mechanisms of VLA models, it does not explicitly state that the 'industry' as a whole is shifting toward them, though it notes they have 'recently gained significant attention'.",
+      "assignment_id": "SG04",
+      "claim_ref": "SG04:C001"
+    },
+    {
+      "claim_id": "C002",
+      "claim": "Tesla Optimus Gen 3 entered mass production in January 2026 but is not yet available for external commercial sale.",
+      "worker_support": "Mass production of Gen 3 began on January 21, 2026, at the Fremont factory. While in production, these units are used for internal testing and deployment rather than external commercial sales.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "The content explicitly mentions mass production commenced January 21, 2026, at Fremont and specifies that these are 'production' in the manufacturing sense, not the commercial sales sense.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+              "publisher": "optimusk.blog",
+              "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "January 21, 2026: Gen 3 mass production commences at Fremont, California... The units being produced and tested in Fremont are 'production' in the manufacturing sense, not yet in the commercial sales sense."
+            },
+            "retrieved_source": {
+              "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+              "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+              "domain": "optimusk.blog",
+              "content": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)\n// MENU\nHome\nBlog\nServices\nTools\nAbout\nCareers\nContact\nBuy Optimus\nHome\n›\nBlog\n›\nTesla Optimus Gen 3 vs Gen 2\n// Contents\n// Contents\nQuick Answer\nGen 2 Official Specs\nGen 3: What's Confirmed\nGen 3 Hands Deep Dive\nWhat's NOT Yet Confirmed\nFull Comparison Table\nAWE Shanghai 2026\nAI & Software Upgrade\nProduction Status\nWhat to Expect at Reveal\nFAQ\nComparison\n// Published: June 1, 2026\n// 10 min read\n// Lindsey A. Kennedy\nTesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)\nShare:\n𝕏 Twitter\nin LinkedIn\n⎘ Copy Link\n⚡ Quick Answer — Gen 3 vs Gen 2 (June 2026)\nHere is what you actually need to know before reading further:\nGen 3 is NOT fully revealed yet\n— Tesla has shown components (especially hands) but no official Gen 3 full spec sheet as of June 2026\nBiggest upgrade confirmed:\nGen 3 hands — 50 actuators vs ~28 total in Gen 2; 22 DoF per hand vs 11 in Gen 2 — a 4.5× leap\nMass production started:\nJanuary 21, 2026 at Fremont — the first time Tesla used the term \"mass production\" for Optimus\nGen 2 specs are official and confirmed\n— unveiled December 2023, 73 kg, 5 mph walk speed, 11 DoF hands\nFull Gen 3 reveal expected:\nTesla Annual Shareholder Meeting, estimated June 2026\n4.5×\nMore hand actuators in Gen 3\n22\nGen 3 DoF per hand\n3,000+\nManipulation tasks enabled\nJan 21\nGen 3 production start 2026\nVLA\nGen 3 AI model type\nTBC\nGen 3 weight & battery\nUpdated July 3, 2026\nWhat's new:\n✅ “Gen 3” is still a hands + AI upgrade on the Gen 2 body; full V3 body reveal expected near production start (late July–August 2026)\n✅ Gen 3 hands: 50 actuators / 22 DoF vs Gen 2's 11-DoF hands — the single biggest difference\n✅ AI5 chip (taped out April 2026) is Gen 3's new inference brain\nSources:\nElectrek — V3 production window\n·\ntech-insider — AI5 tape-out\n·\nQviro — Optimus specifications\n// Analysis · June 1, 2026\nThis comparison separates what is officially confirmed from what is still pending. For background on the full Gen 3 roadmap, see our\nGen 3 complete guide\n. For Gen 2 technical detail, see our\nGen 2 specs guide\n.\nTesla Optimus Gen 2 — Official Specifications (Confirmed)\nGen 2 was unveiled at\nTesla's Shareholder Meeting in December 2023\n. All specs below are from official Tesla materials or directly confirmed in earnings calls:\nSpecification\nGen 2 Value\nStatus\nOfficial Unveil\nDecember 2023\nConfirmed\nHeight\n5'8\" (173 cm)\nConfirmed\nWeight\n73 kg\nConfirmed\nWalk Speed\nUp to 5 mph\nConfirmed\nHand DoF\n11 per hand\nConfirmed\nTotal Actuators\n~28\nConfirmed\nTotal Degrees of Freedom\n40\nConfirmed\nBattery\n2.3 kWh (est. 8–10 hrs operation)\nConfirmed\nAI System\nTesla neural network, imitation learning\nConfirmed\nProduction Status\n~100+ units (factory learning, 2024–2025)\nConfirmed\nSources: Tesla IR ·\nElectrek\n·\nIEEE Spectrum\n💡\nContext:\nDuring 2024 and early 2025, approximately 100+ Gen 2 units were deployed across Tesla's Fremont and Giga Texas facilities. Their primary function was collecting training data — not doing productive manufacturing work. Musk confirmed on the Q4 2025 earnings call (January 28, 2026) that units were \"primarily for learning, not productive tasks.\"\nTesla Optimus Gen 3 — What Is Confirmed (July 2026)\nTesla has not released a full Gen 3 spec sheet. Here is everything officially confirmed with a source as of June 1, 2026:\nJanuary 21, 2026:\nGen 3 mass production commences at Fremont, California. First use of \"mass production\" terminology by Tesla for Optimus. Source:\nElectrek\nFebruary 17, 2026:\nGen 3 hands revealed. Musk on X: \"This bot got hands.\" 25 actuators per forearm/hand (50 total), 22 DoF per hand, tendon-driven biomimetic design. Source:\nNotateslaapp.com\nMarch 11, 2026:\nTesla China shows Gen 3 hands at Shanghai AWE expo. Weibo post describes fingers as \"nearly identical in proportion to human hands.\" Source: Notateslaapp.com\nMarch 12, 2026:\nMusk at Abundance Summit: Gen 3 in \"final stages,\" will be \"by far the most advanced robot in the world.\" Summer 2026 production start confirmed.\nAI system:\nVLA (Vision-Language-Action) model + AI5 chip + Grok voice integration — confirmed via multiple earnings calls and Musk statements.\n👉\nKey distinction:\nMass production of Gen 3 started January 21, 2026 — but the full-body official reveal has not yet occurred. The units being produced and tested in Fremont are \"production\" in the manufacturing sense, not yet in the commercial sales sense.\nGen 3 Hands: The Most Important Upgrade\nThe hand system is the single biggest confirmed upgrade from Gen 2 to Gen 3.\nIEEE Spectrum's actuator analysis\ncalled it \"a fundamental architectural shift, not an incremental improvement.\"\nGen 3 Hand Architecture\nThe design philosophy changed completely. Gen 2 placed actuators in the hand itself — limiting the number of motors that could physically fit. Gen 3 moves all actuators into the forearm in a tendon-driven biomimetic design, the same principle human hands use (muscles in the forearm, tendons running into the fingers).\nThis single architectural decision enabled:\n✔\n25 actuators per forearm/hand\n— versus the physical limit of what fit in Gen 2's hand\n✔\n22 degrees of freedom per hand\n— approaching human hand capability (human hand: ~27 DoF)\n✔\nLighter hand structure\n— mass moved to forearm reduces wrist torque requirements\n✔\n3,000+ discrete manipulation tasks\n— the figure Tesla cited for Gen 3 hand capability\n✔\nTactile feedback\n— Tesla Board Chair Robyn Denholm described the hands as having \"very good\" tactile nature\n11\nGen 2 DoF per hand\n22\nGen 3 DoF per hand\n~28\nGen 2 total actuators\n50\nGen 3 hand actuators alone\n27\nHuman hand DoF\n3,000+\nGen 3 manipulation tasks\nSources:\nNotateslaapp.com\n·\nIEEE Spectrum\n·\nInteresting Engineering\nWhat Is NOT Yet Confirmed for Gen 3 (June 2026)\n⚠\nImportant for researchers:\nMultiple sites have published \"Gen 3 specs\" that are speculation or analyst estimates. The following specs have NOT been officially disclosed by Tesla as of June 1, 2026.\nSpecification\nStatus\nNotes\nWeight\nTBC\nExpect",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is supported by a single industry blog. The source confirms the mass production date and the distinction between manufacturing production and commercial sale.",
+      "assignment_id": "SG04",
+      "claim_ref": "SG04:C002"
+    },
+    {
+      "claim_id": "C003",
+      "claim": "Tesla Optimus Gen 3 features a significant architectural upgrade in its hands compared to Gen 2.",
+      "worker_support": "Gen 3 utilizes a tendon-driven biomimetic design moving actuators to the forearm, increasing hand capability to 50 actuators and 22 degrees of freedom (DoF) per hand, compared to 28 actuators and 11 DoF in Gen 2.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The content details the shift to a tendon-driven biomimetic design with actuators in the forearm, and lists 50 actuators/22 DoF for Gen 3 vs ~28 actuators/11 DoF for Gen 2.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C003-E001",
+            "worker_source": {
+              "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+              "publisher": "optimusk.blog",
+              "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Gen 3 hands — 50 actuators vs ~28 total in Gen 2; 22 DoF per hand vs 11 in Gen 2 — a 4.5× leap"
+            },
+            "retrieved_source": {
+              "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+              "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+              "domain": "optimusk.blog",
+              "content": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)\n// MENU\nHome\nBlog\nServices\nTools\nAbout\nCareers\nContact\nBuy Optimus\nHome\n›\nBlog\n›\nTesla Optimus Gen 3 vs Gen 2\n// Contents\n// Contents\nQuick Answer\nGen 2 Official Specs\nGen 3: What's Confirmed\nGen 3 Hands Deep Dive\nWhat's NOT Yet Confirmed\nFull Comparison Table\nAWE Shanghai 2026\nAI & Software Upgrade\nProduction Status\nWhat to Expect at Reveal\nFAQ\nComparison\n// Published: June 1, 2026\n// 10 min read\n// Lindsey A. Kennedy\nTesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)\nShare:\n𝕏 Twitter\nin LinkedIn\n⎘ Copy Link\n⚡ Quick Answer — Gen 3 vs Gen 2 (June 2026)\nHere is what you actually need to know before reading further:\nGen 3 is NOT fully revealed yet\n— Tesla has shown components (especially hands) but no official Gen 3 full spec sheet as of June 2026\nBiggest upgrade confirmed:\nGen 3 hands — 50 actuators vs ~28 total in Gen 2; 22 DoF per hand vs 11 in Gen 2 — a 4.5× leap\nMass production started:\nJanuary 21, 2026 at Fremont — the first time Tesla used the term \"mass production\" for Optimus\nGen 2 specs are official and confirmed\n— unveiled December 2023, 73 kg, 5 mph walk speed, 11 DoF hands\nFull Gen 3 reveal expected:\nTesla Annual Shareholder Meeting, estimated June 2026\n4.5×\nMore hand actuators in Gen 3\n22\nGen 3 DoF per hand\n3,000+\nManipulation tasks enabled\nJan 21\nGen 3 production start 2026\nVLA\nGen 3 AI model type\nTBC\nGen 3 weight & battery\nUpdated July 3, 2026\nWhat's new:\n✅ “Gen 3” is still a hands + AI upgrade on the Gen 2 body; full V3 body reveal expected near production start (late July–August 2026)\n✅ Gen 3 hands: 50 actuators / 22 DoF vs Gen 2's 11-DoF hands — the single biggest difference\n✅ AI5 chip (taped out April 2026) is Gen 3's new inference brain\nSources:\nElectrek — V3 production window\n·\ntech-insider — AI5 tape-out\n·\nQviro — Optimus specifications\n// Analysis · June 1, 2026\nThis comparison separates what is officially confirmed from what is still pending. For background on the full Gen 3 roadmap, see our\nGen 3 complete guide\n. For Gen 2 technical detail, see our\nGen 2 specs guide\n.\nTesla Optimus Gen 2 — Official Specifications (Confirmed)\nGen 2 was unveiled at\nTesla's Shareholder Meeting in December 2023\n. All specs below are from official Tesla materials or directly confirmed in earnings calls:\nSpecification\nGen 2 Value\nStatus\nOfficial Unveil\nDecember 2023\nConfirmed\nHeight\n5'8\" (173 cm)\nConfirmed\nWeight\n73 kg\nConfirmed\nWalk Speed\nUp to 5 mph\nConfirmed\nHand DoF\n11 per hand\nConfirmed\nTotal Actuators\n~28\nConfirmed\nTotal Degrees of Freedom\n40\nConfirmed\nBattery\n2.3 kWh (est. 8–10 hrs operation)\nConfirmed\nAI System\nTesla neural network, imitation learning\nConfirmed\nProduction Status\n~100+ units (factory learning, 2024–2025)\nConfirmed\nSources: Tesla IR ·\nElectrek\n·\nIEEE Spectrum\n💡\nContext:\nDuring 2024 and early 2025, approximately 100+ Gen 2 units were deployed across Tesla's Fremont and Giga Texas facilities. Their primary function was collecting training data — not doing productive manufacturing work. Musk confirmed on the Q4 2025 earnings call (January 28, 2026) that units were \"primarily for learning, not productive tasks.\"\nTesla Optimus Gen 3 — What Is Confirmed (July 2026)\nTesla has not released a full Gen 3 spec sheet. Here is everything officially confirmed with a source as of June 1, 2026:\nJanuary 21, 2026:\nGen 3 mass production commences at Fremont, California. First use of \"mass production\" terminology by Tesla for Optimus. Source:\nElectrek\nFebruary 17, 2026:\nGen 3 hands revealed. Musk on X: \"This bot got hands.\" 25 actuators per forearm/hand (50 total), 22 DoF per hand, tendon-driven biomimetic design. Source:\nNotateslaapp.com\nMarch 11, 2026:\nTesla China shows Gen 3 hands at Shanghai AWE expo. Weibo post describes fingers as \"nearly identical in proportion to human hands.\" Source: Notateslaapp.com\nMarch 12, 2026:\nMusk at Abundance Summit: Gen 3 in \"final stages,\" will be \"by far the most advanced robot in the world.\" Summer 2026 production start confirmed.\nAI system:\nVLA (Vision-Language-Action) model + AI5 chip + Grok voice integration — confirmed via multiple earnings calls and Musk statements.\n👉\nKey distinction:\nMass production of Gen 3 started January 21, 2026 — but the full-body official reveal has not yet occurred. The units being produced and tested in Fremont are \"production\" in the manufacturing sense, not yet in the commercial sales sense.\nGen 3 Hands: The Most Important Upgrade\nThe hand system is the single biggest confirmed upgrade from Gen 2 to Gen 3.\nIEEE Spectrum's actuator analysis\ncalled it \"a fundamental architectural shift, not an incremental improvement.\"\nGen 3 Hand Architecture\nThe design philosophy changed completely. Gen 2 placed actuators in the hand itself — limiting the number of motors that could physically fit. Gen 3 moves all actuators into the forearm in a tendon-driven biomimetic design, the same principle human hands use (muscles in the forearm, tendons running into the fingers).\nThis single architectural decision enabled:\n✔\n25 actuators per forearm/hand\n— versus the physical limit of what fit in Gen 2's hand\n✔\n22 degrees of freedom per hand\n— approaching human hand capability (human hand: ~27 DoF)\n✔\nLighter hand structure\n— mass moved to forearm reduces wrist torque requirements\n✔\n3,000+ discrete manipulation tasks\n— the figure Tesla cited for Gen 3 hand capability\n✔\nTactile feedback\n— Tesla Board Chair Robyn Denholm described the hands as having \"very good\" tactile nature\n11\nGen 2 DoF per hand\n22\nGen 3 DoF per hand\n~28\nGen 2 total actuators\n50\nGen 3 hand actuators alone\n27\nHuman hand DoF\n3,000+\nGen 3 manipulation tasks\nSources:\nNotateslaapp.com\n·\nIEEE Spectrum\n·\nInteresting Engineering\nWhat Is NOT Yet Confirmed for Gen 3 (June 2026)\n⚠\nImportant for researchers:\nMultiple sites have published \"Gen 3 specs\" that are speculation or analyst estimates. The following specs have NOT been officially disclosed by Tesla as of June 1, 2026.\nSpecification\nStatus\nNotes\nWeight\nTBC\nExpect",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is supported by a single industry blog. The source provides the specific architectural shift (tendon-driven/forearm actuators) and the numerical comparison of actuators and DoF.",
+      "assignment_id": "SG04",
+      "claim_ref": "SG04:C003"
+    },
+    {
+      "claim_id": "C001",
+      "claim": "Samsung Electronics is developing an 'AI-Native' humanoid robot with a target debut at CES 2027 (January 2027).",
+      "worker_support": "Samsung is integrating AI into the robot's design from the initial stage rather than layering software on a pre-built frame, aiming for a reveal at CES 2027.",
+      "runtime_status": "MULTI_SOURCE_PENDING_INDEPENDENCE",
+      "verified_evidence_count": 2,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "Explicitly states Samsung started a next-gen intelligent humanoid project on 2026-09-07 with a goal to reveal it at CES 2027 in Las Vegas.",
+          "audited_source_type": "industry",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "title": "삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표 < AI < 미래공감 < 기사본문 - 공감신문",
+              "publisher": "공감신문",
+              "url": "https://www.gokorea.kr/news/articleView.html?idxno=877516",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "삼성전자가 2026년 9월 7일 차세대 지능형 휴머노이드(인간형 로봇) 개발 프로젝트를 본격화하고 2027년 1월 미국 라스베이거스에서 열리는 세계 최대 전자·정보기술 전시회 CES 2027 공개를 목표로 실무 작업에 착수했다."
+            },
+            "retrieved_source": {
+              "title": "삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표 < AI < 미래공감 < 기사본문 - 공감신문",
+              "url": "https://www.gokorea.kr/news/articleView.html?idxno=877516",
+              "domain": "www.gokorea.kr",
+              "content": "삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표 < AI < 미래공감 < 기사본문 - 공감신문\n주요서비스 바로가기\n다음 기사보기\n삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표\n다른 공유 찾기\nAI\n삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표\n신선미\n닫기\n차세대 인공지능과 액추에이터 융합해 지능형 로봇 시장 선점에 나선다\n삼성전자가 2026년 9월 7일 차세대 지능형 휴머노이드(인간형 로봇) 개발 프로젝트를 본격화하고 2027년 1월 미국 라스베이거스에서 열리는 세계 최대 전자·정보기술 전시회 CES 2027 공개를 목표로 실무 작업에 착수했다. 글로벌 빅테크 기업들이 생성형 인공지능(AI)과 로봇 공학을 결합한 지능형 로봇 개발에 속도를 내는 가운데 반도체와 소프트웨어, 가전 생태계를 두루 갖춘 종합 전자 기업의 제조 역량을 로봇 하드웨어에 이식하려는 시도다.\n인간의 신체적 특성을 모사한 휴머노이드 개발은 최근 산업 현장과 가정 내 서비스 영역 모두에서 차세대 전략 산업으로 급부상하고 있다. 테슬라가 자체 개발 중인 옵티머스를 연이어 개량하고 있고 피규어AI와 보스턴다이내믹스 같은 전문 로봇 제조사들도 첨단 센서와 신경망을 탑재한 시제품을 연달아 공개했다. 로봇 시장의 무게중심이 고정된 위치에서 정밀 작업을 수행하던 전통적 산업용 다관절 로봇에서 자율적으로 환경을 인식하고 행동하는 지능형 개체로 급격히 전환되는 추세다.\n휴머노이드 로봇은 머리 부분에 장착된 3차원 비전 센서와 라이다(LiDAR·빛 탐지 및 거리 측정)를 통해 주변 지형을 입체적으로 인식한다. 로봇의 관절에는 회전력을 정밀하게 제어하는 초소형 모터와 감속기가 결합한 액추에이터(구동 장치)가 탑재되어 두 발로 균형을 잡으며 걷거나 계단을 오르내리는 동작을 수행한다. 사람의 손가락 구조를 본뜬 매니퓰레이터(로봇 손)는 수많은 촉각 센서와 힘 피드백 알고리즘을 활용해 달걀처럼 깨지기 쉬운 물체를 깨뜨리지 않고 쥐거나 미세한 전자기 부품을 조립하는 정밀 작업을 지원한다.\n글로벌 조사기관 인터내셔널데이터코퍼레이션(IDC)에 따르면 전 세계 인공지능 및 로봇 융합 시장 규모는 2024년 420억 달러 수준에서 연평균 25% 이상 성장해 2030년 1600억 달러를 넘어설 것으로 집계됐다. 로봇의 두뇌에 해당하는 인공지능 모델이 거대언어모델(LLM)과 멀티모달(복합정보처리) 기술을 흡수하면서 로봇이 사람의 자연어 명령을 듣고 스스로 행동 순서를 계획하는 단계로 발전한 결과다. 공장 내 단순 반복 작업을 넘어 물류 분류와 노인 돌봄, 매장 안내 등 복합적인 판단이 요구되는 환경으로 로봇의 활동 반경이 넓어지고 있다.\n반도체와 온디바이스(기기 탑재형) AI 분야에서 축적한 기술 자산은 로봇 설계에 직접 활용된다. 인간형 로봇이 시각 정보와 센서 데이터를 지연 없이 처리하려면 초저전력 고성능 신경망처리장치(NPU)가 필수적이다. 클라우드 서버와의 통신 지연을 최소화하고 로봇 내부에서 실시간으로 관절 각도와 보행 궤적을 연산하기 위해 기기 자체에서 구동되는 고효율 엣지 컴퓨팅 하드웨어가 두뇌 역할을 맡는다. 배터리 용량의 한계 속에서 장시간 구동을 보장하기 위해서는 전력 관리 반도체(PMIC)와 모바일 프로세서 설계 기술의 집약이 요구된다.\n로봇 하드웨어 부문에서는 고출력 밀도를 갖춘 모터와 하모닉 드라이브 감속기를 소형화하는 기술이 핵심 과제로 꼽힌다. 인간의 체형과 무게를 크게 벗어나지 않으면서도 수십 킬로그램의 하중을 들어 올리려면 관절 단위의 열 방출 설계와 토크(회전력) 제어의 정밀도가 담보되어야 한다. 이를 위해 외부 충격에 유연하게 반응하는 준직접구동(QDD) 방식 액추에이터와 정밀 역학 센서가 관절마다 배치되며, 경량 복합 알루미늄과 탄소 섬유 복합 소재를 사용해 전체 하중을 줄이는 작업이 병행된다.\n한국로봇산업진흥원은 최근 보고서에서 국내 로봇 부품 국산화율이 소프트웨어 플랫폼과 구동 제어기 분야에서 꾸준히 상승하고 있으며, 감속기와 서보모터 등 핵심 하드웨어 분야에서도 국산 대체 기술이 점진적으로 확보되고 있다고 분석했다. 정부 역시 첨단 로봇 산업 비전과 전략을 수립하고 제조 현장 내 지능형 로봇 보급률을 끌어올리기 위한 실증 사업과 규제 개선을 이어오고 있다. 공공 인프라와 민간 실증 단지를 연계해 휴머노이드의 주행 안전성과 작업 신뢰성을 검증하는 시험대가 전국 주요 산업단지에서 운영되는 중이다.\n협회 관계자는 \"단순한 기계적 균형 제어를 넘어 주변 상황을 시각적으로 이해하고 다음 행동을 예측하는 피지컬 AI(물리적 인공지능) 역량이 향후 로봇 산업의 승패를 결정짓는 핵심 지표가 될 것\"이라며 \"세계적인 수준의 반도체 공정과 대규모 양산 체계를 갖춘 종합 정보기술 기업의 진입은 글로벌 휴머노이드 상용화 시점을 대폭 앞당기는 분기점이 된다\"고 설명했다. 이 관계자는 이어 \"기존 스마트폰이나 가전 기기와의 연동성까지 확보된다면 산업용 라인뿐만 아니라 주거 공간에서도 강력한 플랫폼 지배력을 형성할 수 있다\"고 밝혔다.\n국내 부품 제조사들 사이에서도 공급망 다변화에 대한 기대감이 형성되고 있다. 대구의 한 로봇 감속기 협력사에서 기술 개발을 총괄하는 최모 씨(49)는 \"그동안 정밀 감속기나 엔코더 같은 핵심 구동 부품은 해외 수입 의존도가 높아 납기와 단가 조절에 큰 제약이 따랐다\"며 \"국내 대표 전자 기업이 주도하는 차세대 휴머노이드 프로젝트가 실체화되면 국산 정밀 모터와 특수 감속기를 공급할 수 있는 판로가 열려 국내 부품 생태계 전반의 자생력이 강화된다\"고 말했다.\n소프트웨어 분야에서는 디지털 트윈(가상 모형) 환경을 활용한 가상 학습이 집중적으로 이뤄진다. 수백만 대의 가상 로봇을 시뮬레이터 공간에 배치해 물리 법칙에 기반한 강화학습을 거치게 함으로써 실제 기계 부품의 마모나 파손 없이 수만 시간 분량의 보행 및 파지(물체 쥐기) 데이터를 축적한다. 엔비디아의 옴니버스나 아이작 심 같은 로봇 전용 시뮬레이터를 기반으로 가상 환경에서 학습된 신경망 모델을 실제 로봇에 이식하는 심투리얼(Sim-to-Real) 전환 기술이 개발 속도를 끌어올리는 원동력이다.\n국제표준화기구(ISO)는 서비스 로봇과 휴머노이드의 안전 규격을 제정하기 위해 협동로봇 안전 기준인 ISO 10218 및 개인 지원 로봇 안전 표준인 ISO 13482 개정 작업을 진행하고 있다. 로봇이 인간과 같은 공간에서 물리적으로 상호작용할 때 발생할 수 있는 충돌 위험을 감지하고 모터 출력을 순간적으로 차단하거나 회피 기동을 취하도록 강제하는 기능 안전성 기준이 점차 고도화되는 상황이다. 인체 접촉 시 가해지는 압력을 일정 한도 이하로 유지하도록 설계하는 안전 제어 소프트웨어 탑재가 필수 요건으로 자리 잡고 있다.\n산업통상자원부는 2024년부터 2028년까지 추진하는 제4차 지능형 로봇 기본계획을 바탕으로 로봇 핵심 부품과 소프트웨어 국산화 지원 예산을 지속해서 투입하고 있다. 감속기, 서보모터, 그리퍼, 센서, 제어기 등 로봇 5대 핵심 부품의 자립도를 높이고 인공지능 반도체와 통신 칩셋을 하나로 묶는 온디바이스 로봇 통합 모듈 개발을 국가 연구개발 과제로 지정해 운영 중이다. 물류 창고와 반도체 클린룸 등 고정밀 작업 현장을 중심으로 인간형 로봇의 초기 실증 수요를 창출하는 정책적 뒷받침도 병행된다.\n통계청이 발표한 국내 제조업 노동력 현황에 따르면 생산 가능 인구 감소로 인해 정밀 조립 및 물류 공정에서의 인력 수급 격차가 매년 심화되고 있다. 산업 현장에서는 인력 부족 문제를 해결하고 작업자의 근골격계 질환을 예방하기 위해 반복적이고 중량물을 다루는 공정에 인간형 로봇을 도입하려는 수요가 가파르게 늘고 있다. 정형화된 컨베이어 벨트를 벗어나 유연하게 작업 구역을 이동하며 다품종 소량 생산 공정을 도맡아 처리할 수 있는 유연성이 인간형 로봇의 가장 큰 강점으로 평가된다.\n연구위원은 \"인간형 로봇이 공장 바닥을 벗어나 실생활 공간에 안착하려면 전력 소모를 획기적으로 낮추는 모빌리티 메커니즘과 더불어 뜻밖의 돌발 변수에 즉각 대응하는 상식 수준의 인공지능 추론 능력이 결합되어야 한다\"며 \"제조 단가를 낮추는 대량 양산 기술과 부품 신뢰성 검증 과정이 남아 있는 만큼 상용화 직전 단계까지 엄격한 안정성 시험이 요구된다\"고 밝혔다.\n미국가전협회(CTA)는 매년 1월 미국 네바다주 라스베이거스 컨벤션센터에서 개최되는 CES의 공식 기조연설과 전시 주제로 인공지능과 로보틱스의 융합을 집중 조명하고 있다. 주요 글로벌 제조사들은 CES 2027 본무대를 겨냥해 차세대 지능형 로봇의 실물 시연과 산업 적용 청사진을 발표하기 위한 사전 기술 검증을 진행 중이다.\n신선미\n4\n삼성전자·SK하이닉스 자사주 매입, 코스피 반등 이끌며 투자자 관심 집중\n5",
+              "content_chars": 4267
+            }
+          }
+        },
+        {
+          "evidence_id": "C001-E002",
+          "state": "VERIFIED",
+          "reason": "Confirms the goal to debut at CES 'next year' (relative to Sept 2026) and explicitly mentions building a custom humanoid optimized for AI algorithms from the initial design stage.",
+          "audited_source_type": "industry",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C001-E002",
+            "worker_source": {
+              "title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+              "publisher": "Seoul Economic Daily",
+              "url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "[Samsung Humanoid to Debut at CES Next Year] ... build a custom humanoid optimized for AI algorithms from the initial design stage"
+            },
+            "retrieved_source": {
+              "title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+              "url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+              "domain": "en.sedaily.com",
+              "content": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily\nSkip to main content\nSeoul Economic Daily\nMarkets\nProperty\nFinance\nBusiness\nTechnology\nPolitics\nSociety\nCulture\nSports\nInternational\nOpinion\nAI KEY\nSeoul Economic Daily\nKST\nSeoul Economic Daily\nKorea's Leading Business News Since 1960\n한국어\nMarkets\nProperty\nFinance\nBusiness\nTechnology\nPolitics\nSociety\nCulture\nSports\nInternational\nOpinion\nAI KEY\nMenu\nSaved Articles\nNewsletters\nAI KEY\nSettings\nSamsung Builds AI Into Robot Design to Speed Humanoid Push\n[Samsung Humanoid to Debut at CES Next Year]\nTechnology validated at chip and appliance plants\nFactories used as large-scale data collection bases\nPatents filed for robot hands and hip joints\nBody and brain developed together for edge\nEcosystem spans AI, smart home and more\nFinance\n|\nPublished\n2026.09.07. 19:10:22\n|\nBy Suh Jong-gap and Kim Yun-soo\ngap@sedaily.com\n,\nsookim@sedaily.com\n|\nSummary\n|\nSave\nA\nA\nA\nSamsung Bot Handy uses a duster to clean dust inside a home (left); Samsung Bot Handy grips a cup (right). Samsung Electronics\nSamsung Electronics (005930) is accelerating in-house development of humanoid robots on an internal assessment that advances in artificial intelligence and the commercialization of physical AI are arriving faster than expected, according to industry sources. Domestic rivals are moving as well: Hyundai Motor (005380) Group has unveiled a new Atlas, and LG Group has introduced Cloi'd, both positioning to claim the humanoid market early. Chinese companies, meanwhile, are scaling up humanoids at a formidable pace in the global market. To counter rivals' speed and volume, Samsung has set a goal of internalizing everything from product design to the AI brain and seizing leadership of the humanoid industry ecosystem at a stroke.\nYoon Jang-hyun, president and chief technology officer of the DX Division. Samsung Electronics\nSamsung's push shows first in an unconventional organizational setup. In the Robotics (RX) Business Promotion Office created in July, Yoon Jang-hyun, president and chief technology officer of the Device eXperience (DX) division, concurrently heads both the hardware development team and the AI software development team. It is unusual at a large corporation for a single executive to oversee both the hardware organization handling robot drivetrains and the AI organization building perception and autonomous navigation.\nThe industry reads this as shifting the lead in robot development from hardware to AI and software. The old approach of building a mechanical frame first and layering software on top cannot keep up with AI advances that change by the day. Executives therefore appear to have given Yoon, a software specialist, full authority over development to build a custom humanoid optimized for AI algorithms from the initial design stage, sharply shortening the development period and raising the level of completion. The aim is to eliminate the development gap between the brain and the body and bring out a product at commercial readiness right away.\nSamsung has been methodically securing core technologies and trademarks for its own robots for years. On trademarks, it filed early for \"SAMSUNG BOT\" in 2022 to lock in rights. That led the industry to expect Samsung Bot would be the name of the company's next-generation robot brand.\nThe company also filed in 2024 for humanoid hip joint design technology, which determines the success of bipedal walking, securing its own lower-body structure. In April this year, it registered a next-generation robot hand patent in the United States that combines camera vision to flexibly rearrange finger configurations according to the shape of an object. Adding language-model control technology that converts natural-language instructions into physical motion completed the technical puzzle.\nA dual research structure linking the R&D campus in Umyeon-dong, Seoul, with the Gumi plant in North Gyeongsang Province is seen as a distinctive Samsung strength. At the Umyeon-dong campus, Samsung Electronics is demonstrating core brain technologies such as visual recognition and precision control for humanoids and refining them. Technology developed there is applied directly to a \"data factory\" under construction at sites including the Gumi plant for validation.\nFor robots to work adeptly in the physical world, vast amounts of physical data are needed. Samsung, which operates semiconductor, smartphone and home appliance production lines around the world, can use its own factories as a huge data collection base. That is an overwhelming comparative advantage that global big tech firms relying on laboratory simulations would find hard to match in a short time.\nSamsung Electronics is moving quickly on robots because the global robot market is growing rapidly. According to Fortune Business Insights, the global humanoid market is projected to expand from 6.6 trillion won in 2025 to 222.4 trillion won in 2034. It has emerged from a niche into a vast market that could decide the fate of future manufacturing.\nChina has taken early leadership in this fast-growing robot market. According to market research firm Smart Analytics Global, global humanoid shipments reached 19,100 units in the first half of this year, a 272% surge from a year earlier. Strikingly, Chinese companies accounted for more than 97% of global shipments in the period. Agibot led with 8,400 units delivered in the first half for a 44% global share, followed by Unitree at 31%, Galbot at 5%, UBTech at 4% and LEJU at 3%.\nChinese robots are seen as having moved past simple proof-of-concept work into mass production, deployed directly on automobile assembly and parts production lines. Smart Analytics Global estimated that more than 70% of first-half humanoid shipments went into industrial and commercial use.\nMany analysts say the recent tightening of U.S. restrictions on imports of Chinese products is a decisive opportunity for Samsung and other Korean companies. ",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "TRIANGULATED",
+      "auditor_reason": "Both sources confirm Samsung's development of a humanoid robot and the target debut at CES 2027. Source E002 specifically supports the 'AI-native' approach (optimizing for AI from the initial design stage).",
+      "assignment_id": "SG05",
+      "claim_ref": "SG05:C001"
+    },
+    {
+      "claim_id": "C002",
+      "claim": "Samsung Electronics utilizes its own semiconductor and appliance factories as 'data factories' to collect vast amounts of physical data for humanoid training.",
+      "worker_support": "Samsung leverages its global production lines to gather real-world physical data, providing a comparative advantage over companies relying solely on simulations.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "Explicitly mentions a 'data factory' under construction at sites including the Gumi plant and states Samsung can use its semiconductor, smartphone, and home appliance production lines as a huge data collection base.",
+          "audited_source_type": "industry",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+              "publisher": "Seoul Economic Daily",
+              "url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Technology developed there is applied directly to a \"data factory\" under construction at sites including the Gumi plant for validation. ... Samsung, which operates semiconductor, smartphone and home appliance production lines around the world, can use its own factories as a huge data collection base."
+            },
+            "retrieved_source": {
+              "title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+              "url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+              "domain": "en.sedaily.com",
+              "content": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily\nSkip to main content\nSeoul Economic Daily\nMarkets\nProperty\nFinance\nBusiness\nTechnology\nPolitics\nSociety\nCulture\nSports\nInternational\nOpinion\nAI KEY\nSeoul Economic Daily\nKST\nSeoul Economic Daily\nKorea's Leading Business News Since 1960\n한국어\nMarkets\nProperty\nFinance\nBusiness\nTechnology\nPolitics\nSociety\nCulture\nSports\nInternational\nOpinion\nAI KEY\nMenu\nSaved Articles\nNewsletters\nAI KEY\nSettings\nSamsung Builds AI Into Robot Design to Speed Humanoid Push\n[Samsung Humanoid to Debut at CES Next Year]\nTechnology validated at chip and appliance plants\nFactories used as large-scale data collection bases\nPatents filed for robot hands and hip joints\nBody and brain developed together for edge\nEcosystem spans AI, smart home and more\nFinance\n|\nPublished\n2026.09.07. 19:10:22\n|\nBy Suh Jong-gap and Kim Yun-soo\ngap@sedaily.com\n,\nsookim@sedaily.com\n|\nSummary\n|\nSave\nA\nA\nA\nSamsung Bot Handy uses a duster to clean dust inside a home (left); Samsung Bot Handy grips a cup (right). Samsung Electronics\nSamsung Electronics (005930) is accelerating in-house development of humanoid robots on an internal assessment that advances in artificial intelligence and the commercialization of physical AI are arriving faster than expected, according to industry sources. Domestic rivals are moving as well: Hyundai Motor (005380) Group has unveiled a new Atlas, and LG Group has introduced Cloi'd, both positioning to claim the humanoid market early. Chinese companies, meanwhile, are scaling up humanoids at a formidable pace in the global market. To counter rivals' speed and volume, Samsung has set a goal of internalizing everything from product design to the AI brain and seizing leadership of the humanoid industry ecosystem at a stroke.\nYoon Jang-hyun, president and chief technology officer of the DX Division. Samsung Electronics\nSamsung's push shows first in an unconventional organizational setup. In the Robotics (RX) Business Promotion Office created in July, Yoon Jang-hyun, president and chief technology officer of the Device eXperience (DX) division, concurrently heads both the hardware development team and the AI software development team. It is unusual at a large corporation for a single executive to oversee both the hardware organization handling robot drivetrains and the AI organization building perception and autonomous navigation.\nThe industry reads this as shifting the lead in robot development from hardware to AI and software. The old approach of building a mechanical frame first and layering software on top cannot keep up with AI advances that change by the day. Executives therefore appear to have given Yoon, a software specialist, full authority over development to build a custom humanoid optimized for AI algorithms from the initial design stage, sharply shortening the development period and raising the level of completion. The aim is to eliminate the development gap between the brain and the body and bring out a product at commercial readiness right away.\nSamsung has been methodically securing core technologies and trademarks for its own robots for years. On trademarks, it filed early for \"SAMSUNG BOT\" in 2022 to lock in rights. That led the industry to expect Samsung Bot would be the name of the company's next-generation robot brand.\nThe company also filed in 2024 for humanoid hip joint design technology, which determines the success of bipedal walking, securing its own lower-body structure. In April this year, it registered a next-generation robot hand patent in the United States that combines camera vision to flexibly rearrange finger configurations according to the shape of an object. Adding language-model control technology that converts natural-language instructions into physical motion completed the technical puzzle.\nA dual research structure linking the R&D campus in Umyeon-dong, Seoul, with the Gumi plant in North Gyeongsang Province is seen as a distinctive Samsung strength. At the Umyeon-dong campus, Samsung Electronics is demonstrating core brain technologies such as visual recognition and precision control for humanoids and refining them. Technology developed there is applied directly to a \"data factory\" under construction at sites including the Gumi plant for validation.\nFor robots to work adeptly in the physical world, vast amounts of physical data are needed. Samsung, which operates semiconductor, smartphone and home appliance production lines around the world, can use its own factories as a huge data collection base. That is an overwhelming comparative advantage that global big tech firms relying on laboratory simulations would find hard to match in a short time.\nSamsung Electronics is moving quickly on robots because the global robot market is growing rapidly. According to Fortune Business Insights, the global humanoid market is projected to expand from 6.6 trillion won in 2025 to 222.4 trillion won in 2034. It has emerged from a niche into a vast market that could decide the fate of future manufacturing.\nChina has taken early leadership in this fast-growing robot market. According to market research firm Smart Analytics Global, global humanoid shipments reached 19,100 units in the first half of this year, a 272% surge from a year earlier. Strikingly, Chinese companies accounted for more than 97% of global shipments in the period. Agibot led with 8,400 units delivered in the first half for a 44% global share, followed by Unitree at 31%, Galbot at 5%, UBTech at 4% and LEJU at 3%.\nChinese robots are seen as having moved past simple proof-of-concept work into mass production, deployed directly on automobile assembly and parts production lines. Smart Analytics Global estimated that more than 70% of first-half humanoid shipments went into industrial and commercial use.\nMany analysts say the recent tightening of U.S. restrictions on imports of Chinese products is a decisive opportunity for Samsung and other Korean companies. ",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "Only one source provides evidence for the use of Samsung's own factories as 'data factories'.",
+      "assignment_id": "SG05",
+      "claim_ref": "SG05:C002"
+    },
+    {
+      "claim_id": "C003",
+      "claim": "Doosan Robotics has launched 'Scan & Go', an AI-based industrial robot solution that performs tasks like sanding and grinding on large structures without blueprints.",
+      "worker_support": "Scan & Go combines a collaborative robot arm with an AMR, using physics-informed AI and 3D vision to achieve 0.1mm precision and PLe, Cat4 safety compliance.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "Confirms 'Scan & Go' is an AI robot solution for tasks like sanding and grinding on large structures without blueprints, achieving 0.1mm precision and PLe, Cat4 safety compliance.",
+          "audited_source_type": "industry",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C003-E001",
+            "worker_source": {
+              "title": "CES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화 - ZDNet korea",
+              "publisher": "ZDNet Korea",
+              "url": "https://zdnet.co.kr/view/?no=20260107154524",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "스캔앤고는 협동로봇 팔과 자율이동로봇(AMR)을 결합한 플랫폼에 물리정보 기반 AI와 3D 비전 기술을 적용한 산업용 AI 로봇 솔루션이다. ... 0.1mm 수준의 작업 정밀도를 구현했다. ... 산업용 안전 기준인 PLe, Cat4도 충족했다."
+            },
+            "retrieved_source": {
+              "title": "CES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화 - ZDNet korea",
+              "url": "https://zdnet.co.kr/view/?no=20260107154524",
+              "domain": "zdnet.co.kr",
+              "content": "CES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화 - ZDNet korea\nZDNet USA\n글로벌뉴스\nAI의 눈\n인공지능\nAI의 눈\nIT'sight\n포토•영상\nCES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화\n[CES 2026] 두산, 미래형 휴머노이드 앞서 '현장형 AI 로봇' 꺼냈다\n디지털경제\n[라스베이거스(미국)=신영빈\n기자] 대형 구조물 앞에 멈춰 선 로봇이 팔을 뻗자\n표면을 따라 미세한 진동과 함께 작업이 시작됐다. 별도 설계 도면이나 사전 입력 없이도 로봇은 구조물의 형상을 스스로 스캔하고 곧바로 최적의 경로를 그리듯 움직였다.\n두산로보틱스가 휴머노이드 로봇 공개에 앞서 협동로봇을 기반으로 한 상업화 솔루션을 선보이며 산업 현장 공략에 속도를 내고 있다. 회사는 CES 2026에서 인공지능(AI) 로봇 솔루션 '스캔앤고'를 처음 공개하고 정식 판매에 나설 계획이다.\n두산로보틱스 AI 기반 로봇 솔루션 '스캔앤고' (사진=지디넷코리아 신영빈 기자)\n스캔앤고는 협동로봇 팔과 자율이동로봇(AMR)을 결합한 플랫폼에 물리정보 기반 AI와 3D 비전 기술을 적용한 산업용 AI 로봇 솔루션이다. 대형 구조물 형상을 스스로 인식하고 최적의 작업 경로를 생성해 검사, 샌딩, 그라인딩 등 작업을 자동 수행한다.\n이 솔루션은 터빈 블레이드, 항공기 동체, 건물 외벽 등 대형 복합 구조물의 표면을 스캔한 뒤 별도의 설계 도면 없이 작업을 수행하는 것이 특징이다. 플러그앤플레이 방식으로 운영돼 현장 적용성이 높고, 0.1mm 수준의 작업 정밀도를\n구현했다.\n로봇팔 6개 축에 장착된 토크센서를 통해 작업 대상이 달라져도 실시간 힘 제어가 가능하며, 산업용 안전 기준인 PLe, Cat4도 충족했다.\n두산로보틱스 AI 기반 로봇 솔루션 '스캔앤고' (사진=지디넷코리아 신영빈 기자)\n특히 물리정보 기반 AI는 로봇의 관절 구조, 토크, 마찰 등 물리적 특성을 학습 과정에 반영해 실제 현장에서의 신뢰성과 작업 안정성을 높인 기술로, 데이터 중심 AI의 한계를 보완하는 접근 방식으로 평가받는다.\n관련기사\n2025.12.23\n[현장] AI G3 향한 대전환 '시동'…산·학계, 피지컬 AI·독자 모델 투트랙 비전 제시\n2025.11.26\n두산로보틱스, CES AI 부문 최고혁신상\n2025.11.06\n에이딘로보틱스, 두산로보틱스와 피지컬 AI 협력\n2025.11.03\n솔루션은 두산로보틱스 파트너사인 캐나다 로봇 자동화 기업 메이플어드밴스드로보틱스(MARI)와 공동 개발했다.\n이번\nCES에서 AI 부문 최고혁신상과 로봇공학 부문 혁신상을\n수상했다.\n두산로보틱스는 휴머노이드 로봇을 중장기 전략으로 추진하는 동시에, 단기적으로는 협동로봇을 활용한 즉시 상용화 가능한 AI 솔루션을 통해 실질적인 시장 성과를 창출하겠다는 전략이다.\n신영빈 기자\n기자의 다른 기사 보기\n두산로보틱스\nCES2026",
+              "content_chars": 1419
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "Only one source provides evidence for the 'Scan & Go' solution and its specific capabilities.",
+      "assignment_id": "SG05",
+      "claim_ref": "SG05:C003"
+    },
+    {
+      "claim_id": "C004",
+      "claim": "Doosan Robotics is collaborating with NVIDIA to develop an 'Agentic Robot O/S' and aims to release industrial humanoid products by 2028.",
+      "worker_support": "The partnership integrates NVIDIA's AI and robotics ecosystem with Doosan's execution software to accelerate the commercialization of industrial humanoids.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "reason": "Explicitly mentions the collaboration with NVIDIA, the development of the 'Agentic Robot O/S', and the goal to sequentially reveal industrial humanoid products by 2028.",
+          "audited_source_type": "industry",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C004-E001",
+            "worker_source": {
+              "title": "두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다 - 전자신문",
+              "publisher": "전자신문",
+              "url": "https://www.etnews.com/20260429000466",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "두산로보틱스가 엔비디아와 피지컬 인공지능(AI) 기반 로봇 솔루션 개발 협력에 나선다. ... 2028년에는 산업용 휴머노이드 제품을 순차적으로 공개한다는 목표다. ... 로봇 전용 실행 소프트웨어 '에이전틱 로봇 운영체제(Agentic Robot O/S)'와 엔비디아의 AI·로보틱스 시뮬레이션·학습 인프라를 연계"
+            },
+            "retrieved_source": {
+              "title": "두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다 - 전자신문",
+              "url": "https://www.etnews.com/20260429000466",
+              "domain": "www.etnews.com",
+              "content": "두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다 - 전자신문\nEnglish\n회원가입\nAI·SW\n반도체\n속보\nAI·SW\n반도체\n이슈플러스\nAI 스튜디오\nHot 영상\n소부장\n두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다\n발행일 : 2026-04-29 17:02\n29일 김민표 두산로보틱스 대표(왼쪽 여섯째)와 매디슨 황 엔비디아 수석 이사(왼쪽 다섯째)가 관계자들과 기념사진을 촬영하고 있다.\n두산로보틱스가 엔비디아와 피지컬 인공지능(AI) 기반 로봇 솔루션 개발 협력에 나선다. 로봇 전용 실행 소프트웨어와 엔비디아 AI·로보틱스 생태계를 결합해 지능형 로봇 솔루션과 산업용 휴머노이드 상용화를 추진한다.\n두산로보틱스는 엔비디아 옴니버스 및 로보틱스 제품 마케팅을 총괄하는 매디슨 황 수석 이사가 29일 경기 성남시 분당구 두산로보틱스 이노베이션 센터를 방문해 김민표 두산로보틱스 대표와 기술 협력 방안을 논의했다고 밝혔다.\n두산로보틱스는 이번 협력을 기반으로 내년 에이전틱 로봇 운영체제 기반 지능형 로봇 솔루션을 선보일 예정이다. 2028년에는 산업용 휴머노이드 제품을 순차적으로 공개한다는 목표다. 내년 CES 등 글로벌 주요 전시회에서 엔비디아와 협업 결과물을 발표하는 방안도 추진한다.\n이번 방문은 두산로보틱스가 개발 중인 지능형 로봇 솔루션과 산업용 휴머노이드에 엔비디아 AI·로보틱스 생태계를 접목하기 위한 협의 차원에서 마련됐다. 양사는 두산로보틱스가 개발 중인 로봇 전용 실행 소프트웨어 '에이전틱 로봇 운영체제(Agentic Robot O/S)'와 엔비디아의 AI·로보틱스 시뮬레이션·학습 인프라를 연계하는 방안을 논의했다.\n두산로보틱스는 운영체제 고도화를 위해 로봇과 AI 간 인터페이스 구축, 로봇 제어 표준 프로토콜 개발, 전문 작업 모델 연동, 안전 제어를 위한 기술적 가드레일 적용 등을 검토하고 있다. 엔비디아와의 협력을 통해 시뮬레이션, 학습, 검증, 실행으로 이어지는 로봇 개발 체계를 구체화할 계획이다.\n박유민 기자 newmin@etnews.com\n2\nLG이노텍, 반도체 유리기판 공정에 AI 심는다\n3\n7\n에코프로, 휴머노이드 배터리 공략…하이니켈·전고체 강화\n8\n10\n삼성전자, ASML과 High-NA 협력 확대…2028년 D램 양산 적용 추진\n주요 행사\n❯\nAICC & CX Insight 2026\n고객은 언제 AI를 신뢰하는가 - AI 만족도를 높이는 전략\nAI Smart Work Summit 2026\n모든 담당자(비개발자)를 위한 Claude Code 바이브 코딩 2-day 부트캠프\nIT 메가비전 X IITP 테크&퓨처 인사이트 콘서트 2026\nAI 에이전트 가드레일 & 거버넌스 실전 세미나\n금소법 시대, AI는 어떻게 약관을 지키는가\nCAIO Summit 2026 - AI Native Enterprise\nBIZPLUS\n[올쇼TV] 센드버드, '고객은 언제 AI를 신뢰하는가' 9월 10일 생방송\nAI 구현부터 ROI·통제까지…9월의 실전 교육·세미나",
+              "content_chars": 1497
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "Only one source provides evidence for the NVIDIA collaboration and the 2028 humanoid target.",
+      "assignment_id": "SG05",
+      "claim_ref": "SG05:C004"
+    },
+    {
+      "claim_id": "C001",
+      "claim": "Real-time VLA (Vision-Language-Action) inference for robotics targets a latency of 10 to 100 milliseconds (10 Hz to 100 Hz) to align with visual signal ingestion rates from standard RGB cameras (24-60 Hz).",
+      "worker_support": "VLA-Perf analysis defines 10 Hz as a baseline and explores rates up to and beyond 100 Hz to match camera frame rates.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The text directly supports the relationship between camera frame rates and the defined VLA inference frequency targets.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "title": "How Fast Can I Run My VLA? Demystifying VLA Inference Performance with VLA-Perf",
+              "publisher": "arxiv.org",
+              "url": "https://arxiv.org/html/2602.18397v1",
+              "source_type": "peer-reviewed",
+              "tier": 1,
+              "excerpt": "Given that standard RGB camera frame rates typically range from 24 to 60 Hz, we define a 10 Hz inference frequency as... What combinations of models and systems are required to support VLA inference at rates from 10 Hz up to and beyond 100 Hz"
+            },
+            "retrieved_source": {
+              "title": "How Fast Can I Run My VLA? Demystifying VLA Inference Performance with VLA-Perf",
+              "url": "https://arxiv.org/html/2602.18397v1",
+              "domain": "arxiv.org",
+              "content": "2.3\nResearch Gap: Comprehensive Analysis of the VLA Inference Performance Landscape\n3\nVision-Language-Action (VLA) models have recently demonstrated impressive capabilities across various embodied AI tasks.\nWhile deploying VLA models on real-world robots imposes strict real-time inference constraints, the inference performance landscape of VLA remains poorly understood due to the large combinatorial space of model architectures and inference systems.\nIn this paper, we ask a fundamental research question:\nHow should we design future VLA models and systems to support real-time inference?\nTo address this question, we first introduce\nVLA-Perf\n, an analytical performance model that can analyze inference performance for arbitrary combinations of VLA models and inference systems.\nUsing\nVLA-Perf\n, we conduct the first systematic study of the VLA inference performance landscape.\nFrom a model-design perspective, we examine how inference performance is affected by model scaling, model architectural choices, long-context video inputs, asynchronous inference, and dual-system model pipelines.\nFrom the deployment perspective, we analyze where VLA inference should be executed — on-device, on edge servers, or in the cloud — and how hardware capability and network performance jointly determine end-to-end latency.\nBy distilling 15 key takeaways from our comprehensive evaluation, we hope this work can provide practical guidance for the design of future VLA models and inference systems.\n1\n.\nTo react to real-time changes in the physical world, VLA inference must operate with low latency, motivating recent work to treat inference performance\n2\n.\nWhile these efforts on efficient VLA model design are an important step forward, we still lack a comprehensive understanding of the VLA inference performance landscape, which is determined by the vast combinatorial space of possible (1)\nmodels\nThis study aims to answer a simple yet fundamental question:\nhow should we design VLA models and systems to achieve real-time inference performance?\nGiven that standard RGB camera frame rates typically range from 24 to 60 Hz, we define a 10 Hz inference frequency as\n)?\nWhat combinations of models and systems are required to support VLA inference at rates from 10 Hz up to and beyond 100 Hz (§\n4.11\n.\nTo enable such systematic analysis across the nearly unbounded combinatorial space of VLA models and inference systems,\nwe develop VLA-Perf, an analytical, roofline-based performance model that predicts the optimal inference latency and throughput for arbitrary model–system combinations\n(\nFrom the results, we summarize\n15 key performance takeaways that provide practical guidance for the design of future VLA models and inference systems.\nFigure 1\nVLA-Perf\nenables a comprehensive performance analysis of the VLA inference landscape. Our systematic study explores the interplay between model architectures and deployment configurations, yielding 15 actionable insights for designing future VLA models and serving systems.\n2\nIn this paper,\nwe aim to provide a comprehensive analysis of VLA inference performance across both existing and future, potentially hypothetical, combinations of VLA models and inference systems.\nOur evaluation focuses exclusively on performance characteristics — including latency and throughput — under the assumption that the underlying models meet the necessary accuracy thresholds for deployment.\nAcross all components, larger models impose proportionally higher computational costs, and thus inference latency grows approximately linearly with model size.\nTakeaway 4: While edge and consumer GPUs struggle with larger models, datacenter GPUs can still support real-time inference for VLA models that are more than one order of magnitude larger.\nTable\n:\nInference performance and memory consumption of long-context VLA models.\nTimesteps\nWith asynchronous inference, the model predicts actions based on stale observations rather than the latest state, allowing model inference and robot action execution to be partially overlapped.\nWhile this form of asynchrony does not increase the maximum inference throughput for on-device inference without network latency, it can benefit server-side inference by allowing network transmission and GPU computation to proceed concurrently.\nThus, the asynchronous inference throughput is bounded by the minimum of GPU inference throughput and network transmission throughput.\n, an analytical performance modeling tool that we develop, we systematically explore a wide range of (1) model configurations, including model size, context length, architectural choices, and synchronous versus asynchronous execution, and (2) system configurations spanning different hardware platforms, inference placements, and network conditions.\nFrom the performance study, we distill 15 key takeaways that provide practical guidance for the design of future VLA models and inference systems.\nWhile this work represents an important step toward understanding and building next-generation VLA systems, we view it as only a starting point.",
+              "content_chars": 5080
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The retrieved content explicitly mentions standard RGB camera frame rates (24-60 Hz) and the target inference frequencies (10 Hz up to and beyond 100 Hz), supporting the claim.",
+      "assignment_id": "SG06",
+      "claim_ref": "SG06:C001"
+    },
+    {
+      "claim_id": "C003",
+      "claim": "The Deltoris framework accelerates diffusion-based VLA inference using a hardware-software co-design that employs temporal-aware bit-sparsity to compute only differences between consecutive inputs and speculative inference to amortize data loading.",
+      "worker_support": "Deltoris uses customized 1D systolic bit-serial PE arrays to implement these techniques, achieving up to 34.2x speedup over mobile GPUs.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content contains all technical components of the claim including the specific algorithm names and hardware architecture.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C003-E001",
+            "worker_source": {
+              "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+              "publisher": "arxiv.org",
+              "url": "https://arxiv.org/abs/2608.04428",
+              "source_type": "peer-reviewed",
+              "tier": 1,
+              "excerpt": "we propose a temporal-aware bit-sparsity algorithm that computes only the differences between consecutive inputs... we propose a speculative inference technique, which amortizes data loading across multiple control steps. Lastly, to support these techniques, we co-design a dedicated accelerator with customized 1D systolic bit-serial PE arrays"
+            },
+            "retrieved_source": {
+              "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+              "url": "https://arxiv.org/abs/2608.04428",
+              "domain": "arxiv.org",
+              "content": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference\nSkip to main content\nTitle:\nDeltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference\nAuthors:\nYu Feng\nView a PDF of the paper titled Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference, by Zheng Liu and 11 other authors\nView PDF\nAbstract:\nVision-language-action (VLA) models have emerged as a key component in embodied AI. Among existing approaches, diffusion-based VLA models achieve superior motion quality and generalization. However, diffusion-based VLA models are compute-intensive and must run at high control frequency, e.g., 50-200 Hz. Thus, it imposes strict latency and energy constraints on edge devices.\nIn this work, we present Deltoris, an algorithm-hardware co-design framework for efficient diffusion-based VLA inference. First, we exploit the temporal similarity of consecutive inputs and propose a \\textit{temporal-aware bit-sparsity} algorithm that computes only the differences between consecutive inputs, eliminating redundant bit-level operations. To further address the extra off-chip traffic introduced by our algorithm, we propose a \\textit{speculative inference} technique, which amortizes data loading across multiple control steps. Lastly, to support these techniques, we co-design a dedicated accelerator with customized 1D systolic bit-serial PE arrays that eliminate PE workload imbalance. Our evaluation shows that Deltoris achieves up to 34.2$\\times$ speedup over mobile GPUs and 6.1$\\times$ over prior accelerators, while maintaining comparable accuracy.\nSubjects:\n[cs.AR]\nfor this version)\nhttps://doi.org/10.48550/arXiv.2608.04428\nAccess Paper:\nView a PDF of the paper titled Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference, by Zheng Liu and 11 other authors\nView PDF\nLoading...\nBibTeX formatted citation\n×\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nLinks to Code Toggle\nCatalyzeX Code Finder for Papers\n(\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\nTopic\nAbout arXivLabs\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\nLearn more about arXivLabs\n.\n,\nand all contributors.\nAbout",
+              "content_chars": 2890
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The abstract explicitly describes the Deltoris framework's use of temporal-aware bit-sparsity, speculative inference, and customized 1D systolic bit-serial PE arrays.",
+      "assignment_id": "SG06",
+      "claim_ref": "SG06:C003"
+    },
+    {
+      "claim_id": "C004",
+      "claim": "VLA-RAIL addresses VLA inference bottlenecks by implementing an asynchronous inference linker that uses a Trajectory Smoother (polynomial fitting) and a Chunk Fuser to ensure continuity in position, velocity, and acceleration.",
+      "worker_support": "This framework decouples model inference from motion control to eliminate jitter and pauses in action execution.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved text directly supports the implementation of the Smoother and Fuser and their specific goals for continuity.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C004-E001",
+            "worker_source": {
+              "title": "[2512.24673] VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots",
+              "publisher": "arxiv.org",
+              "url": "https://arxiv.org/abs/2512.24673",
+              "source_type": "peer-reviewed",
+              "tier": 1,
+              "excerpt": "a Trajectory Smoother that effectively filters out the noise and jitter in the trajectory of one action chunk using polynomial fitting and a Chunk Fuser that seamlessly align the current executing trajectory and the newly arrived chunk"
+            },
+            "retrieved_source": {
+              "title": "[2512.24673] VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots",
+              "url": "https://arxiv.org/abs/2512.24673",
+              "domain": "arxiv.org",
+              "content": "[2512.24673] VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots\nSkip to main content\nTitle:\nVLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots\nAuthors:\nHan Gao\nView a PDF of the paper titled VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots, by Yongsheng Zhao and 5 other authors\nView PDF\nAbstract:\nVision-Language-Action (VLA) models have achieved remarkable breakthroughs in robotics, with the action chunk playing a dominant role in these advances. Given the real-time and continuous nature of robotic motion control, the strategies for fusing a queue of successive action chunks have a profound impact on the overall performance of VLA models. Existing methods suffer from jitter, stalling, or even pauses in robotic action execution, which not only limits the achievable execution speed but also reduces the overall success rate of task completion. This paper introduces VLA-RAIL (A Real-Time Asynchronous Inference Linker), a novel framework designed to address these issues by conducting model inference and robot motion control asynchronously and guaranteeing smooth, continuous, and high-speed action execution. The core contributions of the paper are two fold: a Trajectory Smoother that effectively filters out the noise and jitter in the trajectory of one action chunk using polynomial fitting and a Chunk Fuser that seamlessly align the current executing trajectory and the newly arrived chunk, ensuring position, velocity, and acceleration continuity between two successive action chunks. We validate the effectiveness of VLA-RAIL on a benchmark of dynamic simulation tasks and several real-world manipulation tasks. Experimental results demonstrate that VLA-RAIL significantly reduces motion jitter, enhances execution speed, and improves task success rates, which will become a key infrastructure for the large-scale deployment of VLA models.\nSubjects:\nRobotics (cs.RO)\n; Artificial Intelligence (cs.AI); Systems and Control (eess.SY)\nCite as:\nAccess Paper:\nView a PDF of the paper titled VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots, by Yongsheng Zhao and 5 other authors\nView PDF\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\n)\nWe gratefully acknowledge support from\nour\n,\nand all contributors.\nAbout",
+              "content_chars": 3014
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The abstract explicitly mentions the Trajectory Smoother (using polynomial fitting) and the Chunk Fuser to ensure position, velocity, and acceleration continuity.",
+      "assignment_id": "SG06",
+      "claim_ref": "SG06:C004"
+    },
+    {
+      "claim_id": "C005",
+      "claim": "Humanoid actuator energy efficiency is constrained by a trade-off between battery chemistries: Lithium Iron Phosphate (LFP) provides better thermal stability and cycle life, while Nickel Cobalt Aluminum (NCA) offers higher energy density.",
+      "worker_support": "The choice of chemistry directly impacts the thermal budget and how aggressively the actuator stack can be pushed.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly confirms the specific properties of LFP vs NCA chemistries in the context of humanoid power systems.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C005-E001",
+            "worker_source": {
+              "title": "Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs",
+              "publisher": "actuatorhq.com",
+              "url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "The trade-off between lithium iron phosphate chemistry (LFP) and nickel cobalt aluminum chemistry (NCA) is not academic. LFP offers better thermal stability and cycle life. NCA offers higher energy density."
+            },
+            "retrieved_source": {
+              "title": "Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs",
+              "url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+              "domain": "actuatorhq.com",
+              "content": "From Prototype to Production: What Still Blocks Humanoid Robots?\nMotion control, thermal management, and sensing architecture remain the three hardest unsolved engineering barriers blocking humanoid robots from real-world production scale.\nMarch 20, 2026\nWhy does thermal management deserve its own engineering track?\nWhat does the shift to modular architectures mean for actuator design?\nIs social intelligence a viable alternative to solving the hard actuator problems?\nMassive funding could not shortcut unsolved hardware problems. Motion control, power, and thermal constraints kept humanoids far from practical deployment at scale.\nAccording to IEEE Spectrum, 2025 was supposed to be the year AI and humanoid robots made transformative progress toward real practicality. The money arrived. The hype was everywhere. But as IEEE Spectrum reported, it became genuinely hard to rationalize what actually happened against the scale of investment and optimism heading into the year. That gap between capital and capability points directly at hardware. Not software. Not AI. The actuator stack, the thermal budget, and the sensing architecture are where humanoid development keeps stalling. ActuatorHQ analysis: this is exactly why component-level thinking matters. A better foundation model does not fix a joint that overheats after 20 minutes of operation.\nFact\nStable bipedal locomotion demands real-time sensor fusion, complex dynamic modelling, and continuous feedback across dozens of degrees of freedom simultaneously.\nAccording to the Wiley Knowledge Hub technical examination of humanoid engineering challenges, motion control remains the single hardest unsolved problem in the field. The reasons are layered. Maintaining stable bipedal locomotion across dynamic environments requires managing modelling complexity, real-time feedback requirements, and sensor fusion demands all at once. Every joint in a humanoid leg or arm is a potential failure point under load. The number of degrees of freedom in a full humanoid, typically ranging from 20 to more than 40 active joints, means the control system must coordinate an enormous number of actuator states in real time. Any lag, any miscalibration, any thermal drift in a sensor signal, and the robot falls.\nFact\nWhat role does sensor fusion play at the joint level?\nThe Wiley technical brief highlights inertial measurement units, force and torque feedback, and tactile sensing as the core sensing modalities for reliable human-robot interaction and collision avoidance. Fusing these streams in real time while driving 20-plus joints is a compute and latency problem as much as a mechanical one. Actuator designers who integrate force-torque sensing directly into the joint housing are reducing the signal path length and improving fusion latency.\nHow does degrees of freedom count affect control complexity?\nHow do power and thermal constraints determine operational endurance?\nBattery chemistry selection between LFP and NCA, DC/DC converter topology choices, and thermal protection strategies directly set the ceiling on how long a humanoid can operate.\nThe Wiley Knowledge Hub technical examination goes specific on power system design in a way that most humanoid coverage ignores. The trade-off between lithium iron phosphate chemistry (LFP) and nickel cobalt aluminum chemistry (NCA) is not academic. LFP offers better thermal stability and cycle life. NCA offers higher energy density. For a humanoid carrying its own power, that chemistry decision affects both runtime and how aggressively you can push the actuator stack before the battery becomes a thermal risk. On top of chemistry, DC/DC converter topology selection shapes how efficiently power is distributed across joints under dynamic load conditions.\nFact\n:\nBattery chemistry selection between LFP and NCA, DC/DC converter topologies, and thermal protection strategies are identified as the key variables determining operational endurance in humanoid systems.\n(\n)\nWhat I notice here: The LFP versus NCA decision is a microcosm of the broader design philosophy tension in humanoids. Do you optimize for safety margins and longevity, or for energy density and peak performance? Teams building for industrial deployment are likely weighting LFP more heavily. Teams chasing demo videos are probably weighting NCA. The actuator thermal budget changes significantly depending on which path you take.\nWhy does thermal management deserve its own engineering track?\nThermal protection strategy is listed as a distinct design variable in the Wiley technical brief, separate from battery and converter decisions. This matters because actuator motors generate heat under load, and in a compact humanoid body the heat paths are constrained. An actuator that performs well at ambient temperature in a lab may throttle or fault after sustained operation in a warm warehouse. Thermal design at the joint level is not optional at production scale.\nWhat does the shift to modular architectures mean for actuator design?\nModular architecture is the industry response to production scaling pressure, pushing actuator designers to standardize interfaces, thermal profiles, and control protocols across joint families.\nThe Wiley Knowledge Hub technical brief identifies the shift toward modular architectures as a defining transition as humanoid development moves from prototype to mass production. From an actuator perspective, this is significant. Prototype hardware can be bespoke and hand-tuned. Production hardware needs to be swappable, manufacturable at volume, and consistent across units. Modular actuator design means standardized mechanical interfaces, predictable thermal envelopes, and interoperable communication protocols. It is a fundamentally different design discipline from building a one-off demo joint. The companies that solve modular actuator design early will have a structural manufacturing cost advantage.\nFact\nIntBot is betting that social intelligence and platform-neutr",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The source explicitly states the trade-off: LFP offers better thermal stability and cycle life, while NCA offers higher energy density.",
+      "assignment_id": "SG06",
+      "claim_ref": "SG06:C005"
+    },
+    {
+      "claim_id": "C006",
+      "claim": "Rigid actuator systems (e.g., harmonic drives and brushless motors) are energy-inefficient because they require continuous power input to maintain position and generate force, whereas soft actuators can reduce power draw by passively storing and releasing energy.",
+      "worker_support": "Soft actuators exploit material compliance to absorb and redirect energy, which is critical for power-constrained environments like planetary exploration.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C006-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content directly supports the energy efficiency comparison between rigid and soft actuators.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C006-E001",
+            "worker_source": {
+              "title": "New Research: Robots Push Energy Limits in Three Different Directions",
+              "publisher": "actuatorhq.com",
+              "url": "https://actuatorhq.com/blog/new-research-robotics-energy-efficiency-breakthroughs-2026",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Rigid actuator systems, like the harmonic drives and brushless motors used in most humanoid robots, require continuous power input to hold position and generate force. Soft actuators can exploit material compliance to absorb and redirect energy more naturally."
+            },
+            "retrieved_source": {
+              "title": "New Research: Robots Push Energy Limits in Three Different Directions",
+              "url": "https://actuatorhq.com/blog/new-research-robotics-energy-efficiency-breakthroughs-2026",
+              "domain": "actuatorhq.com",
+              "content": "New Research: Three Robotics Breakthroughs Redefine Energy Limits\nNew findings from Figure AI, ESA, and German researchers show robots pushing past energy and endurance limits that previously defined the field.\nMay 15, 2026\nWhat remains unknown about Figure AI's methodology\nWhat is the inchworm robot built by University of Gothenburg researchers, and why does it matter for actuator design?\nHow soft actuators change the energy equation\nDegrees of freedom and terrain navigation without rigid joints\nHow does the German EV battery recycling robot connect to the energy efficiency story in robotics?\nWhy robotic disassembly of batteries is technically difficult\nWhat did Figure AI actually achieve with its 24-hour runtime milestone?\nFigure AI's humanoid robots completed 24 consecutive hours of autonomous operation, a first for the company and a meaningful marker for industrial deployment readiness.\nAccording to Interesting Engineering, Figure AI announced that its humanoid robots have crossed the 24-hour continuous autonomous work threshold. The company described this as entering 'uncharted territory.' From a builder's perspective, that framing matters: continuous runtime is not just a performance metric, it is a reliability signal. Any machine running nonstop for a full day is accumulating thermal stress, joint wear, and software edge cases simultaneously. What the data suggests is that Figure AI is stress-testing its systems under conditions that resemble actual industrial deployment, not controlled lab runs.\nFact\n)\nFrom a builder perspective: 24 hours of uptime sounds like a headline, but the underlying question is about energy management. How many battery swaps or charge cycles does that involve? What degrades fastest under sustained load? Those are the specs that will define whether this milestone translates into real deployment.\nWhy runtime matters more than raw speed for humanoid deployment\nUniversity of Gothenburg researchers built a soft robot using artificial muscles rated to 10 MeV radiation, capable of navigating unstructured terrain without rigid actuators.\nAs reported by Interesting Engineering, a team led by researchers at the University of Gothenburg developed an inchworm-inspired soft robot designed for planetary exploration. The key engineering detail is the radiation tolerance: the artificial muscles can withstand 10 MeV radiation levels, which are relevant for Mars surface conditions. The robot uses soft actuators rather than conventional rigid motor-and-gearbox systems, which changes the energy profile significantly. Soft actuators can store and release energy passively, which reduces the power draw per movement cycle.\nFact\n)\nHere is what stands out from a Physical AI perspective: the inchworm robot is not trying to be fast or strong. It is optimized for survival in a hostile environment with minimal energy input. That design philosophy, prioritizing resilience and efficiency over performance peaks, is a useful counterpoint to the high-torque, high-speed direction most humanoid actuator development is heading.\nHow soft actuators change the energy equation\nRigid actuator systems, like the harmonic drives and brushless motors used in most humanoid robots, require continuous power input to hold position and generate force. Soft actuators can exploit material compliance to absorb and redirect energy more naturally. For planetary exploration, where power budgets are extremely tight, this is not a nice-to-have. It is a design requirement. The Gothenburg team's approach connects directly to ongoing debates in humanoid robotics about whether quasi-direct drive or series elastic systems can deliver similar passive energy benefits.\nDegrees of freedom and terrain navigation without rigid joints\nAccording to the Interesting Engineering report, the inchworm robot navigates Mars-like terrain using its soft muscle architecture across multiple degrees of freedom. Without rigid joints defining movement limits, the robot can conform to irregular surfaces in ways that traditional legged or wheeled systems cannot. The limitation is obvious: soft robots sacrifice speed and payload capacity for adaptability. For exploration tasks in unstructured environments, that trade-off may be acceptable. For warehouse logistics, it is not.\nHow does the German EV battery recycling robot connect to the energy efficiency story in robotics?\nGerman researchers are developing a robot-assisted system to recover and repurpose EV battery cells, addressing a supply chain bottleneck that directly affects robot energy storage capacity.\nAs reported by Interesting Engineering, German researchers are building a robotic system to recover usable cells from end-of-life electric vehicle batteries and prepare them for reuse. The connection to robotics energy efficiency is direct: humanoid robots depend on high-density battery cells, and the supply chain for those cells is under pressure. A system that can reliably sort, test, and repurpose EV battery cells at scale could reduce the cost and improve the availability of battery packs used in mobile robotics platforms.\nFact\nWhat pattern emerges when you look at all three research developments together?\nAll three efforts share a core constraint: energy. Runtime, radiation-tolerant actuation, and battery recovery are all responses to the same underlying limit on how long and how efficiently robots can operate.\nFrom a builder's perspective, these three stories are not coincidentally published in the same week. They reflect a field-wide reckoning with energy as the binding constraint in robotics. Figure AI is pushing runtime. The University of Gothenburg team is building actuators that survive on minimal power in hostile conditions. German engineers are working on recovering the energy storage components that make mobile robots possible. The specs tell a different story than the individual headlines: the robotics industry is not just a compute problem or a software problem. It is fund",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The source explicitly contrasts rigid systems (harmonic drives/brushless motors) requiring continuous power with soft actuators that store and release energy passively.",
+      "assignment_id": "SG06",
+      "claim_ref": "SG06:C006"
+    },
+    {
+      "claim_id": "C007",
+      "claim": "Thermal management is a primary bottleneck for humanoid actuators in production; compact body designs constrain heat paths, leading to thermal throttling or faults during sustained operation.",
+      "worker_support": "Actuators that perform well in labs may fail in warm environments due to constrained heat paths in the robot's body.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C007-E001",
+          "state": "VERIFIED",
+          "reason": "The text explicitly links compact body heat path constraints to the risk of actuators throttling or faulting during sustained operation.",
+          "audited_source_type": "industry_blog",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C007-E001",
+            "worker_source": {
+              "title": "Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs",
+              "publisher": "actuatorhq.com",
+              "url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Thermal protection strategy is listed as a distinct design variable... because actuator motors generate heat under load, and in a compact humanoid body the heat paths are constrained."
+            },
+            "retrieved_source": {
+              "title": "Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs",
+              "url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+              "domain": "actuatorhq.com",
+              "content": "From Prototype to Production: What Still Blocks Humanoid Robots?\nMotion control, thermal management, and sensing architecture remain the three hardest unsolved engineering barriers blocking humanoid robots from real-world production scale.\nMarch 20, 2026\nWhy does thermal management deserve its own engineering track?\nWhat does the shift to modular architectures mean for actuator design?\nIs social intelligence a viable alternative to solving the hard actuator problems?\nMassive funding could not shortcut unsolved hardware problems. Motion control, power, and thermal constraints kept humanoids far from practical deployment at scale.\nAccording to IEEE Spectrum, 2025 was supposed to be the year AI and humanoid robots made transformative progress toward real practicality. The money arrived. The hype was everywhere. But as IEEE Spectrum reported, it became genuinely hard to rationalize what actually happened against the scale of investment and optimism heading into the year. That gap between capital and capability points directly at hardware. Not software. Not AI. The actuator stack, the thermal budget, and the sensing architecture are where humanoid development keeps stalling. ActuatorHQ analysis: this is exactly why component-level thinking matters. A better foundation model does not fix a joint that overheats after 20 minutes of operation.\nFact\nStable bipedal locomotion demands real-time sensor fusion, complex dynamic modelling, and continuous feedback across dozens of degrees of freedom simultaneously.\nAccording to the Wiley Knowledge Hub technical examination of humanoid engineering challenges, motion control remains the single hardest unsolved problem in the field. The reasons are layered. Maintaining stable bipedal locomotion across dynamic environments requires managing modelling complexity, real-time feedback requirements, and sensor fusion demands all at once. Every joint in a humanoid leg or arm is a potential failure point under load. The number of degrees of freedom in a full humanoid, typically ranging from 20 to more than 40 active joints, means the control system must coordinate an enormous number of actuator states in real time. Any lag, any miscalibration, any thermal drift in a sensor signal, and the robot falls.\nFact\nWhat role does sensor fusion play at the joint level?\nThe Wiley technical brief highlights inertial measurement units, force and torque feedback, and tactile sensing as the core sensing modalities for reliable human-robot interaction and collision avoidance. Fusing these streams in real time while driving 20-plus joints is a compute and latency problem as much as a mechanical one. Actuator designers who integrate force-torque sensing directly into the joint housing are reducing the signal path length and improving fusion latency.\nHow does degrees of freedom count affect control complexity?\nHow do power and thermal constraints determine operational endurance?\nBattery chemistry selection between LFP and NCA, DC/DC converter topology choices, and thermal protection strategies directly set the ceiling on how long a humanoid can operate.\nThe Wiley Knowledge Hub technical examination goes specific on power system design in a way that most humanoid coverage ignores. The trade-off between lithium iron phosphate chemistry (LFP) and nickel cobalt aluminum chemistry (NCA) is not academic. LFP offers better thermal stability and cycle life. NCA offers higher energy density. For a humanoid carrying its own power, that chemistry decision affects both runtime and how aggressively you can push the actuator stack before the battery becomes a thermal risk. On top of chemistry, DC/DC converter topology selection shapes how efficiently power is distributed across joints under dynamic load conditions.\nFact\n:\nBattery chemistry selection between LFP and NCA, DC/DC converter topologies, and thermal protection strategies are identified as the key variables determining operational endurance in humanoid systems.\n(\n)\nWhat I notice here: The LFP versus NCA decision is a microcosm of the broader design philosophy tension in humanoids. Do you optimize for safety margins and longevity, or for energy density and peak performance? Teams building for industrial deployment are likely weighting LFP more heavily. Teams chasing demo videos are probably weighting NCA. The actuator thermal budget changes significantly depending on which path you take.\nWhy does thermal management deserve its own engineering track?\nThermal protection strategy is listed as a distinct design variable in the Wiley technical brief, separate from battery and converter decisions. This matters because actuator motors generate heat under load, and in a compact humanoid body the heat paths are constrained. An actuator that performs well at ambient temperature in a lab may throttle or fault after sustained operation in a warm warehouse. Thermal design at the joint level is not optional at production scale.\nWhat does the shift to modular architectures mean for actuator design?\nModular architecture is the industry response to production scaling pressure, pushing actuator designers to standardize interfaces, thermal profiles, and control protocols across joint families.\nThe Wiley Knowledge Hub technical brief identifies the shift toward modular architectures as a defining transition as humanoid development moves from prototype to mass production. From an actuator perspective, this is significant. Prototype hardware can be bespoke and hand-tuned. Production hardware needs to be swappable, manufacturable at volume, and consistent across units. Modular actuator design means standardized mechanical interfaces, predictable thermal envelopes, and interoperable communication protocols. It is a fundamentally different design discipline from building a one-off demo joint. The companies that solve modular actuator design early will have a structural manufacturing cost advantage.\nFact\nIntBot is betting that social intelligence and platform-neutr",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The source identifies thermal management as one of the three hardest barriers and explicitly mentions that compact body designs constrain heat paths, leading to throttling or faults.",
+      "assignment_id": "SG06",
+      "claim_ref": "SG06:C007"
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim_id": "C002",
+      "claim": "Diffusion-based VLA models are compute-intensive and often create a performance gap where the robot's 'brain' is too slow for its 'body,' resulting in motion jitter, stalling, and safety risks in dynamic environments.",
+      "worker_support": "Multiple sources highlight the compute intensity of diffusion VLAs and the resulting 'performance wall' leading to stuttering movements.",
+      "runtime_status": "UNSUPPORTED",
+      "verified_evidence_count": 0,
+      "verified_evidence": [],
+      "nonverified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "The source supports the compute-intensity and frequency requirements, but the specific consequences (jitter, stalling, safety risks) are absent from the retrieved text.",
+          "audited_source_type": "academic_paper",
+          "audited_tier": 2,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+              "publisher": "arxiv.org",
+              "url": "https://arxiv.org/abs/2608.04428",
+              "source_type": "peer-reviewed",
+              "tier": 1,
+              "excerpt": "diffusion-based VLA models achieve superior motion quality and generalization. However, diffusion-based VLA models are compute-intensive and must run at high control frequency, e.g., 50-200 Hz."
+            },
+            "retrieved_source": {
+              "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+              "url": "https://arxiv.org/abs/2608.04428",
+              "domain": "arxiv.org",
+              "content": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference\nSkip to main content\nTitle:\nDeltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference\nAuthors:\nYu Feng\nView a PDF of the paper titled Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference, by Zheng Liu and 11 other authors\nView PDF\nAbstract:\nVision-language-action (VLA) models have emerged as a key component in embodied AI. Among existing approaches, diffusion-based VLA models achieve superior motion quality and generalization. However, diffusion-based VLA models are compute-intensive and must run at high control frequency, e.g., 50-200 Hz. Thus, it imposes strict latency and energy constraints on edge devices.\nIn this work, we present Deltoris, an algorithm-hardware co-design framework for efficient diffusion-based VLA inference. First, we exploit the temporal similarity of consecutive inputs and propose a \\textit{temporal-aware bit-sparsity} algorithm that computes only the differences between consecutive inputs, eliminating redundant bit-level operations. To further address the extra off-chip traffic introduced by our algorithm, we propose a \\textit{speculative inference} technique, which amortizes data loading across multiple control steps. Lastly, to support these techniques, we co-design a dedicated accelerator with customized 1D systolic bit-serial PE arrays that eliminate PE workload imbalance. Our evaluation shows that Deltoris achieves up to 34.2$\\times$ speedup over mobile GPUs and 6.1$\\times$ over prior accelerators, while maintaining comparable accuracy.\nSubjects:\n[cs.AR]\nfor this version)\nhttps://doi.org/10.48550/arXiv.2608.04428\nAccess Paper:\nView a PDF of the paper titled Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference, by Zheng Liu and 11 other authors\nView PDF\nLoading...\nBibTeX formatted citation\n×\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nLinks to Code Toggle\nCatalyzeX Code Finder for Papers\n(\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\nTopic\nAbout arXivLabs\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\nLearn more about arXivLabs\n.\n,\nand all contributors.\nAbout",
+              "content_chars": 2890
+            }
+          }
+        }
+      ],
+      "auditor_verdict": "UNSUPPORTED",
+      "auditor_reason": "While the source confirms diffusion-based VLAs are compute-intensive and require high frequency (50-200 Hz), it does not mention 'motion jitter', 'stalling', 'safety risks', or the 'brain vs body' performance gap.",
+      "assignment_id": "SG06",
+      "claim_ref": "SG06:C002"
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "claim_id": "C002",
+      "evidence_id": "C002-E001",
+      "state": "INSUFFICIENT_SUPPORT",
+      "reason": "The source supports the compute-intensity and frequency requirements, but the specific consequences (jitter, stalling, safety risks) are absent from the retrieved text.",
+      "audited_source_type": "academic_paper",
+      "audited_tier": 2,
+      "source": {
+        "evidence_id": "C002-E001",
+        "worker_source": {
+          "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+          "publisher": "arxiv.org",
+          "url": "https://arxiv.org/abs/2608.04428",
+          "source_type": "peer-reviewed",
+          "tier": 1,
+          "excerpt": "diffusion-based VLA models achieve superior motion quality and generalization. However, diffusion-based VLA models are compute-intensive and must run at high control frequency, e.g., 50-200 Hz."
+        },
+        "retrieved_source": {
+          "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+          "url": "https://arxiv.org/abs/2608.04428",
+          "domain": "arxiv.org",
+          "content": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference\nSkip to main content\nTitle:\nDeltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference\nAuthors:\nYu Feng\nView a PDF of the paper titled Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference, by Zheng Liu and 11 other authors\nView PDF\nAbstract:\nVision-language-action (VLA) models have emerged as a key component in embodied AI. Among existing approaches, diffusion-based VLA models achieve superior motion quality and generalization. However, diffusion-based VLA models are compute-intensive and must run at high control frequency, e.g., 50-200 Hz. Thus, it imposes strict latency and energy constraints on edge devices.\nIn this work, we present Deltoris, an algorithm-hardware co-design framework for efficient diffusion-based VLA inference. First, we exploit the temporal similarity of consecutive inputs and propose a \\textit{temporal-aware bit-sparsity} algorithm that computes only the differences between consecutive inputs, eliminating redundant bit-level operations. To further address the extra off-chip traffic introduced by our algorithm, we propose a \\textit{speculative inference} technique, which amortizes data loading across multiple control steps. Lastly, to support these techniques, we co-design a dedicated accelerator with customized 1D systolic bit-serial PE arrays that eliminate PE workload imbalance. Our evaluation shows that Deltoris achieves up to 34.2$\\times$ speedup over mobile GPUs and 6.1$\\times$ over prior accelerators, while maintaining comparable accuracy.\nSubjects:\n[cs.AR]\nfor this version)\nhttps://doi.org/10.48550/arXiv.2608.04428\nAccess Paper:\nView a PDF of the paper titled Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference, by Zheng Liu and 11 other authors\nView PDF\nLoading...\nBibTeX formatted citation\n×\nBibliographic Tools\nBibliographic and Citation Tools\nBibliographic Explorer Toggle\nCode, Data, Media\nCode, Data and Media Associated with this Article\nalphaXiv Toggle\nLinks to Code Toggle\nCatalyzeX Code Finder for Papers\n(\nRelated Papers\nRecommenders and Search Tools\nLink to Influence Flower\nTopic\nAbout arXivLabs\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\nLearn more about arXivLabs\n.\n,\nand all contributors.\nAbout",
+          "content_chars": 2890
+        }
+      },
+      "assignment_id": "SG06"
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; corrected to Tier 2 (Peer-reviewed/Academic).",
+      "assignment_id": "SG04"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but optimusk.blog is an industry blog; corrected to Tier 4.",
+      "assignment_id": "SG04"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C003-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but optimusk.blog is an industry blog; corrected to Tier 4.",
+      "assignment_id": "SG04"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; should be Tier 2 (Peer-reviewed/Preprint).",
+      "assignment_id": "SG06"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C003-E001",
+      "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; should be Tier 2.",
+      "assignment_id": "SG06"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C004-E001",
+      "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; should be Tier 2.",
+      "assignment_id": "SG06"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C005-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but source is a company blog (actuatorhq.com); should be Tier 4 (Industry).",
+      "assignment_id": "SG06"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C006-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but source is a company blog (actuatorhq.com); should be Tier 4 (Industry).",
+      "assignment_id": "SG06"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C007-E001",
+      "message": "Worker labeled as Tier 2 (Peer-reviewed), but source is a company blog (actuatorhq.com); should be Tier 4 (Industry).",
+      "assignment_id": "SG06"
+    }
+  ],
+  "gaps": [
+    {
+      "assignment_id": "SG04",
+      "type": "WORKER_GAP",
+      "detail": "Verification of the exact number of Agility Digit robots deployed at Amazon (conflict between 75 and 10,000 units)."
+    },
+    {
+      "assignment_id": "SG04",
+      "type": "WORKER_GAP",
+      "detail": "Official confirmation from Tesla regarding the external commercial availability date for Optimus Gen 3."
+    },
+    {
+      "assignment_id": "SG05",
+      "type": "WORKER_GAP",
+      "detail": "Detailed numeric specifications (e.g., exact dimensions, load capacities, or sensor precision) for the KIRIA public testbed equipment beyond the mentioned ISO standards and general categories."
+    },
+    {
+      "assignment_id": "SG06",
+      "type": "WORKER_GAP",
+      "detail": "Specific numeric energy efficiency benchmarks (e.g., Joules per movement) for soft vs. rigid actuators were not provided."
+    },
+    {
+      "assignment_id": "SG06",
+      "type": "WORKER_GAP",
+      "detail": "Detailed hardware specifications for the 'Jetson AGX Thor' in the context of VLA acceleration were mentioned but not deeply detailed in the read sources."
+    },
+    {
+      "assignment_id": "SG06",
+      "type": "UNSUPPORTED_CLAIM",
+      "claim_id": "C002",
+      "detail": "Diffusion-based VLA models are compute-intensive and often create a performance gap where the robot's 'brain' is too slow for its 'body,' resulting in motion jitter, stalling, and safety risks in dynamic environments.",
+      "reason": "While the source confirms diffusion-based VLAs are compute-intensive and require high frequency (50-200 Hz), it does not mention 'motion jitter', 'stalling', 'safety risks', or the 'brain vs body' performance gap."
+    }
+  ],
+  "sources": [
+    {
+      "canonical_url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+      "url": "https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025",
+      "title": "Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs",
+      "domain": "actuatorhq.com",
+      "claimed_publisher": "actuatorhq.com",
+      "audited_source_type": "industry_blog",
+      "audited_tier": 4,
+      "assignments": [
+        "SG06"
+      ],
+      "claim_ids": [
+        "SG06:C005",
+        "SG06:C007"
+      ],
+      "evidence_ids": [
+        "C005-E001",
+        "C007-E001"
+      ],
+      "source_id": "SRC001"
+    },
+    {
+      "canonical_url": "https://actuatorhq.com/blog/new-research-robotics-energy-efficiency-breakthroughs-2026",
+      "url": "https://actuatorhq.com/blog/new-research-robotics-energy-efficiency-breakthroughs-2026",
+      "title": "New Research: Robots Push Energy Limits in Three Different Directions",
+      "domain": "actuatorhq.com",
+      "claimed_publisher": "actuatorhq.com",
+      "audited_source_type": "industry_blog",
+      "audited_tier": 4,
+      "assignments": [
+        "SG06"
+      ],
+      "claim_ids": [
+        "SG06:C006"
+      ],
+      "evidence_ids": [
+        "C006-E001"
+      ],
+      "source_id": "SRC002"
+    },
+    {
+      "canonical_url": "https://arxiv.org/abs/2510.07077",
+      "url": "https://arxiv.org/abs/2510.07077",
+      "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications",
+      "domain": "arxiv.org",
+      "claimed_publisher": "arXiv",
+      "audited_source_type": "academic_paper",
+      "audited_tier": 2,
+      "assignments": [
+        "SG04"
+      ],
+      "claim_ids": [
+        "SG04:C001"
+      ],
+      "evidence_ids": [
+        "C001-E001"
+      ],
+      "source_id": "SRC003"
+    },
+    {
+      "canonical_url": "https://arxiv.org/abs/2512.24673",
+      "url": "https://arxiv.org/abs/2512.24673",
+      "title": "[2512.24673] VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots",
+      "domain": "arxiv.org",
+      "claimed_publisher": "arxiv.org",
+      "audited_source_type": "academic_paper",
+      "audited_tier": 2,
+      "assignments": [
+        "SG06"
+      ],
+      "claim_ids": [
+        "SG06:C004"
+      ],
+      "evidence_ids": [
+        "C004-E001"
+      ],
+      "source_id": "SRC004"
+    },
+    {
+      "canonical_url": "https://arxiv.org/abs/2608.04428",
+      "url": "https://arxiv.org/abs/2608.04428",
+      "title": "[2608.04428] Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+      "domain": "arxiv.org",
+      "claimed_publisher": "arxiv.org",
+      "audited_source_type": "academic_paper",
+      "audited_tier": 2,
+      "assignments": [
+        "SG06"
+      ],
+      "claim_ids": [
+        "SG06:C003"
+      ],
+      "evidence_ids": [
+        "C003-E001"
+      ],
+      "source_id": "SRC005"
+    },
+    {
+      "canonical_url": "https://arxiv.org/html/2602.18397v1",
+      "url": "https://arxiv.org/html/2602.18397v1",
+      "title": "How Fast Can I Run My VLA? Demystifying VLA Inference Performance with VLA-Perf",
+      "domain": "arxiv.org",
+      "claimed_publisher": "arxiv.org",
+      "audited_source_type": "academic_paper",
+      "audited_tier": 2,
+      "assignments": [
+        "SG06"
+      ],
+      "claim_ids": [
+        "SG06:C001"
+      ],
+      "evidence_ids": [
+        "C001-E001"
+      ],
+      "source_id": "SRC006"
+    },
+    {
+      "canonical_url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+      "url": "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+      "title": "Samsung Builds AI Into Robot Design to Speed Humanoid Push - Seoul Economic Daily",
+      "domain": "en.sedaily.com",
+      "claimed_publisher": "Seoul Economic Daily",
+      "audited_source_type": "industry",
+      "audited_tier": 2,
+      "assignments": [
+        "SG05"
+      ],
+      "claim_ids": [
+        "SG05:C001",
+        "SG05:C002"
+      ],
+      "evidence_ids": [
+        "C001-E002",
+        "C002-E001"
+      ],
+      "source_id": "SRC007"
+    },
+    {
+      "canonical_url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison",
+      "url": "https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison/",
+      "title": "Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)",
+      "domain": "optimusk.blog",
+      "claimed_publisher": "optimusk.blog",
+      "audited_source_type": "industry_blog",
+      "audited_tier": 4,
+      "assignments": [
+        "SG04"
+      ],
+      "claim_ids": [
+        "SG04:C002",
+        "SG04:C003"
+      ],
+      "evidence_ids": [
+        "C002-E001",
+        "C003-E001"
+      ],
+      "source_id": "SRC008"
+    },
+    {
+      "canonical_url": "https://www.etnews.com/20260429000466",
+      "url": "https://www.etnews.com/20260429000466",
+      "title": "두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다 - 전자신문",
+      "domain": "www.etnews.com",
+      "claimed_publisher": "전자신문",
+      "audited_source_type": "industry",
+      "audited_tier": 2,
+      "assignments": [
+        "SG05"
+      ],
+      "claim_ids": [
+        "SG05:C004"
+      ],
+      "evidence_ids": [
+        "C004-E001"
+      ],
+      "source_id": "SRC009"
+    },
+    {
+      "canonical_url": "https://www.gokorea.kr/news/articleView.html?idxno=877516",
+      "url": "https://www.gokorea.kr/news/articleView.html?idxno=877516",
+      "title": "삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표 < AI < 미래공감 < 기사본문 - 공감신문",
+      "domain": "www.gokorea.kr",
+      "claimed_publisher": "공감신문",
+      "audited_source_type": "industry",
+      "audited_tier": 2,
+      "assignments": [
+        "SG05"
+      ],
+      "claim_ids": [
+        "SG05:C001"
+      ],
+      "evidence_ids": [
+        "C001-E001"
+      ],
+      "source_id": "SRC010"
+    },
+    {
+      "canonical_url": "https://zdnet.co.kr/view?no=20260107154524",
+      "url": "https://zdnet.co.kr/view/?no=20260107154524",
+      "title": "CES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화 - ZDNet korea",
+      "domain": "zdnet.co.kr",
+      "claimed_publisher": "ZDNet Korea",
+      "audited_source_type": "industry",
+      "audited_tier": 2,
+      "assignments": [
+        "SG05"
+      ],
+      "claim_ids": [
+        "SG05:C003"
+      ],
+      "evidence_ids": [
+        "C003-E001"
+      ],
+      "source_id": "SRC011"
+    }
+  ],
+  "summary": {
+    "assignment_count": 3,
+    "accepted_claim_count": 13,
+    "unsupported_claim_count": 1,
+    "rejected_evidence_count": 1,
+    "quality_flag_count": 9,
+    "gap_count": 6,
+    "unique_verified_source_count": 11
+  }
+}

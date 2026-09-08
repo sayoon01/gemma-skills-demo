@@ -1,0 +1,143 @@
+{
+  "status": "completed",
+  "stage": "B2-8B",
+  "created_at": "2026-09-08T09:33:54.764725+00:00",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/cumulative/wave-2-match/match-hotk1p09",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "contract_sha256": "434ea04d4c348749afac9e4d5a4ee6a36be445e2953a0591cfb225f0fa224049",
+  "prior_pool_path": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/evidence-pool/evidence-pool.json",
+  "new_pool_path": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/evidence-pool/evidence-pool.json",
+  "initial_validation": {
+    "ok": true,
+    "errors": [],
+    "expected_new_claim_count": 13,
+    "seen_new_claim_count": 13
+  },
+  "repair_attempts": [],
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "expected_new_claim_count": 13,
+    "seen_new_claim_count": 13
+  },
+  "comparison": {
+    "comparisons": [
+      {
+        "new_claim_ref": "SG04:C001",
+        "relation": "SAME",
+        "matched_prior_claim_refs": [
+          "SG01:C001"
+        ],
+        "is_novel": false,
+        "reason": "Both claims state the industry shift toward Vision-Language-Action (VLA) models for general-purpose capabilities."
+      },
+      {
+        "new_claim_ref": "SG04:C002",
+        "relation": "CONTRADICTS",
+        "matched_prior_claim_refs": [
+          "SG02:C001"
+        ],
+        "is_novel": true,
+        "reason": "SG02:C001 states Optimus Gen 3 is in 'limited production', whereas SG04:C002 specifies it entered 'mass production' in January 2026."
+      },
+      {
+        "new_claim_ref": "SG04:C003",
+        "relation": "NOVEL",
+        "matched_prior_claim_refs": [],
+        "is_novel": true,
+        "reason": "Introduces a specific architectural detail regarding the hands of Optimus Gen 3 not mentioned in prior claims."
+      },
+      {
+        "new_claim_ref": "SG05:C001",
+        "relation": "NOVEL",
+        "matched_prior_claim_refs": [],
+        "is_novel": true,
+        "reason": "Introduces Samsung Electronics' specific development timeline and target debut for an AI-Native humanoid."
+      },
+      {
+        "new_claim_ref": "SG05:C002",
+        "relation": "NOVEL",
+        "matched_prior_claim_refs": [],
+        "is_novel": true,
+        "reason": "Introduces Samsung's specific strategy of using its own factories as 'data factories' for training."
+      },
+      {
+        "new_claim_ref": "SG05:C003",
+        "relation": "NOVEL",
+        "matched_prior_claim_refs": [],
+        "is_novel": true,
+        "reason": "Introduces a specific product ('Scan & Go') and its capabilities from Doosan Robotics."
+      },
+      {
+        "new_claim_ref": "SG05:C004",
+        "relation": "NOVEL",
+        "matched_prior_claim_refs": [],
+        "is_novel": true,
+        "reason": "Introduces Doosan Robotics' collaboration with NVIDIA and their 2028 product target."
+      },
+      {
+        "new_claim_ref": "SG06:C001",
+        "relation": "NOVEL",
+        "matched_prior_claim_refs": [],
+        "is_novel": true,
+        "reason": "Provides specific quantitative latency targets (10-100ms) for VLA inference."
+      },
+      {
+        "new_claim_ref": "SG06:C003",
+        "relation": "NOVEL",
+        "matched_prior_claim_refs": [],
+        "is_novel": true,
+        "reason": "Introduces the specific technical mechanisms of the Deltoris framework."
+      },
+      {
+        "new_claim_ref": "SG06:C004",
+        "relation": "NOVEL",
+        "matched_prior_claim_refs": [],
+        "is_novel": true,
+        "reason": "Introduces the specific technical implementation of VLA-RAIL for inference bottlenecks."
+      },
+      {
+        "new_claim_ref": "SG06:C005",
+        "relation": "NOVEL",
+        "matched_prior_claim_refs": [],
+        "is_novel": true,
+        "reason": "Introduces a specific chemical trade-off (LFP vs NCA) for humanoid battery efficiency."
+      },
+      {
+        "new_claim_ref": "SG06:C006",
+        "relation": "NOVEL",
+        "matched_prior_claim_refs": [],
+        "is_novel": true,
+        "reason": "Provides a technical comparison between rigid and soft actuators regarding energy efficiency."
+      },
+      {
+        "new_claim_ref": "SG06:C007",
+        "relation": "NOVEL",
+        "matched_prior_claim_refs": [],
+        "is_novel": true,
+        "reason": "Identifies thermal management as a primary production bottleneck for humanoid actuators."
+      }
+    ]
+  },
+  "metrics": {
+    "prior_claim_count": 16,
+    "new_claim_count": 13,
+    "novel_claim_count": 12,
+    "novelty_ratio": 0.9230769230769231,
+    "relation_counts": {
+      "CONTRADICTS": 1,
+      "EXTENDS": 0,
+      "NOVEL": 11,
+      "SAME": 1
+    },
+    "elapsed_seconds": 124.09
+  },
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ]
+}

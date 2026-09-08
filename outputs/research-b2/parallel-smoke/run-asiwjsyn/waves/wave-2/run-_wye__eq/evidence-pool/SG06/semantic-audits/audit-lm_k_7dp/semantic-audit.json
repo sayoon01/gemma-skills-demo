@@ -1,0 +1,181 @@
+{
+  "status": "completed",
+  "stage": "B2-2D",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/evidence-pool/SG06/semantic-audits/audit-lm_k_7dp",
+  "created_at": "2026-09-08T09:26:05.454958+00:00",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ],
+  "audit_result": {
+    "claims": [
+      {
+        "claim_id": "C001",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The retrieved content explicitly mentions standard RGB camera frame rates (24-60 Hz) and the target inference frequencies (10 Hz up to and beyond 100 Hz), supporting the claim.",
+        "evidence": [
+          {
+            "evidence_id": "C001-E001",
+            "state": "VERIFIED",
+            "reason": "The text directly supports the relationship between camera frame rates and the defined VLA inference frequency targets.",
+            "audited_source_type": "academic_paper",
+            "audited_tier": 2
+          }
+        ]
+      },
+      {
+        "claim_id": "C002",
+        "verdict": "UNSUPPORTED",
+        "reason": "While the source confirms diffusion-based VLAs are compute-intensive and require high frequency (50-200 Hz), it does not mention 'motion jitter', 'stalling', 'safety risks', or the 'brain vs body' performance gap.",
+        "evidence": [
+          {
+            "evidence_id": "C002-E001",
+            "state": "INSUFFICIENT_SUPPORT",
+            "reason": "The source supports the compute-intensity and frequency requirements, but the specific consequences (jitter, stalling, safety risks) are absent from the retrieved text.",
+            "audited_source_type": "academic_paper",
+            "audited_tier": 2
+          }
+        ]
+      },
+      {
+        "claim_id": "C003",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The abstract explicitly describes the Deltoris framework's use of temporal-aware bit-sparsity, speculative inference, and customized 1D systolic bit-serial PE arrays.",
+        "evidence": [
+          {
+            "evidence_id": "C003-E001",
+            "state": "VERIFIED",
+            "reason": "The retrieved content contains all technical components of the claim including the specific algorithm names and hardware architecture.",
+            "audited_source_type": "academic_paper",
+            "audited_tier": 2
+          }
+        ]
+      },
+      {
+        "claim_id": "C004",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The abstract explicitly mentions the Trajectory Smoother (using polynomial fitting) and the Chunk Fuser to ensure position, velocity, and acceleration continuity.",
+        "evidence": [
+          {
+            "evidence_id": "C004-E001",
+            "state": "VERIFIED",
+            "reason": "The retrieved text directly supports the implementation of the Smoother and Fuser and their specific goals for continuity.",
+            "audited_source_type": "academic_paper",
+            "audited_tier": 2
+          }
+        ]
+      },
+      {
+        "claim_id": "C005",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The source explicitly states the trade-off: LFP offers better thermal stability and cycle life, while NCA offers higher energy density.",
+        "evidence": [
+          {
+            "evidence_id": "C005-E001",
+            "state": "VERIFIED",
+            "reason": "The text explicitly confirms the specific properties of LFP vs NCA chemistries in the context of humanoid power systems.",
+            "audited_source_type": "industry_blog",
+            "audited_tier": 4
+          }
+        ]
+      },
+      {
+        "claim_id": "C006",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The source explicitly contrasts rigid systems (harmonic drives/brushless motors) requiring continuous power with soft actuators that store and release energy passively.",
+        "evidence": [
+          {
+            "evidence_id": "C006-E001",
+            "state": "VERIFIED",
+            "reason": "The retrieved content directly supports the energy efficiency comparison between rigid and soft actuators.",
+            "audited_source_type": "industry_blog",
+            "audited_tier": 4
+          }
+        ]
+      },
+      {
+        "claim_id": "C007",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The source identifies thermal management as one of the three hardest barriers and explicitly mentions that compact body designs constrain heat paths, leading to throttling or faults.",
+        "evidence": [
+          {
+            "evidence_id": "C007-E001",
+            "state": "VERIFIED",
+            "reason": "The text explicitly links compact body heat path constraints to the risk of actuators throttling or faulting during sustained operation.",
+            "audited_source_type": "industry_blog",
+            "audited_tier": 4
+          }
+        ]
+      }
+    ],
+    "quality_flags": [
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C001-E001",
+        "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; should be Tier 2 (Peer-reviewed/Preprint)."
+      },
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C003-E001",
+        "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; should be Tier 2."
+      },
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C004-E001",
+        "message": "Worker labeled as Tier 1 (Primary), but arXiv is a preprint server; should be Tier 2."
+      },
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C005-E001",
+        "message": "Worker labeled as Tier 2 (Peer-reviewed), but source is a company blog (actuatorhq.com); should be Tier 4 (Industry)."
+      },
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C006-E001",
+        "message": "Worker labeled as Tier 2 (Peer-reviewed), but source is a company blog (actuatorhq.com); should be Tier 4 (Industry)."
+      },
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C007-E001",
+        "message": "Worker labeled as Tier 2 (Peer-reviewed), but source is a company blog (actuatorhq.com); should be Tier 4 (Industry)."
+      }
+    ]
+  },
+  "initial_integrity": {
+    "ok": false,
+    "errors": [
+      "잘못된 verdict: C002 / INSUFFICIENT_SUPPORT"
+    ],
+    "expected_claim_count": 7,
+    "seen_claim_count": 7,
+    "expected_evidence_count": 7,
+    "seen_evidence_count": 7
+  },
+  "repair_applied": true,
+  "repair_attempts": [
+    {
+      "attempt": 1,
+      "status": "valid",
+      "elapsed_seconds": 199.503,
+      "errors": []
+    }
+  ],
+  "integrity": {
+    "ok": true,
+    "errors": [],
+    "expected_claim_count": 7,
+    "seen_claim_count": 7,
+    "expected_evidence_count": 7,
+    "seen_evidence_count": 7
+  },
+  "metrics": {
+    "claim_count": 7,
+    "evidence_count": 7,
+    "elapsed_seconds": 177.97
+  }
+}

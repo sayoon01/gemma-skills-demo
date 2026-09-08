@@ -1,0 +1,37 @@
+{
+  "assignment_id": "SG06",
+  "worker_source": "recovery",
+  "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/recovery/SG06/run-40c9ge26",
+  "worker_metrics": {
+    "turn_count": 3,
+    "tool_call_count": 8,
+    "search_count": 3,
+    "fetch_count": 5,
+    "fetch_success_count": 5,
+    "model_response_times_seconds": [
+      30.86,
+      110.486,
+      371.554
+    ],
+    "model_total_seconds": 512.9,
+    "elapsed_seconds": 528.922
+  },
+  "deterministic_summary": {
+    "raw_claim_count": 7,
+    "accepted_claim_count": 7,
+    "unsupported_claim_count": 0,
+    "rejected_source_count": 1,
+    "successful_fetch_source_count": 5
+  },
+  "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/evidence-pool/SG06/semantic-audits/audit-lm_k_7dp",
+  "post_audit_summary": {
+    "input_claim_count": 7,
+    "accepted_claim_count": 6,
+    "unsupported_claim_count": 1,
+    "verified_evidence_count": 6,
+    "rejected_evidence_count": 1,
+    "warning_count": 0
+  },
+  "accepted_claim_count": 6,
+  "gap_count": 3
+}

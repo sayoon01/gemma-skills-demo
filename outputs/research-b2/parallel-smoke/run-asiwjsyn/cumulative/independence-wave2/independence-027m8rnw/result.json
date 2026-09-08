@@ -1,0 +1,122 @@
+{
+  "status": "completed",
+  "stage": "B2-8D",
+  "created_at": "2026-09-08T10:00:55.203702+00:00",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/cumulative/independence-wave2/independence-027m8rnw",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "contract_sha256": "a21d4b970d4250167e9778f613366a2972016ef1fc57629d471bf9cfeca3acda",
+  "cumulative_path": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/cumulative/cumulative-state-wave2.json",
+  "initial_validation": {
+    "ok": true,
+    "errors": [],
+    "expected_family_count": 3,
+    "seen_family_count": 3
+  },
+  "repair_attempts": [],
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "expected_family_count": 3,
+    "seen_family_count": 3
+  },
+  "audit": {
+    "families": [
+      {
+        "family_ref": "SG01:C001",
+        "claim_refs": [
+          "SG01:C001",
+          "SG04:C001"
+        ],
+        "pairwise": [
+          {
+            "source_a_ref": "S001",
+            "source_b_ref": "S002",
+            "relation": "INDEPENDENT",
+            "reason": "S001 is an academic review paper from arXiv; S002 is an industry engineering guide from NeuralCoreTech."
+          },
+          {
+            "source_a_ref": "S001",
+            "source_b_ref": "S003",
+            "relation": "INDEPENDENT",
+            "reason": "S001 is an academic review paper from arXiv; S003 is an industry insight article from meta-intelligence.tech."
+          },
+          {
+            "source_a_ref": "S002",
+            "source_b_ref": "S003",
+            "relation": "INDEPENDENT",
+            "reason": "S002 and S003 are produced by different industry entities (NeuralCoreTech vs meta-intelligence.tech) with distinct framing (engineering guide vs strategic insight)."
+          }
+        ],
+        "verdict": "TRIANGULATED",
+        "independent_verified_source_count": 3,
+        "reason": "The shift toward VLA models is corroborated by an academic source and two independent industry sources."
+      },
+      {
+        "family_ref": "SG02:C004",
+        "claim_refs": [
+          "SG02:C004"
+        ],
+        "pairwise": [
+          {
+            "source_a_ref": "S001",
+            "source_b_ref": "S002",
+            "relation": "INDEPENDENT",
+            "reason": "S001 is an industry analysis from AI Herald; S002 is a case-study blog/report from rabby.kr."
+          }
+        ],
+        "verdict": "TRIANGULATED",
+        "independent_verified_source_count": 2,
+        "reason": "The status of Atlas as a research platform and its pilot use in Hyundai factories is supported by two independent industry sources."
+      },
+      {
+        "family_ref": "SG05:C001",
+        "claim_refs": [
+          "SG05:C001"
+        ],
+        "pairwise": [
+          {
+            "source_a_ref": "S001",
+            "source_b_ref": "S002",
+            "relation": "INDEPENDENT",
+            "reason": "S001 is a report from Seoul Economic Daily; S002 is a report from Gonggam Shinmun (via gokorea.kr)."
+          }
+        ],
+        "verdict": "TRIANGULATED",
+        "independent_verified_source_count": 2,
+        "reason": "The target debut of Samsung's humanoid at CES 2027 is corroborated by two independent news organizations."
+      }
+    ]
+  },
+  "claim_status_updates": [
+    {
+      "claim_ref": "SG01:C001",
+      "family_ref": "SG01:C001",
+      "family_verdict": "TRIANGULATED",
+      "resolved_status": "TRIANGULATED"
+    },
+    {
+      "claim_ref": "SG02:C004",
+      "family_ref": "SG02:C004",
+      "family_verdict": "TRIANGULATED",
+      "resolved_status": "TRIANGULATED"
+    },
+    {
+      "claim_ref": "SG05:C001",
+      "family_ref": "SG05:C001",
+      "family_verdict": "TRIANGULATED",
+      "resolved_status": "TRIANGULATED"
+    }
+  ],
+  "metrics": {
+    "family_count": 3,
+    "elapsed_seconds": 109.619
+  },
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ]
+}
