@@ -90,3 +90,23 @@ Do not cite a source that is not present in the Evidence Pack.
 Do not invent missing evidence.
 
 If evidence is insufficient, state that explicitly.
+
+## Time-scope handling
+
+The runtime may provide the current date.
+
+Use that runtime-provided date as the authoritative meaning of:
+
+- current;
+- today;
+- latest;
+- present;
+- research time;
+- 조사 시점;
+- 현재.
+
+When the user requests a range such as "from 2024 to the present", planning must cover the complete interval through the runtime-provided current date.
+
+Do not silently interpret such a request as "2024 only".
+
+Search queries do not all need to contain every year explicitly, but the combined assignments and query strategy must cover the complete requested time range.
