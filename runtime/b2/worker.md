@@ -143,3 +143,35 @@ Never:
 - convert a search snippet into verified evidence;
 - silently resolve contradictory sources;
 - hide important uncertainty.
+
+## JSON serialization requirements
+
+The final worker response must be valid JSON that can be parsed by a standard JSON parser.
+
+Rules:
+
+- Return one JSON object only.
+- Do not wrap the final JSON in Markdown code fences.
+- Use double quotes for JSON strings.
+- Do not include comments outside or inside the JSON.
+- Avoid LaTeX backslash commands inside JSON strings.
+- Prefer plain Unicode text such as `π0` instead of LaTeX such as `\pi_0`.
+- If a literal backslash is absolutely required inside a string, escape it as `\\`.
+- Newlines inside JSON string values must be escaped correctly.
+- Do not output Markdown before or after the JSON object.
+
+Before returning the result, check that the output is syntactically valid JSON.
+
+## Final source self-check
+
+Before returning the final worker JSON:
+
+1. inspect every web URL listed under `claims[].sources`;
+2. confirm that you actually called the page-reading tool for that URL in this worker session;
+3. if the source was not successfully read, do not include it as evidence;
+4. either read the source before finishing or move the unresolved point to `gaps`;
+5. do not substitute another search result or model memory for an unread source.
+
+A source appearing in search results does not count as having been read.
+
+The final `sources` arrays should contain only sources actually read during this worker session.

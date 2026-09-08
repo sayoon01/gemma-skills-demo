@@ -81,6 +81,7 @@ def load_b2_contracts(
         "controller",
         "worker",
         "evidence-policy",
+        "verification",
         "replan",
         "convergence",
         "synthesis",
