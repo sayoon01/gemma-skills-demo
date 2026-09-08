@@ -100,4 +100,5 @@ B2는 조사를 Session으로 쪼개서 그 누적을 줄이는 쪽에 가깝다
 계약 쪽 규칙: [controller.md](../runtime/b2/controller.md), [worker.md](../runtime/b2/worker.md)
 
 Worker JSON 이후의 의미 검증은 별도 Session이다: [b2-semantic-auditor.md](b2-semantic-auditor.md)
+Wave claim 비교와 출처 독립성도 별도 Session이다: [b2-claim-merge.md](b2-claim-merge.md) · [b2-source-independence.md](b2-source-independence.md)
 계획만 만드는 Coordinator Session: [b2-coordinator.md](b2-coordinator.md)

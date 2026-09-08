@@ -56,6 +56,9 @@ Worker는 전체 보고서를 쓰지 않는다.
 3. 그 문장이 주장을 뒷받침하거나 반박하는지만 적는다.
 4. 이 세션에서 읽은 URL만 인용해서 최종 JSON을 낸다.
 
+요청이 한국어이면 claim, gap, 설명은 한국어로 쓴다.
+출처 제목과 URL, 고유명사는 원문을 유지한다. 기준은 [worker.md](../runtime/b2/worker.md)다.
+
 최종 JSON은 `assignment_id`, `claims`, `gaps`, `leads`만 담는다.
 검색 결과에만 나온 URL, 읽지 않은 페이지, 다른 Worker 항목은 근거로 넣지 않는다.
 사용자용 완성 보고서는 Coordinator 이후 단계의 일이다.

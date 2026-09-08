@@ -17,11 +17,11 @@ Tool Calling 및 Agent Loop가 동작하는 것을 확인하였다.
 
 2026-09-08 이후 B2는 더 이상 “예정”만은 아니다.
 독립 Coordinator, 병렬 Worker, Deterministic Gate, Semantic Auditor, Evidence Pool,
-Replanner와 schema repair를 `src/research_b2/`에 구현하고 스모크 실행까지 했다.
+Replanner, Claim Merge, Source Independence와 schema repair를 `src/research_b2/`에 구현하고 스모크 실행까지 했다.
 설명은 [README.md](../README.md)와 [docs/b2-sub-agents.md](../docs/b2-sub-agents.md)에 있다.
 
-아직 없는 것은 한 프로세스로 Wave를 잇는 실행기, 최종 보고서 합성,
-출처 독립성 확정, Resource Loader, 자동 Eval이다.
+아직 없는 것은 한 프로세스로 Wave를 잇는 실행기, 최종 보고서 합성 모듈,
+Resource Loader, 자동 Eval이다.
 아래 7.2 이후의 설계 초안은 그 당시 목표 기록이다. 구현된 동작은 B2 문서를 우선한다.
 
 ---
@@ -33,7 +33,7 @@ Replanner와 schema repair를 `src/research_b2/`에 구현하고 스모크 실�
 | 병렬 Sub-agent | 미충족 | B2 Worker 독립 세션으로 구현. overlap 로그로만 병렬을 주장한다 |
 | Multi-wave Research | 미충족 | Replanner와 `--wave`까지 구현. 한 CLI로 자동 반복은 아직 없다 |
 | Citation 원문 검증 | 부분충족 | Deterministic Gate와 Auditor가 fetch된 본문만 판정한다. 최종 합성은 없다 |
-| 2-source Triangulation | 부분충족 | Post-Audit는 `VERIFIED` 개수만 센다. 독립성은 확정하지 않는다 |
+| 2-source Triangulation | 부분충족 | Post-Audit는 `VERIFIED` 개수만 센다. 독립성은 [docs/b2-source-independence.md](../docs/b2-source-independence.md)에서 Gemma가 판정한다. 최종 합성은 없다 |
 | Web Search 안정성 | 부분충족 | 동일. Retry/fallback은 없다 |
 | Source Quality 관리 | 부분충족 | Auditor가 tier를 다시 볼 수 있으나 Skill 규칙을 Runtime에 복사하지 않는다 |
 | Runtime 성능 | 개선 필요 | 병렬 조사는 한 Wave 20~30분. timeout recovery가 시간을 더한다 |

@@ -16,13 +16,12 @@ Claude Code에 종속되지 않은 환경에서 **Gemma4 (`gemma4:31b`)** 가 �
 
 **B2 Deep Research Runtime: 단계별 구현·스모크 실행까지**  
 같은 `gemma4:31b`의 독립 Chat Session으로 Coordinator, 병렬 Worker, Evidence Gate,
-Semantic Auditor, Evidence Pool, Replanner를 돌렸다.
+Semantic Auditor, Evidence Pool, Replanner, Claim Merge, Source Independence를 돌렸다.
 한 명령으로 Wave 전체를 잇는 실행기는 아직 없다. `research_b2.py`는 설정 검증만 한다.
 
 하지 않은 것:
 
-- 최종 사용자 보고서 합성
-- 출처 독립성까지 Runtime이 확정하는 triangulation
+- 최종 사용자 보고서 합성 모듈. 출력 언어와 Evidence Pack 경계는 [synthesis.md](runtime/b2/synthesis.md)에만 있다
 - `scripts/` · `references/` · `assets/` on-demand 로더
 - 범용 Compatibility Eval
 
@@ -130,6 +129,14 @@ Gemma Replanner
 Generic Validator → schema repair
     ↓
 다음 Wave plan
+    ↓
+Wave 2 Evidence Pool
+    ↓
+Claim Merge                 (thinking OFF, 관계만 판정)
+    ↓
+Cumulative State            (측정과 누적만)
+    ↓
+Source Independence         (thinking OFF, SAME family만)
 ```
 
 | 문서 | 내용 |
@@ -141,12 +148,19 @@ Generic Validator → schema repair
 | [Semantic Auditor](docs/b2-semantic-auditor.md) | 이미 읽은 본문만 판정한다 |
 | [Evidence Pool](docs/b2-evidence-pool.md) | 새 조사 없이 고유 URL만 모은다 |
 | [Replanner](docs/b2-replanner.md) | Skill이 다음 Wave를 정하고, Validator는 schema만 본다 |
+| [Claim Merge](docs/b2-claim-merge.md) | Wave claim의 SAME / EXTENDS / CONTRADICTS / NOVEL만 비교한다 |
+| [Source Independence](docs/b2-source-independence.md) | URL 개수가 아니라 출처 provenance로 독립성을 본다 |
 | [Runtime 계약](docs/b2-runtime-contracts.md) | `runtime/b2/` 역할 구분 |
 
 계약 원문: [runtime/b2/](runtime/b2/)
 
 수렴 숫자(출처 10개, novelty 15% 등)는 public `SKILL.md`에만 있다.
 [convergence.md](runtime/b2/convergence.md)는 측정값과 종료 이유만 기록한다.
+
+요청이 한국어이면 Worker claim과 gap은 [worker.md](runtime/b2/worker.md)에 따라 한국어로 쓴다.
+최종 보고서도 다른 언어를 요청하지 않으면 [synthesis.md](runtime/b2/synthesis.md)에 따라 한국어다.
+고유명사, 모델명, URL, 출처 원문 용어는 그대로 둔다.
+이 규칙을 넣기 전에 돌린 스모크 로그는 영어 claim일 수 있다.
 
 ### 이 저장소에서 실제로 돌린 방식
 
@@ -184,6 +198,26 @@ python3 -m src.research_b2.parallel_workers \
   --max-workers 3 \
   --max-turns 6 \
   --wave 2
+
+# 6. Wave 2 Pool을 만든 뒤, 이전 Pool과 의미 비교
+python3 -m src.research_b2.cumulative_matcher \
+  --prior-pool path/to/wave-1/evidence-pool.json \
+  --new-pool path/to/wave-2/evidence-pool.json \
+  --skill deep-research \
+  --output-root path/to/cumulative/wave-2-match
+
+# 7. Matcher 판정을 누적 상태로만 접는다
+python3 -m src.research_b2.cumulative_state \
+  --prior-pool path/to/wave-1/evidence-pool.json \
+  --new-pool path/to/wave-2/evidence-pool.json \
+  --match-result path/to/match-*/result.json \
+  --output path/to/cumulative-state.json
+
+# 8. SAME family의 VERIFIED 출처 독립성
+python3 -m src.research_b2.source_independence \
+  --cumulative path/to/cumulative-state.json \
+  --skill deep-research \
+  --output-root path/to/cumulative/independence-wave2
 ```
 
 실패한 Assignment만 다시 돌리는 recovery는 배치의 `plan.json`과 `parallel-result.json`을 읽어 `run_worker()`를 한 번 더 호출한다.
@@ -237,9 +271,8 @@ xlsx 보조 스크립트와 요청 파일은 저장소에서 뺐고, 당시 증�
 B1에서 “없다”고 적었던 병렬 세션과 Wave 재계획은 B2 모듈로 구현했다.
 아래는 아직이다.
 
-- Coordinator부터 Evidence Pool, Replanner, 다음 Wave를 한 프로세스로 잇기
-- Evidence Pack으로 최종 보고서 작성
-- `VERIFIED` 개수 이상의 출처 독립성 판정
+- Coordinator부터 Independence까지 한 프로세스로 잇기
+- Evidence Pack으로 최종 보고서 작성. 계약과 한국어 출력 규칙만 있다
 - Resource Loader, Tool Registry, 자동 Compatibility Eval
 - 긴 조사에서 600초 ReadTimeout과 순차 recovery로 늘어지는 실행 시간
 
@@ -251,7 +284,7 @@ B1에서 “없다”고 적었던 병렬 세션과 Wave 재계획은 B2 모듈�
 |---|---|
 | `research_run.py` / `run.py` | B1 단일 세션 실행기 |
 | `research_b2.py` | B2 설정 검증만. Worker는 실행하지 않는다 |
-| `src/research_b2/` | B2 Coordinator, Worker, Gate, Pool, Replanner |
+| `src/research_b2/` | B2 Coordinator, Worker, Gate, Pool, Replanner, Matcher, Independence |
 | `runtime/b2/` | B2 실행 계약. 연구 방법 본문은 Skill에 둔다 |
 | `tasks/` | 요청 문서 |
 | `docs/` | B2 설명, known-issues, 증빙 |

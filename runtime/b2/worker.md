@@ -175,3 +175,14 @@ Before returning the final worker JSON:
 A source appearing in search results does not count as having been read.
 
 The final `sources` arrays should contain only sources actually read during this worker session.
+
+## Working language
+
+When the user's research request is written in Korean, write generated
+claims, gaps, explanations, and other narrative fields in Korean.
+
+Preserve source titles, proper nouns, model names, standards, technical
+identifiers, URLs, and quoted source terminology in their original language
+when appropriate.
+
+Do not translate source content in a way that changes its factual meaning.

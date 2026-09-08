@@ -29,8 +29,14 @@ Semantic Auditor Gemma4
 ├─ 새 조사 없음
 └─ 기존 Evidence → JSON 판정
 
-Runtime Gates
-└─ deterministic consistency
+Claim Matcher / Independence Auditor
+├─ thinking OFF
+├─ Tool 없음
+├─ 새 조사 없음
+└─ 이미 검증된 claim·출처의 JSON 판정
+
+Runtime Gates / Cumulative State
+└─ deterministic consistency, 측정만
 ```
 
 ---
@@ -71,6 +77,22 @@ thinking을 끈다.
 
 최종 응답은 content의 JSON이다. thinking 필드에만 답을 넣으면 실패다.
 
+integrity가 깨지면 schema repair도 thinking OFF, JSON만 받는다.
+
+---
+
+## Claim Matcher와 Independence Auditor
+
+thinking을 끈다.
+웹 도구를 주지 않는다.
+새 조사를 하지 않는다.
+
+Claim Matcher는 [claim-merge.md](../runtime/b2/claim-merge.md)에 따라 SAME / EXTENDS / CONTRADICTS / NOVEL과 `is_novel`만 고른다.
+Independence Auditor는 [source-independence.md](../runtime/b2/source-independence.md)에 따라 pair provenance만 고른다.
+
+두 호출 모두 `think=False`, `response_format=json`이다.
+설명: [b2-claim-merge.md](b2-claim-merge.md) · [b2-source-independence.md](b2-source-independence.md)
+
 ---
 
 ## Runtime Gates
@@ -89,7 +111,10 @@ Gate는 새 URL을 만들지 않고, 빈 결과를 다른 Worker 자료로 메�
 
 | 역할 | thinking | 코드 |
 |---|---|---|
-| Semantic Auditor | OFF (`think=False`, `format=json`) | `src/research_b2/auditor.py`에 연결됨 |
+| Semantic Auditor | OFF (`think=False`, `format=json`) | `src/research_b2/auditor.py`에 연결됨. invalid면 repair도 OFF |
+| Claim Matcher | OFF (`think=False`, `format=json`) | `src/research_b2/cumulative_matcher.py` |
+| Independence Auditor | OFF (`think=False`, `format=json`) | `src/research_b2/source_independence.py` |
+| Cumulative State | 해당 없음 | `src/research_b2/cumulative_state.py`. 의미 판단 없음 |
 | Coordinator | ON으로 둔다 | `client.chat()`에 `think`를 아직 넘기지 않음 |
 | Worker | ON으로 둔다 | `client.chat()`에 `think`를 아직 넘기지 않음 |
 | Runtime Gates | 해당 없음 | `evidence_gate.py`, `audit_gate.py` |

@@ -66,3 +66,37 @@ Do not include search-only sources.
 Use compact Evidence Pack content.
 
 Do not request raw worker conversation history or full raw webpages during final synthesis.
+
+## Output language
+
+The final research deliverable must be written in Korean unless the user
+explicitly requests another language.
+
+This applies to:
+
+- report title;
+- section headings;
+- executive summary;
+- main narrative;
+- findings;
+- comparisons;
+- tables;
+- limitations;
+- uncertainty statements;
+- single-source notices;
+- conflict explanations;
+- conclusions.
+
+Source titles, organization names, product names, model names, standards,
+technical terms, and direct source terminology may remain in their original
+language when translating them would reduce precision.
+
+When the underlying evidence or validated claim is written in English,
+synthesize its meaning naturally in Korean rather than copying the English
+claim verbatim.
+
+Do not alter technical meaning, numerical values, dates, units, source
+status, evidence status, or uncertainty while translating.
+
+Citations and source URLs must continue to refer to the original VERIFIED
+evidence records.

@@ -93,3 +93,4 @@ invalid면 Gemma Repair가 최대 2번 돈다.
 - `max_waves`에 닿은 것을 semantic convergence로 기록하지 않는다
 - Validator가 주제 문장을 대신 쓰지 않는다
 - Repair가 Evidence Pool 밖에 URL을 추가하지 않는다
+- Wave 2 claim이 이전 claim과 같은 사실인지는 여기서 정하지 않는다. 그건 [b2-claim-merge.md](b2-claim-merge.md)다

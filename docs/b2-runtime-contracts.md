@@ -19,7 +19,9 @@ Python은 Deep Research 절차 자체를 하드코딩하지 않고, 아래 파�
 | [verification.md](../runtime/b2/verification.md) | Worker 출력을 Evidence Pack에 넣기 전 **검증 상태**를 어떻게 붙일지 |
 | [replan.md](../runtime/b2/replan.md) | 다음 Wave의 **입력·재계획 계약** |
 | [convergence.md](../runtime/b2/convergence.md) | Skill convergence와 **resource cap**을 어떻게 기록할지 |
-| [synthesis.md](../runtime/b2/synthesis.md) | 최종 작성 시 **Evidence Pack 경계** |
+| [claim-merge.md](../runtime/b2/claim-merge.md) | Wave claim의 **의미 관계와 novelty** 출력 형식 |
+| [source-independence.md](../runtime/b2/source-independence.md) | SAME family의 **출처 독립성** 판정 계약 |
+| [synthesis.md](../runtime/b2/synthesis.md) | 최종 작성 시 **Evidence Pack 경계**와 출력 언어 |
 
 활성 Skill은 Controller가 대체하거나 무시하지 않는다.
 Controller/Worker 계약은 Skill을 실행하는 방법만 정의한다.
@@ -62,6 +64,9 @@ Controller는 활성 `SKILL.md`를 기본 연구 행동으로 삼고, 그 위에
 - 교차검증, 반대 근거, 단일본 출처·충돌은 숨기지 않는다.
 
 출력은 JSON 계약(claims / gaps / leads)만 반환한다.
+
+사용자 요청이 한국어이면 claim, gap, 설명은 한국어로 쓴다.
+출처 제목, 고유명사, 모델명, 표준명, URL, 인용 용어는 원문을 유지한다.
 
 ---
 
@@ -106,6 +111,39 @@ Wave 이후 **다음 Wave 입력 계약**이다.
 
 Runtime은 실제 종료 이유와 측정값을 남긴다. 그 의미는 활성 Skill이 해석한다.
 
+Claim Merge가 남기는 running novelty는 이 측정값이다.
+관계 이름과 `is_novel` 기준은 [claim-merge.md](../runtime/b2/claim-merge.md)에 있고, Skill 숫자를 여기로 복사하지 않는다.
+
+---
+
+## claim-merge.md
+
+최신 Wave의 검증된 claim을 이전 누적 claim과 비교하는 **의미 관계 계약**이다.
+
+- 관계는 `SAME` / `EXTENDS` / `CONTRADICTS` / `NOVEL` 중 하나
+- `is_novel`은 문장 차이가 아니라 새로운 factual finding인지
+- `matched_prior_claim_refs`는 입력에 있는 prior claim만
+- 새 조사, claim ID 생성·삭제·병합을 하지 않는다
+
+설명: [b2-claim-merge.md](b2-claim-merge.md)
+
+---
+
+## source-independence.md
+
+SAME claim family의 VERIFIED 출처가 서로 독립인지 보는 **provenance 계약**이다.
+
+- pair 관계는 `INDEPENDENT` / `DEPENDENT` / `UNKNOWN`
+- family verdict는 `TRIANGULATED` / `NOT_TRIANGULATED` / `UNKNOWN`
+- domain이나 publisher 이름만으로 독립을 단정하지 않는다
+- 공통 발표·보도자료의 별도 provenance가 없으면 `UNKNOWN`
+- `CONTRADICTS`를 supporting family로 합치지 않는다
+
+설명: [b2-source-independence.md](b2-source-independence.md)
+
+`load_b2_contracts()`의 기본 묶음에는 넣지 않는다.
+Matcher와 Independence Auditor가 자기 단계에서만 읽는다.
+
 ---
 
 ## synthesis.md
@@ -118,10 +156,15 @@ Runtime은 실제 종료 이유와 측정값을 남긴다. 그 의미는 활성 
 - triangulated / single-source / unsupported / conflicting을 구분한다
 - search-only 출처는 Sources에 넣지 않는다
 - Worker 대화 원문이나 웹페이지 원문 전체를 다시 읽지 않고, compact Evidence Pack을 쓴다
+- 다른 언어를 명시하지 않으면 최종 보고서는 한국어다
+- 고유명사와 기술 식별자, citation URL은 원문 Evidence를 가리킨다
+
+합성 모듈은 아직 없다. 이 파일은 작성 경계와 출력 언어만 정한다.
 
 ---
 
 ## 로딩
 
-`src/research_b2/contracts.py`의 `load_b2_contracts()`가 위 6개 Markdown을 읽어 문자열로 제공한다.
+`src/research_b2/contracts.py`의 `load_b2_contracts()`가 Controller부터 synthesis까지의 기본 Markdown을 읽어 문자열로 제공한다.
+`claim-merge.md`와 `source-independence.md`는 해당 단계 모듈이 직접 읽는다.
 Deep Research 절차 본문은 Skill 쪽에 남기고, 이 Loader는 계약 파일만 연다.

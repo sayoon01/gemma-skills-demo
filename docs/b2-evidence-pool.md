@@ -64,7 +64,7 @@ Runtime이 `VERIFIED` 개수를 다시 센다.
 
 - `VERIFIED` 0개 → 그 claim은 Pool에 들어가지 않는다
 - `CONTENT_MISMATCH`, `INSUFFICIENT_SUPPORT`는 채택 출처가 아니다
-- 출처 독립성과 최종 triangulation은 이 단계에서 확정하지 않는다
+- 출처 독립성과 최종 triangulation은 이 단계에서 확정하지 않는다. 그건 [b2-source-independence.md](b2-source-independence.md)다
 
 ### Validated Claims
 
@@ -118,3 +118,4 @@ Pack에 없는 URL, 출판사, 제목, 날짜, tier를 합성 단계에서 만�
 - Auditor 세 개를 동시에 돌려 서로의 본문을 섞지 않는다
 - 사용자용 최종 보고서를 쓰지 않는다
 - lead를 보고 다음 Wave assignment를 만들지 않는다. 그건 [b2-replanner.md](b2-replanner.md)다
+- Wave끼리 claim이 같은 사실인지는 여기서 정하지 않는다. 그건 [b2-claim-merge.md](b2-claim-merge.md)다
