@@ -1,0 +1,77 @@
+[
+  {
+    "assignment_id": "SG04",
+    "title": "Triangulation of Physical AI Architecture and Commercial Status",
+    "status": "failed",
+    "started_at": "2026-09-08T08:14:14.356051+00:00",
+    "finished_at": "2026-09-08T08:34:04.977527+00:00",
+    "relative_start_seconds": 0.001291,
+    "relative_end_seconds": 1190.622745,
+    "wall_seconds": 1190.621,
+    "error": "ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)",
+    "error_traceback": "Traceback (most recent call last):\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 534, in _make_request\n    response = conn.getresponse()\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connection.py\", line 571, in getresponse\n    httplib_response = super().getresponse()\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/http/client.py\", line 1450, in getresponse\n    response.begin()\n    ~~~~~~~~~~~~~~^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/http/client.py\", line 336, in begin\n    version, status, reason = self._read_status()\n                              ~~~~~~~~~~~~~~~~~^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/http/client.py\", line 297, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/socket.py\", line 725, in readinto\n    return self._sock.recv_into(b)\n           ~~~~~~~~~~~~~~~~~~~~^^^\nTimeoutError: timed out\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/adapters.py\", line 645, in send\n    resp = conn.urlopen(\n        method=request.method,\n    ...<9 lines>...\n        chunked=chunked,\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 841, in urlopen\n    retries = retries.increment(\n        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/util/retry.py\", line 490, in increment\n    raise reraise(type(error), error, _stacktrace)\n          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/util/util.py\", line 39, in reraise\n    raise value\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 787, in urlopen\n    response = self._make_request(\n        conn,\n    ...<10 lines>...\n        **response_kw,\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 536, in _make_request\n    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 367, in _raise_timeout\n    raise ReadTimeoutError(\n        self, url, f\"Read timed out. (read timeout={timeout_value})\"\n    ) from err\nurllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/keti_spark1/yune/gemma-skills-demo/src/research_b2/parallel_workers.py\", line 267, in run_one_worker\n    worker_result = run_worker(\n        assignment=\n    ...<6 lines>...\n            worker_root,\n    )\n  File \"/home/keti_spark1/yune/gemma-skills-demo/src/research_b2/worker.py\", line 491, in run_worker\n    response = client.chat(\n        messages,\n        tools=tools.schemas,\n    )\n  File \"/home/keti_spark1/yune/gemma-skills-demo/src/ollama_client.py\", line 48, in chat\n    response = requests.post(\n        f\"{self.base_url}/api/chat\",\n        json=payload,\n        timeout=(10, 600),\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/api.py\", line 115, in post\n    return request(\"post\", url, data=data, json=json, **kwargs)\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/api.py\", line 59, in request\n    return session.request(method=method, url=url, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/sessions.py\", line 592, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/sessions.py\", line 706, in send\n    r = adapter.send(request, **kwargs)\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/adapters.py\", line 691, in send\n    raise ReadTimeout(e, request=request)\nrequests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)\n",
+    "worker_run_dir": null,
+    "worker_metrics": null,
+    "worker_verification": null
+  },
+  {
+    "assignment_id": "SG05",
+    "title": "Korean Physical AI Ecosystem and Infrastructure",
+    "status": "completed",
+    "started_at": "2026-09-08T08:14:14.356271+00:00",
+    "finished_at": "2026-09-08T08:30:36.995799+00:00",
+    "relative_start_seconds": 0.001504,
+    "relative_end_seconds": 982.641024,
+    "wall_seconds": 982.64,
+    "error": null,
+    "error_traceback": null,
+    "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/parallel-smoke/run-asiwjsyn/waves/wave-2/run-_wye__eq/workers/SG05/run-b7r3dai6",
+    "worker_metrics": {
+      "turn_count": 4,
+      "tool_call_count": 13,
+      "search_count": 9,
+      "fetch_count": 4,
+      "fetch_success_count": 4,
+      "model_response_times_seconds": [
+        33.629,
+        144.613,
+        270.692,
+        511.019
+      ],
+      "model_total_seconds": 959.954,
+      "elapsed_seconds": 982.61
+    },
+    "worker_verification": {
+      "worker_web_source_count": 7,
+      "verified_web_source_count": 5,
+      "unverified_web_source_count": 2,
+      "verified_urls": [
+        "https://www.gokorea.kr/news/articleView.html?idxno=877516",
+        "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+        "https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push",
+        "https://zdnet.co.kr/view/?no=20260107154524",
+        "https://www.etnews.com/20260429000466"
+      ],
+      "unverified_urls": [
+        "https://www.kiria.org/portal/cert/portalCertEvalTest.do",
+        "https://www.kiria.org/portal/cert/portalCertEvalTest.do"
+      ],
+      "all_worker_web_sources_verified": false
+    }
+  },
+  {
+    "assignment_id": "SG06",
+    "title": "Technical Bottlenecks and Hardware Acceleration",
+    "status": "failed",
+    "started_at": "2026-09-08T08:14:14.356650+00:00",
+    "finished_at": "2026-09-08T08:35:23.796099+00:00",
+    "relative_start_seconds": 0.001888,
+    "relative_end_seconds": 1269.441318,
+    "wall_seconds": 1269.439,
+    "error": "ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)",
+    "error_traceback": "Traceback (most recent call last):\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 534, in _make_request\n    response = conn.getresponse()\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connection.py\", line 571, in getresponse\n    httplib_response = super().getresponse()\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/http/client.py\", line 1450, in getresponse\n    response.begin()\n    ~~~~~~~~~~~~~~^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/http/client.py\", line 336, in begin\n    version, status, reason = self._read_status()\n                              ~~~~~~~~~~~~~~~~~^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/http/client.py\", line 297, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/socket.py\", line 725, in readinto\n    return self._sock.recv_into(b)\n           ~~~~~~~~~~~~~~~~~~~~^^^\nTimeoutError: timed out\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/adapters.py\", line 645, in send\n    resp = conn.urlopen(\n        method=request.method,\n    ...<9 lines>...\n        chunked=chunked,\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 841, in urlopen\n    retries = retries.increment(\n        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/util/retry.py\", line 490, in increment\n    raise reraise(type(error), error, _stacktrace)\n          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/util/util.py\", line 39, in reraise\n    raise value\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 787, in urlopen\n    response = self._make_request(\n        conn,\n    ...<10 lines>...\n        **response_kw,\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 536, in _make_request\n    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/urllib3/connectionpool.py\", line 367, in _raise_timeout\n    raise ReadTimeoutError(\n        self, url, f\"Read timed out. (read timeout={timeout_value})\"\n    ) from err\nurllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/keti_spark1/yune/gemma-skills-demo/src/research_b2/parallel_workers.py\", line 267, in run_one_worker\n    worker_result = run_worker(\n        assignment=\n    ...<6 lines>...\n            worker_root,\n    )\n  File \"/home/keti_spark1/yune/gemma-skills-demo/src/research_b2/worker.py\", line 491, in run_worker\n    response = client.chat(\n        messages,\n        tools=tools.schemas,\n    )\n  File \"/home/keti_spark1/yune/gemma-skills-demo/src/ollama_client.py\", line 48, in chat\n    response = requests.post(\n        f\"{self.base_url}/api/chat\",\n        json=payload,\n        timeout=(10, 600),\n    )\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/api.py\", line 115, in post\n    return request(\"post\", url, data=data, json=json, **kwargs)\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/api.py\", line 59, in request\n    return session.request(method=method, url=url, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/sessions.py\", line 592, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/sessions.py\", line 706, in send\n    r = adapter.send(request, **kwargs)\n  File \"/home/keti_spark1/.pyenv/versions/3.14.2/lib/python3.14/site-packages/requests/adapters.py\", line 691, in send\n    raise ReadTimeout(e, request=request)\nrequests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)\n",
+    "worker_run_dir": null,
+    "worker_metrics": null,
+    "worker_verification": null
+  }
+]

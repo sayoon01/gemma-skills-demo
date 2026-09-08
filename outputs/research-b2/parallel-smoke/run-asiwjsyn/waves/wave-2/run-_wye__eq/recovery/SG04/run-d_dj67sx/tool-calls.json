@@ -1,0 +1,177 @@
+[
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Unitree humanoid robot $4000 G1 vs R1"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.757,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Unitree humanoid robot $4000 G1 vs R1",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Unitree's latest humanoid robot, the $5,900 R1 model ... - Reddit",
+            "url": "https://www.reddit.com/r/Futurology/comments/1m8wxww/unitrees_latest_humanoid_robot_the_5900_r1_model/",
+            "snippet": "Jul 25, 2025 · It should be noted that the full spec R1 costs $16,000, but the lowest spec one is $5,900. This has been primarily designed as a research, ... Why everyone is saying the Unitree G1 is only 16K? : r/robotics Starting Next Week Unitree Will Start Selling Its Cheapest ... More results from www.reddit.com",
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "Unitree R1",
+            "url": "https://www.unitree.com/R1",
+            "snippet": "The humanoid robot features a complex structure and immense power output. Users are required to maintain a sufficient safety distance from the robot at all ...",
+            "domain": "www.unitree.com"
+          },
+          {
+            "title": "Unitree R1 vs. High-End Humanoid Robots: $4K Breakthrough",
+            "url": "https://toborlife.ai/blog/unitree-r1-vs-high-end-humanoid-robots-is-the-4k-robot-the-real-disruptor-in-2026/",
+            "snippet": "May 11, 2026 · Compare Unitree's $4K humanoid robot with competitors. See how the R1 robot for research is expanding access for labs and education in 2026.",
+            "domain": "toborlife.ai"
+          },
+          {
+            "title": "Unitree R1: The Insanely Cheap Humanoid Robot! - Facebook",
+            "url": "https://www.facebook.com/thegadgetshow/videos/unitree-r1-the-insanely-cheap-humanoid-robot/808574285657111/",
+            "snippet": "Apr 17, 2026 · The Unitree R1 humanoid robot is now up for pre-order… for under £6000 It can walk, run, fall over and get back up again, and it might be ...",
+            "domain": "www.facebook.com"
+          },
+          {
+            "title": "#Unitree's R1, one of the most affordable #humanoidrobots yet ...",
+            "url": "https://www.facebook.com/DigitalTrends/posts/unitrees-r1-one-of-the-most-affordable-humanoidrobots-yet-could-soon-make-its-wa/1314263250556277/",
+            "snippet": "Apr 9, 2026 · Chinese robotics company Unitree just dropped a game-changer: the R1 humanoid robot priced at only $5,900. That's thousands cheaper than rivals ...",
+            "domain": "www.facebook.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Vision-Language-Action VLA models robotics foundation models 2024-2026"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.712,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Vision-Language-Action VLA models robotics foundation models 2024-2026",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+            "url": "https://vla-survey.github.io/",
+            "snippet": "A comprehensive review of Vision-Language-Action models for robotics, covering architectures, learning paradigms, and real-world applications.",
+            "domain": "vla-survey.github.io"
+          },
+          {
+            "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review ...",
+            "url": "https://arxiv.org/abs/2510.07077",
+            "snippet": "Amid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained significant attention. By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects ...",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "Awesome Vision-Language-Action (VLA) - GitHub",
+            "url": "https://github.com/ai4s-research/awesome-vision-language-action/blob/main/",
+            "snippet": "Vision-Language-Action (VLA) modelsmap pixels and language instructions directly to robot actions, bringing internet-scale knowledge to embodied control. This list tracks the foundation models, action representations, benchmarks, and datasets driving the field — with a focus on 2025-2026 and open releases. Found a great model or paper we ...",
+            "domain": "github.com"
+          },
+          {
+            "title": "GitHub - jinruih2/Awesome-Robot-Foundation-Models-2025-2026",
+            "url": "https://github.com/jinruih2/Awesome-Robot-Foundation-Models-2025-2026",
+            "snippet": "A curated list of 90+ robot foundation modelsreleased in 2025and 2026, organized by category. Covers Vision-Language-Action (VLA) models, world models, humanoid foundation models, locomotion, navigation, manipulation policies, and more.",
+            "domain": "github.com"
+          },
+          {
+            "title": "Foundation Models for Robotics: Vision-Language-Action (VLA)",
+            "url": "https://rohitbandaru.github.io/blog/Foundation-Models-for-Robotics-VLA/",
+            "snippet": "How vision-language-action models bring foundation models to robotics, covering RT-1, RT-2, OpenVLA, pi0, and Hi Robot.",
+            "domain": "rohitbandaru.github.io"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Tesla Optimus Gen 3 commercial deployment status 2026"
+    },
+    "ok": false,
+    "error": "DDGSException: No results found.",
+    "elapsed_seconds": 5.606,
+    "result": {
+      "ok": false,
+      "error": "DDGSException: No results found."
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Figure AI Figure 02 03 commercial installation BMW Amazon"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 4.636,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Figure AI Figure 02 03 commercial installation BMW Amazon",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Ship First, Learn Later: The Real Strategy Behind BMW ...",
+            "url": "https://www.linkedin.com/pulse/ship-first-learn-later-real-strategy-behind-bmw-amazon-thomas-binh-do-u3jjc",
+            "snippet": "May 5, 2026 · In November 2024, BMW and Figure AI announced the first commercial deployment of a humanoid robot on an active automotive production line.",
+            "domain": "www.linkedin.com"
+          },
+          {
+            "title": "Figure 03 at BMW Spartanburg: 30,000+ Vehicle Humanoid ...",
+            "url": "https://ifactoryapp.com/industries/automotive-manufacturing/figure-03-bmw-spartanburg-case-study-humanoid",
+            "snippet": "May 26, 2026 · With the BMW deployment in commissioning, Figure AI closes a $675M Series C round backed by Microsoft, OpenAI, Nvidia, Amazon, Intel Capital, ...",
+            "domain": "ifactoryapp.com"
+          },
+          {
+            "title": "Figure AI",
+            "url": "https://www.figure.ai/",
+            "snippet": "Figure 03 is a general purpose humanoid robot for every day. Get news, photos, events, and business updates.",
+            "domain": "www.figure.ai"
+          },
+          {
+            "title": "BMW Manufacturing and Figure AI have entered into a ...",
+            "url": "https://www.facebook.com/wmur9/posts/bmw-manufacturing-and-figure-ai-have-entered-into-a-commercial-agreement-to-eval/519342420593477/",
+            "snippet": "Aug 11, 2024 · After the successful deployment of Figure 02 in the body shop, Figure 03 is now handling complex production logistics. It picks up unsorted ...",
+            "domain": "www.facebook.com"
+          },
+          {
+            "title": "First humanoid robot introduced in Plant Leipzig - BMW Group",
+            "url": "https://www.bmwgroup.com/en/news/general/2026/humanoid-robot-in-leipzig.html",
+            "snippet": "In 2025 Spartanburg launched a pilot project with the technology company Figure AI, marking the first deployment worldwide of humanoid robots in a BMW facility.",
+            "domain": "www.bmwgroup.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Agility Robotics Digit commercial deployment Amazon status"
+    },
+    "ok": false,
+    "error": "DDGSException: No results found.",
+    "elapsed_seconds": 4.345,
+    "result": {
+      "ok": false,
+      "error": "DDGSException: No results found."
+    }
+  }
+]
