@@ -42,6 +42,9 @@ Replanner와 schema repair를 `src/research_b2/`에 구현하고 스모크 실�
 
 ## 7.2 Parallel Sub-agent 지원
 
+이 절부터 7.11은 B1 당시 설계 메모다. “현재” 그림은 그때의 단일 세션이다.
+구현된 형태는 [docs/b2-parallel-workers.md](../docs/b2-parallel-workers.md)를 본다.
+
 `deep-research` Skill은 하나의 Agent가 모든 조사를 순차 수행하는 방식이 아니라
 여러 Sub-agent가 독립적인 조사 범위를 병렬로 수행하는 구조를 요구한다.
 

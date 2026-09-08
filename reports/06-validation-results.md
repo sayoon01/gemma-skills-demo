@@ -142,10 +142,12 @@ Model total 622.936초 / 전체 642.762초 → 대부분 Gemma4 추론.
 
 ## 7. 미충족 / 부분충족
 
-| 항목 | 상태 | 확인 내용 |
+아래는 **B1 단일 세션** 기준이다. 병렬 Worker와 Wave 재계획은 이후 B2에서 따로 구현했다.
+
+| 항목 | B1 상태 | 확인 내용 |
 |---|---|---|
-| Parallel Sub-agent | 미충족 | 단일 Gemma4만 사용 |
-| Multi-wave Research | 미충족 | Gap 후 추가 Wave 없음 |
+| Parallel Sub-agent | 미충족 | 이 실험은 단일 Gemma4만 사용 |
+| Multi-wave Research | 미충족 | 이 실험에는 Gap 후 추가 Wave가 없음 |
 | 모든 Citation 원문 검증 | 부분충족 | Sources 6개 중 Fetch 2개 |
 | 2-source Triangulation | 부분충족 | 복수 Citation ≠ 모두 원문 확인 |
 | Web Search 안정성 | 부분충족 | ON에서 Search 1회 Tool Error |

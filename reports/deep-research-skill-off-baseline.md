@@ -245,4 +245,5 @@ Skill OFF 상태에서도 Gemma4는 연구 주제를 여러 검색 영역으로 
 - 교차검증
 - 근거 중심 보고서 구조
 
-원본 Skill에서 요구하는 병렬 sub-agent와 multi-wave convergence 기능은 후속 B2 시험에서 별도로 검증한다.
+이 기록은 B1 단일 세션 baseline이다.
+병렬 sub-agent와 multi-wave는 이후 [README.md](../README.md)의 B2 절에서 다룬다.

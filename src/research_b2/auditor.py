@@ -481,6 +481,294 @@ def validate_audit_ids(
     }
 
 
+
+def build_audit_repair_prompt(
+    *,
+    packet: dict[str, Any],
+    invalid_audit: dict[str, Any],
+    integrity: dict[str, Any],
+) -> str:
+    """Semantic judgment를 Python에서 고치지 않고 Gemma에 repair 요청한다."""
+
+    return (
+        "# Semantic Audit Output Repair\n\n"
+        "The previous semantic audit completed, but its "
+        "structured output failed runtime integrity validation.\n\n"
+        "This is a schema and consistency repair pass. "
+        "Do not perform new research. Do not add new claims, "
+        "new evidence, new URLs, or unsupported facts.\n\n"
+
+        "# Integrity Errors\n\n"
+        + json.dumps(
+            integrity.get(
+                "errors",
+                [],
+            ),
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n\n"
+
+        "# Original Audit Packet\n\n"
+        + json.dumps(
+            packet,
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n\n"
+
+        "# Invalid Audit Output\n\n"
+        + json.dumps(
+            invalid_audit,
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n\n"
+
+        "# Repair Requirements\n\n"
+        "- Preserve every expected claim_id.\n"
+        "- Preserve every expected evidence_id.\n"
+        "- Do not create or remove claims or evidence.\n"
+        "- Use only claim verdict values permitted by the "
+        "semantic verification contract in the system prompt.\n"
+        "- Use only evidence state values permitted by that contract.\n"
+        "- Do not use an evidence-state label as a claim verdict "
+        "unless the contract explicitly permits it.\n"
+        "- Keep the semantic judgment of the previous audit whenever "
+        "possible, changing only what is required for contract "
+        "consistency and integrity.\n"
+        "- Claim-level verdicts must remain consistent with their "
+        "evidence-level states according to the active verification "
+        "contract.\n"
+        "- Return the semantic audit JSON object only.\n"
+    )
+
+
+def repair_audit_output(
+    *,
+    client: OllamaClient,
+    base_messages: list[dict[str, Any]],
+    packet: dict[str, Any],
+    initial_audit: dict[str, Any],
+    initial_integrity: dict[str, Any],
+    run_dir: Path,
+    max_attempts: int = 2,
+) -> tuple[
+    dict[str, Any],
+    dict[str, Any],
+    list[dict[str, Any]],
+]:
+    """Integrity-invalid audit를 Gemma semantic repair로 복구한다."""
+
+    audit_result = initial_audit
+    integrity = initial_integrity
+
+    attempts: list[
+        dict[str, Any]
+    ] = []
+
+    for attempt in range(
+        1,
+        max_attempts + 1,
+    ):
+        if integrity["ok"]:
+            break
+
+        repair_prompt = (
+            build_audit_repair_prompt(
+                packet=packet,
+                invalid_audit=
+                    audit_result,
+                integrity=
+                    integrity,
+            )
+        )
+
+        (
+            run_dir
+            / f"repair-{attempt:02d}-prompt.md"
+        ).write_text(
+            repair_prompt + "\n",
+            encoding="utf-8",
+        )
+
+        #
+        # 기존 system message는 그대로 유지한다.
+        # 원 research 실행은 하지 않고 semantic output만 repair.
+        #
+        system_messages = [
+            message
+            for message in base_messages
+            if message.get("role")
+            == "system"
+        ]
+
+        repair_messages = (
+            system_messages
+            + [
+                {
+                    "role": "user",
+                    "content":
+                        repair_prompt,
+                }
+            ]
+        )
+
+        started = time.monotonic()
+
+        response = client.chat(
+            repair_messages,
+            think=False,
+            response_format="json",
+        )
+
+        elapsed = (
+            time.monotonic()
+            - started
+        )
+
+        save_json(
+            run_dir
+            / (
+                f"repair-{attempt:02d}"
+                "-response.json"
+            ),
+            response,
+        )
+
+        raw_text = (
+            response.get(
+                "message",
+                {},
+            ).get(
+                "content"
+            )
+            or ""
+        )
+
+        (
+            run_dir
+            / (
+                f"repair-{attempt:02d}"
+                "-raw.txt"
+            )
+        ).write_text(
+            raw_text,
+            encoding="utf-8",
+        )
+
+        if not raw_text.strip():
+            attempts.append(
+                {
+                    "attempt":
+                        attempt,
+                    "status":
+                        "empty_response",
+                    "elapsed_seconds":
+                        round(
+                            elapsed,
+                            3,
+                        ),
+                    "done_reason":
+                        response.get(
+                            "done_reason"
+                        ),
+                }
+            )
+            continue
+
+        try:
+            candidate = (
+                extract_json_object(
+                    raw_text
+                )
+            )
+
+        except Exception as exc:
+            attempts.append(
+                {
+                    "attempt":
+                        attempt,
+                    "status":
+                        "parse_error",
+                    "elapsed_seconds":
+                        round(
+                            elapsed,
+                            3,
+                        ),
+                    "error":
+                        (
+                            f"{type(exc).__name__}: "
+                            f"{exc}"
+                        ),
+                }
+            )
+            continue
+
+        candidate_integrity = (
+            validate_audit_ids(
+                packet=packet,
+                audit_result=candidate,
+            )
+        )
+
+        save_json(
+            run_dir
+            / (
+                f"repair-{attempt:02d}"
+                "-audit.json"
+            ),
+            candidate,
+        )
+
+        save_json(
+            run_dir
+            / (
+                f"repair-{attempt:02d}"
+                "-integrity.json"
+            ),
+            candidate_integrity,
+        )
+
+        attempts.append(
+            {
+                "attempt":
+                    attempt,
+                "status":
+                    (
+                        "valid"
+                        if candidate_integrity[
+                            "ok"
+                        ]
+                        else "invalid"
+                    ),
+                "elapsed_seconds":
+                    round(
+                        elapsed,
+                        3,
+                    ),
+                "errors":
+                    candidate_integrity[
+                        "errors"
+                    ],
+            }
+        )
+
+        audit_result = (
+            candidate
+        )
+
+        integrity = (
+            candidate_integrity
+        )
+
+    return (
+        audit_result,
+        integrity,
+        attempts,
+    )
+
+
 def run_audit(
     *,
     validated_result_path: Path,
@@ -663,6 +951,52 @@ def run_audit(
         )
     )
 
+    initial_integrity = dict(
+        integrity
+    )
+
+    initial_audit_result = (
+        audit_result
+    )
+
+    repair_attempts = []
+
+    if not integrity["ok"]:
+        save_json(
+            run_dir
+            / "audit-initial-invalid.json",
+            {
+                "audit_result":
+                    initial_audit_result,
+                "integrity":
+                    initial_integrity,
+            },
+        )
+
+        print()
+        print(
+            "Initial semantic audit invalid; "
+            "starting generic repair.",
+            flush=True,
+        )
+
+        (
+            audit_result,
+            integrity,
+            repair_attempts,
+        ) = repair_audit_output(
+            client=client,
+            base_messages=
+                messages,
+            packet=packet,
+            initial_audit=
+                audit_result,
+            initial_integrity=
+                integrity,
+            run_dir=run_dir,
+            max_attempts=2,
+        )
+
     result = {
         "status":
             (
@@ -688,6 +1022,14 @@ def run_audit(
             discovery_errors,
         "audit_result":
             audit_result,
+        "initial_integrity":
+            initial_integrity,
+        "repair_applied":
+            bool(
+                repair_attempts
+            ),
+        "repair_attempts":
+            repair_attempts,
         "integrity":
             integrity,
         "metrics": {
