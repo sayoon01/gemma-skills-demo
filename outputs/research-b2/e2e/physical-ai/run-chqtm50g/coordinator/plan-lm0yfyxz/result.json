@@ -1,0 +1,88 @@
+{
+  "stage": "B2-3",
+  "created_at": "2026-09-10T02:19:02.064228+00:00",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "controller_contract_sha256": "b2e97cfd78359c9b8be52bb50b0c4efcc2742c5c3e672acedf95355f8ddcf8c6",
+  "request_source": {
+    "type": "task_file",
+    "path": "/home/keti_spark1/yune/gemma-skills-demo/tasks/physical-ai-research.md"
+  },
+  "max_workers": 3,
+  "current_date": "2026-09-10",
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ],
+  "status": "completed",
+  "elapsed_seconds": 196.587,
+  "plan": {
+    "wave": 1,
+    "assignments": [
+      {
+        "assignment_id": "SG01",
+        "title": "자율작업형 피지컬 AI 기술 구성 및 발전 방향 분석",
+        "objective": "이동 플랫폼, 자율주행, 작업 수행, 온디바이스 AI를 중심으로 피지컬 AI의 기술적 구성 요소와 2024-2026년 사이의 핵심 기술 발전 트렌드(예: End-to-End 학습, VLA 모델 등)를 조사함.",
+        "queries": [
+          "autonomous physical AI robot technical architecture 2024-2026",
+          "on-device AI for robotics trends 2025 2026",
+          "Vision-Language-Action (VLA) models for robot task execution",
+          "피지컬 AI 로봇 온디바이스 AI 기술 동향"
+        ],
+        "source_priority": [
+          "Primary",
+          "Peer-reviewed",
+          "Industry"
+        ],
+        "needs_local_files": false
+      },
+      {
+        "assignment_id": "SG02",
+        "title": "국내외 주요 기업 및 대표 제품 현황 및 단계 분석",
+        "objective": "Tesla, Figure AI, Boston Dynamics, Agility Robotics 등 글로벌 기업과 국내 주요 로봇 기업의 제품을 조사하고, 각 제품의 기능 비교 및 현재 단계(연구 단계 vs 실제 판매/현장 도입 단계)를 구분하여 정리함.",
+        "queries": [
+          "Tesla Optimus vs Figure AI vs Boston Dynamics Atlas comparison 2025",
+          "commercial deployment of humanoid robots 2024-2026",
+          "South Korea autonomous physical AI robot companies and products",
+          "자율작업형 로봇 상용화 도입 사례 2024-2026"
+        ],
+        "source_priority": [
+          "Primary",
+          "Reputable news",
+          "Industry"
+        ],
+        "needs_local_files": false
+      },
+      {
+        "assignment_id": "SG03",
+        "title": "상용화 병목, 검증 요구사항 및 시험 인프라 시사점 분석",
+        "objective": "피지컬 AI 로봇의 상용화를 가로막는 기술적/제도적 병목 지점을 식별하고, 안전성 및 신뢰성 검증을 위한 요구사항과 공용 시험 인프라 구축의 필요성 및 방향성을 조사함.",
+        "queries": [
+          "physical AI robot commercialization bottlenecks 2025",
+          "robot safety standards and verification requirements ISO 2024-2026",
+          "Sim2Real gap and robot testing infrastructure requirements",
+          "자율작업 로봇 시험 검증 인프라 구축 방안"
+        ],
+        "source_priority": [
+          "Primary",
+          "Industry",
+          "Peer-reviewed"
+        ],
+        "needs_local_files": false
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "assignment_count": 3,
+    "assignment_ids": [
+      "SG01",
+      "SG02",
+      "SG03"
+    ]
+  }
+}

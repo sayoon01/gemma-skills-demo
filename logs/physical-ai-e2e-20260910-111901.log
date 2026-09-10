@@ -1,0 +1,406 @@
+nohup: 입력 무시
+========================================================================
+B2 DEEP RESEARCH E2E
+========================================================================
+Run: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g
+Task: /home/keti_spark1/yune/gemma-skills-demo/tasks/physical-ai-research.md
+Skill: deep-research
+Max workers: 3
+Max turns: 6
+Max waves: 2
+Input dir: None
+
+===== B2 Coordinator Planning =====
+Run: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/coordinator/plan-lm0yfyxz
+Model: gemma4:31b
+Skill: deep-research
+Skill SHA: e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159
+Max workers: 3
+
+Coordinator time: 196.587초
+Plan validation: True
+Assignments: 3
+
+SG01 - 자율작업형 피지컬 AI 기술 구성 및 발전 방향 분석
+ objective: 이동 플랫폼, 자율주행, 작업 수행, 온디바이스 AI를 중심으로 피지컬 AI의 기술적 구성 요소와 2024-2026년 사이의 핵심 기술 발전 트렌드(예: End-to-End 학습, VLA 모델 등)를 조사함.
+ local files: False
+
+SG02 - 국내외 주요 기업 및 대표 제품 현황 및 단계 분석
+ objective: Tesla, Figure AI, Boston Dynamics, Agility Robotics 등 글로벌 기업과 국내 주요 로봇 기업의 제품을 조사하고, 각 제품의 기능 비교 및 현재 단계(연구 단계 vs 실제 판매/현장 도입 단계)를 구분하여 정리함.
+ local files: False
+
+SG03 - 상용화 병목, 검증 요구사항 및 시험 인프라 시사점 분석
+ objective: 피지컬 AI 로봇의 상용화를 가로막는 기술적/제도적 병목 지점을 식별하고, 안전성 및 신뢰성 검증을 위한 요구사항과 공용 시험 인프라 구축의 필요성 및 방향성을 조사함.
+ local files: False
+
+Plan: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/coordinator/plan-lm0yfyxz/plan.json
+
+========================================================================
+B2 WAVE 1
+========================================================================
+
+===== B2 Parallel Workers =====
+Run: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od
+Wave: 1
+Workers: 3
+Max parallel: 3
+Current date: 2026-09-10
+
+[SG01] START 2026-09-10T02:22:18.654408+00:00
+[SG02] START 2026-09-10T02:22:18.654729+00:00
+[SG03] START 2026-09-10T02:22:18.655103+00:00
+===== B2 Independent Worker =====
+Run: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/workers/SG02/run-zhvt_ahi
+Model: gemma4:31b
+Skill: deep-research
+Skill SHA: e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159
+Assignment: # Runtime Context
+
+- Current date: 2026-09-10
+
+# Controller Assignment
+
+{
+  "assignment_id": "SG02",
+  "title": "국내외 주요 기업 및 대표 제품 현황 및 단계 분석",
+  "objective": "Tesla, Figure AI, Boston Dynamics, Agility Robotics 등 글로벌 기업과 국내 주요 로봇 기업의 제품을 조사하고, 각 제품의 기능 비교 및 현재 단계(연구 단계 vs 실제 판매/현장 도입 단계)를 구분하여 정리함.",
+  "queries": [
+    "Tesla Optimus vs Figure AI vs Boston Dynamics Atlas comparison 2025",
+    "commercial deployment of humanoid robots 2024-2026",
+    "South Korea autonomous physical AI robot companies and products",
+    "자율작업형 로봇 상용화 도입 사례 2024-2026"
+  ],
+  "source_priority": [
+    "Primary",
+    "Reputable news",
+    "Industry"
+  ],
+  "needs_local_files": false
+}
+
+[1/6] Worker 모델 응답 대기
+===== B2 Independent Worker =====
+Run: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/workers/SG03/run-_82if1_3
+Model: gemma4:31b
+Skill: deep-research
+Skill SHA: e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159
+Assignment: # Runtime Context
+
+- Current date: 2026-09-10
+
+# Controller Assignment
+
+{
+  "assignment_id": "SG03",
+  "title": "상용화 병목, 검증 요구사항 및 시험 인프라 시사점 분석",
+  "objective": "피지컬 AI 로봇의 상용화를 가로막는 기술적/제도적 병목 지점을 식별하고, 안전성 및 신뢰성 검증을 위한 요구사항과 공용 시험 인프라 구축의 필요성 및 방향성을 조사함.",
+  "queries": [
+    "physical AI robot commercialization bottlenecks 2025",
+    "robot safety standards and verification requirements ISO 2024-2026",
+    "Sim2Real gap and robot testing infrastructure requirements",
+    "자율작업 로봇 시험 검증 인프라 구축 방안"
+  ],
+  "source_priority": [
+    "Primary",
+    "Industry",
+    "Peer-reviewed"
+  ],
+  "needs_local_files": false
+}
+
+[1/6] Worker 모델 응답 대기
+===== B2 Independent Worker =====
+Run: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/workers/SG01/run-evuvwg32
+Model: gemma4:31b
+Skill: deep-research
+Skill SHA: e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159
+Assignment: # Runtime Context
+
+- Current date: 2026-09-10
+
+# Controller Assignment
+
+{
+  "assignment_id": "SG01",
+  "title": "자율작업형 피지컬 AI 기술 구성 및 발전 방향 분석",
+  "objective": "이동 플랫폼, 자율주행, 작업 수행, 온디바이스 AI를 중심으로 피지컬 AI의 기술적 구성 요소와 2024-2026년 사이의 핵심 기술 발전 트렌드(예: End-to-End 학습, VLA 모델 등)를 조사함.",
+  "queries": [
+    "autonomous physical AI robot technical architecture 2024-2026",
+    "on-device AI for robotics trends 2025 2026",
+    "Vision-Language-Action (VLA) models for robot task execution",
+    "피지컬 AI 로봇 온디바이스 AI 기술 동향"
+  ],
+  "source_priority": [
+    "Primary",
+    "Peer-reviewed",
+    "Industry"
+  ],
+  "needs_local_files": false
+}
+
+[1/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 37.258초
+Tool 실행: web_search / {'query': 'physical AI robot commercialization bottlenecks 2025 2026'}
+Tool 실행: web_search / {'query': 'robot safety standards verification requirements ISO 2024 2025 2026'}
+Tool 실행: web_search / {'query': 'Sim2Real gap robot testing infrastructure requirements'}
+Tool 실행: web_search / {'query': '자율작업 로봇 시험 검증 인프라 구축 방안'}
+
+[2/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 86.106초
+Tool 실행: web_search / {'query': 'Tesla Optimus Figure AI Boston Dynamics Atlas Agility Robotics Digit comparison 2024 2025 2026'}
+Tool 실행: web_search / {'query': 'Tesla Optimus deployment status 2025'}
+Tool 실행: web_search / {'query': 'Figure AI Figure 02 commercial deployment BMW'}
+Tool 실행: web_search / {'query': 'Boston Dynamics Atlas electric commercialization timeline'}
+Tool 실행: web_search / {'query': 'Agility Robotics Digit commercial deployment Amazon GXO'}
+Tool 실행: web_search / {'query': '국내 자율작업형 로봇 기업 제품 현황 레인보우로보틱스 현대로보틱스'}
+
+[2/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 182.509초
+Tool 실행: web_search / {'query': 'autonomous physical AI robot technical architecture 2024-2026 trends'}
+Tool 실행: web_search / {'query': 'Vision-Language-Action (VLA) models for robot task execution 2024-2026'}
+Tool 실행: web_search / {'query': 'on-device AI for robotics trends 2025 2026 hardware software'}
+Tool 실행: web_search / {'query': 'End-to-End learning for robot control trends 2024-2026'}
+
+[2/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 244.150초
+Tool 실행: fetch_page / {'focus': 'commercialization bottlenecks of physical AI and robotics in 2025-2026', 'url': 'https://www.bvp.com/atlas/bessemer-predicts-robotics-and-physical-ai'}
+Tool 실행: fetch_page / {'focus': 'ISO 25785-1 humanoid robot safety standards 2026 requirements', 'url': 'https://theresarobotforthat.com/blog/humanoid-robot-safety-standards-2026/'}
+Tool 실행: fetch_page / {'focus': 'ISO 10218-1:2025 and ISO 10218-2:2025 safety requirements', 'url': 'https://www.evsint.com/industrial-robot-safety-standards-iso-10218-ce-marking-2026/'}
+Tool 실행: fetch_page / {'focus': '국가로봇테스트필드사업 인프라 구성 및 방향성', 'url': 'https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202300003701'}
+Tool 실행: fetch_page / {'focus': '첨단로봇 실증지원센터 검증 체계 및 인프라', 'url': 'https://kiria.org/rp/kiria/intro/inr1/page.dn'}
+
+[3/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 274.346초
+Tool 실행: fetch_page / {'focus': 'Figure 02 capabilities, tasks at BMW, and deployment stage', 'url': 'https://www.figure.ai/news/production-at-bmw'}
+Tool 실행: fetch_page / {'focus': 'Tesla Optimus current capabilities, internal deployment tasks, and commercial timeline', 'url': 'https://optimusk.blog/blog/tesla-optimus-factory-deployment/'}
+Tool 실행: fetch_page / {'focus': 'Electric Atlas commercial shipping, customers, and capabilities', 'url': 'https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units'}
+Tool 실행: fetch_page / {'focus': 'Digit capabilities, GXO deployment tasks, and commercial status', 'url': 'https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement'}
+Tool 실행: web_search / {'query': '삼성전자 휴머노이드 로봇 개발 현황 2025 2026'}
+Tool 실행: web_search / {'query': '레인보우로보틱스 휴머노이드 로봇 상용화 단계 기능'}
+Tool 실행: web_search / {'query': '현대로보틱스 휴머노이드 로봇 제품 현황'}
+
+[3/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 272.506초
+Tool 실행: fetch_page / {'focus': 'Physical AI architectural trend in 2026, mapping from pixels/language to motor commands, E2E learning.', 'url': 'https://www.roboticscenter.ai/blog/physical-ai-2026'}
+Tool 실행: fetch_page / {'focus': 'VLA submissions at ICLR 2024 vs 2026, foundational architecture of Physical AI.', 'url': 'https://roboticsbiz.com/physical-ai-in-2026-what-it-actually-means-for-industry/'}
+Tool 실행: fetch_page / {'focus': 'Technical components of OpenVLA: visual encoder (SigLIP, DinoV2), projector, Llama 2 7B backbone, tokenized output actions.', 'url': 'https://openvla.github.io/'}
+Tool 실행: fetch_page / {'focus': 'SOTA VLA models: Nvidia Groot N1, FigureAI Helix, $\\pi_0$ (Pi-Zero) by Physical Intelligence. Dual level expert systems vs generalist policies.', 'url': 'https://learnopencv.com/vision-language-action-models-lerobot-policy/'}
+Tool 실행: fetch_page / {'focus': 'Convergence of humanoid and automotive technologies, AI SoCs for ADAS used in humanoid robotics.', 'url': 'https://www.edge-ai-vision.com/2026/02/ces-2026-physical-ai-moves-from-concept-to-system-architecture/'}
+
+[3/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 261.441초
+Tool 실행: web_search / {'query': 'physical AI robot reliability verification requirements MTBF success rate'}
+Tool 실행: web_search / {'query': 'robotics commercialization institutional bottlenecks laws insurance certification costs'}
+Tool 실행: web_search / {'query': '공용 로봇 시험 인프라 구축 방향 중소기업 지원'}
+
+[4/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 519.498초
+Worker 최종 응답 수신
+
+===== Worker Result =====
+Turns: 3
+Tool calls: 13
+Search: 9
+Fetch: 4
+Fetch success: 4
+Worker web sources: 6
+Verified web sources: 4
+Unverified web sources: 2
+Result: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/workers/SG02/run-zhvt_ahi/result.json
+[SG02] END 2026-09-10T02:37:25.968744+00:00 / completed / 907.314초
+Worker 모델 응답 시간: 546.107초
+Tool 실행: web_search / {'query': 'end-to-end autonomous navigation vs SLAM trends 2025 2026'}
+Tool 실행: web_search / {'query': 'on-device VLA model optimization quantization pruning robotics 2026'}
+
+[4/6] Worker 모델 응답 대기
+[SG03] END 2026-09-10T02:42:07.596601+00:00 / failed / 1188.941초
+Worker 모델 응답 시간: 497.200초
+Worker 최종 응답 수신
+
+===== Worker Result =====
+Turns: 4
+Tool calls: 11
+Search: 6
+Fetch: 5
+Fetch success: 4
+Worker web sources: 7
+Verified web sources: 5
+Unverified web sources: 2
+Result: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/workers/SG01/run-evuvwg32/result.json
+[SG01] END 2026-09-10T02:47:33.949705+00:00 / completed / 1515.295초
+
+===== Parallel Summary =====
+Status: completed_with_errors
+Batch wall: 1515.298초
+Worker wall sum: 3611.55
+Worker model sum: 2378.273
+Max concurrent sessions: 3
+All started before first finished: True
+Session overlap observed: True
+
+Pairwise overlap:
+- SG01 / SG02 : 907.314 sec
+- SG01 / SG03 : 1188.941 sec
+- SG02 / SG03 : 907.314 sec
+
+Result: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/parallel-result.json
+===== Recovery Worker =====
+Wave: 1
+Assignment: SG03
+Original error: ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)
+===== B2 Independent Worker =====
+Run: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/recovery/SG03/run-4veoxq3a
+Model: gemma4:31b
+Skill: deep-research
+Skill SHA: e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159
+Assignment: # Runtime Context
+
+- Current date: 2026-09-10
+
+# Controller Assignment
+
+{
+  "assignment_id": "SG03",
+  "title": "상용화 병목, 검증 요구사항 및 시험 인프라 시사점 분석",
+  "objective": "피지컬 AI 로봇의 상용화를 가로막는 기술적/제도적 병목 지점을 식별하고, 안전성 및 신뢰성 검증을 위한 요구사항과 공용 시험 인프라 구축의 필요성 및 방향성을 조사함.",
+  "queries": [
+    "physical AI robot commercialization bottlenecks 2025",
+    "robot safety standards and verification requirements ISO 2024-2026",
+    "Sim2Real gap and robot testing infrastructure requirements",
+    "자율작업 로봇 시험 검증 인프라 구축 방안"
+  ],
+  "source_priority": [
+    "Primary",
+    "Industry",
+    "Peer-reviewed"
+  ],
+  "needs_local_files": false
+}
+
+[1/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 37.308초
+Tool 실행: web_search / {'query': 'physical AI robot commercialization bottlenecks 2025 2026'}
+Tool 실행: web_search / {'query': 'robot safety standards verification requirements ISO 2024 2025 2026'}
+Tool 실행: web_search / {'query': 'Sim2Real gap robot testing infrastructure requirements'}
+Tool 실행: web_search / {'query': '자율작업 로봇 시험 검증 인프라 구축 방안'}
+
+[2/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 84.369초
+Tool 실행: fetch_page / {'focus': 'three unsolved technical bottlenecks for humanoid robot commercialization', 'url': 'https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28'}
+Tool 실행: web_search / {'query': 'ISO robot safety standards 2024 2025 2026 humanoid autonomous robots'}
+Tool 실행: web_search / {'query': 'robotics testbed infrastructure Korea government MOTIE'}
+Tool 실행: web_search / {'query': '"Sim2Real gap" infrastructure requirements for robot verification'}
+
+[3/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 90.548초
+Tool 실행: fetch_page / {'focus': 'three unsolved technical bottlenecks for humanoid robot commercialization', 'url': 'https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28'}
+Tool 실행: web_search / {'query': 'ISO/CD 25785-1 humanoid robot safety standards details'}
+Tool 실행: web_search / {'query': '"national robot test field" Daegu MOTIE infrastructure details'}
+
+[4/6] Worker 모델 응답 대기
+Worker 모델 응답 시간: 332.219초
+Worker 최종 응답 수신
+
+===== Worker Result =====
+Turns: 4
+Tool calls: 11
+Search: 9
+Fetch: 2
+Fetch success: 2
+Worker web sources: 8
+Verified web sources: 2
+Unverified web sources: 6
+Result: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/recovery/SG03/run-4veoxq3a/result.json
+Recovery status: completed
+
+===== Recovery Summary =====
+Recovery targets: 1
+Completed: 1
+Failed: 0
+Result: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/recovery/recovery-index.json
+===== B2 Evidence Pool =====
+Batch: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od
+Assignments: 3
+
+================================
+VALIDATE: SG01 / parallel
+================================
+deterministic accepted: 5
+deterministic unsupported: 1
+===== B2 Semantic Evidence Auditor =====
+Run: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/SG01/semantic-audits/audit-h9kxk0k8
+Model: gemma4:31b
+Skill: deep-research
+Claims to audit: 5
+Evidence to audit: 5
+
+Auditor time: 165.897초
+Integrity: True
+Result: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/SG01/semantic-audits/audit-h9kxk0k8/semantic-audit.json
+post-audit accepted: 5
+gaps: 2
+
+================================
+VALIDATE: SG02 / parallel
+================================
+deterministic accepted: 4
+deterministic unsupported: 2
+===== B2 Semantic Evidence Auditor =====
+Run: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/SG02/semantic-audits/audit-_7a6b4x8
+Model: gemma4:31b
+Skill: deep-research
+Claims to audit: 4
+Evidence to audit: 4
+
+Initial semantic audit invalid; starting generic repair.
+
+Auditor time: 121.821초
+Integrity: True
+Result: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/SG02/semantic-audits/audit-_7a6b4x8/semantic-audit.json
+post-audit accepted: 3
+gaps: 3
+
+================================
+VALIDATE: SG03 / recovery
+================================
+deterministic accepted: 2
+deterministic unsupported: 3
+===== B2 Semantic Evidence Auditor =====
+Run: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/SG03/semantic-audits/audit-b7t_hnct
+Model: gemma4:31b
+Skill: deep-research
+Claims to audit: 2
+Evidence to audit: 2
+
+Auditor time: 75.577초
+Integrity: True
+Result: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/SG03/semantic-audits/audit-b7t_hnct/semantic-audit.json
+post-audit accepted: 2
+gaps: 2
+
+===== Evidence Pool Summary =====
+{
+  "assignment_count": 3,
+  "accepted_claim_count": 10,
+  "unsupported_claim_count": 1,
+  "rejected_evidence_count": 1,
+  "quality_flag_count": 8,
+  "gap_count": 7,
+  "unique_verified_source_count": 8,
+  "unique_verified_web_source_count": 8,
+  "unique_verified_file_source_count": 0
+}
+
+Result: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/evidence-pool.json
+===== B2 Replanner =====
+Run: /home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/replanning/replan-0o64j3t2
+Model: gemma4:31b
+Skill: deep-research
+Current wave: 1
+Distinct sources read: 9
+Verified sources: 8
+Single-source claims: 10
+Unresolved gaps: 7
+
+===== B2 E2E FAILED =====
+JSONDecodeError: Expecting ',' delimiter: line 43 column 6 (char 2178)

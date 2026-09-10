@@ -1,0 +1,78 @@
+{
+  "model": "gemma4:31b",
+  "created_at": "2026-09-10T02:30:05.122656034Z",
+  "message": {
+    "role": "assistant",
+    "content": "",
+    "thinking": "The search results provide a good starting point. I have information on:\nThe shift from modular (perception-planning-control) to End-to-End (E2E) models.\nVLA models (RT-2, OpenVLA, $\\pi_0$, Nvidia Groot N1, FigureAI Helix).\nThe trend of using automotive compute stacks (AI SoCs) for humanoid robots.\nThe rise of foundation models for spatial awareness and physical action.\nOpen-source libraries like LeRobot.\n\nI need to dig deeper into:\n*   *On-device AI:* I have some general market data, but I need more specific technical trends (e.g., specific NPU architectures, latency targets, or software frameworks for on-device VLA).\n*   *Mobile Platforms & Autonomous Driving:* The prompt specifically mentions \"이동 플랫폼\" (mobile platforms) and \"자율주행\" (autonomous driving). I have some mentions of automotive compute stacks, but I need more on how these integrate with the \"Physical AI\" framework (e.g., SLAM vs. E2E navigation).\n*   *Technical Architecture:* I want to find a more detailed breakdown of the \"Physical AI\" stack (Sensing -> VLA/E2E -> Actuation).\n\nPlan:\n1.  Read the `roboticscenter.ai` and `roboticsbiz.com` articles to understand the 2026 architectural trend.\n2.  Read the `openvla.github.io` and `learnopencv.com` pages to get technical details on VLA models.\n3.  Search specifically for \"on-device AI robotics hardware trends 2025 2026\" and \"E2E autonomous navigation vs SLAM 2026\".\n4.  Look for \"Physical AI\" technical whitepapers or industry reports that define the \"Technical Configuration\" (기술 구성).\n\nLet's start by reading the most promising sources.",
+    "tool_calls": [
+      {
+        "id": "call_fxglp27n",
+        "function": {
+          "index": 0,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "Physical AI architectural trend in 2026, mapping from pixels/language to motor commands, E2E learning.",
+            "url": "https://www.roboticscenter.ai/blog/physical-ai-2026"
+          }
+        }
+      },
+      {
+        "id": "call_gshr1rm9",
+        "function": {
+          "index": 1,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "VLA submissions at ICLR 2024 vs 2026, foundational architecture of Physical AI.",
+            "url": "https://roboticsbiz.com/physical-ai-in-2026-what-it-actually-means-for-industry/"
+          }
+        }
+      },
+      {
+        "id": "call_xzzlg82r",
+        "function": {
+          "index": 2,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "Technical components of OpenVLA: visual encoder (SigLIP, DinoV2), projector, Llama 2 7B backbone, tokenized output actions.",
+            "url": "https://openvla.github.io/"
+          }
+        }
+      },
+      {
+        "id": "call_1h08i9ma",
+        "function": {
+          "index": 3,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "SOTA VLA models: Nvidia Groot N1, FigureAI Helix, $\\pi_0$ (Pi-Zero) by Physical Intelligence. Dual level expert systems vs generalist policies.",
+            "url": "https://learnopencv.com/vision-language-action-models-lerobot-policy/"
+          }
+        }
+      },
+      {
+        "id": "call_rj6bbtuc",
+        "function": {
+          "index": 4,
+          "name": "fetch_page",
+          "arguments": {
+            "focus": "Convergence of humanoid and automotive technologies, AI SoCs for ADAS used in humanoid robotics.",
+            "url": "https://www.edge-ai-vision.com/2026/02/ces-2026-physical-ai-moves-from-concept-to-system-architecture/"
+          }
+        }
+      }
+    ]
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 272501776942,
+  "load_duration": 302886243,
+  "prompt_eval_count": 5849,
+  "prompt_eval_duration": 8797525129,
+  "eval_count": 776,
+  "eval_duration": 80609032308,
+  "_runtime": {
+    "turn": 2,
+    "model_elapsed_seconds": 272.506
+  }
+}

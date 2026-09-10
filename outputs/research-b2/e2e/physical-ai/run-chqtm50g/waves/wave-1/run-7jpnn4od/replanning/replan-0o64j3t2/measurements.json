@@ -1,0 +1,31 @@
+{
+  "wave_count": 1,
+  "max_waves": 2,
+  "resource_cap_reached": false,
+  "distinct_sources_read": 9,
+  "distinct_source_urls": [
+    "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units",
+    "https://learnopencv.com/vision-language-action-models-lerobot-policy",
+    "https://openvla.github.io/",
+    "https://optimusk.blog/blog/tesla-optimus-factory-deployment",
+    "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement",
+    "https://www.edge-ai-vision.com/2026/02/ces-2026-physical-ai-moves-from-concept-to-system-architecture",
+    "https://www.figure.ai/news/production-at-bmw",
+    "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+    "https://www.roboticscenter.ai/blog/physical-ai-2026"
+  ],
+  "unique_verified_sources": 8,
+  "running_claim_count": 10,
+  "single_source_claim_count": 10,
+  "pending_independence_claim_count": 0,
+  "unsupported_claim_count": 1,
+  "conflicting_claim_count": 0,
+  "unresolved_gap_count": 7,
+  "novel_claim_counts": [
+    10
+  ],
+  "novelty_ratios": [
+    1.0
+  ],
+  "novelty_measurement_note": "Wave 1 begins with an empty prior validated claim set, so all accepted claims are measured as novel. Future-wave semantic novelty requires comparison against the running claim set."
+}

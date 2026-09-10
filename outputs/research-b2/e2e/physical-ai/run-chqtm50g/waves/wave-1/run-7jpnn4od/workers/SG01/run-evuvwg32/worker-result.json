@@ -1,0 +1,118 @@
+{
+  "assignment_id": "SG01",
+  "claims": [
+    {
+      "claim": "2026년 피지컬 AI의 지배적인 기술 아키텍처는 인지, 추론, 행동 계층을 하나의 엔드투엔드(End-to-End, E2E) 신경망으로 통합한 VLA(Vision-Language-Action) 모델이다.",
+      "support": "기존의 모듈형 파이프라인(인지-계획-제어) 대신 카메라 픽셀과 언어 지시사항을 직접 모터 명령으로 매핑하는 단일 모델을 학습시키는 추세이다.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Physical AI in 2026: Foundation Models for Robot Learning and Real-World Deployment",
+          "publisher": "Robotics Center Blog",
+          "url": "https://www.roboticscenter.ai/blog/physical-ai-2026",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "This is the dominant architectural trend in 2026: rather than hand-engineering the interfaces between perception, reasoning, and action, you train a single model that maps directly from camera pixels and language instructions to motor commands."
+        }
+      ]
+    },
+    {
+      "claim": "VLA 모델의 기술적 구성은 일반적으로 시각 인코더, 프로젝터, 그리고 LLM 백본으로 이루어지며, 최종적으로 토큰화된 행동(Action)을 출력한다.",
+      "support": "OpenVLA의 경우 SigLIP 및 DinoV2 백본의 융합 시각 인코더, LLM 입력 공간으로 매핑하는 프로젝터, 그리고 행동 토큰을 예측하는 Llama 2 7B 언어 모델 백본으로 구성된다.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+          "publisher": "OpenVLA",
+          "url": "https://openvla.github.io/",
+          "source_type": "official",
+          "tier": 1,
+          "excerpt": "Our model consists of three key elements: (1) a fused visual encoder, consisting of a SigLIP and a DinoV2 backbone... (2) a projector... and (3) a Llama 2 7B language model backbone that predicts tokenized output actions."
+        }
+      ]
+    },
+    {
+      "claim": "최신 VLA 모델들은 고수준 계획(System-2)과 저수준 고주파수 실행(System-1)을 분리한 듀얼 시스템 아키텍처를 채택하고 있다.",
+      "support": "Nvidia의 GR00T N1과 FigureAI의 Helix 모델은 고수준 계획을 담당하는 시스템과 저수준의 정밀한 모터 제어를 담당하는 시스템을 결합하여 인간의 '빠르고 느린 생각' 이론을 모방한다.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Vision Language Action Models (VLA) & Policies for Robots",
+          "publisher": "LearnOpenCV",
+          "url": "https://learnopencv.com/vision-language-action-models-lerobot-policy/",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "SOTA Vision Language Action Models (VLA’s ) employ either a dual level expert systems, combining a VLM and a diffusion decoders notably Nvidia Groot N1 and FigureAI’s Helix... Together these systems mimic the dual process theory by Daniel Kahneman combining high level planner with low-level rapid execution."
+        }
+      ]
+    },
+    {
+      "claim": "피지컬 AI의 온디바이스 구현을 위해 자동차 산업의 AI SoC(System on Chip) 기술 스택이 휴머노이드 로봇으로 전이되고 있다.",
+      "support": "Texas Instruments의 TDA5 SoC, Tesla의 FSD, Xpeng의 Turing AI 칩과 같이 ADAS 및 자율주행을 위해 설계된 안전 인증 AI SoC가 휴머노이드의 실시간 인지 및 제어 요구사항을 충족하는 데 사용된다.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "CES 2026: Physical AI moves from concept to system architecture",
+          "publisher": "Edge AI and Vision Alliance",
+          "url": "https://www.edge-ai-vision.com/2026/02/ces-2026-physical-ai-moves-from-concept-to-system-architecture/",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "Humanoid robotics is increasingly inheriting the automotive compute stack, benefiting from years of investment into safety-certified AI SoCs originally designed for ADAS and autonomy. Texas Instruments’ latest TDA5 SoC family, like Tesla’s FSD and Xpeng’s Turing AI chips... was also well suited to humanoids."
+        }
+      ]
+    },
+    {
+      "claim": "온디바이스 VLA 모델의 배포를 위해 4비트 양자화(Quantization) 및 토큰 프루닝(Pruning)과 같은 최적화 기술이 필수적으로 적용되고 있다.",
+      "support": "LiteVLA-Edge와 같은 파이프라인은 Jetson Orin급 하드웨어에서 4비트 GGUF 양자화와 llama.cpp 런타임을 통해 온디바이스 추론을 가능하게 하며, Jetson AGX Thor 등에서는 TensorRT 최적화를 통해 지연 시간과 전력 예산을 맞춘다.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "LiteVLA-Edge: Quantized On-Device Multimodal Control for Robotics",
+          "publisher": "arXiv",
+          "url": "https://arxiv.org/html/2603.03380v1",
+          "source_type": "peer-reviewed",
+          "tier": 1,
+          "excerpt": "Our approach combines supervised image-to-action fine-tuning in FP32 with post-training 4-bit GGUF quantization and GPU-accelerated inference through the llama.cpp runtime."
+        },
+        {
+          "source_kind": "web",
+          "title": "Edge AI Inference for Robotics — On-Device Models",
+          "publisher": "Haink",
+          "url": "https://haink.org/physical-ai/edge-inference",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "We deploy compact VLA and reasoning vision-language models on-device, typically on Jetson AGX Thor, with optimization (quantization, pruning, TensorRT) to meet the robot's latency and power budget."
+        }
+      ]
+    },
+    {
+      "claim": "실시간 제어를 위해 고수준 추론(2-10 Hz)과 저수준 실행(50-200 Hz)의 주기를 분리하고, '액션 청크(Action Chunks)' 단위로 명령을 예측하여 시간적 부드러움을 확보한다.",
+      "support": "현대적인 접근 방식은 단일 행동이 아닌 10-100 타임스텝의 미래 행동 묶음을 예측하여 고수준 추론의 낮은 빈도에서도 로봇이 고빈도로 매끄럽게 동작하게 한다.",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "web",
+          "title": "Physical AI in 2026: Foundation Models for Robot Learning and Real-World Deployment",
+          "publisher": "Robotics Center Blog",
+          "url": "https://www.roboticscenter.ai/blog/physical-ai-2026",
+          "source_type": "industry",
+          "tier": 2,
+          "excerpt": "Modern approaches predict \"action chunks\" of 10-100 future timesteps rather than single actions, which provides temporal smoothness and allows the high-level reasoning to operate at lower frequency (2-10 Hz) while the robot executes at higher frequency (50-200 Hz)."
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "자율주행 내비게이션에서 기존 SLAM 방식과 E2E 방식의 구체적인 대체 시점 및 하이브리드 구성 방식에 대한 상세 기술 문서 부족",
+    "VLA 모델의 온디바이스 최적화 시 발생하는 정확도 손실(Accuracy Drop)에 대한 정량적 데이터 부족"
+  ],
+  "leads": [
+    "Nvidia의 Alpamayo 플랫폼 및 오픈 리즈닝 VLA 모델의 자율주행 롱테일 문제 해결 사례 조사",
+    "Open X-Embodiment 데이터셋의 최신 버전과 이를 통한 cross-embodiment 학습의 일반화 성능 분석"
+  ]
+}

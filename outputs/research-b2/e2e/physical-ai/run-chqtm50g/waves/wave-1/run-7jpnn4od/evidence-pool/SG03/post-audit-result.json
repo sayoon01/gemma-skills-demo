@@ -1,0 +1,105 @@
+{
+  "accepted_claims": [
+    {
+      "claim_id": "C001",
+      "claim": "피지컬 AI 로봇(특히 휴머노이드)의 상용화를 가로막는 주요 기술적 병목 지점 중 하나는 배터리 수명으로, 현재 대부분의 로봇은 2~4시간만 작동 가능하여 8~12시간의 산업 현장 교대 근무 시간을 충족하지 못함.",
+      "worker_support": "휴머노이드 로봇의 상용화 분석 보고서에서 '2-to-4-Hour Wall'이라는 표현과 함께 배터리 교체 인프라 또는 충전 로테이션의 필요성이 언급됨.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly mentions 'Bottleneck 1: Battery — The 2-to-4-Hour Wall', states that current robots run for 2–4 hours, and notes that 8–12 hour shifts require swap-battery infrastructure or charging rotations.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is",
+              "publisher": "RanketAI",
+              "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Bottleneck 1: Battery — The 2-to-4-Hour Wall. Current humanoid robots run for 2–4 hours per charge. Supporting an 8–12 hour industrial shift requires either a swap-battery infrastructure or a scheduled charging rotation."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI",
+              "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+              "domain": "www.ranketai.com",
+              "content": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI\nSkip to main content\n2026-02-28\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\n2026 is the year humanoid robots trade the lab coat for a hard hat. We analyze the three-way competition between Figure AI, Tesla Optimus, and Unitree, the three unsolved technical bottlenecks, and where revenue is actually being generated across RaaS, foundation models, and simulation platforms.\nAI-assisted drafting · reviewed by the RanketAI Editorial Team\n' Digit is piloted in an Amazon fulfillment center, and Tesla's Optimus Gen 2 begins a trial run on the Fremont factory floor. Scenes that lived in science fiction for decades are now unfolding on real industrial sites.\nBut the phrase \"year one of commercialization\" comes with important caveats. Three technical bottlenecks remain unsolved, and cost structures are still prohibitive for most companies. Who survives, and who actually makes money — this article analyzes the structure beneath the headlines.\n1. What Changed: Three Shifts That Reshaped the\nChina's Price Disruption Rewrites the Market Equation\nUnitree Robotics launched its G1 humanoid at $16,000. US competitors sit in the $100,000–$250,000 range — a gap of more than 10x. Unitree has run this same playbook before: in the drone and quadruped robot markets, it applied identical price pressure to squeeze Western incumbents.\nThe disruption cuts in two directions. First, it lowers the entry barrier for mid-market manufacturing and logistics companies to seriously consider robots. Second, it forces US and European companies selling premium hardware to pivot toward software and service monetization.\nBig Tech Enters the Platform War in Earnest\nAt GTC 2025, NVIDIA open-sourced both its Isaac Lab robot simulation platform and the GR00T N1 foundation model. This is not a neutral technical contribution — it is\na strategic move to own the platform standard of the robot ecosystem\nWhy pressure is building:\nLegacy industrial robots are fixed-position systems specialized for single tasks. As humanoids demonstrate the ability to handle the same tasks more flexibly, new adoption demand may shift in their direction.\nDefensibility:\n— and the software layer that determines that is where margin lives.\n5. Three Bottlenecks That Remain Unsolved\nBottleneck 1: Battery — The 2-to-4-Hour Wall\nCurrent humanoid robots run for 2–4 hours per charge. Supporting an 8–12 hour industrial shift requires either a swap-battery infrastructure or a scheduled charging rotation. Both increase\ndeployment\nEpilogue: Infrastructure First, Robots Second\nThe smartphone revolution was possible because years of infrastructure accumulation — 3G networks, the app store ecosystem, touchscreen supply chains — preceded the iPhone. The same pattern is playing out now in humanoid robotics: simulation platforms, foundation models, RaaS contract frameworks, and safety certification infrastructure are the foundation being laid.\nThe real money is not in selling robots. It is in\nQ1. What is the most important difference between a humanoid robot and a traditional industrial robot?\nTraditional industrial robots (FANUC, ABB, etc.) repeat fixed motions at fixed positions for a single programmed task. They cannot perform anything outside that program. Humanoid robots walk on two legs, manipulate a wide range of objects with two hands, and — via AI foundation models — can\nlearn new tasks from natural language instructions\nNot necessarily. RaaS reduces upfront capital expenditure and increases operational flexibility, but total cost of ownership (TCO) over time may exceed direct purchase. For operations with high utilization rates and stable task profiles, ownership may be more economical. A minimum 3-year operating scenario comparison is recommended before deciding.\nQ4. Can low-cost Chinese humanoid robots be trusted for industrial quality?\nUnitree has already established global credibility in the quadruped robot market. That said, industrial safety certifications (ISO 10218, CE marking) and after-sales service networks vary by product. Regardless of price point, certifications relevant to the deployment environment and local maintenance support must be verified before adoption.\nQ6. How large is the humanoid robot market?\nGoldman Sachs estimated in a 2024 report that the global humanoid robot market could reach up to $38 billion by 2035. More optimistic analyses put the figure as high as $154 billion. Long-term forecasts of this kind are highly sensitive to the pace of technical advancement and should be treated as directional reference points, not precise projections.\nQ7. Which industries are seeing the earliest real deployments?\nQ10. How are safety risks managed in real industrial deployments?\nHumanoids currently deployed in industrial settings either operate in zones physically separated from human workers, or are equipped with collision detection and immediate-stop functions meeting collaborative robot safety standards (ISO 10218, TS 15066). Both Figure AI and Agility Robotics require on-site human supervisors during the initial deployment phase. A structural gap remains, however: current safety certification frameworks were designed for fixed-arm and quadruped robots — not bipedal humanoids. Developing humanoid-specific certification standards is an open challenge for both industry and regulatory bodies.\nRelated Terms / Next Reading\nNVIDIA GR00T N1:\nhttps://developer.nvidia.com/blog/nvidia-gr00t-n1-open-foundation-model-for-generalist-humanoid-robots/\nAgility Robotics–Amazon:\nCore topic\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\nBest fit\nFrequently Asked Questions\nWhat is the core practical takeaway from \"Humanoid Robots: Year One of Commercialization —…\"?\n▾\nTeams with repetitive workflows and high quality variance, such ",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is fully supported by the retrieved content, but only one independent source was provided."
+    },
+    {
+      "claim_id": "C002",
+      "claim": "기존의 로봇 안전 표준(ISO 10218, ISO/TS 15066)은 고정형 암(arm)이나 4족 보행 로봇을 기준으로 설계되어, 이족 보행 휴머노이드 로봇의 특성을 완전히 반영하지 못하는 구조적 격차가 존재함.",
+      "worker_support": "산업 현장에 배치된 휴머노이드가 기존 협동 로봇 표준을 따르고는 있으나, 이족 보행 로봇 전용 인증 표준 개발이 여전히 과제로 남아 있음이 확인됨.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly states that humanoids meet collaborative robot safety standards (ISO 10218, TS 15066) but notes a 'structural gap' because those frameworks were designed for fixed-arm and quadruped robots, not bipedal humanoids.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is",
+              "publisher": "RanketAI",
+              "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "A structural gap remains, however: current safety certification frameworks were designed for fixed-arm and quadruped robots — not bipedal humanoids. Developing humanoid-specific certification standards is an open challenge for both industry and regulatory bodies."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI",
+              "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+              "domain": "www.ranketai.com",
+              "content": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI\nSkip to main content\n2026-02-28\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\n2026 is the year humanoid robots trade the lab coat for a hard hat. We analyze the three-way competition between Figure AI, Tesla Optimus, and Unitree, the three unsolved technical bottlenecks, and where revenue is actually being generated across RaaS, foundation models, and simulation platforms.\nAI-assisted drafting · reviewed by the RanketAI Editorial Team\n' Digit is piloted in an Amazon fulfillment center, and Tesla's Optimus Gen 2 begins a trial run on the Fremont factory floor. Scenes that lived in science fiction for decades are now unfolding on real industrial sites.\nBut the phrase \"year one of commercialization\" comes with important caveats. Three technical bottlenecks remain unsolved, and cost structures are still prohibitive for most companies. Who survives, and who actually makes money — this article analyzes the structure beneath the headlines.\n1. What Changed: Three Shifts That Reshaped the\nChina's Price Disruption Rewrites the Market Equation\nUnitree Robotics launched its G1 humanoid at $16,000. US competitors sit in the $100,000–$250,000 range — a gap of more than 10x. Unitree has run this same playbook before: in the drone and quadruped robot markets, it applied identical price pressure to squeeze Western incumbents.\nThe disruption cuts in two directions. First, it lowers the entry barrier for mid-market manufacturing and logistics companies to seriously consider robots. Second, it forces US and European companies selling premium hardware to pivot toward software and service monetization.\nBig Tech Enters the Platform War in Earnest\nAt GTC 2025, NVIDIA open-sourced both its Isaac Lab robot simulation platform and the GR00T N1 foundation model. This is not a neutral technical contribution — it is\na strategic move to own the platform standard of the robot ecosystem\nWhy pressure is building:\nLegacy industrial robots are fixed-position systems specialized for single tasks. As humanoids demonstrate the ability to handle the same tasks more flexibly, new adoption demand may shift in their direction.\nDefensibility:\n— and the software layer that determines that is where margin lives.\n5. Three Bottlenecks That Remain Unsolved\nBottleneck 1: Battery — The 2-to-4-Hour Wall\nCurrent humanoid robots run for 2–4 hours per charge. Supporting an 8–12 hour industrial shift requires either a swap-battery infrastructure or a scheduled charging rotation. Both increase\ndeployment\nEpilogue: Infrastructure First, Robots Second\nThe smartphone revolution was possible because years of infrastructure accumulation — 3G networks, the app store ecosystem, touchscreen supply chains — preceded the iPhone. The same pattern is playing out now in humanoid robotics: simulation platforms, foundation models, RaaS contract frameworks, and safety certification infrastructure are the foundation being laid.\nThe real money is not in selling robots. It is in\nQ1. What is the most important difference between a humanoid robot and a traditional industrial robot?\nTraditional industrial robots (FANUC, ABB, etc.) repeat fixed motions at fixed positions for a single programmed task. They cannot perform anything outside that program. Humanoid robots walk on two legs, manipulate a wide range of objects with two hands, and — via AI foundation models — can\nlearn new tasks from natural language instructions\nNot necessarily. RaaS reduces upfront capital expenditure and increases operational flexibility, but total cost of ownership (TCO) over time may exceed direct purchase. For operations with high utilization rates and stable task profiles, ownership may be more economical. A minimum 3-year operating scenario comparison is recommended before deciding.\nQ4. Can low-cost Chinese humanoid robots be trusted for industrial quality?\nUnitree has already established global credibility in the quadruped robot market. That said, industrial safety certifications (ISO 10218, CE marking) and after-sales service networks vary by product. Regardless of price point, certifications relevant to the deployment environment and local maintenance support must be verified before adoption.\nQ6. How large is the humanoid robot market?\nGoldman Sachs estimated in a 2024 report that the global humanoid robot market could reach up to $38 billion by 2035. More optimistic analyses put the figure as high as $154 billion. Long-term forecasts of this kind are highly sensitive to the pace of technical advancement and should be treated as directional reference points, not precise projections.\nQ7. Which industries are seeing the earliest real deployments?\nQ10. How are safety risks managed in real industrial deployments?\nHumanoids currently deployed in industrial settings either operate in zones physically separated from human workers, or are equipped with collision detection and immediate-stop functions meeting collaborative robot safety standards (ISO 10218, TS 15066). Both Figure AI and Agility Robotics require on-site human supervisors during the initial deployment phase. A structural gap remains, however: current safety certification frameworks were designed for fixed-arm and quadruped robots — not bipedal humanoids. Developing humanoid-specific certification standards is an open challenge for both industry and regulatory bodies.\nRelated Terms / Next Reading\nNVIDIA GR00T N1:\nhttps://developer.nvidia.com/blog/nvidia-gr00t-n1-open-foundation-model-for-generalist-humanoid-robots/\nAgility Robotics–Amazon:\nCore topic\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\nBest fit\nFrequently Asked Questions\nWhat is the core practical takeaway from \"Humanoid Robots: Year One of Commercialization —…\"?\n▾\nTeams with repetitive workflows and high quality variance, such ",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is fully supported by the retrieved content, but only one independent source was provided."
+    }
+  ],
+  "unsupported_claims": [],
+  "rejected_evidence": [],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker classified as Tier 2 (Peer-reviewed), but RanketAI is an industry blog/analysis site, which is Tier 4."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker classified as Tier 2 (Peer-reviewed), but RanketAI is an industry blog/analysis site, which is Tier 4."
+    }
+  ],
+  "consistency_warnings": [],
+  "summary": {
+    "input_claim_count": 2,
+    "accepted_claim_count": 2,
+    "unsupported_claim_count": 0,
+    "verified_evidence_count": 2,
+    "rejected_evidence_count": 0,
+    "warning_count": 0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "assignment_id": "SG03",
+  "worker_source": "recovery",
+  "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/recovery/SG03/run-4veoxq3a",
+  "worker_metrics": {
+    "turn_count": 4,
+    "tool_call_count": 11,
+    "search_count": 9,
+    "fetch_count": 2,
+    "fetch_success_count": 2,
+    "model_response_times_seconds": [
+      37.308,
+      84.369,
+      90.548,
+      332.219
+    ],
+    "model_total_seconds": 544.444,
+    "elapsed_seconds": 579.602
+  },
+  "deterministic_summary": {
+    "raw_claim_count": 5,
+    "accepted_claim_count": 2,
+    "unsupported_claim_count": 3,
+    "rejected_source_count": 6,
+    "successful_fetch_source_count": 1,
+    "successful_file_page_count": 0
+  },
+  "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/SG03/semantic-audits/audit-b7t_hnct",
+  "post_audit_summary": {
+    "input_claim_count": 2,
+    "accepted_claim_count": 2,
+    "unsupported_claim_count": 0,
+    "verified_evidence_count": 2,
+    "rejected_evidence_count": 0,
+    "warning_count": 0
+  },
+  "accepted_claim_count": 2,
+  "gap_count": 2
+}

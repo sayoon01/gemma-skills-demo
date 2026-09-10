@@ -1,0 +1,84 @@
+{
+  "audit_result": {
+    "claims": [
+      {
+        "claim_id": "C001",
+        "verdict": "TRIANGULATED",
+        "reason": "The retrieved official source from Figure AI explicitly confirms the deployment at BMW Plant Spartanburg, the specific task (sheet-metal loading/pick-and-place), the precision (5mm tolerance), and the speed (2 seconds). While the worker marked it as SINGLE_SOURCE, the claim is fully supported by the primary source content.",
+        "evidence": [
+          {
+            "evidence_id": "C001-E001",
+            "state": "VERIFIED",
+            "reason": "The source content explicitly states: 'Our first use case with BMW was sheet-metal loading... placing parts within a 5-millimeter tolerance in just 2 seconds.' It also confirms the location (Plant Spartanburg) and the contribution to 30,000+ X3 vehicles.",
+            "audited_source_type": "official",
+            "audited_tier": 1
+          }
+        ]
+      },
+      {
+        "claim_id": "C002",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The claim is supported by the retrieved blog post, which cites Elon Musk and earnings calls. However, as the source is a third-party blog (optimusk.blog) and not a primary Tesla filing or official press release, it remains a single-source industry report.",
+        "evidence": [
+          {
+            "evidence_id": "C002-E001",
+            "state": "VERIFIED",
+            "reason": "The content confirms Optimus is performing sorting of 4680 battery cells, parts handling, and kitting, and explicitly quotes Musk stating they are 'primarily for learning and data collection'.",
+            "audited_source_type": "industry",
+            "audited_tier": 4
+          }
+        ]
+      },
+      {
+        "claim_id": "C003",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The claim is supported by the AI2Work article. While the details match the retrieved text, this is an industry blog/news site rather than an official Boston Dynamics or Hyundai announcement, thus it is not triangulated.",
+        "evidence": [
+          {
+            "evidence_id": "C003-E001",
+            "state": "VERIFIED",
+            "reason": "The source explicitly mentions that fleets are shipping to Hyundai's Robotics Metaplant Application Center (RMAC) and Google DeepMind as of June 2026.",
+            "audited_source_type": "industry",
+            "audited_tier": 4
+          }
+        ]
+      },
+      {
+        "claim_id": "C004",
+        "verdict": "INSUFFICIENT_SUPPORT",
+        "reason": "The claim mentions 'Spanx 물류 센터' (Spanx logistics center), but the retrieved official source from Agility Robotics only mentions a 'GXO facility near Atlanta'. It does not explicitly name Spanx. While GXO may operate the Spanx site, the provided text does not establish this link.",
+        "evidence": [
+          {
+            "evidence_id": "C004-E001",
+            "state": "INSUFFICIENT_SUPPORT",
+            "reason": "The source confirms the GXO deployment, the RaaS model, and the task of moving totes between conveyors and AMRs, but it does not mention 'Spanx'.",
+            "audited_source_type": "official",
+            "audited_tier": 1
+          }
+        ]
+      }
+    ],
+    "quality_flags": [
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C002-E001",
+        "message": "Worker classified as Tier 2 (Peer-reviewed/Academic), but it is a blog (Tier 4/5)."
+      },
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C003-E001",
+        "message": "Worker classified as Tier 2, but it is an industry blog (Tier 4)."
+      }
+    ]
+  },
+  "integrity": {
+    "ok": false,
+    "errors": [
+      "잘못된 verdict: C004 / INSUFFICIENT_SUPPORT"
+    ],
+    "expected_claim_count": 4,
+    "seen_claim_count": 4,
+    "expected_evidence_count": 4,
+    "seen_evidence_count": 4
+  }
+}

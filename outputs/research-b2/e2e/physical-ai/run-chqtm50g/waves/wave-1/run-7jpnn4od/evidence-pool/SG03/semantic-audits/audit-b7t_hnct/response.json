@@ -1,0 +1,16 @@
+{
+  "model": "gemma4:31b",
+  "created_at": "2026-09-10T03:05:15.677676645Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"claims\": [\n    {\n      \"claim_id\": \"C001\",\n      \"verdict\": \"SINGLE_SOURCE\",\n      \"reason\": \"The claim is fully supported by the retrieved content, but only one independent source was provided.\",\n      \"evidence\": [\n        {\n          \"evidence_id\": \"C001-E001\",\n          \"state\": \"VERIFIED\",\n          \"reason\": \"The source explicitly mentions 'Bottleneck 1: Battery — The 2-to-4-Hour Wall', states that current robots run for 2–4 hours, and notes that 8–12 hour shifts require swap-battery infrastructure or charging rotations.\",\n          \"audited_source_type\": \"industry\",\n          \"audited_tier\": 4\n        }\n      ]\n    },\n    {\n      \"claim_id\": \"C002\",\n      \"verdict\": \"SINGLE_SOURCE\",\n      \"reason\": \"The claim is fully supported by the retrieved content, but only one independent source was provided.\",\n      \"evidence\": [\n        {\n          \"evidence_id\": \"C002-E001\",\n          \"state\": \"VERIFIED\",\n          \"reason\": \"The source explicitly states that humanoids meet collaborative robot safety standards (ISO 10218, TS 15066) but notes a 'structural gap' because those frameworks were designed for fixed-arm and quadruped robots, not bipedal humanoids.\",\n          \"audited_source_type\": \"industry\",\n          \"audited_tier\": 4\n        }\n      ]\n    }\n  ],\n  \"quality_flags\": [\n    {\n      \"type\": \"SOURCE_CLASSIFICATION\",\n      \"target_id\": \"C001-E001\",\n      \"message\": \"Worker classified as Tier 2 (Peer-reviewed), but RanketAI is an industry blog/analysis site, which is Tier 4.\"\n    },\n    {\n      \"type\": \"SOURCE_CLASSIFICATION\",\n      \"target_id\": \"C002-E001\",\n      \"message\": \"Worker classified as Tier 2 (Peer-reviewed), but RanketAI is an industry blog/analysis site, which is Tier 4.\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 75572842830,
+  "load_duration": 165208895,
+  "prompt_eval_count": 9091,
+  "prompt_eval_duration": 14075842244,
+  "eval_count": 525,
+  "eval_duration": 60832825193
+}

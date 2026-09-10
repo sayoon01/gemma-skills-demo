@@ -1,0 +1,49 @@
+{
+  "needs_another_wave": true,
+  "reason": "All current material claims are marked as SINGLE_SOURCE, meaning no claim has been triangulated across two independent sources as required by the active Skill. Additionally, there are significant gaps in domestic (Korean) company data and specific technical details on VLA on-device optimization and navigation hybrid architectures. Additionally, one claim regarding Agility Robotics is UNSUPPORTED due to a lack of precise location evidence.",
+  "assignments": [
+    {
+      "assignment_id": "SG04",
+      "title": "Triangulation of Core Technical and Commercial Claims",
+      "objective": "Find second independent sources to corroborate corroborate the VLA architecture (E2E, System-1/2, Action Chunks), the commercial deployment of Figure 02 at BMW, Figure 01/02's precision metrics, and the Boston Dynamics Atlas commercial shipping status.",
+      "queries": [
+        "VLA model architecture humanoid robot System-1 System-2 action chunks",
+        "Figure AI Figure 02 BMW Spartanburg deployment precision metrics",
+        "Boston Dynamics Electric Atlas commercial shipping 2026",
+        "\"Vision-Language-Action\" robot policy end-to-end neural network"
+      ],
+      "source_priority": [
+        "official",
+        "peer-reviewed",
+        "reputable-news"
+      ],
+      "needs_local_files": false
+    },
+    {
+      "assignment_id": "SG05",
+      "title": "Korean Physical AI Robot Market and Technology Trends",
+      "objective": "Identify specific humanoid or autonomous work robots from Samsung Electronics, Hyundai Motor Group (and beyond Boston Dynamics), and and theall other Korean companies, and distinguish between research phase and commercialization phase.",
+      "queries": [
+        "삼성전자 휴머노이드 로봇 상용화 단계",
+        "현대자동차그룹 휴머노이드 로봇 기술 동향",
+        " لقب l-robotics Korea humanoid robot commercialization",
+        "한국 자율작업형 피지컬 AI 로봇 기업 및 제품",
+        "삼성전자 로봇 사업부 휴머노이드 제품 명세"
+      ],
+      "source_priority": [
+        "official",
+        "industry",
+        "industry"
+      ],
+      "source_priority_alt": [
+        "official",
+        "industry"
+      ],
+      "needs_local_files": false
+    },
+    {
+      "assignment_id": "SG06",
+      "title": "Deep Dive into Navigation and On-Device AI Optimization",
+      "title_alt": "Technical Deep Dive: Navigation and On-Device AI",
+      "objective": "Close the gap on SLAM vs E2E navigation hybrid architectures and and the quantitative data on accuracy drop during VLA model quantization/optimization for on-device deployment.",
+      "e//comment: This is a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a

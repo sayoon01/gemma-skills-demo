@@ -1,0 +1,380 @@
+{
+  "completed_assignments": [
+    {
+      "assignment_id": "SG01",
+      "worker_source": "parallel",
+      "accepted_claim_count": 5,
+      "gap_count": 2
+    },
+    {
+      "assignment_id": "SG02",
+      "worker_source": "parallel",
+      "accepted_claim_count": 3,
+      "gap_count": 3
+    },
+    {
+      "assignment_id": "SG03",
+      "worker_source": "recovery",
+      "accepted_claim_count": 2,
+      "gap_count": 2
+    }
+  ],
+  "accepted_claims": [
+    {
+      "claim_ref": "SG01:C001",
+      "assignment_id": "SG01",
+      "claim": "2026년 피지컬 AI의 지배적인 기술 아키텍처는 인지, 추론, 행동 계층을 하나의 엔드투엔드(End-to-End, E2E) 신경망으로 통합한 VLA(Vision-Language-Action) 모델이다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "publisher": "Robotics Center Blog",
+          "domain": "www.roboticscenter.ai",
+          "url": "https://www.roboticscenter.ai/blog/physical-ai-2026",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG01:C002",
+      "assignment_id": "SG01",
+      "claim": "VLA 모델의 기술적 구성은 일반적으로 시각 인코더, 프로젝터, 그리고 LLM 백본으로 이루어지며, 최종적으로 토큰화된 행동(Action)을 출력한다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "publisher": "OpenVLA",
+          "domain": "openvla.github.io",
+          "url": "https://openvla.github.io/",
+          "audited_source_type": "official",
+          "audited_tier": 1
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG01:C003",
+      "assignment_id": "SG01",
+      "claim": "최신 VLA 모델들은 고수준 계획(System-2)과 저수준 고주파수 실행(System-1)을 분리한 듀얼 시스템 아키텍처를 채택하고 있다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "publisher": "LearnOpenCV",
+          "domain": "learnopencv.com",
+          "url": "https://learnopencv.com/vision-language-action-models-lerobot-policy/",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG01:C004",
+      "assignment_id": "SG01",
+      "claim": "피지컬 AI의 온디바이스 구현을 위해 자동차 산업의 AI SoC(System on Chip) 기술 스택이 휴머노이드 로봇으로 전이되고 있다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "publisher": "Edge AI and Vision Alliance",
+          "domain": "www.edge-ai-vision.com",
+          "url": "https://www.edge-ai-vision.com/2026/02/ces-2026-physical-ai-moves-from-concept-to-system-architecture/",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG01:C005",
+      "assignment_id": "SG01",
+      "claim": "실시간 제어를 위해 고수준 추론(2-10 Hz)과 저수준 실행(50-200 Hz)의 주기를 분리하고, '액션 청크(Action Chunks)' 단위로 명령을 예측하여 시간적 부드러움을 확보한다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "publisher": "Robotics Center Blog",
+          "domain": "www.roboticscenter.ai",
+          "url": "https://www.roboticscenter.ai/blog/physical-ai-2026",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG02:C001",
+      "assignment_id": "SG02",
+      "claim": "Figure AI의 Figure 02는 BMW Spartanburg 공장에 상용 배치되어 시트 메탈 로딩(pick-and-place) 작업을 수행하며, 2초 이내에 5mm 오차 범위 내로 부품을 배치하는 정밀도를 구현했다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "publisher": "Figure AI",
+          "domain": "www.figure.ai",
+          "url": "https://www.figure.ai/news/production-at-bmw",
+          "audited_source_type": "official",
+          "audited_tier": 1
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG02:C002",
+      "assignment_id": "SG02",
+      "claim": "Tesla의 Optimus는 현재 기가팩토리(Fremont, Giga Texas) 내에서 배터리 셀 분류, 부품 핸들링, 키팅(kitting) 등의 작업을 수행하고 있으나, 실제 생산성보다는 데이터 수집 및 학습 단계에 머물러 있다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "publisher": "optimusk.blog",
+          "domain": "optimusk.blog",
+          "url": "https://optimusk.blog/blog/tesla-optimus-factory-deployment/",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG02:C003",
+      "assignment_id": "SG02",
+      "claim": "Boston Dynamics의 전동식 Atlas는 2026년부터 현대자동차 Robotics Metaplant Application Center(RMAC) 및 Google DeepMind로 첫 상용 유닛이 출하되기 시작했다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "publisher": "AI2Work",
+          "domain": "ai2.work",
+          "url": "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG03:C001",
+      "assignment_id": "SG03",
+      "claim": "피지컬 AI 로봇(특히 휴머노이드)의 상용화를 가로막는 주요 기술적 병목 지점 중 하나는 배터리 수명으로, 현재 대부분의 로봇은 2~4시간만 작동 가능하여 8~12시간의 산업 현장 교대 근무 시간을 충족하지 못함.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "publisher": "RanketAI",
+          "domain": "www.ranketai.com",
+          "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_ref": "SG03:C002",
+      "assignment_id": "SG03",
+      "claim": "기존의 로봇 안전 표준(ISO 10218, ISO/TS 15066)은 고정형 암(arm)이나 4족 보행 로봇을 기준으로 설계되어, 이족 보행 휴머노이드 로봇의 특성을 완전히 반영하지 못하는 구조적 격차가 존재함.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "publisher": "RanketAI",
+          "domain": "www.ranketai.com",
+          "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim_ref": "SG02:C004",
+      "assignment_id": "SG02",
+      "claim": "Agility Robotics의 Digit은 GXO Logistics의 Spanx 물류 센터 등에서 컨베이어와 AMR 사이의 토트(tote) 이동 작업을 수행하며 RaaS(Robots-as-a-Service) 모델로 상용 운영되고 있다.",
+      "reason": "The claim mentions 'Spanx 물류 센터' (Spanx logistics center), but the retrieved official source only mentions a 'GXO facility near Atlanta'. Because the evidence state is INSUFFICIENT_SUPPORT and no other verified sources exist, the claim verdict must be UNSUPPORTED."
+    }
+  ],
+  "gaps": [
+    {
+      "assignment_id": "SG01",
+      "type": "WORKER_GAP",
+      "detail": "자율주행 내비게이션에서 기존 SLAM 방식과 E2E 방식의 구체적인 대체 시점 및 하이브리드 구성 방식에 대한 상세 기술 문서 부족",
+      "reason": null
+    },
+    {
+      "assignment_id": "SG01",
+      "type": "WORKER_GAP",
+      "detail": "VLA 모델의 온디바이스 최적화 시 발생하는 정확도 손실(Accuracy Drop)에 대한 정량적 데이터 부족",
+      "reason": null
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "WORKER_GAP",
+      "detail": "삼성전자 휴머노이드 로봇의 구체적인 기능 명세 및 공식적인 상용화 출시일 미확인",
+      "reason": null
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "WORKER_GAP",
+      "detail": "현대로보틱스의 독자적인 휴머노이드 제품 라인업 및 상용화 단계에 대한 구체적 정보 부족 (주로 Boston Dynamics Atlas를 통한 접근)",
+      "reason": null
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "UNSUPPORTED_CLAIM",
+      "detail": "Agility Robotics의 Digit은 GXO Logistics의 Spanx 물류 센터 등에서 컨베이어와 AMR 사이의 토트(tote) 이동 작업을 수행하며 RaaS(Robots-as-a-Service) 모델로 상용 운영되고 있다.",
+      "reason": "The claim mentions 'Spanx 물류 센터' (Spanx logistics center), but the retrieved official source only mentions a 'GXO facility near Atlanta'. Because the evidence state is INSUFFICIENT_SUPPORT and no other verified sources exist, the claim verdict must be UNSUPPORTED."
+    },
+    {
+      "assignment_id": "SG03",
+      "type": "WORKER_GAP",
+      "detail": "ISO 25785-1 표준의 구체적인 세부 기술 요구사항(예: 구체적인 추락 위험 관리 기준 수치)은 유료 표준 문서이므로 공개 웹페이지에서는 확인 불가함.",
+      "reason": null
+    },
+    {
+      "assignment_id": "SG03",
+      "type": "WORKER_GAP",
+      "detail": "공용 시험 인프라 내에서 Sim2Real Gap을 줄이기 위한 구체적인 '디지털 트윈' 연동 표준이나 인터페이스 규격에 대한 상세 정보가 부족함.",
+      "reason": null
+    }
+  ],
+  "verified_source_registry": [
+    {
+      "source_id": "SRC001",
+      "source_kind": "web",
+      "canonical_url": "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units",
+      "domain": "ai2.work",
+      "path": null,
+      "file_sha256": null,
+      "verified_pages": [],
+      "publisher": "AI2Work",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "claim_refs": [
+        "SG02:C003"
+      ]
+    },
+    {
+      "source_id": "SRC002",
+      "source_kind": "web",
+      "canonical_url": "https://learnopencv.com/vision-language-action-models-lerobot-policy",
+      "domain": "learnopencv.com",
+      "path": null,
+      "file_sha256": null,
+      "verified_pages": [],
+      "publisher": "LearnOpenCV",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "claim_refs": [
+        "SG01:C003"
+      ]
+    },
+    {
+      "source_id": "SRC003",
+      "source_kind": "web",
+      "canonical_url": "https://openvla.github.io/",
+      "domain": "openvla.github.io",
+      "path": null,
+      "file_sha256": null,
+      "verified_pages": [],
+      "publisher": "OpenVLA",
+      "audited_source_type": "official",
+      "audited_tier": 1,
+      "claim_refs": [
+        "SG01:C002"
+      ]
+    },
+    {
+      "source_id": "SRC004",
+      "source_kind": "web",
+      "canonical_url": "https://optimusk.blog/blog/tesla-optimus-factory-deployment",
+      "domain": "optimusk.blog",
+      "path": null,
+      "file_sha256": null,
+      "verified_pages": [],
+      "publisher": "optimusk.blog",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "claim_refs": [
+        "SG02:C002"
+      ]
+    },
+    {
+      "source_id": "SRC005",
+      "source_kind": "web",
+      "canonical_url": "https://www.edge-ai-vision.com/2026/02/ces-2026-physical-ai-moves-from-concept-to-system-architecture",
+      "domain": "www.edge-ai-vision.com",
+      "path": null,
+      "file_sha256": null,
+      "verified_pages": [],
+      "publisher": "Edge AI and Vision Alliance",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "claim_refs": [
+        "SG01:C004"
+      ]
+    },
+    {
+      "source_id": "SRC006",
+      "source_kind": "web",
+      "canonical_url": "https://www.figure.ai/news/production-at-bmw",
+      "domain": "www.figure.ai",
+      "path": null,
+      "file_sha256": null,
+      "verified_pages": [],
+      "publisher": "Figure AI",
+      "audited_source_type": "official",
+      "audited_tier": 1,
+      "claim_refs": [
+        "SG02:C001"
+      ]
+    },
+    {
+      "source_id": "SRC007",
+      "source_kind": "web",
+      "canonical_url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+      "domain": "www.ranketai.com",
+      "path": null,
+      "file_sha256": null,
+      "verified_pages": [],
+      "publisher": "RanketAI",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "claim_refs": [
+        "SG03:C001",
+        "SG03:C002"
+      ]
+    },
+    {
+      "source_id": "SRC008",
+      "source_kind": "web",
+      "canonical_url": "https://www.roboticscenter.ai/blog/physical-ai-2026",
+      "domain": "www.roboticscenter.ai",
+      "path": null,
+      "file_sha256": null,
+      "verified_pages": [],
+      "publisher": "Robotics Center Blog",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "claim_refs": [
+        "SG01:C001",
+        "SG01:C005"
+      ]
+    }
+  ]
+}

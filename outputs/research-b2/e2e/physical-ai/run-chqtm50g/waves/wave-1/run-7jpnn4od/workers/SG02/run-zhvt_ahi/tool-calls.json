@@ -1,0 +1,535 @@
+[
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Tesla Optimus Figure AI Boston Dynamics Atlas Agility Robotics Digit comparison 2024 2025 2026"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 2.372,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Tesla Optimus Figure AI Boston Dynamics Atlas Agility Robotics Digit comparison 2024 2025 2026",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "AI Robotics 2026 — Humanoid Robots: Tesla Optimus, Figure AI ...",
+            "url": "https://www.singularitymoments.com/ai-robotics-guide-2026/",
+            "snippet": "Complete guide to AI-powered humanoid robots in 2026: Tesla Optimus Gen 3, Figure 02 (OpenAI partnership), Boston Dynamics electric Atlas, 1X Neo, Agility Digit. Commercial deployment timelines, manufacturing use cases, and the path to consumer robots.",
+            "domain": "www.singularitymoments.com"
+          },
+          {
+            "title": "AI Humanoid Robots 2026 — Tesla Optimus, Boston Dynamics ...",
+            "url": "https://singularitymoments.com/ai-humanoid-robots-2026/",
+            "snippet": "AI humanoid robots in 2026: Tesla Optimus Gen 2 in Gigafactories, Boston Dynamics Atlas backflips and manipulation, Figure 02 with OpenAI integration, 1X Technologies Eve, and how humanoid robotics is finally reaching commercial deployment after decades of hype.",
+            "domain": "singularitymoments.com"
+          },
+          {
+            "title": "Tesla Optimus vs Boston Dynamics Atlas: 2026 Specs & Price",
+            "url": "https://blog.robozaps.com/b/tesla-optimus-vs-boston-dynamics-atlas",
+            "snippet": "Jan 29, 2026 · Optimus wins on affordability, energy efficiency, and scalability. Atlas wins on agility, ruggedness, and enterprise-grade reliability. Both robots are moving from prototypes to real factory floors in 2026 — only Atlas has shipped to commercial customers in 2026, with Optimus used internally at Tesla factories only.",
+            "domain": "blog.robozaps.com"
+          },
+          {
+            "title": "Tesla Optimus vs Boston Dynamics & Rivals (2026)",
+            "url": "https://optimusk.blog/blog/tesla-optimus-vs-boston-dynamics/",
+            "snippet": "Aug 6, 2026 · Tesla Optimus vs Boston Dynamics Atlas, Figure AI, Unitree G1 & Digit — full 2026 specs, price, capability & deployment comparison. Find the right robot.",
+            "domain": "optimusk.blog"
+          },
+          {
+            "title": "Humanoid robots in comparison Tesla Optimus ⚡ Boston ...",
+            "url": "https://xpert.digital/en/robot-comparison/",
+            "snippet": "Dec 13, 2024 · Discover the future of humanoid robots! Comparison: Tesla Optimus, Boston Dynamics Atlas, Agility Robotics Digit & Unitree G1 烙 Innovative technologies at a glance - each robot with unique abilities! Advancement: From AI-driven precision to human agility. ️ Application: Industry, logistics, and everyday life - Which vision follows which model? Potential: How will these developments ...",
+            "domain": "xpert.digital"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Tesla Optimus deployment status 2025"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.406,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Tesla Optimus deployment status 2025",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Tesla Optimus Factory Deployment: 2025-2026 Status",
+            "url": "https://optimusk.blog/blog/tesla-optimus-factory-deployment/",
+            "snippet": "Mar 20, 2026 · Inside Tesla Optimus gigafactory rollout: what robots are actually doing in Fremont & Giga Texas, production counts, milestones & 2026 expansion plan.",
+            "domain": "optimusk.blog"
+          },
+          {
+            "title": "Tesla Optimus Factory Deployment: 2025-2026 Status",
+            "url": "https://robottoday.com/industry-briefing/tesla-optimus-factory-deployment-2025-2026-status/6897",
+            "snippet": "Mar 20, 2026 · As of October 2023, Tesla has reported notable milestones in the deployment of these robots, which are designed to assist in various manufacturing processes. The introduction of Optimus robots is expected to streamline operations, reduce labor costs, and improve output rates, aligning with Tesla's commitment to innovation and sustainability.",
+            "domain": "robottoday.com"
+          },
+          {
+            "title": "Tesla Optimus Production Timeline 2026 [Updated]",
+            "url": "https://optimusk.blog/blog/tesla-optimus-production-timeline/",
+            "snippet": "Aug 6, 2026 · Tesla Optimus production: hundreds delivered in 2025 vs 5K target, 50-100K in 2026, 1M/yr Fremont capacity. Full verified timeline. Updated August 6, 2026.",
+            "domain": "optimusk.blog"
+          },
+          {
+            "title": "The Optimus Progress Tracker: Every Milestone, Timeline",
+            "url": "https://tesorb.com/optimus-progress-tracker/",
+            "snippet": "Apr 15, 2026 · The pattern: Every major Optimus production and deployment target set before 2026 has been missed. The gap between the January 2025 claim of \"10,000 robots this year\" and the January 2026 admission of \"zero doing useful work\" is the most significant credibility event in the program's history. Pending targets for 2026 and 2027 should be evaluated with this record in mind, although the ...",
+            "domain": "tesorb.com"
+          },
+          {
+            "title": "Tesla Optimus Updates, Factory Deployment & Pricing | Clanker",
+            "url": "https://www.clanker.com/optimus.html",
+            "snippet": "Nov 7, 2025 · Tesla Optimus — Status, Timeline, and What to Expect Optimus is showcased on Tesla's AI/Robotics pages, but it's not for sale. Public remarks from the CEO have referenced a ~2026 timeframe for broader availability after internal use, but there's no formal retail program or price on tesla.com. Last updated: November 7, 2025 At-a-Glance",
+            "domain": "www.clanker.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Figure AI Figure 02 commercial deployment BMW"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 2.465,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Figure AI Figure 02 commercial deployment BMW",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "F.02 Contributed to the Production of 30,000 Cars at BMW",
+            "url": "https://www.figure.ai/news/production-at-bmw",
+            "snippet": "Nov 19, 2025 · Today we’re excited to share our results of an 11 month Figure 02 robot deployment at BMW Group Plant Spartanburg. Within 6 months of bringing up Figure 02, we delivered robots to the plant and began testing. Within 10 months, we launched full deployment on an active assembly line at the plant, running every single working day.",
+            "domain": "www.figure.ai"
+          },
+          {
+            "title": "Figure AI’s Figure 02 Begins Commercial Deployment in BMW ...",
+            "url": "https://www.robotwale.com/news/figure-ai-figure-02-commercial-deployment-india-relevance",
+            "snippet": "Figure AI’s Figure 02 humanoid robot has commenced commercial operations at BMW Group facilities, marking a major milestone in industrial automation. Indian automotive and electronics manufacturers are closely monitoring the deployment, with pricing estimates suggesting a viable entry point for domestic adoption by late 2025.",
+            "domain": "www.robotwale.com"
+          },
+          {
+            "title": "Figure AI Triples BMW Deployment and Opens Second Commercial ...",
+            "url": "https://www.defici.com/news/figure-ai-bmw-robot-expansion-2026",
+            "snippet": "Jul 17, 2026 · Figure AI has announced a tripling of its deployment at BMW's Spartanburg, South Carolina plant and the opening of a second commercial site with a new automotive partner, signaling confidence in Figure 02's production reliability.",
+            "domain": "www.defici.com"
+          },
+          {
+            "title": "Figure 02 Humanoid Robot Enters Full Production at BMW ...",
+            "url": "https://robotd.net/article/figure-02-bmw-production/",
+            "snippet": "May 18, 2026 · Figure AI's 02 humanoid robot has moved from pilot testing to full production deployment at BMW's South Carolina factory, marking the first commercial-scale humanoid workforce in automotive manufacturing.",
+            "domain": "robotd.net"
+          },
+          {
+            "title": "BMW Spartanburg and Figure 02 · DEPLOY",
+            "url": "https://registry.deploy.report/deployments/marquee/bmw-spartanburg-figure-02",
+            "snippet": "The operation Two Figure 02 humanoid robots, manufactured by California-based Figure AI, deployed on the body-shop assembly line at BMW Group Plant Spartanburg in South Carolina. Their primary task was a classic pick-and-place workflow: lifting sheet-metal parts from racks or bins and placing them on welding fixtures with a 5-millimeter placement tolerance. Once placed, a traditional six-axis ...",
+            "domain": "registry.deploy.report"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Boston Dynamics Atlas electric commercialization timeline"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 3.712,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Boston Dynamics Atlas electric commercialization timeline",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Atlas (robot) - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Atlas_(robot)",
+            "snippet": "5 days ago - The first Atlas robot was a bipedal ... by Boston Dynamics with funding and oversight from the U.S. Defense Advanced Research Projects Agency (DARPA). The robot was initially designed for a variety of search and rescue tasks, and was unveiled to the public on July 11, 2013. In April 2024, the hydraulic Atlas (HD Atlas) was retired from service. A new fully electric version was ...",
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "An Electric New Era for Atlas | Boston Dynamics",
+            "url": "https://bostondynamics.com/blog/electric-new-era-for-atlas/",
+            "snippet": "April 17, 2024 - This journey will start with Hyundai—in addition to investing in us, the Hyundai team is building the next generation of automotive manufacturing capabilities, and it will serve as a perfect testing ground for new Atlas applications. In the months and years ahead, we’re excited to show what the world’s most dynamic humanoid robot can really do—in the lab, in the factory, and in our lives. Having a meaningful impact outside of the lab requires collaboration beyond our walls. Following the commercial deployment of both Spot and Stretch, we know how to deliver real value for customers.",
+            "domain": "bostondynamics.com"
+          },
+          {
+            "title": "Boston Dynamics Electric Atlas Ships Its First Commercial Units | AI2Work",
+            "url": "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units",
+            "snippet": "June 7, 2026 - The headline that should make every operations executive sit up: every single Atlas unit built in 2026 is already spoken for. The first commercial fleets are shipping to Hyundai's Robotics Metaplant Application Center and to Google DeepMind, ...",
+            "domain": "ai2.work"
+          },
+          {
+            "title": "Atlas’ Evolution From Research Robot to Industrial Humanoid | Boston Dynamics",
+            "url": "https://bostondynamics.com/blog/atlas-evolution-from-research-robot-to-industrial-humanoid/",
+            "snippet": "March 17, 2026 - The turning point in Atlas’ evolution came in April 2024 with the introduction of an all-electric Atlas. This marked a decisive reset in Atlas’ development and the start of its commercial journey.",
+            "domain": "bostondynamics.com"
+          },
+          {
+            "title": "Boston Dynamics to commercialize electric Atlas humanoid robot - Robotics 24/7",
+            "url": "https://www.robotics247.com/article/boston_dynamics_commercializes_electric_atlas_humanoid_robot",
+            "snippet": "April 22, 2024 - Boston Dynamics has retired its hydraulic Atlas humanoid robot for an electric model unconstrained by human range of motion. Hyundai will begin commercialization testing.",
+            "domain": "www.robotics247.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Agility Robotics Digit commercial deployment Amazon GXO"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 4.86,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Agility Robotics Digit commercial deployment Amazon GXO",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Amazon, Toyota & GXO Deploy Agility Digit in Warehouses — Data",
+            "url": "https://embodiedglobal.com/en/article/agility-robotics-digit-amazon-toyota-gxo-commercial-deployment-2026",
+            "snippet": "Agility Robotics Digit moves from pilot to full commercial deployment at Amazon, Toyota, and GXO warehouses. Real-world results, revenue figures, and what it means for the humanoid robotics industry in 2026.",
+            "domain": "embodiedglobal.com"
+          },
+          {
+            "title": "GXO Signs Industry-First Multi-Year Agreement with Agility Robotics",
+            "url": "https://www.agilityrobotics.com/content/gxo-signs-industry-first-multi-year-agreement-with-agility-robotics",
+            "snippet": "GXO and Agility Robotics sign a multi-year RaaS agreement to deploy Digit alongside cobots at the SPANX fulfillment facility. Jun 27, 2024",
+            "domain": "www.agilityrobotics.com"
+          },
+          {
+            "title": "Digit — Agility Robotics (Amazon)",
+            "url": "https://biorobot.ai/en/robot/agility-digit",
+            "snippet": "Bulk tote transfer at GXO Logistics Agility's first publicly-disclosed commercial Digit deployment runs at GXO Logistics' Spanx fulfillment center in Flowery Branch, Georgia, announced June 2024. Digit units move totes between conveyors and Autonomous Mobile Robots (AMRs).",
+            "domain": "biorobot.ai"
+          },
+          {
+            "title": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement",
+            "url": "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement",
+            "snippet": "June 5, 2024, marked a pivotal moment in robotics history. For the first time, a humanoid robot was deployed in commercial operations, as Digit stepped into the workforce at a GXO facility near Atlanta. This milestone represents more than a technological advancement—it signifies a leap forward in the evolution of robotics and the future of labor. At Agility Robotics, our vision has always ...",
+            "domain": "www.agilityrobotics.com"
+          },
+          {
+            "title": "Industry-first multi-year agreement with Agility Robotics | GXO",
+            "url": "https://gxo.com/news_article/gxo-signs-industry-first-multi-year-agreement-with-agility-robotics/",
+            "snippet": "Robots-as-a-Service (RaaS) agreement integrates Agility's Humanoid robots with other cobots at SPANX facility GXO Logistics, Inc. (NYSE: GXO), the world's largest pure-play contract logistics provider, and Agility Robotics, creator of the leading bipedal Mobile Manipulation Robot (MMR) Digit ®, announced today that they have signed a multi-year agreement to begin deploying Digit in GXO ...",
+            "domain": "gxo.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "국내 자율작업형 로봇 기업 제품 현황 레인보우로보틱스 현대로보틱스"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.398,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "국내 자율작업형 로봇 기업 제품 현황 레인보우로보틱스 현대로보틱스",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "레인보우로보틱스 - 위키백과, 우리 모두의 백과사전",
+            "url": "https://ko.wikipedia.org/wiki/레인보우로보틱스",
+            "snippet": "May 5, 2026 - 레인보우로보틱스(Rainbow Robotics)는 대한민국의 산업용 로봇 제조 회사로, 한국과학기술원(KAIST) HUBO Lab의 오준호 교수가 2011년 창업하였다. 삼성전자가 현재 레인보우로보틱스의 협동로봇, 양팔로봇, 자율이동로봇 등을 ...",
+            "domain": "ko.wikipedia.org"
+          },
+          {
+            "title": "레인보우로보틱스 - 나무위키",
+            "url": "https://namu.wiki/w/레인보우로보틱스",
+            "snippet": "July 21, 2026 - 2022년 8월경에서 현대로템과 레인보우로보틱스가 신속 연구 개발 사업을 시작함. #[2] 제품사양 ... 레인보우로보틱스 연구진들이 창업전 처음으로 만들어낸 이족보행 로봇. 휴보는 KAIST에서 개발한 대한민국 최초의 이족보행 휴머노이드 로봇으로 휴보2는 레인보우로보틱스가 세계최초로 상업화한 인간형로봇 플랫폼으로서 세계 유수의 연구기관(MIT, Google 등)에 연구용 플랫폼으로 판매된적이 있다.",
+            "domain": "namu.wiki"
+          },
+          {
+            "title": "레인보우로보틱스(휴보) - 기업정보 | 투자, 매출, 주가 - THE VC",
+            "url": "https://thevc.kr/rainbowrobotics",
+            "snippet": "2 weeks ago - 주식회사 레인보우로보틱스(Rainbow Robotics)는 2011년 2월에 설립된 한국계∙스타트업입니다. 전자제품∙로봇 분야의 휴보가 주요 제품/서비스이며, 이족보행 로봇 및 자율이동 로봇 개발 기업입니다.",
+            "domain": "thevc.kr"
+          },
+          {
+            "title": "레인보우로보틱스 기업 분석 2026년 1분기 - 삼성전자 자회사 로봇 플랫폼 기업",
+            "url": "https://lemontia.tistory.com/1291",
+            "snippet": "January 29, 2026 - 레인보우로보틱스는 협동로봇, 이족보행로봇, 사족보행로봇, 자율이동로봇(AMR), 천문용 마운트 등 다양한 로봇 플랫폼을 개발·판매합니다. 주력 제품입니다. 제조업·서비스업 현장에서 사람과 함께 작업하는 산업용 ...",
+            "domain": "lemontia.tistory.com"
+          },
+          {
+            "title": "IR | 레인보우로보틱스",
+            "url": "https://rainbow-robotics.com/company/ir/",
+            "snippet": "March 17, 2026 - 레인보우로보틱스의 투자 및 공시 관련 정보를 제공합니다. 전체 23 · 최신순 · ↓ 최신순 ↑ 오래된 순 · 제품 · 협동로봇 · 모바일 휴머노이드 · 모바일 로봇 · 사족보행 로봇 · SI & Solution · 로봇 솔루션 ·",
+            "domain": "rainbow-robotics.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "Figure 02 capabilities, tasks at BMW, and deployment stage",
+      "url": "https://www.figure.ai/news/production-at-bmw"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.476,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://www.figure.ai/news/production-at-bmw",
+        "title": "F.02 Contributed to the Production of 30,000 Cars at BMW",
+        "domain": "www.figure.ai",
+        "focus": "Figure 02 capabilities, tasks at BMW, and deployment stage",
+        "content": "F.02 Contributed to the Production of 30,000 Cars at BMW\nFIGURE 03\nHELIX\nCOMPANY\nF.02 Contributed to the Production of 30,000 Cars at BMW\nNovember 19, 2025\nToday we’re excited to share our results of an 11 month Figure 02 robot deployment at BMW Group Plant Spartanburg. Within 6 months of bringing up Figure 02, we delivered robots to the plant and began testing. Within 10 months, we launched full deployment on an active assembly line at the plant, running every single working day.\nBMW Deployment Highlights:\nRan 10-hour shift Monday-Friday\nContributed to the production of 30,000+ X3 vehicles\nEstimated 1.2+ million robot steps or 200+ miles\nFollowing the release of Figure 03, we’re officially starting the retirement of Figure 02, our second-generation humanoid robot. With Figure 02’s return to HQ from BMW as part of our fleet-wide retirement, we would like to highlight key learnings that can be rolled into Figure 03 operational readiness.\nDeployment Overview\nOur first use case with BMW was sheet-metal loading, a classic pick-and-place task in automotive manufacturing. An associate picks sheet-metal parts from racks or bins and places them on a welding fixture, after which six-axis industrial robots weld and feed the parts into the main line.\nTo measure robot progress, we defined three critical KPIs:\nNumber of times a human must pause or reset the robot. The goal was zero per shift.\nThe challenge of this use case is in balancing speed and precision – placing parts within a 5-millimeter tolerance in just 2 seconds.\nTo meet this, our robot had to achieve precise yet adaptive locomotion, allowing rapid, accurate foot placement and real-time responsiveness to environmental changes. We also developed advanced hand-eye coordination algorithms and built field-calibration tools for consistent cross-robot performance.\nHardware Reliability and Learnings\nSix months of daily runtime yielded invaluable insights for our mechanical and reliability teams. Across 1,250+ operational hours, Figure 02 recorded minimal hardware failures while generating critical data that informed the build procedures, component architecture, and mechanical design of Figure 03.\nOne learning that informed Figure 03 design was the robot’s forearm, our top hardware failure point at BMW. The forearm is a challenging subsystem due to its tight packaging, dexterity requirements (three degrees of freedom), and thermal constraints. Figure 02’s forearm contained a microcontroller-based PCB that distributed communications between the main computer and the wrist actuators.\nFor Figure 03, we completely re-architected the wrist electronics to eliminate both the distribution board and dynamic cabling. Each wrist’s motor controller now communicates directly with the main computer, reducing complexity, improving reliability, and simplifying thermal management.\nConclusion\nFigure 02 was an unprecedented advancement in bringing humanoid robots from the lab to the real world. Figure 02 taught us early lessons on what it takes to ship. Every hour on BMW’s line, every part loaded, and every intervention logged, shaped how we designed, validated, and built.\nThose lessons now live in Figure 03, a robot built from experience, ready for the world at scale. If you’re interested in helping ship robots into the world please consider\njoining our team\nKeep up with us\nGet news, photos, events, and business updates.\nContact Us\nCOMPANY\n© Figure 2026.\nTerms & Conditions",
+        "content_chars": 3458,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "Tesla Optimus current capabilities, internal deployment tasks, and commercial timeline",
+      "url": "https://optimusk.blog/blog/tesla-optimus-factory-deployment/"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.332,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://optimusk.blog/blog/tesla-optimus-factory-deployment/",
+        "title": "Tesla Optimus Factory Deployment: 2025-2026 Status",
+        "domain": "optimusk.blog",
+        "focus": "Tesla Optimus current capabilities, internal deployment tasks, and commercial timeline",
+        "content": "Tesla Optimus Factory Deployment: 2025-2026 Status\n// MENU\n›\nTesla Optimus Factory Deployment: 2025-2026 Status\n// Contents\n// Contents\nComplete Deployment Timeline\nWhat Optimus Is Actually Doing\n// Lindsey A. Kennedy\nTesla Optimus Factory Deployment 2025-2026: Inside the Gigafactory Rollout\nShare:\n// Deep Dive · Updated August 6, 2026\nHere is exactly where Tesla Optimus factory deployment stands as of March 2026 — no hype, just verified milestones. Key source:\nBotInfo.ai 2026 timeline\nFremont line converted in ~46 days:\nTesla dismantled the legacy Model S/X assembly line (last units early May) and is standing up its first dedicated Optimus line — production targeted for late July–August 2026.\n📊\nQ2 2026 earnings (July 22) reset the picture:\nTesla is \"installing the first-generation lines for Optimus\" with output still effectively zero, and confirmed first units will do\ntraining-data collection, not productive factory work\nQ4 2025 earnings call\n(January 28, 2026), Elon Musk stated clearly: \"Optimus units are primarily for learning and data collection rather than performing productive tasks.\" FinancialContent noted: \"The Optimus units now roaming Tesla's 4680 battery cell lines are navigating unscripted environments, identifying misplaced components, and performing intricate kitting tasks.\" The key phrase: \"navigating unscripted environments\" — what distinguishes Optimus from conventional factory robots. Source:\nFinancialContent factory deployment\n💡 The most important context: Tesla is deliberately prioritizing data collection over productive output right now. Every hour an Optimus unit spends sorting battery cells generates training data for the AI — and that data is what makes the robot commercially viable. The \"not doing useful work\" admission is actually strategic, not a failure.\n3. Fremont vs. Giga Texas: The Two-Phase Factory Strategy\n4. The 2025 Production Miss: What Went Wrong\nTesla originally targeted 5,000-10,000 Optimus units in 2025. By year-end, the actual figure appears to have been in the hundreds-to-low-thousands range — a significant miss.\nChina rare earth magnet ban (April 2025):\nFinancialContent\n6. Tesla Optimus Factory Deployment: 2026 Milestones Tracker\nDate\n7. Leadership Change: The Elluswamy Signal\nIn June 2025, Milan Kovac resigned as head of Tesla's Optimus program after three years. His replacement: Ashok Elluswamy, VP of AI Software and the architect of Tesla's Autopilot/FSD system. This is the most strategically significant organizational change in the Optimus program's history.\nPriority shift:\nHow many Optimus robots are in Tesla factories right now?\nAs of March 2026, estimates suggest approximately 1,000+ Optimus units are deployed across Fremont and Giga Texas. Tesla has not released an official production count. The January 2026 Gen 3 production start at Fremont is expected to accelerate this significantly through 2026, targeting 50,000-100,000 total units produced by year-end (Musk's CES 2025 projection).\nWhat tasks is Tesla Optimus actually doing in factories?\nConfirmed tasks: sorting 4680 battery cells, parts handling between production line stations, kitting (organizing parts for assembly workers), quality inspection, and pick-and-place operations. Importantly, Musk admitted in January 2026 that these robots are \"primarily for learning and data collection\" rather than measurable productive output.\nWhen will Tesla Optimus start doing 'real' work in factories?\nThe Q2-Q3 2026 factory floor deployment of Gen 3 hands is the next major milestone. By late 2026, Tesla expects first commercial customers — which would represent the first genuinely productive deployment outside Tesla's own training environment. Full productive factory work at scale is targeted for 2027 when Giga Texas V4 line opens.\nWhy did Tesla miss the 5,000 Optimus target for 2025?\nSummary\nTesla Optimus factory deployment is real — robots are on the floor, learning from the factory environment, and accumulating the training data that will make them commercially viable. The gap between stated targets and actual production counts is significant and should not be minimized. But the infrastructure being built — Fremont Gen 3 line, Giga Texas construction, $20B CapEx, data collection pipeline — is the foundation for what comes next.\nThe critical judgment call: is the 2025 production miss a temporary supply chain and engineering delay on the path to commercial scale — or is it evidence that the fundamental difficulty of building useful humanoid robots at mass-market price points has been underestimated? The Q2-Q3 2026 Gen 3 hands deployment on the factory floor will provide the first real data point to answer that question.\nKey sources:\nSTAY AHEAD OF THE ROBOT RACE\nWe track Tesla Optimus, humanoid robot progress, and every major development — updated as news breaks.\n→\n// PRODUCTION\nTesla Optimus Production Timeline 2026\n// SUPPLY CHAIN\n// CAPABILITIES\nTesla Optimus Capabilities: What Can It Do?\nIndependent coverage of Tesla Optimus & humanoid robotics.",
+        "content_chars": 5033,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "Electric Atlas commercial shipping, customers, and capabilities",
+      "url": "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.935,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units",
+        "title": "Boston Dynamics Electric Atlas Ships Its First Commercial Units | AI2Work",
+        "domain": "ai2.work",
+        "focus": "Electric Atlas commercial shipping, customers, and capabilities",
+        "content": "Boston Dynamics Electric Atlas Ships Its First Commercial Units | AI2Work\nAI\n/\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nHome\n/\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nPhysical AI\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nBoston Dynamics ships its first commercial electric Atlas humanoids to Hyundai and Google DeepMind. Inside the specs, pricing, rivals, and 2028 factory roadmap.\nJune 7, 2026\nPhysical AI\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nJune 7, 2026\n1\nEvery 2026 Atlas unit is already committed — fleets are shipping to Hyundai's Robotics Metaplant Application Center (RMAC) and Google DeepMind, with new customers slated for 2027.\n2\nHyundai is targeting an annual production capacity of about 30,000 Atlas units by 2028 and plans to deploy more than 25,000 across Hyundai and Kia plants, starting at its Georgia Metaplant.\n3\nWith an estimated ~$420,000 price tag, Atlas competes on reliability and full-stack support rather than price, as rivals like Unitree's G1 sell for roughly $13,500–$16,000.\nFor more than a decade, Boston Dynamics' Atlas lived on YouTube — backflipping, doing parkour, and amazing millions while quietly remaining a research curiosity too expensive to scale. At CES 2026 in Las Vegas, that era ended. Under the banner \"Partnering Human Progress,\" parent company Hyundai Motor Group pulled back a curtain to reveal a sleek, blue, production-ready version of the all-electric Atlas, and CEO Robert Playter announced that production would begin immediately at the company's Boston headquarters.\nThe headline that should make every operations executive sit up: every single Atlas unit built in 2026 is already spoken for. The first commercial fleets are shipping to Hyundai's Robotics Metaplant Application Center and to Google DeepMind, with additional customers planned for 2027. This is no longer a demo reel — it's a delivery schedule.\nThe shift matters because it reframes the humanoid race. While much of the industry has competed on viral clips and aspirational price points, Boston Dynamics is shipping a commercial-grade industrial tool backed by an automotive giant's supply chain. Here's what's actually in the box, who's buying it, and how it stacks up against Figure, Tesla, and the rest.\nAtlas by the Numbers\nThe production Atlas is engineered for demanding industrial work, not stage shows. Here are the figures that define it.\n56\nFrom Lab Curiosity to Industrial Product\nThe production Atlas is a deliberate departure from the hydraulic robot Boston Dynamics retired in April 2024. The new model is fully electric, enabling faster, quieter, and more precise motion, with custom high-powered actuators delivering 360° rotation at the hips, waist, and neck — ranges of motion impossible for a human body.\nWhat changed for commercialization isn't just the actuators. Boston Dynamics significantly reduced the number of unique parts in the robot, and engineered every component for compatibility with automotive supply chains — a direct play to leverage Hyundai's manufacturing muscle for reliability and economies of scale. The robot also features human-scale hands with tactile sensing, self-swappable belly-mounted batteries for continuous operation, and a sensor suite spanning LiDAR, stereo, and RGB cameras.\nNotably, Boston Dynamics has leaned into an \"alien\" or \"superhumanoid\" aesthetic rather than chasing human-mimicry. Where rivals design for easy teleoperation, Atlas is built to exploit motions a human never could — a philosophical bet that the most useful factory robot isn't necessarily the most human-looking one.\nWho's Actually Buying It — and Why That Matters\nThe two launch customers reveal the strategy. The first is Hyundai itself — not just the 80% owner of Boston Dynamics, but the first and largest customer. Atlas units are flowing into the newly announced Robotics Metaplant Application Center (RMAC), described by the team as a \"data factory\" designed to build the world's most complete dataset for training humanoid manufacturing skills.\nThe second is Google DeepMind, which is serving as both customer and AI development partner. DeepMind CEO Demis Hassabis confirmed the first fleets would ship to Google in the coming months, positioning Atlas as a testbed for \"Physical AI\" — the foundation models that will let the robot generalize across tasks rather than being hand-programmed for each one.\nHyundai's longer roadmap is the most concrete in the industry. The group plans an annual production capacity of roughly 30,000 Atlas units by 2028, with more than 25,000 deployed across Hyundai and Kia plants. Deployment begins conservatively in 2028 at the Metaplant near Savannah, Georgia — which builds the Ioniq 5 and Ioniq 9 EVs — starting with parts sequencing, then expanding to component assembly by 2030.\nA Different Commercial Philosophy\nAtlas vs. the Humanoid Field\nThe 2026 humanoid market is crowded and fast-moving. Here's how Atlas compares against the leading rivals on the metrics operators actually weigh.\nRobot\nWhy the Price Gap Isn't the Whole Story\nAtlas's estimated ~$420,000 price dwarfs Unitree's ~$16,000 G1 — but they aren't competing for the same buyer. Atlas targets large industrial accounts where reliability, integration, and service contracts matter more than sticker price. Boston Dynamics is also building in over-the-air software upgrades and full maintenance, repair, and overhaul (MRO) services — the kind of lifecycle support that determines real total cost of ownership on a factory floor.\nFrequently Asked Questions",
+        "content_chars": 5618,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "Digit capabilities, GXO deployment tasks, and commercial status",
+      "url": "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.293,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement",
+        "title": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement | Agility",
+        "domain": "www.agilityrobotics.com",
+        "focus": "Digit capabilities, GXO deployment tasks, and commercial status",
+        "content": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement | Agility\nIndustries\nResources\nDeploy Digit\nClose\nAll Resources\nDigit Deployed at GXO in Historic Humanoid RAAS Agreement\nJune 5, 2024, marked a pivotal moment in robotics history.\nCopy Link\nJune 5, 2024, marked a pivotal moment in robotics history. For the first time, a humanoid robot was deployed in commercial operations, as Digit stepped into the workforce at a GXO facility near Atlanta. This milestone represents more than a technological advancement—it signifies a leap forward in the evolution of robotics and the future of labor.\nAt Agility Robotics, our vision has always been clear: to design and build robots capable of performing useful tasks in real-world environments. Digit's deployment into a long-term, commercially significant role marks the first time this vision has been realized by a humanoid robot.\nUnlike traditional automation designed for fixed, single-purpose applications, Digit is built to operate in human spaces and do many things. These are environments that were not specifically designed for machines but for people. The challenge in these spaces has always been to solve for dull, dirty, and dangerous tasks that are increasingly difficult to hire for. Digit is designed to connect these islands of automation and take on historically hard-to-automate tasks.\nThis deployment is part of a multi-year agreement, positioning Digit as an integral part of the day-to-day operations at GXO and opening the door to an exciting future where humanoid robots perform various complex tasks in logistics, manufacturing, and beyond.\nThe importance of this deployment cannot be overstated. While robotics and artificial intelligence have made remarkable strides over the years, the true measure of success lies in practical application. The question that defines the future of robotics is not about theoretical capabilities or futuristic AI models; it’s about robots performing useful work that businesses are willing to invest in. And today, that question is being answered in real time as Digit starts its journey in Georgia.\nFor Agility Robotics, this is just the beginning. June 5th was the day humanoid robots went to work and a monumental step towards a future where general-purpose robots like Digit are an indispensable part of industries worldwide.\n‍\n→\nAgility’s Humanoid Deployment Process\nExecutive Perspective\nResources\nDeploy Digit\nCareers",
+        "content_chars": 2433,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "삼성전자 휴머노이드 로봇 개발 현황 2025 2026"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 2.556,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "삼성전자 휴머노이드 로봇 개발 현황 2025 2026",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "삼성전자 로봇사업 전망 2026｜레인보우로보틱스·Rx사업추진실 ...",
+            "url": "https://meneruva.com/2026/07/22/hello-world/",
+            "snippet": "삼성전자가 왜 로봇사업에 집중할까? 레인보우로보틱스부터 RX사업추진실, 피지컬 AI, 휴머노이드 로봇까지 2026년 삼성전자 로봇사업의 최신 현황과 향후 전망을 한눈에 살펴봅니다.",
+            "domain": "meneruva.com"
+          },
+          {
+            "title": "gov001: 한국형 AI 휴머노이드 로봇 기술 현황 2026 총정리 — 국내 ...",
+            "url": "https://gov001.infodrim.com/2026/05/ai-2026-summary-investment.html",
+            "snippet": "그런데 2026년 지금, 한국의 AI 휴머노이드 로봇 기술은 '연구실 속 꿈'에서 '실제 공장 테스트'로 무대를 옮기고 있어요. 이 글 하나로 국내 기업 개발 현황, 정부 지원 정책, 글로벌 경쟁 구도, 그리고 상용화 전망까지 모두 정리해 드릴게요.",
+            "domain": "gov001.infodrim.com"
+          },
+          {
+            "title": "'삼성표' 휴머노이드 개발 박차…몸집 불리는 미래로봇추진단",
+            "url": "https://biz.heraldcorp.com/article/10733961",
+            "snippet": "삼성전자는 최근 로봇의 정밀 조작 능력을 강화하기 위해 전담 조직인 '핸드랩 (Hand Lab)'을 신설했다. 이는 휴머노이드 상용화의 최대 난제로 꼽히는 정밀 조작 능력을 직접 확보하겠다는 의지로 풀이된다. 앞서 노태문 삼성전자 DX 부문장 (대표이사)은 올해 초 주주총회에서 \"로봇 사업은 DX 부문의 미래 기술 혁신과 성장을 주도할 핵심 분야 중 하나\"라며 \"전사적 역량을 결집해 로봇, AI, 핸드 기술과 같은 핵심 경쟁력을 글로벌 최고 수준으로 확보해 나갈 계획\"이라고 밝혔다.",
+            "domain": "biz.heraldcorp.com"
+          },
+          {
+            "title": "2026 삼성 로봇 투자 현황 총정리 - 레인보우로보틱스부터 ...",
+            "url": "https://lemontia.tistory.com/1294",
+            "snippet": "반도체 다음 먹거리로 로봇을 낙점한 삼성의 행보가 빨라지고 있습니다. 테슬라, 현대차, LG까지 뛰어든 휴머노이드 시장. 삼성은 후발주자지만 2026년 휴머노이드 출시를 예고했습니다. 지금부터 삼성의 로봇 투자 전략과 향후 전망을 3분 만에 정리해 ...",
+            "domain": "lemontia.tistory.com"
+          },
+          {
+            "title": "삼성전자 휴머노이드 개발 현황, Rx 조직과 상용화 한계 - Storium",
+            "url": "https://www.storium.io/삼성전자-휴머노이드-개발-rx-조직-상용화-한계/",
+            "snippet": "두 회사는 삼성전자의 AI·소프트웨어 역량과 레인보우로보틱스의 로봇 기술을 결합해 지능형 휴머노이드 개발을 추진한다. 협동로봇, 양팔형 이동 로봇, 자율이동로봇은 제조·물류 자동화에 활용할 대상으로 제시됐다.",
+            "domain": "www.storium.io"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "레인보우로보틱스 휴머노이드 로봇 상용화 단계 기능"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 3.152,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "레인보우로보틱스 휴머노이드 로봇 상용화 단계 기능",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "레인보우로보틱스 - 위키백과, 우리 모두의 백과사전",
+            "url": "https://ko.wikipedia.org/wiki/레인보우로보틱스",
+            "snippet": "May 5, 2026 - 레인보우로보틱스(Rainbow ... 로봇 제조 회사로, 한국과학기술원(KAIST) HUBO Lab의 오준호 교수가 2011년 창업하였다. 삼성전자가 현재 레인보우로보틱스의 협동로봇, 양팔로봇, 자율이동로봇 등을 제조·물류 등에 접목해 업무 자동화하고 있다. 오준호 카이스트 명예 교수는 휴머노이드 로봇 연구 ...",
+            "domain": "ko.wikipedia.org"
+          },
+          {
+            "title": "레인보우로보틱스 - 로봇 플랫폼 전문기업",
+            "url": "https://www.rainbow-robotics.com/?_l=ko",
+            "snippet": "끊임없는 R&D를 통해 독자적인 기술을 확보하고 우수한 로봇을 합리적인 가격으로 제공함으로써 로봇 상용화를 위해 노력하고 있습니다. VIEW MORE ... 보도자료 2026-04-02 09:30:30 플라잎-레인보우로보틱스, 제조 특화 AI 양팔로봇 V2 공동 개발 추진 · 보도자료 2026-03-03 09:30:30 헌인타운개발, 레인보우로보틱스와 인공지능 보안로봇 도입 업무협약 체결 · 보도자료 2026-02-23 09:30:30 이재용 회장 '삼성의 미래' PICK \"올해 일 낸다\" — 휴머노이드 원조 레인보우로보틱스",
+            "domain": "www.rainbow-robotics.com"
+          },
+          {
+            "title": "레인보우로보틱스 휴머노이드 로봇 기술, 현실적인 평가",
+            "url": "https://products.refind.kr/2dca2d7f-56e3-80d9-921b-dfa7265cba1e",
+            "snippet": "이 때문에 휴머노이드 상용화는 엔드이펙터, 즉 로봇핸드 기술에서 멈추는 경우가 많습니다. ... 이 지점에서 중요한 것이 힘·촉각 센서를 기반으로 한 고정밀 로봇핸드입니다. ... 이러한 손 기술은 휴머노이드가 연구 단계를 넘어 실제 작업으로 나아가기 위한 핵심 조건 중 하나입니다. ⑫ 경쟁 휴머노이드 기업과의 관점 비교 ... 레인보우로보틱스 휴머노이드는 연구 성과로서는 분명한 경쟁력을 갖고 있습니다.",
+            "domain": "products.refind.kr"
+          },
+          {
+            "title": "\"2028년 휴머노이드 상용화\"…레인보우로보틱스, R&D에 올인 - ZDNet korea",
+            "url": "https://zdnet.co.kr/view/?no=20250322142703",
+            "snippet": "March 23, 2025 - 레인보우로보틱스는 2028년을 이족보행 플랫폼의 양산화와 일반인들에게 활용할 수 있는 목표 시점으로 설정했다. 미시적인 관점에서의 개발 계획보다는 거시적 관점에서의 계획으로 연구개발에 매진하고 있다고 회사 측은 설명했다. 지난해 시작된 정부과제 3개는 모두 휴머노이드 로봇과 관련된 것이었다.",
+            "domain": "zdnet.co.kr"
+          },
+          {
+            "title": "레인보우로보틱스 - 나무위키",
+            "url": "https://namu.wiki/w/레인보우로보틱스",
+            "snippet": "July 21, 2026 - 레인보우로보틱스 연구진들이 창업전 처음으로 만들어낸 이족보행 로봇. 휴보는 KAIST에서 개발한 대한민국 최초의 이족보행 휴머노이드 로봇으로 휴보2는 레인보우로보틱스가 세계최초로 상업화한 인간형로봇 플랫폼으로서 세계 유수의 연구기관(MIT, Google 등)에 연구용 플랫폼으로 판매된적이 있다.",
+            "domain": "namu.wiki"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "현대로보틱스 휴머노이드 로봇 제품 현황"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.357,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "현대로보틱스 휴머노이드 로봇 제품 현황",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "South Korea - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/South_Korea",
+            "snippet": "In 2005, Korea Advanced Institute of Science and Technology (KAIST) developed the world's second walking humanoid robot, HUBO. A team in the Korea Institute ...",
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "전기 및 연료전지 버스 기술, 주요 기업 및 시장전망 2025-2045",
+            "url": "https://www.idtechex.com/ko/research-report/electric-buses/1012",
+            "snippet": "모터, 충전 설비, 열 관리, 배터리, 연료전지, 하이브리드를 포함하여 전기버스 관련 기술, 지역별 판매현황 및 시장전망을 포괄하는 보고서 ... 휴머노이드 로봇 시장의 ...",
+            "domain": "www.idtechex.com"
+          },
+          {
+            "title": "Chinese Tech Firms Storm MWC 2025 With Humanoid Robots ...",
+            "url": "https://en.sedaily.com/finance/2026/03/03/chinese-tech-firms-storm-mwc-2025-with-humanoid-robots",
+            "snippet": "Mar 3, 2026 · DeepX will mass-produce \"Edge Brain,\" an on-device AI chip co-developed with Hyundai Motor Group that handles robot perception, decision-making, ...",
+            "domain": "en.sedaily.com"
+          },
+          {
+            "title": "TIGER CHINA HUMANOID ROBOT | Mirae Asset TIGER ETF",
+            "url": "https://investments.miraeasset.com/tigeretf/en/product/search/detail/index.do",
+            "snippet": "-6.69KRW (-0.07%) Trading Price 9,200KRW 하락-115.00KRW (-1.23%) TIGER CHINA HUMANOID ROBOT. Stock Exchange Stock Code 0053L0. Creation Unit 50,000 First ...",
+            "domain": "investments.miraeasset.com"
+          },
+          {
+            "title": "CAU chiro (@cau_chiro) • Instagram photos and videos",
+            "url": "https://www.instagram.com/cau_chiro/",
+            "snippet": "1. 초급 (~중간고사): 로봇 제어 기초 학습 2. 중급 (~기말고사): 역기구학 및 궤적 생성 3. ... ◼공학인을 향한 발걸음 1. 동아리방에서 2대의 3D 프린터 이용가능 2. 3D ...",
+            "domain": "www.instagram.com"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "status": "completed",
+  "stage": "B2-2D",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/SG03/semantic-audits/audit-b7t_hnct",
+  "created_at": "2026-09-10T03:05:15.680439+00:00",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ],
+  "audit_result": {
+    "claims": [
+      {
+        "claim_id": "C001",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The claim is fully supported by the retrieved content, but only one independent source was provided.",
+        "evidence": [
+          {
+            "evidence_id": "C001-E001",
+            "state": "VERIFIED",
+            "reason": "The source explicitly mentions 'Bottleneck 1: Battery — The 2-to-4-Hour Wall', states that current robots run for 2–4 hours, and notes that 8–12 hour shifts require swap-battery infrastructure or charging rotations.",
+            "audited_source_type": "industry",
+            "audited_tier": 4
+          }
+        ]
+      },
+      {
+        "claim_id": "C002",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The claim is fully supported by the retrieved content, but only one independent source was provided.",
+        "evidence": [
+          {
+            "evidence_id": "C002-E001",
+            "state": "VERIFIED",
+            "reason": "The source explicitly states that humanoids meet collaborative robot safety standards (ISO 10218, TS 15066) but notes a 'structural gap' because those frameworks were designed for fixed-arm and quadruped robots, not bipedal humanoids.",
+            "audited_source_type": "industry",
+            "audited_tier": 4
+          }
+        ]
+      }
+    ],
+    "quality_flags": [
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C001-E001",
+        "message": "Worker classified as Tier 2 (Peer-reviewed), but RanketAI is an industry blog/analysis site, which is Tier 4."
+      },
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C002-E001",
+        "message": "Worker classified as Tier 2 (Peer-reviewed), but RanketAI is an industry blog/analysis site, which is Tier 4."
+      }
+    ]
+  },
+  "initial_integrity": {
+    "ok": true,
+    "errors": [],
+    "expected_claim_count": 2,
+    "seen_claim_count": 2,
+    "expected_evidence_count": 2,
+    "seen_evidence_count": 2
+  },
+  "repair_applied": false,
+  "repair_attempts": [],
+  "integrity": {
+    "ok": true,
+    "errors": [],
+    "expected_claim_count": 2,
+    "seen_claim_count": 2,
+    "expected_evidence_count": 2,
+    "seen_evidence_count": 2
+  },
+  "metrics": {
+    "claim_count": 2,
+    "evidence_count": 2,
+    "elapsed_seconds": 75.577
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "SG01": {
+    "assignment_id": "SG01",
+    "source": "parallel",
+    "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/workers/SG01/run-evuvwg32"
+  },
+  "SG02": {
+    "assignment_id": "SG02",
+    "source": "parallel",
+    "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/workers/SG02/run-zhvt_ahi"
+  },
+  "SG03": {
+    "assignment_id": "SG03",
+    "source": "recovery",
+    "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/recovery/SG03/run-4veoxq3a"
+  }
+}

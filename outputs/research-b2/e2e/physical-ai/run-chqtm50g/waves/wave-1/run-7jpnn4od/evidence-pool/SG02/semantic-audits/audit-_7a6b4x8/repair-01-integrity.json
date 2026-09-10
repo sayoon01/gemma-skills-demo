@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "errors": [],
+  "expected_claim_count": 4,
+  "seen_claim_count": 4,
+  "expected_evidence_count": 4,
+  "seen_evidence_count": 4
+}

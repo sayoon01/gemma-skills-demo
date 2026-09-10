@@ -1,0 +1,430 @@
+[
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "physical AI robot commercialization bottlenecks 2025 2026"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 1.864,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "physical AI robot commercialization bottlenecks 2025 2026",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status",
+            "url": "https://www.meta-intelligence.tech/en/insight-physical-ai",
+            "snippet": "Between 2025 and 2026, three major technological breakthroughs transformed Physical AI from a \"long-term vision\" into a \"deployable technology\": First, Robot Foundation Models enable robots to complete diverse tasks through natural language instructions [5]; Second, GPU-accelerated simulation allows robots to train at high speed in virtual ...",
+            "domain": "www.meta-intelligence.tech"
+          },
+          {
+            "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's ...",
+            "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+            "snippet": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is 2026 is the year humanoid robots trade the lab coat for a hard hat. We analyze the three-way competition between Figure AI, Tesla Optimus, and Unitree, the three unsolved technical bottlenecks, and where revenue is actually being generated across RaaS, foundation models, and simulation ...",
+            "domain": "www.ranketai.com"
+          },
+          {
+            "title": "2025-2026 Humanoid Robotics Market Report | Physical AI & Industrial ...",
+            "url": "https://robotopian.com/blogs/news/https-robotopian-com-blogs-news-humanoid-robotics-market-2025-2026-physical-ai",
+            "snippet": "An in-depth analysis of the global humanoid robotics market, covering embodied AI, robot foundation models, industrial deployment trends, dexterous manipulation systems, and commercialization risks shaping the next generation of physical AI.",
+            "domain": "robotopian.com"
+          },
+          {
+            "title": "AI Robotics Commercialization: Scaling Physical AI in 2026",
+            "url": "https://neuroforgegtm.com/insights/ai-robotics-commercialization-trends-2026",
+            "snippet": "Insight The Future of AI Robotics Commercialization: A 2026 Guide Learn how Agentic AI, IT/OT convergence, and Physical AI are driving the $218B AI robotics commercialization market and the rise of Robot-as-a-Service models.",
+            "domain": "neuroforgegtm.com"
+          },
+          {
+            "title": "AI Robotics 2026 — Humanoid Robots: Tesla Optimus, Figure AI, Boston ...",
+            "url": "https://www.singularitymoments.com/ai-robotics-guide-2026/",
+            "snippet": "Complete guide to AI-powered humanoid robots in 2026: Tesla Optimus Gen 3, Figure 02 (OpenAI partnership), Boston Dynamics electric Atlas, 1X Neo, Agility Digit. Commercial deployment timelines, manufacturing use cases, and the path to consumer robots.",
+            "domain": "www.singularitymoments.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "robot safety standards verification requirements ISO 2024 2025 2026"
+    },
+    "ok": false,
+    "error": "DDGSException: No results found.",
+    "elapsed_seconds": 4.221,
+    "result": {
+      "ok": false,
+      "error": "DDGSException: No results found."
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "Sim2Real gap robot testing infrastructure requirements"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 5.179,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "Sim2Real gap robot testing infrastructure requirements",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "GitHub - isaac-sim2real/sage: Framework for measuring sim-to ...",
+            "url": "https://github.com/isaac-sim2real/sage",
+            "snippet": "Oct 22, 2025 · SAGE (Sim2Real Actuator Gap Estimator) is a comprehensive toolkit for analyzing the differences between simulated and real robot joint motions. This project provides systematic tools for measuring, visualizing, and understanding sim-to-real gaps in robotic systems, enabling researchers and engineers ...",
+            "domain": "github.com"
+          },
+          {
+            "title": "Crossing the Sim2Real Gap Between Simulation and Ground ...",
+            "url": "https://arxiv.org/pdf/2512.03736",
+            "snippet": "Future work can build upon this initial validation of the AI&T process to cross the Sim2Real gap between simulation and ground testing to space deployment of autonomous robots.",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "The Reality Gap in Robotics: Challenges, Solutions, and Best ...",
+            "url": "https://arxiv.org/html/2510.20808v1",
+            "snippet": "Through simulation, massive amounts of data can be collected from robots performing complex tasks at a fraction of the cost compared to the real world. † However, the gap between simulated and real-world environments often stands in the way of fully leveraging its potential.",
+            "domain": "arxiv.org"
+          },
+          {
+            "title": "Sim2Real Domain Gap in Robotics - emergentmind.com",
+            "url": "https://www.emergentmind.com/topics/simulation-to-reality-sim2real-domain-gap",
+            "snippet": "Simulation-to-Reality (Sim2Real) domain gap is the performance disparity observed when robotic designs optimized in simulation are applied in real hardware due to modeling discrepancies. The study employs a parameterized morphology design space, quantifying lift performance using metrics like mean lift force and complexity measures for bio-inspired flapping-wing robots. Findings reveal a non ...",
+            "domain": "www.emergentmind.com"
+          },
+          {
+            "title": "sage/README.md at main · isaac-sim2real/sage · GitHub",
+            "url": "https://github.com/isaac-sim2real/sage/blob/main/README.md",
+            "snippet": "SAGE (Sim2Real Actuator Gap Estimator) is a comprehensive toolkit for analyzing the differences between simulated and real robot joint motions. This project provides systematic tools for measuring, visualizing, and understanding sim-to-real gaps in robotic systems, enabling researchers and engineers to quantify and improve the transfer of robot behaviors from simulation to reality. SAGE ...",
+            "domain": "github.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 1,
+    "name": "web_search",
+    "arguments": {
+      "query": "자율작업 로봇 시험 검증 인프라 구축 방안"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.972,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "자율작업 로봇 시험 검증 인프라 구축 방안",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "NBIC 국가융합기술지도(안) - PACST | 플립 PDF 온라인",
+            "url": "https://fliphtml5.com/lukuo/rrxb/NBIC_국가융합기술지도(안)/",
+            "snippet": "NBIC 국가융합기술지도(안)을 ・ 자체 추진 인프라 구축으로 인한 중복투자 및 인프라 미비 현상 방지를 위한 사전 조율로 효율적 인프라 건설 ・ 인프라 구축 필요 기술 ...",
+            "domain": "fliphtml5.com"
+          },
+          {
+            "title": "Yongbeom Kim (@yongbeom.kim.35) - Facebook",
+            "url": "https://www.facebook.com/yongbeom.kim.35/",
+            "snippet": "자본비용 사이 역설을 안고 있다. 구축하는 인프라와. AI 데이터센터와 자율주행차, 휴머노이드 로봇, AI 가전, 산업용 AI의 확산은 고성능 연산장치와",
+            "domain": "www.facebook.com"
+          },
+          {
+            "title": "Tags - Colin's Blog",
+            "url": "https://colinch4.github.io/tags/",
+            "snippet": "자바스크립트 TDD와 동시성 테스트 도구 비교 · 자바스크립트 TDD에서의 테스트 성능 개선 전략 · 자바스크립트 TDD와 테스트 주도 인프라 구축 · 자바스크립트 TDD와 UI ...",
+            "domain": "colinch4.github.io"
+          },
+          {
+            "title": "KIOST 50년사 BOOK 펼침면(최종) 테스트 - dani | 플립 PDF 온라인",
+            "url": "https://fliphtml5.com/drpiw/vbdq/KIOST_50년사_BOOK_펼침면(최종)_테스트/",
+            "snippet": "Nov 27, 2023 · ... 인프라 구축을. 설정하였다. 연구원은 일련의 과정을 거쳐 관할해역의 과학적 관리기반 구축, 해양자. 원의 개발·이용기술 개발, 해양환경보전기술 개발 ...",
+            "domain": "fliphtml5.com"
+          },
+          {
+            "title": "베타 테크놀로지스 2026년 2분기 실적 컨퍼런스 콜 - TradingKey",
+            "url": "https://www.tradingkey.com/kr/news/transcripts/262105448-tradingkey",
+            "snippet": "Aug 14, 2026 · BETA Technologies의 2026년 2분기 실적 발표: 매출은 146% 증가한 1470만 달러를 기록했고, 수주 잔고는 39억 달러에 달했으며, 연간 가이던스는 ...",
+            "domain": "www.tradingkey.com"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "three unsolved technical bottlenecks for humanoid robot commercialization",
+      "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.554,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+        "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI",
+        "domain": "www.ranketai.com",
+        "focus": "three unsolved technical bottlenecks for humanoid robot commercialization",
+        "content": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI\nSkip to main content\n2026-02-28\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\n2026 is the year humanoid robots trade the lab coat for a hard hat. We analyze the three-way competition between Figure AI, Tesla Optimus, and Unitree, the three unsolved technical bottlenecks, and where revenue is actually being generated across RaaS, foundation models, and simulation platforms.\nAI-assisted drafting · reviewed by the RanketAI Editorial Team\n' Digit is piloted in an Amazon fulfillment center, and Tesla's Optimus Gen 2 begins a trial run on the Fremont factory floor. Scenes that lived in science fiction for decades are now unfolding on real industrial sites.\nBut the phrase \"year one of commercialization\" comes with important caveats. Three technical bottlenecks remain unsolved, and cost structures are still prohibitive for most companies. Who survives, and who actually makes money — this article analyzes the structure beneath the headlines.\n1. What Changed: Three Shifts That Reshaped the\nChina's Price Disruption Rewrites the Market Equation\nUnitree Robotics launched its G1 humanoid at $16,000. US competitors sit in the $100,000–$250,000 range — a gap of more than 10x. Unitree has run this same playbook before: in the drone and quadruped robot markets, it applied identical price pressure to squeeze Western incumbents.\nThe disruption cuts in two directions. First, it lowers the entry barrier for mid-market manufacturing and logistics companies to seriously consider robots. Second, it forces US and European companies selling premium hardware to pivot toward software and service monetization.\nBig Tech Enters the Platform War in Earnest\nAt GTC 2025, NVIDIA open-sourced both its Isaac Lab robot simulation platform and the GR00T N1 foundation model. This is not a neutral technical contribution — it is\na strategic move to own the platform standard of the robot ecosystem\nWhy pressure is building:\nLegacy industrial robots are fixed-position systems specialized for single tasks. As humanoids demonstrate the ability to handle the same tasks more flexibly, new adoption demand may shift in their direction.\nDefensibility:\n— and the software layer that determines that is where margin lives.\n5. Three Bottlenecks That Remain Unsolved\nBottleneck 1: Battery — The 2-to-4-Hour Wall\nCurrent humanoid robots run for 2–4 hours per charge. Supporting an 8–12 hour industrial shift requires either a swap-battery infrastructure or a scheduled charging rotation. Both increase\ndeployment\nEpilogue: Infrastructure First, Robots Second\nThe smartphone revolution was possible because years of infrastructure accumulation — 3G networks, the app store ecosystem, touchscreen supply chains — preceded the iPhone. The same pattern is playing out now in humanoid robotics: simulation platforms, foundation models, RaaS contract frameworks, and safety certification infrastructure are the foundation being laid.\nThe real money is not in selling robots. It is in\nQ1. What is the most important difference between a humanoid robot and a traditional industrial robot?\nTraditional industrial robots (FANUC, ABB, etc.) repeat fixed motions at fixed positions for a single programmed task. They cannot perform anything outside that program. Humanoid robots walk on two legs, manipulate a wide range of objects with two hands, and — via AI foundation models — can\nlearn new tasks from natural language instructions\nNot necessarily. RaaS reduces upfront capital expenditure and increases operational flexibility, but total cost of ownership (TCO) over time may exceed direct purchase. For operations with high utilization rates and stable task profiles, ownership may be more economical. A minimum 3-year operating scenario comparison is recommended before deciding.\nQ4. Can low-cost Chinese humanoid robots be trusted for industrial quality?\nUnitree has already established global credibility in the quadruped robot market. That said, industrial safety certifications (ISO 10218, CE marking) and after-sales service networks vary by product. Regardless of price point, certifications relevant to the deployment environment and local maintenance support must be verified before adoption.\nQ6. How large is the humanoid robot market?\nGoldman Sachs estimated in a 2024 report that the global humanoid robot market could reach up to $38 billion by 2035. More optimistic analyses put the figure as high as $154 billion. Long-term forecasts of this kind are highly sensitive to the pace of technical advancement and should be treated as directional reference points, not precise projections.\nQ7. Which industries are seeing the earliest real deployments?\nQ10. How are safety risks managed in real industrial deployments?\nHumanoids currently deployed in industrial settings either operate in zones physically separated from human workers, or are equipped with collision detection and immediate-stop functions meeting collaborative robot safety standards (ISO 10218, TS 15066). Both Figure AI and Agility Robotics require on-site human supervisors during the initial deployment phase. A structural gap remains, however: current safety certification frameworks were designed for fixed-arm and quadruped robots — not bipedal humanoids. Developing humanoid-specific certification standards is an open challenge for both industry and regulatory bodies.\nRelated Terms / Next Reading\nNVIDIA GR00T N1:\nhttps://developer.nvidia.com/blog/nvidia-gr00t-n1-open-foundation-model-for-generalist-humanoid-robots/\nAgility Robotics–Amazon:\nCore topic\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\nBest fit\nFrequently Asked Questions\nWhat is the core practical takeaway from \"Humanoid Robots: Year One of Commercialization —…\"?\n▾\nTeams with repetitive workflows and high quality variance, such ",
+        "content_chars": 6000,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "ISO robot safety standards 2024 2025 2026 humanoid autonomous robots"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 6.207,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "ISO robot safety standards 2024 2025 2026 humanoid autonomous robots",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Humanoid Robot Safety Standards 2026: Best Compliance Guide",
+            "url": "https://theresarobotforthat.com/blog/humanoid-robot-safety-standards-2026/",
+            "snippet": "Master humanoid robot safety in 2026. ISO 10218, OSHA compliance, fall zones, battery protocols, and risk assessment.",
+            "domain": "theresarobotforthat.com"
+          },
+          {
+            "title": "ISO Safety Standards for Humanoid robots: What manufacturers need to ...",
+            "url": "https://roboticsbiz.com/iso-safety-standards-for-humanoid-robots-what-manufacturers-need-to-know-in-2026/",
+            "snippet": "In 2026, the honest answer to all three questions is: it depends, and the legal frameworks to give a definitive answer are still being constructed. This is not a reason for paralysis — deployments are happening, workers are collaborating with humanoid robots today, and the existing standards provide meaningful guidance. But it is a reason for manufacturers, integrators, and enterprise buyers ...",
+            "domain": "roboticsbiz.com"
+          },
+          {
+            "title": "Humanoid Robot Safety Standards 2026: ISO 25785-1, ISO 10218, OSHA, and ...",
+            "url": "https://biped.news/article/humanoid-robot-safety-standards-2026",
+            "snippet": "A durable guide to humanoid robot safety standards in 2026, including ISO/CD 25785-1, ISO 10218, ISO/TS 15066, ANSI/RIA R15.08, OSHA robotics guidance, EU machinery rules, and pilot expansion checklists.",
+            "domain": "biped.news"
+          },
+          {
+            "title": "ISO - Robotics",
+            "url": "https://www.iso.org/sectors/engineering/robotics",
+            "snippet": "Robotics Standards advance safety, precision, and innovation in robotics, supporting seamless integration and safe human-robot interactions across industries.",
+            "domain": "www.iso.org"
+          },
+          {
+            "title": "Are Humanoid Robots Safe? Safety Standards and Regulations",
+            "url": "https://humanoidintel.ai/humanoid-robot-safety/",
+            "snippet": "Complete guide to humanoid robot safety: ISO standards (ISO 10218, ISO/TS 15066, ISO 13482), force limiting, emergency stop systems, safety certifications, regulatory frameworks, and what companies like Tesla, Figure AI, and Boston Dynamics are doing to ensure safe human-robot interaction. Updated May 2026.",
+            "domain": "humanoidintel.ai"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "robotics testbed infrastructure Korea government MOTIE"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 4.331,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "robotics testbed infrastructure Korea government MOTIE",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Press Releases: Korea.net : The official website of the ...",
+            "url": "https://www.korea.net/Government/Briefing-Room/Press-Releases/view?articleId=7391&type=O",
+            "snippet": "May 8, 2024 · MOTIE will also be establishing an AI autonomous manufacturing testbed for robotics and software that companies can utilize in establishing their own AI autonomous manufacturing systems. To note, 200 billion won will go towards nurturing a national robot testbed project (2024–2028).",
+            "domain": "www.korea.net"
+          },
+          {
+            "title": "Fortune Korea_Winter 2025 DAC Report",
+            "url": "https://bdmtglobal.com/wp-content/uploads/2025/02/Fortune-Korea_Winter-2025-DAC-Report.pdf",
+            "snippet": "S. Korea is at the forefront of robotics innovation, with significant government investment in research and development. The Ministry of Trade, Industry and Energy (MOTIE) has announced the Fourth Intelligent Robot Basic Plan (2024-2028), aiming to invest over $2.24B by 2030.",
+            "domain": "bdmtglobal.com"
+          },
+          {
+            "title": "Robotics Industry | Daegu - KOTRA",
+            "url": "https://ombudsman.kotra.or.kr/dg-en/cntnts/i-1365/web.do",
+            "snippet": "Status of Daegu, a global leader of robot industry: The Korea Institute for Robot Industry Advancement and a national robot testbed will be established in Daegu, and the world`s top seven robotics leaders including Hyundai Robotics and Yaskawa Electric Co. are operating in Daegu.",
+            "domain": "ombudsman.kotra.or.kr"
+          },
+          {
+            "title": "Blueprint for robot industry development 2024-2028 is out ...",
+            "url": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/1644/view",
+            "snippet": "The Ministry of Trade, Industry and Energy (MOTIE) announced the finalized Fourth Intelligent Robot Basic Plan (2024-2028) through the Robot Industry Policy Deliberation Committee Meeting held on January 16 as part of implementing the advanced robot industry’s vision and strategy announced in December 2023, based on the Intelligent Robots Development and Distribution Promotion Act. The Basic ...",
+            "domain": "english.motir.go.kr"
+          },
+          {
+            "title": "National Robot Test Field to begin pilot operation in 2027 ...",
+            "url": "https://www.investkorea.org/dg-en/bbs/i-1381/detail.do?ntt_sn=491318",
+            "snippet": "Mar 25, 2024 · The Daegu Metropolitan Government and the Ministry of Trade, Industry and Energy (MOTIE) signed an MOU with the Korea Planning & Evaluation Institute of Industrial Technology (KEIT) and the Korea Institute for Robot Industry Advancement (KIRIA) to stimulate the creation and the operation of the national robot test field on March 21.",
+            "domain": "www.investkorea.org"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 2,
+    "name": "web_search",
+    "arguments": {
+      "query": "\"Sim2Real gap\" infrastructure requirements for robot verification"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 3.037,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "\"Sim2Real gap\" infrastructure requirements for robot verification",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "Quantifying the Sim2Real Gap: Model-Based Verification and ...",
+            "url": "https://ieeexplore.ieee.org/document/10904321",
+            "snippet": "Feb 26, 2025 · Abstract: Quantifying the Sim2Real gap is crucial for validating autonomous ground systems, enabling robust algorithm testing in simulations before real-world deployment, thereby reducing costs and time. This study introduces the Vinnicombe (ν -gap) metric as a quantitative tool for assessing this gap. To achieve this, a non-holonomic skid-steer differential drive robot was used. The ν -gap ...",
+            "domain": "ieeexplore.ieee.org"
+          },
+          {
+            "title": "GitHub - isaac-sim2real/sage: Framework for measuring sim-to ...",
+            "url": "https://github.com/isaac-sim2real/sage",
+            "snippet": "Oct 22, 2025 · Framework for measuring sim-to-real gaps in robot joint motions. Supports different humanoids with physics simulation, real hardware data collection, and statistical analysis. - isaac-sim2real/sage",
+            "domain": "github.com"
+          },
+          {
+            "title": "Quantifying the Sim2Real Gap: Model-Based Verification and ...",
+            "url": "https://ieeexplore.ieee.org/abstract/document/10904321/authors",
+            "snippet": "Quantifying the Sim2Real gap is crucial for validating autonomous ground systems, enabling robust algorithm testing in simulations before real-world deployment,",
+            "domain": "ieeexplore.ieee.org"
+          },
+          {
+            "title": "Quantifying the Sim2Real Gap: Model-Based Verification and ...",
+            "url": "https://ui.adsabs.harvard.edu/abs/2025IRAL...10.3819W/abstract",
+            "snippet": "Quantifying the Sim2Real gap is crucial for validating autonomous ground systems, enabling robust algorithm testing in simulations before real-world deployment, thereby reducing costs and time. This study introduces the Vinnicombe ($\\nu$ -gap) metric as a quantitative tool for assessing this gap.",
+            "domain": "ui.adsabs.harvard.edu"
+          },
+          {
+            "title": "Quantifying and Visualizing Sim-to-Real Gaps: Physics-Guided ...",
+            "url": "https://arxiv.org/html/2507.23445v1",
+            "snippet": "Simulation-to-real (sim-to-real) transfer has achieved significant success on robotic platforms equipped with low-gear-ratio, backdrivable actuators. In these systems, such as small humanoids that learn to walk, reinforcement learning (RL) combined with domain randomization (DR) often closes the gap between virtual training and physical deployment [14][1][16]. By exposing the controller to ...",
+            "domain": "arxiv.org"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "fetch_page",
+    "arguments": {
+      "focus": "three unsolved technical bottlenecks for humanoid robot commercialization",
+      "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 0.348,
+    "result": {
+      "ok": true,
+      "data": {
+        "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+        "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI",
+        "domain": "www.ranketai.com",
+        "focus": "three unsolved technical bottlenecks for humanoid robot commercialization",
+        "content": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI\nSkip to main content\n2026-02-28\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\n2026 is the year humanoid robots trade the lab coat for a hard hat. We analyze the three-way competition between Figure AI, Tesla Optimus, and Unitree, the three unsolved technical bottlenecks, and where revenue is actually being generated across RaaS, foundation models, and simulation platforms.\nAI-assisted drafting · reviewed by the RanketAI Editorial Team\n' Digit is piloted in an Amazon fulfillment center, and Tesla's Optimus Gen 2 begins a trial run on the Fremont factory floor. Scenes that lived in science fiction for decades are now unfolding on real industrial sites.\nBut the phrase \"year one of commercialization\" comes with important caveats. Three technical bottlenecks remain unsolved, and cost structures are still prohibitive for most companies. Who survives, and who actually makes money — this article analyzes the structure beneath the headlines.\n1. What Changed: Three Shifts That Reshaped the\nChina's Price Disruption Rewrites the Market Equation\nUnitree Robotics launched its G1 humanoid at $16,000. US competitors sit in the $100,000–$250,000 range — a gap of more than 10x. Unitree has run this same playbook before: in the drone and quadruped robot markets, it applied identical price pressure to squeeze Western incumbents.\nThe disruption cuts in two directions. First, it lowers the entry barrier for mid-market manufacturing and logistics companies to seriously consider robots. Second, it forces US and European companies selling premium hardware to pivot toward software and service monetization.\nBig Tech Enters the Platform War in Earnest\nAt GTC 2025, NVIDIA open-sourced both its Isaac Lab robot simulation platform and the GR00T N1 foundation model. This is not a neutral technical contribution — it is\na strategic move to own the platform standard of the robot ecosystem\nWhy pressure is building:\nLegacy industrial robots are fixed-position systems specialized for single tasks. As humanoids demonstrate the ability to handle the same tasks more flexibly, new adoption demand may shift in their direction.\nDefensibility:\n— and the software layer that determines that is where margin lives.\n5. Three Bottlenecks That Remain Unsolved\nBottleneck 1: Battery — The 2-to-4-Hour Wall\nCurrent humanoid robots run for 2–4 hours per charge. Supporting an 8–12 hour industrial shift requires either a swap-battery infrastructure or a scheduled charging rotation. Both increase\ndeployment\nEpilogue: Infrastructure First, Robots Second\nThe smartphone revolution was possible because years of infrastructure accumulation — 3G networks, the app store ecosystem, touchscreen supply chains — preceded the iPhone. The same pattern is playing out now in humanoid robotics: simulation platforms, foundation models, RaaS contract frameworks, and safety certification infrastructure are the foundation being laid.\nThe real money is not in selling robots. It is in\nQ1. What is the most important difference between a humanoid robot and a traditional industrial robot?\nTraditional industrial robots (FANUC, ABB, etc.) repeat fixed motions at fixed positions for a single programmed task. They cannot perform anything outside that program. Humanoid robots walk on two legs, manipulate a wide range of objects with two hands, and — via AI foundation models — can\nlearn new tasks from natural language instructions\nNot necessarily. RaaS reduces upfront capital expenditure and increases operational flexibility, but total cost of ownership (TCO) over time may exceed direct purchase. For operations with high utilization rates and stable task profiles, ownership may be more economical. A minimum 3-year operating scenario comparison is recommended before deciding.\nQ4. Can low-cost Chinese humanoid robots be trusted for industrial quality?\nUnitree has already established global credibility in the quadruped robot market. That said, industrial safety certifications (ISO 10218, CE marking) and after-sales service networks vary by product. Regardless of price point, certifications relevant to the deployment environment and local maintenance support must be verified before adoption.\nQ6. How large is the humanoid robot market?\nGoldman Sachs estimated in a 2024 report that the global humanoid robot market could reach up to $38 billion by 2035. More optimistic analyses put the figure as high as $154 billion. Long-term forecasts of this kind are highly sensitive to the pace of technical advancement and should be treated as directional reference points, not precise projections.\nQ7. Which industries are seeing the earliest real deployments?\nQ10. How are safety risks managed in real industrial deployments?\nHumanoids currently deployed in industrial settings either operate in zones physically separated from human workers, or are equipped with collision detection and immediate-stop functions meeting collaborative robot safety standards (ISO 10218, TS 15066). Both Figure AI and Agility Robotics require on-site human supervisors during the initial deployment phase. A structural gap remains, however: current safety certification frameworks were designed for fixed-arm and quadruped robots — not bipedal humanoids. Developing humanoid-specific certification standards is an open challenge for both industry and regulatory bodies.\nRelated Terms / Next Reading\nNVIDIA GR00T N1:\nhttps://developer.nvidia.com/blog/nvidia-gr00t-n1-open-foundation-model-for-generalist-humanoid-robots/\nAgility Robotics–Amazon:\nCore topic\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\nBest fit\nFrequently Asked Questions\nWhat is the core practical takeaway from \"Humanoid Robots: Year One of Commercialization —…\"?\n▾\nTeams with repetitive workflows and high quality variance, such ",
+        "content_chars": 6000,
+        "truncated": true
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "ISO/CD 25785-1 humanoid robot safety standards details"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 2.954,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "ISO/CD 25785-1 humanoid robot safety standards details",
+        "result_count": 5,
+        "results": [
+          {
+            "title": "ISO/CD 25785-1 - Robotics — Safety requirements for dynamically stable ...",
+            "url": "https://www.iso.org/standard/91469.html",
+            "snippet": "Robotics — Safety requirements for dynamically stable industrial mobile robots (legged, wheeled, or other forms of locomotion) — Part 1: Robots",
+            "domain": "www.iso.org"
+          },
+          {
+            "title": "ISO 25785-1: Humanoid Robot Safety Standards and Liability Implications",
+            "url": "https://humanoidliability.com/resources/iso-25785-humanoid-safety-standards/",
+            "snippet": "Comprehensive guide to ISO 25785-1 humanoid robot safety standards covering actively controlled stability requirements, fall-risk management, IEEE framework coordination, manufacturer compliance obligations, and liability implications for employers deploying humanoid robots.",
+            "domain": "humanoidliability.com"
+          },
+          {
+            "title": "ISO 25785-1: Essential Safety Requirements 2026",
+            "url": "https://theresarobotforthat.com/blog/humanoid-robot-safety-standards-2026/",
+            "snippet": "ISO 25785-1 is the humanoid robot safety standard for 2026. Get risk assessment rules, OSHA compliance requirements, and facility certification steps.",
+            "domain": "theresarobotforthat.com"
+          },
+          {
+            "title": "Humanoid Robot Safety Standards 2026: ISO 25785-1, ISO 10218, OSHA, and ...",
+            "url": "https://biped.news/article/humanoid-robot-safety-standards-2026",
+            "snippet": "A durable guide to humanoid robot safety standards in 2026, including ISO/CD 25785-1, ISO 10218, ISO/TS 15066, ANSI/RIA R15.08, OSHA robotics guidance, EU machinery rules, and pilot expansion checklists.",
+            "domain": "biped.news"
+          },
+          {
+            "title": "prSRPS EN ISO 25785-1:2026 - iss.rs",
+            "url": "https://iss.rs/en/project/show/iss:proj:112175",
+            "snippet": "Note 2: Safety requirements for mobile robots used in non-industrial environments can be found in other standards (e.g., ISO 13482). Note 3: Examples of mobile robots used in non-industrial environments can include: Mobile robots intended for consumer or household use; undersea, military and space robots; or medical, surgical, or rehabilitative ...",
+            "domain": "iss.rs"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "turn": 3,
+    "name": "web_search",
+    "arguments": {
+      "query": "\"national robot test field\" Daegu MOTIE infrastructure details"
+    },
+    "ok": true,
+    "error": null,
+    "elapsed_seconds": 5.486,
+    "result": {
+      "ok": true,
+      "data": {
+        "query": "\"national robot test field\" Daegu MOTIE infrastructure details",
+        "result_count": 1,
+        "results": [
+          {
+            "title": "Cheongna Robot Land where you can learn everything about ...",
+            "url": "https://www.facebook.com/allwaysincheon.en/posts/cheongna-robot-land-where-you-can-learn-everything-about-robotsdiverse-robot-ent/1303192006494853/",
+            "snippet": "Mar 20, 2019 · ... infrastructure in National Robot Test Field with total four floors of #logistics, #automatic driving, #charging, #parking, #hospital and ...",
+            "domain": "www.facebook.com"
+          }
+        ]
+      }
+    }
+  }
+]

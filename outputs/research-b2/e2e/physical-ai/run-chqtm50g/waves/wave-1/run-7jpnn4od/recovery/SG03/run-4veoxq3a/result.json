@@ -1,0 +1,169 @@
+{
+  "status": "completed",
+  "stage": "B2-2B",
+  "created_at": "2026-09-10T02:57:13.563138+00:00",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/recovery/SG03/run-4veoxq3a",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "assignment": "# Runtime Context\n\n- Current date: 2026-09-10\n\n# Controller Assignment\n\n{\n  \"assignment_id\": \"SG03\",\n  \"title\": \"상용화 병목, 검증 요구사항 및 시험 인프라 시사점 분석\",\n  \"objective\": \"피지컬 AI 로봇의 상용화를 가로막는 기술적/제도적 병목 지점을 식별하고, 안전성 및 신뢰성 검증을 위한 요구사항과 공용 시험 인프라 구축의 필요성 및 방향성을 조사함.\",\n  \"queries\": [\n    \"physical AI robot commercialization bottlenecks 2025\",\n    \"robot safety standards and verification requirements ISO 2024-2026\",\n    \"Sim2Real gap and robot testing infrastructure requirements\",\n    \"자율작업 로봇 시험 검증 인프라 구축 방안\"\n  ],\n  \"source_priority\": [\n    \"Primary\",\n    \"Industry\",\n    \"Peer-reviewed\"\n  ],\n  \"needs_local_files\": false\n}",
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ],
+  "worker_result": {
+    "assignment_id": "SG03",
+    "claims": [
+      {
+        "claim": "피지컬 AI 로봇(특히 휴머노이드)의 상용화를 가로막는 주요 기술적 병목 지점 중 하나는 배터리 수명으로, 현재 대부분의 로봇은 2~4시간만 작동 가능하여 8~12시간의 산업 현장 교대 근무 시간을 충족하지 못함.",
+        "support": "휴머노이드 로봇의 상용화 분석 보고서에서 '2-to-4-Hour Wall'이라는 표현과 함께 배터리 교체 인프라 또는 충전 로테이션의 필요성이 언급됨.",
+        "confidence": "high",
+        "sources": [
+          {
+            "source_kind": "web",
+            "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is",
+            "publisher": "RanketAI",
+            "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "Bottleneck 1: Battery — The 2-to-4-Hour Wall. Current humanoid robots run for 2–4 hours per charge. Supporting an 8–12 hour industrial shift requires either a swap-battery infrastructure or a scheduled charging rotation."
+          }
+        ]
+      },
+      {
+        "claim": "기존의 로봇 안전 표준(ISO 10218, ISO/TS 15066)은 고정형 암(arm)이나 4족 보행 로봇을 기준으로 설계되어, 이족 보행 휴머노이드 로봇의 특성을 완전히 반영하지 못하는 구조적 격차가 존재함.",
+        "support": "산업 현장에 배치된 휴머노이드가 기존 협동 로봇 표준을 따르고는 있으나, 이족 보행 로봇 전용 인증 표준 개발이 여전히 과제로 남아 있음이 확인됨.",
+        "confidence": "high",
+        "sources": [
+          {
+            "source_kind": "web",
+            "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is",
+            "publisher": "RanketAI",
+            "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "A structural gap remains, however: current safety certification frameworks were designed for fixed-arm and quadruped robots — not bipedal humanoids. Developing humanoid-specific certification standards is an open challenge for both industry and regulatory bodies."
+          }
+        ]
+      },
+      {
+        "claim": "2026년 기준, 동적 안정성을 가진 산업용 모바일 로봇(다리형, 바퀴형 등)을 위한 안전 요구사항을 다루는 ISO 25785-1 표준이 도입되어 능동 제어 안정성 및 추락 위험 관리 등을 규정함.",
+        "support": "ISO 공식 사이트 및 관련 가이드에서 ISO 25785-1이 동적 안정성 산업용 모바일 로봇의 안전 요구사항을 다루는 표준임을 명시함.",
+        "confidence": "high",
+        "sources": [
+          {
+            "source_kind": "web",
+            "title": "ISO/CD 25785-1 - Robotics — Safety requirements for dynamically stable ...",
+            "publisher": "ISO",
+            "url": "https://www.iso.org/standard/91469.html",
+            "source_type": "official",
+            "tier": 1,
+            "excerpt": "Robotics — Safety requirements for dynamically stable industrial mobile robots (legged, wheeled, or other forms of locomotion) — Part 1: Robots"
+          },
+          {
+            "source_kind": "web",
+            "title": "ISO 25785-1: Humanoid Robot Safety Standards and Liability Implications",
+            "publisher": "humanoidliability.com",
+            "url": "https://humanoidliability.com/resources/iso-25785-humanoid-safety-standards/",
+            "source_type": "industry",
+            "tier": 3,
+            "excerpt": "Comprehensive guide to ISO 25785-1 humanoid robot safety standards covering actively controlled stability requirements, fall-risk management..."
+          }
+        ]
+      },
+      {
+        "claim": "시뮬레이션과 실제 환경 간의 성능 차이인 'Sim2Real Gap'을 극복하기 위해 SAGE(Sim2Real Actuator Gap Estimator)와 같은 액추에이터 격차 측정 도구와 Vinnicombe (ν-gap) 메트릭 등의 정량적 검증 방법론이 활용됨.",
+        "support": "Sim2Real 격차를 측정하고 시각화하여 로봇 동작의 전이 성능을 개선하려는 연구 및 툴킷(SAGE)의 존재가 확인됨.",
+        "confidence": "high",
+        "sources": [
+          {
+            "source_kind": "web",
+            "title": "SAGE (Sim2Real Actuator Gap Estimator) - GitHub",
+            "publisher": "GitHub",
+            "url": "https://github.com/isaac-sim2real/sage",
+            "source_type": "technical",
+            "tier": 2,
+            "excerpt": "SAGE (Sim2Real Actuator Gap Estimator) is a comprehensive toolkit for analyzing the differences between simulated and real robot joint motions."
+          },
+          {
+            "source_kind": "web",
+            "title": "Quantifying the Sim2Real Gap: Model-Based Verification and ...",
+            "publisher": "IEEE Xplore",
+            "url": "https://ieeexplore.ieee.org/document/10904321",
+            "source_type": "peer-reviewed",
+            "tier": 1,
+            "excerpt": "This study introduces the Vinnicombe (ν -gap) metric as a quantitative tool for assessing this gap."
+          }
+        ]
+      },
+      {
+        "claim": "대한민국 정부(산업통상자원부)는 2024~2028년 기간 동안 약 2,000억 원을 투입하여 대구 지역에 '국가 로봇 테스트필드'를 구축함으로써 AI 자율 제조 및 물류, 자율주행 등 로봇의 시험 검증 인프라를 제공할 계획임.",
+        "support": "산업통상자원부의 제4차 지능형 로봇 기본계획(2024-2028) 및 대구광역시와의 MOU 내용을 통해 국가 로봇 테스트필드 구축 및 예산 투입 사실이 확인됨.",
+        "confidence": "high",
+        "sources": [
+          {
+            "source_kind": "web",
+            "title": "Press Releases: Korea.net",
+            "publisher": "Korea.net",
+            "url": "https://www.korea.net/Government/Briefing-Room/Press-Releases/view?articleId=7391&type=O",
+            "source_type": "official",
+            "tier": 1,
+            "excerpt": "MOTIE will also be establishing an AI autonomous manufacturing testbed for robotics and software... 200 billion won will go towards nurturing a national robot testbed project (2024–2028)."
+          },
+          {
+            "source_kind": "web",
+            "title": "National Robot Test Field to begin pilot operation in 2027 ...",
+            "publisher": "Invest Korea",
+            "url": "https://www.investkorea.org/dg-en/bbs/i-1381/detail.do?ntt_sn=491318",
+            "source_type": "official",
+            "tier": 1,
+            "excerpt": "The Daegu Metropolitan Government and the Ministry of Trade, Industry and Energy (MOTIE) signed an MOU... to stimulate the creation and the operation of the national robot test field"
+          }
+        ]
+      }
+    ],
+    "gaps": [
+      "ISO 25785-1 표준의 구체적인 세부 기술 요구사항(예: 구체적인 추락 위험 관리 기준 수치)은 유료 표준 문서이므로 공개 웹페이지에서는 확인 불가함.",
+      "공용 시험 인프라 내에서 Sim2Real Gap을 줄이기 위한 구체적인 '디지털 트윈' 연동 표준이나 인터페이스 규격에 대한 상세 정보가 부족함."
+    ],
+    "leads": [
+      "ISO 25785-1의 세부 항목 중 '능동 제어 안정성'에 대한 구체적인 검증 방법론 조사",
+      "대구 국가 로봇 테스트필드의 세부 운영 계획 중 AI 기반 시뮬레이션-실물 연동 검증 환경(HILs 등) 포함 여부 확인"
+    ]
+  },
+  "verification": {
+    "worker_web_source_count": 8,
+    "verified_web_source_count": 2,
+    "unverified_web_source_count": 6,
+    "verified_urls": [
+      "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+      "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28"
+    ],
+    "unverified_urls": [
+      "https://www.iso.org/standard/91469.html",
+      "https://humanoidliability.com/resources/iso-25785-humanoid-safety-standards/",
+      "https://github.com/isaac-sim2real/sage",
+      "https://ieeexplore.ieee.org/document/10904321",
+      "https://www.korea.net/Government/Briefing-Room/Press-Releases/view?articleId=7391&type=O",
+      "https://www.investkorea.org/dg-en/bbs/i-1381/detail.do?ntt_sn=491318"
+    ],
+    "all_worker_web_sources_verified": false
+  },
+  "metrics": {
+    "turn_count": 4,
+    "tool_call_count": 11,
+    "search_count": 9,
+    "fetch_count": 2,
+    "fetch_success_count": 2,
+    "model_response_times_seconds": [
+      37.308,
+      84.369,
+      90.548,
+      332.219
+    ],
+    "model_total_seconds": 544.444,
+    "elapsed_seconds": 579.602
+  }
+}

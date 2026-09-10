@@ -1,0 +1,876 @@
+{
+  "stage": "B2-5",
+  "created_at": "2026-09-10T03:05:15.682265+00:00",
+  "batch_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od",
+  "skill": "deep-research",
+  "assignments": [
+    {
+      "assignment_id": "SG01",
+      "worker_source": "parallel",
+      "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/workers/SG01/run-evuvwg32",
+      "worker_metrics": {
+        "turn_count": 4,
+        "tool_call_count": 11,
+        "search_count": 6,
+        "fetch_count": 5,
+        "fetch_success_count": 4,
+        "model_response_times_seconds": [
+          182.509,
+          272.506,
+          546.107,
+          497.2
+        ],
+        "model_total_seconds": 1498.323,
+        "elapsed_seconds": 1515.248
+      },
+      "deterministic_summary": {
+        "raw_claim_count": 6,
+        "accepted_claim_count": 5,
+        "unsupported_claim_count": 1,
+        "rejected_source_count": 2,
+        "successful_fetch_source_count": 4,
+        "successful_file_page_count": 0
+      },
+      "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/SG01/semantic-audits/audit-h9kxk0k8",
+      "post_audit_summary": {
+        "input_claim_count": 5,
+        "accepted_claim_count": 5,
+        "unsupported_claim_count": 0,
+        "verified_evidence_count": 5,
+        "rejected_evidence_count": 0,
+        "warning_count": 0
+      },
+      "accepted_claim_count": 5,
+      "gap_count": 2
+    },
+    {
+      "assignment_id": "SG02",
+      "worker_source": "parallel",
+      "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/workers/SG02/run-zhvt_ahi",
+      "worker_metrics": {
+        "turn_count": 3,
+        "tool_call_count": 13,
+        "search_count": 9,
+        "fetch_count": 4,
+        "fetch_success_count": 4,
+        "model_response_times_seconds": [
+          86.106,
+          274.346,
+          519.498
+        ],
+        "model_total_seconds": 879.95,
+        "elapsed_seconds": 907.271
+      },
+      "deterministic_summary": {
+        "raw_claim_count": 6,
+        "accepted_claim_count": 4,
+        "unsupported_claim_count": 2,
+        "rejected_source_count": 2,
+        "successful_fetch_source_count": 4,
+        "successful_file_page_count": 0
+      },
+      "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/SG02/semantic-audits/audit-_7a6b4x8",
+      "post_audit_summary": {
+        "input_claim_count": 4,
+        "accepted_claim_count": 3,
+        "unsupported_claim_count": 1,
+        "verified_evidence_count": 3,
+        "rejected_evidence_count": 1,
+        "warning_count": 0
+      },
+      "accepted_claim_count": 3,
+      "gap_count": 3
+    },
+    {
+      "assignment_id": "SG03",
+      "worker_source": "recovery",
+      "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/recovery/SG03/run-4veoxq3a",
+      "worker_metrics": {
+        "turn_count": 4,
+        "tool_call_count": 11,
+        "search_count": 9,
+        "fetch_count": 2,
+        "fetch_success_count": 2,
+        "model_response_times_seconds": [
+          37.308,
+          84.369,
+          90.548,
+          332.219
+        ],
+        "model_total_seconds": 544.444,
+        "elapsed_seconds": 579.602
+      },
+      "deterministic_summary": {
+        "raw_claim_count": 5,
+        "accepted_claim_count": 2,
+        "unsupported_claim_count": 3,
+        "rejected_source_count": 6,
+        "successful_fetch_source_count": 1,
+        "successful_file_page_count": 0
+      },
+      "semantic_audit_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/evidence-pool/SG03/semantic-audits/audit-b7t_hnct",
+      "post_audit_summary": {
+        "input_claim_count": 2,
+        "accepted_claim_count": 2,
+        "unsupported_claim_count": 0,
+        "verified_evidence_count": 2,
+        "rejected_evidence_count": 0,
+        "warning_count": 0
+      },
+      "accepted_claim_count": 2,
+      "gap_count": 2
+    }
+  ],
+  "accepted_claims": [
+    {
+      "claim_id": "C001",
+      "claim": "2026년 피지컬 AI의 지배적인 기술 아키텍처는 인지, 추론, 행동 계층을 하나의 엔드투엔드(End-to-End, E2E) 신경망으로 통합한 VLA(Vision-Language-Action) 모델이다.",
+      "worker_support": "기존의 모듈형 파이프라인(인지-계획-제어) 대신 카메라 픽셀과 언어 지시사항을 직접 모터 명령으로 매핑하는 단일 모델을 학습시키는 추세이다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly states: 'This is the dominant architectural trend in 2026... you train a single model that maps directly from camera pixels and language instructions to motor commands.'",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "Physical AI in 2026: Foundation Models for Robot Learning and Real-World Deployment",
+              "publisher": "Robotics Center Blog",
+              "url": "https://www.roboticscenter.ai/blog/physical-ai-2026",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "This is the dominant architectural trend in 2026: rather than hand-engineering the interfaces between perception, reasoning, and action, you train a single model that maps directly from camera pixels and language instructions to motor commands."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "Physical AI in 2026: Foundation Models for Robot Learning and Real-World Deployment | Robotics Center Blog",
+              "url": "https://www.roboticscenter.ai/blog/physical-ai-2026",
+              "domain": "www.roboticscenter.ai",
+              "content": "Physical AI in 2026: Foundation Models for Robot Learning and Real-World Deployment | Robotics Center Blog\nRobots\nBack to Blog\nPhysical AI in 2026: Foundation Models for Robot Learning and Real-World Deployment\nPhysical AI in 2026: how foundation models like Pi0, OpenVLA, and GR00T are transforming robot learning. Hardware requirements, dataset needs, and deployment at scale. RCSV perspective.\nApril 16, 2026\nPhysical AI — the discipline of building AI systems that perceive, reason about, and act in the real world through robotic hardware — has crossed a critical threshold in 2026. Foundation models trained on massive cross-embodiment datasets are now enabling robots to generalize across tasks, objects, and environments in ways that were research fantasies three years ago. This article covers the current state of the field: what works, what doesn't, what it costs, and how to get started.\nPublished April 16, 2026 · Jerry Huang · 15 min read\n1. What Is Physical AI?\nPhysical AI refers to artificial intelligence systems that operate in the physical world through embodied agents — robots, autonomous vehicles, drones, and other machines with sensors and actuators. Unlike digital AI (LLMs, image generators, recommendation engines), physical AI must deal with gravity, friction, partial observability, and irreversible consequences every time it acts.\nThe term was popularized by NVIDIA CEO Jensen Huang in 2024 and has since become the standard industry label for the convergence of foundation model AI with robotics. It is functionally synonymous with \"embodied AI\" but carries stronger connotations of commercial deployment rather than pure research.\naction-consequence loop\n. A language model predicts the next token; a physical AI system predicts the next motor command, executes it, and must deal with the physical result — an object that moved, a surface that deformed, a gripper that slipped. The system cannot undo a dropped egg or un-collide with an obstacle. This irreversibility changes everything about how these systems must be designed, trained, and deployed.\nPhysical AI also faces the\n2. The Physical AI Stack\nA complete Physical AI system operates as a layered stack, from raw sensor input to physical motor output:\nPerception layer:\nReasoning/planning layer:\nConverts perceptual representations plus a task specification (natural language instruction, goal image, or reward function) into a plan or policy output. In VLA models, this layer is a large language model backbone (LLaMA, Gemma, PaLI) that has been fine-tuned to reason about spatial relationships and physical affordances rather than text generation.\nAction layer:\nProduces concrete motor commands — joint positions, end-effector velocities, or torques — that the robot hardware can execute. Modern approaches predict \"action chunks\" of 10-100 future timesteps rather than single actions, which provides temporal smoothness and allows the high-level reasoning to operate at lower frequency (2-10 Hz) while the robot executes at higher frequency (50-200 Hz).\nThe VLA integration:\nVision-Language-Action (VLA) models collapse all three layers into a single end-to-end neural network. This is the dominant architectural trend in 2026: rather than hand-engineering the interfaces between perception, reasoning, and action, you train a single model that maps directly from camera pixels and language instructions to motor commands. The tradeoff is that VLAs require more training data and compute but generalize better than modular pipelines.\n3. Key Foundation Models for Physical AI\nFive foundation models define the state of Physical AI in 2026:\nPi0 (Physical Intelligence)\nPi0 is the flagship model from Physical Intelligence, the most well-funded pure-play Physical AI company ($400M+ raised). Pi0 uses a proprietary architecture built on a vision-language backbone with a\nflow matching\nOcto (UC Berkeley)\nOcto is a smaller, more efficient open-source generalist policy from the Berkeley Robot Learning Lab:\n93M parameters — deliberately small for fast inference and easy fine-tuning\n5. Training Data Requirements\nThe single most important input to any Physical AI system is training data — high-quality robot demonstration episodes collected through teleoperation or autonomous exploration. The quantity and quality requirements vary by approach:\nTask-specific policies (ACT, Diffusion Policy):\nFoundation model pre-training:\n100K-1M+ demonstrations across diverse tasks, objects, environments, and embodiments. This is the domain of well-funded labs (Physical Intelligence, Google DeepMind, UC Berkeley) and open community efforts (Open X-Embodiment, DROID). Pre-training from scratch is not practical for most teams — the data cost alone would be $300K-$3M at current collection prices.\nA critical and often underappreciated factor is\n9. Deploying Physical AI in Production\nMoving a Physical AI system from lab demonstration to production deployment introduces challenges that don't exist in the research setting:\nLatency Budget\nEnvironment Drift\nReal deployment environments change over time: lighting shifts with time of day, objects are rearranged, surfaces wear, cameras drift slightly. A model trained under fixed conditions degrades in these shifting conditions. Production systems need continuous monitoring and periodic retraining — a concept borrowed from MLOps but applied to physical systems where retraining requires collecting new physical data, not just querying a database.\n10. Cost Reality Check\nPhysical AI is expensive. Here is an honest cost breakdown for a team going from zero to a deployed manipulation system:\nPhase\n11. Physical AI for Enterprises\nEnterprise adoption of Physical AI is accelerating in 2026, driven by three factors: labor shortages in manufacturing and logistics, declining hardware costs, and foundation models that reduce the data barrier to entry.\nThe enterprise playbook that works:\nWhere Physical AI Goes from Here\nPhysical AI in 2026 is where language AI was i",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is directly supported by the retrieved content from the Robotics Center Blog, which identifies VLA models as the dominant architectural trend in 2026 and describes the E2E mapping from pixels/language to motor commands.",
+      "assignment_id": "SG01",
+      "claim_ref": "SG01:C001"
+    },
+    {
+      "claim_id": "C002",
+      "claim": "VLA 모델의 기술적 구성은 일반적으로 시각 인코더, 프로젝터, 그리고 LLM 백본으로 이루어지며, 최종적으로 토큰화된 행동(Action)을 출력한다.",
+      "worker_support": "OpenVLA의 경우 SigLIP 및 DinoV2 백본의 융합 시각 인코더, LLM 입력 공간으로 매핑하는 프로젝터, 그리고 행동 토큰을 예측하는 Llama 2 7B 언어 모델 백본으로 구성된다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly lists the three elements: (1) fused visual encoder (SigLIP/DinoV2), (2) projector, and (3) Llama 2 7B backbone predicting tokenized output actions.",
+          "audited_source_type": "official",
+          "audited_tier": 1,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+              "publisher": "OpenVLA",
+              "url": "https://openvla.github.io/",
+              "source_type": "official",
+              "tier": 1,
+              "excerpt": "Our model consists of three key elements: (1) a fused visual encoder, consisting of a SigLIP and a DinoV2 backbone... (2) a projector... and (3) a Llama 2 7B language model backbone that predicts tokenized output actions."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+              "url": "https://openvla.github.io/",
+              "domain": "openvla.github.io",
+              "content": "OpenVLA: An Open-Source Vision-Language-Action Model\nOpenVLA:\nAn Open-Source Vision-Language-Action Model\nModels\nWe introduce OpenVLA, a 7B parameter open-source vision-language-action model (VLA), pretrained on 970k robot episodes from the Open X-Embodiment dataset.\nOpenVLA sets a new state of the art for generalist robot manipulation policies. It supports controlling multiple robots out of the box and\ncan be quickly adapted to new robot setups via parameter-efficient fine-tuning. The OpenVLA checkpoints and PyTorch training pipeline are fully open-source\n(1) a\nfused visual encoder\n, consisting of a SigLIP and a DinoV2 backbone, that maps image inputs to a number of ``image patch embeddings'',\n(2) a\nprojector\nthat takes the output embeddings of the visual encoder and maps them into the input space of a large language model, and\n(3) a Llama 2 7B\nlanguage model backbone\nthat predicts tokenized output actions. These tokens get decoded into continuous output actions that\ncan be directly executed on the robot.\nTo train OpenVLA, we curate a dataset of 970k robot manipulation trajectories from the\nOpen X-Embodiment (OpenX) dataset\n.\nOur dataset spans a wide range of tasks, scenes and robot embodiments. We train OpenVLA on a cluster of 64 A100 GPUs for 15 days. The trained model checkpoints\ncan be\nDirect Evaluations on Multiple Robot Platforms\nWe evaluate OpenVLA's ability to control multiple robot platforms ``out-of-the-box'' across two setups: the WidowX setup\nfrom Bridge V2 and the Google Robot from the RT-series of papers. Our results show that OpenVLA sets a new state of the art,\noutperforming prior generalist policies RT-1-X and Octo. Notably, as a product of the added data diversity and new model\ncomponents, it also outperforms RT-2-X, a 55B parameter closed VLA.\nWe test OpenVLA across a wide range of generalization tasks, such as\nvisual\nParameter-Efficient Fine-Tuning\nWe test various approaches for parameter-efficient fine-tuning of OpenVLA policies across multiple Franka-Tabletop tasks.\nWe find that only fine-tuning the network’s last layer or freezing the vision encoder leads to poor performance.\nSample OpenVLA Rollout Videos\nBelow are videos of the OpenVLA generalist policy demonstrating various robust behaviors. (Videos are sped up by 1.5x.)\nReal-World Bridge V2 WidowX Robot Rollouts\nPut Blue Cup on Plate\nOpenVLA properly orients the robot's end-effector to align with the orientation of the target object before grasping it.\nLift AAA Battery\nReal-World Google Robot Rollouts\nBoth RT-2-X (closed-source 55B-parameter model) and OpenVLA perform reliably on in-distribution and basic out-of-distribution (OOD) generalization tasks.\nRT-2-X:\n✅\nHowever, RT-2-X performs better than OpenVLA on difficult semantic generalization tasks, i.e., tasks that require knowledge of concepts from the Internet that do not appear in the robot action training data, such as Taylor Swift in the videos below.\nThis is expected given that RT-2-X uses larger-scale Internet pretraining data and is co-fine-tuned with both robot action data and Internet pretraining data to better preserve the pretraining knowledge (for OpenVLA, we fine-tune the pretrained vision-language model solely on robot action data for simplicity).\n⚠️\nWe see evidence of the benefits of OpenX pretraining when comparing OpenVLA to OpenVLA (Scratch), which ablates OpenX pretraining and directly fine-tunes the base vision-language model on the Franka-Tabletop dataset. The full OpenVLA model exhibits much more reliable behaviors than OpenVLA (Scratch).\nOpenVLA (Scratch):",
+              "content_chars": 3572
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim accurately describes the technical components of OpenVLA as detailed in the official project page.",
+      "assignment_id": "SG01",
+      "claim_ref": "SG01:C002"
+    },
+    {
+      "claim_id": "C003",
+      "claim": "최신 VLA 모델들은 고수준 계획(System-2)과 저수준 고주파수 실행(System-1)을 분리한 듀얼 시스템 아키텍처를 채택하고 있다.",
+      "worker_support": "Nvidia의 GR00T N1과 FigureAI의 Helix 모델은 고수준 계획을 담당하는 시스템과 저수준의 정밀한 모터 제어를 담당하는 시스템을 결합하여 인간의 '빠르고 느린 생각' 이론을 모방한다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly mentions that SOTA VLAs like Nvidia Groot N1 and FigureAI's Helix employ dual level expert systems mimicking Daniel Kahneman's dual process theory (high level planner + low-level rapid execution).",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C003-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "Vision Language Action Models (VLA) & Policies for Robots",
+              "publisher": "LearnOpenCV",
+              "url": "https://learnopencv.com/vision-language-action-models-lerobot-policy/",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "SOTA Vision Language Action Models (VLA’s ) employ either a dual level expert systems, combining a VLM and a diffusion decoders notably Nvidia Groot N1 and FigureAI’s Helix... Together these systems mimic the dual process theory by Daniel Kahneman combining high level planner with low-level rapid execution."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "Vision Language Action Models (VLA) & Policies for Robots",
+              "url": "https://learnopencv.com/vision-language-action-models-lerobot-policy/",
+              "domain": "learnopencv.com",
+              "content": "Vision Language Action Models (VLA) & Policies for Robots\nGetting Started\n>\nVision Language Action Models (VLA) Overview: LeRobot Policies Demo\nJaykumaran\nApril 11, 2025\nVision Language Action Models (VLA) Overview: LeRobot Policies Demo\nThe advent of Generative AI, has fundamentally transformed robotic intelligence, enabling significant strides in how advanced humanoid robots “perceive, reason and act” in the physical world. This huge progress is primarily attributed in terms of decision making, thanks to LLM and VLMs generalization due to their large scale pre-training. Instead\nGenerative AI\nact\n”  in the physical world. This huge progress is primarily attributed in terms of decision making, thanks to LLM and VLMs generalization due to their large scale pre-training. Instead of relying on traditional complex policies which has to be carefully handcrafted for individual low level tasks for fine grained actions, VLA allows robotic control combining vision and language knowledge for better reasoning.\nEmbodied AI refers to the intelligent systems (VLM) integrated into physical entities, mainly robots. Similar to how humans learn from their experiences, surroundings and environments that they are exposed to,\nVision Language Action Models (VLA’s )\nemploy either a dual level expert systems, combining a VLM and a diffusion decoders notably\nNvidia Groot N1\nand\nπ0 (Pi-Zero\n) by Physical Intelligence. For a compact follow-up built for consumer GPUs, see our\nSmolVLA and LeRobot tutorial\ndiffusion mode\nl acts as an action expert for low level control and dexterous locomotion. We knew that diffusion models has rich image priors, the system leverages its superior semantic scene relationships which translates and executes the system 1’s guided path or instructions to perform agile and fine-grained motor actions.\nTogether these systems mimic the dual process theory by Daniel Kahneman combining high level planner with low-level rapid execution.\nThinking Fast and Slow\nThese robotic policies exhibit behavioral cloning or imitation learning where, given the trajectories of observation and action pairs, the goal is to train mode that predict correct actions.\nTraditionally, individual policies or complex heuristics are created for each low level tasks and for specific robotic hardware configuration. But real world data is complex and training plethora of these policies are costly, time consuming and requires lot of data. What if we could leverage LLMs and make systems that can generalize across dynamic scenarios? This means robots can see their surroundings, understand spoken or written instructions, and perform real-world tasks independently exhibiting generalization.\nGeneralist Robot Policies (GRP)\nA generalist policy in robotics refers to a single, unified model capable of solving multiple downstream tasks or adapt to new tasks without task specific fine-tuning. Unlike traditional policies which has to be trained for multiple subtasks or for specific platforms or hardware, a generalist policy as the name suggests the model develops emergent behaviors to generalize across unseen tasks, novel scenarios or even in any hardware setups. For example, models like RT-2, π0 (Pi-Zero) and Groot N1. These GRP aren’t just stuck up with the pre-programmed or hard coded instructions rather self explore and navigate through tasks or problems with intermediate goals with their “Observe Understand and Action” nature.\nWhy we need VLA?\nThough LLM performs great for text-based tasks, but they lack or limited by their understanding about physical constraints of environments in which robots operate upon. Also they generate infeasible subgoals because text alone cannot fully explain the end desired goal and a LLM doesn’t always describe delicate low level behaviors. However image or video can create fine-grained policies and behaviors.\n“An image is worth 1000 words”\nType-1\n: Use VLM/LLM as a high level planner and low level controls are handled by individual policies eg:\nSayCan\n6. π0: Physical Intelligence\nπ is a foundational Vision-Language-Action Flow Model for general robot control from Physical Intelligence with two variants  π0 (Pi-Zero) and π0 Fast. It comprises of a ~3B pretrained Paligemma VLM model as base backbone and an additional 300M diffusion model as an action expert trained on π Cross-Embodiment Robot dataset. VLAs has additional action and state tokens appended at the end of image and text tokens. The model is pretrained with massive, diverse dataset and\nVLM:\n7. Helix by Figure AI\nHelix is a closed source generalist VLA model for Humanoid Control developed by FigureAI trained on ~500 hours of high-quality, multi-robot dataset in supervised fashion. It proposes a first-of-its-kind decoupled dual system architecture similar to open source Groot N1 with System-2 manages high level planning and System-1 for handling high frequency low level tasks.\nWhile Helix doesn’t have any publicly available research paper, FigureAI’s announcement blog post gives us an idea about how helix is integrated into Figure F02 Humanoid Robot. As F02 has Human bi pedal form factor which naturally allows the robot to open doors, use tools, climb stairs and lift boxes.\nHighlights of Helix:\nAdvanced VLA models like Helix allows multiple robots to work collaboratively and seamless real time coordination with precise dexterous actions compare to any other prior VLA models.\nHelix is the first VLA model capable of controling the entire humanoid’s upper body including  head gaze, wrists, torso posture and individual fingers at high rate.\nHelix performs exceptionally well even for out bound scenarios with any task specific fine-tuning.\n8. GR00T N1 from Nvidia\nFollowing the same architectural and design principles of Helix, Nvidia released GR00T N1, an open foundational model for generalist humanoid reasoning and control. N1 is a 2B parameter model (\neagle2_hg_model\nConclusion\nWhile LLMs help with digital tasks like answering questions or creating",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is supported by the LearnOpenCV article, which describes the dual-system architecture of Nvidia's GR00T N1 and FigureAI's Helix, referencing Kahneman's dual process theory.",
+      "assignment_id": "SG01",
+      "claim_ref": "SG01:C003"
+    },
+    {
+      "claim_id": "C004",
+      "claim": "피지컬 AI의 온디바이스 구현을 위해 자동차 산업의 AI SoC(System on Chip) 기술 스택이 휴머노이드 로봇으로 전이되고 있다.",
+      "worker_support": "Texas Instruments의 TDA5 SoC, Tesla의 FSD, Xpeng의 Turing AI 칩과 같이 ADAS 및 자율주행을 위해 설계된 안전 인증 AI SoC가 휴머노이드의 실시간 인지 및 제어 요구사항을 충족하는 데 사용된다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "VERIFIED",
+          "reason": "The source states that humanoid robotics is 'inheriting the automotive compute stack' and specifically mentions TI's TDA5, Tesla's FSD, and Xpeng's Turing AI chips as being well suited for humanoids.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C004-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "CES 2026: Physical AI moves from concept to system architecture",
+              "publisher": "Edge AI and Vision Alliance",
+              "url": "https://www.edge-ai-vision.com/2026/02/ces-2026-physical-ai-moves-from-concept-to-system-architecture/",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Humanoid robotics is increasingly inheriting the automotive compute stack, benefiting from years of investment into safety-certified AI SoCs originally designed for ADAS and autonomy. Texas Instruments’ latest TDA5 SoC family, like Tesla’s FSD and Xpeng’s Turing AI chips... was also well suited to humanoids."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "CES 2026: Physical AI moves from concept to system architecture - Edge AI and Vision Alliance",
+              "url": "https://www.edge-ai-vision.com/2026/02/ces-2026-physical-ai-moves-from-concept-to-system-architecture/",
+              "domain": "www.edge-ai-vision.com",
+              "content": "The world’s largest consumer electronics conference demonstrated the technical synergies between automotive and robotics.\nAt CES 2026, there was a clear cross-sector message: Physical AI is the common language across the automotive, robotaxi and humanoid robotics segments, built on a shared set of technologies, compute platforms, and design assumptions.\nThe term “physical AI” has emerged to encompass systems that can perceive complex, dynamic environments, reason under uncertainty, make decisions with real-world consequences, and act safely through physical embodiment. It can be applied to a car driving on a highway, a robotaxi operating in dense urban traffic, or a humanoid robot manipulating objects or interacting with humans.\nPerception, long viewed as the bottleneck, is now considered broadly “good enough,” thanks to multi-modal sensor fusion combining cameras, radar, LiDAR and tactile sensors, alongside large-scale data training and foundation perception models that enable systems to understand scenes, recognize intent, and track dynamic agents.\nYole Group\n, shares his key takeaways from the show and explains why the convergence between cars and robots is accelerating. This analysis is grounded in Yole Group’s long-standing automotive semiconductor expertise and part of a dedicated automotive collection, which delivers clear, technology-driven insight into architectures, supply chains, and competitive dynamics shaping mobility.\nIt also reflects Yole Group’s expanding focus on robotics: step by step, analysts are developing a core expertise in the robot domain to bridge emerging applications, especially humanoids, with the innovative semiconductor solutions that will enable them.\nAs the market moves from prototypes to early industrial deployments, Yole Group introduces its new report\nHumanoids: From demos to factory floors\nBuilding on the theme of growing AI maturity, humanoid robotics vendors demonstrated that the technology is becoming production ready for industrial deployment, where ROI is clearer and operating environments are controlled.\nUnlike consumer settings, factories offer controlled environments where humanoids can deliver immediate productivity gains, making them the first credible commercial deployment for physical AI beyond vehicles.\nA broad lineup of humanoid robots included platforms from Unitree, NEURA, Fourier, LG, and others. Boston Dynamics confirmed that its Atlas is slated for real factory roles, with deployment planned at Hyundai’s EV manufacturing facility in Georgia by 2028.The market emerging around humanoid robots is dynamic, with Yole projecting a 56% CAGR to reach more than $6 billion by 2030. As adoption accelerates at the start of the next decade, the value could soar to $51 billion by 2035.\nMeanwhile, consumer humanoids remain constrained by cost, reliability, energy efficiency, and safety, despite early demonstrations from the likes of LG and Hisense.\nHumanoids will only reach the consumer market when prices fall as the technology matures and manufacturing scales to mass production.\nThe convergence of humanoid and automotive technologies is striking. Humanoid robotics is increasingly inheriting the automotive compute stack, benefiting from years of investment into safety-certified AI SoCs originally designed for ADAS and autonomy. Texas Instruments’ latest TDA5 SoC family, like Tesla’s FSD and Xpeng’s Turing AI chips, was originally designed for automotive applications but is also well suited to humanoids.\nFrom a compute standpoint, humanoid robots and autonomous vehicles share similar requirements: multi-sensor ingestion, real-time perception and fusion, low-latency AI inference, deterministic control, and safety-critical behaviour around humans. The key difference lies in actuation, steering and braking in vehicles versus the motion control of humanoid limbs and hands.\nThis overlap is driving cross-sector synergies, from shared silicon platforms to Mobileye’s acquisition of Mentee Robotics announced in the closing keynote.\nAutomotive architecture is being rebuilt around AI\nThe innovations on show at CES emphasized that AI and compute platforms are now the primary design axis of vehicles, rather than powertrains, sensors, or even traditional E/E architectures.\nNVIDIA’s announcements underscored this shift. The AI leader introduced an open reasoning VLA model designed to tackle long-tail autonomous driving challenges, alongside simulation tools and datasets under its open-source Alpamayo platform. Industry players including Mercedes-Benz, JLR, Lucid, Uber, and the AV research community including Berkeley DeepDrive, are using these tools to accelerate their roadmaps for reasoning-based autonomy.\nAutonomy becomes an ecosystem problem\nLevel 3 announcements are now emerging from US OEMs indicating timelines around 2028, creating renewed opportunities for non-Chinese LiDAR suppliers, with Valeo expected to feature prominently in design wins.\nCES 2026 highlighted a cautious optimism: partnerships, AI innovation, and strategic alliances may finally deliver on the long-promised vision of self-driving vehicles, but widespread adoption remains a work in progress.\nPierrick Boulay, Yole Group\nAt the same time, vendors normalized the idea that autonomy is too complex for vertical isolation, given the scale of data, validation and regulatory requirements involved.\nThe ecosystem of mobility platforms, OEMs, chipmakers and software companies will need to work together to achieve adoption. Collaborations such as Lucid Motor teaming up with Nuro and Uber, VW with MOIA and Mobileye, and multiple collaborations with NVIDIA, reflect this reality.\nYole Group will monitor these emerging trends throughout 2026, as AI becomes scalable and system-defined, built around integrated architectures capable of reasoning and decision-making in the physical world. Follow Yole Group throughout 2026 as analysts track the technologies shaping automotive, robotics, and Physical AI.\nExplo",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is supported by the Edge AI and Vision Alliance report, which discusses the transfer of automotive AI SoC stacks to humanoid robotics.",
+      "assignment_id": "SG01",
+      "claim_ref": "SG01:C004"
+    },
+    {
+      "claim_id": "C005",
+      "claim": "실시간 제어를 위해 고수준 추론(2-10 Hz)과 저수준 실행(50-200 Hz)의 주기를 분리하고, '액션 청크(Action Chunks)' 단위로 명령을 예측하여 시간적 부드러움을 확보한다.",
+      "worker_support": "현대적인 접근 방식은 단일 행동이 아닌 10-100 타임스텝의 미래 행동 묶음을 예측하여 고수준 추론의 낮은 빈도에서도 로봇이 고빈도로 매끄럽게 동작하게 한다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C005-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly mentions predicting 'action chunks' of 10-100 timesteps to allow high-level reasoning at 2-10 Hz and robot execution at 50-200 Hz.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C005-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "Physical AI in 2026: Foundation Models for Robot Learning and Real-World Deployment",
+              "publisher": "Robotics Center Blog",
+              "url": "https://www.roboticscenter.ai/blog/physical-ai-2026",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Modern approaches predict \"action chunks\" of 10-100 future timesteps rather than single actions, which provides temporal smoothness and allows the high-level reasoning to operate at lower frequency (2-10 Hz) while the robot executes at higher frequency (50-200 Hz)."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "Physical AI in 2026: Foundation Models for Robot Learning and Real-World Deployment | Robotics Center Blog",
+              "url": "https://www.roboticscenter.ai/blog/physical-ai-2026",
+              "domain": "www.roboticscenter.ai",
+              "content": "Physical AI in 2026: Foundation Models for Robot Learning and Real-World Deployment | Robotics Center Blog\nRobots\nBack to Blog\nPhysical AI in 2026: Foundation Models for Robot Learning and Real-World Deployment\nPhysical AI in 2026: how foundation models like Pi0, OpenVLA, and GR00T are transforming robot learning. Hardware requirements, dataset needs, and deployment at scale. RCSV perspective.\nApril 16, 2026\nPhysical AI — the discipline of building AI systems that perceive, reason about, and act in the real world through robotic hardware — has crossed a critical threshold in 2026. Foundation models trained on massive cross-embodiment datasets are now enabling robots to generalize across tasks, objects, and environments in ways that were research fantasies three years ago. This article covers the current state of the field: what works, what doesn't, what it costs, and how to get started.\nPublished April 16, 2026 · Jerry Huang · 15 min read\n1. What Is Physical AI?\nPhysical AI refers to artificial intelligence systems that operate in the physical world through embodied agents — robots, autonomous vehicles, drones, and other machines with sensors and actuators. Unlike digital AI (LLMs, image generators, recommendation engines), physical AI must deal with gravity, friction, partial observability, and irreversible consequences every time it acts.\nThe term was popularized by NVIDIA CEO Jensen Huang in 2024 and has since become the standard industry label for the convergence of foundation model AI with robotics. It is functionally synonymous with \"embodied AI\" but carries stronger connotations of commercial deployment rather than pure research.\naction-consequence loop\n. A language model predicts the next token; a physical AI system predicts the next motor command, executes it, and must deal with the physical result — an object that moved, a surface that deformed, a gripper that slipped. The system cannot undo a dropped egg or un-collide with an obstacle. This irreversibility changes everything about how these systems must be designed, trained, and deployed.\nPhysical AI also faces the\n2. The Physical AI Stack\nA complete Physical AI system operates as a layered stack, from raw sensor input to physical motor output:\nPerception layer:\nReasoning/planning layer:\nConverts perceptual representations plus a task specification (natural language instruction, goal image, or reward function) into a plan or policy output. In VLA models, this layer is a large language model backbone (LLaMA, Gemma, PaLI) that has been fine-tuned to reason about spatial relationships and physical affordances rather than text generation.\nAction layer:\nProduces concrete motor commands — joint positions, end-effector velocities, or torques — that the robot hardware can execute. Modern approaches predict \"action chunks\" of 10-100 future timesteps rather than single actions, which provides temporal smoothness and allows the high-level reasoning to operate at lower frequency (2-10 Hz) while the robot executes at higher frequency (50-200 Hz).\nThe VLA integration:\nVision-Language-Action (VLA) models collapse all three layers into a single end-to-end neural network. This is the dominant architectural trend in 2026: rather than hand-engineering the interfaces between perception, reasoning, and action, you train a single model that maps directly from camera pixels and language instructions to motor commands. The tradeoff is that VLAs require more training data and compute but generalize better than modular pipelines.\n3. Key Foundation Models for Physical AI\nFive foundation models define the state of Physical AI in 2026:\nPi0 (Physical Intelligence)\nPi0 is the flagship model from Physical Intelligence, the most well-funded pure-play Physical AI company ($400M+ raised). Pi0 uses a proprietary architecture built on a vision-language backbone with a\nflow matching\nOcto (UC Berkeley)\nOcto is a smaller, more efficient open-source generalist policy from the Berkeley Robot Learning Lab:\n93M parameters — deliberately small for fast inference and easy fine-tuning\n5. Training Data Requirements\nThe single most important input to any Physical AI system is training data — high-quality robot demonstration episodes collected through teleoperation or autonomous exploration. The quantity and quality requirements vary by approach:\nTask-specific policies (ACT, Diffusion Policy):\nFoundation model pre-training:\n100K-1M+ demonstrations across diverse tasks, objects, environments, and embodiments. This is the domain of well-funded labs (Physical Intelligence, Google DeepMind, UC Berkeley) and open community efforts (Open X-Embodiment, DROID). Pre-training from scratch is not practical for most teams — the data cost alone would be $300K-$3M at current collection prices.\nA critical and often underappreciated factor is\n9. Deploying Physical AI in Production\nMoving a Physical AI system from lab demonstration to production deployment introduces challenges that don't exist in the research setting:\nLatency Budget\nEnvironment Drift\nReal deployment environments change over time: lighting shifts with time of day, objects are rearranged, surfaces wear, cameras drift slightly. A model trained under fixed conditions degrades in these shifting conditions. Production systems need continuous monitoring and periodic retraining — a concept borrowed from MLOps but applied to physical systems where retraining requires collecting new physical data, not just querying a database.\n10. Cost Reality Check\nPhysical AI is expensive. Here is an honest cost breakdown for a team going from zero to a deployed manipulation system:\nPhase\n11. Physical AI for Enterprises\nEnterprise adoption of Physical AI is accelerating in 2026, driven by three factors: labor shortages in manufacturing and logistics, declining hardware costs, and foundation models that reduce the data barrier to entry.\nThe enterprise playbook that works:\nWhere Physical AI Goes from Here\nPhysical AI in 2026 is where language AI was i",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is directly supported by the Robotics Center Blog regarding the use of action chunks and the separation of reasoning and execution frequencies.",
+      "assignment_id": "SG01",
+      "claim_ref": "SG01:C005"
+    },
+    {
+      "claim_id": "C001",
+      "claim": "Figure AI의 Figure 02는 BMW Spartanburg 공장에 상용 배치되어 시트 메탈 로딩(pick-and-place) 작업을 수행하며, 2초 이내에 5mm 오차 범위 내로 부품을 배치하는 정밀도를 구현했다.",
+      "worker_support": "Figure AI의 공식 발표에 따르면 Figure 02는 BMW 공장에서 11개월간 배치되어 30,000대 이상의 X3 차량 생산에 기여했으며, 5mm 공차 내 정밀 배치를 수행했다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The source content explicitly states: 'Our first use case with BMW was sheet-metal loading... placing parts within a 5-millimeter tolerance in just 2 seconds.' It also confirms the location (Plant Spartanburg) and the contribution to 30,000+ X3 vehicles.",
+          "audited_source_type": "official",
+          "audited_tier": 1,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "F.02 Contributed to the Production of 30,000 Cars at BMW",
+              "publisher": "Figure AI",
+              "url": "https://www.figure.ai/news/production-at-bmw",
+              "source_type": "official",
+              "tier": 1,
+              "excerpt": "Our first use case with BMW was sheet-metal loading... placing parts within a 5-millimeter tolerance in just 2 seconds."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "F.02 Contributed to the Production of 30,000 Cars at BMW",
+              "url": "https://www.figure.ai/news/production-at-bmw",
+              "domain": "www.figure.ai",
+              "content": "F.02 Contributed to the Production of 30,000 Cars at BMW\nFIGURE 03\nHELIX\nCOMPANY\nF.02 Contributed to the Production of 30,000 Cars at BMW\nNovember 19, 2025\nToday we’re excited to share our results of an 11 month Figure 02 robot deployment at BMW Group Plant Spartanburg. Within 6 months of bringing up Figure 02, we delivered robots to the plant and began testing. Within 10 months, we launched full deployment on an active assembly line at the plant, running every single working day.\nBMW Deployment Highlights:\nRan 10-hour shift Monday-Friday\nContributed to the production of 30,000+ X3 vehicles\nEstimated 1.2+ million robot steps or 200+ miles\nFollowing the release of Figure 03, we’re officially starting the retirement of Figure 02, our second-generation humanoid robot. With Figure 02’s return to HQ from BMW as part of our fleet-wide retirement, we would like to highlight key learnings that can be rolled into Figure 03 operational readiness.\nDeployment Overview\nOur first use case with BMW was sheet-metal loading, a classic pick-and-place task in automotive manufacturing. An associate picks sheet-metal parts from racks or bins and places them on a welding fixture, after which six-axis industrial robots weld and feed the parts into the main line.\nTo measure robot progress, we defined three critical KPIs:\nNumber of times a human must pause or reset the robot. The goal was zero per shift.\nThe challenge of this use case is in balancing speed and precision – placing parts within a 5-millimeter tolerance in just 2 seconds.\nTo meet this, our robot had to achieve precise yet adaptive locomotion, allowing rapid, accurate foot placement and real-time responsiveness to environmental changes. We also developed advanced hand-eye coordination algorithms and built field-calibration tools for consistent cross-robot performance.\nHardware Reliability and Learnings\nSix months of daily runtime yielded invaluable insights for our mechanical and reliability teams. Across 1,250+ operational hours, Figure 02 recorded minimal hardware failures while generating critical data that informed the build procedures, component architecture, and mechanical design of Figure 03.\nOne learning that informed Figure 03 design was the robot’s forearm, our top hardware failure point at BMW. The forearm is a challenging subsystem due to its tight packaging, dexterity requirements (three degrees of freedom), and thermal constraints. Figure 02’s forearm contained a microcontroller-based PCB that distributed communications between the main computer and the wrist actuators.\nFor Figure 03, we completely re-architected the wrist electronics to eliminate both the distribution board and dynamic cabling. Each wrist’s motor controller now communicates directly with the main computer, reducing complexity, improving reliability, and simplifying thermal management.\nConclusion\nFigure 02 was an unprecedented advancement in bringing humanoid robots from the lab to the real world. Figure 02 taught us early lessons on what it takes to ship. Every hour on BMW’s line, every part loaded, and every intervention logged, shaped how we designed, validated, and built.\nThose lessons now live in Figure 03, a robot built from experience, ready for the world at scale. If you’re interested in helping ship robots into the world please consider\njoining our team\nKeep up with us\nGet news, photos, events, and business updates.\nContact Us\nCOMPANY\n© Figure 2026.\nTerms & Conditions",
+              "content_chars": 3458
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is fully supported by a primary official source from Figure AI. However, since only one independent source was provided and verified, the verdict must be SINGLE_SOURCE per the consistency rules.",
+      "assignment_id": "SG02",
+      "claim_ref": "SG02:C001"
+    },
+    {
+      "claim_id": "C002",
+      "claim": "Tesla의 Optimus는 현재 기가팩토리(Fremont, Giga Texas) 내에서 배터리 셀 분류, 부품 핸들링, 키팅(kitting) 등의 작업을 수행하고 있으나, 실제 생산성보다는 데이터 수집 및 학습 단계에 머물러 있다.",
+      "worker_support": "2026년 보고서에 따르면 Optimus는 4680 배터리 셀 라인 등에서 운용 중이지만, 일론 머스크는 이들이 생산적 작업보다는 학습 및 데이터 수집을 위한 목적이라고 밝혔다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "The content confirms Optimus is performing sorting of 4680 battery cells, parts handling, and kitting, and explicitly quotes Musk stating they are 'primarily for learning and data collection'.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "Tesla Optimus Factory Deployment: 2025-2026 Status",
+              "publisher": "optimusk.blog",
+              "url": "https://optimusk.blog/blog/tesla-optimus-factory-deployment/",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Confirmed tasks: sorting 4680 battery cells, parts handling between production line stations, kitting... Musk admitted in January 2026 that these robots are 'primarily for learning and data collection' rather than measurable productive output."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "Tesla Optimus Factory Deployment: 2025-2026 Status",
+              "url": "https://optimusk.blog/blog/tesla-optimus-factory-deployment/",
+              "domain": "optimusk.blog",
+              "content": "Tesla Optimus Factory Deployment: 2025-2026 Status\n// MENU\n›\nTesla Optimus Factory Deployment: 2025-2026 Status\n// Contents\n// Contents\nComplete Deployment Timeline\nWhat Optimus Is Actually Doing\n// Lindsey A. Kennedy\nTesla Optimus Factory Deployment 2025-2026: Inside the Gigafactory Rollout\nShare:\n// Deep Dive · Updated August 6, 2026\nHere is exactly where Tesla Optimus factory deployment stands as of March 2026 — no hype, just verified milestones. Key source:\nBotInfo.ai 2026 timeline\nFremont line converted in ~46 days:\nTesla dismantled the legacy Model S/X assembly line (last units early May) and is standing up its first dedicated Optimus line — production targeted for late July–August 2026.\n📊\nQ2 2026 earnings (July 22) reset the picture:\nTesla is \"installing the first-generation lines for Optimus\" with output still effectively zero, and confirmed first units will do\ntraining-data collection, not productive factory work\nQ4 2025 earnings call\n(January 28, 2026), Elon Musk stated clearly: \"Optimus units are primarily for learning and data collection rather than performing productive tasks.\" FinancialContent noted: \"The Optimus units now roaming Tesla's 4680 battery cell lines are navigating unscripted environments, identifying misplaced components, and performing intricate kitting tasks.\" The key phrase: \"navigating unscripted environments\" — what distinguishes Optimus from conventional factory robots. Source:\nFinancialContent factory deployment\n💡 The most important context: Tesla is deliberately prioritizing data collection over productive output right now. Every hour an Optimus unit spends sorting battery cells generates training data for the AI — and that data is what makes the robot commercially viable. The \"not doing useful work\" admission is actually strategic, not a failure.\n3. Fremont vs. Giga Texas: The Two-Phase Factory Strategy\n4. The 2025 Production Miss: What Went Wrong\nTesla originally targeted 5,000-10,000 Optimus units in 2025. By year-end, the actual figure appears to have been in the hundreds-to-low-thousands range — a significant miss.\nChina rare earth magnet ban (April 2025):\nFinancialContent\n6. Tesla Optimus Factory Deployment: 2026 Milestones Tracker\nDate\n7. Leadership Change: The Elluswamy Signal\nIn June 2025, Milan Kovac resigned as head of Tesla's Optimus program after three years. His replacement: Ashok Elluswamy, VP of AI Software and the architect of Tesla's Autopilot/FSD system. This is the most strategically significant organizational change in the Optimus program's history.\nPriority shift:\nHow many Optimus robots are in Tesla factories right now?\nAs of March 2026, estimates suggest approximately 1,000+ Optimus units are deployed across Fremont and Giga Texas. Tesla has not released an official production count. The January 2026 Gen 3 production start at Fremont is expected to accelerate this significantly through 2026, targeting 50,000-100,000 total units produced by year-end (Musk's CES 2025 projection).\nWhat tasks is Tesla Optimus actually doing in factories?\nConfirmed tasks: sorting 4680 battery cells, parts handling between production line stations, kitting (organizing parts for assembly workers), quality inspection, and pick-and-place operations. Importantly, Musk admitted in January 2026 that these robots are \"primarily for learning and data collection\" rather than measurable productive output.\nWhen will Tesla Optimus start doing 'real' work in factories?\nThe Q2-Q3 2026 factory floor deployment of Gen 3 hands is the next major milestone. By late 2026, Tesla expects first commercial customers — which would represent the first genuinely productive deployment outside Tesla's own training environment. Full productive factory work at scale is targeted for 2027 when Giga Texas V4 line opens.\nWhy did Tesla miss the 5,000 Optimus target for 2025?\nSummary\nTesla Optimus factory deployment is real — robots are on the floor, learning from the factory environment, and accumulating the training data that will make them commercially viable. The gap between stated targets and actual production counts is significant and should not be minimized. But the infrastructure being built — Fremont Gen 3 line, Giga Texas construction, $20B CapEx, data collection pipeline — is the foundation for what comes next.\nThe critical judgment call: is the 2025 production miss a temporary supply chain and engineering delay on the path to commercial scale — or is it evidence that the fundamental difficulty of building useful humanoid robots at mass-market price points has been underestimated? The Q2-Q3 2026 Gen 3 hands deployment on the factory floor will provide the first real data point to answer that question.\nKey sources:\nSTAY AHEAD OF THE ROBOT RACE\nWe track Tesla Optimus, humanoid robot progress, and every major development — updated as news breaks.\n→\n// PRODUCTION\nTesla Optimus Production Timeline 2026\n// SUPPLY CHAIN\n// CAPABILITIES\nTesla Optimus Capabilities: What Can It Do?\nIndependent coverage of Tesla Optimus & humanoid robotics.",
+              "content_chars": 5033
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is supported by the retrieved blog post, which cites Elon Musk and earnings calls. As the source is a third-party blog and not a primary Tesla filing, it remains a single-source industry report.",
+      "assignment_id": "SG02",
+      "claim_ref": "SG02:C002"
+    },
+    {
+      "claim_id": "C003",
+      "claim": "Boston Dynamics의 전동식 Atlas는 2026년부터 현대자동차 Robotics Metaplant Application Center(RMAC) 및 Google DeepMind로 첫 상용 유닛이 출하되기 시작했다.",
+      "worker_support": "2026년 6월 보고에 따르면 전동식 Atlas의 첫 상용 플릿이 현대차 RMAC와 구글 딥마인드로 배송되었으며, 2028년까지 현대/기아 공장에 25,000대 이상 배치를 목표로 하고 있다.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly mentions that fleets are shipping to Hyundai's Robotics Metaplant Application Center (RMAC) and Google DeepMind as of June 2026.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C003-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "Boston Dynamics Electric Atlas Ships Its First Commercial Units | AI2Work",
+              "publisher": "AI2Work",
+              "url": "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "The first commercial fleets are shipping to Hyundai's Robotics Metaplant Application Center and to Google DeepMind... Hyundai is targeting an annual production capacity of about 30,000 Atlas units by 2028."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "Boston Dynamics Electric Atlas Ships Its First Commercial Units | AI2Work",
+              "url": "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units",
+              "domain": "ai2.work",
+              "content": "Boston Dynamics Electric Atlas Ships Its First Commercial Units | AI2Work\nAI\n/\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nHome\n/\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nPhysical AI\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nBoston Dynamics ships its first commercial electric Atlas humanoids to Hyundai and Google DeepMind. Inside the specs, pricing, rivals, and 2028 factory roadmap.\nJune 7, 2026\nPhysical AI\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nJune 7, 2026\n1\nEvery 2026 Atlas unit is already committed — fleets are shipping to Hyundai's Robotics Metaplant Application Center (RMAC) and Google DeepMind, with new customers slated for 2027.\n2\nHyundai is targeting an annual production capacity of about 30,000 Atlas units by 2028 and plans to deploy more than 25,000 across Hyundai and Kia plants, starting at its Georgia Metaplant.\n3\nWith an estimated ~$420,000 price tag, Atlas competes on reliability and full-stack support rather than price, as rivals like Unitree's G1 sell for roughly $13,500–$16,000.\nFor more than a decade, Boston Dynamics' Atlas lived on YouTube — backflipping, doing parkour, and amazing millions while quietly remaining a research curiosity too expensive to scale. At CES 2026 in Las Vegas, that era ended. Under the banner \"Partnering Human Progress,\" parent company Hyundai Motor Group pulled back a curtain to reveal a sleek, blue, production-ready version of the all-electric Atlas, and CEO Robert Playter announced that production would begin immediately at the company's Boston headquarters.\nThe headline that should make every operations executive sit up: every single Atlas unit built in 2026 is already spoken for. The first commercial fleets are shipping to Hyundai's Robotics Metaplant Application Center and to Google DeepMind, with additional customers planned for 2027. This is no longer a demo reel — it's a delivery schedule.\nThe shift matters because it reframes the humanoid race. While much of the industry has competed on viral clips and aspirational price points, Boston Dynamics is shipping a commercial-grade industrial tool backed by an automotive giant's supply chain. Here's what's actually in the box, who's buying it, and how it stacks up against Figure, Tesla, and the rest.\nAtlas by the Numbers\nThe production Atlas is engineered for demanding industrial work, not stage shows. Here are the figures that define it.\n56\nFrom Lab Curiosity to Industrial Product\nThe production Atlas is a deliberate departure from the hydraulic robot Boston Dynamics retired in April 2024. The new model is fully electric, enabling faster, quieter, and more precise motion, with custom high-powered actuators delivering 360° rotation at the hips, waist, and neck — ranges of motion impossible for a human body.\nWhat changed for commercialization isn't just the actuators. Boston Dynamics significantly reduced the number of unique parts in the robot, and engineered every component for compatibility with automotive supply chains — a direct play to leverage Hyundai's manufacturing muscle for reliability and economies of scale. The robot also features human-scale hands with tactile sensing, self-swappable belly-mounted batteries for continuous operation, and a sensor suite spanning LiDAR, stereo, and RGB cameras.\nNotably, Boston Dynamics has leaned into an \"alien\" or \"superhumanoid\" aesthetic rather than chasing human-mimicry. Where rivals design for easy teleoperation, Atlas is built to exploit motions a human never could — a philosophical bet that the most useful factory robot isn't necessarily the most human-looking one.\nWho's Actually Buying It — and Why That Matters\nThe two launch customers reveal the strategy. The first is Hyundai itself — not just the 80% owner of Boston Dynamics, but the first and largest customer. Atlas units are flowing into the newly announced Robotics Metaplant Application Center (RMAC), described by the team as a \"data factory\" designed to build the world's most complete dataset for training humanoid manufacturing skills.\nThe second is Google DeepMind, which is serving as both customer and AI development partner. DeepMind CEO Demis Hassabis confirmed the first fleets would ship to Google in the coming months, positioning Atlas as a testbed for \"Physical AI\" — the foundation models that will let the robot generalize across tasks rather than being hand-programmed for each one.\nHyundai's longer roadmap is the most concrete in the industry. The group plans an annual production capacity of roughly 30,000 Atlas units by 2028, with more than 25,000 deployed across Hyundai and Kia plants. Deployment begins conservatively in 2028 at the Metaplant near Savannah, Georgia — which builds the Ioniq 5 and Ioniq 9 EVs — starting with parts sequencing, then expanding to component assembly by 2030.\nA Different Commercial Philosophy\nAtlas vs. the Humanoid Field\nThe 2026 humanoid market is crowded and fast-moving. Here's how Atlas compares against the leading rivals on the metrics operators actually weigh.\nRobot\nWhy the Price Gap Isn't the Whole Story\nAtlas's estimated ~$420,000 price dwarfs Unitree's ~$16,000 G1 — but they aren't competing for the same buyer. Atlas targets large industrial accounts where reliability, integration, and service contracts matter more than sticker price. Boston Dynamics is also building in over-the-air software upgrades and full maintenance, repair, and overhaul (MRO) services — the kind of lifecycle support that determines real total cost of ownership on a factory floor.\nFrequently Asked Questions",
+              "content_chars": 5618
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is supported by the AI2Work article. While the details match the retrieved text, this is an industry blog/news site rather than an official announcement, thus it is not triangulated.",
+      "assignment_id": "SG02",
+      "claim_ref": "SG02:C003"
+    },
+    {
+      "claim_id": "C001",
+      "claim": "피지컬 AI 로봇(특히 휴머노이드)의 상용화를 가로막는 주요 기술적 병목 지점 중 하나는 배터리 수명으로, 현재 대부분의 로봇은 2~4시간만 작동 가능하여 8~12시간의 산업 현장 교대 근무 시간을 충족하지 못함.",
+      "worker_support": "휴머노이드 로봇의 상용화 분석 보고서에서 '2-to-4-Hour Wall'이라는 표현과 함께 배터리 교체 인프라 또는 충전 로테이션의 필요성이 언급됨.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly mentions 'Bottleneck 1: Battery — The 2-to-4-Hour Wall', states that current robots run for 2–4 hours, and notes that 8–12 hour shifts require swap-battery infrastructure or charging rotations.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C001-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is",
+              "publisher": "RanketAI",
+              "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "Bottleneck 1: Battery — The 2-to-4-Hour Wall. Current humanoid robots run for 2–4 hours per charge. Supporting an 8–12 hour industrial shift requires either a swap-battery infrastructure or a scheduled charging rotation."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI",
+              "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+              "domain": "www.ranketai.com",
+              "content": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI\nSkip to main content\n2026-02-28\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\n2026 is the year humanoid robots trade the lab coat for a hard hat. We analyze the three-way competition between Figure AI, Tesla Optimus, and Unitree, the three unsolved technical bottlenecks, and where revenue is actually being generated across RaaS, foundation models, and simulation platforms.\nAI-assisted drafting · reviewed by the RanketAI Editorial Team\n' Digit is piloted in an Amazon fulfillment center, and Tesla's Optimus Gen 2 begins a trial run on the Fremont factory floor. Scenes that lived in science fiction for decades are now unfolding on real industrial sites.\nBut the phrase \"year one of commercialization\" comes with important caveats. Three technical bottlenecks remain unsolved, and cost structures are still prohibitive for most companies. Who survives, and who actually makes money — this article analyzes the structure beneath the headlines.\n1. What Changed: Three Shifts That Reshaped the\nChina's Price Disruption Rewrites the Market Equation\nUnitree Robotics launched its G1 humanoid at $16,000. US competitors sit in the $100,000–$250,000 range — a gap of more than 10x. Unitree has run this same playbook before: in the drone and quadruped robot markets, it applied identical price pressure to squeeze Western incumbents.\nThe disruption cuts in two directions. First, it lowers the entry barrier for mid-market manufacturing and logistics companies to seriously consider robots. Second, it forces US and European companies selling premium hardware to pivot toward software and service monetization.\nBig Tech Enters the Platform War in Earnest\nAt GTC 2025, NVIDIA open-sourced both its Isaac Lab robot simulation platform and the GR00T N1 foundation model. This is not a neutral technical contribution — it is\na strategic move to own the platform standard of the robot ecosystem\nWhy pressure is building:\nLegacy industrial robots are fixed-position systems specialized for single tasks. As humanoids demonstrate the ability to handle the same tasks more flexibly, new adoption demand may shift in their direction.\nDefensibility:\n— and the software layer that determines that is where margin lives.\n5. Three Bottlenecks That Remain Unsolved\nBottleneck 1: Battery — The 2-to-4-Hour Wall\nCurrent humanoid robots run for 2–4 hours per charge. Supporting an 8–12 hour industrial shift requires either a swap-battery infrastructure or a scheduled charging rotation. Both increase\ndeployment\nEpilogue: Infrastructure First, Robots Second\nThe smartphone revolution was possible because years of infrastructure accumulation — 3G networks, the app store ecosystem, touchscreen supply chains — preceded the iPhone. The same pattern is playing out now in humanoid robotics: simulation platforms, foundation models, RaaS contract frameworks, and safety certification infrastructure are the foundation being laid.\nThe real money is not in selling robots. It is in\nQ1. What is the most important difference between a humanoid robot and a traditional industrial robot?\nTraditional industrial robots (FANUC, ABB, etc.) repeat fixed motions at fixed positions for a single programmed task. They cannot perform anything outside that program. Humanoid robots walk on two legs, manipulate a wide range of objects with two hands, and — via AI foundation models — can\nlearn new tasks from natural language instructions\nNot necessarily. RaaS reduces upfront capital expenditure and increases operational flexibility, but total cost of ownership (TCO) over time may exceed direct purchase. For operations with high utilization rates and stable task profiles, ownership may be more economical. A minimum 3-year operating scenario comparison is recommended before deciding.\nQ4. Can low-cost Chinese humanoid robots be trusted for industrial quality?\nUnitree has already established global credibility in the quadruped robot market. That said, industrial safety certifications (ISO 10218, CE marking) and after-sales service networks vary by product. Regardless of price point, certifications relevant to the deployment environment and local maintenance support must be verified before adoption.\nQ6. How large is the humanoid robot market?\nGoldman Sachs estimated in a 2024 report that the global humanoid robot market could reach up to $38 billion by 2035. More optimistic analyses put the figure as high as $154 billion. Long-term forecasts of this kind are highly sensitive to the pace of technical advancement and should be treated as directional reference points, not precise projections.\nQ7. Which industries are seeing the earliest real deployments?\nQ10. How are safety risks managed in real industrial deployments?\nHumanoids currently deployed in industrial settings either operate in zones physically separated from human workers, or are equipped with collision detection and immediate-stop functions meeting collaborative robot safety standards (ISO 10218, TS 15066). Both Figure AI and Agility Robotics require on-site human supervisors during the initial deployment phase. A structural gap remains, however: current safety certification frameworks were designed for fixed-arm and quadruped robots — not bipedal humanoids. Developing humanoid-specific certification standards is an open challenge for both industry and regulatory bodies.\nRelated Terms / Next Reading\nNVIDIA GR00T N1:\nhttps://developer.nvidia.com/blog/nvidia-gr00t-n1-open-foundation-model-for-generalist-humanoid-robots/\nAgility Robotics–Amazon:\nCore topic\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\nBest fit\nFrequently Asked Questions\nWhat is the core practical takeaway from \"Humanoid Robots: Year One of Commercialization —…\"?\n▾\nTeams with repetitive workflows and high quality variance, such ",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is fully supported by the retrieved content, but only one independent source was provided.",
+      "assignment_id": "SG03",
+      "claim_ref": "SG03:C001"
+    },
+    {
+      "claim_id": "C002",
+      "claim": "기존의 로봇 안전 표준(ISO 10218, ISO/TS 15066)은 고정형 암(arm)이나 4족 보행 로봇을 기준으로 설계되어, 이족 보행 휴머노이드 로봇의 특성을 완전히 반영하지 못하는 구조적 격차가 존재함.",
+      "worker_support": "산업 현장에 배치된 휴머노이드가 기존 협동 로봇 표준을 따르고는 있으나, 이족 보행 로봇 전용 인증 표준 개발이 여전히 과제로 남아 있음이 확인됨.",
+      "runtime_status": "SINGLE_SOURCE",
+      "verified_evidence_count": 1,
+      "verified_evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly states that humanoids meet collaborative robot safety standards (ISO 10218, TS 15066) but notes a 'structural gap' because those frameworks were designed for fixed-arm and quadruped robots, not bipedal humanoids.",
+          "audited_source_type": "industry",
+          "audited_tier": 4,
+          "source": {
+            "evidence_id": "C002-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is",
+              "publisher": "RanketAI",
+              "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+              "source_type": "industry",
+              "tier": 2,
+              "excerpt": "A structural gap remains, however: current safety certification frameworks were designed for fixed-arm and quadruped robots — not bipedal humanoids. Developing humanoid-specific certification standards is an open challenge for both industry and regulatory bodies."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI",
+              "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+              "domain": "www.ranketai.com",
+              "content": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI\nSkip to main content\n2026-02-28\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\n2026 is the year humanoid robots trade the lab coat for a hard hat. We analyze the three-way competition between Figure AI, Tesla Optimus, and Unitree, the three unsolved technical bottlenecks, and where revenue is actually being generated across RaaS, foundation models, and simulation platforms.\nAI-assisted drafting · reviewed by the RanketAI Editorial Team\n' Digit is piloted in an Amazon fulfillment center, and Tesla's Optimus Gen 2 begins a trial run on the Fremont factory floor. Scenes that lived in science fiction for decades are now unfolding on real industrial sites.\nBut the phrase \"year one of commercialization\" comes with important caveats. Three technical bottlenecks remain unsolved, and cost structures are still prohibitive for most companies. Who survives, and who actually makes money — this article analyzes the structure beneath the headlines.\n1. What Changed: Three Shifts That Reshaped the\nChina's Price Disruption Rewrites the Market Equation\nUnitree Robotics launched its G1 humanoid at $16,000. US competitors sit in the $100,000–$250,000 range — a gap of more than 10x. Unitree has run this same playbook before: in the drone and quadruped robot markets, it applied identical price pressure to squeeze Western incumbents.\nThe disruption cuts in two directions. First, it lowers the entry barrier for mid-market manufacturing and logistics companies to seriously consider robots. Second, it forces US and European companies selling premium hardware to pivot toward software and service monetization.\nBig Tech Enters the Platform War in Earnest\nAt GTC 2025, NVIDIA open-sourced both its Isaac Lab robot simulation platform and the GR00T N1 foundation model. This is not a neutral technical contribution — it is\na strategic move to own the platform standard of the robot ecosystem\nWhy pressure is building:\nLegacy industrial robots are fixed-position systems specialized for single tasks. As humanoids demonstrate the ability to handle the same tasks more flexibly, new adoption demand may shift in their direction.\nDefensibility:\n— and the software layer that determines that is where margin lives.\n5. Three Bottlenecks That Remain Unsolved\nBottleneck 1: Battery — The 2-to-4-Hour Wall\nCurrent humanoid robots run for 2–4 hours per charge. Supporting an 8–12 hour industrial shift requires either a swap-battery infrastructure or a scheduled charging rotation. Both increase\ndeployment\nEpilogue: Infrastructure First, Robots Second\nThe smartphone revolution was possible because years of infrastructure accumulation — 3G networks, the app store ecosystem, touchscreen supply chains — preceded the iPhone. The same pattern is playing out now in humanoid robotics: simulation platforms, foundation models, RaaS contract frameworks, and safety certification infrastructure are the foundation being laid.\nThe real money is not in selling robots. It is in\nQ1. What is the most important difference between a humanoid robot and a traditional industrial robot?\nTraditional industrial robots (FANUC, ABB, etc.) repeat fixed motions at fixed positions for a single programmed task. They cannot perform anything outside that program. Humanoid robots walk on two legs, manipulate a wide range of objects with two hands, and — via AI foundation models — can\nlearn new tasks from natural language instructions\nNot necessarily. RaaS reduces upfront capital expenditure and increases operational flexibility, but total cost of ownership (TCO) over time may exceed direct purchase. For operations with high utilization rates and stable task profiles, ownership may be more economical. A minimum 3-year operating scenario comparison is recommended before deciding.\nQ4. Can low-cost Chinese humanoid robots be trusted for industrial quality?\nUnitree has already established global credibility in the quadruped robot market. That said, industrial safety certifications (ISO 10218, CE marking) and after-sales service networks vary by product. Regardless of price point, certifications relevant to the deployment environment and local maintenance support must be verified before adoption.\nQ6. How large is the humanoid robot market?\nGoldman Sachs estimated in a 2024 report that the global humanoid robot market could reach up to $38 billion by 2035. More optimistic analyses put the figure as high as $154 billion. Long-term forecasts of this kind are highly sensitive to the pace of technical advancement and should be treated as directional reference points, not precise projections.\nQ7. Which industries are seeing the earliest real deployments?\nQ10. How are safety risks managed in real industrial deployments?\nHumanoids currently deployed in industrial settings either operate in zones physically separated from human workers, or are equipped with collision detection and immediate-stop functions meeting collaborative robot safety standards (ISO 10218, TS 15066). Both Figure AI and Agility Robotics require on-site human supervisors during the initial deployment phase. A structural gap remains, however: current safety certification frameworks were designed for fixed-arm and quadruped robots — not bipedal humanoids. Developing humanoid-specific certification standards is an open challenge for both industry and regulatory bodies.\nRelated Terms / Next Reading\nNVIDIA GR00T N1:\nhttps://developer.nvidia.com/blog/nvidia-gr00t-n1-open-foundation-model-for-generalist-humanoid-robots/\nAgility Robotics–Amazon:\nCore topic\nHumanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is\nBest fit\nFrequently Asked Questions\nWhat is the core practical takeaway from \"Humanoid Robots: Year One of Commercialization —…\"?\n▾\nTeams with repetitive workflows and high quality variance, such ",
+              "content_chars": 6000
+            }
+          }
+        }
+      ],
+      "nonverified_evidence": [],
+      "auditor_verdict": "SINGLE_SOURCE",
+      "auditor_reason": "The claim is fully supported by the retrieved content, but only one independent source was provided.",
+      "assignment_id": "SG03",
+      "claim_ref": "SG03:C002"
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim_id": "C004",
+      "claim": "Agility Robotics의 Digit은 GXO Logistics의 Spanx 물류 센터 등에서 컨베이어와 AMR 사이의 토트(tote) 이동 작업을 수행하며 RaaS(Robots-as-a-Service) 모델로 상용 운영되고 있다.",
+      "worker_support": "Agility Robotics와 GXO의 다년 계약을 통해 Digit이 실제 상업 운영에 투입되었으며, 주로 벌크 토트 전송 작업을 수행한다.",
+      "runtime_status": "UNSUPPORTED",
+      "verified_evidence_count": 0,
+      "verified_evidence": [],
+      "nonverified_evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "The source confirms the GXO deployment, the RaaS model, and the task of moving totes between conveyors and AMRs, but it does not mention 'Spanx'.",
+          "audited_source_type": "official",
+          "audited_tier": 1,
+          "source": {
+            "evidence_id": "C004-E001",
+            "worker_source": {
+              "source_kind": "web",
+              "title": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement | Agility",
+              "publisher": "Agility Robotics",
+              "url": "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement",
+              "source_type": "official",
+              "tier": 1,
+              "excerpt": "June 5, 2024, marked a pivotal moment... as Digit stepped into the workforce at a GXO facility near Atlanta... Digit units move totes between conveyors and Autonomous Mobile Robots (AMRs)."
+            },
+            "retrieved_source": {
+              "source_kind": "web",
+              "title": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement | Agility",
+              "url": "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement",
+              "domain": "www.agilityrobotics.com",
+              "content": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement | Agility\nIndustries\nResources\nDeploy Digit\nClose\nAll Resources\nDigit Deployed at GXO in Historic Humanoid RAAS Agreement\nJune 5, 2024, marked a pivotal moment in robotics history.\nCopy Link\nJune 5, 2024, marked a pivotal moment in robotics history. For the first time, a humanoid robot was deployed in commercial operations, as Digit stepped into the workforce at a GXO facility near Atlanta. This milestone represents more than a technological advancement—it signifies a leap forward in the evolution of robotics and the future of labor.\nAt Agility Robotics, our vision has always been clear: to design and build robots capable of performing useful tasks in real-world environments. Digit's deployment into a long-term, commercially significant role marks the first time this vision has been realized by a humanoid robot.\nUnlike traditional automation designed for fixed, single-purpose applications, Digit is built to operate in human spaces and do many things. These are environments that were not specifically designed for machines but for people. The challenge in these spaces has always been to solve for dull, dirty, and dangerous tasks that are increasingly difficult to hire for. Digit is designed to connect these islands of automation and take on historically hard-to-automate tasks.\nThis deployment is part of a multi-year agreement, positioning Digit as an integral part of the day-to-day operations at GXO and opening the door to an exciting future where humanoid robots perform various complex tasks in logistics, manufacturing, and beyond.\nThe importance of this deployment cannot be overstated. While robotics and artificial intelligence have made remarkable strides over the years, the true measure of success lies in practical application. The question that defines the future of robotics is not about theoretical capabilities or futuristic AI models; it’s about robots performing useful work that businesses are willing to invest in. And today, that question is being answered in real time as Digit starts its journey in Georgia.\nFor Agility Robotics, this is just the beginning. June 5th was the day humanoid robots went to work and a monumental step towards a future where general-purpose robots like Digit are an indispensable part of industries worldwide.\n‍\n→\nAgility’s Humanoid Deployment Process\nExecutive Perspective\nResources\nDeploy Digit\nCareers",
+              "content_chars": 2433
+            }
+          }
+        }
+      ],
+      "auditor_verdict": "UNSUPPORTED",
+      "auditor_reason": "The claim mentions 'Spanx 물류 센터' (Spanx logistics center), but the retrieved official source only mentions a 'GXO facility near Atlanta'. Because the evidence state is INSUFFICIENT_SUPPORT and no other verified sources exist, the claim verdict must be UNSUPPORTED.",
+      "assignment_id": "SG02",
+      "claim_ref": "SG02:C004"
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "claim_id": "C004",
+      "evidence_id": "C004-E001",
+      "state": "INSUFFICIENT_SUPPORT",
+      "reason": "The source confirms the GXO deployment, the RaaS model, and the task of moving totes between conveyors and AMRs, but it does not mention 'Spanx'.",
+      "audited_source_type": "official",
+      "audited_tier": 1,
+      "source": {
+        "evidence_id": "C004-E001",
+        "worker_source": {
+          "source_kind": "web",
+          "title": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement | Agility",
+          "publisher": "Agility Robotics",
+          "url": "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement",
+          "source_type": "official",
+          "tier": 1,
+          "excerpt": "June 5, 2024, marked a pivotal moment... as Digit stepped into the workforce at a GXO facility near Atlanta... Digit units move totes between conveyors and Autonomous Mobile Robots (AMRs)."
+        },
+        "retrieved_source": {
+          "source_kind": "web",
+          "title": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement | Agility",
+          "url": "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement",
+          "domain": "www.agilityrobotics.com",
+          "content": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement | Agility\nIndustries\nResources\nDeploy Digit\nClose\nAll Resources\nDigit Deployed at GXO in Historic Humanoid RAAS Agreement\nJune 5, 2024, marked a pivotal moment in robotics history.\nCopy Link\nJune 5, 2024, marked a pivotal moment in robotics history. For the first time, a humanoid robot was deployed in commercial operations, as Digit stepped into the workforce at a GXO facility near Atlanta. This milestone represents more than a technological advancement—it signifies a leap forward in the evolution of robotics and the future of labor.\nAt Agility Robotics, our vision has always been clear: to design and build robots capable of performing useful tasks in real-world environments. Digit's deployment into a long-term, commercially significant role marks the first time this vision has been realized by a humanoid robot.\nUnlike traditional automation designed for fixed, single-purpose applications, Digit is built to operate in human spaces and do many things. These are environments that were not specifically designed for machines but for people. The challenge in these spaces has always been to solve for dull, dirty, and dangerous tasks that are increasingly difficult to hire for. Digit is designed to connect these islands of automation and take on historically hard-to-automate tasks.\nThis deployment is part of a multi-year agreement, positioning Digit as an integral part of the day-to-day operations at GXO and opening the door to an exciting future where humanoid robots perform various complex tasks in logistics, manufacturing, and beyond.\nThe importance of this deployment cannot be overstated. While robotics and artificial intelligence have made remarkable strides over the years, the true measure of success lies in practical application. The question that defines the future of robotics is not about theoretical capabilities or futuristic AI models; it’s about robots performing useful work that businesses are willing to invest in. And today, that question is being answered in real time as Digit starts its journey in Georgia.\nFor Agility Robotics, this is just the beginning. June 5th was the day humanoid robots went to work and a monumental step towards a future where general-purpose robots like Digit are an indispensable part of industries worldwide.\n‍\n→\nAgility’s Humanoid Deployment Process\nExecutive Perspective\nResources\nDeploy Digit\nCareers",
+          "content_chars": 2433
+        }
+      },
+      "assignment_id": "SG02"
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker classified as Tier 2 (Peer-reviewed/Academic), but it is a blog post (Tier 4/5). Downgraded to Tier 4.",
+      "assignment_id": "SG01"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C003-E001",
+      "message": "Worker classified as Tier 2, but it is an industry tutorial/blog (Tier 4). Downgraded to Tier 4.",
+      "assignment_id": "SG01"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C004-E001",
+      "message": "Worker classified as Tier 2, but it is an industry news/analysis site (Tier 4). Downgraded to Tier 4.",
+      "assignment_id": "SG01"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C005-E001",
+      "message": "Worker classified as Tier 2, but it is a blog post (Tier 4/5). Downgraded to Tier 4.",
+      "assignment_id": "SG01"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker classified as Tier 2 (Peer-reviewed/Academic), but it is a blog (Tier 4/5).",
+      "assignment_id": "SG02"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C003-E001",
+      "message": "Worker classified as Tier 2, but it is an industry blog (Tier 4).",
+      "assignment_id": "SG02"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "Worker classified as Tier 2 (Peer-reviewed), but RanketAI is an industry blog/analysis site, which is Tier 4.",
+      "assignment_id": "SG03"
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker classified as Tier 2 (Peer-reviewed), but RanketAI is an industry blog/analysis site, which is Tier 4.",
+      "assignment_id": "SG03"
+    }
+  ],
+  "gaps": [
+    {
+      "assignment_id": "SG01",
+      "type": "WORKER_GAP",
+      "detail": "자율주행 내비게이션에서 기존 SLAM 방식과 E2E 방식의 구체적인 대체 시점 및 하이브리드 구성 방식에 대한 상세 기술 문서 부족"
+    },
+    {
+      "assignment_id": "SG01",
+      "type": "WORKER_GAP",
+      "detail": "VLA 모델의 온디바이스 최적화 시 발생하는 정확도 손실(Accuracy Drop)에 대한 정량적 데이터 부족"
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "WORKER_GAP",
+      "detail": "삼성전자 휴머노이드 로봇의 구체적인 기능 명세 및 공식적인 상용화 출시일 미확인"
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "WORKER_GAP",
+      "detail": "현대로보틱스의 독자적인 휴머노이드 제품 라인업 및 상용화 단계에 대한 구체적 정보 부족 (주로 Boston Dynamics Atlas를 통한 접근)"
+    },
+    {
+      "assignment_id": "SG02",
+      "type": "UNSUPPORTED_CLAIM",
+      "claim_id": "C004",
+      "detail": "Agility Robotics의 Digit은 GXO Logistics의 Spanx 물류 센터 등에서 컨베이어와 AMR 사이의 토트(tote) 이동 작업을 수행하며 RaaS(Robots-as-a-Service) 모델로 상용 운영되고 있다.",
+      "reason": "The claim mentions 'Spanx 물류 센터' (Spanx logistics center), but the retrieved official source only mentions a 'GXO facility near Atlanta'. Because the evidence state is INSUFFICIENT_SUPPORT and no other verified sources exist, the claim verdict must be UNSUPPORTED."
+    },
+    {
+      "assignment_id": "SG03",
+      "type": "WORKER_GAP",
+      "detail": "ISO 25785-1 표준의 구체적인 세부 기술 요구사항(예: 구체적인 추락 위험 관리 기준 수치)은 유료 표준 문서이므로 공개 웹페이지에서는 확인 불가함."
+    },
+    {
+      "assignment_id": "SG03",
+      "type": "WORKER_GAP",
+      "detail": "공용 시험 인프라 내에서 Sim2Real Gap을 줄이기 위한 구체적인 '디지털 트윈' 연동 표준이나 인터페이스 규격에 대한 상세 정보가 부족함."
+    }
+  ],
+  "sources": [
+    {
+      "source_kind": "web",
+      "canonical_url": "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units",
+      "url": "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units",
+      "title": "Boston Dynamics Electric Atlas Ships Its First Commercial Units | AI2Work",
+      "domain": "ai2.work",
+      "claimed_publisher": "AI2Work",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "assignments": [
+        "SG02"
+      ],
+      "claim_ids": [
+        "SG02:C003"
+      ],
+      "evidence_ids": [
+        "C003-E001"
+      ],
+      "source_id": "SRC001"
+    },
+    {
+      "source_kind": "web",
+      "canonical_url": "https://learnopencv.com/vision-language-action-models-lerobot-policy",
+      "url": "https://learnopencv.com/vision-language-action-models-lerobot-policy/",
+      "title": "Vision Language Action Models (VLA) & Policies for Robots",
+      "domain": "learnopencv.com",
+      "claimed_publisher": "LearnOpenCV",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "assignments": [
+        "SG01"
+      ],
+      "claim_ids": [
+        "SG01:C003"
+      ],
+      "evidence_ids": [
+        "C003-E001"
+      ],
+      "source_id": "SRC002"
+    },
+    {
+      "source_kind": "web",
+      "canonical_url": "https://openvla.github.io/",
+      "url": "https://openvla.github.io/",
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+      "domain": "openvla.github.io",
+      "claimed_publisher": "OpenVLA",
+      "audited_source_type": "official",
+      "audited_tier": 1,
+      "assignments": [
+        "SG01"
+      ],
+      "claim_ids": [
+        "SG01:C002"
+      ],
+      "evidence_ids": [
+        "C002-E001"
+      ],
+      "source_id": "SRC003"
+    },
+    {
+      "source_kind": "web",
+      "canonical_url": "https://optimusk.blog/blog/tesla-optimus-factory-deployment",
+      "url": "https://optimusk.blog/blog/tesla-optimus-factory-deployment/",
+      "title": "Tesla Optimus Factory Deployment: 2025-2026 Status",
+      "domain": "optimusk.blog",
+      "claimed_publisher": "optimusk.blog",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "assignments": [
+        "SG02"
+      ],
+      "claim_ids": [
+        "SG02:C002"
+      ],
+      "evidence_ids": [
+        "C002-E001"
+      ],
+      "source_id": "SRC004"
+    },
+    {
+      "source_kind": "web",
+      "canonical_url": "https://www.edge-ai-vision.com/2026/02/ces-2026-physical-ai-moves-from-concept-to-system-architecture",
+      "url": "https://www.edge-ai-vision.com/2026/02/ces-2026-physical-ai-moves-from-concept-to-system-architecture/",
+      "title": "CES 2026: Physical AI moves from concept to system architecture - Edge AI and Vision Alliance",
+      "domain": "www.edge-ai-vision.com",
+      "claimed_publisher": "Edge AI and Vision Alliance",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "assignments": [
+        "SG01"
+      ],
+      "claim_ids": [
+        "SG01:C004"
+      ],
+      "evidence_ids": [
+        "C004-E001"
+      ],
+      "source_id": "SRC005"
+    },
+    {
+      "source_kind": "web",
+      "canonical_url": "https://www.figure.ai/news/production-at-bmw",
+      "url": "https://www.figure.ai/news/production-at-bmw",
+      "title": "F.02 Contributed to the Production of 30,000 Cars at BMW",
+      "domain": "www.figure.ai",
+      "claimed_publisher": "Figure AI",
+      "audited_source_type": "official",
+      "audited_tier": 1,
+      "assignments": [
+        "SG02"
+      ],
+      "claim_ids": [
+        "SG02:C001"
+      ],
+      "evidence_ids": [
+        "C001-E001"
+      ],
+      "source_id": "SRC006"
+    },
+    {
+      "source_kind": "web",
+      "canonical_url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+      "url": "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+      "title": "Humanoid Robots: Year One of Commercialization — Who Competes, What's Still Missing, and Where the Money Is · RanketAI",
+      "domain": "www.ranketai.com",
+      "claimed_publisher": "RanketAI",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "assignments": [
+        "SG03"
+      ],
+      "claim_ids": [
+        "SG03:C001",
+        "SG03:C002"
+      ],
+      "evidence_ids": [
+        "C001-E001",
+        "C002-E001"
+      ],
+      "source_id": "SRC007"
+    },
+    {
+      "source_kind": "web",
+      "canonical_url": "https://www.roboticscenter.ai/blog/physical-ai-2026",
+      "url": "https://www.roboticscenter.ai/blog/physical-ai-2026",
+      "title": "Physical AI in 2026: Foundation Models for Robot Learning and Real-World Deployment | Robotics Center Blog",
+      "domain": "www.roboticscenter.ai",
+      "claimed_publisher": "Robotics Center Blog",
+      "audited_source_type": "industry",
+      "audited_tier": 4,
+      "assignments": [
+        "SG01"
+      ],
+      "claim_ids": [
+        "SG01:C001",
+        "SG01:C005"
+      ],
+      "evidence_ids": [
+        "C001-E001",
+        "C005-E001"
+      ],
+      "source_id": "SRC008"
+    }
+  ],
+  "summary": {
+    "assignment_count": 3,
+    "accepted_claim_count": 10,
+    "unsupported_claim_count": 1,
+    "rejected_evidence_count": 1,
+    "quality_flag_count": 8,
+    "gap_count": 7,
+    "unique_verified_source_count": 8,
+    "unique_verified_web_source_count": 8,
+    "unique_verified_file_source_count": 0
+  }
+}

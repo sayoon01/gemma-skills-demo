@@ -1,0 +1,234 @@
+# Semantic Audit Output Repair
+
+The previous semantic audit completed, but its structured output failed runtime integrity validation.
+
+This is a schema and consistency repair pass. Do not perform new research. Do not add new claims, new evidence, new URLs, or unsupported facts.
+
+# Integrity Errors
+
+[
+  "잘못된 verdict: C004 / INSUFFICIENT_SUPPORT"
+]
+
+# Original Audit Packet
+
+{
+  "accepted_claims": [
+    {
+      "claim_id": "C001",
+      "claim": "Figure AI의 Figure 02는 BMW Spartanburg 공장에 상용 배치되어 시트 메탈 로딩(pick-and-place) 작업을 수행하며, 2초 이내에 5mm 오차 범위 내로 부품을 배치하는 정밀도를 구현했다.",
+      "worker_support": "Figure AI의 공식 발표에 따르면 Figure 02는 BMW 공장에서 11개월간 배치되어 30,000대 이상의 X3 차량 생산에 기여했으며, 5mm 공차 내 정밀 배치를 수행했다.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C001-E001",
+          "worker_source": {
+            "source_kind": "web",
+            "title": "F.02 Contributed to the Production of 30,000 Cars at BMW",
+            "publisher": "Figure AI",
+            "url": "https://www.figure.ai/news/production-at-bmw",
+            "source_type": "official",
+            "tier": 1,
+            "excerpt": "Our first use case with BMW was sheet-metal loading... placing parts within a 5-millimeter tolerance in just 2 seconds."
+          },
+          "retrieved_source": {
+            "source_kind": "web",
+            "title": "F.02 Contributed to the Production of 30,000 Cars at BMW",
+            "url": "https://www.figure.ai/news/production-at-bmw",
+            "domain": "www.figure.ai",
+            "content": "F.02 Contributed to the Production of 30,000 Cars at BMW\nFIGURE 03\nHELIX\nCOMPANY\nF.02 Contributed to the Production of 30,000 Cars at BMW\nNovember 19, 2025\nToday we’re excited to share our results of an 11 month Figure 02 robot deployment at BMW Group Plant Spartanburg. Within 6 months of bringing up Figure 02, we delivered robots to the plant and began testing. Within 10 months, we launched full deployment on an active assembly line at the plant, running every single working day.\nBMW Deployment Highlights:\nRan 10-hour shift Monday-Friday\nContributed to the production of 30,000+ X3 vehicles\nEstimated 1.2+ million robot steps or 200+ miles\nFollowing the release of Figure 03, we’re officially starting the retirement of Figure 02, our second-generation humanoid robot. With Figure 02’s return to HQ from BMW as part of our fleet-wide retirement, we would like to highlight key learnings that can be rolled into Figure 03 operational readiness.\nDeployment Overview\nOur first use case with BMW was sheet-metal loading, a classic pick-and-place task in automotive manufacturing. An associate picks sheet-metal parts from racks or bins and places them on a welding fixture, after which six-axis industrial robots weld and feed the parts into the main line.\nTo measure robot progress, we defined three critical KPIs:\nNumber of times a human must pause or reset the robot. The goal was zero per shift.\nThe challenge of this use case is in balancing speed and precision – placing parts within a 5-millimeter tolerance in just 2 seconds.\nTo meet this, our robot had to achieve precise yet adaptive locomotion, allowing rapid, accurate foot placement and real-time responsiveness to environmental changes. We also developed advanced hand-eye coordination algorithms and built field-calibration tools for consistent cross-robot performance.\nHardware Reliability and Learnings\nSix months of daily runtime yielded invaluable insights for our mechanical and reliability teams. Across 1,250+ operational hours, Figure 02 recorded minimal hardware failures while generating critical data that informed the build procedures, component architecture, and mechanical design of Figure 03.\nOne learning that informed Figure 03 design was the robot’s forearm, our top hardware failure point at BMW. The forearm is a challenging subsystem due to its tight packaging, dexterity requirements (three degrees of freedom), and thermal constraints. Figure 02’s forearm contained a microcontroller-based PCB that distributed communications between the main computer and the wrist actuators.\nFor Figure 03, we completely re-architected the wrist electronics to eliminate both the distribution board and dynamic cabling. Each wrist’s motor controller now communicates directly with the main computer, reducing complexity, improving reliability, and simplifying thermal management.\nConclusion\nFigure 02 was an unprecedented advancement in bringing humanoid robots from the lab to the real world. Figure 02 taught us early lessons on what it takes to ship. Every hour on BMW’s line, every part loaded, and every intervention logged, shaped how we designed, validated, and built.\nThose lessons now live in Figure 03, a robot built from experience, ready for the world at scale. If you’re interested in helping ship robots into the world please consider\njoining our team\nKeep up with us\nGet news, photos, events, and business updates.\nContact Us\nCOMPANY\n© Figure 2026.\nTerms & Conditions",
+            "content_chars": 3458
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "claim": "Tesla의 Optimus는 현재 기가팩토리(Fremont, Giga Texas) 내에서 배터리 셀 분류, 부품 핸들링, 키팅(kitting) 등의 작업을 수행하고 있으나, 실제 생산성보다는 데이터 수집 및 학습 단계에 머물러 있다.",
+      "worker_support": "2026년 보고서에 따르면 Optimus는 4680 배터리 셀 라인 등에서 운용 중이지만, 일론 머스크는 이들이 생산적 작업보다는 학습 및 데이터 수집을 위한 목적이라고 밝혔다.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C002-E001",
+          "worker_source": {
+            "source_kind": "web",
+            "title": "Tesla Optimus Factory Deployment: 2025-2026 Status",
+            "publisher": "optimusk.blog",
+            "url": "https://optimusk.blog/blog/tesla-optimus-factory-deployment/",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "Confirmed tasks: sorting 4680 battery cells, parts handling between production line stations, kitting... Musk admitted in January 2026 that these robots are 'primarily for learning and data collection' rather than measurable productive output."
+          },
+          "retrieved_source": {
+            "source_kind": "web",
+            "title": "Tesla Optimus Factory Deployment: 2025-2026 Status",
+            "url": "https://optimusk.blog/blog/tesla-optimus-factory-deployment/",
+            "domain": "optimusk.blog",
+            "content": "Tesla Optimus Factory Deployment: 2025-2026 Status\n// MENU\n›\nTesla Optimus Factory Deployment: 2025-2026 Status\n// Contents\n// Contents\nComplete Deployment Timeline\nWhat Optimus Is Actually Doing\n// Lindsey A. Kennedy\nTesla Optimus Factory Deployment 2025-2026: Inside the Gigafactory Rollout\nShare:\n// Deep Dive · Updated August 6, 2026\nHere is exactly where Tesla Optimus factory deployment stands as of March 2026 — no hype, just verified milestones. Key source:\nBotInfo.ai 2026 timeline\nFremont line converted in ~46 days:\nTesla dismantled the legacy Model S/X assembly line (last units early May) and is standing up its first dedicated Optimus line — production targeted for late July–August 2026.\n📊\nQ2 2026 earnings (July 22) reset the picture:\nTesla is \"installing the first-generation lines for Optimus\" with output still effectively zero, and confirmed first units will do\ntraining-data collection, not productive factory work\nQ4 2025 earnings call\n(January 28, 2026), Elon Musk stated clearly: \"Optimus units are primarily for learning and data collection rather than performing productive tasks.\" FinancialContent noted: \"The Optimus units now roaming Tesla's 4680 battery cell lines are navigating unscripted environments, identifying misplaced components, and performing intricate kitting tasks.\" The key phrase: \"navigating unscripted environments\" — what distinguishes Optimus from conventional factory robots. Source:\nFinancialContent factory deployment\n💡 The most important context: Tesla is deliberately prioritizing data collection over productive output right now. Every hour an Optimus unit spends sorting battery cells generates training data for the AI — and that data is what makes the robot commercially viable. The \"not doing useful work\" admission is actually strategic, not a failure.\n3. Fremont vs. Giga Texas: The Two-Phase Factory Strategy\n4. The 2025 Production Miss: What Went Wrong\nTesla originally targeted 5,000-10,000 Optimus units in 2025. By year-end, the actual figure appears to have been in the hundreds-to-low-thousands range — a significant miss.\nChina rare earth magnet ban (April 2025):\nFinancialContent\n6. Tesla Optimus Factory Deployment: 2026 Milestones Tracker\nDate\n7. Leadership Change: The Elluswamy Signal\nIn June 2025, Milan Kovac resigned as head of Tesla's Optimus program after three years. His replacement: Ashok Elluswamy, VP of AI Software and the architect of Tesla's Autopilot/FSD system. This is the most strategically significant organizational change in the Optimus program's history.\nPriority shift:\nHow many Optimus robots are in Tesla factories right now?\nAs of March 2026, estimates suggest approximately 1,000+ Optimus units are deployed across Fremont and Giga Texas. Tesla has not released an official production count. The January 2026 Gen 3 production start at Fremont is expected to accelerate this significantly through 2026, targeting 50,000-100,000 total units produced by year-end (Musk's CES 2025 projection).\nWhat tasks is Tesla Optimus actually doing in factories?\nConfirmed tasks: sorting 4680 battery cells, parts handling between production line stations, kitting (organizing parts for assembly workers), quality inspection, and pick-and-place operations. Importantly, Musk admitted in January 2026 that these robots are \"primarily for learning and data collection\" rather than measurable productive output.\nWhen will Tesla Optimus start doing 'real' work in factories?\nThe Q2-Q3 2026 factory floor deployment of Gen 3 hands is the next major milestone. By late 2026, Tesla expects first commercial customers — which would represent the first genuinely productive deployment outside Tesla's own training environment. Full productive factory work at scale is targeted for 2027 when Giga Texas V4 line opens.\nWhy did Tesla miss the 5,000 Optimus target for 2025?\nSummary\nTesla Optimus factory deployment is real — robots are on the floor, learning from the factory environment, and accumulating the training data that will make them commercially viable. The gap between stated targets and actual production counts is significant and should not be minimized. But the infrastructure being built — Fremont Gen 3 line, Giga Texas construction, $20B CapEx, data collection pipeline — is the foundation for what comes next.\nThe critical judgment call: is the 2025 production miss a temporary supply chain and engineering delay on the path to commercial scale — or is it evidence that the fundamental difficulty of building useful humanoid robots at mass-market price points has been underestimated? The Q2-Q3 2026 Gen 3 hands deployment on the factory floor will provide the first real data point to answer that question.\nKey sources:\nSTAY AHEAD OF THE ROBOT RACE\nWe track Tesla Optimus, humanoid robot progress, and every major development — updated as news breaks.\n→\n// PRODUCTION\nTesla Optimus Production Timeline 2026\n// SUPPLY CHAIN\n// CAPABILITIES\nTesla Optimus Capabilities: What Can It Do?\nIndependent coverage of Tesla Optimus & humanoid robotics.",
+            "content_chars": 5033
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "claim": "Boston Dynamics의 전동식 Atlas는 2026년부터 현대자동차 Robotics Metaplant Application Center(RMAC) 및 Google DeepMind로 첫 상용 유닛이 출하되기 시작했다.",
+      "worker_support": "2026년 6월 보고에 따르면 전동식 Atlas의 첫 상용 플릿이 현대차 RMAC와 구글 딥마인드로 배송되었으며, 2028년까지 현대/기아 공장에 25,000대 이상 배치를 목표로 하고 있다.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C003-E001",
+          "worker_source": {
+            "source_kind": "web",
+            "title": "Boston Dynamics Electric Atlas Ships Its First Commercial Units | AI2Work",
+            "publisher": "AI2Work",
+            "url": "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units",
+            "source_type": "industry",
+            "tier": 2,
+            "excerpt": "The first commercial fleets are shipping to Hyundai's Robotics Metaplant Application Center and to Google DeepMind... Hyundai is targeting an annual production capacity of about 30,000 Atlas units by 2028."
+          },
+          "retrieved_source": {
+            "source_kind": "web",
+            "title": "Boston Dynamics Electric Atlas Ships Its First Commercial Units | AI2Work",
+            "url": "https://ai2.work/blog/boston-dynamics-electric-atlas-ships-its-first-commercial-units",
+            "domain": "ai2.work",
+            "content": "Boston Dynamics Electric Atlas Ships Its First Commercial Units | AI2Work\nAI\n/\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nHome\n/\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nPhysical AI\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nBoston Dynamics ships its first commercial electric Atlas humanoids to Hyundai and Google DeepMind. Inside the specs, pricing, rivals, and 2028 factory roadmap.\nJune 7, 2026\nPhysical AI\nBoston Dynamics Electric Atlas Ships Its First Commercial Units\nJune 7, 2026\n1\nEvery 2026 Atlas unit is already committed — fleets are shipping to Hyundai's Robotics Metaplant Application Center (RMAC) and Google DeepMind, with new customers slated for 2027.\n2\nHyundai is targeting an annual production capacity of about 30,000 Atlas units by 2028 and plans to deploy more than 25,000 across Hyundai and Kia plants, starting at its Georgia Metaplant.\n3\nWith an estimated ~$420,000 price tag, Atlas competes on reliability and full-stack support rather than price, as rivals like Unitree's G1 sell for roughly $13,500–$16,000.\nFor more than a decade, Boston Dynamics' Atlas lived on YouTube — backflipping, doing parkour, and amazing millions while quietly remaining a research curiosity too expensive to scale. At CES 2026 in Las Vegas, that era ended. Under the banner \"Partnering Human Progress,\" parent company Hyundai Motor Group pulled back a curtain to reveal a sleek, blue, production-ready version of the all-electric Atlas, and CEO Robert Playter announced that production would begin immediately at the company's Boston headquarters.\nThe headline that should make every operations executive sit up: every single Atlas unit built in 2026 is already spoken for. The first commercial fleets are shipping to Hyundai's Robotics Metaplant Application Center and to Google DeepMind, with additional customers planned for 2027. This is no longer a demo reel — it's a delivery schedule.\nThe shift matters because it reframes the humanoid race. While much of the industry has competed on viral clips and aspirational price points, Boston Dynamics is shipping a commercial-grade industrial tool backed by an automotive giant's supply chain. Here's what's actually in the box, who's buying it, and how it stacks up against Figure, Tesla, and the rest.\nAtlas by the Numbers\nThe production Atlas is engineered for demanding industrial work, not stage shows. Here are the figures that define it.\n56\nFrom Lab Curiosity to Industrial Product\nThe production Atlas is a deliberate departure from the hydraulic robot Boston Dynamics retired in April 2024. The new model is fully electric, enabling faster, quieter, and more precise motion, with custom high-powered actuators delivering 360° rotation at the hips, waist, and neck — ranges of motion impossible for a human body.\nWhat changed for commercialization isn't just the actuators. Boston Dynamics significantly reduced the number of unique parts in the robot, and engineered every component for compatibility with automotive supply chains — a direct play to leverage Hyundai's manufacturing muscle for reliability and economies of scale. The robot also features human-scale hands with tactile sensing, self-swappable belly-mounted batteries for continuous operation, and a sensor suite spanning LiDAR, stereo, and RGB cameras.\nNotably, Boston Dynamics has leaned into an \"alien\" or \"superhumanoid\" aesthetic rather than chasing human-mimicry. Where rivals design for easy teleoperation, Atlas is built to exploit motions a human never could — a philosophical bet that the most useful factory robot isn't necessarily the most human-looking one.\nWho's Actually Buying It — and Why That Matters\nThe two launch customers reveal the strategy. The first is Hyundai itself — not just the 80% owner of Boston Dynamics, but the first and largest customer. Atlas units are flowing into the newly announced Robotics Metaplant Application Center (RMAC), described by the team as a \"data factory\" designed to build the world's most complete dataset for training humanoid manufacturing skills.\nThe second is Google DeepMind, which is serving as both customer and AI development partner. DeepMind CEO Demis Hassabis confirmed the first fleets would ship to Google in the coming months, positioning Atlas as a testbed for \"Physical AI\" — the foundation models that will let the robot generalize across tasks rather than being hand-programmed for each one.\nHyundai's longer roadmap is the most concrete in the industry. The group plans an annual production capacity of roughly 30,000 Atlas units by 2028, with more than 25,000 deployed across Hyundai and Kia plants. Deployment begins conservatively in 2028 at the Metaplant near Savannah, Georgia — which builds the Ioniq 5 and Ioniq 9 EVs — starting with parts sequencing, then expanding to component assembly by 2030.\nA Different Commercial Philosophy\nAtlas vs. the Humanoid Field\nThe 2026 humanoid market is crowded and fast-moving. Here's how Atlas compares against the leading rivals on the metrics operators actually weigh.\nRobot\nWhy the Price Gap Isn't the Whole Story\nAtlas's estimated ~$420,000 price dwarfs Unitree's ~$16,000 G1 — but they aren't competing for the same buyer. Atlas targets large industrial accounts where reliability, integration, and service contracts matter more than sticker price. Boston Dynamics is also building in over-the-air software upgrades and full maintenance, repair, and overhaul (MRO) services — the kind of lifecycle support that determines real total cost of ownership on a factory floor.\nFrequently Asked Questions",
+            "content_chars": 5618
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "claim": "Agility Robotics의 Digit은 GXO Logistics의 Spanx 물류 센터 등에서 컨베이어와 AMR 사이의 토트(tote) 이동 작업을 수행하며 RaaS(Robots-as-a-Service) 모델로 상용 운영되고 있다.",
+      "worker_support": "Agility Robotics와 GXO의 다년 계약을 통해 Digit이 실제 상업 운영에 투입되었으며, 주로 벌크 토트 전송 작업을 수행한다.",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C004-E001",
+          "worker_source": {
+            "source_kind": "web",
+            "title": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement | Agility",
+            "publisher": "Agility Robotics",
+            "url": "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement",
+            "source_type": "official",
+            "tier": 1,
+            "excerpt": "June 5, 2024, marked a pivotal moment... as Digit stepped into the workforce at a GXO facility near Atlanta... Digit units move totes between conveyors and Autonomous Mobile Robots (AMRs)."
+          },
+          "retrieved_source": {
+            "source_kind": "web",
+            "title": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement | Agility",
+            "url": "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement",
+            "domain": "www.agilityrobotics.com",
+            "content": "Digit Deployed at GXO in Historic Humanoid RAAS Agreement | Agility\nIndustries\nResources\nDeploy Digit\nClose\nAll Resources\nDigit Deployed at GXO in Historic Humanoid RAAS Agreement\nJune 5, 2024, marked a pivotal moment in robotics history.\nCopy Link\nJune 5, 2024, marked a pivotal moment in robotics history. For the first time, a humanoid robot was deployed in commercial operations, as Digit stepped into the workforce at a GXO facility near Atlanta. This milestone represents more than a technological advancement—it signifies a leap forward in the evolution of robotics and the future of labor.\nAt Agility Robotics, our vision has always been clear: to design and build robots capable of performing useful tasks in real-world environments. Digit's deployment into a long-term, commercially significant role marks the first time this vision has been realized by a humanoid robot.\nUnlike traditional automation designed for fixed, single-purpose applications, Digit is built to operate in human spaces and do many things. These are environments that were not specifically designed for machines but for people. The challenge in these spaces has always been to solve for dull, dirty, and dangerous tasks that are increasingly difficult to hire for. Digit is designed to connect these islands of automation and take on historically hard-to-automate tasks.\nThis deployment is part of a multi-year agreement, positioning Digit as an integral part of the day-to-day operations at GXO and opening the door to an exciting future where humanoid robots perform various complex tasks in logistics, manufacturing, and beyond.\nThe importance of this deployment cannot be overstated. While robotics and artificial intelligence have made remarkable strides over the years, the true measure of success lies in practical application. The question that defines the future of robotics is not about theoretical capabilities or futuristic AI models; it’s about robots performing useful work that businesses are willing to invest in. And today, that question is being answered in real time as Digit starts its journey in Georgia.\nFor Agility Robotics, this is just the beginning. June 5th was the day humanoid robots went to work and a monumental step towards a future where general-purpose robots like Digit are an indispensable part of industries worldwide.\n‍\n→\nAgility’s Humanoid Deployment Process\nExecutive Perspective\nResources\nDeploy Digit\nCareers",
+            "content_chars": 2433
+          }
+        }
+      ]
+    }
+  ],
+  "already_unsupported_claims": [
+    {
+      "claim_id": "U001",
+      "claim": "국내 기업 중 레인보우로보틱스는 휴보(HUBO) 플랫폼을 연구용으로 판매해 왔으며, 이족보행 플랫폼의 본격적인 양산 및 상용화 목표 시점을 2028년으로 설정하고 있다.",
+      "reason": "No source survived deterministic verification."
+    },
+    {
+      "claim_id": "U002",
+      "claim": "삼성전자는 휴머노이드 로봇의 정밀 조작 능력을 확보하기 위해 '핸드랩(Hand Lab)'을 신설하고 개발에 박차를 가하고 있으나, 현재는 상용 제품보다는 연구 및 개발 단계에 있다.",
+      "reason": "No source survived deterministic verification."
+    }
+  ]
+}
+
+# Invalid Audit Output
+
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "verdict": "TRIANGULATED",
+      "reason": "The retrieved official source from Figure AI explicitly confirms the deployment at BMW Plant Spartanburg, the specific task (sheet-metal loading/pick-and-place), the precision (5mm tolerance), and the speed (2 seconds). While the worker marked it as SINGLE_SOURCE, the claim is fully supported by the primary source content.",
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The source content explicitly states: 'Our first use case with BMW was sheet-metal loading... placing parts within a 5-millimeter tolerance in just 2 seconds.' It also confirms the location (Plant Spartanburg) and the contribution to 30,000+ X3 vehicles.",
+          "audited_source_type": "official",
+          "audited_tier": 1
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The claim is supported by the retrieved blog post, which cites Elon Musk and earnings calls. However, as the source is a third-party blog (optimusk.blog) and not a primary Tesla filing or official press release, it remains a single-source industry report.",
+      "evidence": [
+        {
+          "evidence_id": "C002-E001",
+          "state": "VERIFIED",
+          "reason": "The content confirms Optimus is performing sorting of 4680 battery cells, parts handling, and kitting, and explicitly quotes Musk stating they are 'primarily for learning and data collection'.",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The claim is supported by the AI2Work article. While the details match the retrieved text, this is an industry blog/news site rather than an official Boston Dynamics or Hyundai announcement, thus it is not triangulated.",
+      "evidence": [
+        {
+          "evidence_id": "C003-E001",
+          "state": "VERIFIED",
+          "reason": "The source explicitly mentions that fleets are shipping to Hyundai's Robotics Metaplant Application Center (RMAC) and Google DeepMind as of June 2026.",
+          "audited_source_type": "industry",
+          "audited_tier": 4
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "INSUFFICIENT_SUPPORT",
+      "reason": "The claim mentions 'Spanx 물류 센터' (Spanx logistics center), but the retrieved official source from Agility Robotics only mentions a 'GXO facility near Atlanta'. It does not explicitly name Spanx. While GXO may operate the Spanx site, the provided text does not establish this link.",
+      "evidence": [
+        {
+          "evidence_id": "C004-E001",
+          "state": "INSUFFICIENT_SUPPORT",
+          "reason": "The source confirms the GXO deployment, the RaaS model, and the task of moving totes between conveyors and AMRs, but it does not mention 'Spanx'.",
+          "audited_source_type": "official",
+          "audited_tier": 1
+        }
+      ]
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C002-E001",
+      "message": "Worker classified as Tier 2 (Peer-reviewed/Academic), but it is a blog (Tier 4/5)."
+    },
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C003-E001",
+      "message": "Worker classified as Tier 2, but it is an industry blog (Tier 4)."
+    }
+  ]
+}
+
+# Repair Requirements
+
+- Preserve every expected claim_id.
+- Preserve every expected evidence_id.
+- Do not create or remove claims or evidence.
+- Use only claim verdict values permitted by the semantic verification contract in the system prompt.
+- Use only evidence state values permitted by that contract.
+- Do not use an evidence-state label as a claim verdict unless the contract explicitly permits it.
+- Keep the semantic judgment of the previous audit whenever possible, changing only what is required for contract consistency and integrity.
+- Claim-level verdicts must remain consistent with their evidence-level states according to the active verification contract.
+- Return the semantic audit JSON object only.
+

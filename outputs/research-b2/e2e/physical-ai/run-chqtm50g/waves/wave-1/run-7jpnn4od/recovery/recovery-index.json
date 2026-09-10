@@ -1,0 +1,44 @@
+[
+  {
+    "wave": 1,
+    "assignment_id": "SG03",
+    "status": "completed",
+    "recovery_mode": "sequential_retry",
+    "original_status": "failed",
+    "original_error": "ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=600)",
+    "worker_run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/e2e/physical-ai/run-chqtm50g/waves/wave-1/run-7jpnn4od/recovery/SG03/run-4veoxq3a",
+    "metrics": {
+      "turn_count": 4,
+      "tool_call_count": 11,
+      "search_count": 9,
+      "fetch_count": 2,
+      "fetch_success_count": 2,
+      "model_response_times_seconds": [
+        37.308,
+        84.369,
+        90.548,
+        332.219
+      ],
+      "model_total_seconds": 544.444,
+      "elapsed_seconds": 579.602
+    },
+    "verification": {
+      "worker_web_source_count": 8,
+      "verified_web_source_count": 2,
+      "unverified_web_source_count": 6,
+      "verified_urls": [
+        "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28",
+        "https://www.ranketai.com/en/blog/deep-dive-humanoid-robot-commercialization-2026-02-28"
+      ],
+      "unverified_urls": [
+        "https://www.iso.org/standard/91469.html",
+        "https://humanoidliability.com/resources/iso-25785-humanoid-safety-standards/",
+        "https://github.com/isaac-sim2real/sage",
+        "https://ieeexplore.ieee.org/document/10904321",
+        "https://www.korea.net/Government/Briefing-Room/Press-Releases/view?articleId=7391&type=O",
+        "https://www.investkorea.org/dg-en/bbs/i-1381/detail.do?ntt_sn=491318"
+      ],
+      "all_worker_web_sources_verified": false
+    }
+  }
+]
