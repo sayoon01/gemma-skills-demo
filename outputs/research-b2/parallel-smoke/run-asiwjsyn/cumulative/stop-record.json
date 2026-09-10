@@ -1,0 +1,20 @@
+{
+  "stage": "B2-9",
+  "created_at": "2026-09-10T00:50:02.539680+00:00",
+  "converged": false,
+  "stop_reason": "user_stop",
+  "wave_count": 2,
+  "running_claim_count": 28,
+  "novel_claim_counts": [
+    16,
+    12
+  ],
+  "novelty_ratios_running_total": [
+    1.0,
+    0.42857142857142855
+  ],
+  "pending_independence_claim_count": 2,
+  "unsupported_claim_count": 3,
+  "gap_count": 14,
+  "note": "Research was intentionally stopped after Wave 2 by user instruction. This is an operational user stop, not semantic convergence."
+}
