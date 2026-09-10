@@ -157,40 +157,8 @@ Python                   → 실제 실행 능력과 deterministic validation
 ## 4. B2 Deep Research
 
 같은 모델, 같은 Ollama endpoint, 서로 다른 `messages[]`다.
+<img width="390" height="719" alt="image" src="https://github.com/user-attachments/assets/19179b1c-b817-43cb-8c6b-5471e805e45d" />
 
-```text
-Coordinator
-    ↓
-plan.json
-    ↓
-Parallel Workers          (독립 chat session)
-    ↓
-Sequential Recovery       (failed assignment만)
-    ↓
-Deterministic Gate        (Web fetch / PDF page)
-    ↓
-Semantic Auditor          (thinking OFF, 도구 없음)
-    ↓
-Evidence Pool             (VERIFIED only)
-    ↓
-Replanner                 (Skill + measurements)
-    ↓
-Wave 2
-    ↓
-Cumulative Claim Matcher  (SAME / EXTENDS / CONTRADICTS / NOVEL)
-    ↓
-Cumulative State
-    ↓
-Source Independence
-    ↓
-Adversarial Challenge
-    ↓
-Finalizer                 (deterministic)
-    ↓
-Stop Record               (convergence / resource cap)
-    ↓
-Synthesis                 (citation-validated report)
-```
 
 | 문서 | 내용 |
 |---|---|
