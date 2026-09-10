@@ -1,0 +1,91 @@
+# Deep Research: 자율작업형 피지컬 AI 로봇 기술 동향 분석
+
+## TL;DR
+- **아키텍처의 패러다임 전환**: 기존의 개별 작업 학습 방식에서 시각-언어-행동(VLA) 모델 기반의 파운데이션 모델 체계로 급격히 전환되고 있습니다 [SRC011][SRC020].
+- **상용화 단계의 분화**: Tesla Optimus와 Figure AI 등은 공장 내 실전 배치 단계에 진입한 반면, 삼성전자와 두산로보틱스 등 국내 기업들은 AI-Native 로봇 개발 및 솔루션 상용화 초기 단계에 있습니다 [SRC004][SRC017][SRC023].
+- **기술적 병목의 이동**: 하드웨어 제약보다는 소프트웨어 아키텍처 통합, 실시간 추론 지연 시간(Latency), 그리고 산업 표준 인증(ISO 등)이 주요 상용화 걸림돌로 부각되고 있습니다 [SRC013][SRC008].
+- **인프라 요구사항**: Sim-to-Real 간극 해소와 해외 의존도를 낮추기 위한 공용 시험·인증 인프라 구축의 필요성이 증대되고 있습니다 [SRC022].
+
+## Scope and framing
+- **Topic**: 자율작업형 피지컬 AI 로봇의 기술 동향 분석
+- **Scope**: narrow drill-down (2024년~현재 기술 및 제품 동향)
+- **Audience**: 기술 전략 기획자 및 로봇 공학 전문가
+- **Recency cutoff**: 2026년 9월 (조사 시점 기준)
+- **Sub-goals investigated**:
+    - 피지컬 AI 핵심 아키텍처 및 구성 요소 분석
+    - 국내외 주요 기업별 제품 기능 및 상용화 단계 비교
+    - 핵심 기술(VLA, 온디바이스 AI, 액추에이터)의 발전 방향
+    - 상용화 병목 지점 및 시험·검증 요구사항 도출
+    - 공용 시험 인프라 구축의 시사점 분석
+
+## Key findings
+1. **VLA 모델 기반의 범용성 확보**: 2024-2026년 사이 로봇 제어는 VLA(Vision-Language-Action) 모델로 전환되어, 자연어 명령만으로 학습되지 않은 새로운 작업을 수행하는 능력이 핵심 경쟁력이 되었습니다 [SRC011][SRC020][SRC005].
+2. **실전 배치와 연구 단계의 격차**: Tesla Optimus Gen 3는 자사 공장 내 제한적 생산 및 배치 단계에 있으며 [SRC004], Figure AI는 BMW 및 아마존 물류센터에 실제 설치되는 상용화 단계에 진입했습니다 [SRC004]. 반면, 삼성전자는 2027년 CES 공개를 목표로 개발 중이며 [SRC017], 두산로보틱스는 2028년 산업용 휴머노이드 공개를 목표로 하고 있습니다 [SRC016].
+3. **온디바이스 AI 및 하드웨어 가속**: 실시간 제어를 위해 NVIDIA Blackwell과 같은 고성능 GPU 파티셔닝 기술이 적용되고 있으며 [SRC011], 클라우드 없이 기기 자체에서 학습 가능한 '적응형 AI' NPU 구조가 개발되었습니다 [SRC018].
+4. **인증 및 규제 장벽**: 개발자의 66%가 ISO/SAE 21434(사이버보안) 및 ISO 10218(기능 안전) 등 인증 요구사항으로 인해 프로젝트 지연을 겪고 있습니다 [SRC013].
+
+## Evidence
+
+### 1. 기술 개요 및 구성
+- **핵심 아키텍처**: 기존의 작업별 정책 학습에서 VLA 모델 기반의 파운데이션 모델 체계로 전환되었습니다 [SRC011][SRC020]. 특히 NVIDIA의 GR00T N1.6은 SigLIP 비전 인코더와 네이티브 해상도 지원 VLM을 통해 공간 추론 능력을 강화했습니다 [SRC011] `[single-source]`.
+- **작업 수행(Manipulation)**: 단순 파지에서 '파지-배치 시너지(Grasp-for-Placement Synergy)' 기반의 작업 인식형 파지 추정으로 발전하여 재파지 횟수를 줄이고 사이클 타임을 개선하고 있습니다 [SRC021] `[single-source]`.
+- **온디바이스 AI**: 2차원 시스톨릭 배열(Systolic Array) 구조 기반의 NPU를 통해 클라우드 없이 기기 자체에서 연속 학습이 가능한 적응형 AI 기술이 개발되었습니다 [SRC018] `[single-source]`.
+
+### 2. 주요 기업·제품별 기능 및 단계 비교
+| 기업/제품 | 상용화 단계 | 주요 특징 및 적용 분야 | 출처 |
+| :--- | :--- | :--- | :--- |
+| **Tesla Optimus Gen 3** | 제한적 생산/배치 | 자사 공장 내 빈 피킹, 키팅, 기본 조립 수행 [SRC004]. 2026년 1월 양산 시작되었으나 외부 판매는 미정 [SRC012] `[single-source]`. | [SRC004][SRC012] |
+| **Figure 02/03** | 상용 배치 | BMW Spartanburg 공장 및 아마존 물류센터 실전 배치 [SRC004]. | [SRC004] |
+| **Agility Digit** | 상용 배치 | 아마존(Amazon) 물류 현장 배치 [SRC003]. | [SRC003] |
+| **Boston Dynamics Atlas** | 연구/시범 운영 | 기본적으로 연구 플랫폼이나, 현대차 공장에서 부품 운반 시범 운영 중 [SRC004][SRC014]. | [SRC004][SRC014] |
+| **삼성전자 휴머노이드** | 연구/개발 | AI-Native 설계, 2027년 CES 공개 목표 [SRC017]. 자사 공장을 '데이터 팩토리'로 활용해 학습 데이터 수집 [SRC010]. | [SRC017][SRC010] |
+| **두산로보틱스** | 솔루션 상용화 | '스캔앤고(Scan & Go)' 솔루션 출시(0.1mm 정밀도) [SRC023]. 2028년 산업용 휴머노이드 공개 목표 [SRC016]. | [SRC023][SRC016] |
+| **레인보우-투모로** | 공동 개발 | RFM 및 AI Agent 기반 AI-Native 휴머노이드 공동 개발 MOU 체결 [SRC019]. | [SRC019] |
+
+### 3. 핵심 기술의 발전 방향
+- **추론 최적화**: VLA 모델의 실시간성을 위해 10~100ms(10~100Hz)의 지연 시간 달성을 목표로 합니다 [SRC008] `[single-source]`. 이를 위해 비트 희소성(Bit-sparsity)을 이용한 Deltoris 프레임워크 [SRC007]나 비동기 추론 링커인 VLA-RAIL [SRC006] 등의 가속 기법이 연구되고 있습니다.
+- **에너지 및 열관리**: 휴머노이드 배터리는 에너지 밀도가 높은 NCA와 열 안정성이 높은 LFP 사이의 트레이드오프가 존재하며 [SRC001] `[single-source]`, 컴팩트한 바디 설계로 인한 열 배출 경로 제한이 액추에이터 성능 저하(Throttling)의 주요 원인이 되고 있습니다 [SRC001] `[single-source]`.
+- **액추에이터 효율**: 기존의 강성 액추에이터(하모닉 드라이브 등)는 위치 유지에 지속적인 전력이 필요하나, 소프트 액추에이터는 재료의 유연성을 이용해 에너지를 저장/방출함으로써 효율을 높일 수 있습니다 [SRC002] `[single-source]`.
+
+### 4. 상용화 병목 및 검증 요구사항
+- **소프트웨어 병목**: 개발자의 27%가 소프트웨어 아키텍처 및 통합을 최대 병목으로 꼽았으며, 이는 하드웨어 제약(16%)보다 높습니다 [SRC013] `[single-source]`.
+- **결정론적 실행의 괴리**: 95%의 개발자가 실시간 결정론적 실행을 요구하지만, 91%는 여전히 리눅스와 같은 범용 OS(GPOS)에 의존하고 있는 'Determinism Disconnect' 현상이 나타납니다 [SRC013] `[single-source]`.
+- **데이터 및 환경**: Sim-to-Real 간극, 데이터 부족, 이질성(Heterogeneity)이 주요 병목이며, 특히 장비 비용보다는 숙련된 운영자와 데이터 품질 확보가 더 큰 과제로 이동했습니다 [SRC009] `[single-source]`.
+
+### 5. 공용 시험 인프라 구축 시사점
+- **국내 규제 환경**: 한국의 경우 로봇 관련 규정이 건축법, 개인정보보호법 등에 분산되어 있어 통합적인 제도 기반(로봇특별법 등)이 필요합니다 [SRC015] `[single-source]`.
+- **인프라 필요성**: 국내 시험인증 기반 부족으로 인한 해외 의존도가 높으며, 성능 평가부터 리스크 평가까지 전 주기를 지원하는 공용 시험·인증 인프라 확충이 필수적입니다 [SRC022] `[single-source]`.
+
+## Counter-evidence and dissent
+- **생산 단계에 대한 상충**: Tesla Optimus Gen 3의 생산 상태에 대해, 일부 분석은 '제한적 생산(limited production)' 단계로 보고 있으나 [SRC004], 다른 소스는 2026년 1월에 '양산(mass production)'에 진입했다고 보고하고 있습니다 [SRC012]. 다만, 양측 모두 외부 상업적 판매 단계는 아니라는 점에는 동의합니다.
+
+## Gaps and unknowns
+- **상세 하드웨어 명세**: Tesla Optimus 및 Figure AI의 구체적인 SoC 설계나 전력 소비량 등 공식 기술 문서가 부족하여 정확한 벤치마킹이 어렵습니다.
+- **정량적 에너지 효율**: 소프트 액추에이터와 강성 액추에이터 간의 구체적인 에너지 효율 수치(J/movement 등)는 확인되지 않았습니다.
+- **국내 인프라 세부 사양**: KTL 등에서 구축 중인 시험 인프라의 구체적인 장비 리스트나 정밀도 수치는 공개된 자료에서 제한적으로만 확인되었습니다.
+
+## Sources
+
+[^1]: [Humanoid Robot Engineering Barriers: Motion Control, Thermal and Power Trade-offs](https://actuatorhq.com/blog/humanoid-robot-engineering-barriers-prototype-to-production-2025) — Tier 4
+[^2]: [New Research: Robots Push Energy Limits in Three Different Directions](https://actuatorhq.com/blog/new-research-robotics-energy-efficiency-breakthroughs-2026) — Tier 4
+[^3]: [Boston Dynamics vs Figure vs Agility vs 1X (Humanoid Robots July 2026)](https://andrew.ooo/answers/boston-dynamics-vs-figure-vs-agility-vs-1x-humanoid-landscape-july-2026) — Tier 5
+[^4]: [Boston Dynamics Atlas vs Tesla Optimus vs Figure 02: 2026 Showdown](https://artificialintelligenceherald.com/robotics/boston-dynamics-atlas-vs-tesla-optimus-vs-figure-02-2026-showdown) — Tier 4
+[^5]: [Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications](https://arxiv.org/abs/2510.07077) — Tier 2
+[^6]: [VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots](https://arxiv.org/abs/2512.24673) — Tier 2
+[^7]: [Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference](https://arxiv.org/abs/2608.04428) — Tier 2
+[^8]: [How Fast Can I Run My VLA? Demystifying VLA Inference Performance with VLA-Perf](https://arxiv.org/html/2602.18397v1) — Tier 2
+[^9]: [What Is a VLA (Vision-Language-Action) Model? — Physical AI Model Evolution & Data Strategy (2026 Edition)](https://blog.pebblous.ai/project/PhysicalAI/physical-ai/en) — Tier 4
+[^10]: [Samsung Builds AI Into Robot Design to Speed Humanoid Push](https://en.sedaily.com/finance/2026/09/07/samsung-builds-ai-into-robot-design-to-speed-humanoid-push) — Tier 2
+[^11]: [Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide](https://neuralcoretech.com/physical-ai-architecture-vla-robotics) — Tier 2
+[^12]: [Tesla Optimus Gen 3 vs Gen 2: Full Specs Comparison (2026)](https://optimusk.blog/blog/tesla-optimus-gen-3-vs-gen-2-comparison) — Tier 4
+[^13]: [Software Architecture: The New Bottleneck for Physical AI](https://qnx.software/en/blog/2026/inside-the-robot) — Tier 4
+[^14]: [피지컬 AI 로봇 2026 한국 7가지 도입 사례 총정리](https://rabby.kr/physical-ai-robots-korea-cases-2026) — Tier 5
+[^15]: [한병도, ‘로봇특별법’ 대표발의…이동로봇 실증·상용화·안전관리 통합 지원](https://www.betanews.net/article/view/beta202609030109) — Tier 4
+[^16]: [두산로보틱스-엔비디아, 피지컬 AI 로봇 협력…2028년 산업용 휴머노이드 선보인다](https://www.etnews.com/20260429000466) — Tier 2
+[^17]: [삼성전자 휴머노이드 개발 착수 CES 2027 공개 목표](https://www.gokorea.kr/news/articleView.html?idxno=877516) — Tier 2
+[^18]: [KAIST, 자율주행차·로봇 등 온디바이스 환경서 적응형 인공지능 실현](https://www.industrynews.co.kr/news/articleView.html?idxno=54354) — Tier 2
+[^19]: [투모로 로보틱스, 피지컬 AI 상용화 속도…레인보우로보틱스와 '스스로 일하는 로봇' 공동개발](https://www.kyeonggi.com/article/20260723580350) — Tier 1
+[^20]: [Humanoid Robots 2026: Tesla Optimus, Figure 02 & NVIDIA Isaac Status](https://www.meta-intelligence.tech/en/insight-physical-ai) — Tier 2
+[^21]: [Robotic Grasping Technology Landscape 2026](https://www.patsnap.com/resources/blog/rd-blog/robotic-grasping-technology-landscape-2026-patsnap-eureka) — Tier 2
+[^22]: [KTL, 'K-로봇' 글로벌 경쟁력 강화…시험·인증 인프라 확충](https://www.yna.co.kr/view/AKR20250930148000052) — Tier 1
+[^23]: [CES 최고혁신상 '스캔앤고'…두산로보틱스, AI 로봇 상용 본격화](https://zdnet.co.kr/view?no=20260107154524) — Tier 2

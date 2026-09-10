@@ -32,7 +32,10 @@ from src.skill_loader import (
 )
 
 from .contracts import load_b2_contracts
-from .evidence_gate import canonical_url
+from .evidence_gate import (
+    canonical_file_path,
+    canonical_url,
+)
 from .evidence_pool import resolve_worker_runs
 from .worker import extract_json_object
 
@@ -102,10 +105,15 @@ def collect_distinct_sources_read(
         )
 
         for log in logs:
-            if (
+            name = (
                 log.get("name")
-                != "fetch_page"
-            ):
+                or ""
+            )
+
+            if name not in {
+                "fetch_page",
+                "read_pdf_pages",
+            }:
                 continue
 
             if log.get("ok") is not True:
@@ -116,10 +124,7 @@ def collect_distinct_sources_read(
                 or {}
             )
 
-            if (
-                result.get("ok")
-                is not True
-            ):
+            if result.get("ok") is not True:
                 continue
 
             data = (
@@ -127,27 +132,66 @@ def collect_distinct_sources_read(
                 or {}
             )
 
-            url = (
-                data.get("url")
-                or (
-                    log.get(
-                        "arguments"
+            if name == "fetch_page":
+                url = (
+                    data.get("url")
+                    or (
+                        log.get(
+                            "arguments"
+                        )
+                        or {}
+                    ).get("url")
+                    or ""
+                )
+
+                canonical = (
+                    canonical_url(
+                        url
                     )
-                    or {}
-                ).get("url")
-                or ""
-            )
-
-            canonical = (
-                canonical_url(
-                    url
                 )
-            )
 
-            if canonical:
-                urls.add(
-                    canonical
+                if canonical:
+                    urls.add(
+                        canonical
+                    )
+
+            else:
+                file_sha256 = (
+                    data.get(
+                        "file_sha256"
+                    )
+                    or ""
+                ).strip()
+
+                file_path = (
+                    data.get("path")
+                    or (
+                        log.get(
+                            "arguments"
+                        )
+                        or {}
+                    ).get("path")
+                    or ""
                 )
+
+                if file_sha256:
+                    urls.add(
+                        "file-sha256:"
+                        + file_sha256
+                    )
+
+                elif file_path:
+                    canonical_path = (
+                        canonical_file_path(
+                            file_path
+                        )
+                    )
+
+                    if canonical_path:
+                        urls.add(
+                            "file-path:"
+                            + canonical_path
+                        )
 
     return sorted(
         urls
@@ -447,38 +491,72 @@ def build_compact_wave_summary(
         )
     ]
 
-    sources = [
-        {
-            "source_id":
-                source.get(
-                    "source_id"
-                ),
-            "domain":
-                source.get(
-                    "domain"
-                ),
-            "publisher":
-                source.get(
-                    "claimed_publisher"
-                ),
-            "audited_source_type":
-                source.get(
-                    "audited_source_type"
-                ),
-            "audited_tier":
-                source.get(
-                    "audited_tier"
-                ),
-            "claim_refs":
-                source.get(
-                    "claim_ids"
-                ),
-        }
-        for source in (
-            pool.get("sources")
-            or []
+    sources = []
+
+    for source in (
+        pool.get("sources")
+        or []
+    ):
+        source_kind = (
+            source.get(
+                "source_kind"
+            )
+            or (
+                "web"
+                if source.get(
+                    "canonical_url"
+                )
+                else "file"
+            )
         )
-    ]
+
+        sources.append(
+            {
+                "source_id":
+                    source.get(
+                        "source_id"
+                    ),
+                "source_kind":
+                    source_kind,
+                "canonical_url":
+                    source.get(
+                        "canonical_url"
+                    ),
+                "domain":
+                    source.get(
+                        "domain"
+                    ),
+                "path":
+                    source.get(
+                        "path"
+                    ),
+                "file_sha256":
+                    source.get(
+                        "file_sha256"
+                    ),
+                "verified_pages":
+                    source.get(
+                        "verified_pages"
+                    )
+                    or [],
+                "publisher":
+                    source.get(
+                        "claimed_publisher"
+                    ),
+                "audited_source_type":
+                    source.get(
+                        "audited_source_type"
+                    ),
+                "audited_tier":
+                    source.get(
+                        "audited_tier"
+                    ),
+                "claim_refs":
+                    source.get(
+                        "claim_ids"
+                    ),
+            }
+        )
 
     return {
         "completed_assignments": [

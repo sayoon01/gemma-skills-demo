@@ -237,26 +237,22 @@ def validate(
     }
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser()
+def run_independence_challenge(
+    *,
+    independence_run: Path,
+    skill_name: str,
+) -> dict[str, Any]:
+    """기존 Source Independence 결과를 adversarial하게 재검토한다."""
 
-    parser.add_argument(
-        "--independence-run",
-        type=Path,
-        required=True,
+    run_dir = (
+        independence_run
+        .expanduser()
+        .resolve()
     )
-
-    parser.add_argument(
-        "--skill",
-        default="deep-research",
-    )
-
-    args = parser.parse_args()
-
-    run_dir = args.independence_run
 
     previous = load_json(
-        run_dir / "result.json"
+        run_dir
+        / "result.json"
     )
 
     packet = load_json(
@@ -297,7 +293,7 @@ def main() -> int:
 
     skill = activate_skill(
         catalog,
-        args.skill,
+        skill_name,
     )
 
     system_prompt = (
@@ -338,25 +334,31 @@ def main() -> int:
     client = OllamaClient()
 
     print(
-        "===== B2 Independence Challenge ====="
+        "===== B2 Independence Challenge =====",
+        flush=True,
     )
 
     print(
         "Prior run:",
         run_dir,
+        flush=True,
     )
 
-    started = time.monotonic()
+    started = (
+        time.monotonic()
+    )
 
     response = client.chat(
         [
             {
                 "role": "system",
-                "content": system_prompt,
+                "content":
+                    system_prompt,
             },
             {
                 "role": "user",
-                "content": user_prompt,
+                "content":
+                    user_prompt,
             },
         ],
         think=False,
@@ -418,7 +420,21 @@ def main() -> int:
         "challenge":
             result,
         "elapsed_seconds":
-            round(elapsed, 3),
+            round(
+                elapsed,
+                3,
+            ),
+        "run_dir":
+            str(
+                run_dir
+            ),
+        "challenge_result_path":
+            str(
+                (
+                    run_dir
+                    / "challenge-result.json"
+                ).resolve()
+            ),
     }
 
     save_json(
@@ -430,32 +446,80 @@ def main() -> int:
     print(
         "Time:",
         f"{elapsed:.3f}초",
+        flush=True,
     )
 
     print(
         "Validation:",
         validation["ok"],
+        flush=True,
     )
 
     if validation["ok"]:
-        for family in result[
-            "families"
-        ]:
+        for family in (
+            result[
+                "families"
+            ]
+        ):
             print(
-                family["family_ref"],
+                family[
+                    "family_ref"
+                ],
                 "=>",
-                family["final_verdict"],
+                family[
+                    "final_verdict"
+                ],
+                flush=True,
             )
 
     print(
         "Result:",
         run_dir
         / "challenge-result.json",
+        flush=True,
+    )
+
+    return final
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "--independence-run",
+        type=Path,
+        required=True,
+    )
+
+    parser.add_argument(
+        "--skill",
+        default="deep-research",
+    )
+
+    args = (
+        parser.parse_args()
+    )
+
+    result = (
+        run_independence_challenge(
+            independence_run=
+                args.independence_run,
+            skill_name=
+                args.skill,
+        )
     )
 
     return (
         0
-        if validation["ok"]
+        if (
+            result.get(
+                "validation",
+                {},
+            ).get(
+                "ok"
+            )
+            is True
+        )
         else 1
     )
 

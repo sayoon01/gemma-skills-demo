@@ -21,6 +21,7 @@ Python은 Deep Research 절차 자체를 하드코딩하지 않고, 아래 파�
 | [convergence.md](../runtime/b2/convergence.md) | Skill convergence와 **resource cap**을 어떻게 기록할지 |
 | [claim-merge.md](../runtime/b2/claim-merge.md) | Wave claim의 **의미 관계와 novelty** 출력 형식 |
 | [source-independence.md](../runtime/b2/source-independence.md) | SAME family의 **출처 독립성** 판정 계약 |
+| [independence-challenge.md](../runtime/b2/independence-challenge.md) | Independence 판정에 대한 **adversarial 재검토** 계약 |
 | [synthesis.md](../runtime/b2/synthesis.md) | 최종 작성 시 **Evidence Pack 경계**와 출력 언어 |
 
 활성 Skill은 Controller가 대체하거나 무시하지 않는다.

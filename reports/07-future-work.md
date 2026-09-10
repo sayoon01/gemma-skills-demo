@@ -9,41 +9,46 @@
 - [source-tier-vs-search-rank.md](source-tier-vs-search-rank.md)
 - [xlsx-runtime-issues.md](xlsx-runtime-issues.md)
 - [06-validation-results.md](06-validation-results.md)
+- [docs/b2-e2e.md](../docs/b2-e2e.md)
 
 ---
 
-현재 B1 실험에서는 공개 `SKILL.md`를 Gemma4에 적용하여 Skill Discovery, Activation,
-Tool Calling 및 Agent Loop가 동작하는 것을 확인하였다.
+B1에서 공개 `SKILL.md` Discovery / Activation / Tool Calling과 Skill OFF/ON 행동 변화를 확인했다.
+B2는 Coordinator부터 Synthesis까지의 E2E runner까지 구현했고, Physical AI clean E2E 검증이 진행 중이다.
 
-2026-09-08 이후 B2는 더 이상 “예정”만은 아니다.
-독립 Coordinator, 병렬 Worker, Deterministic Gate, Semantic Auditor, Evidence Pool,
-Replanner, Claim Merge, Source Independence와 schema repair를 `src/research_b2/`에 구현하고 스모크 실행까지 했다.
-설명은 [README.md](../README.md)와 [docs/b2-sub-agents.md](../docs/b2-sub-agents.md)에 있다.
-
-아직 없는 것은 한 프로세스로 Wave를 잇는 실행기, 최종 보고서 합성 모듈,
-Resource Loader, 자동 Eval이다.
-아래 7.2 이후의 설계 초안은 그 당시 목표 기록이다. 구현된 동작은 B2 문서를 우선한다.
+구현 설명은 [README.md](../README.md)와 [docs/b2-e2e.md](../docs/b2-e2e.md)를 우선한다.
+아래 7.2 이후는 B1 당시 설계 메모이며, 구현된 동작과 충돌하면 B2 문서를 따른다.
 
 ---
 
-## 7.1 현재 미충족·부분충족 사항
+## 7.1 현재 상태와 남은 일
 
-| 항목 | B1 당시 | 2026-09-08 이후 |
-|---|---|---|
-| 병렬 Sub-agent | 미충족 | B2 Worker 독립 세션으로 구현. overlap 로그로만 병렬을 주장한다 |
-| Multi-wave Research | 미충족 | Replanner와 `--wave`까지 구현. 한 CLI로 자동 반복은 아직 없다 |
-| Citation 원문 검증 | 부분충족 | Deterministic Gate와 Auditor가 fetch된 본문만 판정한다. 최종 합성은 없다 |
-| 2-source Triangulation | 부분충족 | Post-Audit는 `VERIFIED` 개수만 센다. 독립성은 [docs/b2-source-independence.md](../docs/b2-source-independence.md)에서 Gemma가 판정한다. 최종 합성은 없다 |
-| Web Search 안정성 | 부분충족 | 동일. Retry/fallback은 없다 |
-| Source Quality 관리 | 부분충족 | Auditor가 tier를 다시 볼 수 있으나 Skill 규칙을 Runtime에 복사하지 않는다 |
-| Runtime 성능 | 개선 필요 | 병렬 조사는 한 Wave 20~30분. timeout recovery가 시간을 더한다 |
+| 항목 | 상태 |
+|---|---|
+| 병렬 Sub-agent | B2 Worker 독립 세션으로 구현 |
+| Multi-wave Research | E2E에서 Wave 1 + Wave 2까지 연결. `--max-waves 2`만 지원 |
+| Citation 원문 검증 | Deterministic Gate + Web/PDF citation Validator |
+| Source Independence | Audit + Adversarial Challenge + Finalizer |
+| Final Synthesis | 구현. clean E2E 결과 해석은 진행 중 |
+| Physical AI clean E2E | 검증 중 |
+| Robot Spec + PDF clean E2E | 예정 |
+| Resource Loader (`scripts/` / `references/` / `assets/`) | 미구현 |
+| 범용 Compatibility Eval | 미구현 |
+| 긴 조사 timeout | 600초 `ReadTimeout` 가능. Recovery로 시간 증가 |
+
+남은 것 요약:
+
+- Physical AI / Robot Spec clean E2E 결과 확정과 보고서 고정
+- Resource Loader, Tool Registry, 자동 Compatibility Eval
+- Worker system prompt에 full public Skill body를 넣는 방식의 추가 검토
+- timeout / recovery로 늘어지는 실행 시간 완화
 
 ---
 
 ## 7.2 Parallel Sub-agent 지원
 
 이 절부터 7.11은 B1 당시 설계 메모다. “현재” 그림은 그때의 단일 세션이다.
-구현된 형태는 [docs/b2-parallel-workers.md](../docs/b2-parallel-workers.md)를 본다.
+구현된 형태는 [docs/b2-parallel-workers.md](../docs/b2-parallel-workers.md)와 [docs/b2-e2e.md](../docs/b2-e2e.md)를 본다.
 
 `deep-research` Skill은 하나의 Agent가 모든 조사를 순차 수행하는 방식이 아니라
 여러 Sub-agent가 독립적인 조사 범위를 병렬로 수행하는 구조를 요구한다.

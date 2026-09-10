@@ -364,6 +364,7 @@ def run_worker(
     skill_name: str = "deep-research",
     max_turns: int = 6,
     output_root: Path | None = None,
+    input_dir: Path | None = None,
 ) -> dict[str, Any]:
     if not assignment.strip():
         raise ValueError(
@@ -390,7 +391,9 @@ def run_worker(
 
     client = OllamaClient()
 
-    tools = ToolRuntime()
+    tools = ToolRuntime(
+        input_dir=input_dir,
+    )
 
     if output_root is None:
         output_root = (

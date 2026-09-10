@@ -175,22 +175,6 @@ def validate_parallel_plan(
                 "queries가 비어 있습니다."
             )
 
-        # 현재 B2-4 worker runtime은
-        # web_search/fetch_page만 제공한다.
-        # 로컬 자료가 필요한 assignment를
-        # 처리했다고 가장하지 않는다.
-        if (
-            assignment.get(
-                "needs_local_files"
-            )
-            is True
-        ):
-            raise ValueError(
-                f"{assignment_id}: "
-                "현재 B2-4 Worker에는 "
-                "local-file tool이 아직 없습니다."
-            )
-
     return assignments
 
 
@@ -221,6 +205,7 @@ def run_one_worker(
     workers_root: Path,
     batch_started_monotonic: float,
     runtime_current_date: str,
+    input_dir: Path | None = None,
 ) -> dict[str, Any]:
     assignment_id = (
         assignment[
@@ -273,6 +258,8 @@ def run_one_worker(
                 max_turns,
             output_root=
                 worker_root,
+            input_dir=
+                input_dir,
         )
 
         status = "completed"
@@ -613,6 +600,7 @@ def run_parallel_workers(
     max_turns: int,
     output_root: Path,
     wave_override: int | None = None,
+    input_dir: Path | None = None,
 ) -> dict[str, Any]:
     if not 1 <= max_workers <= 5:
         raise ValueError(
@@ -639,6 +627,41 @@ def run_parallel_workers(
                 max_workers,
         )
     )
+
+    local_required = any(
+        assignment.get(
+            "needs_local_files"
+        )
+        is True
+        for assignment
+        in assignments
+    )
+
+    if input_dir is not None:
+        input_dir = (
+            Path(
+                input_dir
+            )
+            .expanduser()
+            .resolve()
+        )
+
+        if not input_dir.is_dir():
+            raise ValueError(
+                "--input-dir가 존재하는 "
+                "디렉터리가 아닙니다: "
+                f"{input_dir}"
+            )
+
+    if (
+        local_required
+        and input_dir is None
+    ):
+        raise ValueError(
+            "생성된 plan에 local files가 필요한 "
+            "assignment가 있지만 input_dir가 "
+            "제공되지 않았습니다."
+        )
 
     if (
         wave_override is not None
@@ -808,6 +831,8 @@ def run_parallel_workers(
                     batch_started_monotonic,
                 runtime_current_date=
                     runtime_current_date,
+                input_dir=
+                    input_dir,
             )
 
             futures[
@@ -1070,6 +1095,18 @@ def main() -> int:
     )
 
     parser.add_argument(
+        "--input-dir",
+        type=Path,
+        default=None,
+        help=(
+            "Worker가 접근할 수 있는 "
+            "로컬 입력 디렉터리. "
+            "지정하지 않으면 local-file tools는 "
+            "Worker에 제공되지 않습니다."
+        ),
+    )
+
+    parser.add_argument(
         "--wave",
         type=int,
         default=None,
@@ -1094,6 +1131,8 @@ def main() -> int:
             args.output_root,
         wave_override=
             args.wave,
+        input_dir=
+            args.input_dir,
     )
 
     return 0

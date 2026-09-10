@@ -1,0 +1,16 @@
+{
+  "model": "gemma4:31b",
+  "created_at": "2026-09-10T01:25:54.173106622Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"claims\": [\n    {\n      \"claim_id\": \"C001\",\n      \"verdict\": \"SINGLE_SOURCE\",\n      \"reason\": \"The claim is directly supported by the retrieved document, but only one independent source was provided.\",\n      \"evidence\": [\n        {\n          \"evidence_id\": \"C001-E001\",\n          \"state\": \"VERIFIED\",\n          \"reason\": \"The retrieved content explicitly states 'A2-W: 2kWh 대용량 배터리를 탑재', which directly supports the claim that A2-W is equipped with a 2 kWh battery.\",\n          \"audited_source_type\": \"document\",\n          \"audited_tier\": 1\n        }\n      ]\n    }\n  ],\n  \"quality_flags\": [\n    {\n      \"type\": \"SOURCE_CLASSIFICATION\",\n      \"target_id\": \"C001-E001\",\n      \"message\": \"The worker classified this as Tier 3, but as a product specification document ('로봇 제품 규격'), it should be classified as Tier 1 (Primary).\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 37269747445,
+  "load_duration": 155530709,
+  "prompt_eval_count": 6386,
+  "prompt_eval_duration": 9492129806,
+  "eval_count": 265,
+  "eval_duration": 27290196597
+}

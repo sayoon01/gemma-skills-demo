@@ -23,7 +23,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from .evidence_gate import canonical_url
+from .evidence_gate import (
+    canonical_file_path,
+    canonical_url,
+)
 
 
 def load_json(
@@ -108,7 +111,16 @@ def build_source_registry(
     prior_pool: dict[str, Any],
     new_pool: dict[str, Any],
 ) -> list[dict[str, Any]]:
-    """Canonical URL 기준으로 두 wave source registry를 합친다."""
+    """Web URL 또는 File identity 기준으로 wave source를 합친다.
+
+    Web:
+    canonical URL
+
+    File:
+    SHA-256 우선, 없으면 canonical path
+
+    의미적 독립성은 여기서 판단하지 않는다.
+    """
 
     registry: dict[
         str,
@@ -120,34 +132,121 @@ def build_source_registry(
         (2, new_pool),
     ):
         for source in (
-            pool.get(
-                "sources"
-            )
+            pool.get("sources")
             or []
         ):
-            raw_url = (
+            source_kind = (
                 source.get(
-                    "canonical_url"
+                    "source_kind"
                 )
-                or ""
+                or (
+                    "web"
+                    if source.get(
+                        "canonical_url"
+                    )
+                    else "file"
+                )
             )
 
-            url = (
-                canonical_url(
-                    raw_url
+            if source_kind == "web":
+                raw_url = (
+                    source.get(
+                        "canonical_url"
+                    )
+                    or source.get(
+                        "url"
+                    )
+                    or ""
                 )
-                if raw_url
-                else ""
-            )
 
-            if not url:
+                canonical = (
+                    canonical_url(
+                        raw_url
+                    )
+                    if raw_url
+                    else ""
+                )
+
+                if not canonical:
+                    continue
+
+                registry_key = (
+                    "web:"
+                    + canonical
+                )
+
+                identity = {
+                    "source_kind":
+                        "web",
+                    "canonical_url":
+                        canonical,
+                    "canonical_path":
+                        "",
+                    "file_sha256":
+                        "",
+                    "verified_pages":
+                        [],
+                }
+
+            elif source_kind == "file":
+                file_path = (
+                    source.get(
+                        "path"
+                    )
+                    or source.get(
+                        "canonical_path"
+                    )
+                    or ""
+                )
+
+                canonical_path = (
+                    canonical_file_path(
+                        file_path
+                    )
+                )
+
+                file_sha256 = (
+                    source.get(
+                        "file_sha256"
+                    )
+                    or ""
+                ).strip()
+
+                if file_sha256:
+                    registry_key = (
+                        "file-sha256:"
+                        + file_sha256
+                    )
+
+                elif canonical_path:
+                    registry_key = (
+                        "file-path:"
+                        + canonical_path
+                    )
+
+                else:
+                    continue
+
+                identity = {
+                    "source_kind":
+                        "file",
+                    "canonical_url":
+                        "",
+                    "canonical_path":
+                        canonical_path,
+                    "file_sha256":
+                        file_sha256,
+                    "verified_pages":
+                        [],
+                }
+
+            else:
                 continue
 
             record = registry.setdefault(
-                url,
+                registry_key,
                 {
-                    "canonical_url":
-                        url,
+                    **identity,
                     "domains": [],
                     "publishers": [],
                     "audited_source_types": [],
@@ -189,57 +288,39 @@ def build_source_registry(
                 or []
             )
 
-            if (
-                domain
-                and domain
-                not in record[
-                    "domains"
-                ]
+            for value, field in (
+                (
+                    domain,
+                    "domains",
+                ),
+                (
+                    publisher,
+                    "publishers",
+                ),
+                (
+                    source_type,
+                    "audited_source_types",
+                ),
+                (
+                    tier,
+                    "audited_tiers",
+                ),
             ):
-                record[
-                    "domains"
-                ].append(
-                    domain
-                )
-
-            if (
-                publisher
-                and publisher
-                not in record[
-                    "publishers"
-                ]
-            ):
-                record[
-                    "publishers"
-                ].append(
-                    publisher
-                )
-
-            if (
-                source_type
-                and source_type
-                not in record[
-                    "audited_source_types"
-                ]
-            ):
-                record[
-                    "audited_source_types"
-                ].append(
-                    source_type
-                )
-
-            if (
-                tier is not None
-                and tier
-                not in record[
-                    "audited_tiers"
-                ]
-            ):
-                record[
-                    "audited_tiers"
-                ].append(
-                    tier
-                )
+                if (
+                    value not in (
+                        None,
+                        "",
+                    )
+                    and value
+                    not in record[
+                        field
+                    ]
+                ):
+                    record[
+                        field
+                    ].append(
+                        value
+                    )
 
             for claim_ref in claim_refs:
                 if (
@@ -253,6 +334,34 @@ def build_source_registry(
                     ].append(
                         claim_ref
                     )
+
+            if source_kind == "file":
+                for page in (
+                    source.get(
+                        "verified_pages"
+                    )
+                    or []
+                ):
+                    if (
+                        isinstance(
+                            page,
+                            int,
+                        )
+                        and not isinstance(
+                            page,
+                            bool,
+                        )
+                        and page >= 1
+                        and page
+                        not in record[
+                            "verified_pages"
+                        ]
+                    ):
+                        record[
+                            "verified_pages"
+                        ].append(
+                            page
+                        )
 
             if wave not in record[
                 "waves"
@@ -269,10 +378,17 @@ def build_source_registry(
                 {
                     "wave":
                         wave,
+                    "source_kind":
+                        source_kind,
                     "source_id":
                         source.get(
                             "source_id"
                         ),
+                    "verified_pages":
+                        source.get(
+                            "verified_pages"
+                        )
+                        or [],
                 }
             )
 
@@ -292,6 +408,10 @@ def build_source_registry(
         )
 
         value[
+            "verified_pages"
+        ].sort()
+
+        value[
             "cumulative_source_id"
         ] = (
             f"CSRC{index:03d}"
@@ -302,6 +422,7 @@ def build_source_registry(
         )
 
     return result
+
 
 
 def build_state(

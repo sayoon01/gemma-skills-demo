@@ -1,0 +1,37 @@
+{
+  "accepted_claims": [
+    {
+      "claim_id": "C001",
+      "claim": "A2-W는 2 kWh급 배터리를 탑재한다.",
+      "worker_support": "PDF 2페이지의 배터리 항목",
+      "worker_confidence": "high",
+      "deterministic_status": "SINGLE_SOURCE",
+      "sources": [
+        {
+          "evidence_id": "C001-E001",
+          "worker_source": {
+            "source_kind": "file",
+            "path": "inputs/로봇 제품 규격.pdf",
+            "page": 2,
+            "file_sha256": "517ea42e743b5dd49d457058f9043db22f486ae6a11865be51373655229c56ec",
+            "title": "로봇 제품 규격",
+            "publisher": "",
+            "source_type": "document",
+            "tier": 3,
+            "excerpt": "A2-W: 2kWh 대용량 배터리를 탑재"
+          },
+          "retrieved_source": {
+            "source_kind": "file",
+            "title": "로봇 제품 규격",
+            "path": "inputs/로봇 제품 규격.pdf",
+            "page": 2,
+            "file_sha256": "517ea42e743b5dd49d457058f9043db22f486ae6a11865be51373655229c56ec",
+            "content": "센서 구성 HD 카메라, LiDAR, 초음파 센서 360° LiDAR, HD 카메라 6개, 음향 위치추적 산업용 2D/3D LiDAR, 비전 센서 통신 인터페이스 Wi-Fi, Bluetooth, 4G/5G Wi-Fi, Bluetooth, 5G, 원격 제어 Wi-Fi, Ethernet, 5G 3. 세부 항목별 성능 및 기능 분석 ① 크기, 중량, 적재하중 ● Raise A1 & A2: 신장 169~175cm, 체중 55~69kg으로 성인 체구와 유사하게설계되어 인간 중심의 작업 환경에 그대로 투입할 수 있습니다. 단완 적재하중은 최대 5kg 수준으로 부품 조립, 물건 전달, 안내 보조 등의 작업에 적합합니다. ● A2-W: 바퀴형 하부 섀시 적용으로 중량이 230kg에 달하지만, 무거운 부품 및 모듈을안정적으로 적재·이송할 수 있는 높은 하부 하중 지지력을 확보했습니다. ② 주행속도, 경사로 및 단차 대응 ● 휴머노이드 라인 (A1/A2): 최대 7km/h의 빠른 이동 능력을 보유하고 있으며, RTMOF(Real-Time Robust Motion Framework) 비선형 모델 예측 제어 및 강화학습 알고리즘을 통해 보도블록, 계단, 단차 및 험지를 유연하게 보행합니다. ● 바퀴형 라인 (A2-W): 좁은 실내 주행에 최적화된 회전 반경(Turning Radius)과안정적인 경사로 등판 능력을 갖추고 있습니다. ③ 배터리 용량, 운용시간 및 충전시간 ● A2: 117Wh 급의 배터리를 장착하며 무멈춤 운용을 위해 배터리 핫스왑(Quick Swap)을 지원합니다. ● A2-W: 2kWh 대용량 배터리를 탑재하여 장시간 산업 현장에 투입 가능하며, 완충까지약 2시간이 소요됩니다. 자동 복귀 및 충전 스테이션 연동 기능을 지원합니다. ④ 센서, 연산장치, 통신 인터페이스 ● 센서 및 비전: 360° 전방위 LiDAR와 6개의 고화질(HD) 카메라를 조합하여 사각지대없는 파노라마 인식을 제공합니다. ● AI 연산: 200 TOPS 이상의 AI computing power를 탑재하여 멀티모달데이터(음성, 비전, 제어)를 엣지 단에서 실시간 처리합니다. ● 통신: Wi-Fi, Bluetooth 및 4G/5G 통신을 기본 지원하며, 원격 제어 앱(AimMaster)및 중앙 제어 서버와의 실시간 데이터 교환이 가능합니다. ⑤ 자율주행 및 작업 수행 기능 ● HIMUS 3D-SLAM: 고성능 멀티모달 지도 구축 시스템과 VectorFlux 경로 계획알고리즘을 통해 미지의 환경에서도 정밀한 L4급 자율주행 및 내비게이션을 수행합니다. ● ActionGPT & LLM: 대형 언어 모델과 RAG(검색증강생성)가 연동되어 사용자의음성 명령 의도를 파악하고, 자연스러운 동선 생성 및 지능형 고객 응대를 수행합니다. ● 다재다능한 손(Skill-hand): 정밀 작업이 가능한 다지형 핸들을 탑재하여 부품 집기,QR 코드 스캔 전달, 도구 활용 등의 공정을 자동화합니다. ⑥ 안전 기능 및 적용 표준 (Safety & Standards)",
+            "content_chars": 1482
+          }
+        }
+      ]
+    }
+  ],
+  "already_unsupported_claims": []
+}

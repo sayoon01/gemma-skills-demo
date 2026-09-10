@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "errors": [],
+  "used_citation_refs": [
+    "SRC001",
+    "SRC002",
+    "SRC003",
+    "SRC004",
+    "SRC005",
+    "SRC006",
+    "SRC007",
+    "SRC008",
+    "SRC009",
+    "SRC010",
+    "SRC011",
+    "SRC012",
+    "SRC013",
+    "SRC014",
+    "SRC015",
+    "SRC016",
+    "SRC017",
+    "SRC018",
+    "SRC019",
+    "SRC020",
+    "SRC021",
+    "SRC022",
+    "SRC023"
+  ],
+  "used_citation_count": 23,
+  "allowed_citation_count": 23,
+  "hangul_char_count": 2103
+}

@@ -51,9 +51,27 @@ publisher 이름이나 domain이 다르다는 것만으로 `INDEPENDENT`를 쓰�
 
 ---
 
+## Adversarial Challenge
+
+초기 Independence Audit 이후 별도 session이 previous INDEPENDENT 판단을 다시 공격한다.
+
+```text
+Source Independence Audit
+      ↓
+Adversarial Challenge
+      ↓
+Finalizer (deterministic state update)
+```
+
+코드: [independence_challenge.py](../src/research_b2/independence_challenge.py) · [finalizer.py](../src/research_b2/finalizer.py)  
+계약: [independence-challenge.md](../runtime/b2/independence-challenge.md)  
+문서: [b2-finalizer.md](b2-finalizer.md)
+
+---
+
 ## 상태를 어디에 붙이는가
 
-검증이 통과하면 pending claim에 resolved status만 붙인다.
+Finalizer가 Challenge verdict를 pending claim에만 붙인다.
 
 | family verdict | resolved status |
 |---|---|
@@ -72,4 +90,4 @@ Python이 출처를 다시 읽어 독립성을 뒤집지 않는다.
 - URL 개수나 domain 개수로 독립성을 세지 않는다
 - 출처 품질 tier를 독립성이라는 이유로 올리지 않는다
 - factual contradiction을 여기서 해소하지 않는다
-- 최종 사용자 보고서를 쓰지 않는다. 합성 계약은 [synthesis.md](../runtime/b2/synthesis.md)다
+- 최종 사용자 보고서를 쓰지 않는다. 합성은 [b2-synthesis.md](b2-synthesis.md)다

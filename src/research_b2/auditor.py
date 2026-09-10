@@ -29,6 +29,8 @@ from src.skill_loader import (
 from .contracts import load_b2_contracts
 from .evidence_gate import (
     build_fetch_index,
+    build_pdf_read_index,
+    canonical_file_path,
     canonical_url,
 )
 from .worker import extract_json_object
@@ -88,6 +90,10 @@ def build_audit_packet(
         tool_logs
     )
 
+    pdf_read_index = build_pdf_read_index(
+        tool_logs
+    )
+
     packet_claims = []
 
     for claim_index, claim in enumerate(
@@ -113,90 +119,262 @@ def build_audit_packet(
                 f"E{source_index:03d}"
             )
 
-            source_url = (
+            source_kind = (
                 source.get(
-                    "retrieved_url"
+                    "source_kind"
                 )
-                or source.get("url")
-                or ""
+                or "web"
             )
 
-            fetch = fetch_index.get(
-                canonical_url(
-                    source_url
+            if source_kind == "web":
+                source_url = (
+                    source.get(
+                        "retrieved_url"
+                    )
+                    or source.get(
+                        "url"
+                    )
+                    or ""
                 )
-            )
 
-            if fetch is None:
-                # Deterministic Gate를 통과했는데
-                # fetch가 사라진 경우 Runtime consistency 오류.
+                fetch = fetch_index.get(
+                    canonical_url(
+                        source_url
+                    )
+                )
+
+                if fetch is None:
+                    #
+                    # Deterministic Gate를 통과했는데
+                    # fetch record가 사라진 경우
+                    # Runtime consistency 오류.
+                    #
+                    raise ValueError(
+                        "검증된 Web Source의 fetch record를 "
+                        f"찾지 못했습니다: {source_url}"
+                    )
+
+                worker_source = {
+                    "source_kind":
+                        "web",
+                    "title":
+                        source.get(
+                            "title"
+                        )
+                        or "",
+                    "publisher":
+                        source.get(
+                            "publisher"
+                        )
+                        or "",
+                    "url":
+                        source.get(
+                            "url"
+                        )
+                        or "",
+                    "source_type":
+                        source.get(
+                            "source_type"
+                        )
+                        or "",
+                    "tier":
+                        source.get(
+                            "tier"
+                        ),
+                    "excerpt":
+                        source.get(
+                            "excerpt"
+                        )
+                        or "",
+                }
+
+                retrieved_source = {
+                    "source_kind":
+                        "web",
+                    "title":
+                        fetch.get(
+                            "title"
+                        )
+                        or "",
+                    "url":
+                        fetch.get(
+                            "final_url"
+                        )
+                        or "",
+                    "domain":
+                        fetch.get(
+                            "domain"
+                        )
+                        or "",
+                    "content":
+                        fetch.get(
+                            "content"
+                        )
+                        or "",
+                    "content_chars":
+                        fetch.get(
+                            "content_chars"
+                        )
+                        or 0,
+                }
+
+            elif source_kind == "file":
+                source_path = (
+                    source.get(
+                        "retrieved_path"
+                    )
+                    or source.get(
+                        "path"
+                    )
+                    or ""
+                )
+
+                page_number = (
+                    source.get(
+                        "retrieved_page"
+                    )
+                    or source.get(
+                        "page"
+                    )
+                )
+
+                if (
+                    not source_path
+                    or not isinstance(
+                        page_number,
+                        int,
+                    )
+                    or isinstance(
+                        page_number,
+                        bool,
+                    )
+                    or page_number < 1
+                ):
+                    raise ValueError(
+                        "검증된 File Source의 "
+                        "path/page가 유효하지 않습니다: "
+                        f"{source!r}"
+                    )
+
+                read = pdf_read_index.get(
+                    (
+                        canonical_file_path(
+                            source_path
+                        ),
+                        page_number,
+                    )
+                )
+
+                if read is None:
+                    #
+                    # Deterministic Gate를 통과했는데
+                    # 실제 read_pdf_pages record가
+                    # 사라졌다면 Runtime consistency 오류.
+                    #
+                    raise ValueError(
+                        "검증된 File Source의 PDF read record를 "
+                        "찾지 못했습니다: "
+                        f"{source_path} / page {page_number}"
+                    )
+
+                worker_source = {
+                    "source_kind":
+                        "file",
+                    "path":
+                        source.get(
+                            "path"
+                        )
+                        or source_path,
+                    "page":
+                        source.get(
+                            "page"
+                        )
+                        or page_number,
+                    "file_sha256":
+                        (
+                            source.get(
+                                "file_sha256"
+                            )
+                            or source.get(
+                                "retrieved_file_sha256"
+                            )
+                            or ""
+                        ),
+                    "title":
+                        source.get(
+                            "title"
+                        )
+                        or "",
+                    "publisher":
+                        source.get(
+                            "publisher"
+                        )
+                        or "",
+                    "source_type":
+                        source.get(
+                            "source_type"
+                        )
+                        or "",
+                    "tier":
+                        source.get(
+                            "tier"
+                        ),
+                    "excerpt":
+                        source.get(
+                            "excerpt"
+                        )
+                        or "",
+                }
+
+                retrieved_source = {
+                    "source_kind":
+                        "file",
+                    "title":
+                        read.get(
+                            "title"
+                        )
+                        or "",
+                    "path":
+                        read.get(
+                            "final_path"
+                        )
+                        or "",
+                    "page":
+                        read.get(
+                            "page"
+                        ),
+                    "file_sha256":
+                        read.get(
+                            "file_sha256"
+                        )
+                        or "",
+                    "content":
+                        read.get(
+                            "content"
+                        )
+                        or "",
+                    "content_chars":
+                        read.get(
+                            "content_chars"
+                        )
+                        or 0,
+                }
+
+            else:
                 raise ValueError(
-                    "검증된 Source의 fetch record를 "
-                    f"찾지 못했습니다: {source_url}"
+                    "Deterministic Gate 이후 "
+                    "지원되지 않는 source_kind: "
+                    f"{source_kind!r}"
                 )
 
             packet_sources.append(
                 {
                     "evidence_id":
                         evidence_id,
-                    "worker_source": {
-                        "title":
-                            source.get(
-                                "title"
-                            )
-                            or "",
-                        "publisher":
-                            source.get(
-                                "publisher"
-                            )
-                            or "",
-                        "url":
-                            source.get(
-                                "url"
-                            )
-                            or "",
-                        "source_type":
-                            source.get(
-                                "source_type"
-                            )
-                            or "",
-                        "tier":
-                            source.get(
-                                "tier"
-                            ),
-                        "excerpt":
-                            source.get(
-                                "excerpt"
-                            )
-                            or "",
-                    },
-                    "retrieved_source": {
-                        "title":
-                            fetch.get(
-                                "title"
-                            )
-                            or "",
-                        "url":
-                            fetch.get(
-                                "final_url"
-                            )
-                            or "",
-                        "domain":
-                            fetch.get(
-                                "domain"
-                            )
-                            or "",
-                        "content":
-                            fetch.get(
-                                "content"
-                            )
-                            or "",
-                        "content_chars":
-                            fetch.get(
-                                "content_chars"
-                            )
-                            or 0,
-                    },
+                    "worker_source":
+                        worker_source,
+                    "retrieved_source":
+                        retrieved_source,
                 }
             )
 
