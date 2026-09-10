@@ -36,14 +36,21 @@ from src.skill_loader import (
     discover_skills,
 )
 
-from .evidence_gate import canonical_url
+from .evidence_gate import (
+    canonical_file_path,
+    canonical_url,
+)
 
 
 ROOT = Path(__file__).resolve().parents[2]
 
 
-CITATION_RE = re.compile(
+WEB_CITATION_RE = re.compile(
     r"\[(SRC\d{3})\]"
+)
+
+PDF_CITATION_RE = re.compile(
+    r"\[(PDF\d{3}) p\.(\d+)\]"
 )
 
 URL_RE = re.compile(
@@ -91,6 +98,8 @@ def utc_now() -> str:
 def evidence_source(
     evidence: dict[str, Any],
 ) -> dict[str, Any]:
+    """VERIFIED evidence에서 source identity와 citation metadata를 꺼낸다."""
+
     source = (
         evidence.get(
             "source"
@@ -112,27 +121,30 @@ def evidence_source(
         or {}
     )
 
-    raw_url = (
+    source_kind = (
         retrieved.get(
-            "url"
+            "source_kind"
         )
         or worker.get(
-            "url"
+            "source_kind"
         )
-        or ""
+        or (
+            "web"
+            if (
+                retrieved.get(
+                    "url"
+                )
+                or worker.get(
+                    "url"
+                )
+            )
+            else "file"
+        )
     )
 
-    url = (
-        canonical_url(
-            raw_url
-        )
-        if raw_url
-        else ""
-    )
-
-    return {
-        "url":
-            url,
+    common = {
+        "source_kind":
+            source_kind,
         "title":
             (
                 retrieved.get(
@@ -146,11 +158,6 @@ def evidence_source(
         "publisher":
             worker.get(
                 "publisher"
-            )
-            or "",
-        "domain":
-            retrieved.get(
-                "domain"
             )
             or "",
         "audited_source_type":
@@ -173,6 +180,96 @@ def evidence_source(
             or "",
     }
 
+    if source_kind == "web":
+        raw_url = (
+            retrieved.get(
+                "url"
+            )
+            or worker.get(
+                "url"
+            )
+            or ""
+        )
+
+        url = (
+            canonical_url(
+                raw_url
+            )
+            if raw_url
+            else ""
+        )
+
+        return {
+            **common,
+            "url":
+                url,
+            "domain":
+                retrieved.get(
+                    "domain"
+                )
+                or "",
+            "path":
+                "",
+            "file_sha256":
+                "",
+            "page":
+                None,
+        }
+
+    if source_kind == "file":
+        raw_path = (
+            retrieved.get(
+                "path"
+            )
+            or worker.get(
+                "path"
+            )
+            or ""
+        )
+
+        path_value = (
+            canonical_file_path(
+                raw_path
+            )
+        )
+
+        page = (
+            retrieved.get(
+                "page"
+            )
+            or worker.get(
+                "page"
+            )
+        )
+
+        return {
+            **common,
+            "url":
+                "",
+            "domain":
+                "",
+            "path":
+                path_value,
+            "file_sha256":
+                (
+                    retrieved.get(
+                        "file_sha256"
+                    )
+                    or worker.get(
+                        "file_sha256"
+                    )
+                    or ""
+                ),
+            "page":
+                page,
+        }
+
+    raise ValueError(
+        "지원되지 않는 VERIFIED source_kind: "
+        f"{source_kind!r}"
+    )
+
+
 
 def build_packet(
     *,
@@ -180,14 +277,31 @@ def build_packet(
     stop_record: dict[str, Any],
     task_text: str,
 ) -> dict[str, Any]:
-    #
-    # VERIFIED evidence에서만 global citation registry 생성.
-    #
-    source_by_url: dict[
+    """최종 synthesis용 검증 Evidence packet을 생성한다.
+
+    Web citation:
+      [SRC001]
+
+    File/PDF citation:
+      [PDF001 p.2]
+
+    File은 SHA-256 우선, 없으면 canonical path 기준으로 dedup한다.
+    """
+
+    web_registry: dict[
         str,
         dict[str, Any],
     ] = {}
 
+    file_registry: dict[
+        str,
+        dict[str, Any],
+    ] = {}
+
+    #
+    # Pass 1:
+    # VERIFIED evidence에서 global source registry 생성.
+    #
     for claim in (
         state.get(
             "claims"
@@ -220,25 +334,105 @@ def build_packet(
                 )
             )
 
-            url = (
+            evidence_ref = (
+                f"{claim_ref}:"
+                f"{evidence.get('evidence_id', '')}"
+            )
+
+            if (
                 source[
-                    "url"
+                    "source_kind"
                 ]
-            )
-
-            if not url:
-                continue
-
-            record = (
-                source_by_url.setdefault(
-                    url,
-                    {
-                        **source,
-                        "claim_refs": [],
-                        "evidence_refs": [],
-                    },
+                == "web"
+            ):
+                url = (
+                    source[
+                        "url"
+                    ]
                 )
-            )
+
+                if not url:
+                    continue
+
+                record = (
+                    web_registry.setdefault(
+                        url,
+                        {
+                            **source,
+                            "claim_refs": [],
+                            "evidence_refs": [],
+                        },
+                    )
+                )
+
+            else:
+                file_sha256 = (
+                    source.get(
+                        "file_sha256"
+                    )
+                    or ""
+                ).strip()
+
+                file_path = (
+                    source.get(
+                        "path"
+                    )
+                    or ""
+                )
+
+                if file_sha256:
+                    source_key = (
+                        "sha256:"
+                        + file_sha256
+                    )
+
+                elif file_path:
+                    source_key = (
+                        "path:"
+                        + file_path
+                    )
+
+                else:
+                    continue
+
+                record = (
+                    file_registry.setdefault(
+                        source_key,
+                        {
+                            **source,
+                            "verified_pages": [],
+                            "claim_refs": [],
+                            "evidence_refs": [],
+                        },
+                    )
+                )
+
+                page = (
+                    source.get(
+                        "page"
+                    )
+                )
+
+                if (
+                    isinstance(
+                        page,
+                        int,
+                    )
+                    and not isinstance(
+                        page,
+                        bool,
+                    )
+                    and page >= 1
+                    and page
+                    not in record[
+                        "verified_pages"
+                    ]
+                ):
+                    record[
+                        "verified_pages"
+                    ].append(
+                        page
+                    )
 
             if (
                 claim_ref
@@ -252,11 +446,6 @@ def build_packet(
                     claim_ref
                 )
 
-            evidence_ref = (
-                f"{claim_ref}:"
-                f"{evidence.get('evidence_id', '')}"
-            )
-
             if (
                 evidence_ref
                 not in record[
@@ -269,16 +458,16 @@ def build_packet(
                     evidence_ref
                 )
 
-    sources = []
+    verified_sources = []
 
-    citation_by_url = {}
+    web_citation_by_url = {}
 
     for index, (
         url,
         source,
     ) in enumerate(
         sorted(
-            source_by_url.items()
+            web_registry.items()
         ),
         1,
     ):
@@ -286,11 +475,42 @@ def build_packet(
             f"SRC{index:03d}"
         )
 
-        citation_by_url[
+        web_citation_by_url[
             url
         ] = citation_ref
 
-        sources.append(
+        verified_sources.append(
+            {
+                "citation_ref":
+                    citation_ref,
+                **source,
+            }
+        )
+
+    file_citation_by_key = {}
+
+    for index, (
+        source_key,
+        source,
+    ) in enumerate(
+        sorted(
+            file_registry.items()
+        ),
+        1,
+    ):
+        citation_ref = (
+            f"PDF{index:03d}"
+        )
+
+        file_citation_by_key[
+            source_key
+        ] = citation_ref
+
+        source[
+            "verified_pages"
+        ].sort()
+
+        verified_sources.append(
             {
                 "citation_ref":
                     citation_ref,
@@ -335,6 +555,10 @@ def build_packet(
 
     claims = []
 
+    #
+    # Pass 2:
+    # 각 claim evidence에 정확한 citation label 연결.
+    #
     for claim in (
         state.get(
             "claims"
@@ -363,20 +587,86 @@ def build_packet(
                 )
             )
 
-            url = (
+            if (
                 source[
-                    "url"
+                    "source_kind"
                 ]
-            )
-
-            citation_ref = (
-                citation_by_url.get(
-                    url
+                == "web"
+            ):
+                citation_ref = (
+                    web_citation_by_url.get(
+                        source[
+                            "url"
+                        ]
+                    )
                 )
-            )
 
-            if not citation_ref:
-                continue
+                if not citation_ref:
+                    continue
+
+                citation_label = (
+                    f"[{citation_ref}]"
+                )
+
+            else:
+                file_sha256 = (
+                    source.get(
+                        "file_sha256"
+                    )
+                    or ""
+                ).strip()
+
+                file_path = (
+                    source.get(
+                        "path"
+                    )
+                    or ""
+                )
+
+                if file_sha256:
+                    source_key = (
+                        "sha256:"
+                        + file_sha256
+                    )
+
+                elif file_path:
+                    source_key = (
+                        "path:"
+                        + file_path
+                    )
+
+                else:
+                    continue
+
+                citation_ref = (
+                    file_citation_by_key.get(
+                        source_key
+                    )
+                )
+
+                page = (
+                    source.get(
+                        "page"
+                    )
+                )
+
+                if (
+                    not citation_ref
+                    or not isinstance(
+                        page,
+                        int,
+                    )
+                    or isinstance(
+                        page,
+                        bool,
+                    )
+                    or page < 1
+                ):
+                    continue
+
+                citation_label = (
+                    f"[{citation_ref} p.{page}]"
+                )
 
             evidence_records.append(
                 {
@@ -384,8 +674,18 @@ def build_packet(
                         evidence.get(
                             "evidence_id"
                         ),
+                    "source_kind":
+                        source[
+                            "source_kind"
+                        ],
                     "citation_ref":
                         citation_ref,
+                    "citation_label":
+                        citation_label,
+                    "page":
+                        source.get(
+                            "page"
+                        ),
                     "support_reason":
                         evidence.get(
                             "reason"
@@ -477,8 +777,9 @@ def build_packet(
             )
             or [],
         "verified_sources":
-            sources,
+            verified_sources,
     }
+
 
 
 def validate_report(
@@ -488,7 +789,7 @@ def validate_report(
 ) -> dict[str, Any]:
     errors = []
 
-    allowed_refs = {
+    allowed_web_refs = {
         source[
             "citation_ref"
         ]
@@ -497,37 +798,118 @@ def validate_report(
                 "verified_sources"
             ]
         )
+        if (
+            source.get(
+                "source_kind"
+            )
+            == "web"
+        )
     }
 
-    used_refs = set(
-        CITATION_RE.findall(
+    allowed_pdf_pages = {
+        (
+            source[
+                "citation_ref"
+            ],
+            int(page),
+        )
+        for source in (
+            packet[
+                "verified_sources"
+            ]
+        )
+        if (
+            source.get(
+                "source_kind"
+            )
+            == "file"
+        )
+        for page in (
+            source.get(
+                "verified_pages"
+            )
+            or []
+        )
+    }
+
+    used_web_refs = set(
+        WEB_CITATION_RE.findall(
             report
         )
     )
 
-    invalid_refs = (
-        used_refs
-        - allowed_refs
+    used_pdf_pages = {
+        (
+            ref,
+            int(page),
+        )
+        for ref, page
+        in PDF_CITATION_RE.findall(
+            report
+        )
+    }
+
+    invalid_web_refs = (
+        used_web_refs
+        - allowed_web_refs
     )
 
-    if invalid_refs:
+    invalid_pdf_pages = (
+        used_pdf_pages
+        - allowed_pdf_pages
+    )
+
+    if invalid_web_refs:
         errors.append(
-            "존재하지 않는 citation ref: "
+            "존재하지 않는 Web citation ref: "
             + ", ".join(
                 sorted(
-                    invalid_refs
+                    invalid_web_refs
                 )
             )
         )
 
+    if invalid_pdf_pages:
+        errors.append(
+            "VERIFIED되지 않은 PDF page citation: "
+            + ", ".join(
+                f"{ref} p.{page}"
+                for ref, page
+                in sorted(
+                    invalid_pdf_pages
+                )
+            )
+        )
+
+    allowed_citation_count = (
+        len(
+            allowed_web_refs
+        )
+        + len(
+            allowed_pdf_pages
+        )
+    )
+
+    used_citation_count = (
+        len(
+            used_web_refs
+        )
+        + len(
+            used_pdf_pages
+        )
+    )
+
     if (
-        allowed_refs
-        and not used_refs
+        allowed_citation_count
+        and not used_citation_count
     ):
         errors.append(
             "보고서에 VERIFIED source citation이 없습니다."
         )
 
+    #
+    # HTTP URL은 VERIFIED Web source에서만 허용.
+    #
     allowed_urls = {
         source[
             "url"
@@ -537,8 +919,14 @@ def validate_report(
                 "verified_sources"
             ]
         )
-        if source.get(
-            "url"
+        if (
+            source.get(
+                "source_kind"
+            )
+            == "web"
+            and source.get(
+                "url"
+            )
         )
     }
 
@@ -572,9 +960,9 @@ def validate_report(
         1
         for char in report
         if (
-            "\uac00"
+            "가"
             <= char
-            <= "\ud7a3"
+            <= "힣"
         )
     )
 
@@ -590,19 +978,31 @@ def validate_report(
             errors,
         "used_citation_refs":
             sorted(
-                used_refs
+                used_web_refs
             ),
+        "used_pdf_page_citations": [
+            f"{ref} p.{page}"
+            for ref, page
+            in sorted(
+                used_pdf_pages
+            )
+        ],
         "used_citation_count":
-            len(
-                used_refs
-            ),
+            used_citation_count,
         "allowed_citation_count":
+            allowed_citation_count,
+        "allowed_web_source_count":
             len(
-                allowed_refs
+                allowed_web_refs
+            ),
+        "allowed_pdf_page_count":
+            len(
+                allowed_pdf_pages
             ),
         "hangul_char_count":
             hangul_count,
     }
+
 
 
 def build_repair_prompt(
@@ -631,16 +1031,47 @@ def build_repair_prompt(
         "# Allowed Citation Refs\n\n"
         + json.dumps(
             [
-                {
-                    "citation_ref":
-                        source[
-                            "citation_ref"
-                        ],
-                    "url":
-                        source[
-                            "url"
-                        ],
-                }
+                (
+                    {
+                        "citation_ref":
+                            source[
+                                "citation_ref"
+                            ],
+                        "source_kind":
+                            "web",
+                        "url":
+                            source.get(
+                                "url"
+                            ),
+                    }
+                    if (
+                        source.get(
+                            "source_kind"
+                        )
+                        == "web"
+                    )
+                    else {
+                        "citation_ref":
+                            source[
+                                "citation_ref"
+                            ],
+                        "source_kind":
+                            "file",
+                        "path":
+                            source.get(
+                                "path"
+                            ),
+                        "file_sha256":
+                            source.get(
+                                "file_sha256"
+                            ),
+                        "verified_pages":
+                            source.get(
+                                "verified_pages"
+                            )
+                            or [],
+                    }
+                )
                 for source in (
                     packet[
                         "verified_sources"
@@ -660,7 +1091,7 @@ def build_repair_prompt(
         "- Preserve supported factual meaning.\n"
         "- Write the report in Korean.\n"
         "- Do not add research, facts, URLs, or sources.\n"
-        "- Use only allowed [SRCxxx] citations.\n"
+        "- Use Web citations only as [SRCxxx].\n- Use local PDF citations only as [PDFxxx p.N], where N is an allowed VERIFIED page.\n"
         "- Preserve single-source, unknown-independence, "
         "conflicting, unsupported, and gap qualifications.\n"
         "- Return the complete corrected Markdown report only.\n"
@@ -747,8 +1178,9 @@ def run_synthesis(
         "Do not perform new research.\n"
         "Do not introduce facts that are absent from the validated packet.\n"
         "Do not introduce new sources or URLs.\n"
-        "Use citations exactly as [SRC001], [SRC002], etc.\n"
-        "Only citation refs supplied in verified_sources are allowed.\n"
+        "Use Web citations exactly as [SRC001], [SRC002], etc.\n"
+        "Use local PDF citations exactly as [PDF001 p.2], using the actual VERIFIED page number.\n"
+        "Only citation refs and PDF pages supplied in verified_sources are allowed.\n"
         "Consolidate SAME claims rather than repeating them.\n"
         "Preserve CONTRADICTS relations explicitly.\n"
         "A family with UNKNOWN independence must not be described as "
@@ -777,9 +1209,10 @@ def run_synthesis(
         "Produce the final evidence-backed deep research report in Korean.\n"
         "Use the structure and research behavior specified by the active "
         "Skill and synthesis contract.\n"
-        "Cite factual findings using only the provided [SRCxxx] references.\n"
-        "Include a source/reference section mapping every citation used to "
-        "its provided source title, publisher, and URL.\n"
+        "Cite Web findings using only the provided [SRCxxx] references.\n"
+        "Cite local PDF findings using only [PDFxxx p.N] with an actually VERIFIED page.\n"
+        "Include a source/reference section. For Web sources include title, publisher, and URL. "
+        "For local PDF sources include title, path, SHA-256, and verified pages.\n"
         "Return Markdown report text only."
     )
 

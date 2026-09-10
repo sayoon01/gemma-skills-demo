@@ -1,0 +1,39 @@
+{
+  "accepted_claims": [
+    {
+      "claim": "A2-W는 2 kWh급 배터리를 탑재한다.",
+      "support": "PDF 2페이지의 배터리 항목",
+      "confidence": "high",
+      "sources": [
+        {
+          "source_kind": "file",
+          "path": "inputs/로봇 제품 규격.pdf",
+          "page": 2,
+          "title": "로봇 제품 규격",
+          "publisher": "",
+          "source_type": "document",
+          "tier": 3,
+          "excerpt": "A2-W: 2kWh 대용량 배터리를 탑재",
+          "verification_state": "READ",
+          "retrieved_path": "inputs/로봇 제품 규격.pdf",
+          "retrieved_page": 2,
+          "retrieved_file_sha256": "517ea42e743b5dd49d457058f9043db22f486ae6a11865be51373655229c56ec",
+          "retrieved_title": "로봇 제품 규격",
+          "retrieved_content_chars": 1482
+        }
+      ],
+      "verified_source_count": 1,
+      "validation_status": "SINGLE_SOURCE"
+    }
+  ],
+  "unsupported_claims": [],
+  "rejected_sources": [],
+  "summary": {
+    "raw_claim_count": 1,
+    "accepted_claim_count": 1,
+    "unsupported_claim_count": 0,
+    "rejected_source_count": 0,
+    "successful_fetch_source_count": 0,
+    "successful_file_page_count": 1
+  }
+}

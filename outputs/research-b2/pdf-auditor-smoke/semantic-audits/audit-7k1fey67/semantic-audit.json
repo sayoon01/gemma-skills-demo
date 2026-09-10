@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "stage": "B2-2D",
+  "run_dir": "/home/keti_spark1/yune/gemma-skills-demo/outputs/research-b2/pdf-auditor-smoke/semantic-audits/audit-7k1fey67",
+  "created_at": "2026-09-10T01:25:54.175791+00:00",
+  "model": "gemma4:31b",
+  "skill": "deep-research",
+  "skill_sha256": "e8440a6a0cf41739fd5ddce6f66fc1da69e77ee3597162ed35177b86162e1159",
+  "discovery_errors": [
+    {
+      "path": "/home/keti_spark1/yune/gemma-skills-demo/vendor/anthropic-skills/skills/claude-api/SKILL.md",
+      "error": "description은 비어 있지 않은 1024자 이하 문자열이어야 합니다."
+    }
+  ],
+  "audit_result": {
+    "claims": [
+      {
+        "claim_id": "C001",
+        "verdict": "SINGLE_SOURCE",
+        "reason": "The claim is directly supported by the retrieved document, but only one independent source was provided.",
+        "evidence": [
+          {
+            "evidence_id": "C001-E001",
+            "state": "VERIFIED",
+            "reason": "The retrieved content explicitly states 'A2-W: 2kWh 대용량 배터리를 탑재', which directly supports the claim that A2-W is equipped with a 2 kWh battery.",
+            "audited_source_type": "document",
+            "audited_tier": 1
+          }
+        ]
+      }
+    ],
+    "quality_flags": [
+      {
+        "type": "SOURCE_CLASSIFICATION",
+        "target_id": "C001-E001",
+        "message": "The worker classified this as Tier 3, but as a product specification document ('로봇 제품 규격'), it should be classified as Tier 1 (Primary)."
+      }
+    ]
+  },
+  "initial_integrity": {
+    "ok": true,
+    "errors": [],
+    "expected_claim_count": 1,
+    "seen_claim_count": 1,
+    "expected_evidence_count": 1,
+    "seen_evidence_count": 1
+  },
+  "repair_applied": false,
+  "repair_attempts": [],
+  "integrity": {
+    "ok": true,
+    "errors": [],
+    "expected_claim_count": 1,
+    "seen_claim_count": 1,
+    "expected_evidence_count": 1,
+    "seen_evidence_count": 1
+  },
+  "metrics": {
+    "claim_count": 1,
+    "evidence_count": 1,
+    "elapsed_seconds": 37.274
+  }
+}

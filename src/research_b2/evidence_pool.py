@@ -24,6 +24,7 @@ from typing import Any
 from .audit_gate import apply_audit_gate
 from .auditor import run_audit
 from .evidence_gate import (
+    canonical_file_path,
     canonical_url,
     validate_worker_result,
 )
@@ -228,9 +229,27 @@ def build_source_registry(
         dict[str, Any]
     ],
 ) -> list[dict[str, Any]]:
-    """Accepted evidence를 canonical URL 기준으로 중복 제거한다."""
+    """VERIFIED evidence의 Web/File source registry를 생성한다.
 
-    registry: dict[
+    Web:
+    - canonical URL 기준 dedup
+    - SRCxxx ID
+
+    File:
+    - file SHA-256 기준 dedup
+    - SHA가 없을 때만 canonical path fallback
+    - PDFxxx ID
+    - VERIFIED page들을 한 document record에 누적
+
+    의미적 source independence는 여기서 판단하지 않는다.
+    """
+
+    web_registry: dict[
+        str,
+        dict[str, Any],
+    ] = {}
+
+    file_registry: dict[
         str,
         dict[str, Any],
     ] = {}
@@ -283,67 +302,214 @@ def build_source_registry(
                 or {}
             )
 
-            url = (
+            source_kind = (
                 retrieved.get(
-                    "url"
+                    "source_kind"
                 )
                 or worker_source.get(
-                    "url"
+                    "source_kind"
                 )
-                or ""
+                or "web"
             )
 
-            canonical = (
-                canonical_url(
-                    url
+            if source_kind == "web":
+                url = (
+                    retrieved.get(
+                        "url"
+                    )
+                    or worker_source.get(
+                        "url"
+                    )
+                    or ""
                 )
-            )
 
-            if not canonical:
-                continue
+                canonical = (
+                    canonical_url(
+                        url
+                    )
+                )
 
-            if canonical not in registry:
-                registry[
-                    canonical
-                ] = {
-                    "canonical_url":
-                        canonical,
-                    "url":
-                        url,
-                    "title":
-                        retrieved.get(
-                            "title"
-                        )
-                        or worker_source.get(
-                            "title"
-                        )
-                        or "",
-                    "domain":
-                        retrieved.get(
-                            "domain"
-                        )
-                        or "",
-                    "claimed_publisher":
-                        worker_source.get(
-                            "publisher"
-                        )
-                        or "",
-                    "audited_source_type":
-                        evidence.get(
-                            "audited_source_type"
-                        ),
-                    "audited_tier":
-                        evidence.get(
-                            "audited_tier"
-                        ),
-                    "assignments": [],
-                    "claim_ids": [],
-                    "evidence_ids": [],
-                }
+                if not canonical:
+                    continue
 
-            record = registry[
-                canonical
-            ]
+                if canonical not in web_registry:
+                    web_registry[
+                        canonical
+                    ] = {
+                        "source_kind":
+                            "web",
+                        "canonical_url":
+                            canonical,
+                        "url":
+                            url,
+                        "title":
+                            retrieved.get(
+                                "title"
+                            )
+                            or worker_source.get(
+                                "title"
+                            )
+                            or "",
+                        "domain":
+                            retrieved.get(
+                                "domain"
+                            )
+                            or "",
+                        "claimed_publisher":
+                            worker_source.get(
+                                "publisher"
+                            )
+                            or "",
+                        "audited_source_type":
+                            evidence.get(
+                                "audited_source_type"
+                            ),
+                        "audited_tier":
+                            evidence.get(
+                                "audited_tier"
+                            ),
+                        "assignments":
+                            [],
+                        "claim_ids":
+                            [],
+                        "evidence_ids":
+                            [],
+                    }
+
+                record = (
+                    web_registry[
+                        canonical
+                    ]
+                )
+
+            elif source_kind == "file":
+                file_path = (
+                    retrieved.get(
+                        "path"
+                    )
+                    or worker_source.get(
+                        "path"
+                    )
+                    or ""
+                )
+
+                canonical_path = (
+                    canonical_file_path(
+                        file_path
+                    )
+                )
+
+                file_sha256 = (
+                    retrieved.get(
+                        "file_sha256"
+                    )
+                    or worker_source.get(
+                        "file_sha256"
+                    )
+                    or ""
+                ).strip()
+
+                if file_sha256:
+                    registry_key = (
+                        "sha256:"
+                        + file_sha256
+                    )
+                elif canonical_path:
+                    registry_key = (
+                        "path:"
+                        + canonical_path
+                    )
+                else:
+                    continue
+
+                if (
+                    registry_key
+                    not in file_registry
+                ):
+                    file_registry[
+                        registry_key
+                    ] = {
+                        "source_kind":
+                            "file",
+                        "path":
+                            file_path,
+                        "canonical_path":
+                            canonical_path,
+                        "file_sha256":
+                            file_sha256,
+                        "title":
+                            retrieved.get(
+                                "title"
+                            )
+                            or worker_source.get(
+                                "title"
+                            )
+                            or "",
+                        "claimed_publisher":
+                            worker_source.get(
+                                "publisher"
+                            )
+                            or "",
+                        "audited_source_type":
+                            evidence.get(
+                                "audited_source_type"
+                            ),
+                        "audited_tier":
+                            evidence.get(
+                                "audited_tier"
+                            ),
+                        "verified_pages":
+                            [],
+                        "assignments":
+                            [],
+                        "claim_ids":
+                            [],
+                        "evidence_ids":
+                            [],
+                    }
+
+                record = (
+                    file_registry[
+                        registry_key
+                    ]
+                )
+
+                page = (
+                    retrieved.get(
+                        "page"
+                    )
+                    or worker_source.get(
+                        "page"
+                    )
+                )
+
+                if (
+                    isinstance(
+                        page,
+                        int,
+                    )
+                    and not isinstance(
+                        page,
+                        bool,
+                    )
+                    and page >= 1
+                    and page
+                    not in record[
+                        "verified_pages"
+                    ]
+                ):
+                    record[
+                        "verified_pages"
+                    ].append(
+                        page
+                    )
+
+            else:
+                raise ValueError(
+                    "VERIFIED evidence에 "
+                    "지원되지 않는 source_kind가 있습니다: "
+                    f"{source_kind!r}"
+                )
 
             if (
                 assignment_id
@@ -391,11 +557,11 @@ def build_source_registry(
                     evidence_id
                 )
 
-    items = list(
-        registry.values()
+    web_items = list(
+        web_registry.values()
     )
 
-    items.sort(
+    web_items.sort(
         key=lambda item:
             item[
                 "canonical_url"
@@ -403,7 +569,7 @@ def build_source_registry(
     )
 
     for index, item in enumerate(
-        items,
+        web_items,
         1,
     ):
         item[
@@ -412,7 +578,42 @@ def build_source_registry(
             f"SRC{index:03d}"
         )
 
-    return items
+    file_items = list(
+        file_registry.values()
+    )
+
+    file_items.sort(
+        key=lambda item: (
+            item.get(
+                "file_sha256"
+            )
+            or "",
+            item.get(
+                "canonical_path"
+            )
+            or "",
+        )
+    )
+
+    for index, item in enumerate(
+        file_items,
+        1,
+    ):
+        item[
+            "verified_pages"
+        ].sort()
+
+        item[
+            "source_id"
+        ] = (
+            f"PDF{index:03d}"
+        )
+
+    return (
+        web_items
+        + file_items
+    )
+
 
 
 def build_worker_gap_records(
@@ -986,6 +1187,26 @@ def run_evidence_pool(
             "unique_verified_source_count":
                 len(
                     source_registry
+                ),
+            "unique_verified_web_source_count":
+                sum(
+                    1
+                    for source
+                    in source_registry
+                    if source.get(
+                        "source_kind"
+                    )
+                    == "web"
+                ),
+            "unique_verified_file_source_count":
+                sum(
+                    1
+                    for source
+                    in source_registry
+                    if source.get(
+                        "source_kind"
+                    )
+                    == "file"
                 ),
         },
     }

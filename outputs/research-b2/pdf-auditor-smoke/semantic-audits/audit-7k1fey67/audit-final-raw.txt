@@ -1,0 +1,25 @@
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "verdict": "SINGLE_SOURCE",
+      "reason": "The claim is directly supported by the retrieved document, but only one independent source was provided.",
+      "evidence": [
+        {
+          "evidence_id": "C001-E001",
+          "state": "VERIFIED",
+          "reason": "The retrieved content explicitly states 'A2-W: 2kWh 대용량 배터리를 탑재', which directly supports the claim that A2-W is equipped with a 2 kWh battery.",
+          "audited_source_type": "document",
+          "audited_tier": 1
+        }
+      ]
+    }
+  ],
+  "quality_flags": [
+    {
+      "type": "SOURCE_CLASSIFICATION",
+      "target_id": "C001-E001",
+      "message": "The worker classified this as Tier 3, but as a product specification document ('로봇 제품 규격'), it should be classified as Tier 1 (Primary)."
+    }
+  ]
+}

@@ -70,6 +70,191 @@ def canonical_url(
     )
 
 
+
+def canonical_file_path(
+    value: str,
+) -> str:
+    """Worker/Tool log의 local file path를 비교하기 위한 최소 정규화."""
+
+    path = (
+        value
+        or ""
+    ).strip().replace(
+        "\\",
+        "/",
+    )
+
+    while path.startswith(
+        "./"
+    ):
+        path = path[2:]
+
+    while "//" in path:
+        path = path.replace(
+            "//",
+            "/",
+        )
+
+    return path
+
+
+def build_pdf_read_index(
+    tool_logs: list[dict[str, Any]],
+) -> dict[
+    tuple[str, int],
+    dict[str, Any],
+]:
+    """성공한 read_pdf_pages 결과를 file path + page로 색인한다.
+
+    search_pdf_text 결과는 Evidence로 인정하지 않는다.
+    실제 read_pdf_pages로 읽은 page만 색인한다.
+    """
+
+    index: dict[
+        tuple[str, int],
+        dict[str, Any],
+    ] = {}
+
+    for log in tool_logs:
+        if (
+            log.get("name")
+            != "read_pdf_pages"
+        ):
+            continue
+
+        if log.get("ok") is not True:
+            continue
+
+        result = (
+            log.get("result")
+            or {}
+        )
+
+        if result.get("ok") is not True:
+            continue
+
+        data = (
+            result.get("data")
+            or {}
+        )
+
+        if (
+            data.get("source_kind")
+            != "file"
+        ):
+            continue
+
+        arguments = (
+            log.get("arguments")
+            or {}
+        )
+
+        requested_path = (
+            arguments.get("path")
+            or ""
+        )
+
+        final_path = (
+            data.get("path")
+            or ""
+        )
+
+        file_sha256 = (
+            data.get(
+                "file_sha256"
+            )
+            or ""
+        )
+
+        title = (
+            data.get("title")
+            or ""
+        )
+
+        pages = (
+            data.get("pages")
+            or []
+        )
+
+        if not isinstance(
+            pages,
+            list,
+        ):
+            continue
+
+        aliases = {
+            canonical_file_path(
+                requested_path
+            ),
+            canonical_file_path(
+                final_path
+            ),
+        }
+
+        aliases.discard("")
+
+        for page in pages:
+            if not isinstance(
+                page,
+                dict,
+            ):
+                continue
+
+            page_number = (
+                page.get("page")
+            )
+
+            if (
+                not isinstance(
+                    page_number,
+                    int,
+                )
+                or isinstance(
+                    page_number,
+                    bool,
+                )
+                or page_number < 1
+            ):
+                continue
+
+            content = (
+                page.get("text")
+                or ""
+            )
+
+            record = {
+                "requested_path":
+                    requested_path,
+                "final_path":
+                    final_path,
+                "file_sha256":
+                    file_sha256,
+                "title":
+                    title,
+                "page":
+                    page_number,
+                "content":
+                    content,
+                "content_chars":
+                    page.get(
+                        "content_chars"
+                    )
+                    or len(content),
+                "turn":
+                    log.get("turn"),
+            }
+
+            for alias in aliases:
+                index[
+                    (
+                        alias,
+                        page_number,
+                    )
+                ] = record
+
+    return index
+
+
 def build_fetch_index(
     tool_logs: list[dict[str, Any]],
 ) -> dict[str, dict[str, Any]]:
@@ -164,6 +349,12 @@ def validate_worker_result(
         )
     )
 
+    pdf_read_index = (
+        build_pdf_read_index(
+            tool_logs
+        )
+    )
+
     accepted_claims = []
     unsupported_claims = []
 
@@ -207,6 +398,155 @@ def validate_worker_result(
                 )
                 or ""
             )
+
+            if source_kind == "file":
+                source_path = (
+                    source.get(
+                        "path"
+                    )
+                    or ""
+                ).strip()
+
+                page = (
+                    source.get(
+                        "page"
+                    )
+                )
+
+                if (
+                    not source_path
+                    or not isinstance(
+                        page,
+                        int,
+                    )
+                    or isinstance(
+                        page,
+                        bool,
+                    )
+                    or page < 1
+                ):
+                    rejected_sources.append(
+                        {
+                            "claim_index":
+                                claim_index,
+                            "source_index":
+                                source_index,
+                            "state":
+                                "INVALID_FILE_CITATION",
+                            "source":
+                                source,
+                        }
+                    )
+
+                    continue
+
+                read = (
+                    pdf_read_index.get(
+                        (
+                            canonical_file_path(
+                                source_path
+                            ),
+                            page,
+                        )
+                    )
+                )
+
+                if read is None:
+                    rejected_sources.append(
+                        {
+                            "claim_index":
+                                claim_index,
+                            "source_index":
+                                source_index,
+                            "state":
+                                "UNREAD",
+                            "source":
+                                source,
+                        }
+                    )
+
+                    continue
+
+                claimed_sha = (
+                    source.get(
+                        "file_sha256"
+                    )
+                    or ""
+                ).strip()
+
+                actual_sha = (
+                    read.get(
+                        "file_sha256"
+                    )
+                    or ""
+                )
+
+                if (
+                    claimed_sha
+                    and actual_sha
+                    and claimed_sha
+                    != actual_sha
+                ):
+                    rejected_sources.append(
+                        {
+                            "claim_index":
+                                claim_index,
+                            "source_index":
+                                source_index,
+                            "state":
+                                "FILE_VERSION_MISMATCH",
+                            "source":
+                                source,
+                            "actual_file_sha256":
+                                actual_sha,
+                        }
+                    )
+
+                    continue
+
+                validated_source = (
+                    dict(source)
+                )
+
+                validated_source[
+                    "verification_state"
+                ] = "READ"
+
+                validated_source[
+                    "retrieved_path"
+                ] = read[
+                    "final_path"
+                ]
+
+                validated_source[
+                    "retrieved_page"
+                ] = read[
+                    "page"
+                ]
+
+                validated_source[
+                    "retrieved_file_sha256"
+                ] = read[
+                    "file_sha256"
+                ]
+
+                validated_source[
+                    "retrieved_title"
+                ] = read[
+                    "title"
+                ]
+
+                validated_source[
+                    "retrieved_content_chars"
+                ] = read[
+                    "content_chars"
+                ]
+
+                validated_sources.append(
+                    validated_source
+                )
+
+                continue
 
             if source_kind != "web":
                 rejected_sources.append(
@@ -367,6 +707,32 @@ def validate_worker_result(
                         if record[
                             "final_url"
                         ]
+                    }
+                ),
+            "successful_file_page_count":
+                len(
+                    {
+                        (
+                            record[
+                                "final_path"
+                            ],
+                            record[
+                                "page"
+                            ],
+                            record[
+                                "file_sha256"
+                            ],
+                        )
+                        for record
+                        in pdf_read_index.values()
+                        if (
+                            record[
+                                "final_path"
+                            ]
+                            and record[
+                                "page"
+                            ]
+                        )
                     }
                 ),
         },

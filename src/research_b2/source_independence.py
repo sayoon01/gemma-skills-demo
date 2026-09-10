@@ -34,7 +34,10 @@ from src.skill_loader import (
     discover_skills,
 )
 
-from .evidence_gate import canonical_url
+from .evidence_gate import (
+    canonical_file_path,
+    canonical_url,
+)
 from .worker import extract_json_object
 
 
@@ -308,7 +311,7 @@ def build_family_packets(
             )
         )
 
-        source_by_url: dict[
+        source_by_key: dict[
             str,
             dict[str, Any],
         ] = {}
@@ -355,25 +358,107 @@ def build_family_packets(
                     or {}
                 )
 
-                raw_url = (
+                source_kind = (
                     retrieved.get(
-                        "url"
+                        "source_kind"
                     )
                     or worker_source.get(
-                        "url"
+                        "source_kind"
                     )
-                    or ""
+                    or (
+                        "web"
+                        if (
+                            retrieved.get(
+                                "url"
+                            )
+                            or worker_source.get(
+                                "url"
+                            )
+                        )
+                        else "file"
+                    )
                 )
 
-                url = (
-                    canonical_url(
-                        raw_url
-                    )
-                    if raw_url
-                    else ""
-                )
+                file_path = ""
+                file_sha256 = ""
 
-                if not url:
+                if source_kind == "web":
+                    raw_url = (
+                        retrieved.get(
+                            "url"
+                        )
+                        or worker_source.get(
+                            "url"
+                        )
+                        or ""
+                    )
+
+                    url = (
+                        canonical_url(
+                            raw_url
+                        )
+                        if raw_url
+                        else ""
+                    )
+
+                    if not url:
+                        continue
+
+                    source_key = (
+                        "web:"
+                        + url
+                    )
+
+                elif source_kind == "file":
+                    file_path = (
+                        retrieved.get(
+                            "path"
+                        )
+                        or worker_source.get(
+                            "path"
+                        )
+                        or ""
+                    )
+
+                    canonical_path = (
+                        canonical_file_path(
+                            file_path
+                        )
+                    )
+
+                    file_sha256 = (
+                        retrieved.get(
+                            "file_sha256"
+                        )
+                        or worker_source.get(
+                            "file_sha256"
+                        )
+                        or ""
+                    ).strip()
+
+                    if file_sha256:
+                        source_key = (
+                            "file-sha256:"
+                            + file_sha256
+                        )
+
+                    elif canonical_path:
+                        source_key = (
+                            "file-path:"
+                            + canonical_path
+                        )
+
+                    else:
+                        continue
+
+                    #
+                    # 기존 packet 구조와 backward compatibility를 위해
+                    # canonical_url 필드에는 안정적인 identity 문자열을 둔다.
+                    # 실제 HTTP URL이 아님은 source_kind=file로 명시한다.
+                    #
+                    url = source_key
+
+                else:
                     continue
 
                 evidence_ref = (
@@ -382,11 +467,26 @@ def build_family_packets(
                 )
 
                 record = (
-                    source_by_url.setdefault(
-                        url,
+                    source_by_key.setdefault(
+                        source_key,
                         {
+                            "source_kind":
+                                source_kind,
                             "canonical_url":
                                 url,
+                            "path":
+                                file_path,
+                            "file_sha256":
+                                file_sha256,
+                            "page":
+                                (
+                                    retrieved.get(
+                                        "page"
+                                    )
+                                    or worker_source.get(
+                                        "page"
+                                    )
+                                ),
                             "claim_refs": [],
                             "evidence_refs": [],
                             "title":
@@ -462,7 +562,7 @@ def build_family_packets(
             source,
         ) in enumerate(
             sorted(
-                source_by_url.items()
+                source_by_key.items()
             ),
             1,
         ):
