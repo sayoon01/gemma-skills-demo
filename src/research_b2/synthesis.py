@@ -1189,7 +1189,7 @@ def run_synthesis(
         "qualification.\n"
         "Unsupported claims are not factual findings.\n"
         "Research gaps and unknowns must remain visible.\n"
-        "The stop reason is user_stop, not semantic convergence.\n"
+        "Respect the supplied stop record. Do not claim semantic convergence unless stop_record.converged is true.\n"
     )
 
     user_prompt = (
